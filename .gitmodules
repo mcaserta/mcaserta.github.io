@@ -4,3 +4,4 @@
 [submodule "public"]
 	path = public
 	url = https://github.com/mcaserta/mcaserta.github.io.git
+	branch = main

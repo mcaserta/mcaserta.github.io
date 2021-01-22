@@ -5,6 +5,9 @@ date: 2018-10-18T14:01:00Z
 type: post
 categories:
   - musica
+tags:
+  - musica
+  - jazz
 ---
 
 «In principio era il verbo.»

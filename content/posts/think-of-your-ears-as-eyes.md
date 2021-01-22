@@ -6,6 +6,9 @@ type: post
 toc: true
 categories:
   - musica
+tags:
+  - ear training
+  - musica
 ---
 
 ## Metafisica dei Suoni

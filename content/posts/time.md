@@ -2,8 +2,6 @@
 title: "🇺🇸 An Introduction to Time Representation, Serialization and Management in Software"
 date: 2013-04-15T14:19:00Z
 toc: true
-authors:
- - mcaserta
 tags:
  - time
  - software development

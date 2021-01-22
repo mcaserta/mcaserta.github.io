@@ -1,0 +1,14 @@
+# files generate by hugo
+/public/
+/resources/_gen/
+hugo_stats.json
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store

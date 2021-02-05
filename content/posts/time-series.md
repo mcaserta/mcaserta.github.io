@@ -833,8 +833,6 @@ quite a bit of time on this as I was trying to dig deeper into some issues I've
 had at work. I suggest you do the same when you run into problems that need
 some clarification on your side. I also hope you found this useful. 
 
-Bye for now, [Mirko](https://mirkocaserta.com).
-
 
 ## Bonus
 

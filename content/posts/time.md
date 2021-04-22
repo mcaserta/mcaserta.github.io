@@ -47,6 +47,20 @@ in an universal way, you should have an idea what
 [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) and
 [timezones](http://en.wikipedia.org/wiki/Time_zone) are. 
 
+Please do not confuse UTC with GMT: although their time matches, they are *two
+different things*: one is an universal standard while the other is a timezone.
+When someone says they're using GMT, unless that person has a funny scottish
+accent, what they really mean is UTC.
+
+As an amateur radio operator, I have contacts with people from all over the
+world. Every operator is required to keep a log of his contacts and we usually
+exchange so called QSL cards, which are a written confirmation of the contact.
+Of course a QSL card must report the exact time of the radio contact and by
+convention it's in UTC. I know that when I receive a QSL card from any fellow
+amateur radio operator, no matter where he is located across the whole wide
+world, I can look up the contact in my logbook and the date and time info is
+going to match, as we are both adhering to the same standard: UTC.
+
 Now, suppose I have to schedule a skype chat with a fellow software
 developer in the US. I could write him an email and say something along
 the lines of *"see you on 2/3"*. In Italy, that would be the second day
@@ -89,6 +103,7 @@ Let me summarize a few key points to bring home so far:
 
 * get to know [time zones](http://en.wikipedia.org/wiki/Time_zone) and
   [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)
+* do not confuse UTC and GMT
 * [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) is your friend
 * always print the time zone while debugging
 
@@ -115,7 +130,7 @@ This is the serialized form of a peculiar imaginary person class instance.
 
 In the binary world of computers, time is usually serialized and stored
 by using the [Unix time](http://en.wikipedia.org/wiki/Unix_time)
-convention. As I'm writing this, my Unix time is `1366191727 UTC`. That
+convention. As I'm writing this, my Unix time is `1366191727`. That
 is: `1366191727` seconds have passed since January 1st, 1970 at 00:00
 UTC. Isn't that a pretty clever, consistent and compact way of
 representing a plethora of information, such as `April 17 2013 @
@@ -139,8 +154,18 @@ By storing time using a native format, you get the nice time formatting,
 sorting, querying, etc features of your RDBMS for free, so you might want to
 think twice before storing plain Unix timestamps in, say, Oracle.
 
-Just make sure you know what timezone your Unix timestamp refers to, or
-you might get confused later at deserialization time.
+Just make sure you know what timezone your Unix timestamp refers to, or you
+might get confused later at deserialization time. By default, a Unix timestamp
+is in UTC. If you use your system's libraries, you should be okay.
+
+When working with databases, use the most appropriate data types. For instance
+in Oracle, there's [four different data
+types](https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm):
+`DATE`, `TIMESTAMP`, `TIMESTAMP WITH TIME ZONE` and `TIMESTAMP WITH LOCAL TIME
+ZONE`. Also databases usually have a concept of database timezone and session
+timezone, so make sure you understand how your specific database is using
+those. A user that opens a session with timezone `A` is going to see different
+values than a user connecting with timezone `B`.
 
 ISO 8601 is also a serialization favorite. In fact, it is used in the [XML
 Schema](http://www.w3.org/TR/xmlschema-2/#isoformats) standard.  Most xml
@@ -178,6 +203,95 @@ life. Seriously. Take your time to get familiar with the API of your choosing.
 
 ![Friend: "What happened?", Me: "I had to work with timezones
 today".](/images/posts/timezones-meme.png)
+
+## Common Time Tasks in Java
+
+Let's see how all this translates into java code. Any language will of course
+be different but everything I'm doing here should be possible in your language
+of choice.
+
+Please do not use `java.util.Date` or `java.util.Calendar`. We don't use that
+classes any more. The new time api is in the `java.time` package. 
+
+```java
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
+public class JavaTimeExample {
+
+    public static void main(String[] args) {
+        ZoneId systemDefault = ZoneId.systemDefault();
+        System.out.println("systemDefault = " + systemDefault);
+
+        long now = System.currentTimeMillis();
+        System.out.println("now = " + now);
+
+        LocalDate localDate = LocalDate.now();
+        System.out.println("localDate = " + localDate);
+
+        LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println("localDateTime = " + localDateTime);
+
+        LocalDateTime utc = LocalDateTime.now(ZoneId.of("UTC"));
+        System.out.println("utc = " + utc);
+
+        ZonedDateTime zonedDateTime1 = ZonedDateTime.now();
+        System.out.println("zonedDateTime1 = " + zonedDateTime1);
+
+        ZonedDateTime zonedDateTime2 = ZonedDateTime.now(ZoneId.of("UTC"));
+        System.out.println("zonedDateTime2 = " + zonedDateTime2);
+
+        String iso8601 = zonedDateTime2.format(DateTimeFormatter.ISO_INSTANT);
+        System.out.println("iso8601 = " + iso8601);
+
+        ZonedDateTime zonedDateTime3 = zonedDateTime2.plus(Duration.ofDays(7));
+        System.out.println("zonedDateTime3 = " + zonedDateTime3);
+
+        Instant nowAsInstant = Instant.ofEpochMilli(now);
+        System.out.println("nowAsInstant = " + nowAsInstant);
+
+        ZonedDateTime nowAsInstantInRome = nowAsInstant.atZone(ZoneId.of("Europe/Rome"));
+        System.out.println("nowAsInstantInRome = " + nowAsInstantInRome);
+
+        LocalDateTime romeLocalTime = nowAsInstantInRome.toLocalDateTime();
+        System.out.println("romeLocalTime = " + romeLocalTime);
+
+        LocalDate localDateInRome = nowAsInstantInRome.toLocalDate();
+        System.out.println("localDateInRome = " + localDateInRome);
+
+        LocalTime localTimeInRome = nowAsInstantInRome.toLocalTime();
+        System.out.println("localTimeInRome = " + localTimeInRome);
+
+        String shortTimeInRome = nowAsInstantInRome.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT));
+        System.out.println("shortTimeInRome = " + shortTimeInRome);
+
+        String evenShorterTimeInRome = nowAsInstantInRome.format(DateTimeFormatter.ofPattern("HH:mm"));
+        System.out.println("evenShorterTimeInRome = " + evenShorterTimeInRome);
+    }
+}
+```
+
+When I run the program above, I get the following output:
+
+```
+systemDefault = Europe/Rome
+now = 1619116057439
+localDate = 2021-04-22
+localDateTime = 2021-04-22T20:27:37.462421
+utc = 2021-04-22T18:27:37.463329
+zonedDateTime1 = 2021-04-22T20:27:37.464133+02:00[Europe/Rome]
+zonedDateTime2 = 2021-04-22T18:27:37.464528Z[UTC]
+iso8601 = 2021-04-22T18:27:37.464528Z
+zonedDateTime3 = 2021-04-29T18:27:37.464528Z[UTC]
+nowAsInstant = 2021-04-22T18:27:37.439Z
+nowAsInstantInRome = 2021-04-22T20:27:37.439+02:00[Europe/Rome]
+romeLocalTime = 2021-04-22T20:27:37.439
+localDateInRome = 2021-04-22
+localTimeInRome = 20:27:37.439
+shortTimeInRome = 8:27 PM
+evenShorterTimeInRome = 20:27
+```
 
 ## Further Resources
 

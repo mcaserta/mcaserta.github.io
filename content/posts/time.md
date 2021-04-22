@@ -151,6 +151,9 @@ with partial representations: for instance, if you omit the time zone, make
 sure you agree beforehand on a default one with your communicating party
 (usually UTC or your local time zone if you're both in the same one). 
 
+![Elon Musk: "I'm putting people on Mars!", Developers: "Fantastic, more
+timezones to support".](/images/posts/mars-timezone.png)
+
 ## Management
 
 First of all, if you think you can write your own time management
@@ -173,14 +176,25 @@ In fact, Joda Time has become so popular that it gave birth to
 Use of popular, well designed and implemented time frameworks will save your
 life. Seriously. Take your time to get familiar with the API of your choosing. 
 
+![Friend: "What happened?", Me: "I had to work with timezones
+today".](/images/posts/timezones-meme.png)
+
 ## Further Resources
 
 Here are a few useful links I've accumulated over time:
 
 * [UTC is enough for everyone... right?](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
+* [The Problem with Time & Timezones - Computerphile](https://youtu.be/-5wpm-gesOY)
 * [Falsehoods programmers believe about time](http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time)
 * [The 5 laws of API dates and times](http://apiux.com/2013/03/20/5-laws-api-dates-and-times/)
 * [Storing Date/Times in Databases](http://derickrethans.nl/storing-date-time-in-database.html)
 * [5 Levels of Handling Date and Time in Python](https://medium.com/techtofreedom/5-levels-of-handling-date-and-time-in-python-46b601e47f65)
+* [Timezone Bullshit](https://blog.wesleyac.com/posts/timezone-bullshit)
+* [ISO 8601: the better date format](https://kirby.kevinson.org/blog/iso-8601-the-better-date-format/)
 * [A Short History of the Modern Calendar](http://youtu.be/kzprsR2SvrQ)
+* [Should We 'Heed the Science and Abolish Daylight Saving Time'?](https://yro.slashdot.org/story/21/03/14/014233/should-we-heed-the-science-and-abolish-daylight-saving-time)
 * [Converting world timezones with DuckDuckGo and Wolfram Alpha from the browser address bar](http://opensourcehacker.com/2013/03/28/converting-world-timezones-with-duckduckgo-and-wolfram-alpha/)
+* [When a Calendar Defeated Russia in the 1908 Olympics](https://www.si.com/extra-mustard/2013/12/30/the-extra-mustard-trivia-hour-when-a-calendar-defeated-russia-in-the-1908-olympics)
+* [Why does China Have Only One Time Zone?](https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm)
+* [First day meme](https://www.reddit.com/r/ProgrammerHumor/comments/l99ip9/or_is_it_0th/)
+* [Glory to ISO8601 Subreddit](https://www.reddit.com/r/ISO8601/)

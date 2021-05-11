@@ -365,11 +365,10 @@ di DO? Vuol dire che abbiamo preso la nota DO come riferimento ed abbiamo
 costruito il nostro sistema di suoni, nel nostro caso la scala maggiore, a
 partire da quella nota.
 
-> Il mio amico Johnny, batterista che lavorava in un negozio di strumenti
-> musicali, raccontava sempre un aneddoto riguardo una festa di paese in cui un
-> signore chiese di far cantare la propria figlia sul palco e, alla domanda su
-> quale tonalità volesse per la canzone, il signore rispose orgoglioso: «la
-> migliore!».
+> Il mio amico Johnny, batterista, raccontava sempre un aneddoto riguardo una
+> festa di paese in cui un signore chiese di far cantare la propria figlia sul
+> palco e, alla domanda su quale tonalità volesse per la canzone, il signore
+> rispose orgoglioso: «la migliore!».
 
 Se andassimo ad analizzare gli intervalli che separano fra di loro le note
 della scala maggiore di DO, vedremmo che fra DO e RE c'è un tono, fra RE e MI
@@ -550,15 +549,18 @@ visualizzazione mentale di tutte le possibilità sonore a tua disposizione.
 Il mio consiglio è di seguire un ciclo annidato in cui al primo livello si
 itera sugli  intervalli e al secondo sulla scala cromatica, partendo dalla nota
 più bassa sullo strumento fino alla nota più alta. Lo scrivo in pseudo-codice
-per gli informatici e poi in inglese per gli esseri umani:
+per gli informatici e poi in italiano per gli esseri umani:
 
 ```
-foreach interval in (2m, 2M, 3m, 3M, 4, 4#, 5, 5#, 6, 7m, 7M, 8) {
-  foreach note in (instrument_range) {
+for interval in (2m, 2M, 3m, 3M, 4, 4#, 5, 5#, 6, 7m, 7M, 8) {
+  for note in (instrument_range) {
     play interval from note  
   }
 }
 ```
+
+Per ogni intervallo compreso nell'elenco, per ogni nota compresa
+nell'estensione dello strumento, suona l'intervallo a partire dalla nota.
 
 Una persona sana di mente avrà già capito che l'esecuzione completa
 dell'esercizio richiede almeno una mezz'oretta ed una pazienza inversamente
@@ -572,21 +574,21 @@ output:
 
 ```
 play 2m from Bb (Bb-B)
-play 2m from B (B-C)
-play 2m from C (C-C#)
+play 2m from B  (B-C)
+play 2m from C  (C-C#)
 ...
-play 2m from F (F-F#)
+play 2m from F  (F-F#)
 play 2m from F# (F#-G)
 play 2M from Bb (Bb-C)
-play 2M from Bb (B-C#)
-play 2M from C (C-D)
+play 2M from B  (B-C#)
+play 2M from C  (C-D)
 ...
 ```
 
 Una variante interessante consiste nell'iterare sul circolo delle quinte
 piuttosto che sulla scala cromatica. Se te lo stai chiedendo, nei simboli degli
-intervalli, m sta per minore, M per maggiore e # sta per aumentato. Ho scritto
-tra parentesi le due note dell'intervallo. I nomi delle note seguono la
+intervalli, `m` sta per minore, `M` per maggiore e `#` sta per aumentato. Ho
+scritto tra parentesi le due note dell'intervallo. I nomi delle note seguono la
 convenzione anglosassone per comodità mia. Se non conosci la convenzione
 anglosassone, questo è un buon momento per impararla perché nessuno scrive
 spartiti usando la convenzione italiana, nemmeno noi italiani.
@@ -668,7 +670,7 @@ euro contattandolo sulla sua [pagina Facebook](https://www.facebook.com/vizmauro
 
 Qui si entra più che altro nel campo della curiosità e dell'aneddotica perché
 vorrei raccontare come e perché ho sviluppato l'orecchio. In altre parole, se
-il suo scopo era informarti su come migliorare il tuo orecchio, potresti
+il tuo scopo era informarti su come migliorare il tuo orecchio, potresti
 fermarti tranquillamente qui e non perderesti nulla di particolarmente
 importante. Se invece hai resistito eroicamente a questa valanga di testo in
 un'epoca in cui la soglia dell'attenzione difficilmente supera la lunghezza di
@@ -685,14 +687,14 @@ Mentre giocavo nella mia stanzetta, specie nei fine settimana, ascoltavo papà
 suonare l'organo e mi capitava spesso di sentirlo mentre cercava di imparare
 una nuova canzone che poteva essere una vecchia melodia napoletana ma anche
 l'ultimo successo di uno dei cantanti dell'epoca. Papà iniziava suonando una
-nota e, se la successiva non era quella giusta, la andava cercando per
-tentativi. Il procedimento, nei casi più complicati, poteva durare anche una
-mezz'oretta ma alla fine papà riusciva a trovare a orecchio tutte le note
-giuste. Per gli accordi della canzone lo sentivo che andava in cerca dalla nota
-più bassa e, quando l'aveva trovata, procedeva a suonarne l'accordo: una bella
-triade in posizione base. Più tardi avrei capito che era davvero difficile
-sbagliare l'accordo dato che nel 98% delle canzoni le possibilità sono limitate
-ad accordi maggiori e minori.
+nota e, se la successiva non era quella giusta, la cercava per tentativi. Il
+procedimento, nei casi più complicati, poteva durare anche una mezz'oretta ma
+alla fine papà riusciva a trovare a orecchio tutte le note giuste. Per gli
+accordi della canzone lo sentivo che andava in cerca dalla nota più bassa e,
+quando l'aveva trovata, procedeva a suonarne l'accordo: una bella
+triade in posizione base. Più tardi avrei capito che era davvero
+difficile sbagliare l'accordo dato che nel 98% delle canzoni le
+possibilità sono limitate ad accordi maggiori e minori.
 
 Insomma, papà imparava a suonare un discreto numero di canzoni ed io avevo
 capito quale era il suo procedimento. All'epoca mi piaceva particolarmente la

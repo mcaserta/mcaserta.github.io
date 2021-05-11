@@ -8,7 +8,7 @@ tags:
  - software development
 categories:
  - software development
-draft: false
+draft: true
 type: post
 ---
 

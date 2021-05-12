@@ -312,3 +312,5 @@ Here are a few useful links I've accumulated over time:
 * [Why does China Have Only One Time Zone?](https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm)
 * [First day meme](https://www.reddit.com/r/ProgrammerHumor/comments/l99ip9/or_is_it_0th/)
 * [Glory to ISO8601 Subreddit](https://www.reddit.com/r/ISO8601/)
+* [How Ancient Romans Kept Time](https://www.amusingplanet.com/2021/05/how-ancient-romans-kept-time.html)
+

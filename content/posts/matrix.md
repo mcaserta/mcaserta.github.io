@@ -34,7 +34,7 @@ type: post
 <script type="text/javascript" src="/js/x64.js"></script>
 {{< /rawhtml >}}
 
-I am trying to learn some 6501 assembly and this is the result of one of my
+I am trying to learn some 6502 assembly and this is the result of one of my
 first experiments.
 
 It takes a while to load but what you are seeing above is a live emulation of

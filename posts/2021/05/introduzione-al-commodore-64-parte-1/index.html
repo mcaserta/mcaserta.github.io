@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Mirko Caserta ">
+<meta name="description" content="Il Commodore 64 Il primo computer che molte persone della mia età hanno potuto permettersi di avere a casa è stato il Commodore 64.
+La prima cosa che un utente C64 vedeva dopo aver collegato il computer alla tv ed averlo acceso era questa schermata.
+L&amp;rsquo;interprete basic ci informa di essere pronto ad accettare i comandi.
+Puoi seguire e riprodurre facilmente tutti gli esempi usando un emulatore. Ad esempio VICE funziona molto bene su tutti i sistemi operativi." />
+<meta name="keywords" content=", c64, programming, software development" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://mirkocaserta.com/posts/2021/05/introduzione-al-commodore-64-parte-1/" />
+
+
+    <title>
+        
+            🇮🇹 Introduzione al Commodore 64, parte 1 :: Mirko Caserta  — Software Engineer
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="https://mirkocaserta.com/main.c46cbca46fa76c0fcd3da8313ecf4adee5fb3ffb0288c0902d7e90aead220d79.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://mirkocaserta.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://mirkocaserta.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://mirkocaserta.com/favicon-16x16.png">
+    <link rel="manifest" href="https://mirkocaserta.com/site.webmanifest">
+    <link rel="mask-icon" href="https://mirkocaserta.com/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="https://mirkocaserta.com/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="🇮🇹 Introduzione al Commodore 64, parte 1">
+<meta itemprop="description" content="Il Commodore 64 Il primo computer che molte persone della mia età hanno potuto permettersi di avere a casa è stato il Commodore 64.
+La prima cosa che un utente C64 vedeva dopo aver collegato il computer alla tv ed averlo acceso era questa schermata.
+L&rsquo;interprete basic ci informa di essere pronto ad accettare i comandi.
+Puoi seguire e riprodurre facilmente tutti gli esempi usando un emulatore. Ad esempio VICE funziona molto bene su tutti i sistemi operativi.">
+<meta itemprop="datePublished" content="2021-05-03T12:19:00+00:00" />
+<meta itemprop="dateModified" content="2021-05-03T12:19:00+00:00" />
+<meta itemprop="wordCount" content="539">
+<meta itemprop="image" content="https://mirkocaserta.com"/>
+
+
+
+<meta itemprop="keywords" content="c64,programming,software development," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://mirkocaserta.com"/>
+
+<meta name="twitter:title" content="🇮🇹 Introduzione al Commodore 64, parte 1"/>
+<meta name="twitter:description" content="Il Commodore 64 Il primo computer che molte persone della mia età hanno potuto permettersi di avere a casa è stato il Commodore 64.
+La prima cosa che un utente C64 vedeva dopo aver collegato il computer alla tv ed averlo acceso era questa schermata.
+L&rsquo;interprete basic ci informa di essere pronto ad accettare i comandi.
+Puoi seguire e riprodurre facilmente tutti gli esempi usando un emulatore. Ad esempio VICE funziona molto bene su tutti i sistemi operativi."/>
+
+
+
+
+
+
+    <meta property="article:section" content="software development" />
+
+
+
+    <meta property="article:published_time" content="2021-05-03 12:19:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="https://mirkocaserta.com/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">&gt;</span>
+            <span class="logo__text">cd ~mcaserta</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://mirkocaserta.com/about/">About</a></li><li><a href="https://mirkocaserta.com/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://mirkocaserta.com/posts/2021/05/introduzione-al-commodore-64-parte-1/">🇮🇹 Introduzione al Commodore 64, parte 1</a></h2>
+
+            
+            
+            
+                <hr />
+                <aside id="toc">
+                <div class="toc-title">Table of Contents</div>
+                    <nav id="TableOfContents"></nav>
+                </aside>
+                <hr />
+            
+
+            <div class="post-content">
+                <h1 id="il-commodore-64">Il Commodore 64</h1>
+<p>Il primo computer che molte persone della mia età hanno potuto permettersi di
+avere a casa è stato il Commodore 64.</p>
+<p>La prima cosa che un utente C64 vedeva dopo aver collegato il computer alla tv
+ed averlo acceso era questa schermata.</p>
+<p><img src="https://mirkocaserta.com/images/posts/c64-ready.png" alt="READY"></p>
+<p>L&rsquo;interprete basic ci informa di essere pronto ad accettare i comandi.</p>
+<p>Puoi seguire e riprodurre facilmente tutti gli esempi usando un emulatore. Ad
+esempio <a href="https://vice-emu.sourceforge.io/">VICE</a> funziona molto bene su tutti i
+sistemi operativi.</p>
+<p>Alcune funzionalità del C64 sono disponibili tramite accesso diretto alla
+memoria.  In altre parole, conoscendo l&rsquo;indirizzo in memoria della funzionalità
+e il tipo di valore che possiamo inserire in quella posizione, possiamo
+modificare in maniera diretta e immediata la funzionalità.</p>
+<p>Ad esempio, all&rsquo;indirizzo <code>$d020</code> (valori preceduti da un dollaro indicano una
+rappresantazione esadecimale), corrispondente a <code>53280</code> in decimale, c&rsquo;è il
+registro del colore del bordo dello schermo.</p>
+<p>Facendo riferimento alla <a href="https://www.c64-wiki.com/wiki/Color">tabella dei
+colori</a> del C64, usiamo il comando <code>POKE</code>
+e andiamo a scrivere il valore <code>0</code> (che corrisponde al nero) nella locazione di
+memoria <code>53280</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-basic" data-lang="basic"><span style="color:#66d9ef">POKE</span> <span style="color:#ae81ff">53280</span>, <span style="color:#ae81ff">0</span>
+</code></pre></div><p><img src="https://mirkocaserta.com/images/posts/c64-border.png" alt="bordo nero"></p>
+<p>Come avrai intuito, la sintassi del comando <code>POKE</code> è:
+<code>POKE &lt;INDIRIZZO&gt;, &lt;VALORE&gt;</code>.</p>
+<p>All&rsquo;indirizzo <code>$d021</code>, ovvero <code>53281</code> in decimale, abbiamo il colore dello
+sfondo. Proviamo a cambiare anche questo in nero:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-basic" data-lang="basic"><span style="color:#66d9ef">POKE</span> <span style="color:#ae81ff">53281</span>, <span style="color:#ae81ff">0</span>
+</code></pre></div><p><img src="https://mirkocaserta.com/images/posts/c64-background.png" alt="sfondo nero"></p>
+<p>Alla locazione <code>$0268</code>, ovvero 646 in decimale, c&rsquo;è il colore dei caratteri.
+Cambiamolo in verde con il valore <code>5</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-basic" data-lang="basic"><span style="color:#66d9ef">POKE</span> <span style="color:#ae81ff">646</span>, <span style="color:#ae81ff">5</span>
+</code></pre></div><p><img src="https://mirkocaserta.com/images/posts/c64-hacker.png" alt="hacker mode"></p>
+<p>Prima di proseguire facciamo un soft reset dell&rsquo;emulatore tramite il comando
+nel menu File.</p>
+<p><img src="https://mirkocaserta.com/images/posts/c64-soft-reset.png" alt="soft reset"></p>
+<h1 id="giochiamo-con-la-cpu">Giochiamo con la CPU</h1>
+<p>Il microprocessore del C64 è il <a href="https://en.wikipedia.org/wiki/MOS_Technology_6510">MOS
+6510</a>. Il 6510 usa lo stesso
+set di istruzioni del 6502, il chip usato ad esempio nell'<a href="https://en.wikipedia.org/wiki/Apple_II">Apple
+II</a>.</p>
+<p>È possibile programmare il 6510 attraverso un set d&rsquo;istruzioni e i registri.
+Parliamo prima dei registri che useremo nei prossimi esempi:</p>
+<table>
+<thead>
+<tr>
+<th>sigla</th>
+<th>dimensione</th>
+<th>significato</th>
+<th>descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PC</code></td>
+<td>2 byte</td>
+<td>Program Counter</td>
+<td>contiene l&rsquo;indirizzo di memoria della prossima istruzione da eseguire</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>1 byte</td>
+<td>Accumulator</td>
+<td>è un registro generico che funziona principalmente da accumulatore</td>
+</tr>
+<tr>
+<td><code>X</code></td>
+<td>1 byte</td>
+<td></td>
+<td>è un registro generico e può essere usato anche per indirizzare la memoria</td>
+</tr>
+<tr>
+<td><code>Y</code></td>
+<td>1 byte</td>
+<td></td>
+<td>come il registro <code>X</code> ma si chiama <code>Y</code></td>
+</tr>
+</tbody>
+</table>
+<p>Questo elenco non è esaustivo ma per il momento è sufficiente per i nostri
+scopi.</p>
+<p>Attiviamo il monitor del VICE tramite la voce di menu sotto File.</p>
+<p><img src="https://mirkocaserta.com/images/posts/c64-activate-monitor.png" alt="activate monitor"></p>
+<p>La finestra del monitor si apre, bloccando temporaneamente l&rsquo;esecuzione
+dell&rsquo;emulatore.</p>
+<p><img src="https://mirkocaserta.com/images/posts/c64-monitor-pc.png" alt="activate monitor"></p>
+<p>Il monitor ci sta dicendo che il registro <code>C</code> (counter, abbreviazione di <code>PC</code>)
+sta puntando all&rsquo;indirizzo <code>$e5d4</code>.</p>
+<p>Possiamo farci stampare il contenuto di tutti i registri tramite il comando <code>r</code>.</p>
+<p><img src="https://mirkocaserta.com/images/posts/c64-monitor-registers.png" alt="activate monitor"></p>
+<p>Il monitor ci dice che il program counter (<code>ADDR</code>) sta puntando a <code>$e5d4</code>, come
+ci aveva appena indicato nel prompt.  I registri <code>A</code> e <code>X</code> contengono il valore
+<code>00</code> ed il registro <code>Y</code> contiene il valore <code>0a</code>.</p>
+<p>Se i tuoi valori sono diversi è normale. Anche quando il computer emulato
+sembra essere fermo e vedi il cursore lampeggiare, fino al momento prima di
+entrare nel monitor ed effettivamente fermare l&rsquo;emulazione, il contenuto dei
+registri cambia continuamente. Di certo il program counter gira come una
+trottola perché normalmente il processore esegue un loop per gestire tutta una
+serie di eventi, come la pressione di un tasto.</p>
+<pre><code>a $c000 lda #$00
+sta $d020
+sta $d021
+lda #$05
+sta $0286
+jmp $a714
+</code></pre>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://mirkocaserta.com/tags/c64/">c64</a></span>
+        <span class="tag"><a href="https://mirkocaserta.com/tags/programming/">programming</a></span>
+        <span class="tag"><a href="https://mirkocaserta.com/tags/software-development/">software development</a></span>
+        
+    </p>
+
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="https://mirkocaserta.com/categories/software-development/">software development</a></span>
+        
+    </p>
+
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="https://mirkocaserta.com/bundle.min.ace63d93098bf623f7c286a9084a4c22bfc482944c734f87fe0b685c7c6c7fa0ad2edb028c3b4b60d3343720c8ab490b320ad7f8edf4f6e9a6b898fc529057a9.js" integrity="sha512-rOY9kwmL9iP3woapCEpMIr/EgpRMc0&#43;H/gtoXHxsf6CtLtsCjDtLYNM0NyDIq0kLMgrX&#43;O309ummuJj8UpBXqQ=="></script>
+
+
+
+    </body>
+</html>

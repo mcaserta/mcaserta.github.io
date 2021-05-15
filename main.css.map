@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/runner/work/mcaserta-hugo.github.io/mcaserta-hugo.github.io",
+	"sourceRoot": "/home/runner/work/mcaserta.github.io/mcaserta.github.io",
 	"sources": [
 		"themes/hello-friend-ng/assets/scss/main.scss",
 		"themes/hello-friend-ng/assets/scss/_normalize.scss",

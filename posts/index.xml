@@ -3051,7 +3051,13 @@ on a piece of paper, stick it onto a carrier pigeon, and your recipient would
 be able to decipher your vital message by simply turning to the Internet and
 visiting a site such as <a href="http://www.unixtimestamp.com/">unixtimestamp.com</a> or
 <a href="https://currentmillis.com/">currentmillis.com</a>.</p>
-<p>Just like you can write that number on a piece of paper and later get
+<p>If you&rsquo;re a command line junkie like me, on Linux systems you can use:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ date -d @1366191727
+Wed Apr <span style="color:#ae81ff">17</span> 11:42:07 CEST <span style="color:#ae81ff">2013</span>
+</code></pre></div><p>However, on BSD derived systems such as Mac OS X, date -d won’t work so you have to used instead:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ date -r <span style="color:#ae81ff">1366191727</span>
+Wed Apr <span style="color:#ae81ff">17</span> 11:42:07 CEST <span style="color:#ae81ff">2013</span>
+</code></pre></div><p>Just like you can write that number on a piece of paper and later get
 back the full instant back to life, you can store it in a file or a
 row in your favorite RDBMS. Although you might want to talk to your
 RDBMS using a proper driver and handing it a plain date instance; your
@@ -3198,4 +3204,154 @@ evenShorterTimeInRome = 20:27
 <li><a href="https://timeenna.com/">TIME:ENNA Timezone Converter</a></li>
 <li><a href="https://www.amusingplanet.com/2021/05/how-ancient-romans-kept-time.html">How Ancient Romans Kept Time</a></li>
 </ul>
+]]></content></item><item><title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title><link>https://mirkocaserta.com/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link><pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid><description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.
+Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description><content type="html"><![CDATA[<p>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello
+scrivere messaggi di log. Dico <em>apparentemente oscura</em> perché si tratta di un
+argomento apparentemente banale ma che in realtà si rivela complesso.</p>
+<p>Trattandosi di osservazioni generali, queste andrebbero prese con una dose di
+buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non
+toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili
+poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</p>
+<h1 id="niente-guerre-di-religione-altrimenti-feuerbach-piange">Niente guerre di religione, altrimenti Feuerbach piange</h1>
+<p>Nel mondo java, log4j è considerato lo standard de facto quando si parla di
+framework di logging. Tuttavia, il mio consiglio è di usare un framework più
+moderno, come slf4j o logback. Logback è basato sull’api di slf4j ed è
+sufficiente dare un’occhiata agli esempi nella documentazione per essere
+produttivi nel giro di un quarto d’ora.</p>
+<p>Vorrei evitare di spiegare i vantaggi di questi framework rispetto a log4j o
+java.util.logging perché credo l’argomento sia non solo abbondantemente
+trattato in letteratura ma anche facilmente foriero di guerre di religione. Le
+guerre di religione sono per definizione irrazionali nonché mortalmente
+noiose. Sei abbastanza intelligente da documentarti e decidere da solo.</p>
+<p>Al di là di un eventuale framework e del linguaggio di programmazione usato, i
+messaggi di log sono essenziali sia in fase di test/debug che in fase di
+monitoring in produzione.</p>
+<p>Il log è spesso sottovalutato e trattato come una
+seccatura che va espletata più per dovere che per una reale necessità.
+Tuttavia, ti posso assicurare che non c’è nulla di peggio che essere chiamati a
+risolvere un problema urgente in produzione e trovarsi davanti a un log
+incasinato.</p>
+<p>Nessuno ti farà mai collegare col debugger in produzione. I log sono la tua
+unica linea di difesa.</p>
+<p>In particolare, nel momento in cui qualche migliaio di utenti è in procinto di
+spendere un mucchio di soldi sul sito del tuo cliente e l’applicazione è
+scritta da te e per qualche oscuro motivo la possibilità di tale ingente
+esborso dovesse essere negata agli utenti del suddetto sito, vorrai essere
+sicuro di avere la possibilità di capire velocemente cosa sta succedendo dietro
+le quinte. In casi simili, dire che a scrivere male nel log Gesù piange è al
+massimo un eufemismo neanche troppo colorito.</p>
+<h1 id="garbage-in-garbage-out">Garbage in, garbage out</h1>
+<p>Uno dei concetti elementari del software è quello di input/output. Conoscendo
+l’input e lo stato di tutte le variabili coinvolte nel processo di
+elaborazione, sai che puoi aspettarti un certo output.</p>
+<p>Se l’output non è coerente con le aspettative, vorrà dire che analizzando il
+contesto, l’input, il codice e lo stato delle variabili locali e globali
+coinvolte, dovresti riuscire a capire cosa non quadra.</p>
+<p>Non è necessario tracciare nel log ogni cambiamento di stato di ogni variabile,
+specie se la funzione o il metodo sono sufficientemente complessi.</p>
+<p>Esempio di log inutile:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> BuyResponse <span style="color:#a6e22e">buyItem</span><span style="color:#f92672">(</span>BuyRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; ----- buyItem ------ start -----&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; ----- buyItem ------ stop -----&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Esempio di log più utile:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> BuyResponse <span style="color:#a6e22e">buyItem</span><span style="color:#f92672">(</span>BuyRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;buyItem(): request={}&#34;</span><span style="color:#f92672">,</span> request<span style="color:#f92672">);</span>
+    <span style="color:#75715e">// ...
+</span><span style="color:#75715e"></span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;buyItem(): request={}, response={}&#34;</span><span style="color:#f92672">,</span> request<span style="color:#f92672">,</span> response<span style="color:#f92672">);</span>
+    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>In questo modo posso controllare l’input e l’output del metodo. Ripetendo
+l’input anche all’uscita del metodo, sarà più facile correlare i messaggi in
+fase di analisi. Tuttavia non sempre è utile questo tipo di verbosità.</p>
+<p>Come al solito, il buon senso dovrebbe guidarti nella scelta. Ad ogni modo,
+input, output e cambiamenti di stato di variabili importanti andrebbero
+tracciati almeno a livello di debug.</p>
+<p>Assicurati che le classi che includi nei log abbiano un override sensato del
+metodo <code>toString()</code>, altrimenti nei log leggerai solo un mucchio di inutili
+indirizzi a puntatori e non lo stato corrente delle variabili degli oggetti.</p>
+<h1 id="loggare-a-un-certo-livello">Loggare a un certo livello</h1>
+<p>Tutti i framework di logging hanno un meccanismo di livelli per cui è possibile
+filtrare l’output in modo da ottenere solo i messaggi che davvero ci
+interessano.</p>
+<p>Spesso capita di fare copia e incolla di statement di log per cui un messaggio
+che dovrebbe essere a livello di errore invece finisce a livello di debug.
+Occhio al copia e incolla!</p>
+<h1 id="formattazione-coerente-e-senza-fronzoli">Formattazione coerente e senza fronzoli</h1>
+<p>Cerca di mantenere uno stile coerente e senza troppi fronzoli nei messaggi di
+log. Disattiva il <em>blocco maiuscole</em>, abbi pietà. Questo ti aiuterà nella fase
+di analisi ed eviterà che le tue applicazioni abbiano l’aspetto di una roba
+scritta da uno sbarbatello in visual basic.</p>
+<h1 id="metti-i-messaggi-in-riga">Metti i messaggi in riga</h1>
+<p>Per quanto possibile, evita di introdurre caratteri di a capo nei messaggi di
+log. Quando userai <code>grep</code> per andare alla ricerca dei messaggi, è importante
+che ad una singola riga di output corrisponda un messaggio coerente.</p>
+<p>All’inizio, andare a capo sembra dare un aspetto migliore all’output ma col
+tempo ti renderai conto che avresti fatto meglio a non farlo.</p>
+<h1 id="occhio-al-copia-e-incolla">Occhio al copia e incolla</h1>
+<p><img src="/images/posts/blinking-alarm.gif" alt="Allarme rosso"></p>
+<p>Come già accennato, può capitare di fare copia e incolla di statement di log.</p>
+<p>Ogni volta che faccio copia e incolla, mi si accende una speciale lampadina
+nella testa che serve a ricordarmi:</p>
+<blockquote>
+<p>controlla ciò che hai copiato almeno due volte perché sicuramente hai
+dimenticato di modificare qualcosa</p>
+</blockquote>
+<p>Questo vale più in generale e non solo per i messaggi di log. Se avessi un euro
+per ogni frammento di codice sbagliato per via di un copia e incolla
+frettoloso, in questo momento sarei sulla spiaggia di un’isola tropicale a
+sorseggiare cocktail attorniato da compiacenti signorine.</p>
+<h1 id="eccezioni">Eccezioni</h1>
+<p>Il log di un errore dovrebbe portarsi dietro l’istanza di eccezione catturata
+e, se possibile ed utile, un minimo di contesto. Spesso mi capita di vedere
+codice del tipo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ConnectionException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    log<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error: &#34;</span> <span style="color:#f92672">+</span> e<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>Sarebbe meglio una cosa del genere:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ConnectionException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    log<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;connection error: user={}&#34;</span><span style="color:#f92672">,</span> user<span style="color:#f92672">,</span> e<span style="color:#f92672">);</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>In questo modo non perdo lo stack trace dell’eccezione catturata e posso
+ricondurla ad una specifica istanza di utente.</p>
+<h1 id="conosci-gli-strumenti">Conosci gli strumenti</h1>
+<p>Altrettanto importante è conoscere i meccanismi di deployment e configurazione
+del framework che stai usando. Potrebbe tornarti utile ad esempio impostare un
+filtro specifico su un certo logger. Impara inoltre a conoscere i meccanismi di
+formattazione dei messaggi.</p>
+<p>Configurando opportunamente un formatter, i framework moderni permettono di
+tracciare ad esempio timestamp al millisecondo, nomi di classi, metodi e nome
+del thread. Il nome del thread è essenziale in un’applicazione concorrente per
+seguire il flusso di esecuzione.</p>
+]]></content></item><item><title>🇺🇸 How to extract a filesystem from a disk image</title><link>https://mirkocaserta.com/posts/2009/04/how-to-extract-a-filesystem-from-a-disk-image/</link><pubDate>Sat, 18 Apr 2009 17:10:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2009/04/how-to-extract-a-filesystem-from-a-disk-image/</guid><description>You need to backup an entire hard disk to a single file. Supposing your disk is at /dev/hda and the backup file is image-file, you’d do:
+# cat /dev/hda &amp;gt; image-file or
+# dd if=/dev/hda of=image-file The file backup you get will hold a copy of every single bit from the hard disk. This means that you also have a copy of the MBR in the first 512 bytes of the file.</description><content type="html"><![CDATA[<p>You need to backup an entire hard disk to a single file. Supposing your disk is
+at <code>/dev/hda</code> and the backup file is <code>image-file</code>, you’d do:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># cat /dev/hda &gt; image-file</span>
+</code></pre></div><p>or</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># dd if=/dev/hda of=image-file</span>
+</code></pre></div><p>The file backup you get will hold a copy of every single bit from the hard
+disk. This means that you also have a copy of the MBR in the first 512 bytes of
+the file.</p>
+<p>Because of this, you can see the partition table on the backup file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># sfdisk -l -uS image-file</span>
+Disk image-file: <span style="color:#ae81ff">0</span> cylinders, <span style="color:#ae81ff">0</span> heads, <span style="color:#ae81ff">0</span> sectors/track
+Warning: The partition table looks like it was made
+<span style="color:#66d9ef">for</span> C/H/S<span style="color:#f92672">=</span>*/255/32 <span style="color:#f92672">(</span>instead of 0/0/0<span style="color:#f92672">)</span>.
+For this listing I<span style="color:#960050;background-color:#1e0010">&#39;</span>ll assume that geometry.
+Units <span style="color:#f92672">=</span> sectors of <span style="color:#ae81ff">512</span> bytes, counting from <span style="color:#ae81ff">0</span>
+Device Boot Start End <span style="color:#75715e">#sectors Id System</span>
+image-filep1 <span style="color:#ae81ff">32</span> <span style="color:#ae81ff">261119</span> <span style="color:#ae81ff">261088</span> <span style="color:#ae81ff">83</span> Linux
+image-filep2 <span style="color:#ae81ff">261120</span> <span style="color:#ae81ff">4267679</span> <span style="color:#ae81ff">4006560</span> <span style="color:#ae81ff">82</span> Linux swap / Solaris
+image-filep3 <span style="color:#ae81ff">4267680</span> <span style="color:#ae81ff">142253279</span> <span style="color:#ae81ff">137985600</span> <span style="color:#ae81ff">83</span> Linux
+image-filep4 <span style="color:#ae81ff">0</span> - <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">0</span> Empty
+</code></pre></div><p>Suppose you want to extract partition number 3. You can see that it starts
+at block 4267680 and is 137985600 blocks long. This translates to:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># dd if=image-file of=partition3-file skip=4267680 count=137985600</span>
+</code></pre></div><p>Peeking into the contents of the partition is as easy as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># mount -t ext3 -o loop partition3-file /mnt/hack</span>
+</code></pre></div><p>Also, you can avoid using dd to extract the partition file by passing the <code>offset</code>
+option to mount.</p>
 ]]></content></item></channel></rss>

@@ -143,6 +143,20 @@ be able to decipher your vital message by simply turning to the Internet and
 visiting a site such as [unixtimestamp.com](http://www.unixtimestamp.com/) or
 [currentmillis.com](https://currentmillis.com/).
 
+If you're a command line junkie like me, on Linux systems you can use:
+
+```bash
+$ date -d @1366191727
+Wed Apr 17 11:42:07 CEST 2013
+```
+
+However, on BSD derived systems such as Mac OS X, date -d won’t work so you have to used instead:
+
+```bash
+$ date -r 1366191727
+Wed Apr 17 11:42:07 CEST 2013
+```
+
 Just like you can write that number on a piece of paper and later get
 back the full instant back to life, you can store it in a file or a
 row in your favorite RDBMS. Although you might want to talk to your

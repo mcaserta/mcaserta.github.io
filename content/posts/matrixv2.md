@@ -66,3 +66,10 @@ my hero.
 Speaking of heroes, this was obviously heavily inspired by the
 [xmatrix](https://www.jwz.org/xscreensaver/) screensaver by the legendary
 [Jamie Zawinski](https://www.jwz.org/).
+
+## Update 20210524
+
+Here's a video of the software running on a real C64, courtesy Jordan McGee.
+
+{{< youtube id="P01GWeBhYPc" title="Screensaver running on a real C64" >}}
+

@@ -3143,80 +3143,9 @@ be different but everything I&rsquo;m doing here should be possible in your lang
 of choice.</p>
 <p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don&rsquo;t use that
 classes any more. The new time api is in the <code>java.time</code> package.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#f92672">import</span> java.time.*<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> java.time.format.DateTimeFormatter<span style="color:#f92672">;</span>
-<span style="color:#f92672">import</span> java.time.format.FormatStyle<span style="color:#f92672">;</span>
+<iframe height="500px" width="100%" src="https://replit.com/@mcaserta/DateTimeApiExample?lite=false" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
-<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">JavaTimeExample</span> <span style="color:#f92672">{</span>
-
-    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String<span style="color:#f92672">[]</span> args<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-        ZoneId systemDefault <span style="color:#f92672">=</span> ZoneId<span style="color:#f92672">.</span><span style="color:#a6e22e">systemDefault</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;systemDefault = &#34;</span> <span style="color:#f92672">+</span> systemDefault<span style="color:#f92672">);</span>
-
-        <span style="color:#66d9ef">long</span> now <span style="color:#f92672">=</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">currentTimeMillis</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;now = &#34;</span> <span style="color:#f92672">+</span> now<span style="color:#f92672">);</span>
-
-        LocalDate localDate <span style="color:#f92672">=</span> LocalDate<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localDate = &#34;</span> <span style="color:#f92672">+</span> localDate<span style="color:#f92672">);</span>
-
-        LocalDateTime localDateTime <span style="color:#f92672">=</span> LocalDateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localDateTime = &#34;</span> <span style="color:#f92672">+</span> localDateTime<span style="color:#f92672">);</span>
-
-        LocalDateTime utc <span style="color:#f92672">=</span> LocalDateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>ZoneId<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;UTC&#34;</span><span style="color:#f92672">));</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;utc = &#34;</span> <span style="color:#f92672">+</span> utc<span style="color:#f92672">);</span>
-
-        ZonedDateTime zonedDateTime1 <span style="color:#f92672">=</span> ZonedDateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;zonedDateTime1 = &#34;</span> <span style="color:#f92672">+</span> zonedDateTime1<span style="color:#f92672">);</span>
-
-        ZonedDateTime zonedDateTime2 <span style="color:#f92672">=</span> ZonedDateTime<span style="color:#f92672">.</span><span style="color:#a6e22e">now</span><span style="color:#f92672">(</span>ZoneId<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;UTC&#34;</span><span style="color:#f92672">));</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;zonedDateTime2 = &#34;</span> <span style="color:#f92672">+</span> zonedDateTime2<span style="color:#f92672">);</span>
-
-        String iso8601 <span style="color:#f92672">=</span> zonedDateTime2<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span>DateTimeFormatter<span style="color:#f92672">.</span><span style="color:#a6e22e">ISO_INSTANT</span><span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;iso8601 = &#34;</span> <span style="color:#f92672">+</span> iso8601<span style="color:#f92672">);</span>
-
-        ZonedDateTime zonedDateTime3 <span style="color:#f92672">=</span> zonedDateTime2<span style="color:#f92672">.</span><span style="color:#a6e22e">plus</span><span style="color:#f92672">(</span>Duration<span style="color:#f92672">.</span><span style="color:#a6e22e">ofDays</span><span style="color:#f92672">(</span>7<span style="color:#f92672">));</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;zonedDateTime3 = &#34;</span> <span style="color:#f92672">+</span> zonedDateTime3<span style="color:#f92672">);</span>
-
-        Instant nowAsInstant <span style="color:#f92672">=</span> Instant<span style="color:#f92672">.</span><span style="color:#a6e22e">ofEpochMilli</span><span style="color:#f92672">(</span>now<span style="color:#f92672">);</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;nowAsInstant = &#34;</span> <span style="color:#f92672">+</span> nowAsInstant<span style="color:#f92672">);</span>
-
-        ZonedDateTime nowAsInstantInRome <span style="color:#f92672">=</span> nowAsInstant<span style="color:#f92672">.</span><span style="color:#a6e22e">atZone</span><span style="color:#f92672">(</span>ZoneId<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Europe/Rome&#34;</span><span style="color:#f92672">));</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;nowAsInstantInRome = &#34;</span> <span style="color:#f92672">+</span> nowAsInstantInRome<span style="color:#f92672">);</span>
-
-        LocalDateTime romeLocalTime <span style="color:#f92672">=</span> nowAsInstantInRome<span style="color:#f92672">.</span><span style="color:#a6e22e">toLocalDateTime</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;romeLocalTime = &#34;</span> <span style="color:#f92672">+</span> romeLocalTime<span style="color:#f92672">);</span>
-
-        LocalDate localDateInRome <span style="color:#f92672">=</span> nowAsInstantInRome<span style="color:#f92672">.</span><span style="color:#a6e22e">toLocalDate</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localDateInRome = &#34;</span> <span style="color:#f92672">+</span> localDateInRome<span style="color:#f92672">);</span>
-
-        LocalTime localTimeInRome <span style="color:#f92672">=</span> nowAsInstantInRome<span style="color:#f92672">.</span><span style="color:#a6e22e">toLocalTime</span><span style="color:#f92672">();</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;localTimeInRome = &#34;</span> <span style="color:#f92672">+</span> localTimeInRome<span style="color:#f92672">);</span>
-
-        String shortTimeInRome <span style="color:#f92672">=</span> nowAsInstantInRome<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span>DateTimeFormatter<span style="color:#f92672">.</span><span style="color:#a6e22e">ofLocalizedTime</span><span style="color:#f92672">(</span>FormatStyle<span style="color:#f92672">.</span><span style="color:#a6e22e">SHORT</span><span style="color:#f92672">));</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;shortTimeInRome = &#34;</span> <span style="color:#f92672">+</span> shortTimeInRome<span style="color:#f92672">);</span>
-
-        String evenShorterTimeInRome <span style="color:#f92672">=</span> nowAsInstantInRome<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span>DateTimeFormatter<span style="color:#f92672">.</span><span style="color:#a6e22e">ofPattern</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;HH:mm&#34;</span><span style="color:#f92672">));</span>
-        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;evenShorterTimeInRome = &#34;</span> <span style="color:#f92672">+</span> evenShorterTimeInRome<span style="color:#f92672">);</span>
-    <span style="color:#f92672">}</span>
-<span style="color:#f92672">}</span>
-</code></pre></div><p>When I run the program above, I get the following output:</p>
-<pre><code>systemDefault = Europe/Rome
-now = 1619116057439
-localDate = 2021-04-22
-localDateTime = 2021-04-22T20:27:37.462421
-utc = 2021-04-22T18:27:37.463329
-zonedDateTime1 = 2021-04-22T20:27:37.464133+02:00[Europe/Rome]
-zonedDateTime2 = 2021-04-22T18:27:37.464528Z[UTC]
-iso8601 = 2021-04-22T18:27:37.464528Z
-zonedDateTime3 = 2021-04-29T18:27:37.464528Z[UTC]
-nowAsInstant = 2021-04-22T18:27:37.439Z
-nowAsInstantInRome = 2021-04-22T20:27:37.439+02:00[Europe/Rome]
-romeLocalTime = 2021-04-22T20:27:37.439
-localDateInRome = 2021-04-22
-localTimeInRome = 20:27:37.439
-shortTimeInRome = 8:27 PM
-evenShorterTimeInRome = 20:27
-</code></pre><h2 id="further-resources">Further Resources</h2>
+<h2 id="further-resources">Further Resources</h2>
 <p>Here are a few useful links I&rsquo;ve accumulated over time:</p>
 <ul>
 <li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone&hellip; right?</a></li>

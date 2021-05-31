@@ -1,4 +1,20 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Mirko Caserta</title><link>https://mirkocaserta.com/posts/</link><description>Recent content in Posts on Mirko Caserta</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Wed, 26 May 2021 10:46:00 +0000</lastBuildDate><atom:link href="https://mirkocaserta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Anxiety Driven Development</title><link>https://mirkocaserta.com/posts/2021/05/anxiety-driven-development/</link><pubDate>Wed, 26 May 2021 10:46:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2021/05/anxiety-driven-development/</guid><description>As a software developer, you will always find yourself in times when someone is putting an abysmal amount of pressure on you to complete something.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Mirko Caserta</title><link>https://mirkocaserta.com/posts/</link><description>Recent content in Posts on Mirko Caserta</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 31 May 2021 15:10:00 +0000</lastBuildDate><atom:link href="https://mirkocaserta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Bruce: cryptography in Java made easy</title><link>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</link><pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid><description>I just released Bruce, a Java library for performing cryptography.
+Here are the relevant links:
+github docs download There still is much room for improvement.
+If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.
+I hope you find this useful. I certainly have in my daily work.</description><content type="html"><![CDATA[<p><img src="/images/posts/bruce-logo.png" alt="Bruce logo"></p>
+<p>I just released Bruce, a Java library for performing cryptography.</p>
+<p>Here are the relevant links:</p>
+<ul>
+<li><a href="https://github.com/mcaserta/bruce">github</a></li>
+<li><a href="https://bruce.mirkocaserta.com">docs</a></li>
+<li><a href="https://jitpack.io/#mcaserta/bruce">download</a></li>
+</ul>
+<p>There still is much room for improvement.</p>
+<p>If you are new to open source Java library development, a good place to start
+is taking a look at the open issues. Most of them are pretty easy.</p>
+<p>I hope you find this useful. I certainly have in my daily work.</p>
+]]></content></item><item><title>🇺🇸 Anxiety Driven Development</title><link>https://mirkocaserta.com/posts/2021/05/anxiety-driven-development/</link><pubDate>Wed, 26 May 2021 10:46:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2021/05/anxiety-driven-development/</guid><description>As a software developer, you will always find yourself in times when someone is putting an abysmal amount of pressure on you to complete something.
 This is normal and not something under your control. Accept this is how every job works and take it for granted as the oxygen in the air you breathe.
 Can this be avoided? If you have an enlightened project manager/team leader/whatever, she won&amp;rsquo;t put any pressure on you.</description><content type="html"><![CDATA[<p>As a software developer, you will always find yourself in times when someone is
 putting an abysmal amount of pressure on you to complete something.</p>

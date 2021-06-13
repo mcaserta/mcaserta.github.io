@@ -249,6 +249,7 @@ Here are a few useful links I've accumulated over time:
 * [Why does China Have Only One Time Zone?](https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm)
 * [First day meme](https://www.reddit.com/r/ProgrammerHumor/comments/l99ip9/or_is_it_0th/)
 * [Glory to ISO8601 Subreddit](https://www.reddit.com/r/ISO8601/)
+* [Time.is](https://time.is/)
 * [TIME:ENNA Timezone Converter](https://timeenna.com/)
 * [How Ancient Romans Kept Time](https://www.amusingplanet.com/2021/05/how-ancient-romans-kept-time.html)
 * [rtc: rk808: Compensate for Rockchip calendar deviation on November 31st](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f076ef44a44d02ed91543f820c14c2c7dff53716)

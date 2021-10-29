@@ -73,3 +73,9 @@ Here's a video of the software running on a real C64, courtesy Jordan McGee.
 
 {{< youtube id="P01GWeBhYPc" title="Screensaver running on a real C64" >}}
 
+## Update 20211029
+
+Here's another video of the software running on a real C64, courtesy my friend Marco.
+
+{{< youtube id="O93npyzDnUU" title="Screensaver running on a real C64" >}}
+

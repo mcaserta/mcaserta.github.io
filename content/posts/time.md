@@ -256,3 +256,4 @@ Here are a few useful links I've accumulated over time:
 * [Daylight saving time is 'not helpful' and has 'no upsides' experts say](https://eu.usatoday.com/story/news/health/2021/11/01/fall-back-daylight-saving-time-health-experts-want-you-know/6174156001/)
 * [Neil deGrasse Tyson Reminds Us Daylight Saving Time is Ridiculous](https://youtu.be/j8VcpmpN0NM)
 * [A "Day" Isn't What It Used To Be](https://youtu.be/DHIQxVhruak)
+* [Why Time Zones Exist](https://youtu.be/qjUT7FbmNZ8)

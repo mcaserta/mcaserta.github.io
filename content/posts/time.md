@@ -229,6 +229,14 @@ classes any more. The new time api is in the `java.time` package.
 
 {{<replit src="https://replit.com/@mcaserta/DateTimeApiExample">}}
 
+## Testing
+ 
+In Java there's a `Clock` class that allows plugging in an arbitrarily 
+configurable clock implementation for use in the time api. This is especially
+useful in unit testing and debugging. Other languages should have an equivalent
+functionality.
+ 
+https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html
 
 ## Further Resources
 

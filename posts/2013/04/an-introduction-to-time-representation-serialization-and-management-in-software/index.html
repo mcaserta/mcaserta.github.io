@@ -27,7 +27,7 @@ In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a Time Lo
 <meta itemprop=description content="Most issues in software development usually arise from poor, inconsistent knowledge of the domain at hand. A topic apparently as simple as time representation, serialization and management can easily cause a number of problems both to the neophyte and to the experienced programmer.
 In this post, we&rsquo;ll see that there&rsquo;s no need to be a Time Lord to grasp the very simple few concepts needed not to incur into time management hell."><meta itemprop=datePublished content="2013-04-15T14:19:00+00:00">
 <meta itemprop=dateModified content="2013-04-15T14:19:00+00:00">
-<meta itemprop=wordCount content="1706"><meta itemprop=image content="https://mirkocaserta.com">
+<meta itemprop=wordCount content="1745"><meta itemprop=image content="https://mirkocaserta.com">
 <meta itemprop=keywords content="time,software development,">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://mirkocaserta.com">
@@ -75,6 +75,7 @@ In this post, we&rsquo;ll see that there&rsquo;s no need to be a Time Lord to gr
 <li><a href=#serialization>Serialization</a></li>
 <li><a href=#management>Management</a></li>
 <li><a href=#common-time-tasks-in-java>Common Time Tasks in Java</a></li>
+<li><a href=#testing>Testing</a></li>
 <li><a href=#further-resources>Further Resources</a></li>
 </ul>
 </nav>
@@ -248,6 +249,12 @@ of choice.</p>
 <p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don&rsquo;t use that
 classes any more. The new time api is in the <code>java.time</code> package.</p>
 <iframe height=500px width=100% src="https://replit.com/@mcaserta/DateTimeApiExample?lite=false" scrolling=no frameborder=no allowtransparency=true allowfullscreen sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+<h2 id=testing>Testing</h2>
+<p>In Java there&rsquo;s a <code>Clock</code> class that allows plugging in an arbitrarily
+configurable clock implementation for use in the time api. This is especially
+useful in unit testing and debugging. Other languages should have an equivalent
+functionality.</p>
+<p><a href=https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html>https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html</a></p>
 <h2 id=further-resources>Further Resources</h2>
 <p>Here are a few useful links I&rsquo;ve accumulated over time:</p>
 <ul>

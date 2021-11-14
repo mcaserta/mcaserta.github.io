@@ -238,6 +238,8 @@ functionality.
  
 https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html
 
+![Daylight savings? How about daylight investing?](/images/posts/daylight-investing.jpg)
+
 ## Further Resources
 
 Here are a few useful links I've accumulated over time:

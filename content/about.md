@@ -14,3 +14,5 @@ knowledge.
 
 I also have a past as an amateur jazz musician that might creep out from time
 to time in my posts here.
+
+I am also known as [IK0ZSN](https://www.qrz.com/db/ik0zsn).

@@ -229,6 +229,8 @@ classes any more. The new time api is in the `java.time` package.
 
 {{<replit src="https://replit.com/@mcaserta/DateTimeApiExample">}}
 
+![Daylight savings dog](/images/posts/daylight-dog.jpg)
+
 ## Testing
  
 In Java there's a `Clock` class that allows plugging in an arbitrarily 

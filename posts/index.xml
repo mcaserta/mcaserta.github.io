@@ -3168,6 +3168,7 @@ of choice.</p>
 classes any more. The new time api is in the <code>java.time</code> package.</p>
 <iframe height="500px" width="100%" src="https://replit.com/@mcaserta/DateTimeApiExample?lite=false" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
 
+<p><img src="/images/posts/daylight-dog.jpg" alt="Daylight savings dog"></p>
 <h2 id="testing">Testing</h2>
 <p>In Java there&rsquo;s a <code>Clock</code> class that allows plugging in an arbitrarily
 configurable clock implementation for use in the time api. This is especially

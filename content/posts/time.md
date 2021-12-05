@@ -270,3 +270,4 @@ Here are a few useful links I've accumulated over time:
 * [A "Day" Isn't What It Used To Be](https://youtu.be/DHIQxVhruak)
 * [Why Time Zones Exist](https://youtu.be/qjUT7FbmNZ8)
 * [xkcd: Dailight Calendar](https://xkcd.com/2542/)
+* [xkcd: Edge Cake](https://xkcd.com/2549/)

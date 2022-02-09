@@ -152,6 +152,10 @@ disableHugoGeneratorInject = false
     name = "youtube"
     url  = "https://www.youtube.com/channel/UC7xHDk0EZAakg4JzMepeYbQ"
 
+  [[params.social]]
+    name = "instagram"
+    url  = "https://www.instagram.com/mcaserta/"
+
 [languages]
   [languages.en]
     subtitle  = "Software Engineer"

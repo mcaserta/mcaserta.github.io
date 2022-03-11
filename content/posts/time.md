@@ -190,8 +190,6 @@ with partial representations: for instance, if you omit the time zone, make
 sure you agree beforehand on a default one with your communicating party
 (usually UTC or your local time zone if you're both in the same one). 
 
-![Elon Musk: "I'm putting people on Mars!", Developers: "Fantastic, more
-timezones to support".](/images/posts/mars-timezone.png)
 
 ## Management
 
@@ -215,8 +213,6 @@ In fact, Joda Time has become so popular that it gave birth to
 Use of popular, well designed and implemented time frameworks will save your
 life. Seriously. Take your time to get familiar with the API of your choosing. 
 
-![Friend: "What happened?", Me: "I had to work with timezones
-today".](/images/posts/timezones-meme.png)
 
 ## Common Time Tasks in Java
 
@@ -229,7 +225,6 @@ classes any more. The new time api is in the `java.time` package.
 
 {{<replit src="https://replit.com/@mcaserta/DateTimeApiExample">}}
 
-![Daylight savings dog](/images/posts/daylight-dog.jpg)
 
 ## Testing
  
@@ -240,7 +235,6 @@ functionality.
  
 https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html
 
-![Daylight savings? How about daylight investing?](/images/posts/daylight-investing.jpg)
 
 ## Further Resources
 
@@ -272,3 +266,18 @@ Here are a few useful links I've accumulated over time:
 * [Why Time Zones Exist](https://youtu.be/qjUT7FbmNZ8)
 * [xkcd: Dailight Calendar](https://xkcd.com/2542/)
 * [xkcd: Edge Cake](https://xkcd.com/2549/)
+
+
+## Memes
+
+![Elon Musk: "I'm putting people on Mars!", Developers: "Fantastic, more
+timezones to support".](/images/posts/mars-timezone.png)
+
+![Daylight savings dog](/images/posts/daylight-dog.jpg)
+
+![Daylight savings? How about daylight investing?](/images/posts/daylight-investing.jpg)
+
+![Friend: "What happened?", Me: "I had to work with timezones
+today".](/images/posts/timezones-meme.png)
+
+![January 1st 1970 meme](/images/posts/time-universe-meme.webp)

@@ -3178,6 +3178,7 @@ functionality.</p>
 <li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone&hellip; right?</a></li>
 <li><a href="https://youtu.be/-5wpm-gesOY">The Problem with Time &amp; Timezones - Computerphile</a></li>
 <li><a href="http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time">Falsehoods programmers believe about time</a></li>
+<li><a href="https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/">Storing UTC is not a silver bullet</a></li>
 <li><a href="http://apiux.com/2013/03/20/5-laws-api-dates-and-times/">The 5 laws of API dates and times</a></li>
 <li><a href="http://derickrethans.nl/storing-date-time-in-database.html">Storing Date/Times in Databases</a></li>
 <li><a href="https://medium.com/techtofreedom/5-levels-of-handling-date-and-time-in-python-46b601e47f65">5 Levels of Handling Date and Time in Python</a></li>

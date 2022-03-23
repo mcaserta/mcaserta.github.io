@@ -1,4 +1,71 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Mirko Caserta</title><link>https://mirkocaserta.com/posts/</link><description>Recent content in Posts on Mirko Caserta</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 31 May 2021 15:10:00 +0000</lastBuildDate><atom:link href="https://mirkocaserta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Bruce: cryptography in Java made easy</title><link>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</link><pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid><description>I just released Bruce, a Java library for performing cryptography.
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Mirko Caserta</title><link>https://mirkocaserta.com/posts/</link><description>Recent content in Posts on Mirko Caserta</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Wed, 23 Mar 2022 08:00:00 +0000</lastBuildDate><atom:link href="https://mirkocaserta.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Until Further Notice</title><link>https://mirkocaserta.com/posts/2022/03/until-further-notice/</link><pubDate>Wed, 23 Mar 2022 08:00:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2022/03/until-further-notice/</guid><description>«What&amp;rsquo;s wrong with feeling nostalgic? It&amp;rsquo;s the only distraction left for those who have no faith in the future.» — &amp;ldquo;The Great Beauty&amp;rdquo; (2013, Paolo Sorrentino)
+When I was a kid, music came on vinyl. I loved it for the beautiful covers but most of all for the amount of details you could find on them. Most music labels would report lots of interesting stuff such as the performers&amp;rsquo; names and the instruments they played.</description><content type="html"><![CDATA[<blockquote>
+<p>«What&rsquo;s wrong with feeling nostalgic? It&rsquo;s the only distraction left for
+those who have no faith in the future.» — &ldquo;The Great Beauty&rdquo; (2013, Paolo
+Sorrentino)</p>
+</blockquote>
+<p>When I was a kid, music came on vinyl. I loved it for the beautiful covers but
+most of all for the amount of details you could find on them. Most music labels
+would report lots of interesting stuff such as the performers&rsquo; names and the
+instruments they played. Sometimes, especially for jazz albums, there would be
+liner notes, hopefully written by someone who knew what he was talking about.
+And pictures, oh yeah, there would often be pictures, and they were big and
+pretty.</p>
+<p>Today, when you listen to or buy music on Spotify or Apple Music or whatever
+your favorite music distribution/streaming platform is, you barely get a
+picture, the name of the artist, an album title and the songs&rsquo; names. This is
+very unfortunate. Compared to when I started consuming music, this represents a
+horrible loss.</p>
+<p>Yes, I know I sound like <a href="https://knowyourmeme.com/memes/old-man-yells-at-cloud">Abe Simpson yelling at
+clouds</a>. The world is
+very much different today, luckily enough not always for worse. Music
+distribution is easier and even an eminent unknown like me can publish on the
+big digital stores for an easily accessible amount of money. So here we are.</p>
+<p>This album is the result of about a week of improvisation. Only one song is
+<em>computer made</em>, in the sense that i programmed patterns in a sequencer and
+left the randomizer do its thing. The last song is from a <a href="https://shortwavearchive.com/archive/radio-ukraine-international-march-3-2022">radio
+recording</a>.
+The rest of the songs have been played and improvised live on keyboards.</p>
+<p>This is without a doubt no groundbreaking stuff. But it is for me. I come from
+a jazz background where holding a triad for longer than a bar is considered an
+outrageous act of rebellion. I didn&rsquo;t expect what came out, like&hellip; at all. But
+my friends are not saying terrible words about it so I think maybe this is
+worth sharing. Even if one person likes part of a song, that would be more than
+I could ever hope for.</p>
+<p>The album&rsquo;s theme is the passive aggressive office jargon. The music is
+supposed to be a sort of meditative remedy to the frustrations induced by the
+tensions that arise in that context. An old friend of mine, a professional
+musician, once told me musicians are healers. Although I can&rsquo;t help but look
+very suspiciously at uses for music that aren&rsquo;t just about contemplating the
+beauty of sounds, I have nothing against people using music in ways that
+positively affect them. If you find this music soothing and relaxing&hellip; be my
+guest.</p>
+<p>So, without further ado, <a href="https://open.spotify.com/album/2BiufCH5y9vgDXFr1DXTq5">here is the
+music</a>.</p>
+<p>Finally, here is a copy of the <a href="/images/posts/until-further-notice-album-cover.png">album
+cover</a> in its full glory
+for those of you who still enjoy the small pleasures in life.</p>
+<p>Special thanks to my son Andrea for inspiring me to pick up the piano again
+(figuratively speaking of course as a real piano can be pretty heavy). Also a
+very big thank you goes to Camilla, Marco, Gianluca and Patrizia who first
+listened to the tracks and didn&rsquo;t threaten me with blocking my number on every
+messaging app. Huge thanks should also go to my mum for tolerating my music
+gear addiction, especially that for vintage synthesizers. And to her cooking.
+Yeah, definitely worth mentioning. Love is probably stored in the belly, and
+mine is a pretty big one.</p>
+<p>Oh, I almost forgot&hellip; the gear. This was all done in Logic Pro X using
+software stuff. The synths are either Logic presets or
+<a href="https://u-he.com/">u-he</a> Zebra2 or <a href="https://www.gforcesoftware.com/">GForce</a>
+OB-E. There is also a large amount of <a href="https://valhalladsp.com/">Valhalla</a>
+Shimmer and Supermassive reverb, as well as some heavy processing through
+<a href="https://www.arturia.com/">Arturia</a> EFX Fragments and
+<a href="https://chowdsp.com/">Chow</a> Tape Model. I played the keyboards via midi on a
+Sequential Take 5 and a Nord Stage 3 Compact. Sometimes I played the left hand
+bass part on the Take 5 and the rest on the Nord with the right hand. Most
+keyboardists can do that and they don&rsquo;t go bragging about it, I know.</p>
+<p>Well, that&rsquo;s about it. See you soon with more music I guess.</p>
+<p>Until further notice&hellip;</p>
+]]></content></item><item><title>🇺🇸 Bruce: cryptography in Java made easy</title><link>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</link><pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid><description>I just released Bruce, a Java library for performing cryptography.
 Here are the relevant links:
 github docs download There still is much room for improvement.
 If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.

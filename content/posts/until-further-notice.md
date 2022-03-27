@@ -57,7 +57,7 @@ positively affect them. If you find this music soothing and relaxing... be my
 guest.
 
 So, without further ado, [here is the
-music](https://open.spotify.com/album/2BiufCH5y9vgDXFr1DXTq5). 
+music](https://distrokid.com/hyperfollow/mirkocaserta/until-further-notice). 
 
 Finally, here is a copy of the [album
 cover](/images/posts/until-further-notice-album-cover.png) in its full glory

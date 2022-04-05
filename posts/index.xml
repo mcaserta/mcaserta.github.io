@@ -3269,6 +3269,10 @@ functionality.</p>
 <li><a href="https://youtu.be/qjUT7FbmNZ8">Why Time Zones Exist</a></li>
 <li><a href="https://xkcd.com/2542/">xkcd: Dailight Calendar</a></li>
 <li><a href="https://xkcd.com/2549/">xkcd: Edge Cake</a></li>
+<li><a href="https://youtu.be/yqciKS_N0K8">How does Britain know what time it is?</a></li>
+<li><a href="https://techcrunch.com/2022/03/16/clockwork-raises-21m-to-keep-server-clocks-in-sync/">Clockwork raises $21M to keep server clocks in sync</a></li>
+<li><a href="https://youtu.be/39wAtJwFrVY">How to Fix Daylight Saving Time</a></li>
+<li><a href="https://www.reddit.com/r/sysadmin/comments/tez7ra/us_senate_unanimously_passes_bill_to_make/">US Senate Unanimously Passes Bill to Make Daylight Saving Time Permanent</a></li>
 </ul>
 <h2 id="memes">Memes</h2>
 <p><img src="/images/posts/mars-timezone.png" alt="Elon Musk: &amp;ldquo;I&amp;rsquo;m putting people on Mars!&amp;rdquo;, Developers: &amp;ldquo;Fantastic, moretimezones to support&amp;rdquo;."></p>
@@ -3276,6 +3280,10 @@ functionality.</p>
 <p><img src="/images/posts/daylight-investing.jpg" alt="Daylight savings? How about daylight investing?"></p>
 <p><img src="/images/posts/timezones-meme.png" alt="Friend: &amp;ldquo;What happened?&amp;rdquo;, Me: &amp;ldquo;I had to work with timezonestoday&amp;rdquo;."></p>
 <p><img src="/images/posts/time-universe-meme.webp" alt="January 1st 1970 meme"></p>
+<p><img src="/images/posts/time-boeing-787.jpg" alt="Boeing 787 meme"></p>
+<p><img src="/images/posts/time-consensus.jpg" alt="xkcd: Consensus Time"></p>
+<p><img src="/images/posts/time-devs.png" alt="Developers having to implement yet another timezone change"></p>
+<p><img src="/images/posts/time-devs-again.webp" alt="Developers having to explain&amp;hellip;"></p>
 ]]></content></item><item><title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title><link>https://mirkocaserta.com/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link><pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid><description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.
 Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description><content type="html"><![CDATA[<p>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello
 scrivere messaggi di log. Dico <em>apparentemente oscura</em> perché si tratta di un

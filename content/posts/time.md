@@ -267,6 +267,10 @@ Here are a few useful links I've accumulated over time:
 * [Why Time Zones Exist](https://youtu.be/qjUT7FbmNZ8)
 * [xkcd: Dailight Calendar](https://xkcd.com/2542/)
 * [xkcd: Edge Cake](https://xkcd.com/2549/)
+* [How does Britain know what time it is?](https://youtu.be/yqciKS_N0K8)
+* [Clockwork raises $21M to keep server clocks in sync](https://techcrunch.com/2022/03/16/clockwork-raises-21m-to-keep-server-clocks-in-sync/)
+* [How to Fix Daylight Saving Time](https://youtu.be/39wAtJwFrVY)
+* [US Senate Unanimously Passes Bill to Make Daylight Saving Time Permanent](https://www.reddit.com/r/sysadmin/comments/tez7ra/us_senate_unanimously_passes_bill_to_make/)
 
 
 ## Memes
@@ -282,3 +286,11 @@ timezones to support".](/images/posts/mars-timezone.png)
 today".](/images/posts/timezones-meme.png)
 
 ![January 1st 1970 meme](/images/posts/time-universe-meme.webp)
+
+![Boeing 787 meme](/images/posts/time-boeing-787.jpg)
+
+![xkcd: Consensus Time](/images/posts/time-consensus.jpg)
+
+![Developers having to implement yet another timezone change](/images/posts/time-devs.png)
+
+![Developers having to explain...](/images/posts/time-devs-again.webp)

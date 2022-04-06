@@ -3109,12 +3109,11 @@ convention it&rsquo;s in UTC. I know that when I receive a QSL card from any fel
 amateur radio operator, no matter where he is located across the whole wide
 world, I can look up the contact in my logbook and the date and time info is
 going to match, as we are both adhering to the same standard: UTC.</p>
-<p>Now, suppose I have to schedule a skype chat with a fellow software
-developer in the US. I could write him an email and say something along
-the lines of <em>&ldquo;see you on 2/3&rdquo;</em>. In Italy, that would be the second day
-in the month of march, but to an US person, that would be the third day
-in the month of february. As you can see, how our chat is never going to
-happen.</p>
+<p>Now, suppose I have to schedule a skype chat with a fellow software developer
+in the US. I could write him an email and say something along the lines of
+<em>&ldquo;see you on 2/3&rdquo;</em>. In Italy, that would be the second day in the month of
+march, but to an US person, that would be the third day in the month of
+february. As you can see, our chat is never going to happen.</p>
 <p>These are only a few examples of the kind of issues that might arise
 when representing date and time information. Luckily enough, there is a
 solution to the representation conundrums, namely the

@@ -61,12 +61,11 @@ amateur radio operator, no matter where he is located across the whole wide
 world, I can look up the contact in my logbook and the date and time info is
 going to match, as we are both adhering to the same standard: UTC.
 
-Now, suppose I have to schedule a skype chat with a fellow software
-developer in the US. I could write him an email and say something along
-the lines of *"see you on 2/3"*. In Italy, that would be the second day
-in the month of march, but to an US person, that would be the third day
-in the month of february. As you can see, how our chat is never going to
-happen.
+Now, suppose I have to schedule a skype chat with a fellow software developer
+in the US. I could write him an email and say something along the lines of
+*"see you on 2/3"*. In Italy, that would be the second day in the month of
+march, but to an US person, that would be the third day in the month of
+february. As you can see, our chat is never going to happen.
 
 These are only a few examples of the kind of issues that might arise
 when representing date and time information. Luckily enough, there is a

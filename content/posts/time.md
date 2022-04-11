@@ -270,6 +270,7 @@ Here are a few useful links I've accumulated over time:
 * [Clockwork raises $21M to keep server clocks in sync](https://techcrunch.com/2022/03/16/clockwork-raises-21m-to-keep-server-clocks-in-sync/)
 * [How to Fix Daylight Saving Time](https://youtu.be/39wAtJwFrVY)
 * [US Senate Unanimously Passes Bill to Make Daylight Saving Time Permanent](https://www.reddit.com/r/sysadmin/comments/tez7ra/us_senate_unanimously_passes_bill_to_make/)
+* [The Daily WTF: Starting your Date](https://thedailywtf.com/articles/starting-your-date)
 
 
 ## Memes

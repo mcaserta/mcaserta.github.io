@@ -141,10 +141,6 @@ disableHugoGeneratorInject = false
     url  = "https://github.com/mcaserta"
 
   [[params.social]]
-    name = "soundcloud"
-    url  = "https://soundcloud.com/mcaserta-1"
-
-  [[params.social]]
     name = "telegram"
     url  = "https://t.me/mirkocaserta"
 

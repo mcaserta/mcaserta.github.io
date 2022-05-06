@@ -294,3 +294,6 @@ today".](/images/posts/timezones-meme.png)
 ![Developers having to implement yet another timezone change](/images/posts/time-devs.png)
 
 ![Developers having to explain...](/images/posts/time-devs-again.webp)
+
+![Days since last timezone issue: 0](/images/posts/time-days-since.webp)
+

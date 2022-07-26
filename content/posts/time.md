@@ -272,6 +272,7 @@ Here are a few useful links I've accumulated over time:
 * [US Senate Unanimously Passes Bill to Make Daylight Saving Time Permanent](https://www.reddit.com/r/sysadmin/comments/tez7ra/us_senate_unanimously_passes_bill_to_make/)
 * [The Daily WTF: Starting your Date](https://thedailywtf.com/articles/starting-your-date)
 * [Tech Giants Want To Banish the Leap Second To Stop Internet Crashes](https://www.cnet.com/tech/computing/tech-giants-try-banishing-the-leap-second-to-stop-internet-crashes/)
+* [Meta calls for the death of the leap second](https://www.engadget.com/meta-death-of-the-leap-second-103545749.html)
 
 
 ## Memes

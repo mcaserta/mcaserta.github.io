@@ -152,6 +152,10 @@ disableHugoGeneratorInject = false
     name = "instagram"
     url  = "https://www.instagram.com/mcaserta/"
 
+  [[params.social]]
+    name = "spotify"
+    url  = "https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO"
+
 [languages]
   [languages.en]
     subtitle  = "Software Engineer"

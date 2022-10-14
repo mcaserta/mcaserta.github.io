@@ -14,6 +14,8 @@ type: post
 > those who have no faith in the future.» — "The Great Beauty" (2013, Paolo
 > Sorrentino)
 
+![album cover](/images/posts/until-further-notice-album-cover.png)
+
 When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
 would report lots of interesting stuff such as the performers' names and the
@@ -86,3 +88,5 @@ keyboardists can do that and they don't go bragging about it, I know.
 Well, that's about it. See you soon with more music I guess.
 
 Until further notice...
+
+{{< spotify type="album" id="2BiufCH5y9vgDXFr1DXTq5">}}

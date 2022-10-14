@@ -12,7 +12,5 @@ platforms and architectures as I like to live on the bleeding edge and
 basically be a curious nerd about practically too many fields in human
 knowledge.
 
-I also have a past as a musician. My music is
-[here](https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO).
-
-I am also known as [IK0ZSN](https://www.qrz.com/db/ik0zsn).
+I also [play music](https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO) and
+I'm sometimes known as [IK0ZSN](https://www.qrz.com/db/ik0zsn).

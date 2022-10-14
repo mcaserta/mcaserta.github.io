@@ -54,11 +54,11 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   # 
-  description = "Software Engineer"
+  description = "Human Being"
   keywords = ""
   images = [""]
 
-  homeSubtitle = "Software Engineer"
+  homeSubtitle = "Human Being"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -145,6 +145,10 @@ disableHugoGeneratorInject = false
     url  = "https://t.me/mirkocaserta"
 
   [[params.social]]
+    name = "telegram"
+    url  = "https://t.me/mirkolovesmusic"
+
+  [[params.social]]
     name = "youtube"
     url  = "https://www.youtube.com/channel/UC7xHDk0EZAakg4JzMepeYbQ"
 
@@ -158,7 +162,7 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    subtitle  = "Software Engineer"
+    subtitle  = "Human Being"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 

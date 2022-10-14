@@ -4,6 +4,7 @@ When I was a kid, music came on vinyl. I loved it for the beautiful covers but m
 those who have no faith in the future.» — &ldquo;The Great Beauty&rdquo; (2013, Paolo
 Sorrentino)</p>
 </blockquote>
+<p><img src="/images/posts/until-further-notice-album-cover.png" alt="album cover"></p>
 <p>When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
 would report lots of interesting stuff such as the performers&rsquo; names and the
@@ -65,6 +66,17 @@ bass part on the Take 5 and the rest on the Nord with the right hand. Most
 keyboardists can do that and they don&rsquo;t go bragging about it, I know.</p>
 <p>Well, that&rsquo;s about it. See you soon with more music I guess.</p>
 <p>Until further notice&hellip;</p>
+
+
+
+<iframe src="https://open.spotify.com/embed/album/2BiufCH5y9vgDXFr1DXTq5"
+    width="100%"
+    height="380"
+    frameborder="0"
+    allowtransparency="true"
+    allow="encrypted-media"></iframe>
+
+
 ]]></content></item><item><title>🇺🇸 Bruce: cryptography in Java made easy</title><link>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</link><pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid><description>I just released Bruce, a Java library for performing cryptography.
 Here are the relevant links:
 github docs download There still is much room for improvement.

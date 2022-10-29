@@ -275,6 +275,7 @@ Here are a few useful links I've accumulated over time:
 * [Meta calls for the death of the leap second](https://www.engadget.com/meta-death-of-the-leap-second-103545749.html)
 * [Satellites Keep the World’s Clocks on Time. What if They Fail?](https://www.wired.com/story/satellite-time-distribution/)
 * [Stop using utcnow and utcfromtimestamp](https://blog.ganssle.io/articles/2019/11/utcnow.html)
+* [Dall'ora legale all'ora solare: i pro e contro del cambio orario e perché si parla di abolizione](https://youtu.be/Fu6AT5WLgJg)
 
 
 ## Memes

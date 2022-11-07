@@ -277,6 +277,7 @@ Here are a few useful links I've accumulated over time:
 * [Stop using utcnow and utcfromtimestamp](https://blog.ganssle.io/articles/2019/11/utcnow.html)
 * [Dall'ora legale all'ora solare: i pro e contro del cambio orario e perché si parla di abolizione](https://youtu.be/Fu6AT5WLgJg)
 * [Deer-vehicle collisions spike when daylight saving time ends](https://www.sciencenews.org/article/deer-vehicle-collisions-daylight-saving-time)
+* [The Falling Dates](https://thedailywtf.com/articles/the-falling-dates)
 
 
 ## Memes

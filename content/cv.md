@@ -7,9 +7,9 @@ toc: true
 
 ## Experience
 
-### Software Architect, Nexse Srl/Alten Italia; Rome, IT — 2003-2018
+### Software Architect, Nexse Srl; Rome, IT — 2003-2018
 
-Established in 2000 by 5 shareholders, Nexse employs today more than a hundred IT professionals. It was acquired in 2017 by Alten Italia. In these companies I’ve covered different roles: system administrator, teacher, senior developer and eventually software architect. 
+Established in 2000 by 5 shareholders, Nexse was employing more than a hundred IT professionals until it was acquired in 2018. In this company I’ve covered different roles: system administrator, teacher, senior developer and eventually software architect. 
 
 #### Projects
 

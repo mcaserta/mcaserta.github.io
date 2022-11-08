@@ -63,9 +63,9 @@ Since the very beginning of my professional career I mainly worked with open sou
 - Server Software
   - Bind, Postfix, Dhcpd, Apache Httpd, Tomcat, Nginx, JBoss AS, Weblogic, Artemis/ActiveMQ, ServiceMix/Karaf/Fabric, Sun Cluster, OpenLDAP
 - IDE and Editors
-  - Intellij IDEA, Eclipse, XCode, vi/vim, XEmacs
+  - Intellij IDEA, Visual Studio Code, XCode, Eclipse, vi/vim, XEmacs
 - Build, Continuos Integration, Deployment, Quality Control
-  - NPM, Yarn, Maven, Nexus, Hudson/Jenkins, Docker, Puppet, Sonar, Gradle, Ant, GNU make
+  - NPM, Yarn, Maven, Gitlab, Nexus, Hudson/Jenkins, Puppet, Sonar, Gradle, Ant, GNU make
 - Versioning Tools
   - Git, Mercurial, Subversion 
 - Operating Systems

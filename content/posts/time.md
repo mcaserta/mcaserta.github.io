@@ -278,6 +278,7 @@ Here are a few useful links I've accumulated over time:
 * [Dall'ora legale all'ora solare: i pro e contro del cambio orario e perché si parla di abolizione](https://youtu.be/Fu6AT5WLgJg)
 * [Deer-vehicle collisions spike when daylight saving time ends](https://www.sciencenews.org/article/deer-vehicle-collisions-daylight-saving-time)
 * [The Falling Dates](https://thedailywtf.com/articles/the-falling-dates)
+* [Scientists Don’t Want to Count Leap Seconds, so They’re Going Away](https://www.howtogeek.com/850114/scientists-don%E2%80%99t-want-to-count-leap-seconds-so-they%E2%80%99re-going-away/)  
 
 
 ## Memes

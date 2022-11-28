@@ -7,7 +7,15 @@ toc: true
 
 ## Experience
 
-### Software Architect, Nexse Srl; Rome, IT — 2003-2018
+### Senior Developer, Alten Spa; Rome, IT - 2022-current
+
+Development of the backend infrastructure on AWS for Plick, a payment service by PayDo Spa. 
+
+### Senior Developer, Dedagroup Spa; Rome, IT - 2020-2021
+
+Development of the Inerzia application for Terna. Inerzia is the electrical power infrastructure web monitoring console. Near real time sensor data from the electrical infrastructure from Italy and nearby countries is ingested into the system for visualization on an admin console presenting different widget types.
+
+### Software Architect, Nexse Srl; Rome, IT — 2003-2019
 
 Established in 2000 by 5 shareholders, Nexse was employing more than a hundred IT professionals until it was acquired in 2018. In this company I’ve covered different roles: system administrator, teacher, senior developer and eventually software architect. 
 
@@ -32,7 +40,8 @@ A medium sized company with two offices in Rome, TPS gave me the opportunity to 
 
 IAL is a Regional Training Institute where I held courses on Multimedia Content Editing, Networking and the Internet. 
 
-### System Administrator, Flashnet Srl; Frosinone, IT — 1996-2000 
+### System Administrator, Flashnet Srl; Frosinone, IT — 1996-2000
+
 
 One of the first Internet Service Providers operating in Italy, Flashnet had a
 dial-up access node with hundreds of users in Frosinone. I operated the Unix

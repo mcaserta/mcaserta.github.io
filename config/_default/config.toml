@@ -164,6 +164,10 @@ disableHugoGeneratorInject = false
     name = "spotify"
     url  = "https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO"
 
+  [[params.social]]
+    name = "mastodon"
+    url  = "https://mastodon.online/@mcaserta"
+
 [languages]
   [languages.en]
     subtitle  = "Human Being"

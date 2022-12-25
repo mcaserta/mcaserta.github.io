@@ -54,11 +54,11 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   # 
-  description = "Human Being"
+  description = "Senior Developer"
   keywords = ""
   images = [""]
 
-  homeSubtitle = "Human Being"
+  homeSubtitle = "Senior Developer"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
@@ -77,7 +77,7 @@ disableHugoGeneratorInject = false
   # generate the buttons here: https://sharingbuttons.io
   # and add them into your own `layouts/partials/sharing-buttons.html`
   #
-  enableSharingButtons = true
+  enableSharingButtons = false
 
   # Integrate Javascript files or stylesheets by adding the url to the external assets or by
   # linking local files with their path relative to the static folder, e.g. "css/styles.css"
@@ -103,13 +103,13 @@ disableHugoGeneratorInject = false
     theme = "#1b1c1d"
 
   [params.logo]
-    logoMark     = ">"
+    logoMark     = "$"
     logoText     = "cd ~mcaserta"
     logoHomeLink = "/"
     # Set true to remove the logo cursor entirely.
     # logoCursorDisabled = false
     # Set to a valid CSS color to change the cursor in the logo.
-    # logoCursorColor    = "#67a2c9"
+    logoCursorColor    = "#38af40"
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
@@ -126,10 +126,10 @@ disableHugoGeneratorInject = false
 
   # Uncomment this if you want a portrait on your start page
   #
-  # [params.portrait]
-  #   path     = "/img/image.jpg"
-  #   alt      = "Portrait"
-  #   maxWidth = "50px"
+  [params.portrait]
+    path     = "/images/mirko.jpg"
+    alt      = "Portrait"
+    maxWidth = "150px"
 
   # Social icons
   [[params.social]]
@@ -170,7 +170,7 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    subtitle  = "Human Being"
+    subtitle  = "Senior Developer"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 

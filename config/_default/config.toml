@@ -180,6 +180,10 @@ disableHugoGeneratorInject = false
     name       = "About"
     url        = "about/"
   [[menu.main]]
+    identifier = "cv"
+    name       = "CV"
+    url        = "cv/"
+  [[menu.main]]
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"

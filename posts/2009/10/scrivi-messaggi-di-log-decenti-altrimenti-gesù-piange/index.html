@@ -13,25 +13,24 @@ framework di logging. Tuttavia, il mio consiglio è di usare un framework più
 moderno, come slf4j o logback. Logback è basato sull’api di slf4j ed è
 sufficiente dare un’occhiata agli esempi nella documentazione per essere
 produttivi nel giro di un quarto d’ora.</p><p>Vorrei evitare di spiegare i vantaggi di questi framework rispetto a log4j o
-java.util.logging perché credo l’argomento sia non solo abbondantemente
-trattato in letteratura ma anche facilmente foriero di guerre di religione. Le
-guerre di religione sono per definizione irrazionali nonché mortalmente
-noiose. Sei abbastanza intelligente da documentarti e decidere da solo.</p><p>Al di là di un eventuale framework e del linguaggio di programmazione usato, i
+java.util.logging perché credo l’argomento sia non solo abbondantemente trattato
+in letteratura ma anche facilmente foriero di guerre di religione. Le guerre di
+religione sono per definizione irrazionali nonché mortalmente noiose. Sei
+abbastanza intelligente da documentarti e decidere da solo.</p><p>Al di là di un eventuale framework e del linguaggio di programmazione usato, i
 messaggi di log sono essenziali sia in fase di test/debug che in fase di
-monitoring in produzione.</p><p>Il log è spesso sottovalutato e trattato come una
-seccatura che va espletata più per dovere che per una reale necessità.
-Tuttavia, ti posso assicurare che non c’è nulla di peggio che essere chiamati a
-risolvere un problema urgente in produzione e trovarsi davanti a un log
-incasinato.</p><p>Nessuno ti farà mai collegare col debugger in produzione. I log sono la tua
+monitoring in produzione.</p><p>Il log è spesso sottovalutato e trattato come una seccatura che va espletata più
+per dovere che per una reale necessità. Tuttavia, ti posso assicurare che non
+c’è nulla di peggio che essere chiamati a risolvere un problema urgente in
+produzione e trovarsi davanti a un log incasinato.</p><p>Nessuno ti farà mai collegare col debugger in produzione. I log sono la tua
 unica linea di difesa.</p><p>In particolare, nel momento in cui qualche migliaio di utenti è in procinto di
-spendere un mucchio di soldi sul sito del tuo cliente e l’applicazione è
-scritta da te e per qualche oscuro motivo la possibilità di tale ingente
-esborso dovesse essere negata agli utenti del suddetto sito, vorrai essere
-sicuro di avere la possibilità di capire velocemente cosa sta succedendo dietro
-le quinte. In casi simili, dire che a scrivere male nel log Gesù piange è al
-massimo un eufemismo neanche troppo colorito.</p><h1 id=garbage-in-garbage-out>Garbage in, garbage out</h1><p>Uno dei concetti elementari del software è quello di input/output. Conoscendo
-l’input e lo stato di tutte le variabili coinvolte nel processo di
-elaborazione, sai che puoi aspettarti un certo output.</p><p>Se l’output non è coerente con le aspettative, vorrà dire che analizzando il
+spendere un mucchio di soldi sul sito del tuo cliente e l’applicazione è scritta
+da te e per qualche oscuro motivo la possibilità di tale ingente esborso dovesse
+essere negata agli utenti del suddetto sito, vorrai essere sicuro di avere la
+possibilità di capire velocemente cosa sta succedendo dietro le quinte. In casi
+simili, dire che a scrivere male nel log Gesù piange è al massimo un eufemismo
+neanche troppo colorito.</p><h1 id=garbage-in-garbage-out>Garbage in, garbage out</h1><p>Uno dei concetti elementari del software è quello di input/output. Conoscendo
+l’input e lo stato di tutte le variabili coinvolte nel processo di elaborazione,
+sai che puoi aspettarti un certo output.</p><p>Se l’output non è coerente con le aspettative, vorrà dire che analizzando il
 contesto, l’input, il codice e lo stato delle variabili locali e globali
 coinvolte, dovresti riuscire a capire cosa non quadra.</p><p>Non è necessario tracciare nel log ogni cambiamento di stato di ogni variabile,
 specie se la funzione o il metodo sono sufficientemente complessi.</p><p>Esempio di log inutile:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> BuyResponse <span style=color:#a6e22e>buyItem</span><span style=color:#f92672>(</span>BuyRequest request<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
@@ -60,16 +59,16 @@ Occhio al copia e incolla!</p><h1 id=formattazione-coerente-e-senza-fronzoli>For
 log. Disattiva il <em>blocco maiuscole</em>, abbi pietà. Questo ti aiuterà nella fase
 di analisi ed eviterà che le tue applicazioni abbiano l’aspetto di una roba
 scritta da uno sbarbatello in visual basic.</p><h1 id=metti-i-messaggi-in-riga>Metti i messaggi in riga</h1><p>Per quanto possibile, evita di introdurre caratteri di a capo nei messaggi di
-log. Quando userai <code>grep</code> per andare alla ricerca dei messaggi, è importante
-che ad una singola riga di output corrisponda un messaggio coerente.</p><p>All’inizio, andare a capo sembra dare un aspetto migliore all’output ma col
+log. Quando userai <code>grep</code> per andare alla ricerca dei messaggi, è importante che
+ad una singola riga di output corrisponda un messaggio coerente.</p><p>All’inizio, andare a capo sembra dare un aspetto migliore all’output ma col
 tempo ti renderai conto che avresti fatto meglio a non farlo.</p><h1 id=occhio-al-copia-e-incolla>Occhio al copia e incolla</h1><p><img src=https://mirkocaserta.com/images/posts/blinking-alarm.gif alt="Allarme rosso"></p><p>Come già accennato, può capitare di fare copia e incolla di statement di log.</p><p>Ogni volta che faccio copia e incolla, mi si accende una speciale lampadina
 nella testa che serve a ricordarmi:</p><blockquote><p>controlla ciò che hai copiato almeno due volte perché sicuramente hai
 dimenticato di modificare qualcosa</p></blockquote><p>Questo vale più in generale e non solo per i messaggi di log. Se avessi un euro
-per ogni frammento di codice sbagliato per via di un copia e incolla
-frettoloso, in questo momento sarei sulla spiaggia di un’isola tropicale a
-sorseggiare cocktail attorniato da compiacenti signorine.</p><h1 id=eccezioni>Eccezioni</h1><p>Il log di un errore dovrebbe portarsi dietro l’istanza di eccezione catturata
-e, se possibile ed utile, un minimo di contesto. Spesso mi capita di vedere
-codice del tipo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>catch</span> <span style=color:#f92672>(</span>ConnectionException e<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
+per ogni frammento di codice sbagliato per via di un copia e incolla frettoloso,
+in questo momento sarei sulla spiaggia di un’isola tropicale a sorseggiare
+cocktail attorniato da compiacenti signorine.</p><h1 id=eccezioni>Eccezioni</h1><p>Il log di un errore dovrebbe portarsi dietro l’istanza di eccezione catturata e,
+se possibile ed utile, un minimo di contesto. Spesso mi capita di vedere codice
+del tipo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>catch</span> <span style=color:#f92672>(</span>ConnectionException e<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
 </span></span><span style=display:flex><span>    log<span style=color:#f92672>.</span><span style=color:#a6e22e>error</span><span style=color:#f92672>(</span><span style=color:#e6db74>&#34;Error: &#34;</span> <span style=color:#f92672>+</span> e<span style=color:#f92672>);</span>
 </span></span><span style=display:flex><span><span style=color:#f92672>}</span>
 </span></span></code></pre></div><p>Sarebbe meglio una cosa del genere:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>catch</span> <span style=color:#f92672>(</span>ConnectionException e<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>

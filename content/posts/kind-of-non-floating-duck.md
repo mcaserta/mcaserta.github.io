@@ -21,9 +21,9 @@ riscaldamento globale.»
 
 (a bassa voce): "Questo moo mettete nel terzo girone.»
 
-«Guarda che t'ho sentito, sa? Al terzo girone[^1] so'
-tutti amici miei. Come niente t'arrivo in finale e vinco ai rigori. Lo sai come
-siamo fatti noi italiani...»
+«Guarda che t'ho sentito, sa? Al terzo girone[^1] so' tutti amici miei. Come
+niente t'arrivo in finale e vinco ai rigori. Lo sai come siamo fatti noi
+italiani...»
 
 (a bassissima voce): «Chiamame 'n po' er canaro che c'ho un lavoretto per lui.»
 
@@ -50,8 +50,8 @@ roba pop...»
 
 «Signor Miles, ma tutto tutto? Pure Nino D'Angelo?»
 
-«A parte che a me Nino D'Angelo me piace, lo sanno tutti. Ma perché, se te
-paga, che fai, non ce vai?»
+«A parte che a me Nino D'Angelo me piace, lo sanno tutti. Ma perché, se te paga,
+che fai, non ce vai?»
 
 «A voja! Ma magari.»
 
@@ -77,8 +77,8 @@ proprio.»
 
 «Signor Miles, me sa che era meglio che non la disturbavo.»
 
-«Eh, ormai (...) Sai che c'è? Già che stai qua, vai un po' a trovà quel
-bassista un po' matto. Te fai dà 'na lezione.»
+«Eh, ormai (...) Sai che c'è? Già che stai qua, vai un po' a trovà quel bassista
+un po' matto. Te fai dà 'na lezione.»
 
 «Signor Miles, ma è vero che qua state sempre a fà jam session? A me dopo cena
 me viè l'abbiocco. Questi suonano fino all'alba, li mortacci loro.»

@@ -3,11 +3,11 @@ title: "🇺🇸 How to extract a filesystem from a disk image"
 date: 2009-04-18T17:10:00Z
 toc: true
 tags:
- - linux
- - unix
- - sysadm
+  - linux
+  - unix
+  - sysadm
 categories:
- - system administration
+  - system administration
 draft: false
 type: post
 ---
@@ -25,9 +25,9 @@ or
 # dd if=/dev/hda of=image-file
 ```
 
-The file backup you get will hold a copy of every single bit from the hard
-disk. This means that you also have a copy of the MBR in the first 512 bytes of
-the file.
+The file backup you get will hold a copy of every single bit from the hard disk.
+This means that you also have a copy of the MBR in the first 512 bytes of the
+file.
 
 Because of this, you can see the partition table on the backup file:
 
@@ -45,8 +45,8 @@ image-filep3 4267680 142253279 137985600 83 Linux
 image-filep4 0 - 0 0 Empty
 ```
 
-Suppose you want to extract partition number 3. You can see that it starts
-at block 4267680 and is 137985600 blocks long. This translates to:
+Suppose you want to extract partition number 3. You can see that it starts at
+block 4267680 and is 137985600 blocks long. This translates to:
 
 ```bash
 # dd if=image-file of=partition3-file skip=4267680 count=137985600
@@ -58,5 +58,5 @@ Peeking into the contents of the partition is as easy as:
 # mount -t ext3 -o loop partition3-file /mnt/hack
 ```
 
-Also, you can avoid using dd to extract the partition file by passing the `offset`
-option to mount.
+Also, you can avoid using dd to extract the partition file by passing the
+`offset` option to mount.

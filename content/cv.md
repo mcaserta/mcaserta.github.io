@@ -16,9 +16,9 @@ toc: true
 
 ### Senior Developer, Dedagroup Spa; Rome, IT — 2020-2021
 
-| Client | Pediod | Description                                                                                                                                                                                                                                                                   | Technologies                                  |
-| ------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Terna  | 2020   | Development of the electrical power infrastructure web monitoring console. Near real time sensor data from the electrical infrastructure from Italy and nearby countries is ingested into the system for visualization on an admin console presenting different widget types. | iot, java, oracle, spring boot, microservices |
+| Client | Pediod    | Description                                                                                                                                                                                                                                                                   | Technologies                                  |
+| ------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Terna  | 2020-2021 | Development of the electrical power infrastructure web monitoring console. Near real time sensor data from the electrical infrastructure from Italy and nearby countries is ingested into the system for visualization on an admin console presenting different widget types. | iot, java, oracle, spring boot, microservices |
 
 ### Software Architect, Nexse Srl; Rome, IT — 2003-2019
 

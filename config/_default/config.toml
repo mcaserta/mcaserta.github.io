@@ -168,6 +168,10 @@ disableHugoGeneratorInject = false
     name = "mastodon"
     url  = "https://mastodon.online/@mcaserta"
 
+  [[params.social]]
+    name = "keybase"
+    url  = "https://keybase.io/mcaserta"
+
 [languages]
   [languages.en]
     subtitle  = "Senior Developer"

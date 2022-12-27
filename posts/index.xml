@@ -335,8 +335,11 @@ It takes a while to load but what you are seeing above is a live emulation of th
 Once it&amp;rsquo;s loaded, the following commands are available through the keyboard:
 key use A amber mode B binary mode D dna mode F full charset mode (default) G green mode (default) H hex mode L lgbtq mode Q quit You can take a look at the source code in my C64 Playground repository on github and download the prg image for your retro emulation enjoyment.</description><content type="html"><![CDATA[
 
+
 <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
+
 <canvas  id="canvas" style="border: 0px none;"></canvas>
+
 <script type="text/javascript" >
 
     function loadFiles() {
@@ -357,10 +360,12 @@ key use A amber mode B binary mode D dna mode F full charset mode (default) G gr
 
 
 
-<p>After trying to implement the <a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">digital
-rain</a> algorithm in 6502
-assembly and <a href="https://mirkocaserta.com/posts/2021/05/the-matrix-screensaver-for-commodore-64/" title="failing miserably">failing miserably</a>,
-I decided to try the <a href="https://cc65.github.io/">cc65</a> toolkit and write some C code.</p>
+
+<p>After trying to implement the
+<a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">digital rain</a> algorithm in
+6502 assembly and <a href="https://mirkocaserta.com/posts/2021/05/the-matrix-screensaver-for-commodore-64/" title="failing
+miserably">failing miserably</a>, I decided to try the <a href="https://cc65.github.io/">cc65</a> toolkit and
+write some C code.</p>
 <p>It takes a while to load but what you are seeing above is a live emulation of
 the screensaver software.</p>
 <p>Once it&rsquo;s loaded, the following commands are available through the keyboard:</p>
@@ -406,9 +411,9 @@ the screensaver software.</p>
 </tr>
 </tbody>
 </table>
-<p>You can take a look at the source code in my <a href="https://github.com/mcaserta/c64-playground">C64
-Playground</a> repository on github
-and download the <a href="/c64/matrix.prg">prg image</a> for your retro emulation
+<p>You can take a look at the source code in my
+<a href="https://github.com/mcaserta/c64-playground">C64 Playground</a> repository on
+github and download the <a href="/c64/matrix.prg">prg image</a> for your retro emulation
 enjoyment.</p>
 <p>If you run the screensaver on the real thing and send me a video of it, you are
 my hero.</p>
@@ -423,7 +428,8 @@ my hero.</p>
 </div>
 
 <h2 id="update-20211029">Update 20211029</h2>
-<p>Here&rsquo;s another video of the software running on a real C64, courtesy my friend Marco.</p>
+<p>Here&rsquo;s another video of the software running on a real C64, courtesy my friend
+Marco.</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/O93npyzDnUU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Screensaver running on a real C64"></iframe>
@@ -434,8 +440,11 @@ It takes a while to load but what you are seeing above is a live emulation of my
 Once it&amp;rsquo;s loaded, the following commands are available through the keyboard:
 key use B binary display mode X hex display mode R random display mode (default) N increments border color M increments background color Q quit You can take a look at the source code in my C64 Playground repository on github and download the D64 image for your retro emulation enjoyment.</description><content type="html"><![CDATA[
 
+
 <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
+
 <canvas  id="canvas" style="border: 0px none;"></canvas>
+
 <script type="text/javascript" >
 
     function loadFiles() {
@@ -456,10 +465,11 @@ key use B binary display mode X hex display mode R random display mode (default)
 
 
 
+
 <p>I am trying to learn some 6502 assembly and this is the result of one of my
 first experiments.</p>
-<p>It takes a while to load but what you are seeing above is a live emulation of
-my screensaver software.</p>
+<p>It takes a while to load but what you are seeing above is a live emulation of my
+screensaver software.</p>
 <p>Once it&rsquo;s loaded, the following commands are available through the keyboard:</p>
 <table>
 <thead>
@@ -495,10 +505,10 @@ my screensaver software.</p>
 </tr>
 </tbody>
 </table>
-<p>You can take a look at the source code in my <a href="https://github.com/mcaserta/c64-playground">C64
-Playground</a> repository on github
-and download the <a href="/c64/the-matrix.d64">D64 image</a> for your retro emulation
-enjoyment.</p>
+<p>You can take a look at the source code in my
+<a href="https://github.com/mcaserta/c64-playground">C64 Playground</a> repository on
+github and download the <a href="/c64/the-matrix.d64">D64 image</a> for your retro
+emulation enjoyment.</p>
 <p>If you run the screensaver on the real thing and send me a video of it, you are
 my hero.</p>
 <p>Speaking of heroes, this was obviously heavily inspired by the
@@ -513,8 +523,8 @@ simbolo significato AQi indice di qualità dell&amp;rsquo;aria T temperatura del
 <h2 id="come-lanciare-il-programma">Come lanciare il programma</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mvn clean compile verify exec:java
 </span></span></code></pre></div><h2 id="prefazione">Prefazione</h2>
-<p>Supponiamo di voler calcolare un <em>indice di qualità dell&rsquo;aria</em> basato
-su due valori:</p>
+<p>Supponiamo di voler calcolare un <em>indice di qualità dell&rsquo;aria</em> basato su due
+valori:</p>
 <ul>
 <li>temperatura dell&rsquo;aria</li>
 <li>percentuale di monossido di carbonio nell&rsquo;aria</li>
@@ -550,16 +560,15 @@ su due valori:</p>
 <!-- raw HTML omitted -->
 <p><img src="/images/posts/air-quality-formula.png" alt="formula della qualità dell&amp;rsquo;aria"></p>
 <p><strong>DISCLAIMER:</strong> questa formula non è in alcun modo scientifica ed è da
-intendersi esclusivamente a scopo educativo. Non voglio che
-ambientalisti e veri scienziati mi vengano a cercare a casa con formule
-matematiche e accuse di stregoneria. E poi ho visto una scusa per una
-fantastica equazione in LaTeX e ne ho approfittato, per motivi estetici
-e perché mi fa sembrare intelligente, cosa che certamente non
-sono<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+intendersi esclusivamente a scopo educativo. Non voglio che ambientalisti e veri
+scienziati mi vengano a cercare a casa con formule matematiche e accuse di
+stregoneria. E poi ho visto una scusa per una fantastica equazione in LaTeX e ne
+ho approfittato, per motivi estetici e perché mi fa sembrare intelligente, cosa
+che certamente non sono<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <p>Ciò che la formula prova a esprimere è che al salire di temperatura e
-percentuale di monossido di carbonio, la qualità dell&rsquo;aria decresce.
-Sì, tutto ciò è totalmente anti-scientifico ma vedrete che ha senso ai
-fini della mia argomentazione.</p>
+percentuale di monossido di carbonio, la qualità dell&rsquo;aria decresce. Sì, tutto
+ciò è totalmente anti-scientifico ma vedrete che ha senso ai fini della mia
+argomentazione.</p>
 <p>Assumiamo una temperatura massima di 40C°. Quindi, ad esempio:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ bc -l
 </span></span><span style="display:flex;"><span>bc 1.06
@@ -580,8 +589,7 @@ fini della mia argomentazione.</p>
 </span></span><span style="display:flex;"><span>15.00000000000000000000
 </span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>10; c<span style="color:#f92672">=</span>0.5; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
 </span></span><span style="display:flex;"><span>12.75000000000000000000
-</span></span></code></pre></div><p>Da questo possiamo derivare la seguente tabella totalmente
-anti-scientifica:</p>
+</span></span></code></pre></div><p>Da questo possiamo derivare la seguente tabella totalmente anti-scientifica:</p>
 <table>
 <thead>
 <tr>
@@ -591,47 +599,47 @@ anti-scientifica:</p>
 </thead>
 <tbody>
 <tr>
-<td>da   125  a ∞</td>
+<td>da 125 a ∞</td>
 <td>morte orribile</td>
 </tr>
 <tr>
-<td>da   100  a 125</td>
+<td>da 100 a 125</td>
 <td>morte dolorosa</td>
 </tr>
 <tr>
-<td>da    75  a 100</td>
+<td>da 75 a 100</td>
 <td>morte</td>
 </tr>
 <tr>
-<td>da    55  a 75</td>
+<td>da 55 a 75</td>
 <td>è accettabile<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
 </tr>
 <tr>
-<td>da    30  a 55</td>
+<td>da 30 a 55</td>
 <td>va bene così<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
 </tr>
 <tr>
-<td>da    15  a 30</td>
+<td>da 15 a 30</td>
 <td>si sta bene</td>
 </tr>
 <tr>
-<td>da 12.75  a 15</td>
+<td>da 12.75 a 15</td>
 <td>freschetto</td>
 </tr>
 <tr>
-<td>da    -∞  a 12.75</td>
+<td>da -∞ a 12.75</td>
 <td>benvenuto a Yakutsk, probabilmente</td>
 </tr>
 </tbody>
 </table>
 <h2 id="service-provider">Service provider</h2>
-<p>Supponiamo di avere dei servizi internet che espongano dati di
-monitoring riguardo temperatura e livelli di monossido di carbonio.
-Questi servizi potrebbero esporre un&rsquo;api che ci dà una serie di dati di
-tipo time series<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>Supponiamo di avere dei servizi internet che espongano dati di monitoring
+riguardo temperatura e livelli di monossido di carbonio. Questi servizi
+potrebbero esporre un&rsquo;api che ci dà una serie di dati di tipo time
+series<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>Quindi, ad esempio, potremmo chiamare un servizio di monitoring della
-temperatura, e il servizio ci risponderebbe con una serie di dati time
-series come questi:</p>
+temperatura, e il servizio ci risponderebbe con una serie di dati time series
+come questi:</p>
 <table>
 <thead>
 <tr>
@@ -670,8 +678,8 @@ series come questi:</p>
 </tr>
 </tbody>
 </table>
-<p>Un servizio di monitoring della percentuale di monossido di carbonio
-potrebbe invece rispondere con dati simili:</p>
+<p>Un servizio di monitoring della percentuale di monossido di carbonio potrebbe
+invece rispondere con dati simili:</p>
 <table>
 <thead>
 <tr>
@@ -702,15 +710,14 @@ potrebbe invece rispondere con dati simili:</p>
 </tr>
 </tbody>
 </table>
-<p>Ti prego di notare che ho ordinato i dati per timestamp in modo da
-renderli un po&rsquo; più leggibili, ma non dovresti fare assunzioni sul tipo
-di ordinamento dei dati tornati da un provider esterno. Non che ciò sia
-di alcuna importanza perché&hellip;</p>
+<p>Ti prego di notare che ho ordinato i dati per timestamp in modo da renderli un
+po&rsquo; più leggibili, ma non dovresti fare assunzioni sul tipo di ordinamento dei
+dati tornati da un provider esterno. Non che ciò sia di alcuna importanza
+perché&hellip;</p>
 <h1 id="lalgoritmo">L&rsquo;algoritmo</h1>
 <p>&hellip;il nostro algoritmo ora richiede di:</p>
 <ol>
-<li>concatenare i dati di temperatura e percentuale di monossido di
-carbonio</li>
+<li>concatenare i dati di temperatura e percentuale di monossido di carbonio</li>
 <li>ordinare per timestamp</li>
 </ol>
 <table>
@@ -800,18 +807,17 @@ carbonio</li>
 <blockquote>
 <p>tipo: T sta per temperatura e C per percentuale di monossido di carbonio</p>
 </blockquote>
-<p>Il nostro compito ora è di scandire i dati, cominciando dall&rsquo;inizio,
-una riga alla volta, computando l&rsquo;indice di qualità dell&rsquo;aria man mano
-che andiamo avanti, un passo per volta.</p>
-<p>La prima cosa da notare qui è che per calcolare la formula del nostro
-<code>AQi</code>, abbiamo bisogno di avere entrambi i valori per <code>T</code> e <code>C</code>. In
-altre parole, il primo punto in cui possiamo applicare la nostra
-formula è quello con id <code>2</code>, dal momento che abbiamo un valore per <code>T</code>
-nell&rsquo;id <code>1</code> e un valore per <code>C</code> nell&rsquo;id <code>2</code>. Quindi prendiamo i nostri
-valori (<code>10.1</code> per <code>T</code> e <code>2.0</code> per <code>C</code>), applichiamo la formula, ed
-abbiamo un primo valore per <code>AQi</code> di <code>13.625</code> che associamo con il
-timestamp nell&rsquo;id <code>2</code>, poiché quello è il momento cui si riferisce la
-nostra computazione. La nostra prima entry di <code>AQi</code> nella serie
+<p>Il nostro compito ora è di scandire i dati, cominciando dall&rsquo;inizio, una riga
+alla volta, computando l&rsquo;indice di qualità dell&rsquo;aria man mano che andiamo
+avanti, un passo per volta.</p>
+<p>La prima cosa da notare qui è che per calcolare la formula del nostro <code>AQi</code>,
+abbiamo bisogno di avere entrambi i valori per <code>T</code> e <code>C</code>. In altre parole, il
+primo punto in cui possiamo applicare la nostra formula è quello con id <code>2</code>, dal
+momento che abbiamo un valore per <code>T</code> nell&rsquo;id <code>1</code> e un valore per <code>C</code> nell&rsquo;id
+<code>2</code>. Quindi prendiamo i nostri valori (<code>10.1</code> per <code>T</code> e <code>2.0</code> per <code>C</code>),
+applichiamo la formula, ed abbiamo un primo valore per <code>AQi</code> di <code>13.625</code> che
+associamo con il timestamp nell&rsquo;id <code>2</code>, poiché quello è il momento cui si
+riferisce la nostra computazione. La nostra prima entry di <code>AQi</code> nella serie
 risultante deve essere così:</p>
 <table>
 <thead>
@@ -827,9 +833,9 @@ risultante deve essere così:</p>
 </tr>
 </tbody>
 </table>
-<p>D&rsquo;ora in poi, la nostra formula può essere applicata per ogni elemento
-rimanente nella serie, tenendo presente che dobbiamo correlare ogni
-valore con il valore più recente dell&rsquo;altro tipo.  In altre parole:</p>
+<p>D&rsquo;ora in poi, la nostra formula può essere applicata per ogni elemento rimanente
+nella serie, tenendo presente che dobbiamo correlare ogni valore con il valore
+più recente dell&rsquo;altro tipo. In altre parole:</p>
 <table>
 <thead>
 <tr>
@@ -884,11 +890,10 @@ valore con il valore più recente dell&rsquo;altro tipo.  In altre parole:</p>
 </tr>
 </tbody>
 </table>
-<p>Puoi pensare a questo tipo di movimento come a una <a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time
-window</a>
-poiché hai una finestra che si muove nel tempo focalizzandosi sui dati
-più recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad ogni
-passo<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<p>Puoi pensare a questo tipo di movimento come a una
+<a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time window</a>
+poiché hai una finestra che si muove nel tempo focalizzandosi sui dati più
+recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad ogni passo<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <h2 id="rolling-time-window">Rolling Time Window</h2>
 <p>Vai avanti, scrolla in basso. Dovresti vederla.</p>
 <pre tabindex="0"><code>/===================================================================================\
@@ -898,7 +903,7 @@ passo<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
 |  T | 10.1 |     | 10.3 |     | 10.7 | 10.9 |     | 11.0 | 11.1 |     |     | 11.3 |
 |  C |      | 2.0 |      | 2.3 |      |      | 2.8 |      |      | 2.9 | 3.3 |      |
-     |&lt;----------&gt;|                                                                
+     |&lt;----------&gt;|
 
 
 /===================================================================================\
@@ -1045,33 +1050,29 @@ passo<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5
 </tr>
 </tbody>
 </table>
-<p>Se hai guardato attentamente, potresti aver notato che abbiamo un paio
-di timestamp duplicati nei risultati, nello specifico
-<code>2021-01-20T08:02:00Z</code> e <code>2021-01-20T08:06:00Z</code>. Questi rappresentano
-un paradosso temporale poiché sembra che il nostro <code>AQi</code> abbia due
-diversi valori allo stesso istante.</p>
+<p>Se hai guardato attentamente, potresti aver notato che abbiamo un paio di
+timestamp duplicati nei risultati, nello specifico <code>2021-01-20T08:02:00Z</code> e
+<code>2021-01-20T08:06:00Z</code>. Questi rappresentano un paradosso temporale poiché
+sembra che il nostro <code>AQi</code> abbia due diversi valori allo stesso istante.</p>
 <p><img src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing"></p>
-<p>Entrambi sappiamo che questi dati finiranno su una pagina web. Non
-vorrai certo che uno di quegli sviluppatori hipster del frontend ci
-faccia notare una mancanza di logica o, peggio, una inconsistenza nei
-nostri dati, vero?</p>
-<p>Ne ero certo. Dunque, la mia idea è che possiamo tranquillamente
-scartare la prima entry di un timestamp duplicato poiché si riferisce a
-un calcolo con dati vecchi. Perché? Be&rsquo;, considera i valori del primo
-timestamp duplicato: <code>2021-01-20T08:02:00Z</code>. La prima volta che abbiamo
-calcolato l&rsquo;<code>AQi</code>, abbiamo preso i dati dagli id <code>2</code> e <code>3</code> e l&rsquo;id <code>2</code>
-si riferisce a un timestamp precedente, nello specifico
-<code>2021-01-20T08:01:00Z</code>. La seconda volta che abbiamo calcolato l&rsquo;<code>AQi</code>,
-abbiamo usato i dati dagli id <code>3</code> and <code>4</code>, che si riferiscono entrambi
-al timestamp <code>2021-01-20T08:02:00Z</code>, quindi il risultato di questa
-computazione è più rilevante del precedente per il quale abbiamo
-prodotto lo stesso timestamp di <code>2021-01-20T08:02:00Z</code>.</p>
-<p>La stessa cosa si applica all&rsquo;<code>AQi</code> con timestamp
-<code>2021-01-20T08:06:00Z</code> poiché la prima computazione stava usando gli id
-<code>4</code> e <code>6</code> mentre la seconda stava considerando gli id <code>6</code> e <code>7</code> che
-sono più freschi del timestamp nell&rsquo;id <code>4</code>.</p>
-<p>Quindi cancelliamo un paio di righe e il risultato pulito dovrebbe
-essere questo:</p>
+<p>Entrambi sappiamo che questi dati finiranno su una pagina web. Non vorrai certo
+che uno di quegli sviluppatori hipster del frontend ci faccia notare una
+mancanza di logica o, peggio, una inconsistenza nei nostri dati, vero?</p>
+<p>Ne ero certo. Dunque, la mia idea è che possiamo tranquillamente scartare la
+prima entry di un timestamp duplicato poiché si riferisce a un calcolo con dati
+vecchi. Perché? Be&rsquo;, considera i valori del primo timestamp duplicato:
+<code>2021-01-20T08:02:00Z</code>. La prima volta che abbiamo calcolato l&rsquo;<code>AQi</code>, abbiamo
+preso i dati dagli id <code>2</code> e <code>3</code> e l&rsquo;id <code>2</code> si riferisce a un timestamp
+precedente, nello specifico <code>2021-01-20T08:01:00Z</code>. La seconda volta che abbiamo
+calcolato l&rsquo;<code>AQi</code>, abbiamo usato i dati dagli id <code>3</code> and <code>4</code>, che si riferiscono
+entrambi al timestamp <code>2021-01-20T08:02:00Z</code>, quindi il risultato di questa
+computazione è più rilevante del precedente per il quale abbiamo prodotto lo
+stesso timestamp di <code>2021-01-20T08:02:00Z</code>.</p>
+<p>La stessa cosa si applica all&rsquo;<code>AQi</code> con timestamp <code>2021-01-20T08:06:00Z</code> poiché
+la prima computazione stava usando gli id <code>4</code> e <code>6</code> mentre la seconda stava
+considerando gli id <code>6</code> e <code>7</code> che sono più freschi del timestamp nell&rsquo;id <code>4</code>.</p>
+<p>Quindi cancelliamo un paio di righe e il risultato pulito dovrebbe essere
+questo:</p>
 <table>
 <thead>
 <tr>
@@ -1119,13 +1120,12 @@ essere questo:</p>
 </tbody>
 </table>
 <p>Proprio come un&rsquo;equazione è un&rsquo;ottima scusa per rispolverare un po&rsquo; di
-<a href="https://www.latex-project.org/">LaTeX</a>, una buona serie di dati
-temporali è un eccellente candidato per
-<a href="http://www.gnuplot.info/">gnuplot</a>.</p>
+<a href="https://www.latex-project.org/">LaTeX</a>, una buona serie di dati temporali è un
+eccellente candidato per <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
 <p><img src="/images/posts/plot-output.png" alt="plot dei dati fin qui"></p>
-<p>I dati nel mondo reale sono naturalmente molto più caotici di così e
-potresti voler normalizzare il risultato usando un intervallo temporale
-arbitrario, ad esempio un minuto:</p>
+<p>I dati nel mondo reale sono naturalmente molto più caotici di così e potresti
+voler normalizzare il risultato usando un intervallo temporale arbitrario, ad
+esempio un minuto:</p>
 <table>
 <thead>
 <tr>
@@ -1176,44 +1176,41 @@ arbitrario, ad esempio un minuto:</p>
 <p>Ha senso? Spero proprio di sì.</p>
 <p><img src="/images/posts/yes.gif" alt="sì"></p>
 <h2 id="scriviamo-il-codice">Scriviamo il codice</h2>
-<p>Scriviamo un po&rsquo; di codice. Prima di tutto, definiamo un&rsquo;interfaccia
-per il nostro calcolatore di <code>AQi</code>, così che poi possiamo fornirne
-diverse implementazioni.</p>
+<p>Scriviamo un po&rsquo; di codice. Prima di tutto, definiamo un&rsquo;interfaccia per il
+nostro calcolatore di <code>AQi</code>, così che poi possiamo fornirne diverse
+implementazioni.</p>
 <p>Il codice di questa interfaccia può essere visto
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java">qui</a>.</p>
-<p>L&rsquo;interfaccia è un posto conveniente dove implementare la formula
-dell&rsquo;<code>AQi</code>:</p>
+<p>L&rsquo;interfaccia è un posto conveniente dove implementare la formula dell&rsquo;<code>AQi</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> temperature<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> carbonMonoxidePercentage<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(((</span>temperature <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> carbonMonoxidePercentage<span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>Questo metodo prende una temperatura, una percentuale di monossido di
-carbonio, una temperatura massima e torna l&rsquo;<code>AQi</code>. Bene.</p>
+</span></span></code></pre></div><p>Questo metodo prende una temperatura, una percentuale di monossido di carbonio,
+una temperatura massima e torna l&rsquo;<code>AQi</code>. Bene.</p>
 <p>La parte interessante però è in questo metodo:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>Questo ci dice che il metodo <code>calculate</code> prende due liste di
-<code>TimeValue</code>: la prima è una lista di temperature e l&rsquo;altra è una lista
-di percentuali di monossido di carbonio. Quindi ritorna una lista di
-<code>TimeValue</code>, solo che questa volta la lista rappresenta gli indici di
-qualità dell&rsquo;aria.</p>
+</span></span></code></pre></div><p>Questo ci dice che il metodo <code>calculate</code> prende due liste di <code>TimeValue</code>: la
+prima è una lista di temperature e l&rsquo;altra è una lista di percentuali di
+monossido di carbonio. Quindi ritorna una lista di <code>TimeValue</code>, solo che questa
+volta la lista rappresenta gli indici di qualità dell&rsquo;aria.</p>
 <p>Cos&rsquo;è un <code>TimeValue</code>? Possiamo vedere la sua definizione
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/c5b4574a40be0a818aba1513aaef7cc9d2a41d2b/src/main/java/com/mirkocaserta/example/TimeValue.java#L7">qui</a>.
-Nonostante tutto ciò sembri orribilmente complicato per via della
-verbosità del linguaggio Java e alcuni dettagli di implementazione,
-puoi pensare a un <code>TimeValue</code> come un modo comodo di rappresentare un
-<code>Instant</code> nel tempo ed il suo valore associato. Niente di ché, davvero.</p>
+Nonostante tutto ciò sembri orribilmente complicato per via della verbosità del
+linguaggio Java e alcuni dettagli di implementazione, puoi pensare a un
+<code>TimeValue</code> come un modo comodo di rappresentare un <code>Instant</code> nel tempo ed il
+suo valore associato. Niente di ché, davvero.</p>
 <h2 id="scrivere-codice-come-fosse-il-1984">Scrivere codice come fosse il 1984</h2>
-<p>Ora che abbiamo un semplice framework per i nostri calcoli, scriviamo
-una prima implementazione usando uno stile <em>vecchia scuola</em>. Il codice
-completo è
+<p>Ora che abbiamo un semplice framework per i nostri calcoli, scriviamo una prima
+implementazione usando uno stile <em>vecchia scuola</em>. Il codice completo è
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java">qui</a>.
 Diamogli un&rsquo;occhiata.</p>
-<p>Il nostro calcolatore prende la temperatura massima nel costruttore e
-ne immagazina il valore nella costante d&rsquo;istanza <code>maxTemperature</code>
-poiché ci servirà dopo quando invocheremo la funzione per l&rsquo;<code>AQi</code>.</p>
+<p>Il nostro calcolatore prende la temperatura massima nel costruttore e ne
+immagazina il valore nella costante d&rsquo;istanza <code>maxTemperature</code> poiché ci servirà
+dopo quando invocheremo la funzione per l&rsquo;<code>AQi</code>.</p>
 <p>Il nostro metodo <code>calculate</code> deve iniziare con questi due step:</p>
 <ol>
-<li>concatenare i dati di temperatura e percentuale di monossido di
-carbonio in una singola struttura dati</li>
+<li>concatenare i dati di temperatura e percentuale di monossido di carbonio in
+una singola struttura dati</li>
 <li>ordinare il risultato per timestamp</li>
 </ol>
 <p>Il primo passo è implementato in questo blocco di codice:</p>
@@ -1228,11 +1225,10 @@ carbonio in una singola struttura dati</li>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>TimeValue carbonMonoxidePercentage <span style="color:#f92672">:</span> carbonMonoxidePercentages<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>carbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">ts</span><span style="color:#f92672">()),</span> carbonMonoxidePercentage<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>La chiave nella nostra variabile <code>timeValuesByType</code> è una
-concatenazione in stringa della lettera <code>T</code> per temperatura o <code>C</code> per
-percentuale di monossido di carbonio, seguita dal timestamp. Dobbiamo
-fare ciò per poter poi distinguere tra i due tipi di dato più avanti.
-Le stringhe nella chiave avranno questo aspetto:
+</span></span></code></pre></div><p>La chiave nella nostra variabile <code>timeValuesByType</code> è una concatenazione in
+stringa della lettera <code>T</code> per temperatura o <code>C</code> per percentuale di monossido di
+carbonio, seguita dal timestamp. Dobbiamo fare ciò per poter poi distinguere tra
+i due tipi di dato più avanti. Le stringhe nella chiave avranno questo aspetto:
 <code>T2021-02-03T08:00:00.000Z</code>.</p>
 <p>L&rsquo;ordinamento è realizzato in questo blocco:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> timeValuesByTypeSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedHashMap<span style="color:#f92672">&lt;&gt;();</span>
@@ -1242,57 +1238,53 @@ Le stringhe nella chiave avranno questo aspetto:
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>String key <span style="color:#f92672">:</span> keysSortedByTimestamp<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">));</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>Questo è solo il modo supercomplicato di Java per ordinare la nostra
-mappa in base al timestamp che abbiamo nei valori della mappa stessa.
-Dichiariamo una mappa <code>timeValuesByTypeSortedByTimestamp</code>, implementata
-da una <code>LinkedHashMap</code> poiché vogliamo preservare l&rsquo;ordine di
-iterazione delle entry della mappa.  Poi inglobiamo tutte le chiavi
-della nostra mappa originaria <code>timeValuesByType</code> in un ArrayList dato
-che abbiamo bisogno di una <code>List</code> per poterci invocare <code>sort</code>.  La
-funzione di comparazione che passiamo a <code>sort</code> pesca il timestamp
-dell&rsquo;entry relativa nella mappa originale che abbiamo chiamato
-<code>timeValuesByType</code>.  Quindi iteriamo <code>keysSortedByTimestamp</code>,
-aggiungendo entry alla nostra mappa
+</span></span></code></pre></div><p>Questo è solo il modo supercomplicato di Java per ordinare la nostra mappa in
+base al timestamp che abbiamo nei valori della mappa stessa. Dichiariamo una
+mappa <code>timeValuesByTypeSortedByTimestamp</code>, implementata da una <code>LinkedHashMap</code>
+poiché vogliamo preservare l&rsquo;ordine di iterazione delle entry della mappa. Poi
+inglobiamo tutte le chiavi della nostra mappa originaria <code>timeValuesByType</code> in
+un ArrayList dato che abbiamo bisogno di una <code>List</code> per poterci invocare <code>sort</code>.
+La funzione di comparazione che passiamo a <code>sort</code> pesca il timestamp dell&rsquo;entry
+relativa nella mappa originale che abbiamo chiamato <code>timeValuesByType</code>. Quindi
+iteriamo <code>keysSortedByTimestamp</code>, aggiungendo entry alla nostra mappa
 <code>timeValuesByTypeSortedByTimestamp</code>.</p>
-<p>Ora dichiariamo una mappa per i risultati dei nostri calcoli dell&rsquo;<code>AQi</code>
-e un paio di variabili che ci serviranno dopo:</p>
+<p>Ora dichiariamo una mappa per i risultati dei nostri calcoli dell&rsquo;<code>AQi</code> e un
+paio di variabili che ci serviranno dopo:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
 </span></span><span style="display:flex;"><span>TimeValue lastTemperature <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-</span></span></code></pre></div><p>Qui inizia la parte divertente. Cicliamo attraverso le entry della
-mappa nella nostra variabile <code>timeValuesByTypeSortedByTimestamp</code>
-precedentemente definita.</p>
+</span></span></code></pre></div><p>Qui inizia la parte divertente. Cicliamo attraverso le entry della mappa nella
+nostra variabile <code>timeValuesByTypeSortedByTimestamp</code> precedentemente definita.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Map<span style="color:#f92672">.</span><span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> entry <span style="color:#f92672">:</span> timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">entrySet</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
-</span></span></code></pre></div><p>Sappiamo che se la chiave inizia con una <code>T</code>, abbiamo un valore di
-temperatura e, in tal caso lo immagazziniamo nella variabile
-<code>lastTemperature</code>. Altrimenti, il valore deve essere di tipo <code>C</code> per
-carbonio, e quindi facciamo la stessa cosa per la variabile
-<code>lastCarbonMonoxidePercentage</code>.</p>
+</span></span></code></pre></div><p>Sappiamo che se la chiave inizia con una <code>T</code>, abbiamo un valore di temperatura
+e, in tal caso lo immagazziniamo nella variabile <code>lastTemperature</code>. Altrimenti,
+il valore deve essere di tipo <code>C</code> per carbonio, e quindi facciamo la stessa cosa
+per la variabile <code>lastCarbonMonoxidePercentage</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;T&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    lastTemperature <span style="color:#f92672">=</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>A questo punto, se abbiamo un valore sia per <code>T</code> che per <code>C</code>, possiamo
-procedere a calcolare il nostro <code>AQi</code> e memorizzare il suo valore nella
-variabile <code>airQualityIndexMap</code>.</p>
+</span></span></code></pre></div><p>A questo punto, se abbiamo un valore sia per <code>T</code> che per <code>C</code>, possiamo procedere
+a calcolare il nostro <code>AQi</code> e memorizzare il suo valore nella variabile
+<code>airQualityIndexMap</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>        mostRecent<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">()),</span>
 </span></span><span style="display:flex;"><span>        airQualityIndex<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> maxTemperature<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>Stiamo prendendo il timestamp più recente tra i due <code>TimeValue</code> usando
-una funzioncina di aiuto che abbiamo definito precedentemente
-nell&rsquo;interfaccia del calcolatore.</p>
-<p>Un effetto collaterale desiderato dell&rsquo;usare una mappa per questa
-struttura dati è che, quando inseriamo un nuovo valore per un timestamp
-esistente, la entry viene sovrascritta dal più recente. Questo risolve
-il nostro problema dei timestamp duplicati.</p>
-<p>Alla fine del ciclo, i nostri risultati sono quasi pronti. Dobbiamo
-solo ordinarli di nuovo per timestamp e ritornare i valori come una
-<code>List</code> di <code>TimeValue</code>.</p>
+</span></span></code></pre></div><p>Stiamo prendendo il timestamp più recente tra i due <code>TimeValue</code> usando una
+funzioncina di aiuto che abbiamo definito precedentemente nell&rsquo;interfaccia del
+calcolatore.</p>
+<p>Un effetto collaterale desiderato dell&rsquo;usare una mappa per questa struttura dati
+è che, quando inseriamo un nuovo valore per un timestamp esistente, la entry
+viene sovrascritta dal più recente. Questo risolve il nostro problema dei
+timestamp duplicati.</p>
+<p>Alla fine del ciclo, i nostri risultati sono quasi pronti. Dobbiamo solo
+ordinarli di nuovo per timestamp e ritornare i valori come una <code>List</code> di
+<code>TimeValue</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">&gt;</span> keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">keySet</span><span style="color:#f92672">());</span>
 </span></span><span style="display:flex;"><span>keys<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>Instant<span style="color:#f92672">::</span>compareTo<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> results <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
@@ -1301,11 +1293,11 @@ solo ordinarli di nuovo per timestamp e ritornare i valori come una
 </span></span><span style="display:flex;"><span>    results<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>TimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">)));</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h2 id="eleganza-funzionale">Eleganza funzionale</h2>
-<p>Possiamo fare meglio di così? Certo. Usiamo un&rsquo;arma elegante per tempi
-più civilizzati: la programmazione funzionale. Il nostro
+<p>Possiamo fare meglio di così? Certo. Usiamo un&rsquo;arma elegante per tempi più
+civilizzati: la programmazione funzionale. Il nostro
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/FunctionalAirQualityIndexCalculator.java">FunctionalAirQualityIndexCalculator</a>
-è ridotto quasi all&rsquo;osso, ma solo perché la logica principale dietro i
-calcoli ora si trova
+è ridotto quasi all&rsquo;osso, ma solo perché la logica principale dietro i calcoli
+ora si trova
 nell&rsquo;<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java">AirQualityIndexCollector</a>.</p>
 <p>Il nostro calcolatore è molto più semplice ora. La prima parte è un po'
 convoluta quindi guardiamola per prima:</p>
@@ -1316,49 +1308,49 @@ convoluta quindi guardiamola per prima:</p>
 </span></span></code></pre></div><p>Ci sono diversi pattern funzionali al lavoro qui:</p>
 <ul>
 <li>
-<p>i dati di temperatura e percentuale di monossido di carbonio sono
-trasmessi e mappati in un contenitore in modo da poter poi capire se
-il dato che stiamo guardando è di tipo <code>T</code> o <code>C</code></p>
+<p>i dati di temperatura e percentuale di monossido di carbonio sono trasmessi e
+mappati in un contenitore in modo da poter poi capire se il dato che stiamo
+guardando è di tipo <code>T</code> o <code>C</code></p>
 </li>
 <li>
 <p>i due stream risultanti sono concatenati usando <code>Stream.concat</code></p>
 </li>
 <li>
-<p>alla fine collezioniamo lo stream concatenato in una
-<code>List&lt;TypedTimeValue&gt;</code> non modificabile</p>
+<p>alla fine collezioniamo lo stream concatenato in una <code>List&lt;TypedTimeValue&gt;</code>
+non modificabile</p>
 </li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> timeSeries<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">parallel</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>AirQualityIndexCollector<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">(</span>maxTemperature<span style="color:#f92672">));</span>
-</span></span></code></pre></div><p>La variabile <code>timeSeries</code> è quindi trasmessa in parallelo in un
-collettore che fa il lavoro sporco e ritorna una <code>List&lt;TimeValue&gt;</code> non
-modificabile con gli indici di qualità dell&rsquo;aria.</p>
+</span></span></code></pre></div><p>La variabile <code>timeSeries</code> è quindi trasmessa in parallelo in un collettore che
+fa il lavoro sporco e ritorna una <code>List&lt;TimeValue&gt;</code> non modificabile con gli
+indici di qualità dell&rsquo;aria.</p>
 <p>Diamo un&rsquo;occhiata al collettore.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AirQualityIndexCollector</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">implements</span> Collector<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">,</span> Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
-</span></span></code></pre></div><p>Stiamo implementando l&rsquo;interfaccia <code>Collector</code>. I parametri di tipo che
-stiamo fornendo esprimono tre cose:</p>
+</span></span></code></pre></div><p>Stiamo implementando l&rsquo;interfaccia <code>Collector</code>. I parametri di tipo che stiamo
+fornendo esprimono tre cose:</p>
 <ul>
 <li>stiamo collezionando valori di tipo <code>TypedTimeValue</code></li>
 <li>il nostro accumulatore interno usa una <code>Queue&lt;TypedTimeValue&gt;</code></li>
-<li>alla fine del lavoro, ritorniamo una  <code>List&lt;TimeValue&gt;</code></li>
+<li>alla fine del lavoro, ritorniamo una <code>List&lt;TimeValue&gt;</code></li>
 </ul>
-<p>Una <code>Queue</code> è solo una <code>List</code> thread safe. Ne forniamo
-l&rsquo;implementazione usando il metodo <code>supplier</code>:</p>
+<p>Una <code>Queue</code> è solo una <code>List</code> thread safe. Ne forniamo l&rsquo;implementazione usando
+il metodo <code>supplier</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Supplier<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">supplier</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ConcurrentLinkedQueue<span style="color:#f92672">::</span><span style="color:#66d9ef">new</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>In questo caso, l&rsquo;implementazione è una <code>ConcurrentLinkedQueue</code> che, di
-nuovo, è solo una specie di <code>ArrayList</code> thread safe.</p>
+</span></span></code></pre></div><p>In questo caso, l&rsquo;implementazione è una <code>ConcurrentLinkedQueue</code> che, di nuovo, è
+solo una specie di <code>ArrayList</code> thread safe.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BiConsumer<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> TypedTimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">accumulator</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Queue<span style="color:#f92672">::</span>add<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>L&rsquo;accumulatore deve tornare una funzione che il collettore usa per
-accumulare i dati in input. Come puoi vedere, torniamo semplicemente un
-riferimento al metodo <code>add</code> di <code>Queue</code>.</p>
+</span></span></code></pre></div><p>L&rsquo;accumulatore deve tornare una funzione che il collettore usa per accumulare i
+dati in input. Come puoi vedere, torniamo semplicemente un riferimento al metodo
+<code>add</code> di <code>Queue</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BinaryOperator<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">combiner</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>typedTimeValues<span style="color:#f92672">,</span> typedTimeValues2<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
@@ -1366,22 +1358,21 @@ riferimento al metodo <code>add</code> di <code>Queue</code>.</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> typedTimeValues<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">};</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>Il metodo <code>combiner</code> deve tornare una funzione che combina due
-accumulatori.  L&rsquo;implementazione deve prendere tutti gli elementi del
-secondo accumulatore ed aggiungerli al primo, che non suona molto
-funzionale in termini di immutabilità ma in questo caso è un
-comportamento atteso, ed è totalmente ok.</p>
+</span></span></code></pre></div><p>Il metodo <code>combiner</code> deve tornare una funzione che combina due accumulatori.
+L&rsquo;implementazione deve prendere tutti gli elementi del secondo accumulatore ed
+aggiungerli al primo, che non suona molto funzionale in termini di immutabilità
+ma in questo caso è un comportamento atteso, ed è totalmente ok.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
-</span></span></code></pre></div><p>Infine, il <code>finisher</code> deve tornare una funzione che prende tutti i
-valori accumulati nella nostra <code>Queue&lt;TypedTimeValue&gt;</code> e torna una
-<code>List&lt;TimeValue&gt;</code> con i nostri indici di qualità dell&rsquo;aria.</p>
+</span></span></code></pre></div><p>Infine, il <code>finisher</code> deve tornare una funzione che prende tutti i valori
+accumulati nella nostra <code>Queue&lt;TypedTimeValue&gt;</code> e torna una <code>List&lt;TimeValue&gt;</code>
+con i nostri indici di qualità dell&rsquo;aria.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span></code></pre></div><p>Questa è una mappa che serve a collezionare gli indici di qualità
-dell&rsquo;aria.  Come puoi vedere è indicizzata per timestamp, così che non
-avremo entry duplicate quando calcoli più recenti per uno stesso
-timestamp saranno messe nella mappa rimpiazzando quelle vecchie.</p>
+</span></span></code></pre></div><p>Questa è una mappa che serve a collezionare gli indici di qualità dell&rsquo;aria.
+Come puoi vedere è indicizzata per timestamp, così che non avremo entry
+duplicate quando calcoli più recenti per uno stesso timestamp saranno messe
+nella mappa rimpiazzando quelle vecchie.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> accumulator <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>   accumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">::</span>timestamp<span style="color:#f92672">)</span>
@@ -1400,34 +1391,33 @@ timestamp saranno messe nella mappa rimpiazzando quelle vecchie.</p>
 </span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">());</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">};</span>
-</span></span></code></pre></div><p>Questo è un bel mappazzone di codice ma guardiamolo un po&rsquo; alla volta.
-Stiamo trasmettendo i dati accumulati, estraendo il timestamp,
-ordinando per questo e, per ogni timestamp, guardiamo ai dati di
-temperatura e percentuale di monossido di carbonio con il timestamp più
-vicino. <em>Più vicino</em> vuol dire che il timestamp che stiamo valutando
-deve essere precedente o uguale al timestamp in questione.</p>
-<p>Se abbiamo entrambi i dati (<code>T</code> e <code>C</code>), possiamo procedere al calcolo
-dell&rsquo;<code>AQi</code> e mettere il suo valore nella mappa <code>aqiAccumulator</code>.</p>
+</span></span></code></pre></div><p>Questo è un bel mappazzone di codice ma guardiamolo un po&rsquo; alla volta. Stiamo
+trasmettendo i dati accumulati, estraendo il timestamp, ordinando per questo e,
+per ogni timestamp, guardiamo ai dati di temperatura e percentuale di monossido
+di carbonio con il timestamp più vicino. <em>Più vicino</em> vuol dire che il timestamp
+che stiamo valutando deve essere precedente o uguale al timestamp in questione.</p>
+<p>Se abbiamo entrambi i dati (<code>T</code> e <code>C</code>), possiamo procedere al calcolo dell&rsquo;<code>AQi</code>
+e mettere il suo valore nella mappa <code>aqiAccumulator</code>.</p>
 <p>Infine, tutto quello che dobbiamo fare è prendere i valori nella mappa
 <code>aqiAccumulator</code>, ordinarli per timestamp e collezionarli in una
 <code>List&lt;TimeValue&gt;</code> non modificabile.</p>
-<p>L&rsquo;ordinamento è reso possibile dal fatto che la nostra classe
-<code>TimeValue</code> implementa <code>Comparable&lt;TimeValue&gt;</code>.</p>
-<p>Ci sono diversi punti nel metodo <code>finisher</code> in cui guardo dentro le
-strutture dati su cui sto iterando, il ché, di nuovo, non sembra molto
-kosher in termini di programmazione funzionale, ma è ok perché so che i
-dati che sto esaminando non sono suscettibili a modifiche dietro le
-quinte da parte di thread concorrenti.</p>
-<p>Questo calcolatore è migliore di quello <em>vecchia scuola</em>? Non ne sono
-sicuro.  Questa roba è ancora abbastanza verbosa, ma mi sembra più
-facile da leggere dal momento che molto del codice è scritto in uno
-stile dichiarativo invece che imperativo.</p>
+<p>L&rsquo;ordinamento è reso possibile dal fatto che la nostra classe <code>TimeValue</code>
+implementa <code>Comparable&lt;TimeValue&gt;</code>.</p>
+<p>Ci sono diversi punti nel metodo <code>finisher</code> in cui guardo dentro le strutture
+dati su cui sto iterando, il ché, di nuovo, non sembra molto kosher in termini
+di programmazione funzionale, ma è ok perché so che i dati che sto esaminando
+non sono suscettibili a modifiche dietro le quinte da parte di thread
+concorrenti.</p>
+<p>Questo calcolatore è migliore di quello <em>vecchia scuola</em>? Non ne sono sicuro.
+Questa roba è ancora abbastanza verbosa, ma mi sembra più facile da leggere dal
+momento che molto del codice è scritto in uno stile dichiarativo invece che
+imperativo.</p>
 <h2 id="considerazioni-sulla-concorrenza">Considerazioni sulla concorrenza</h2>
-<p>Siccome dobbiamo recuperare due diversi set di dati da due diversi
-provider (uno per i dati di temperatura e un altro per i dati di
-percentuale di monossido di carbonio), potremmo voler far girare i
-client in parallelo. Questo ha un vantaggio rispetto all&rsquo;esecuzione a
-singolo thread in cui dovresti serializzare le chiamate ai provider.</p>
+<p>Siccome dobbiamo recuperare due diversi set di dati da due diversi provider (uno
+per i dati di temperatura e un altro per i dati di percentuale di monossido di
+carbonio), potremmo voler far girare i client in parallelo. Questo ha un
+vantaggio rispetto all&rsquo;esecuzione a singolo thread in cui dovresti serializzare
+le chiamate ai provider.</p>
 <p>In un ambiente a singolo threaded, potresti scrivere:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider<span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider<span style="color:#f92672">();</span>
@@ -1435,21 +1425,20 @@ singolo thread in cui dovresti serializzare le chiamate ai provider.</p>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
 </span></span></code></pre></div><p>Questo si traduce nel seguente modello di esecuzione seriale:</p>
 <p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram per l&amp;rsquo;esecuzione seriale"></p>
-<p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente
-multithread, possiamo lanciare due client concorrenti e far partire il
-processamento dei dati appena abbiamo ricevuto risposta da entrambi.
-Questo ci risparmia un po&rsquo; di tempo e potenzialmente velocizza i nostri
-tempi di risposta.</p>
+<p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente multithread,
+possiamo lanciare due client concorrenti e far partire il processamento dei dati
+appena abbiamo ricevuto risposta da entrambi. Questo ci risparmia un po&rsquo; di
+tempo e potenzialmente velocizza i nostri tempi di risposta.</p>
 <p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram per l&amp;rsquo;esecuzione parallela"></p>
-<p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci
-sono diverse opzioni, ma la più popolare, e quella che personalmente
-preferisco, è usare i <code>CompletableFuture</code>, che sono stati introdotti in
-Java 8, se non ricordo male.</p>
-<p>Un <code>CompletableFuture</code> è un contenitoree per una computazione. Gli dai
-il codice che vuoi eseguire e il runtime di Java si preoccupa di farlo
-girare in concorrenza in uno scheduler multithread. Lo scheduler è
-ovviamente configurabile ma i default vanno bene per il nostro caso.
-Puoi vedere l&rsquo;esempio completo
+<p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci sono
+diverse opzioni, ma la più popolare, e quella che personalmente preferisco, è
+usare i <code>CompletableFuture</code>, che sono stati introdotti in Java 8, se non ricordo
+male.</p>
+<p>Un <code>CompletableFuture</code> è un contenitoree per una computazione. Gli dai il codice
+che vuoi eseguire e il runtime di Java si preoccupa di farlo girare in
+concorrenza in uno scheduler multithread. Lo scheduler è ovviamente
+configurabile ma i default vanno bene per il nostro caso. Puoi vedere l&rsquo;esempio
+completo
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java">qui</a>.</p>
 <p>Nel mio esempio ho dichiarato il mio <code>CompletableFuture</code> così:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(()</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
@@ -1458,34 +1447,31 @@ Puoi vedere l&rsquo;esempio completo
 </span></span><span style="display:flex;"><span>   log<span style="color:#f92672">(</span>String<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;provider 1 returned: %s\n&#34;</span><span style="color:#f92672">,</span> timeValues<span style="color:#f92672">));</span>
 </span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> timeValues<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">});</span>
-</span></span></code></pre></div><p>Questo è un po&rsquo; verboso poiché volevo includere dei log per mostrare
-come il codice gira in parallelo. Potrei benissimo aver scritto invece:</p>
+</span></span></code></pre></div><p>Questo è un po&rsquo; verboso poiché volevo includere dei log per mostrare come il
+codice gira in parallelo. Potrei benissimo aver scritto invece:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(</span>provider1<span style="color:#f92672">::</span>get<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>Questo è sempre verboso ma decisamente meglio di prima. Poiché la
-computazione nel nostro <code>CompletableFuture</code> ritorna una
-<code>List&lt;TimeValue&gt;</code>, il metodo <code>supplyAsync</code> ritorna un
-<code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, che è il modo di Java di dire che
-la variabile <code>timedValuesFuture1</code> è un <code>CompletableFuture</code> che contiene
-una <code>List&lt;TimeValue&gt;</code>. Ti prego di notare che il codice che stiamo
-passando al metodo <code>supplyAsync</code> è dentro una lambda. Questo significa
-che il nostro codice non viene eseguito nel metodo <code>supplyAsync</code> ma il
-runtime di Java è libero di scegliere il momento migliore per
-eseguirlo.  Lo scheduler di default generalmente farà partire i
-<code>CompletableFuture</code> appena definiti ma devi sapere che non è
-necessariamente così e che definire una lambda non vuol dire che questa
-sia eseguita nel punto in cui è dichiarata.</p>
+</span></span></code></pre></div><p>Questo è sempre verboso ma decisamente meglio di prima. Poiché la computazione
+nel nostro <code>CompletableFuture</code> ritorna una <code>List&lt;TimeValue&gt;</code>, il metodo
+<code>supplyAsync</code> ritorna un <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, che è il modo di
+Java di dire che la variabile <code>timedValuesFuture1</code> è un <code>CompletableFuture</code> che
+contiene una <code>List&lt;TimeValue&gt;</code>. Ti prego di notare che il codice che stiamo
+passando al metodo <code>supplyAsync</code> è dentro una lambda. Questo significa che il
+nostro codice non viene eseguito nel metodo <code>supplyAsync</code> ma il runtime di Java
+è libero di scegliere il momento migliore per eseguirlo. Lo scheduler di default
+generalmente farà partire i <code>CompletableFuture</code> appena definiti ma devi sapere
+che non è necessariamente così e che definire una lambda non vuol dire che
+questa sia eseguita nel punto in cui è dichiarata.</p>
 <p>Ora abbiamo bisogno di un modo per essere sicuro che i nostri
-<code>CompletableFuture</code> abbiano finito la loro esecuzione prima di poter
-procedere. Questo lo si fa componendo i future e chiamando il metodo
-<code>join</code> sul future risultante:</p>
+<code>CompletableFuture</code> abbiano finito la loro esecuzione prima di poter procedere.
+Questo lo si fa componendo i future e chiamando il metodo <code>join</code> sul future
+risultante:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">allOf</span><span style="color:#f92672">(</span>timedValuesFuture1<span style="color:#f92672">,</span> timedValuesFuture2<span style="color:#f92672">).</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
-</span></span></code></pre></div><p>Il metodo <code>allOf</code> ritorna un nuovo <code>CompletableFuture</code> che inscatola i
-future che gli stiamo passando.  Su questo nuovo future poi chiamiamo
-<code>join</code> che blocca l&rsquo;esecuzione fin quando tutti i future interni hanno
-finito il lavoro.</p>
-<p>Dopo questa linea siamo sicuri che i nostri thread sono stati eseguiti,
-quindi possiamo prendere i dati di cui abbiamo bisogno dai nostri
-future originali usando il metodo <code>join</code>:</p>
+</span></span></code></pre></div><p>Il metodo <code>allOf</code> ritorna un nuovo <code>CompletableFuture</code> che inscatola i future
+che gli stiamo passando. Su questo nuovo future poi chiamiamo <code>join</code> che blocca
+l&rsquo;esecuzione fin quando tutti i future interni hanno finito il lavoro.</p>
+<p>Dopo questa linea siamo sicuri che i nostri thread sono stati eseguiti, quindi
+possiamo prendere i dati di cui abbiamo bisogno dai nostri future originali
+usando il metodo <code>join</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues1 <span style="color:#f92672">=</span> timedValuesFuture1<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues2 <span style="color:#f92672">=</span> timedValuesFuture2<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
 </span></span></code></pre></div><h2 id="esempio-di-output">Esempio di output</h2>
@@ -1504,21 +1490,20 @@ future originali usando il metodo <code>join</code>:</p>
 <li>ForkJoinPool.commonPool-worker-3</li>
 <li>ForkJoinPool.commonPool-worker-5</li>
 </ol>
-<p>È interessante notare qui che, in questo specifico run,
-<code>allOf(...).join()</code> è stato chiamato molto prima che fosse chiamato il
-provider 2 e che entrambi i risultati fossero tornati dai provider.</p>
+<p>È interessante notare qui che, in questo specifico run, <code>allOf(...).join()</code> è
+stato chiamato molto prima che fosse chiamato il provider 2 e che entrambi i
+risultati fossero tornati dai provider.</p>
 <p>Il tuo output sarà certamente diverso poiché:</p>
 <ol>
 <li>l&rsquo;ordine di esecuzione dei thread è non deterministico</li>
 <li>i valori dei provider sono generati casualmente</li>
 </ol>
 <h2 id="conclusione">Conclusione</h2>
-<p>Ce l&rsquo;hai fatta! È stata una bella camminata. Spero sia stata
-divertente.  Ho speso un bel po&rsquo; di tempo su questa cosa quando stavo
-cercando di entrare più a fondo in alcuni aspetti che ho incontrato a
-lavoro. Ti suggerisco di fare lo stesso quando ti capitano problemi che
-hanno bisogno di approfondimenti. Spero tu abbia trovato tutto ciò
-utile.</p>
+<p>Ce l&rsquo;hai fatta! È stata una bella camminata. Spero sia stata divertente. Ho
+speso un bel po&rsquo; di tempo su questa cosa quando stavo cercando di entrare più a
+fondo in alcuni aspetti che ho incontrato a lavoro. Ti suggerisco di fare lo
+stesso quando ti capitano problemi che hanno bisogno di approfondimenti. Spero
+tu abbia trovato tutto ciò utile.</p>
 <h2 id="bonus">Bonus</h2>
 <p><img src="/images/posts/reading-memes-on-github.webp" alt="reading memes on github"></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
@@ -1535,16 +1520,15 @@ utile.</p>
 <p><img src="/images/posts/this-is-fine.webp" alt="this is fine meme">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
-<p>I time series data, anche conosciuti come time-stamped
-data, sono una sequenza di dati indicizzati in ordine di tempo.  Time-stamped
-sono dati collezionati in diversi momenti. Questi dati consistono tipicamente
-in misure successive fatta dalla stessa fonte in un intervallo di tempo e
-sono usati per tracciarne il cambiamento nel tempo.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>I time series data, anche conosciuti come time-stamped data, sono una
+sequenza di dati indicizzati in ordine di tempo. Time-stamped sono dati
+collezionati in diversi momenti. Questi dati consistono tipicamente in
+misure successive fatta dalla stessa fonte in un intervallo di tempo e sono
+usati per tracciarne il cambiamento nel tempo.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p>Mi piace pensare a questo movimento come a una specie di danza, e la
-trovo sexy. Penso che <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsquo;m a
-weirdo</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Mi piace pensare a questo movimento come a una specie di danza, e la trovo
+sexy. Penso che <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -1596,8 +1580,7 @@ symbol meaning AQi air quality index T air temperature in Celsius degrees Tm max
 intended for educational purposes only. I don&rsquo;t want environmentalists and real
 scientists chasing me around with math formulas and accusations of quackery.
 Also, I saw a chance for a pretty LaTeX equation and I took it, because
-aesthetics&hellip; and it makes me look smart, which I certainly am
-not<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+aesthetics&hellip; and it makes me look smart, which I certainly am not<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <p>What the formula attempts to say is that as the temperature and the carbon
 monoxide percentage rise, the air quality decreases. Yeah, this is totally
 unscientific but bear with me for the sake of argumentation, please.</p>
@@ -1666,8 +1649,8 @@ unscientific but bear with me for the sake of argumentation, please.</p>
 </table>
 <h2 id="service-providers">Service providers</h2>
 <p>Suppose we have internet services that expose temperature and carbon monoxide
-level monitoring values.  These services might expose an api that gives us
-time series data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+level monitoring values. These services might expose an api that gives us time
+series data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>So, for instance, we might call a temperature monitoring service, and it would
 respond with time series data like this:</p>
 <table>
@@ -1836,14 +1819,14 @@ returned by an external provider. Not that this is of any importance here as&hel
 <blockquote>
 <p>type: T is temperature and C is carbon monoxide percentage</p>
 </blockquote>
-<p>Our task now is to scan the data, starting from the beginning, one row at a time,
-computing the air quality index as we go forward, step by step.</p>
-<p>The first thing to note here is that to compute our <code>AQi</code> formula we need to have
-both values for <code>T</code> and <code>C</code>. In other words, the first time point where we can
-apply our formula is that with id <code>2</code> as we have a value for <code>T</code> in id <code>1</code> and
-a value for <code>C</code> in id <code>2</code>. So we take our values (<code>10.1</code> for <code>T</code> and <code>2.0</code> for
-<code>C</code>), apply the formula, and we have a first <code>AQi</code> value of <code>13.625</code> which we
-associate with the timestamp in id <code>2</code>, as that is the moment our computation
+<p>Our task now is to scan the data, starting from the beginning, one row at a
+time, computing the air quality index as we go forward, step by step.</p>
+<p>The first thing to note here is that to compute our <code>AQi</code> formula we need to
+have both values for <code>T</code> and <code>C</code>. In other words, the first time point where we
+can apply our formula is that with id <code>2</code> as we have a value for <code>T</code> in id <code>1</code>
+and a value for <code>C</code> in id <code>2</code>. So we take our values (<code>10.1</code> for <code>T</code> and <code>2.0</code>
+for <code>C</code>), apply the formula, and we have a first <code>AQi</code> value of <code>13.625</code> which
+we associate with the timestamp in id <code>2</code>, as that is the moment our computation
 refers to. Our first <code>AQi</code> entry in the resulting time series should now look
 like this:</p>
 <table>
@@ -1919,9 +1902,8 @@ recent value of the other type. In other words:</p>
 </table>
 <p>You can think of this kind of motion as a
 <a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time window</a>
-as you have a window that moves forward in time focusing on the most
-recent data for our specific <code>T</code> and <code>C</code> measures at each
-step<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+as you have a window that moves forward in time focusing on the most recent data
+for our specific <code>T</code> and <code>C</code> measures at each step<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
 <h2 id="rolling-time-window">Rolling Time Window</h2>
 <p>Go ahead, scroll down. You&rsquo;re going to see it.</p>
 <pre tabindex="0"><code>/===================================================================================\
@@ -1931,7 +1913,7 @@ step<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5<
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
 |  T | 10.1 |     | 10.3 |     | 10.7 | 10.9 |     | 11.0 | 11.1 |     |     | 11.3 |
 |  C |      | 2.0 |      | 2.3 |      |      | 2.8 |      |      | 2.9 | 3.3 |      |
-     |&lt;----------&gt;|                                                                
+     |&lt;----------&gt;|
 
 
 /===================================================================================\
@@ -2078,23 +2060,23 @@ step<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5<
 </tr>
 </tbody>
 </table>
-<p>If you&rsquo;ve looked closely, you might have noticed that we have a couple
-duplicate timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
+<p>If you&rsquo;ve looked closely, you might have noticed that we have a couple duplicate
+timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
 <code>2021-01-20T08:06:00Z</code>. These represent a time paradox as it appears that our
 <code>AQi</code> has two different values at the same time.</p>
 <p><img src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing"></p>
-<p>We both know this data is eventually going to show up on a web page.  Also, we
-wouldn&rsquo;t want one of those hipster javascript frontend developers to point out
-a lack of logic or, worse, an inconsistency in our data to us, wouldn&rsquo;t we?</p>
-<p>Yeah, I thought so. So, my idea is that we can safely discard the first entry
-of a duplicate timestamp as it refers to a calculation with stale data. Why?
-Well, consider the values for the first duplicate timestamp:
-<code>2021-01-20T08:02:00Z</code>. The first time we computed the <code>AQi</code>, we picked data
-from id <code>2</code> and <code>3</code> and id <code>2</code> refers to a previous timestamp, specifically
-<code>2021-01-20T08:01:00Z</code>. The second time we computed the <code>AQi</code>, we were using
-data from id <code>3</code> and <code>4</code>, which both refer to timestamp <code>2021-01-20T08:02:00Z</code>,
-so this computation&rsquo;s result is more relevant than the previous one which we
-stamped with the same <code>2021-01-20T08:02:00Z</code> timestamp.</p>
+<p>We both know this data is eventually going to show up on a web page. Also, we
+wouldn&rsquo;t want one of those hipster javascript frontend developers to point out a
+lack of logic or, worse, an inconsistency in our data to us, wouldn&rsquo;t we?</p>
+<p>Yeah, I thought so. So, my idea is that we can safely discard the first entry of
+a duplicate timestamp as it refers to a calculation with stale data. Why? Well,
+consider the values for the first duplicate timestamp: <code>2021-01-20T08:02:00Z</code>.
+The first time we computed the <code>AQi</code>, we picked data from id <code>2</code> and <code>3</code> and id
+<code>2</code> refers to a previous timestamp, specifically <code>2021-01-20T08:01:00Z</code>. The
+second time we computed the <code>AQi</code>, we were using data from id <code>3</code> and <code>4</code>, which
+both refer to timestamp <code>2021-01-20T08:02:00Z</code>, so this computation&rsquo;s result is
+more relevant than the previous one which we stamped with the same
+<code>2021-01-20T08:02:00Z</code> timestamp.</p>
 <p>The same thing applies to the <code>AQi</code> entry with timestamp <code>2021-01-20T08:06:00Z</code>
 as the first computation was using ids <code>4</code> and <code>6</code> while the second was
 considering ids <code>6</code> and <code>7</code> which are fresher than the timestamp in id <code>4</code>.</p>
@@ -2146,8 +2128,8 @@ considering ids <code>6</code> and <code>7</code> which are fresher than the tim
 </tbody>
 </table>
 <p>Just as an equation is an excuse to brush up on some
-<a href="https://www.latex-project.org/">LaTeX</a>, a good time
-series is an excellent candidate for <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
+<a href="https://www.latex-project.org/">LaTeX</a>, a good time series is an excellent
+candidate for <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
 <p><img src="/images/posts/plot-output.png" alt="plot of the data so far"></p>
 <p>Real data is of course much more chaotic than this, and you might want to
 normalize the result by an arbitrary time interval, say one minute:</p>
@@ -2209,32 +2191,32 @@ calculator, so we can provide different implementations later on.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> temperature<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> carbonMonoxidePercentage<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(((</span>temperature <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> carbonMonoxidePercentage<span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>This method takes a temperature, a carbon monoxide percentage, a max
-temperature and returns the <code>AQi</code>. Nice.</p>
+</span></span></code></pre></div><p>This method takes a temperature, a carbon monoxide percentage, a max temperature
+and returns the <code>AQi</code>. Nice.</p>
 <p>The interesting bit however is this method:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>This says that the <code>calculate</code> method takes two lists of <code>TimeValue</code>s: the
-first is a list of temperatures and the other is a list of carbon monoxide
+</span></span></code></pre></div><p>This says that the <code>calculate</code> method takes two lists of <code>TimeValue</code>s: the first
+is a list of temperatures and the other is a list of carbon monoxide
 percentages. It then returns a list of <code>TimeValue</code>s, only this time the list is
 representing air quality indices.</p>
 <p>What is a <code>TimeValue</code>? You can see its definition
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/c5b4574a40be0a818aba1513aaef7cc9d2a41d2b/src/main/java/com/mirkocaserta/example/TimeValue.java#L7">here</a>.
 Although this seems horribly complicated due to the verbosity of the Java
-language and a few implementation details, you can think of a time value as
-just a convenient way to represent an <code>Instant</code> in time and its associated
-<code>value</code>. Nothing fancy, really.</p>
+language and a few implementation details, you can think of a time value as just
+a convenient way to represent an <code>Instant</code> in time and its associated <code>value</code>.
+Nothing fancy, really.</p>
 <h2 id="coding-like-its-1984">Coding like it&rsquo;s 1984</h2>
 <p>Now that we have a basic framework for our calculations, let&rsquo;s write a first
 implementation using the old school style. The complete code for this is
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java">here</a>.
 Let&rsquo;s take a look.</p>
-<p>Our calculator takes the max temperature in its constructor and stores its
-value in the <code>maxTemperature</code> instance constant as we&rsquo;ll need its value later
-when invoking the <code>AQi</code> function.</p>
+<p>Our calculator takes the max temperature in its constructor and stores its value
+in the <code>maxTemperature</code> instance constant as we&rsquo;ll need its value later when
+invoking the <code>AQi</code> function.</p>
 <p>Our <code>calculate</code> method should start with these two steps:</p>
 <ol>
-<li>concatenate the temperature and carbon monoxide percentage
-data in a single data structure</li>
+<li>concatenate the temperature and carbon monoxide percentage data in a single
+data structure</li>
 <li>sort the resulting data by timestamp</li>
 </ol>
 <p>Step 1 is implemented by this code:</p>
@@ -2265,12 +2247,12 @@ types of values. The key string will look like this:
 </span></span></code></pre></div><p>This is just overcomplicated Java lingo for having our map sorted by the
 timestamp we have in the Java map values. We declare a
 <code>timeValuesByTypeSortedByTimestamp</code> map, implemented by a <code>LinkedHashMap</code>
-because we want to preserve the iteration order of the map entries. Then we
-wrap all the keys in our original <code>timeValuesByType</code> map in an ArrayList as we
-need a <code>List</code> in order to then invoke <code>sort</code> on it. The comparator function we
-are passing to sort is picking the timestamp of the relative entry in the
-original <code>timeValuesByType</code> map. We then iterate <code>keysSortedByTimestamp</code>,
-adding entries to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p>
+because we want to preserve the iteration order of the map entries. Then we wrap
+all the keys in our original <code>timeValuesByType</code> map in an ArrayList as we need a
+<code>List</code> in order to then invoke <code>sort</code> on it. The comparator function we are
+passing to sort is picking the timestamp of the relative entry in the original
+<code>timeValuesByType</code> map. We then iterate <code>keysSortedByTimestamp</code>, adding entries
+to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p>
 <p>Now we are declaring a map for the results of our <code>AQi</code> calculations and a
 couple variables we&rsquo;ll need later:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
@@ -2281,7 +2263,7 @@ defined <code>timeValuesByTypeSortedByTimestamp</code> variable.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Map<span style="color:#f92672">.</span><span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> entry <span style="color:#f92672">:</span> timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">entrySet</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
 </span></span></code></pre></div><p>We know that if the key begins with a <code>T</code>, we have a temperature value and, in
-such case we store it in the <code>lastTemperature</code> variable.  Otherwise, the value
+such case we store it in the <code>lastTemperature</code> variable. Otherwise, the value
 must be of type <code>C</code> for carbon, so we do the same for the
 <code>lastCarbonMonoxidePercentage</code> variable.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;T&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
@@ -2378,10 +2360,9 @@ accumulate the input data. As you can see, we simply return a reference to the
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">};</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>The combiner method must return a function that combines two accumulators. The
-implementation should pick all elements from the second accumulator and add
-them to the first one, which doesn&rsquo;t sound very functional in terms of
-immutability but in this case mutation is an expected behavior, and it&rsquo;s
-totally fine.</p>
+implementation should pick all elements from the second accumulator and add them
+to the first one, which doesn&rsquo;t sound very functional in terms of immutability
+but in this case mutation is an expected behavior, and it&rsquo;s totally fine.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
@@ -2389,7 +2370,7 @@ totally fine.</p>
 values in our <code>Queue&lt;TypedTimeValue&gt;</code> and return a <code>List&lt;TimeValue&gt;</code> with our
 air quality indices.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span></code></pre></div><p>This is a map that is going to collect all the air quality indices.  As you can
+</span></span></code></pre></div><p>This is a map that is going to collect all the air quality indices. As you can
 see, it&rsquo;s indexed by a timestamp, so we won&rsquo;t get duplicate entries as more
 recent calculations for the same timestamps are put into the map replacing the
 stale ones.</p>
@@ -2411,11 +2392,11 @@ stale ones.</p>
 </span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">());</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">};</span>
-</span></span></code></pre></div><p>This is quite a mouthful but let&rsquo;s go through it bit by bit.  We are streaming
+</span></span></code></pre></div><p>This is quite a mouthful but let&rsquo;s go through it bit by bit. We are streaming
 the accumulated data, extracting the timestamp, sorting by it and, for each
 timestamp we look for the temperature and carbon monoxide percentage data with
-the closest timestamp.  <em>Closest</em> means that the timestamp we&rsquo;re evaluating
-must be before of or equal to the timestamp in question.</p>
+the closest timestamp. <em>Closest</em> means that the timestamp we&rsquo;re evaluating must
+be before of or equal to the timestamp in question.</p>
 <p>If we have both data (<code>T</code> and <code>C</code>), we can proceed to calculate the <code>AQi</code> and
 put its value into the <code>aqiAccumulator</code> map.</p>
 <p>In the end, all we have to do is to stream the values in the <code>aqiAccumulator</code>
@@ -2423,18 +2404,18 @@ map, sort by timestamp and collect them in an unmodifiable <code>List&lt;TimeVal
 <p>Sorting like this is possible since we made our <code>TimeValue</code> class implement
 <code>Comparable&lt;TimeValue&gt;</code>.</p>
 <p>There are several points in the <code>finisher</code> method where I look into the
-datastructures I&rsquo;m iterating on, which, again, doesn&rsquo;t look very kosher in
-terms of functional programming, but it&rsquo;s okay as I know that the data I&rsquo;m
-examining isn&rsquo;t being changed by a concurrent thread under the hood.</p>
-<p>Is this better than our old school calculator? I&rsquo;m not sure.  This is still
-quite verbose, but to me it seems easier to read as most of the code is
-expressed in a declarative style rather than an imperative one.</p>
+datastructures I&rsquo;m iterating on, which, again, doesn&rsquo;t look very kosher in terms
+of functional programming, but it&rsquo;s okay as I know that the data I&rsquo;m examining
+isn&rsquo;t being changed by a concurrent thread under the hood.</p>
+<p>Is this better than our old school calculator? I&rsquo;m not sure. This is still quite
+verbose, but to me it seems easier to read as most of the code is expressed in a
+declarative style rather than an imperative one.</p>
 <h2 id="concurrency-considerations">Concurrency considerations</h2>
 <p>As we need to retrieve two different sets of data from two different providers
-(one for temperature data and one for carbon monoxide percentage data), we
-might want to run the clients in parallel. This has an advantage over
-traditional single threaded execution where you would have to serialize the
-calls to the providers.</p>
+(one for temperature data and one for carbon monoxide percentage data), we might
+want to run the clients in parallel. This has an advantage over traditional
+single threaded execution where you would have to serialize the calls to the
+providers.</p>
 <p>In a single threaded environment, you might write code like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider<span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider<span style="color:#f92672">();</span>
@@ -2443,9 +2424,9 @@ calls to the providers.</p>
 </span></span></code></pre></div><p>This translates to the following serial execution model:</p>
 <p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram for serial execution"></p>
 <p>As we said, we can do better than this. In a multithreaded environment, we can
-spawn the two clients concurrently and start processing their data as soon as
-we receive a response from both. This saves us some time and potentially speeds
-up our overall response time.</p>
+spawn the two clients concurrently and start processing their data as soon as we
+receive a response from both. This saves us some time and potentially speeds up
+our overall response time.</p>
 <p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram for parallel execution"></p>
 <p>How do we implement this execution model in our code? There are several options
 but the most popular and the one I personally like the most is to use
@@ -2453,7 +2434,7 @@ but the most popular and the one I personally like the most is to use
 <p>A <code>CompletableFuture</code> is a container for a computation. You provide it the code
 you want to execute and the Java runtime takes care of running it concurrently
 in a threaded scheduler. The scheduler is of course customizable but the
-defaults are okay for our simple case here.  You can see the complete example
+defaults are okay for our simple case here. You can see the complete example
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java">here</a>.</p>
 <p>In my example I have declared my <code>CompletableFuture</code>s like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(()</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
@@ -2469,16 +2450,16 @@ code runs in parallel. I might as well have written:</p>
 our <code>CompletableFuture</code> returns a <code>List&lt;TimeValue&gt;</code>, the <code>supplyAsync</code> method
 returns a <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, which is Java&rsquo;s way of saying
 that the <code>timedValuesFuture1</code> variable is a <code>CompletableFuture</code> holding a
-<code>List&lt;TimeValue&gt;</code>. Please note that the code we are passing to the
-<code>supplyAsync</code> method is inside a lambda. What this means is that our code
-doesn&rsquo;t get executed in the <code>supplyAsync</code> method but the Java runtime is free
-to choose when it&rsquo;s the best time to run it. The default scheduler will
-generally start running your <code>CompletableFuture</code>s as soon as they are defined
-but you need to understand that this is not necessarily so and that defining a
-lambda doesn&rsquo;t mean it gets executed at the point of declaration.</p>
+<code>List&lt;TimeValue&gt;</code>. Please note that the code we are passing to the <code>supplyAsync</code>
+method is inside a lambda. What this means is that our code doesn&rsquo;t get executed
+in the <code>supplyAsync</code> method but the Java runtime is free to choose when it&rsquo;s the
+best time to run it. The default scheduler will generally start running your
+<code>CompletableFuture</code>s as soon as they are defined but you need to understand that
+this is not necessarily so and that defining a lambda doesn&rsquo;t mean it gets
+executed at the point of declaration.</p>
 <p>We now need a way to make sure our <code>CompletableFuture</code>s have completed their
-execution before going on. This is done by composing our futures and calling
-the <code>join</code> method on the resulting future:</p>
+execution before going on. This is done by composing our futures and calling the
+<code>join</code> method on the resulting future:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">allOf</span><span style="color:#f92672">(</span>timedValuesFuture1<span style="color:#f92672">,</span> timedValuesFuture2<span style="color:#f92672">).</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
 </span></span></code></pre></div><p>The <code>allOf</code> method returns a new <code>CompletableFuture</code> which wraps the futures
 we&rsquo;re passing to it. On this new future we then call <code>join</code> which blocks until
@@ -2512,10 +2493,10 @@ providers.</p>
 <li>the providers&rsquo; values are generated randomly</li>
 </ol>
 <h2 id="conclusion">Conclusion</h2>
-<p>You&rsquo;ve made it! This was quite the run. I hope it&rsquo;s been entertaining.  I spent
+<p>You&rsquo;ve made it! This was quite the run. I hope it&rsquo;s been entertaining. I spent
 quite a bit of time on this as I was trying to dig deeper into some issues I&rsquo;ve
-had at work. I suggest you do the same when you run into problems that need
-some clarification on your side. I also hope you found this useful.</p>
+had at work. I suggest you do the same when you run into problems that need some
+clarification on your side. I also hope you found this useful.</p>
 <h2 id="bonus">Bonus</h2>
 <p><img src="/images/posts/reading-memes-on-github.webp" alt="reading memes on github"></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
@@ -2523,8 +2504,7 @@ some clarification on your side. I also hope you found this useful.</p>
 <hr>
 <ol>
 <li id="fn:1">
-<p>this is my revenge for all the bad math grades at
-school.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>this is my revenge for all the bad math grades at school.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
 <p><img src="/images/posts/it-is-acceptable.jpg" alt="it is acceptable meme">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
@@ -2533,15 +2513,15 @@ school.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x
 <p><img src="/images/posts/this-is-fine.webp" alt="this is fine meme">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
-<p>Time series data, also referred to as
-time-stamped data, is a sequence of data points indexed in time order.
-Time-stamped is data collected at different points in time. These data points
-typically consist of successive measurements made from the same source over a
-time interval and are used to track change over time.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Time series data, also referred to as time-stamped data, is a sequence of
+data points indexed in time order. Time-stamped is data collected at
+different points in time. These data points typically consist of successive
+measurements made from the same source over a time interval and are used to
+track change over time.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:5">
-<p>I like to think of this movement as a kind of dance,
-and I find it sexy. I think <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>I like to think of this movement as a kind of dance, and I find it sexy. I
+think <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -2553,7 +2533,7 @@ più ovvio che consiste nella capacità di riconoscere i suoni, ma ha anche un
 aspetto attivo in cui il musicista improvvisa una frase ed è istantaneamente in
 grado di produrla sul proprio strumento.</p>
 <p>Ma di questo parleremo più avanti. Per ora torniamo al suono. Le sue
-caratteristiche sono: </p>
+caratteristiche sono:</p>
 <ul>
 <li>altezza</li>
 <li>durata</li>
@@ -2565,20 +2545,20 @@ l’aria circostante, arriva fino a noi. L&rsquo;orecchio esterno convoglia le
 vibrazioni nel canale uditivo dove il timpano inoltra questi movimenti
 all&rsquo;orecchio interno. Qui, la coclea, un complesso sistema meccanico/idraulico,
 attraverso le cellule ciliate, traduce le vibrazioni in impulsi nervosi che
-vengono infine interpretati dal cervello per generare la familiare sensazione
-di udito.</p>
+vengono infine interpretati dal cervello per generare la familiare sensazione di
+udito.</p>
 <p>Se entrassimo nei dettagli del processo uditivo ci imbatteremmo subito nella
 complessità e nei limiti conoscitivi dell’analisi scientifica. L’aspetto più
 affascinante e misterioso dell’udito rimane tuttavia il luogo del suo
 manifestarsi: la coscienza.</p>
-<p>Per noi esseri umani la coscienza è una cosa scontata. Ci svegliamo al mattino
-e ci ritroviamo immersi in un&rsquo;esperienza soggettiva in prima persona, come
-fossimo in un cinema 3D multimediale con audio surround. Ma dov&rsquo;è lo schermo su
-cui viene proiettata l&rsquo;immagine che abbiamo davanti ai nostri occhi? Dove si
-trova la voce interiore che in questo momento sta leggendo queste parole? Be&rsquo;,
-non lo sappiamo ancora.</p>
-<p>David Chalmers illustra molto bene il problema della coscienza in <a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">questo
-video</a>.
+<p>Per noi esseri umani la coscienza è una cosa scontata. Ci svegliamo al mattino e
+ci ritroviamo immersi in un&rsquo;esperienza soggettiva in prima persona, come fossimo
+in un cinema 3D multimediale con audio surround. Ma dov&rsquo;è lo schermo su cui
+viene proiettata l&rsquo;immagine che abbiamo davanti ai nostri occhi? Dove si trova
+la voce interiore che in questo momento sta leggendo queste parole? Be&rsquo;, non lo
+sappiamo ancora.</p>
+<p>David Chalmers illustra molto bene il problema della coscienza in
+<a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">questo video</a>.
 Naturalmente c&rsquo;è anche chi, come Massimo Pigliucci, considera quello della
 coscienza <a href="https://philpapers.org/archive/PIGWHP.pdf">un falso problema</a>. Per
 quanto si possa essere d&rsquo;accordo con Pigliucci, il problema non diventa meno
@@ -2604,20 +2584,20 @@ attiva i muscoli in un sobbalzo di spavento. Questo fenomeno ha a che fare con
 qualcosa di primitivo, istintivo, subcosciente e assimilabile a ciò che rende
 possibile al cuore di battere anche in assenza di uno stimolo apparente: una
 sorta di firmware che, in modo molto primitivo, entra in funzione ancora prima
-che il sistema operativo sia caricato rendendo disponibili tutte le
-funzionalità del computer.</p>
+che il sistema operativo sia caricato rendendo disponibili tutte le funzionalità
+del computer.</p>
 <p>Per restare nel campo dei computer, in informatica l’analisi di un suono
 richiede di scomodare un consistente numero di concetti matematici come le
 temibili trasformate di Fourier. Ma se ascoltiamo un musicista suonare in
-un’altra stanza, sappiamo subito che il <em>timbro</em> è di un pianoforte, che le
-mani del pianista si muovono a una certa <em>altezza</em> sulla tastiera, producendo
-un <em>volume</em> più o meno forte e con una certa <em>durata</em>. Tutto ciò avviene in una
+un’altra stanza, sappiamo subito che il <em>timbro</em> è di un pianoforte, che le mani
+del pianista si muovono a una certa <em>altezza</em> sulla tastiera, producendo un
+<em>volume</em> più o meno forte e con una certa <em>durata</em>. Tutto ciò avviene in una
 frazione di secondo e soprattutto senza importunare Fourier!</p>
 <p>Quando impariamo a guidare l’auto, dobbiamo prima prendere confidenza con
-diversi pedali, il cambio e il volante, ma dopo qualche mese di pratica
-possiamo tranquillamente cambiare le marce mentre stiamo parlando con il
-passeggero. Com’è possibile che un gesto che richiede intensi sforzi sensoriali
-e di coordinazione motoria diventi poi  naturale e automatico?</p>
+diversi pedali, il cambio e il volante, ma dopo qualche mese di pratica possiamo
+tranquillamente cambiare le marce mentre stiamo parlando con il passeggero.
+Com’è possibile che un gesto che richiede intensi sforzi sensoriali e di
+coordinazione motoria diventi poi  naturale e automatico?</p>
 <p>La scienza s&rsquo;è fatta una mezza idea al riguardo ma una cosa la sappiamo con
 assoluta certezza: tramite esercizi di difficoltà progressiva che insistono
 sulla parte cosciente, è possibile allenare la mente ad acquisire capacità
@@ -2657,35 +2637,34 @@ trascrizione di una sinfonia grazie al senso dell’udito.</p>
 <p>Sarei in grado di trascrivere la Nona di Beethoven dopo un solo ascolto?
 Sfortunatamente no. Il motivo è lo stesso per cui non è sufficiente un solo
 sguardo per identificare e memorizzare tutti i testi di tutti i volumi presenti
-in una biblioteca. Per un compito così impegnativo abbiamo bisogno di
-esercitare la memoria, il tempo a disposizione, la pazienza e l’educazione
-musicale: tutti elementi che, ahimè, siamo sempre meno motivati a frequentare.</p>
+in una biblioteca. Per un compito così impegnativo abbiamo bisogno di esercitare
+la memoria, il tempo a disposizione, la pazienza e l’educazione musicale: tutti
+elementi che, ahimè, siamo sempre meno motivati a frequentare.</p>
 <p>Quando localizziamo un libro in uno scaffale, lo preleviamo, lo leggiamo e ne
-acquisiamo i contenuti, nessuno verrà a batterci le mani perché abbiamo
-compiuto una azione avvolta da un’aura di mistero. Quasi tutti si affidano ad
-una scuola guida per imparare a guidare un mezzo a motore col cambio manuale ma
-nessuno ci fermerà nel traffico per congratularsi della nostra coordinazione
-psicomotoria. Eppure, per qualche assurdo motivo, pur basandosi sugli stessi
-meccanismi sensoriali e cognitivi, la capacità di riconoscere i suoni ci sembra
-rientrare nel campo della magia nera più che nelle possibilità ben conosciute e
+acquisiamo i contenuti, nessuno verrà a batterci le mani perché abbiamo compiuto
+una azione avvolta da un’aura di mistero. Quasi tutti si affidano ad una scuola
+guida per imparare a guidare un mezzo a motore col cambio manuale ma nessuno ci
+fermerà nel traffico per congratularsi della nostra coordinazione psicomotoria.
+Eppure, per qualche assurdo motivo, pur basandosi sugli stessi meccanismi
+sensoriali e cognitivi, la capacità di riconoscere i suoni ci sembra rientrare
+nel campo della magia nera più che nelle possibilità ben conosciute e
 consolidate di un’educazione progressiva.</p>
 <p>Certo, la vista e l’udito sono sensi differenti e probabilmente da un punto di
 vista evolutivo la vista ha goduto di un vantaggio innegabile: è molto più
 facile fuggire da un predatore avendolo visto a grande distanza che avendone
 ascoltato i passi quando ormai siamo diventati il suo spuntino. Questo
-spiegherebbe anche perché, già nel cenozoico, i musicisti non godevano di
-grande considerazione.</p>
-<p>No, scherzo: la musica è sempre stata un grande veicolo di aggregazione
-sociale, ben prima dei mega concerti di Vasco. Purtroppo non ci è dato sapere
-cosa suonassero gli australopitechi nelle notti stellate africane ma la scienza
-è abbastanza concorde sul fatto che gli accendini non fossero ancora stati
+spiegherebbe anche perché, già nel cenozoico, i musicisti non godevano di grande
+considerazione.</p>
+<p>No, scherzo: la musica è sempre stata un grande veicolo di aggregazione sociale,
+ben prima dei mega concerti di Vasco. Purtroppo non ci è dato sapere cosa
+suonassero gli australopitechi nelle notti stellate africane ma la scienza è
+abbastanza concorde sul fatto che gli accendini non fossero ancora stati
 inventati a quel tempo, privando così le ballate del loro irresistibile fascino
-romantico. Le droghe invece c&rsquo;erano già, anche se, in mancanza di accendini,
-per fumare una canna dovremo attendere tempi più illuminati ed una legislazione
+romantico. Le droghe invece c&rsquo;erano già, anche se, in mancanza di accendini, per
+fumare una canna dovremo attendere tempi più illuminati ed una legislazione
 antiproibizionista.</p>
 <p>Un altro aspetto interessante dei nostri sensi è la loro interdipendenza. In
-<a href="https://www.psychologytoday.com/us/blog/talking-apes/201511/hearing-our-eyes-seeing-our-ears">questo
-articolo</a>
+<a href="https://www.psychologytoday.com/us/blog/talking-apes/201511/hearing-our-eyes-seeing-our-ears">questo articolo</a>
 possiamo vedere un video in cui un cieco guida la bicicletta su strada usando
 l&rsquo;ecolocazione, dimostrando come l&rsquo;udito possa supplire alle funzionalità di
 orientamento cui noi più fortunati abbiamo accesso tramite la vista. Più sotto
@@ -2693,53 +2672,51 @@ viene illustrato il bizzarro effetto McGurk: a parità di suono emesso, il
 cervello percepisce due suoni distinti a seconda del labiale osservato: in
 questo caso la vista scavalca a piè pari l&rsquo;udito.</p>
 <p>Questa interdipendenza dei sensi nella musica è importante perché suonare uno
-strumento coinvolge anche il tatto e la vista. Un sassofonista non può vedere
-lo strumento durante la performance ma avrà una visualizzazione mentale della
+strumento coinvolge anche il tatto e la vista. Un sassofonista non può vedere lo
+strumento durante la performance ma avrà una visualizzazione mentale della
 diteggiatura, dell&rsquo;emissione di aria e della sensazione tattile sia delle dita
 sui tasti che della pressione esercitata dal labbro inferiore sull&rsquo;ancia.
-Passando da uno sax all&rsquo;altro, il musicista ha bisogno di abituarsi alle
-piccole differenze di posizione dei tasti e alla loro corsa dissimile. Nulla
-che un po&rsquo; di esercizio non possa risolvere, ma lo smarrimento iniziale è
-dovuto alla sensazione tattile poco familiare. Tutt&rsquo;altro discorso è il cambio
-di imboccatura. Togliete ad un sassofonista la sua imboccatura abituale ed
-avrete una persona in preda all&rsquo;angoscia cosmica.</p>
+Passando da uno sax all&rsquo;altro, il musicista ha bisogno di abituarsi alle piccole
+differenze di posizione dei tasti e alla loro corsa dissimile. Nulla che un po'
+di esercizio non possa risolvere, ma lo smarrimento iniziale è dovuto alla
+sensazione tattile poco familiare. Tutt&rsquo;altro discorso è il cambio di
+imboccatura. Togliete ad un sassofonista la sua imboccatura abituale ed avrete
+una persona in preda all&rsquo;angoscia cosmica.</p>
 <p>Dal punto di vista dell&rsquo;educazione musicale il pianoforte è senz&rsquo;altro lo
 strumento ideale perché la tastiera rende disponibile visivamente tutte le
 possibilità sonore. Se pensiamo ai cantanti, l&rsquo;emissione della voce si basa su
 dei muscoli che modificano la tensione delle corde vocali e, di conseguenza,
 l&rsquo;altezza dei suoni, ma non è possibile osservare direttamente né i muscoli né
-le corde vocali in azione (ci sarebbe la laringostroboscopia ma non mi sembra
-un metodo molto pratico per un uso didattico musicale). I cantanti hanno
-senz&rsquo;altro una memoria muscolare ma hanno anche bisogno di un riferimento
-mentale per riprodurre un intervallo. Ecco perché viene consigliato lo studio
-almeno elementare del pianoforte: per sviluppare quella capacità di
-concettualizzazione che serve a supplire all&rsquo;apparente mancanza di concretezza
-del mondo dei suoni.</p>
+le corde vocali in azione (ci sarebbe la laringostroboscopia ma non mi sembra un
+metodo molto pratico per un uso didattico musicale). I cantanti hanno senz&rsquo;altro
+una memoria muscolare ma hanno anche bisogno di un riferimento mentale per
+riprodurre un intervallo. Ecco perché viene consigliato lo studio almeno
+elementare del pianoforte: per sviluppare quella capacità di concettualizzazione
+che serve a supplire all&rsquo;apparente mancanza di concretezza del mondo dei suoni.</p>
 <p>Non è possibile vedere un suono ma visualizzare mentalmente la pressione di un
 tasto del piano è possibile ed è anche possibile immaginarne il suono prodotto
 usando la nostra voce interiore, la stessa che in questo momento sta leggendo
 queste parole. Se possiamo visualizzare la pressione di un secondo tasto ed
 immaginarne il suono, abbiamo appena posato il primo mattone per costruire
-l&rsquo;edificio mentale sonoro, abbiamo cioè concettualizzato un intervallo a
-livello cognitivo.</p>
+l&rsquo;edificio mentale sonoro, abbiamo cioè concettualizzato un intervallo a livello
+cognitivo.</p>
 <p>Ci sono pianisti classici che, dopo essersi allenati a lungo per un concerto,
 possono sedere, chiudere gli occhi ed immaginare l&rsquo;intera performance senza
 neanche toccare lo strumento. Li vedreste muovere le dita, perché la
 concettualizzazione riguarda anche la corteccia motoria. La stessa cosa sarebbe
 naturalmente possibile ad esempio per un sassofonista. È chiaro che la
 performance richiede la padronanza completa del tatto e dei muscoli ma la
-visualizzazione mentale non è meno potente perché richiede una
-interiorizzazione del materiale ad un livello di coscienza profondo e
-istintivo.</p>
+visualizzazione mentale non è meno potente perché richiede una interiorizzazione
+del materiale ad un livello di coscienza profondo e istintivo.</p>
 <p>«Ma mia nipote di Ercolano sa cantare benissimo Anema e Core pur non avendo mai
 visto un pianoforte in vita sua» direte voi. Sono molto contento e simpatizzo
 con la nipote e, se il suo desiderio è quello di cantare Anema e Core o
 qualsiasi altro pezzo della tradizione napoletana, il tipo di
 concettualizzazione della bambina va benissimo, anche non rifacendosi al
 pianoforte. Per uno studio formale tuttavia, il pianoforte è utilissimo sia per
-riprodurre e verificare gli intervalli, sia per l&rsquo;accompagnamento. La bambina
-di Ercolano potrà anche imitare lo scat di Ella Fitzgerald senza sapere cos&rsquo;è
-un tritono ma se un giorno volesse imparare a improvvisare, avrebbe bisogno di
+riprodurre e verificare gli intervalli, sia per l&rsquo;accompagnamento. La bambina di
+Ercolano potrà anche imitare lo scat di Ella Fitzgerald senza sapere cos&rsquo;è un
+tritono ma se un giorno volesse imparare a improvvisare, avrebbe bisogno di
 lavorare su concetti del linguaggio musicale per i quali il pianoforte sarebbe
 senz&rsquo;altro indispensabile.</p>
 <p>In realtà, molti musicisti fanno ear training con la pratica quotidiana dello
@@ -2748,25 +2725,25 @@ di apprendimento. Ma, per improvvisare una frase musicale riproducendola
 istantaneamente sullo strumento, serve la padronanza istintiva del linguaggio
 che solo un orecchio ben allenato possiede.</p>
 <p>Pensa a quale dovesse essere la padronanza di linguaggio e concettualizzazione
-di Beethoven per aver scritto <a href="https://www.youtube.com/watch?v=rOjHhS5MtvA">alcune fra le sue pagine più
-memorabili</a> in un periodo in cui
-era ormai diventato completamente sordo. Oppure pensa a Bach che, davanti a
-Federico il Grande, Re di Prussia, improvvisò una <a href="https://it.wikipedia.org/wiki/Offerta_musicale">fuga a quattro
-voci</a> su un tema che lo stesso
-re gli aveva appena proposto.</p>
+di Beethoven per aver scritto
+<a href="https://www.youtube.com/watch?v=rOjHhS5MtvA">alcune fra le sue pagine più memorabili</a>
+in un periodo in cui era ormai diventato completamente sordo. Oppure pensa a
+Bach che, davanti a Federico il Grande, Re di Prussia, improvvisò una
+<a href="https://it.wikipedia.org/wiki/Offerta_musicale">fuga a quattro voci</a> su un tema
+che lo stesso re gli aveva appena proposto.</p>
 <p>L&rsquo;improvvisazione ha avuto grandissima importanza nella musica che oggi
 chiamiamo classica (non credo che Bach, Beethoven o Mozart pensassero di
 scrivere musica classica, per loro era musica e basta). Sappiamo con certezza
 che ognuno dei grandi della musica era prima di tutto un grande improvvisatore.
 L&rsquo;improvvisazione è rimasta un&rsquo;arte a lungo praticata in ambito europeo e ne
-rimane traccia nelle numerose opere con accompagnamento di <a href="https://it.wikipedia.org/wiki/Basso_continuo">basso
-continuo</a>.  Questo nome un po'
-bizzarro indica in realtà una pratica assimilabile a quella moderna di indicare
-soltanto gli accordi, lasciando all&rsquo;esecutore la libertà di scegliere rivolti,
-voicing, ecc.</p>
-<p>A un certo punto, per motivi di praticità, la didattica ha imposto un modello
-di educazione musicale in grado di produrre interpreti preparatissimi dal punto
-di vista dell&rsquo;esecuzione ma purtroppo incapaci di produrre musica autonomamente
+rimane traccia nelle numerose opere con accompagnamento di
+<a href="https://it.wikipedia.org/wiki/Basso_continuo">basso continuo</a>. Questo nome un
+po&rsquo; bizzarro indica in realtà una pratica assimilabile a quella moderna di
+indicare soltanto gli accordi, lasciando all&rsquo;esecutore la libertà di scegliere
+rivolti, voicing, ecc.</p>
+<p>A un certo punto, per motivi di praticità, la didattica ha imposto un modello di
+educazione musicale in grado di produrre interpreti preparatissimi dal punto di
+vista dell&rsquo;esecuzione ma purtroppo incapaci di produrre musica autonomamente
 usando un proprio linguaggio. La padronanza del linguaggio musicale è stata
 allora relegata alla élite dei compositori. Quando l&rsquo;Europa ha smesso di
 praticare l&rsquo;improvvisazione, per qualche motivo, dall&rsquo;altra parte dell&rsquo;Oceano
@@ -2775,19 +2752,19 @@ probabilmente l&rsquo;unica vera forma d&rsquo;arte genuinamente americana: la m
 <p>La storia dell&rsquo;improvvisazione ha conosciuto nel BeBop un&rsquo;epoca d&rsquo;oro. Andando
 ad analizzare formalmente una qualsiasi registrazione di Charlie Parker, ci
 troviamo di fronte ad una tale padronanza di linguaggio che non ha nulla da
-invidiare alla tradizione classica europea. Parker e i suoi colleghi
-conoscevano infatti molto bene le opere di Ravel, Bartok, Debussy, Stravinsky,
-ecc. La musica improvvisata ha vissuto poi una nuova stagione con i quintetti
-di Miles Davis, le fasi dell&rsquo;ultimo John Coltrane e il free jazz di Ornette
-Coleman, solo per fare i nomi più conosciuti.</p>
+invidiare alla tradizione classica europea. Parker e i suoi colleghi conoscevano
+infatti molto bene le opere di Ravel, Bartok, Debussy, Stravinsky, ecc. La
+musica improvvisata ha vissuto poi una nuova stagione con i quintetti di Miles
+Davis, le fasi dell&rsquo;ultimo John Coltrane e il free jazz di Ornette Coleman, solo
+per fare i nomi più conosciuti.</p>
 <p>La musica improvvisata oggi è più viva che mai. La sperimentazione è tutt&rsquo;altro
-che finita ed i risultati sono molto spesso apprezzabili anche ai non addetti
-ai lavori. È in campo un grande fermento ed il fatto che la musica più in
-generale goda di così scarsa considerazione nelle istituzioni contemporanee è
-una amara considerazione che spero venga presto soppiantata da una mentalità
-collettiva in cui la sia la bellezza a guidare la quotidianità e non più il
-profitto. Ma lasciamo per ora da parte lo spirito rivoluzionario e torniamo
-all&rsquo;educazione musicale.</p>
+che finita ed i risultati sono molto spesso apprezzabili anche ai non addetti ai
+lavori. È in campo un grande fermento ed il fatto che la musica più in generale
+goda di così scarsa considerazione nelle istituzioni contemporanee è una amara
+considerazione che spero venga presto soppiantata da una mentalità collettiva in
+cui la sia la bellezza a guidare la quotidianità e non più il profitto. Ma
+lasciamo per ora da parte lo spirito rivoluzionario e torniamo all&rsquo;educazione
+musicale.</p>
 <h2 id="gli-elementi-dellear-training">Gli elementi dell&rsquo;ear training</h2>
 <p>In musica, la base da cui si parte per lo studio dell&rsquo;ear training è
 l&rsquo;intervallo, ovvero la distanza fra due note. L&rsquo;intervallo può essere
@@ -2798,8 +2775,7 @@ Bisogna imparare entrambi i tipi di intervallo, perché uno serve per la
 comprensione delle melodie e l&rsquo;altro per la comprensione degli accordi.</p>
 <p>Gli intervalli seguono delle vetuste regole di nomenclatura. I più giovani
 direbbero che i loro nomi sono parecchio incasinati e, in effetti, guardando la
-<a href="https://it.wikipedia.org/wiki/Intervallo_(musica)#Tavola_degli_intervalli">tavola su
-wikipedia</a>,
+<a href="https://it.wikipedia.org/wiki/Intervallo_(musica)#Tavola_degli_intervalli">tavola su wikipedia</a>,
 non gli si può proprio dare torto, specie quando si apprende dell&rsquo;esistenza di
 intervalli ultra deficienti. Per semplificarci la vita, riporto un elenco
 minimale degli intervalli che troviamo all&rsquo;interno di un&rsquo;ottava:</p>
@@ -2819,33 +2795,33 @@ minimale degli intervalli che troviamo all&rsquo;interno di un&rsquo;ottava:</p>
 <li>ottava giusta (sei toni)</li>
 </ul>
 <p>Come vedi, il nostro elenco mostra 13 diversi intervalli. Ora, l&rsquo;unisono non è
-un vero e proprio intervallo ma una convenzione per indicare che due suoni
-hanno la stessa altezza ed equivale a dire intervallo zero. Restano quindi 12
-intervalli. Di questi 12 intervalli, almeno 7 li conosci già bene perché, a
-meno che tu non abbia vissuto in una caverna su un continente inesplorato,
-sappi che la quasi totalità della musica cui siamo esposti quotidianamente si
-basa sui suoni della scala maggiore.</p>
+un vero e proprio intervallo ma una convenzione per indicare che due suoni hanno
+la stessa altezza ed equivale a dire intervallo zero. Restano quindi 12
+intervalli. Di questi 12 intervalli, almeno 7 li conosci già bene perché, a meno
+che tu non abbia vissuto in una caverna su un continente inesplorato, sappi che
+la quasi totalità della musica cui siamo esposti quotidianamente si basa sui
+suoni della scala maggiore.</p>
 <p>Nella tonalità di DO, la scala maggiore è composta dalle note: DO, RE, MI, FA,
 SOL, LA, SI, DO. Osserviamo la tastiera del pianoforte:</p>
 <p><img src="/images/posts/tastiera.jpg" alt="La tastiera del pianoforte"></p>
 <p>La scala maggiore di DO, sul pianoforte, è composta interamente da tasti
 bianchi. Facile, no? Suonala un po&rsquo; di volte, prima a salire e poi a scendere.
-Cantala mentre la stai suonando. Magari non sei Bobby McFerrin ma, se ti
-impegni abbastanza, vedrai che puoi intonare tutte le note senza grosse
-difficoltà. Prova anche a immaginare di cantare le note con la tua voce
-interiore, senza effettivamente cantare ma usando solo la testa. Ti renderai
-conto che è molto più facile rispetto a cantare perché nel cervello non devi
-controllare anche i muscoli delle corde vocali. Continua così ancora per un
-po&rsquo;: canta, poi immagina di cantare, fino a quando la tua voce interiore può
-intonare perfettamente tutte le note.</p>
+Cantala mentre la stai suonando. Magari non sei Bobby McFerrin ma, se ti impegni
+abbastanza, vedrai che puoi intonare tutte le note senza grosse difficoltà.
+Prova anche a immaginare di cantare le note con la tua voce interiore, senza
+effettivamente cantare ma usando solo la testa. Ti renderai conto che è molto
+più facile rispetto a cantare perché nel cervello non devi controllare anche i
+muscoli delle corde vocali. Continua così ancora per un po&rsquo;: canta, poi immagina
+di cantare, fino a quando la tua voce interiore può intonare perfettamente tutte
+le note.</p>
 <p>Ora mischia le note un po&rsquo; a caso, sempre usando solo i tasti bianchi. Fai caso
 a come alcune combinazioni di suoni sono più dissonanti, ovvero creano una
 tensione che ti aspetti venga in qualche modo risolta.</p>
-<p>Ti faccio un esempio: suona le note DO, SOL, prima una, poi l&rsquo;altra. Ora
-suonale insieme. La qualità di questo intervallo è consonante, cioè le due note
-stanno bene insieme e non sembrano creare una tensione che va in qualche modo
-risolta. Questo è un intervallo di quinta giusta. Se numerassimo le note in
-sequenza a partire dal DO con il numero 1, avremmo:</p>
+<p>Ti faccio un esempio: suona le note DO, SOL, prima una, poi l&rsquo;altra. Ora suonale
+insieme. La qualità di questo intervallo è consonante, cioè le due note stanno
+bene insieme e non sembrano creare una tensione che va in qualche modo risolta.
+Questo è un intervallo di quinta giusta. Se numerassimo le note in sequenza a
+partire dal DO con il numero 1, avremmo:</p>
 <ol>
 <li>DO</li>
 <li>RE</li>
@@ -2867,11 +2843,11 @@ festa di paese in cui un signore chiese di far cantare la propria figlia sul
 palco e, alla domanda su quale tonalità volesse per la canzone, il signore
 rispose orgoglioso: «la migliore!».</p>
 </blockquote>
-<p>Se andassimo ad analizzare gli intervalli che separano fra di loro le note
-della scala maggiore di DO, vedremmo che fra DO e RE c&rsquo;è un tono, fra RE e MI
-un tono, fra MI e FA un semitono, fra FA e SOL un tono, fra SOL e LA un tono,
-fra LA e SI un tono e fra SI e DO un semitono. Lo schema costruttivo della
-scala maggiore può quindi essere riassunto nella sequenza:</p>
+<p>Se andassimo ad analizzare gli intervalli che separano fra di loro le note della
+scala maggiore di DO, vedremmo che fra DO e RE c&rsquo;è un tono, fra RE e MI un tono,
+fra MI e FA un semitono, fra FA e SOL un tono, fra SOL e LA un tono, fra LA e SI
+un tono e fra SI e DO un semitono. Lo schema costruttivo della scala maggiore
+può quindi essere riassunto nella sequenza:</p>
 <ul>
 <li>tono</li>
 <li>tono</li>
@@ -2881,26 +2857,26 @@ scala maggiore può quindi essere riassunto nella sequenza:</p>
 <li>tono</li>
 <li>semitono</li>
 </ul>
-<p>Usando questo schema possiamo costruire la scala maggiore in qualsiasi
-tonalità. Ad esempio, prendendo come riferimento il FA#, le note della scala di
-FA# maggiore sarebbero: FA#, SOL#, LA#, SI, DO#, RE#, MI#, FA#. Il fatto che ci
+<p>Usando questo schema possiamo costruire la scala maggiore in qualsiasi tonalità.
+Ad esempio, prendendo come riferimento il FA#, le note della scala di FA#
+maggiore sarebbero: FA#, SOL#, LA#, SI, DO#, RE#, MI#, FA#. Il fatto che ci
 siano tanti diesis è, ahimè, di nuovo un problema di nomenclatura vetusta, ma
 non facciamoci ingannare dalla apparente complessità dei nomi delle note che
 stiamo usando: la scala maggiore è pur sempre una scala maggiore ed il rapporto
 e la semplicità interna dei suoi suoni sono identici ai suoni che sui tasti
 bianchi del pianoforte abbiamo riconosciuto come semplici e familiari. Abbiamo
 solo cambiato il punto di vista e introdotto un bel po&rsquo; di tasti neri ma i
-rapporti interni alle note che costituiscono la nostra scala si basano sempre
-ed esclusivamente su due intervalli: quello di tono e quello di semitono.</p>
+rapporti interni alle note che costituiscono la nostra scala si basano sempre ed
+esclusivamente su due intervalli: quello di tono e quello di semitono.</p>
 <p>Quello che sto cercando così faticosamente di dire è che, se sei in grado di
 cantare una scala maggiore, sei anche già in possesso di tutto ciò che ti serve
 per riconoscere e riprodurre l&rsquo;intervallo di semitono e quello di tono. Magari
 non sapevi cosa fosse una scala maggiore o un semitono ma sapevi già cantare il
 materiale.</p>
 <p>Per ogni nota della scala maggiore, possiamo sia considerare l&rsquo;intervallo di
-ogni nota rispetto alla precedente, come abbiamo appena fatto, ma possiamo
-anche considerare gli intervalli tra la nota che abbiamo preso come riferimento
-per la tonalità (DO) e le note che si trovano su ogni grado della scala.</p>
+ogni nota rispetto alla precedente, come abbiamo appena fatto, ma possiamo anche
+considerare gli intervalli tra la nota che abbiamo preso come riferimento per la
+tonalità (DO) e le note che si trovano su ogni grado della scala.</p>
 <p>Vedremo che tra DO e RE c&rsquo;è un intervallo di un tono (seconda maggiore), tra DO
 e MI due toni (terza maggiore), tra DO e FA due toni e mezzo (quarta giusta),
 tra DO e SOL tre toni e mezzo (quinta giusta), tra DO e LA quattro toni e mezzo
@@ -2928,9 +2904,9 @@ della scala maggiore. Se prima abbiamo giocato più o meno a caso con i tasti
 bianchi, ora andremo ad esaminare gli intervalli più semplici rispetto al
 riferimento che ci siamo dati, ovvero la nota DO.</p>
 <p>Partendo da DO, il primo intervallo che incontriamo è l&rsquo;unisono, ovvero la nota
-DO seguita dalla stessa nota. Questo non dovrebbe essere un intervallo
-difficile da riconoscere perché l&rsquo;altezza del suono non sta cambiando, stiamo
-solo inserendo una pausa tra il primo ed il secondo suono.</p>
+DO seguita dalla stessa nota. Questo non dovrebbe essere un intervallo difficile
+da riconoscere perché l&rsquo;altezza del suono non sta cambiando, stiamo solo
+inserendo una pausa tra il primo ed il secondo suono.</p>
 <p>L&rsquo;intervallo successivo è DO-RE. Si tratta di un intervallo di un tono o di
 seconda maggiore. Suona prima il riferimento (DO) e poi la nota dell&rsquo;intervallo
 (RE). Queste due note sono molto vicine e il loro suono diventa strano solo
@@ -2938,8 +2914,8 @@ quando le suoniamo contemporaneamente. Prova a suonare DO e RE insieme: buffo,
 eh? È come se dovesse succedere qualcosa. Ascolta bene i
 <a href="https://it.wikipedia.org/wiki/Battimenti_(musica)">battimenti</a>. Senti come
 quelle che fino a un secondo fa consideravamo solo due banali note suonate
-insieme, ora che stai prestando particolare attenzione, presentano una
-ricchezza armonica per nulla banale?</p>
+insieme, ora che stai prestando particolare attenzione, presentano una ricchezza
+armonica per nulla banale?</p>
 <p>Se segui lo stesso procedimento con gli altri gradi della scala, vedrai che
 DO-MI (terza maggiore) e DO-SOL (quinta giusta) sono intervalli particolarmente
 consonanti, cioè suonano bene mentre gli altri sono più dissonanti nel contesto
@@ -2950,16 +2926,16 @@ tornare a casa per essere rassicurata. Stessa cosa dicasi per la nota SI
 (settima maggiore), la quale vuole muoversi verso il più vicino DO.</p>
 <p>Soffermati a lavorare su questi intervalli della scala maggiore, suonandoli
 prima in maniera melodica (prima una nota, poi l&rsquo;altra) e poi in maniera
-armonica (due note insieme). Canta sempre e usa la tua voce interiore quando
-fai questi esercizi. Ovviamente non puoi cantare un intervallo armonico (due
-note insieme) ma cantarlo in maniera melodica ti aiuterà a distinguere le
-singole note che lo compongono.</p>
+armonica (due note insieme). Canta sempre e usa la tua voce interiore quando fai
+questi esercizi. Ovviamente non puoi cantare un intervallo armonico (due note
+insieme) ma cantarlo in maniera melodica ti aiuterà a distinguere le singole
+note che lo compongono.</p>
 <p>La tua voce interiore dovrebbe essere invece in grado di immaginare i due suoni
-contemporaneamente. Se non riesci, soffermati prima a pensare al primo suono
-per qualche secondo, immaginando di mantenerlo mentre fai partire il secondo
-suono. Per qualcuno questo esercizio mentale è più difficile che per altri
-perciò non preoccuparti se non riesci subito. Fai leva sulla tua pazienza,
-insisti con calma e decisione e vedrai che ti sarà possibile riuscire.</p>
+contemporaneamente. Se non riesci, soffermati prima a pensare al primo suono per
+qualche secondo, immaginando di mantenerlo mentre fai partire il secondo suono.
+Per qualcuno questo esercizio mentale è più difficile che per altri perciò non
+preoccuparti se non riesci subito. Fai leva sulla tua pazienza, insisti con
+calma e decisione e vedrai che ti sarà possibile riuscire.</p>
 <p>Quando ti sarai esercitato abbastanza (dove abbastanza è variabile da persona a
 persona: a volte bastano minuti, altre volte sono necessari mesi) puoi provare
 l&rsquo;esercizio successivo che consiste nel darti un riferimento (ad esempio puoi
@@ -2967,16 +2943,16 @@ suonare la nota DO) e provare a immaginare quale suono uscirà premendo un altro
 tasto bianco. Ad esempio, per prima cosa suono la nota DO e la canto, poi penso
 al tasto FA e cerco di immaginare quale suono sarà prodotto dalla pressione del
 tasto, poi canto la nota che penso sia il FA e infine la suono per verificare
-che sia corretta. Poiché ti sei precedentemente esercitato con la scala
-maggiore a un&rsquo;ottava, dovresti essere in grado di immaginare i suoni di tutti i
-tasti bianchi compresi da DO al DO dell&rsquo;ottava successiva. Prova anche a
-cambiare il riferimento, ovvero non suonare sempre DO come prima nota: usane
-un&rsquo;altra sempre scelta a caso.</p>
+che sia corretta. Poiché ti sei precedentemente esercitato con la scala maggiore
+a un&rsquo;ottava, dovresti essere in grado di immaginare i suoni di tutti i tasti
+bianchi compresi da DO al DO dell&rsquo;ottava successiva. Prova anche a cambiare il
+riferimento, ovvero non suonare sempre DO come prima nota: usane un&rsquo;altra sempre
+scelta a caso.</p>
 <p>L&rsquo;esercizio che ti propongo ora serve a verificare in modo inequivocabile che
 hai interiorizzato la scala maggiore ad un livello istintivo. Genera un po&rsquo; di
 gruppi di numeri da 1 a 8. Per comodità te ne riporto qui sotto alcuni set di
-esempio ma puoi <a href="https://www.random.org/integer-sets/?sets=10&amp;num=5&amp;min=1&amp;max=8&amp;seqnos=on&amp;commas=on&amp;order=index&amp;format=html&amp;rnd=new">generarne quanti ne
-vuoi</a>.
+esempio ma puoi
+<a href="https://www.random.org/integer-sets/?sets=10&amp;num=5&amp;min=1&amp;max=8&amp;seqnos=on&amp;commas=on&amp;order=index&amp;format=html&amp;rnd=new">generarne quanti ne vuoi</a>.
 Ogni set rappresenta una melodia ed ogni numero del set rappresenta il grado
 della scala. Ad esempio: 2, 8, 1, 5, 6 sarebbero RE, DO, DO, SOL, LA, dove 8
 sarebbe il DO più alto e 1 il DO più basso.</p>
@@ -2993,13 +2969,13 @@ Set 10: 6, 2, 7, 1, 8
 </code></pre><p>L&rsquo;esercizio consiste nel darti un riferimento suonando il DO e nel cantare le
 melodie (i set) rappresentate dai numeri.</p>
 <p>Anche in questo caso ti renderai presto conto che è molto più facile immaginare
-i suoni che cantarli. L&rsquo;intonazione è un problema concreto solo se vuoi
-cantare, credimi. Ai fini dell&rsquo;ear training ti posso assicurare che una
-intonazione vocale incerta non è necessariamente sintomo di cattiva
-comprensione di un concetto musicale o una melodia. Per quanto mi sia facile
-improvvisare una frase bebop al piano, cantarla sarebbe tutta un&rsquo;altra storia
-perché non mi sono mai esercitato con la voce. Sono sicuro che alcuni miei
-amici preferirebbero essere crocifissi piuttosto che dovermi sentire cantare.</p>
+i suoni che cantarli. L&rsquo;intonazione è un problema concreto solo se vuoi cantare,
+credimi. Ai fini dell&rsquo;ear training ti posso assicurare che una intonazione
+vocale incerta non è necessariamente sintomo di cattiva comprensione di un
+concetto musicale o una melodia. Per quanto mi sia facile improvvisare una frase
+bebop al piano, cantarla sarebbe tutta un&rsquo;altra storia perché non mi sono mai
+esercitato con la voce. Sono sicuro che alcuni miei amici preferirebbero essere
+crocifissi piuttosto che dovermi sentire cantare.</p>
 <p>Una volta acquisita una padronanza istintiva della scala maggiore, non ci resta
 che aggredire i tasti neri per completare così i 12 suoni ed entrare nel
 meraviglioso mondo della scala cromatica: un mondo idilliaco in cui tutti gli
@@ -3013,8 +2989,8 @@ all&rsquo;interno della stessa scala maggiore. Andiamo a esaminarli:</p>
 maggiore di DO come MI-FA e SI-DO;</li>
 <li>l&rsquo;intervallo di un tono e mezzo (DO-RE#), la terza minore, è presente nella
 scala maggiore di DO come RE-FA, MI-SOL, LA-DO e SI-RE;</li>
-<li>l&rsquo;intervallo di tre toni (DO-FA#), la quarta aumentata, è presente nella
-scala maggiore di DO come FA-SI e SI-FA;</li>
+<li>l&rsquo;intervallo di tre toni (DO-FA#), la quarta aumentata, è presente nella scala
+maggiore di DO come FA-SI e SI-FA;</li>
 <li>l&rsquo;intervallo di quattro toni (DO-SOL#), la quinta aumentata, è presente nella
 scala maggiore di DO come MI-DO, LA-FA e SI-SOL;</li>
 <li>l&rsquo;intervallo di cinque toni (DO-SIb), la settima minore, è presente nella
@@ -3024,25 +3000,24 @@ scala maggiore di DO come RE-DO, MI-RE, SOL-FA, LA-SOL e SI-LA.</li>
 tonalità. Questo è un esercizio che, se suoni uno strumento diverso dal piano,
 troverai molto utile fare anche sul tuo strumento e ti aprirà la strada alla
 visualizzazione mentale di tutte le possibilità sonore a tua disposizione.</p>
-<p>Il mio consiglio è di seguire un ciclo annidato in cui al primo livello si
-itera sugli  intervalli e al secondo sulla scala cromatica, partendo dalla nota
-più bassa sullo strumento fino alla nota più alta. Lo scrivo in pseudo-codice
-per gli informatici e poi in italiano per gli esseri umani:</p>
+<p>Il mio consiglio è di seguire un ciclo annidato in cui al primo livello si itera
+sugli  intervalli e al secondo sulla scala cromatica, partendo dalla nota più
+bassa sullo strumento fino alla nota più alta. Lo scrivo in pseudo-codice per
+gli informatici e poi in italiano per gli esseri umani:</p>
 <pre tabindex="0"><code>for interval in (2m, 2M, 3m, 3M, 4, 4#, 5, 5#, 6, 7m, 7M, 8) {
   for note in (instrument_range) {
     play interval from note  
   }
 }
-</code></pre><p>Per ogni intervallo compreso nell&rsquo;elenco, per ogni nota compresa
-nell&rsquo;estensione dello strumento, suona l&rsquo;intervallo a partire dalla nota.</p>
+</code></pre><p>Per ogni intervallo compreso nell&rsquo;elenco, per ogni nota compresa nell&rsquo;estensione
+dello strumento, suona l&rsquo;intervallo a partire dalla nota.</p>
 <p>Una persona sana di mente avrà già capito che l&rsquo;esecuzione completa
 dell&rsquo;esercizio richiede almeno una mezz&rsquo;oretta ed una pazienza inversamente
 proporzionale al tempo speso nell&rsquo;esercizio stesso (in altre parole: più ti
 eserciti, più diventa facile).</p>
 <p>Se immettessimo questo pseudo-codice in un ipotetico computer musicale,
 specificando l&rsquo;estensione naturale del sassofono, la cui nota più bassa è SI
-bemolle e la più acuta il FA#, la sua esecuzione produrrebbe il seguente
-output:</p>
+bemolle e la più acuta il FA#, la sua esecuzione produrrebbe il seguente output:</p>
 <pre tabindex="0"><code>play 2m from Bb (Bb-B)
 play 2m from B  (B-C)
 play 2m from C  (C-C#)
@@ -3069,16 +3044,15 @@ limitarsi alla scala maggiore, sempre nell&rsquo;estensione di un&rsquo;ottava, 
 però su tutte le 12 tonalità.</p>
 <p>Naturalmente, nel mondo reale, gli intervalli non si limitano a un&rsquo;ottava ma
 confido che, se sei arrivato fin qui, non avrai problemi a esercitarti sugli
-intervalli più remoti, tenendo presente che l&rsquo;ottava è un ottimo riferimento
-per i salti di, appunto, ottava. Il mondo reale inoltre non si limita all&rsquo;uso
-della scala maggiore (per fortuna, altrimenti sai che noia&hellip;) ma, oltre ai
-vari modi (fra i quali compare anche la scala minore naturale), dovresti
-prendere familiarità anche con la scala minore melodica e armonica, con la
-scala diminuita (8 suoni, semitono-tono) e quella aumentata (6 suoni, tutti
-toni interi). Tieni presente che di scale diminuite ne esistono 3: tutte le
-altre sono riconducibili a una precedente scala diminuita ma partendo da una
-nota diversa. Stesso discorso per la scala esatonale di cui esistono solo 2
-versioni.</p>
+intervalli più remoti, tenendo presente che l&rsquo;ottava è un ottimo riferimento per
+i salti di, appunto, ottava. Il mondo reale inoltre non si limita all&rsquo;uso della
+scala maggiore (per fortuna, altrimenti sai che noia&hellip;) ma, oltre ai vari modi
+(fra i quali compare anche la scala minore naturale), dovresti prendere
+familiarità anche con la scala minore melodica e armonica, con la scala
+diminuita (8 suoni, semitono-tono) e quella aumentata (6 suoni, tutti toni
+interi). Tieni presente che di scale diminuite ne esistono 3: tutte le altre
+sono riconducibili a una precedente scala diminuita ma partendo da una nota
+diversa. Stesso discorso per la scala esatonale di cui esistono solo 2 versioni.</p>
 <p>Per il riconoscimento degli accordi il discorso si complica un bel po&rsquo; e non
 saprei come meglio aiutarti se non dicendoti di scomporre mentalmente gli
 accordi negli intervalli delle singole note costitutive. Allenati a riconoscere
@@ -3087,27 +3061,27 @@ passa alle quadriadi (gli accordi che arrivano alla settima per capirci) e così
 via.</p>
 <p>Avrai notato che in tutti gli esercizi faccio sempre usare un riferimento
 iniziale. L&rsquo;orecchio relativo ha bisogno di un riferimento da cui partire
-nell&rsquo;analisi degli intervalli e si differenzia dall&rsquo;orecchio assoluto che
-invece di tale riferimento può fare a meno. Molte persone che mi conoscono mi
-dicono: «ah, tu hai l&rsquo;orecchio assoluto». No, il mio è un orecchio relativo,
-perché ho bisogno di un riferimento per orientarmi nel mondo dei suoni. Sembra
-sia possibile esercitare l&rsquo;orecchio assoluto fino a una certa età e infatti
-molte persone dotate di orecchio assoluto di mia conoscenza sono musicisti che
-hanno iniziato molto presto da bambini. Tuttavia, alcuni studi recenti sembrano
-dimostrare che è possibile sviluppare l&rsquo;<a href="https://www.biorxiv.org/content/early/2018/07/03/355933">orecchio
-assoluto</a> anche in età
-adulta.  Questo non toglie che la capacità di analisi dell&rsquo;orecchio relativo
-non è meno importante di quella dell&rsquo;orecchio assoluto.</p>
+nell&rsquo;analisi degli intervalli e si differenzia dall&rsquo;orecchio assoluto che invece
+di tale riferimento può fare a meno. Molte persone che mi conoscono mi dicono:
+«ah, tu hai l&rsquo;orecchio assoluto». No, il mio è un orecchio relativo, perché ho
+bisogno di un riferimento per orientarmi nel mondo dei suoni. Sembra sia
+possibile esercitare l&rsquo;orecchio assoluto fino a una certa età e infatti molte
+persone dotate di orecchio assoluto di mia conoscenza sono musicisti che hanno
+iniziato molto presto da bambini. Tuttavia, alcuni studi recenti sembrano
+dimostrare che è possibile sviluppare
+l&rsquo;<a href="https://www.biorxiv.org/content/early/2018/07/03/355933">orecchio assoluto</a>
+anche in età adulta. Questo non toglie che la capacità di analisi dell&rsquo;orecchio
+relativo non è meno importante di quella dell&rsquo;orecchio assoluto.</p>
 <p>Un&rsquo;altra cosa importante da tenere presente è che il cervello apprende meglio
-quando si trova nella cosiddetta learning zone (zona di apprendimento). In
-altre parole, l&rsquo;esercizio non dev&rsquo;essere tanto facile da far annoiare il
-cervello ma neanche troppo difficile da scoraggiarlo. Se in questa zona di
-equilibrio tra facilissimo e impossibile immettiamo ogni tanto un elemento di
-difficoltà leggermente superiore alla media, il cervello apprende e
-interiorizza più facilmente. Molti metodi di apprendimento hanno fatto loro
-questa filosofia introducendo anche meccanismi di gamification, cioè ad esempio
-l&rsquo;esercizio prevede un punteggio da raggiungere e livelli di difficoltà
-progressiva da superare.</p>
+quando si trova nella cosiddetta learning zone (zona di apprendimento). In altre
+parole, l&rsquo;esercizio non dev&rsquo;essere tanto facile da far annoiare il cervello ma
+neanche troppo difficile da scoraggiarlo. Se in questa zona di equilibrio tra
+facilissimo e impossibile immettiamo ogni tanto un elemento di difficoltà
+leggermente superiore alla media, il cervello apprende e interiorizza più
+facilmente. Molti metodi di apprendimento hanno fatto loro questa filosofia
+introducendo anche meccanismi di gamification, cioè ad esempio l&rsquo;esercizio
+prevede un punteggio da raggiungere e livelli di difficoltà progressiva da
+superare.</p>
 <p>Oggi esistono tantissimi software che possono aiutarci a fare ear training.
 Vorrei consigliarne uno che è anche quello che uso quotidianamente e si chiama
 <a href="https://www.myeartraining.net/">My Ear Training</a>. C&rsquo;è una funzionalità di
@@ -3115,41 +3089,41 @@ dettato ritmico che trovo molto utile perché spesso si sottovaluta l&rsquo;aspe
 della durata del suono quando invece è fondamentale nella costruzione di un
 groove. Poi ci sono esercizi sia di tipo melodico che armonico e per ogni
 esercizio si può scegliere la difficoltà. Ad esempio si può iniziare con gli
-intervalli di terza e quinta e quando ci rendiamo conto di essere pronti, mano
-a mano aggiungere quelli più difficili.</p>
-<p>Vorrei menzionare <a href="http://amzn.eu/d/h3KGMxz">i libri del Venerabile Maestro Andrea
-Avena</a>, i quali, oltre ad essere degli insostituibili
-riferimenti in materia di teoria e armonia, contengono esercizi di dettati
-ritmici e melodici su cd allegato.</p>
+intervalli di terza e quinta e quando ci rendiamo conto di essere pronti, mano a
+mano aggiungere quelli più difficili.</p>
+<p>Vorrei menzionare
+<a href="http://amzn.eu/d/h3KGMxz">i libri del Venerabile Maestro Andrea Avena</a>, i
+quali, oltre ad essere degli insostituibili riferimenti in materia di teoria e
+armonia, contengono esercizi di dettati ritmici e melodici su cd allegato.</p>
 <p>Una menzione merita senz&rsquo;altro anche il libro Metodo Intensivo di Ear Training
-di Vincenzo Maurogiovanni che è possibile acquistare direttamente per pochi
-euro contattandolo sulla sua <a href="https://www.facebook.com/vizmaurogiovanni">pagina Facebook</a>.</p>
+di Vincenzo Maurogiovanni che è possibile acquistare direttamente per pochi euro
+contattandolo sulla sua
+<a href="https://www.facebook.com/vizmaurogiovanni">pagina Facebook</a>.</p>
 <h2 id="come-ho-sviluppato-lorecchio">Come ho sviluppato l&rsquo;orecchio</h2>
 <p>Qui si entra più che altro nel campo della curiosità e dell&rsquo;aneddotica perché
-vorrei raccontare come e perché ho sviluppato l&rsquo;orecchio. In altre parole, se
-il tuo scopo era informarti su come migliorare il tuo orecchio, potresti
-fermarti tranquillamente qui e non perderesti nulla di particolarmente
-importante. Se invece hai resistito eroicamente a questa valanga di testo in
-un&rsquo;epoca in cui la soglia dell&rsquo;attenzione difficilmente supera la lunghezza di
-un tweet, be&rsquo;&hellip; continua pure a leggere.</p>
+vorrei raccontare come e perché ho sviluppato l&rsquo;orecchio. In altre parole, se il
+tuo scopo era informarti su come migliorare il tuo orecchio, potresti fermarti
+tranquillamente qui e non perderesti nulla di particolarmente importante. Se
+invece hai resistito eroicamente a questa valanga di testo in un&rsquo;epoca in cui la
+soglia dell&rsquo;attenzione difficilmente supera la lunghezza di un tweet, be&rsquo;&hellip;
+continua pure a leggere.</p>
 <p>Quando ero molto piccolo (stiamo parlando degli anni &lsquo;70), mio padre teneva
-nella mia stanza il suo laboratorio di cianfrusaglie elettroniche e, fra
-queste, non mancava un favoloso organo elettrico Ekosonic che lui aveva
-ovviamente modificato per applicargli un sintetizzatore e, più tardi, anche una
-batteria elettronica, entrambi rigorosamente auto-costruiti (anche perché
-all&rsquo;epoca un Moog credo costasse quanto una casa).</p>
+nella mia stanza il suo laboratorio di cianfrusaglie elettroniche e, fra queste,
+non mancava un favoloso organo elettrico Ekosonic che lui aveva ovviamente
+modificato per applicargli un sintetizzatore e, più tardi, anche una batteria
+elettronica, entrambi rigorosamente auto-costruiti (anche perché all&rsquo;epoca un
+Moog credo costasse quanto una casa).</p>
 <p>Mentre giocavo nella mia stanzetta, specie nei fine settimana, ascoltavo papà
-suonare l&rsquo;organo e mi capitava spesso di sentirlo mentre cercava di imparare
-una nuova canzone che poteva essere una vecchia melodia napoletana ma anche
-l&rsquo;ultimo successo di uno dei cantanti dell&rsquo;epoca. Papà iniziava suonando una
-nota e, se la successiva non era quella giusta, la cercava per tentativi. Il
-procedimento, nei casi più complicati, poteva durare anche una mezz&rsquo;oretta ma
-alla fine papà riusciva a trovare a orecchio tutte le note giuste. Per gli
-accordi della canzone lo sentivo che andava in cerca dalla nota più bassa e,
-quando l&rsquo;aveva trovata, procedeva a suonarne l&rsquo;accordo: una bella
-triade in posizione base. Più tardi avrei capito che era davvero
-difficile sbagliare l&rsquo;accordo dato che nel 98% delle canzoni le
-possibilità sono limitate ad accordi maggiori e minori.</p>
+suonare l&rsquo;organo e mi capitava spesso di sentirlo mentre cercava di imparare una
+nuova canzone che poteva essere una vecchia melodia napoletana ma anche l&rsquo;ultimo
+successo di uno dei cantanti dell&rsquo;epoca. Papà iniziava suonando una nota e, se
+la successiva non era quella giusta, la cercava per tentativi. Il procedimento,
+nei casi più complicati, poteva durare anche una mezz&rsquo;oretta ma alla fine papà
+riusciva a trovare a orecchio tutte le note giuste. Per gli accordi della
+canzone lo sentivo che andava in cerca dalla nota più bassa e, quando l&rsquo;aveva
+trovata, procedeva a suonarne l&rsquo;accordo: una bella triade in posizione base. Più
+tardi avrei capito che era davvero difficile sbagliare l&rsquo;accordo dato che nel
+98% delle canzoni le possibilità sono limitate ad accordi maggiori e minori.</p>
 <p>Insomma, papà imparava a suonare un discreto numero di canzoni ed io avevo
 capito quale era il suo procedimento. All&rsquo;epoca mi piaceva particolarmente la
 melodia di una canzone di Memo Remigi di cui ho purtroppo dimenticato sia il
@@ -3158,20 +3132,20 @@ appiccicavi dei numeri ai tasti e scrivermi la melodia su un pezzo di carta
 sottoforma di sequenza di numeri. Probabilmente doveva aver visto una tastiera
 Bontempi di quelle che un tempo si regalavano ai bambini e aveva pensato di
 replicare il sistema Bontempi sul suo ben più serio organo Ekosonic.</p>
-<p>Una volta imparata la melodia di Memo Remigi, volevo imparare sempre più
-canzoni e papà naturalmente non aveva la pazienza e il tempo di scrivere tutta
-quella roba per me. Non ci volle molto quindi che, seguendo il suo esempio,
-cominciai ad imparare la musica a orecchio sul suo organo.</p>
+<p>Una volta imparata la melodia di Memo Remigi, volevo imparare sempre più canzoni
+e papà naturalmente non aveva la pazienza e il tempo di scrivere tutta quella
+roba per me. Non ci volle molto quindi che, seguendo il suo esempio, cominciai
+ad imparare la musica a orecchio sul suo organo.</p>
 <p>Quando imparai a leggere e scrivere, i miei pensarono di mandarmi a studiare il
 pianoforte privatamente. Il maestro andò con mio padre in un negozio a Sora e
-una settimana dopo a casa mia comparì un fantastico pianoforte
-verticale Schulze Pollmann nero laccato. Iniziarono così le mie lezioni di
-pianoforte e solfeggio. Ero ancora troppo piccolo per capire l&rsquo;importanza della
-disciplina, infatti il solfeggio era una palla mortale e le poche cose che
-avevo imparato a suonare al pianoforte le avevo imparate più imitando il mio
-maestro che leggendole sui libri. Insomma, dire che ero un pessimo studente
-sarebbe un eufemismo. Ero praticamente una capra. Ma ero contento perché avevo
-il mio pianoforte e potevo suonare a orecchio le canzoni che piacevano a me.</p>
+una settimana dopo a casa mia comparì un fantastico pianoforte verticale Schulze
+Pollmann nero laccato. Iniziarono così le mie lezioni di pianoforte e solfeggio.
+Ero ancora troppo piccolo per capire l&rsquo;importanza della disciplina, infatti il
+solfeggio era una palla mortale e le poche cose che avevo imparato a suonare al
+pianoforte le avevo imparate più imitando il mio maestro che leggendole sui
+libri. Insomma, dire che ero un pessimo studente sarebbe un eufemismo. Ero
+praticamente una capra. Ma ero contento perché avevo il mio pianoforte e potevo
+suonare a orecchio le canzoni che piacevano a me.</p>
 <p>Tutto questo è andato bene fin quando non ho cominciato ad incontrare canzoni
 che mi davano più filo da torcere. Avevo iniziato ad ascoltare soprattutto Pino
 Daniele e Lucio Dalla. C&rsquo;era sempre qualcosa in queste canzoni che non riuscivo
@@ -3182,31 +3156,31 @@ tastiera del pianoforte e come sarebbe stato suonare quelle canzoni. C&rsquo;era
 parti che, se immaginavo di suonare, mi tornavano, cioè mi aspettavo che
 schiacciando certi tasti avrei prodotto esattamente quei suoni. C&rsquo;erano altre
 parti dove non riuscivo ad arrivare e dovevo fermarmi. Allora provavo a
-ragionare al contrario partendo dalla fine della canzone e andando a ritroso.
-Il giorno dopo mi svegliavo e correvo al pianoforte per vedere se la soluzione
+ragionare al contrario partendo dalla fine della canzone e andando a ritroso. Il
+giorno dopo mi svegliavo e correvo al pianoforte per vedere se la soluzione
 funzionava. Qualche volta mi riusciva, qualche volta no.</p>
 <p>Insomma, passai così tanto tempo ad esercitarmi con i tasti del mio pianoforte
 mentale nel letto al buio la sera che alla fine non avevo neanche bisogno del
-piano per verificare se la soluzione era giusta o meno: semplicemente la
-suonavo nella mia testa e, se funzionava lì, voleva dire che avrebbe funzionato
-anche su un pianoforte vero.</p>
+piano per verificare se la soluzione era giusta o meno: semplicemente la suonavo
+nella mia testa e, se funzionava lì, voleva dire che avrebbe funzionato anche su
+un pianoforte vero.</p>
 <p>Il mio orecchio si è sviluppato perché non avrei potuto vivere senza. Se c&rsquo;era
-una pubblicità in televisione con un intervallo strano, potevo passare
-un&rsquo;intera giornata a cercare di decifrarlo sul mio pianoforte mentale. In fondo
-gli intervalli fondamentali si contano sulle dita di una mano e la musica che
-ci circonda è composta seguendo poche e ben consolidate consuetudini armoniche.</p>
+una pubblicità in televisione con un intervallo strano, potevo passare un&rsquo;intera
+giornata a cercare di decifrarlo sul mio pianoforte mentale. In fondo gli
+intervalli fondamentali si contano sulle dita di una mano e la musica che ci
+circonda è composta seguendo poche e ben consolidate consuetudini armoniche.</p>
 <p>Quando poi alle scuole medie ho scoperto il jazz e ho capito che esisteva un
 mondo in cui puoi scrivere la tua musica improvvisandola sul momento, be&rsquo;&hellip; lì
 c&rsquo;è stato l&rsquo;innamoramento fatale che continua tuttora.</p>
 <p>Un aspetto curioso dell&rsquo;orecchio è che non posso controllarlo. Se ad esempio
 entro in un supermercato e gli altoparlanti stanno trasmettendo una musica, il
 mio cervello si sintonizza automaticamente e la decifra più o meno in tempo
-reale e non è un processo che posso spegnere, non più di come si può smettere
-di guardare il titolo di un libro in uno scaffale se non chiudendo gli occhi.
-Credo cioè che il tipo di riconoscimento che avviene nel mio cervello con i
-suoni sia lo stesso che avviene ad esempio quando con la vista osserviamo un
-oggetto: se sto guardando una macchina, so che quell&rsquo;oggetto è una macchina,
-non c&rsquo;è un modo per non vedere l&rsquo;oggetto macchina se non chiudendo gli occhi.</p>
+reale e non è un processo che posso spegnere, non più di come si può smettere di
+guardare il titolo di un libro in uno scaffale se non chiudendo gli occhi. Credo
+cioè che il tipo di riconoscimento che avviene nel mio cervello con i suoni sia
+lo stesso che avviene ad esempio quando con la vista osserviamo un oggetto: se
+sto guardando una macchina, so che quell&rsquo;oggetto è una macchina, non c&rsquo;è un modo
+per non vedere l&rsquo;oggetto macchina se non chiudendo gli occhi.</p>
 <p>Se ascolto un accordo maggiore, so istintivamente che quello è un accordo
 maggiore. Magari non so in che tonalità è perché non ho un riferimento, ma sono
 certo della qualità dell&rsquo;accordo perché per il mio udito il livello di
@@ -3216,16 +3190,15 @@ concreto.</p>
 esempio, se mi trovo nella sala d&rsquo;aspetto di un dottore, posso decidere di
 suonarmi in testa All The Things You Are in DO# minore solo per tenermi
 occupato. A meno che non ci sia già una musica trasmessa da una radiolina. In
-tal caso ad esempio provo a immaginare ogni chorus della canzone in una
-tonalità diversa.</p>
-<p>Questo non vuol dire che il mio orecchio sia magico. Tutt&rsquo;altro. So bene che
-non c&rsquo;è nulla di magico in tutte le ore che ho trascorso nella mia mente con il
-mio piano. So anche che per trascrivere l&rsquo;assolo di un jazzista ho bisogno
+tal caso ad esempio provo a immaginare ogni chorus della canzone in una tonalità
+diversa.</p>
+<p>Questo non vuol dire che il mio orecchio sia magico. Tutt&rsquo;altro. So bene che non
+c&rsquo;è nulla di magico in tutte le ore che ho trascorso nella mia mente con il mio
+piano. So anche che per trascrivere l&rsquo;assolo di un jazzista ho bisogno
 dell&rsquo;ausilio di quei software che rallentano e ripetono l&rsquo;audio a comando.</p>
-<p>Oggi mi esercito più che altro nel riconoscere le diverse qualità degli
-accordi, gli intervalli al di fuori dell&rsquo;ottava e cerco (senza grossi
-risultati, devo ammettere) di identificare e memorizzare melodie casuali con
-più di 6 note.</p>
+<p>Oggi mi esercito più che altro nel riconoscere le diverse qualità degli accordi,
+gli intervalli al di fuori dell&rsquo;ottava e cerco (senza grossi risultati, devo
+ammettere) di identificare e memorizzare melodie casuali con più di 6 note.</p>
 <p>Se mi hai letto fin qui, ti ringrazio per avermi ascoltato e sopportato. Spero
 di averti convinto che l&rsquo;ear training non è una materia esoterica e che, se sai
 come affrontarlo, puoi usarlo a tuo vantaggio.</p>
@@ -3294,34 +3267,32 @@ me piaceva il romano, vabbè?»</p>
 </ol>
 </div>
 ]]></content></item><item><title>🇺🇸 An Introduction to Time Representation, Serialization and Management in Software</title><link>https://mirkocaserta.com/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</link><pubDate>Mon, 15 Apr 2013 14:19:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</guid><description>Most issues in software development usually arise from poor, inconsistent knowledge of the domain at hand. A topic apparently as simple as time representation, serialization and management can easily cause a number of problems both to the neophyte and to the experienced programmer.
-In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a Time Lord to grasp the very simple few concepts needed not to incur into time management hell.</description><content type="html"><![CDATA[<p>Most issues in software development usually arise from poor,
-inconsistent knowledge of the domain at hand. A topic apparently as
-simple as time representation, serialization and management can easily
-cause a number of problems both to the neophyte and to the experienced
-programmer.</p>
+In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a Time Lord to grasp the very simple few concepts needed not to incur into time management hell.</description><content type="html"><![CDATA[<p>Most issues in software development usually arise from poor, inconsistent
+knowledge of the domain at hand. A topic apparently as simple as time
+representation, serialization and management can easily cause a number of
+problems both to the neophyte and to the experienced programmer.</p>
 <p>In this post, we&rsquo;ll see that there&rsquo;s no need to be a
-<a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the
-very simple few concepts needed not to incur into time management hell.</p>
+<a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the very simple few
+concepts needed not to incur into time management hell.</p>
 <p><img src="/images/posts/time.jpg" alt="Time doesn&amp;rsquo;t exist. Clocks exist."></p>
 <h2 id="representation">Representation</h2>
-<p>A question as simple as <em>&ldquo;What time is it?&rdquo;</em> assumes a number of
-contextual subleties that are obvious to the human brain, but become
-absolute nonsense for a computer.</p>
-<p>For instance, if you were asking to me what time is it right now, I
-might say: <em>&ldquo;It&rsquo;s 3:39&rdquo;</em> and, if you were a colleague in my office,
-that&rsquo;d be enough information to infer that it&rsquo;s 3:39pm CEST. That&rsquo;s
-because you would already be in possession of some bits of important
-contextual information such as</p>
+<p>A question as simple as <em>&ldquo;What time is it?&rdquo;</em> assumes a number of contextual
+subleties that are obvious to the human brain, but become absolute nonsense for
+a computer.</p>
+<p>For instance, if you were asking to me what time is it right now, I might say:
+<em>&ldquo;It&rsquo;s 3:39&rdquo;</em> and, if you were a colleague in my office, that&rsquo;d be enough
+information to infer that it&rsquo;s 3:39pm CEST. That&rsquo;s because you would already be
+in possession of some bits of important contextual information such as</p>
 <ul>
 <li>it&rsquo;s an afternoon because we&rsquo;ve already had lunch</li>
-<li>we&rsquo;re in Rome, therefore our timezone is Central European Time (CET)
-or Central European Summer Time (CEST)</li>
-<li>we&rsquo;ve switched to daylight savings time a few weeks earlier, so the
-current timezone must be Central European Summer Time</li>
+<li>we&rsquo;re in Rome, therefore our timezone is Central European Time (CET) or
+Central European Summer Time (CEST)</li>
+<li>we&rsquo;ve switched to daylight savings time a few weeks earlier, so the current
+timezone must be Central European Summer Time</li>
 </ul>
-<p><em>3:39</em> only happens to be a convenient representation of time as long as
-we&rsquo;re in possession of the contextual bits.  In order to represent time
-in an universal way, you should have an idea what
+<p><em>3:39</em> only happens to be a convenient representation of time as long as we&rsquo;re
+in possession of the contextual bits. In order to represent time in an universal
+way, you should have an idea what
 <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a> and
 <a href="http://en.wikipedia.org/wiki/Time_zone">timezones</a> are.</p>
 <p>Please do not confuse UTC with GMT: although their time matches, they are <em>two
@@ -3336,36 +3307,34 @@ convention it&rsquo;s in UTC. I know that when I receive a QSL card from any fel
 amateur radio operator, no matter where he is located across the whole wide
 world, I can look up the contact in my logbook and the date and time info is
 going to match, as we are both adhering to the same standard: UTC.</p>
-<p>Now, suppose I have to schedule a skype chat with a fellow software developer
-in the US. I could write him an email and say something along the lines of
-<em>&ldquo;see you on 2/3&rdquo;</em>. In Italy, that would be the second day in the month of
-march, but to an US person, that would be the third day in the month of
-february. As you can see, our chat is never going to happen.</p>
-<p>These are only a few examples of the kind of issues that might arise
-when representing date and time information. Luckily enough, there is a
-solution to the representation conundrums, namely the
+<p>Now, suppose I have to schedule a skype chat with a fellow software developer in
+the US. I could write him an email and say something along the lines of <em>&ldquo;see
+you on 2/3&rdquo;</em>. In Italy, that would be the second day in the month of march, but
+to an US person, that would be the third day in the month of february. As you
+can see, our chat is never going to happen.</p>
+<p>These are only a few examples of the kind of issues that might arise when
+representing date and time information. Luckily enough, there is a solution to
+the representation conundrums, namely the
 <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> standard.</p>
 <p>Just to give you an example, in ISO 8601, <code>1994-11-05T08:15:30-05:00</code>
 corresponds to November 5, 1994, 8:15:30 am, US Eastern Standard Time.
-<code>1994-11-05T13:15:30Z</code> corresponds to the same instant (the <code>Z</code> stands
-for UTC). Same instant, different representations.</p>
-<p>The ISO 8601 standard also has the nice side effect of providing natural
-sorting in systems that use lexicographical order (such as filesystems)
-because information is organized from most to least significant, i.e.
-year, month, day, hour, minute, second, fraction of a second.</p>
-<p>Even if you&rsquo;re only dealing with local times in your software, you
-should know that, unless you also display the time zone, you can never
-be sure of the time. I cannot remember how many times a developer has
-asked me to <em>fix the time</em> on the server, only to discover that his
-software was printing time in UTC.</p>
-<p>At display time, it is okay to deal with partial representation of time
-because the user experience requires so. Just make sure, when debugging,
-to print out the whole set of information, including the time zone,
-otherwise you can never be sure what you&rsquo;re looking at is what you
-actually think it is.</p>
-<p>Although a given moment in time is immutable, there is an arbitrary
-number of ways to express it. And we&rsquo;ve not even talked about the Julian or
-Indian calendars or stuff like expressing durations!</p>
+<code>1994-11-05T13:15:30Z</code> corresponds to the same instant (the <code>Z</code> stands for UTC).
+Same instant, different representations.</p>
+<p>The ISO 8601 standard also has the nice side effect of providing natural sorting
+in systems that use lexicographical order (such as filesystems) because
+information is organized from most to least significant, i.e. year, month, day,
+hour, minute, second, fraction of a second.</p>
+<p>Even if you&rsquo;re only dealing with local times in your software, you should know
+that, unless you also display the time zone, you can never be sure of the time.
+I cannot remember how many times a developer has asked me to <em>fix the time</em> on
+the server, only to discover that his software was printing time in UTC.</p>
+<p>At display time, it is okay to deal with partial representation of time because
+the user experience requires so. Just make sure, when debugging, to print out
+the whole set of information, including the time zone, otherwise you can never
+be sure what you&rsquo;re looking at is what you actually think it is.</p>
+<p>Although a given moment in time is immutable, there is an arbitrary number of
+ways to express it. And we&rsquo;ve not even talked about the Julian or Indian
+calendars or stuff like expressing durations!</p>
 <p>Let me summarize a few key points to bring home so far:</p>
 <ul>
 <li>get to know <a href="http://en.wikipedia.org/wiki/Time_zone">time zones</a> and
@@ -3388,30 +3357,31 @@ Think of an xml or json file:</p>
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>This is the serialized form of a peculiar imaginary person class instance.</p>
-<p>In the binary world of computers, time is usually serialized and stored
-by using the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a>
-convention. As I&rsquo;m writing this, my Unix time is <code>1366191727</code>. That
-is: <code>1366191727</code> seconds have passed since January 1st, 1970 at 00:00
-UTC. Isn&rsquo;t that a pretty clever, consistent and compact way of
-representing a plethora of information, such as <code>April 17 2013 @ 11:42:07am CEST</code>?</p>
+<p>In the binary world of computers, time is usually serialized and stored by using
+the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a> convention. As I&rsquo;m
+writing this, my Unix time is <code>1366191727</code>. That is: <code>1366191727</code> seconds have
+passed since January 1st, 1970 at 00:00 UTC. Isn&rsquo;t that a pretty clever,
+consistent and compact way of representing a plethora of information, such as
+<code>April 17 2013 @ 11:42:07am CEST</code>?</p>
 <p>Unix time is only another arbitrary representation of a given moment in time,
 although a not very human readable one. But you can take that number, write it
-on a piece of paper, stick it onto a carrier pigeon, and your recipient would
-be able to decipher your vital message by simply turning to the Internet and
+on a piece of paper, stick it onto a carrier pigeon, and your recipient would be
+able to decipher your vital message by simply turning to the Internet and
 visiting a site such as <a href="http://www.unixtimestamp.com/">unixtimestamp.com</a> or
 <a href="https://currentmillis.com/">currentmillis.com</a>.</p>
 <p>If you&rsquo;re a command line junkie like me, on Linux systems you can use:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ date -d @1366191727
 </span></span><span style="display:flex;"><span>Wed Apr <span style="color:#ae81ff">17</span> 11:42:07 CEST <span style="color:#ae81ff">2013</span>
-</span></span></code></pre></div><p>However, on BSD derived systems such as Mac OS X, date -d won’t work so you have to used instead:</p>
+</span></span></code></pre></div><p>However, on BSD derived systems such as Mac OS X, date -d won’t work so you have
+to used instead:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ date -r <span style="color:#ae81ff">1366191727</span>
 </span></span><span style="display:flex;"><span>Wed Apr <span style="color:#ae81ff">17</span> 11:42:07 CEST <span style="color:#ae81ff">2013</span>
-</span></span></code></pre></div><p>Just like you can write that number on a piece of paper and later get
-back the full instant back to life, you can store it in a file or a
-row in your favorite RDBMS. Although you might want to talk to your
-RDBMS using a proper driver and handing it a plain date instance; your
-driver will then take care of the conversion to the underlying database
-serialization format for native time instances.</p>
+</span></span></code></pre></div><p>Just like you can write that number on a piece of paper and later get back the
+full instant back to life, you can store it in a file or a row in your favorite
+RDBMS. Although you might want to talk to your RDBMS using a proper driver and
+handing it a plain date instance; your driver will then take care of the
+conversion to the underlying database serialization format for native time
+instances.</p>
 <p>By storing time using a native format, you get the nice time formatting,
 sorting, querying, etc features of your RDBMS for free, so you might want to
 think twice before storing plain Unix timestamps in, say, Oracle.</p>
@@ -3419,42 +3389,41 @@ think twice before storing plain Unix timestamps in, say, Oracle.</p>
 might get confused later at deserialization time. By default, a Unix timestamp
 is in UTC. If you use your system&rsquo;s libraries, you should be okay.</p>
 <p>When working with databases, use the most appropriate data types. For instance
-in Oracle, there&rsquo;s <a href="https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm">four different data
-types</a>:
-<code>DATE</code>, <code>TIMESTAMP</code>, <code>TIMESTAMP WITH TIME ZONE</code> and <code>TIMESTAMP WITH LOCAL TIME ZONE</code>. Also databases usually have a concept of database timezone and session
-timezone, so make sure you understand how your specific database is using
-those. A user that opens a session with timezone <code>A</code> is going to see different
-values than a user connecting with timezone <code>B</code>.</p>
-<p>ISO 8601 is also a serialization favorite. In fact, it is used in the <a href="http://www.w3.org/TR/xmlschema-2/#isoformats">XML
-Schema</a> standard.  Most xml
+in Oracle, there&rsquo;s
+<a href="https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm">four different data types</a>:
+<code>DATE</code>, <code>TIMESTAMP</code>, <code>TIMESTAMP WITH TIME ZONE</code> and
+<code>TIMESTAMP WITH LOCAL TIME ZONE</code>. Also databases usually have a concept of
+database timezone and session timezone, so make sure you understand how your
+specific database is using those. A user that opens a session with timezone <code>A</code>
+is going to see different values than a user connecting with timezone <code>B</code>.</p>
+<p>ISO 8601 is also a serialization favorite. In fact, it is used in the
+<a href="http://www.w3.org/TR/xmlschema-2/#isoformats">XML Schema</a> standard. Most xml
 frameworks are natively able to serialize and deserialize back and forth from
 <code>xs:date</code>, <code>xs:time</code> and <code>xs:dateTime</code> to your programming language&rsquo;s native
 format (and viceversa). The same is true for json. Just be careful when dealing
-with partial representations: for instance, if you omit the time zone, make
-sure you agree beforehand on a default one with your communicating party
-(usually UTC or your local time zone if you&rsquo;re both in the same one).</p>
+with partial representations: for instance, if you omit the time zone, make sure
+you agree beforehand on a default one with your communicating party (usually UTC
+or your local time zone if you&rsquo;re both in the same one).</p>
 <h2 id="management">Management</h2>
-<p>First of all, if you think you can write your own time management
-software library, or even write a little routine that adds or subtracts
-arbitrary values from the time of the day,
-please allow me to show you the source code for the
-<a href="http://www.docjar.com/html/api/java/util/Date.java.html">java.util.Date</a>
-and
+<p>First of all, if you think you can write your own time management software
+library, or even write a little routine that adds or subtracts arbitrary values
+from the time of the day, please allow me to show you the source code for the
+<a href="http://www.docjar.com/html/api/java/util/Date.java.html">java.util.Date</a> and
 <a href="http://www.docjar.com/html/api/java/util/GregorianCalendar.java.html">java.util.GregorianCalendar</a>
 classes from JDK 7, respectively weighting 1331 and 3179 lines of code.</p>
-<p>Okay, these are probably not the best examples of software routines that
-deal with time, I agree. That&rsquo;s why Java libraries like
-<a href="http://joda-time.sourceforge.net/">Joda Time</a> were written.
-In fact, Joda Time has become so popular that it gave birth to
+<p>Okay, these are probably not the best examples of software routines that deal
+with time, I agree. That&rsquo;s why Java libraries like
+<a href="http://joda-time.sourceforge.net/">Joda Time</a> were written. In fact, Joda Time
+has become so popular that it gave birth to
 <a href="http://jcp.org/en/jsr/detail?id=310">JSR-310</a> and is
 <a href="http://www.h-online.com/open/news/item/JSR-310-s-Date-and-Time-API-added-to-JDK-8-1708647.html">now</a>
 <a href="http://www.infoq.com/news/2013/02/java-time-api-jdk-8">part</a> of JDK 8.</p>
 <p>Use of popular, well designed and implemented time frameworks will save your
 life. Seriously. Take your time to get familiar with the API of your choosing.</p>
 <h2 id="common-time-tasks-in-java">Common Time Tasks in Java</h2>
-<p>Let&rsquo;s see how all this translates into java code. Any language will of course
-be different but everything I&rsquo;m doing here should be possible in your language
-of choice.</p>
+<p>Let&rsquo;s see how all this translates into java code. Any language will of course be
+different but everything I&rsquo;m doing here should be possible in your language of
+choice.</p>
 <p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don&rsquo;t use that
 classes any more. The new time api is in the <code>java.time</code> package.</p>
 <iframe height="500px" width="100%" src="https://replit.com/@mcaserta/DateTimeApiExample?lite=false" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>

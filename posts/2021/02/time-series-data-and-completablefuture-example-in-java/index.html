@@ -15,8 +15,7 @@ symbol meaning AQi air quality index T air temperature in Celsius degrees Tm max
 intended for educational purposes only. I don&rsquo;t want environmentalists and real
 scientists chasing me around with math formulas and accusations of quackery.
 Also, I saw a chance for a pretty LaTeX equation and I took it, because
-aesthetics&mldr; and it makes me look smart, which I certainly am
-not<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p><p>What the formula attempts to say is that as the temperature and the carbon
+aesthetics&mldr; and it makes me look smart, which I certainly am not<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p><p>What the formula attempts to say is that as the temperature and the carbon
 monoxide percentage rise, the air quality decreases. Yeah, this is totally
 unscientific but bear with me for the sake of argumentation, please.</p><p>I assume a maximum temperature of 40C°. So, for instance:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ bc -l
 </span></span><span style=display:flex><span>bc 1.06
@@ -38,33 +37,32 @@ unscientific but bear with me for the sake of argumentation, please.</p><p>I ass
 </span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>10; c<span style=color:#f92672>=</span>0.5; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
 </span></span><span style=display:flex><span>12.75000000000000000000
 </span></span></code></pre></div><p>From this we can derive the following totally unscientific table:</p><table><thead><tr><th>AQi</th><th>meaning</th></tr></thead><tbody><tr><td>125 to ∞</td><td>horrible death</td></tr><tr><td>100 to 125</td><td>painful death</td></tr><tr><td>75 to 100</td><td>death</td></tr><tr><td>55 to 75</td><td>it is acceptable<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></td></tr><tr><td>30 to 55</td><td>this is fine<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup></td></tr><tr><td>15 to 30</td><td>fine and dandy</td></tr><tr><td>12.75 to 15</td><td>pretty cool</td></tr><tr><td>-∞ to 12.75</td><td>welcome to Yakutsk, probably</td></tr></tbody></table><h2 id=service-providers>Service providers</h2><p>Suppose we have internet services that expose temperature and carbon monoxide
-level monitoring values. These services might expose an api that gives us
-time series data<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p><p>So, for instance, we might call a temperature monitoring service, and it would
+level monitoring values. These services might expose an api that gives us time
+series data<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p><p>So, for instance, we might call a temperature monitoring service, and it would
 respond with time series data like this:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:00:00Z</code></td><td><code>10.1</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>10.3</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>10.7</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>10.9</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>11.0</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>11.1</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>11.3</code></td></tr></tbody></table><p>A carbon monoxide percentage monitoring service might instead respond with data
 that looks like this:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>2.0</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>2.3</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>2.8</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>2.9</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td></tr></tbody></table><p>Please note that I have sorted the data by timestamp to make it a bit more
 readable, but you shouldn&rsquo;t make assumptions on the sort order of the data
-returned by an external provider. Not that this is of any importance here as&mldr;</p><h1 id=the-algorithm>The algorithm</h1><p>&mldr;our algorithm now requires:</p><ol><li>concatenating the temperature and carbon monoxide percentage data</li><li>sorting by timestamp</li></ol><table><thead><tr><th>id</th><th>timestamp</th><th>value</th><th>type</th></tr></thead><tbody><tr><td><code>1</code></td><td><code>2021-01-20T08:00:00Z</code></td><td><code>10.1</code></td><td><code>T</code></td></tr><tr><td><code>2</code></td><td><code>2021-01-20T08:01:00Z</code></td><td><code>2.0</code></td><td><code>C</code></td></tr><tr><td><code>3</code></td><td><code>2021-01-20T08:02:00Z</code></td><td><code>10.3</code></td><td><code>T</code></td></tr><tr><td><code>4</code></td><td><code>2021-01-20T08:02:00Z</code></td><td><code>2.3</code></td><td><code>C</code></td></tr><tr><td><code>5</code></td><td><code>2021-01-20T08:05:00Z</code></td><td><code>10.7</code></td><td><code>T</code></td></tr><tr><td><code>6</code></td><td><code>2021-01-20T08:06:00Z</code></td><td><code>10.9</code></td><td><code>T</code></td></tr><tr><td><code>7</code></td><td><code>2021-01-20T08:06:00Z</code></td><td><code>2.8</code></td><td><code>C</code></td></tr><tr><td><code>8</code></td><td><code>2021-01-20T08:06:19Z</code></td><td><code>11.0</code></td><td><code>T</code></td></tr><tr><td><code>9</code></td><td><code>2021-01-20T08:06:42Z</code></td><td><code>11.1</code></td><td><code>T</code></td></tr><tr><td><code>10</code></td><td><code>2021-01-20T08:07:00Z</code></td><td><code>2.9</code></td><td><code>C</code></td></tr><tr><td><code>11</code></td><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td><td><code>C</code></td></tr><tr><td><code>12</code></td><td><code>2021-01-20T08:09:00Z</code></td><td><code>11.3</code></td><td><code>T</code></td></tr></tbody></table><blockquote><p>type: T is temperature and C is carbon monoxide percentage</p></blockquote><p>Our task now is to scan the data, starting from the beginning, one row at a time,
-computing the air quality index as we go forward, step by step.</p><p>The first thing to note here is that to compute our <code>AQi</code> formula we need to have
-both values for <code>T</code> and <code>C</code>. In other words, the first time point where we can
-apply our formula is that with id <code>2</code> as we have a value for <code>T</code> in id <code>1</code> and
-a value for <code>C</code> in id <code>2</code>. So we take our values (<code>10.1</code> for <code>T</code> and <code>2.0</code> for
-<code>C</code>), apply the formula, and we have a first <code>AQi</code> value of <code>13.625</code> which we
-associate with the timestamp in id <code>2</code>, as that is the moment our computation
+returned by an external provider. Not that this is of any importance here as&mldr;</p><h1 id=the-algorithm>The algorithm</h1><p>&mldr;our algorithm now requires:</p><ol><li>concatenating the temperature and carbon monoxide percentage data</li><li>sorting by timestamp</li></ol><table><thead><tr><th>id</th><th>timestamp</th><th>value</th><th>type</th></tr></thead><tbody><tr><td><code>1</code></td><td><code>2021-01-20T08:00:00Z</code></td><td><code>10.1</code></td><td><code>T</code></td></tr><tr><td><code>2</code></td><td><code>2021-01-20T08:01:00Z</code></td><td><code>2.0</code></td><td><code>C</code></td></tr><tr><td><code>3</code></td><td><code>2021-01-20T08:02:00Z</code></td><td><code>10.3</code></td><td><code>T</code></td></tr><tr><td><code>4</code></td><td><code>2021-01-20T08:02:00Z</code></td><td><code>2.3</code></td><td><code>C</code></td></tr><tr><td><code>5</code></td><td><code>2021-01-20T08:05:00Z</code></td><td><code>10.7</code></td><td><code>T</code></td></tr><tr><td><code>6</code></td><td><code>2021-01-20T08:06:00Z</code></td><td><code>10.9</code></td><td><code>T</code></td></tr><tr><td><code>7</code></td><td><code>2021-01-20T08:06:00Z</code></td><td><code>2.8</code></td><td><code>C</code></td></tr><tr><td><code>8</code></td><td><code>2021-01-20T08:06:19Z</code></td><td><code>11.0</code></td><td><code>T</code></td></tr><tr><td><code>9</code></td><td><code>2021-01-20T08:06:42Z</code></td><td><code>11.1</code></td><td><code>T</code></td></tr><tr><td><code>10</code></td><td><code>2021-01-20T08:07:00Z</code></td><td><code>2.9</code></td><td><code>C</code></td></tr><tr><td><code>11</code></td><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td><td><code>C</code></td></tr><tr><td><code>12</code></td><td><code>2021-01-20T08:09:00Z</code></td><td><code>11.3</code></td><td><code>T</code></td></tr></tbody></table><blockquote><p>type: T is temperature and C is carbon monoxide percentage</p></blockquote><p>Our task now is to scan the data, starting from the beginning, one row at a
+time, computing the air quality index as we go forward, step by step.</p><p>The first thing to note here is that to compute our <code>AQi</code> formula we need to
+have both values for <code>T</code> and <code>C</code>. In other words, the first time point where we
+can apply our formula is that with id <code>2</code> as we have a value for <code>T</code> in id <code>1</code>
+and a value for <code>C</code> in id <code>2</code>. So we take our values (<code>10.1</code> for <code>T</code> and <code>2.0</code>
+for <code>C</code>), apply the formula, and we have a first <code>AQi</code> value of <code>13.625</code> which
+we associate with the timestamp in id <code>2</code>, as that is the moment our computation
 refers to. Our first <code>AQi</code> entry in the resulting time series should now look
 like this:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr></tbody></table><p>From now on, our calculation can be applied to every remaining element in the
 time series, keeping in mind that we must correlate each value with the most
 recent value of the other type. In other words:</p><table><thead><tr><th>for id</th><th>pick values from id</th></tr></thead><tbody><tr><td><code>2</code></td><td><code>1, 2</code></td></tr><tr><td><code>3</code></td><td><code>2, 3</code></td></tr><tr><td><code>4</code></td><td><code>3, 4</code></td></tr><tr><td><code>5</code></td><td><code>4, 5</code></td></tr><tr><td><code>6</code></td><td><code>4, 6</code></td></tr><tr><td><code>7</code></td><td><code>6, 7</code></td></tr><tr><td><code>8</code></td><td><code>7, 8</code></td></tr><tr><td><code>9</code></td><td><code>7, 9</code></td></tr><tr><td><code>10</code></td><td><code>9, 10</code></td></tr><tr><td><code>11</code></td><td><code>9, 11</code></td></tr><tr><td><code>12</code></td><td><code>11, 12</code></td></tr></tbody></table><p>You can think of this kind of motion as a
 <a href=https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e>rolling time window</a>
-as you have a window that moves forward in time focusing on the most
-recent data for our specific <code>T</code> and <code>C</code> measures at each
-step<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p><h2 id=rolling-time-window>Rolling Time Window</h2><p>Go ahead, scroll down. You&rsquo;re going to see it.</p><pre tabindex=0><code>/===================================================================================\
+as you have a window that moves forward in time focusing on the most recent data
+for our specific <code>T</code> and <code>C</code> measures at each step<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p><h2 id=rolling-time-window>Rolling Time Window</h2><p>Go ahead, scroll down. You&rsquo;re going to see it.</p><pre tabindex=0><code>/===================================================================================\
 |                   Step 01 :: T = 10.1, C = 2.0 :: AQi = 13.625                    |
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
 | id |   1  |  2  |   3  |  4  |   5  |   6  |  7  |   8  |   9  |  10 |  11 |  12  |
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
 |  T | 10.1 |     | 10.3 |     | 10.7 | 10.9 |     | 11.0 | 11.1 |     |     | 11.3 |
 |  C |      | 2.0 |      | 2.3 |      |      | 2.8 |      |      | 2.9 | 3.3 |      |
-     |&lt;----------&gt;|                                                                
+     |&lt;----------&gt;|
 
 
 /===================================================================================\
@@ -156,46 +154,46 @@ step<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup
 |  T | 10.1 |     | 10.3 |     | 10.7 | 10.9 |     | 11.0 | 11.1 |     |     | 11.3 |
 |  C |      | 2.0 |      | 2.3 |      |      | 2.8 |      |      | 2.9 | 3.3 |      |
                                                                        |&lt;----------&gt;|
-</code></pre><p>Given the above, our complete resulting time series for the <code>AQi</code> is:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>13.875</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>14.775</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>15.150</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>15.275</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p>If you&rsquo;ve looked closely, you might have noticed that we have a couple
-duplicate timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
+</code></pre><p>Given the above, our complete resulting time series for the <code>AQi</code> is:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>13.875</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>14.775</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>15.150</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>15.275</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p>If you&rsquo;ve looked closely, you might have noticed that we have a couple duplicate
+timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
 <code>2021-01-20T08:06:00Z</code>. These represent a time paradox as it appears that our
 <code>AQi</code> has two different values at the same time.</p><p><img src=https://mirkocaserta.com/images/posts/i-find-your-lack-of-logic-disturbing.jpg alt="I find your lack of logic disturbing"></p><p>We both know this data is eventually going to show up on a web page. Also, we
-wouldn&rsquo;t want one of those hipster javascript frontend developers to point out
-a lack of logic or, worse, an inconsistency in our data to us, wouldn&rsquo;t we?</p><p>Yeah, I thought so. So, my idea is that we can safely discard the first entry
-of a duplicate timestamp as it refers to a calculation with stale data. Why?
-Well, consider the values for the first duplicate timestamp:
-<code>2021-01-20T08:02:00Z</code>. The first time we computed the <code>AQi</code>, we picked data
-from id <code>2</code> and <code>3</code> and id <code>2</code> refers to a previous timestamp, specifically
-<code>2021-01-20T08:01:00Z</code>. The second time we computed the <code>AQi</code>, we were using
-data from id <code>3</code> and <code>4</code>, which both refer to timestamp <code>2021-01-20T08:02:00Z</code>,
-so this computation&rsquo;s result is more relevant than the previous one which we
-stamped with the same <code>2021-01-20T08:02:00Z</code> timestamp.</p><p>The same thing applies to the <code>AQi</code> entry with timestamp <code>2021-01-20T08:06:00Z</code>
+wouldn&rsquo;t want one of those hipster javascript frontend developers to point out a
+lack of logic or, worse, an inconsistency in our data to us, wouldn&rsquo;t we?</p><p>Yeah, I thought so. So, my idea is that we can safely discard the first entry of
+a duplicate timestamp as it refers to a calculation with stale data. Why? Well,
+consider the values for the first duplicate timestamp: <code>2021-01-20T08:02:00Z</code>.
+The first time we computed the <code>AQi</code>, we picked data from id <code>2</code> and <code>3</code> and id
+<code>2</code> refers to a previous timestamp, specifically <code>2021-01-20T08:01:00Z</code>. The
+second time we computed the <code>AQi</code>, we were using data from id <code>3</code> and <code>4</code>, which
+both refer to timestamp <code>2021-01-20T08:02:00Z</code>, so this computation&rsquo;s result is
+more relevant than the previous one which we stamped with the same
+<code>2021-01-20T08:02:00Z</code> timestamp.</p><p>The same thing applies to the <code>AQi</code> entry with timestamp <code>2021-01-20T08:06:00Z</code>
 as the first computation was using ids <code>4</code> and <code>6</code> while the second was
 considering ids <code>6</code> and <code>7</code> which are fresher than the timestamp in id <code>4</code>.</p><p>So we erase a couple entries, and our clean result set now looks like this:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>15.150</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>15.275</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p>Just as an equation is an excuse to brush up on some
-<a href=https://www.latex-project.org/>LaTeX</a>, a good time
-series is an excellent candidate for <a href=http://www.gnuplot.info/>gnuplot</a>.</p><p><img src=https://mirkocaserta.com/images/posts/plot-output.png alt="plot of the data so far"></p><p>Real data is of course much more chaotic than this, and you might want to
+<a href=https://www.latex-project.org/>LaTeX</a>, a good time series is an excellent
+candidate for <a href=http://www.gnuplot.info/>gnuplot</a>.</p><p><img src=https://mirkocaserta.com/images/posts/plot-output.png alt="plot of the data so far"></p><p>Real data is of course much more chaotic than this, and you might want to
 normalize the result by an arbitrary time interval, say one minute:</p><table><thead><tr><th>timestamp</th><th>value</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:03:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:04:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p><img src=https://mirkocaserta.com/images/posts/plot-output-normalized.png alt="plot of the normalized data"></p><p>Makes sense? I certainly hope so.</p><p><img src=https://mirkocaserta.com/images/posts/yes.gif alt=yes></p><h2 id=lets-get-coding>Let&rsquo;s get coding</h2><p>Time to write some code. First of all, let&rsquo;s define an interface for our <code>AQi</code>
 calculator, so we can provide different implementations later on.</p><p>The code for this interface can be seen
 <a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java>here</a>.</p><p>This interface makes for a convenient place to implement the <code>AQi</code> formula:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>double</span> <span style=color:#a6e22e>airQualityIndex</span><span style=color:#f92672>(</span><span style=color:#66d9ef>double</span> temperature<span style=color:#f92672>,</span> <span style=color:#66d9ef>double</span> carbonMonoxidePercentage<span style=color:#f92672>,</span> <span style=color:#66d9ef>double</span> maxTemperature<span style=color:#f92672>)</span> <span style=color:#f92672>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> <span style=color:#f92672>(((</span>temperature <span style=color:#f92672>*</span> <span style=color:#ae81ff>100</span><span style=color:#f92672>)</span> <span style=color:#f92672>/</span> maxTemperature<span style=color:#f92672>)</span> <span style=color:#f92672>+</span> carbonMonoxidePercentage<span style=color:#f92672>)</span> <span style=color:#f92672>/</span> <span style=color:#ae81ff>2</span><span style=color:#f92672>;</span>
 </span></span><span style=display:flex><span><span style=color:#f92672>}</span>
-</span></span></code></pre></div><p>This method takes a temperature, a carbon monoxide percentage, a max
-temperature and returns the <code>AQi</code>. Nice.</p><p>The interesting bit however is this method:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>calculate</span><span style=color:#f92672>(</span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> temperatures<span style=color:#f92672>,</span> List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> carbonMonoxidePercentages<span style=color:#f92672>);</span>
-</span></span></code></pre></div><p>This says that the <code>calculate</code> method takes two lists of <code>TimeValue</code>s: the
-first is a list of temperatures and the other is a list of carbon monoxide
+</span></span></code></pre></div><p>This method takes a temperature, a carbon monoxide percentage, a max temperature
+and returns the <code>AQi</code>. Nice.</p><p>The interesting bit however is this method:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>calculate</span><span style=color:#f92672>(</span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> temperatures<span style=color:#f92672>,</span> List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> carbonMonoxidePercentages<span style=color:#f92672>);</span>
+</span></span></code></pre></div><p>This says that the <code>calculate</code> method takes two lists of <code>TimeValue</code>s: the first
+is a list of temperatures and the other is a list of carbon monoxide
 percentages. It then returns a list of <code>TimeValue</code>s, only this time the list is
 representing air quality indices.</p><p>What is a <code>TimeValue</code>? You can see its definition
 <a href=https://github.com/mcaserta/time-series-concurrency-example/blob/c5b4574a40be0a818aba1513aaef7cc9d2a41d2b/src/main/java/com/mirkocaserta/example/TimeValue.java#L7>here</a>.
 Although this seems horribly complicated due to the verbosity of the Java
-language and a few implementation details, you can think of a time value as
-just a convenient way to represent an <code>Instant</code> in time and its associated
-<code>value</code>. Nothing fancy, really.</p><h2 id=coding-like-its-1984>Coding like it&rsquo;s 1984</h2><p>Now that we have a basic framework for our calculations, let&rsquo;s write a first
+language and a few implementation details, you can think of a time value as just
+a convenient way to represent an <code>Instant</code> in time and its associated <code>value</code>.
+Nothing fancy, really.</p><h2 id=coding-like-its-1984>Coding like it&rsquo;s 1984</h2><p>Now that we have a basic framework for our calculations, let&rsquo;s write a first
 implementation using the old school style. The complete code for this is
 <a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java>here</a>.
-Let&rsquo;s take a look.</p><p>Our calculator takes the max temperature in its constructor and stores its
-value in the <code>maxTemperature</code> instance constant as we&rsquo;ll need its value later
-when invoking the <code>AQi</code> function.</p><p>Our <code>calculate</code> method should start with these two steps:</p><ol><li>concatenate the temperature and carbon monoxide percentage
-data in a single data structure</li><li>sort the resulting data by timestamp</li></ol><p>Step 1 is implemented by this code:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>// key = time value type (C = carbonMonoxidePercentage, T = temperature)
+Let&rsquo;s take a look.</p><p>Our calculator takes the max temperature in its constructor and stores its value
+in the <code>maxTemperature</code> instance constant as we&rsquo;ll need its value later when
+invoking the <code>AQi</code> function.</p><p>Our <code>calculate</code> method should start with these two steps:</p><ol><li>concatenate the temperature and carbon monoxide percentage data in a single
+data structure</li><li>sort the resulting data by timestamp</li></ol><p>Step 1 is implemented by this code:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>// key = time value type (C = carbonMonoxidePercentage, T = temperature)
 </span></span></span><span style=display:flex><span><span style=color:#75715e>// concatenated with the timestamp as a string
 </span></span></span><span style=display:flex><span><span style=color:#75715e></span>Map<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>,</span> TimeValue<span style=color:#f92672>&gt;</span> timeValuesByType <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> HashMap<span style=color:#f92672>&lt;&gt;();</span>
 </span></span><span style=display:flex><span>
@@ -220,12 +218,12 @@ types of values. The key string will look like this:
 </span></span></code></pre></div><p>This is just overcomplicated Java lingo for having our map sorted by the
 timestamp we have in the Java map values. We declare a
 <code>timeValuesByTypeSortedByTimestamp</code> map, implemented by a <code>LinkedHashMap</code>
-because we want to preserve the iteration order of the map entries. Then we
-wrap all the keys in our original <code>timeValuesByType</code> map in an ArrayList as we
-need a <code>List</code> in order to then invoke <code>sort</code> on it. The comparator function we
-are passing to sort is picking the timestamp of the relative entry in the
-original <code>timeValuesByType</code> map. We then iterate <code>keysSortedByTimestamp</code>,
-adding entries to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p><p>Now we are declaring a map for the results of our <code>AQi</code> calculations and a
+because we want to preserve the iteration order of the map entries. Then we wrap
+all the keys in our original <code>timeValuesByType</code> map in an ArrayList as we need a
+<code>List</code> in order to then invoke <code>sort</code> on it. The comparator function we are
+passing to sort is picking the timestamp of the relative entry in the original
+<code>timeValuesByType</code> map. We then iterate <code>keysSortedByTimestamp</code>, adding entries
+to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p><p>Now we are declaring a map for the results of our <code>AQi</code> calculations and a
 couple variables we&rsquo;ll need later:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>Map<span style=color:#f92672>&lt;</span>Instant<span style=color:#f92672>,</span> Double<span style=color:#f92672>&gt;</span> airQualityIndexMap <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> HashMap<span style=color:#f92672>&lt;&gt;();</span>
 </span></span><span style=display:flex><span>TimeValue lastTemperature <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span><span style=color:#f92672>;</span>
 </span></span><span style=display:flex><span>TimeValue lastCarbonMonoxidePercentage <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span><span style=color:#f92672>;</span>
@@ -299,10 +297,9 @@ accumulate the input data. As you can see, we simply return a reference to the
 </span></span><span style=display:flex><span>    <span style=color:#f92672>};</span>
 </span></span><span style=display:flex><span><span style=color:#f92672>}</span>
 </span></span></code></pre></div><p>The combiner method must return a function that combines two accumulators. The
-implementation should pick all elements from the second accumulator and add
-them to the first one, which doesn&rsquo;t sound very functional in terms of
-immutability but in this case mutation is an expected behavior, and it&rsquo;s
-totally fine.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Override</span>
+implementation should pick all elements from the second accumulator and add them
+to the first one, which doesn&rsquo;t sound very functional in terms of immutability
+but in this case mutation is an expected behavior, and it&rsquo;s totally fine.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Override</span>
 </span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> Function<span style=color:#f92672>&lt;</span>Queue<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;,</span> List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;&gt;</span> <span style=color:#a6e22e>finisher</span><span style=color:#f92672>()</span> <span style=color:#f92672>{</span>
 </span></span><span style=display:flex><span>    <span style=color:#f92672>...</span>
 </span></span></code></pre></div><p>Finally, the finisher must return a function which takes all the accumulated
@@ -332,27 +329,27 @@ stale ones.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;backgrou
 </span></span></code></pre></div><p>This is quite a mouthful but let&rsquo;s go through it bit by bit. We are streaming
 the accumulated data, extracting the timestamp, sorting by it and, for each
 timestamp we look for the temperature and carbon monoxide percentage data with
-the closest timestamp. <em>Closest</em> means that the timestamp we&rsquo;re evaluating
-must be before of or equal to the timestamp in question.</p><p>If we have both data (<code>T</code> and <code>C</code>), we can proceed to calculate the <code>AQi</code> and
+the closest timestamp. <em>Closest</em> means that the timestamp we&rsquo;re evaluating must
+be before of or equal to the timestamp in question.</p><p>If we have both data (<code>T</code> and <code>C</code>), we can proceed to calculate the <code>AQi</code> and
 put its value into the <code>aqiAccumulator</code> map.</p><p>In the end, all we have to do is to stream the values in the <code>aqiAccumulator</code>
 map, sort by timestamp and collect them in an unmodifiable <code>List&lt;TimeValue></code>.</p><p>Sorting like this is possible since we made our <code>TimeValue</code> class implement
 <code>Comparable&lt;TimeValue></code>.</p><p>There are several points in the <code>finisher</code> method where I look into the
-datastructures I&rsquo;m iterating on, which, again, doesn&rsquo;t look very kosher in
-terms of functional programming, but it&rsquo;s okay as I know that the data I&rsquo;m
-examining isn&rsquo;t being changed by a concurrent thread under the hood.</p><p>Is this better than our old school calculator? I&rsquo;m not sure. This is still
-quite verbose, but to me it seems easier to read as most of the code is
-expressed in a declarative style rather than an imperative one.</p><h2 id=concurrency-considerations>Concurrency considerations</h2><p>As we need to retrieve two different sets of data from two different providers
-(one for temperature data and one for carbon monoxide percentage data), we
-might want to run the clients in parallel. This has an advantage over
-traditional single threaded execution where you would have to serialize the
-calls to the providers.</p><p>In a single threaded environment, you might write code like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>TimeValueProvider providerT <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> TemperatureTimeValueProvider<span style=color:#f92672>();</span>
+datastructures I&rsquo;m iterating on, which, again, doesn&rsquo;t look very kosher in terms
+of functional programming, but it&rsquo;s okay as I know that the data I&rsquo;m examining
+isn&rsquo;t being changed by a concurrent thread under the hood.</p><p>Is this better than our old school calculator? I&rsquo;m not sure. This is still quite
+verbose, but to me it seems easier to read as most of the code is expressed in a
+declarative style rather than an imperative one.</p><h2 id=concurrency-considerations>Concurrency considerations</h2><p>As we need to retrieve two different sets of data from two different providers
+(one for temperature data and one for carbon monoxide percentage data), we might
+want to run the clients in parallel. This has an advantage over traditional
+single threaded execution where you would have to serialize the calls to the
+providers.</p><p>In a single threaded environment, you might write code like this:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>TimeValueProvider providerT <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> TemperatureTimeValueProvider<span style=color:#f92672>();</span>
 </span></span><span style=display:flex><span>TimeValueProvider providerC <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> CarbonMonoxidePercentageProvider<span style=color:#f92672>();</span>
 </span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValuesT <span style=color:#f92672>=</span> providerT<span style=color:#f92672>.</span><span style=color:#a6e22e>get</span><span style=color:#f92672>();</span>
 </span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValuesC <span style=color:#f92672>=</span> providerC<span style=color:#f92672>.</span><span style=color:#a6e22e>get</span><span style=color:#f92672>();</span>
 </span></span></code></pre></div><p>This translates to the following serial execution model:</p><p><img src=https://mirkocaserta.com/images/posts/sequence-diagram-serial.jpg alt="sequence diagram for serial execution"></p><p>As we said, we can do better than this. In a multithreaded environment, we can
-spawn the two clients concurrently and start processing their data as soon as
-we receive a response from both. This saves us some time and potentially speeds
-up our overall response time.</p><p><img src=https://mirkocaserta.com/images/posts/sequence-diagram-parallel.jpg alt="sequence diagram for parallel execution"></p><p>How do we implement this execution model in our code? There are several options
+spawn the two clients concurrently and start processing their data as soon as we
+receive a response from both. This saves us some time and potentially speeds up
+our overall response time.</p><p><img src=https://mirkocaserta.com/images/posts/sequence-diagram-parallel.jpg alt="sequence diagram for parallel execution"></p><p>How do we implement this execution model in our code? There are several options
 but the most popular and the one I personally like the most is to use
 <code>CompletableFuture</code>s, which were introduced in Java 8 if I recall correctly.</p><p>A <code>CompletableFuture</code> is a container for a computation. You provide it the code
 you want to execute and the Java runtime takes care of running it concurrently
@@ -370,15 +367,15 @@ code runs in parallel. I might as well have written:</p><div class=highlight><pr
 our <code>CompletableFuture</code> returns a <code>List&lt;TimeValue></code>, the <code>supplyAsync</code> method
 returns a <code>CompletableFuture&lt;List&lt;TimeValue>></code>, which is Java&rsquo;s way of saying
 that the <code>timedValuesFuture1</code> variable is a <code>CompletableFuture</code> holding a
-<code>List&lt;TimeValue></code>. Please note that the code we are passing to the
-<code>supplyAsync</code> method is inside a lambda. What this means is that our code
-doesn&rsquo;t get executed in the <code>supplyAsync</code> method but the Java runtime is free
-to choose when it&rsquo;s the best time to run it. The default scheduler will
-generally start running your <code>CompletableFuture</code>s as soon as they are defined
-but you need to understand that this is not necessarily so and that defining a
-lambda doesn&rsquo;t mean it gets executed at the point of declaration.</p><p>We now need a way to make sure our <code>CompletableFuture</code>s have completed their
-execution before going on. This is done by composing our futures and calling
-the <code>join</code> method on the resulting future:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>CompletableFuture<span style=color:#f92672>.</span><span style=color:#a6e22e>allOf</span><span style=color:#f92672>(</span>timedValuesFuture1<span style=color:#f92672>,</span> timedValuesFuture2<span style=color:#f92672>).</span><span style=color:#a6e22e>join</span><span style=color:#f92672>();</span>
+<code>List&lt;TimeValue></code>. Please note that the code we are passing to the <code>supplyAsync</code>
+method is inside a lambda. What this means is that our code doesn&rsquo;t get executed
+in the <code>supplyAsync</code> method but the Java runtime is free to choose when it&rsquo;s the
+best time to run it. The default scheduler will generally start running your
+<code>CompletableFuture</code>s as soon as they are defined but you need to understand that
+this is not necessarily so and that defining a lambda doesn&rsquo;t mean it gets
+executed at the point of declaration.</p><p>We now need a way to make sure our <code>CompletableFuture</code>s have completed their
+execution before going on. This is done by composing our futures and calling the
+<code>join</code> method on the resulting future:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>CompletableFuture<span style=color:#f92672>.</span><span style=color:#a6e22e>allOf</span><span style=color:#f92672>(</span>timedValuesFuture1<span style=color:#f92672>,</span> timedValuesFuture2<span style=color:#f92672>).</span><span style=color:#a6e22e>join</span><span style=color:#f92672>();</span>
 </span></span></code></pre></div><p>The <code>allOf</code> method returns a new <code>CompletableFuture</code> which wraps the futures
 we&rsquo;re passing to it. On this new future we then call <code>join</code> which blocks until
 all the wrapped futures have finished executing.</p><p>After this line, we are sure that our threads have run, so we can get the data
@@ -396,14 +393,13 @@ we need from our original futures with the <code>join</code> method:</p><div cla
 called much before calling provider 2 and both results were returned from
 providers.</p><p>Your output will definitely be different as:</p><ol><li>the threads&rsquo; execution order is non-deterministic</li><li>the providers&rsquo; values are generated randomly</li></ol><h2 id=conclusion>Conclusion</h2><p>You&rsquo;ve made it! This was quite the run. I hope it&rsquo;s been entertaining. I spent
 quite a bit of time on this as I was trying to dig deeper into some issues I&rsquo;ve
-had at work. I suggest you do the same when you run into problems that need
-some clarification on your side. I also hope you found this useful.</p><h2 id=bonus>Bonus</h2><p><img src=https://mirkocaserta.com/images/posts/reading-memes-on-github.webp alt="reading memes on github"></p><p><a href=https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/>Credits</a></p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>this is my revenge for all the bad math grades at
-school.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p><img src=https://mirkocaserta.com/images/posts/it-is-acceptable.jpg alt="it is acceptable meme">&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p><img src=https://mirkocaserta.com/images/posts/this-is-fine.webp alt="this is fine meme">&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p>Time series data, also referred to as
-time-stamped data, is a sequence of data points indexed in time order.
-Time-stamped is data collected at different points in time. These data points
-typically consist of successive measurements made from the same source over a
-time interval and are used to track change over time.&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5><p>I like to think of this movement as a kind of dance,
-and I find it sexy. I think <a href=https://youtu.be/XFkzRNyygfk>I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div></article><hr><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg><span class=tag><a href=https://mirkocaserta.com/tags/time-series-data/>time-series-data</a></span>
+had at work. I suggest you do the same when you run into problems that need some
+clarification on your side. I also hope you found this useful.</p><h2 id=bonus>Bonus</h2><p><img src=https://mirkocaserta.com/images/posts/reading-memes-on-github.webp alt="reading memes on github"></p><p><a href=https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/>Credits</a></p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>this is my revenge for all the bad math grades at school.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p><img src=https://mirkocaserta.com/images/posts/it-is-acceptable.jpg alt="it is acceptable meme">&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p><img src=https://mirkocaserta.com/images/posts/this-is-fine.webp alt="this is fine meme">&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p>Time series data, also referred to as time-stamped data, is a sequence of
+data points indexed in time order. Time-stamped is data collected at
+different points in time. These data points typically consist of successive
+measurements made from the same source over a time interval and are used to
+track change over time.&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5><p>I like to think of this movement as a kind of dance, and I find it sexy. I
+think <a href=https://youtu.be/XFkzRNyygfk>I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div></article><hr><div class=post-info><p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg><span class=tag><a href=https://mirkocaserta.com/tags/time-series-data/>time-series-data</a></span>
 <span class=tag><a href=https://mirkocaserta.com/tags/time-series/>time-series</a></span>
 <span class=tag><a href=https://mirkocaserta.com/tags/completablefuture/>completablefuture</a></span>
 <span class=tag><a href=https://mirkocaserta.com/tags/java/>java</a></span>

@@ -3,18 +3,21 @@ title: "🇺🇸 The Matrix Screensaver for Commodore 64"
 date: 2021-05-11T12:19:00Z
 toc: false
 tags:
- - c64
- - programming
- - software development
+  - c64
+  - programming
+  - software development
 categories:
- - software development
+  - software development
 draft: false
 type: post
 ---
 
 {{< rawhtml >}}
+
 <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
+
 <canvas  id="canvas" style="border: 0px none;"></canvas>
+
 <script type="text/javascript" >
 
     function loadFiles() {
@@ -32,29 +35,30 @@ type: post
 
 </script>
 <script type="text/javascript" src="/js/x64.js"></script>
+
 {{< /rawhtml >}}
 
 I am trying to learn some 6502 assembly and this is the result of one of my
 first experiments.
 
-It takes a while to load but what you are seeing above is a live emulation of
-my screensaver software.
+It takes a while to load but what you are seeing above is a live emulation of my
+screensaver software.
 
 Once it's loaded, the following commands are available through the keyboard:
 
-| key | use |
-|-----|-----|
-| `B` | binary display mode |
-| `X` | hex display mode |
+| key | use                           |
+| --- | ----------------------------- |
+| `B` | binary display mode           |
+| `X` | hex display mode              |
 | `R` | random display mode (default) |
-| `N` | increments border color |
-| `M` | increments background color |
-| `Q` | quit |
+| `N` | increments border color       |
+| `M` | increments background color   |
+| `Q` | quit                          |
 
-You can take a look at the source code in my [C64
-Playground](https://github.com/mcaserta/c64-playground) repository on github
-and download the [D64 image](/c64/the-matrix.d64) for your retro emulation
-enjoyment.
+You can take a look at the source code in my
+[C64 Playground](https://github.com/mcaserta/c64-playground) repository on
+github and download the [D64 image](/c64/the-matrix.d64) for your retro
+emulation enjoyment.
 
 If you run the screensaver on the real thing and send me a video of it, you are
 my hero.

@@ -3,11 +3,11 @@ title: "🇮🇹 Introduzione al Commodore 64, parte 1"
 date: 2021-05-03T12:19:00Z
 toc: true
 tags:
- - c64
- - programming
- - software development
+  - c64
+  - programming
+  - software development
 categories:
- - software development
+  - software development
 draft: true
 type: post
 ---
@@ -29,18 +29,18 @@ esempio [VICE](https://vice-emu.sourceforge.io/) funziona molto bene su tutti i
 sistemi operativi.
 
 Alcune funzionalità del C64 sono disponibili tramite accesso diretto alla
-memoria.  In altre parole, conoscendo l'indirizzo in memoria della funzionalità
-e il tipo di valore che possiamo inserire in quella posizione, possiamo
-modificare in maniera diretta e immediata la funzionalità.
+memoria. In altre parole, conoscendo l'indirizzo in memoria della funzionalità e
+il tipo di valore che possiamo inserire in quella posizione, possiamo modificare
+in maniera diretta e immediata la funzionalità.
 
 Ad esempio, all'indirizzo `$d020` (valori preceduti da un dollaro indicano una
 rappresantazione esadecimale), corrispondente a `53280` in decimale, c'è il
-registro del colore del bordo dello schermo. 
+registro del colore del bordo dello schermo.
 
-Facendo riferimento alla [tabella dei
-colori](https://www.c64-wiki.com/wiki/Color) del C64, usiamo il comando `POKE`
-e andiamo a scrivere il valore `0` (che corrisponde al nero) nella locazione di
-memoria `53280`:
+Facendo riferimento alla
+[tabella dei colori](https://www.c64-wiki.com/wiki/Color) del C64, usiamo il
+comando `POKE` e andiamo a scrivere il valore `0` (che corrisponde al nero)
+nella locazione di memoria `53280`:
 
 ```basic
 POKE 53280, 0
@@ -48,7 +48,7 @@ POKE 53280, 0
 
 ![bordo nero](/images/posts/c64-border.png)
 
-Come avrai intuito, la sintassi del comando `POKE` è: 
+Come avrai intuito, la sintassi del comando `POKE` è:
 `POKE <INDIRIZZO>, <VALORE>`.
 
 All'indirizzo `$d021`, ovvero `53281` in decimale, abbiamo il colore dello
@@ -69,28 +69,27 @@ POKE 646, 5
 
 ![hacker mode](/images/posts/c64-hacker.png)
 
-Prima di proseguire facciamo un soft reset dell'emulatore tramite il comando
-nel menu File.
+Prima di proseguire facciamo un soft reset dell'emulatore tramite il comando nel
+menu File.
 
 ![soft reset](/images/posts/c64-soft-reset.png)
 
-
 # Giochiamo con la CPU
 
-Il microprocessore del C64 è il [MOS
-6510](https://en.wikipedia.org/wiki/MOS_Technology_6510). Il 6510 usa lo stesso
-set di istruzioni del 6502, il chip usato ad esempio nell'[Apple
-II](https://en.wikipedia.org/wiki/Apple_II).
+Il microprocessore del C64 è il
+[MOS 6510](https://en.wikipedia.org/wiki/MOS_Technology_6510). Il 6510 usa lo
+stesso set di istruzioni del 6502, il chip usato ad esempio
+nell'[Apple II](https://en.wikipedia.org/wiki/Apple_II).
 
 È possibile programmare il 6510 attraverso un set d'istruzioni e i registri.
 Parliamo prima dei registri che useremo nei prossimi esempi:
 
-| sigla | dimensione | significato     | descrizione |
-|-------|------------|-----------------|-------------|
-| `PC`  | 2 byte     | Program Counter | contiene l'indirizzo di memoria della prossima istruzione da eseguire |
-| `A`   | 1 byte     | Accumulator     | è un registro generico che funziona principalmente da accumulatore |
+| sigla | dimensione | significato     | descrizione                                                                |
+| ----- | ---------- | --------------- | -------------------------------------------------------------------------- |
+| `PC`  | 2 byte     | Program Counter | contiene l'indirizzo di memoria della prossima istruzione da eseguire      |
+| `A`   | 1 byte     | Accumulator     | è un registro generico che funziona principalmente da accumulatore         |
 | `X`   | 1 byte     |                 | è un registro generico e può essere usato anche per indirizzare la memoria |
-| `Y`   | 1 byte     |                 | come il registro `X` ma si chiama `Y` |
+| `Y`   | 1 byte     |                 | come il registro `X` ma si chiama `Y`                                      |
 
 Questo elenco non è esaustivo ma per il momento è sufficiente per i nostri
 scopi.
@@ -100,7 +99,7 @@ Attiviamo il monitor del VICE tramite la voce di menu sotto File.
 ![activate monitor](/images/posts/c64-activate-monitor.png)
 
 La finestra del monitor si apre, bloccando temporaneamente l'esecuzione
-dell'emulatore.  
+dell'emulatore.
 
 ![activate monitor](/images/posts/c64-monitor-pc.png)
 
@@ -112,15 +111,15 @@ Possiamo farci stampare il contenuto di tutti i registri tramite il comando `r`.
 ![activate monitor](/images/posts/c64-monitor-registers.png)
 
 Il monitor ci dice che il program counter (`ADDR`) sta puntando a `$e5d4`, come
-ci aveva appena indicato nel prompt.  I registri `A` e `X` contengono il valore
+ci aveva appena indicato nel prompt. I registri `A` e `X` contengono il valore
 `00` ed il registro `Y` contiene il valore `0a`.
 
-Se i tuoi valori sono diversi è normale. Anche quando il computer emulato
-sembra essere fermo e vedi il cursore lampeggiare, fino al momento prima di
-entrare nel monitor ed effettivamente fermare l'emulazione, il contenuto dei
-registri cambia continuamente. Di certo il program counter gira come una
-trottola perché normalmente il processore esegue un loop per gestire tutta una
-serie di eventi, come la pressione di un tasto.
+Se i tuoi valori sono diversi è normale. Anche quando il computer emulato sembra
+essere fermo e vedi il cursore lampeggiare, fino al momento prima di entrare nel
+monitor ed effettivamente fermare l'emulazione, il contenuto dei registri cambia
+continuamente. Di certo il program counter gira come una trottola perché
+normalmente il processore esegue un loop per gestire tutta una serie di eventi,
+come la pressione di un tasto.
 
 ```
 a $c000 lda #$00

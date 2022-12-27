@@ -3,14 +3,14 @@ title: "🇺🇸 Time Series Data and CompletableFuture example in Java"
 date: 2021-02-04T18:19:00Z
 toc: true
 tags:
- - time-series-data
- - time-series
- - completablefuture
- - java
- - concurrency
- - software development
+  - time-series-data
+  - time-series
+  - completablefuture
+  - java
+  - concurrency
+  - software development
 categories:
- - software development
+  - software development
 draft: false
 type: post
 ---
@@ -20,7 +20,6 @@ type: post
 Full code for all the examples can be found
 [here](https://github.com/mcaserta/time-series-concurrency-example).
 
-
 ## How to run the program
 
 ```shell
@@ -29,15 +28,15 @@ mvn clean compile verify exec:java
 
 ## Preface
 
-Suppose we want to calculate an *air quality index* based on two values:
+Suppose we want to calculate an _air quality index_ based on two values:
 
 - air temperature
 - percentage of carbon monoxide in the air
 
 Given the following symbols:
 
-| symbol |                meaning                   |
-|--------|------------------------------------------|
+| symbol | meaning                                  |
+| ------ | ---------------------------------------- |
 | `AQi`  | air quality index                        |
 | `T`    | air temperature in Celsius degrees       |
 | `Tm`   | maximum air temperature in C°            |
@@ -46,14 +45,14 @@ Given the following symbols:
 We may calculate the `AQi` with the following sorry excuse of a formula:
 
 <!-- AQi = (((T * 100) / Tm) + C) / 2 -->
+
 ![air quality formula](/images/posts/air-quality-formula.png)
 
 **DISCLAIMER:** please note that this formula is in no way scientific, and it's
 intended for educational purposes only. I don't want environmentalists and real
-scientists chasing me around with math formulas and accusations of quackery. 
-Also, I saw a chance for a pretty LaTeX equation and I took it, because 
-aesthetics... and it makes me look smart, which I certainly am 
-not[^school].
+scientists chasing me around with math formulas and accusations of quackery.
+Also, I saw a chance for a pretty LaTeX equation and I took it, because
+aesthetics... and it makes me look smart, which I certainly am not[^school].
 
 What the formula attempts to say is that as the temperature and the carbon
 monoxide percentage rise, the air quality decreases. Yeah, this is totally
@@ -85,29 +84,28 @@ t=10; c=0.5; tm=40; (((t * 100) / tm) + c) / 2
 
 From this we can derive the following totally unscientific table:
 
-|     AQi        |                       meaning                       |
-|----------------|-----------------------------------------------------|
-|   125 to ∞     | horrible death                                      |
-|   100 to 125   | painful death                                       |
-|    75 to 100   | death                                               |
-|    55 to 75    | it is acceptable[^it-is-acceptable]                 |
-|    30 to 55    | this is fine[^this-is-fine]                         |
-|    15 to 30    | fine and dandy                                      |
-| 12.75 to 15    | pretty cool                                         |
-|    -∞ to 12.75 | welcome to Yakutsk, probably                        |
-
+| AQi         | meaning                             |
+| ----------- | ----------------------------------- |
+| 125 to ∞    | horrible death                      |
+| 100 to 125  | painful death                       |
+| 75 to 100   | death                               |
+| 55 to 75    | it is acceptable[^it-is-acceptable] |
+| 30 to 55    | this is fine[^this-is-fine]         |
+| 15 to 30    | fine and dandy                      |
+| 12.75 to 15 | pretty cool                         |
+| -∞ to 12.75 | welcome to Yakutsk, probably        |
 
 ## Service providers
 
 Suppose we have internet services that expose temperature and carbon monoxide
-level monitoring values.  These services might expose an api that gives us
-time series data[^time-series-data].
+level monitoring values. These services might expose an api that gives us time
+series data[^time-series-data].
 
 So, for instance, we might call a temperature monitoring service, and it would
 respond with time series data like this:
 
-|        timestamp       | value  |
-|------------------------|--------|
+| timestamp              | value  |
+| ---------------------- | ------ |
 | `2021-01-20T08:00:00Z` | `10.1` |
 | `2021-01-20T08:02:00Z` | `10.3` |
 | `2021-01-20T08:05:00Z` | `10.7` |
@@ -119,8 +117,8 @@ respond with time series data like this:
 A carbon monoxide percentage monitoring service might instead respond with data
 that looks like this:
 
-|        timestamp       | value |
-|------------------------|-------|
+| timestamp              | value |
+| ---------------------- | ----- |
 | `2021-01-20T08:01:00Z` | `2.0` |
 | `2021-01-20T08:02:00Z` | `2.3` |
 | `2021-01-20T08:06:00Z` | `2.8` |
@@ -131,7 +129,6 @@ Please note that I have sorted the data by timestamp to make it a bit more
 readable, but you shouldn't make assumptions on the sort order of the data
 returned by an external provider. Not that this is of any importance here as...
 
-
 # The algorithm
 
 ...our algorithm now requires:
@@ -139,8 +136,8 @@ returned by an external provider. Not that this is of any importance here as...
 1. concatenating the temperature and carbon monoxide percentage data
 2. sorting by timestamp
 
-|  id  |        timestamp       | value  | type |
-|------|------------------------|--------|------|
+| id   | timestamp              | value  | type |
+| ---- | ---------------------- | ------ | ---- |
 | `1`  | `2021-01-20T08:00:00Z` | `10.1` | `T`  |
 | `2`  | `2021-01-20T08:01:00Z` | ` 2.0` | `C`  |
 | `3`  | `2021-01-20T08:02:00Z` | `10.3` | `T`  |
@@ -153,22 +150,23 @@ returned by an external provider. Not that this is of any importance here as...
 | `10` | `2021-01-20T08:07:00Z` | ` 2.9` | `C`  |
 | `11` | `2021-01-20T08:08:00Z` | ` 3.3` | `C`  |
 | `12` | `2021-01-20T08:09:00Z` | `11.3` | `T`  |
+
 > type: T is temperature and C is carbon monoxide percentage
 
-Our task now is to scan the data, starting from the beginning, one row at a time, 
-computing the air quality index as we go forward, step by step.
+Our task now is to scan the data, starting from the beginning, one row at a
+time, computing the air quality index as we go forward, step by step.
 
-The first thing to note here is that to compute our `AQi` formula we need to have
-both values for `T` and `C`. In other words, the first time point where we can
-apply our formula is that with id `2` as we have a value for `T` in id `1` and
-a value for `C` in id `2`. So we take our values (`10.1` for `T` and `2.0` for
-`C`), apply the formula, and we have a first `AQi` value of `13.625` which we
-associate with the timestamp in id `2`, as that is the moment our computation
+The first thing to note here is that to compute our `AQi` formula we need to
+have both values for `T` and `C`. In other words, the first time point where we
+can apply our formula is that with id `2` as we have a value for `T` in id `1`
+and a value for `C` in id `2`. So we take our values (`10.1` for `T` and `2.0`
+for `C`), apply the formula, and we have a first `AQi` value of `13.625` which
+we associate with the timestamp in id `2`, as that is the moment our computation
 refers to. Our first `AQi` entry in the resulting time series should now look
 like this:
 
-|        timestamp       |  value   |
-|------------------------|----------|
+| timestamp              | value    |
+| ---------------------- | -------- |
 | `2021-01-20T08:01:00Z` | `13.625` |
 
 From now on, our calculation can be applied to every remaining element in the
@@ -176,25 +174,23 @@ time series, keeping in mind that we must correlate each value with the most
 recent value of the other type. In other words:
 
 | for id | pick values from id |
-|--------|---------------------|
-|    `2` | `1, 2`              |
-|    `3` | `2, 3`              |
-|    `4` | `3, 4`              |
-|    `5` | `4, 5`              |
-|    `6` | `4, 6`              |
-|    `7` | `6, 7`              |
-|    `8` | `7, 8`              |
-|    `9` | `7, 9`              |
-|   `10` | `9, 10`             |
-|   `11` | `9, 11`             |
-|   `12` | `11, 12`            |
+| ------ | ------------------- |
+| `2`    | `1, 2`              |
+| `3`    | `2, 3`              |
+| `4`    | `3, 4`              |
+| `5`    | `4, 5`              |
+| `6`    | `4, 6`              |
+| `7`    | `6, 7`              |
+| `8`    | `7, 8`              |
+| `9`    | `7, 9`              |
+| `10`   | `9, 10`             |
+| `11`   | `9, 11`             |
+| `12`   | `11, 12`            |
 
-You can think of this kind of motion as a 
+You can think of this kind of motion as a
 [rolling time window](https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e)
-as you have a window that moves forward in time focusing on the most
-recent data for our specific `T` and `C` measures at each 
-step[^creep]. 
-
+as you have a window that moves forward in time focusing on the most recent data
+for our specific `T` and `C` measures at each step[^creep].
 
 ## Rolling Time Window
 
@@ -208,7 +204,7 @@ Go ahead, scroll down. You're going to see it.
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
 |  T | 10.1 |     | 10.3 |     | 10.7 | 10.9 |     | 11.0 | 11.1 |     |     | 11.3 |
 |  C |      | 2.0 |      | 2.3 |      |      | 2.8 |      |      | 2.9 | 3.3 |      |
-     |<---------->|                                                                
+     |<---------->|
 
 
 /===================================================================================\
@@ -304,8 +300,8 @@ Go ahead, scroll down. You're going to see it.
 
 Given the above, our complete resulting time series for the `AQi` is:
 
-|        timestamp       |  value   |
-|------------------------|----------|
+| timestamp              | value    |
+| ---------------------- | -------- |
 | `2021-01-20T08:01:00Z` | `13.625` |
 | `2021-01-20T08:02:00Z` | `13.875` |
 | `2021-01-20T08:02:00Z` | `14.025` |
@@ -318,26 +314,26 @@ Given the above, our complete resulting time series for the `AQi` is:
 | `2021-01-20T08:08:00Z` | `15.525` |
 | `2021-01-20T08:09:00Z` | `15.775` |
 
-If you've looked closely, you might have noticed that we have a couple
-duplicate timestamps in our results, specifically `2021-01-20T08:02:00Z` and
+If you've looked closely, you might have noticed that we have a couple duplicate
+timestamps in our results, specifically `2021-01-20T08:02:00Z` and
 `2021-01-20T08:06:00Z`. These represent a time paradox as it appears that our
 `AQi` has two different values at the same time.
 
 ![I find your lack of logic disturbing](/images/posts/i-find-your-lack-of-logic-disturbing.jpg)
 
-We both know this data is eventually going to show up on a web page.  Also, we
-wouldn't want one of those hipster javascript frontend developers to point out
-a lack of logic or, worse, an inconsistency in our data to us, wouldn't we?
+We both know this data is eventually going to show up on a web page. Also, we
+wouldn't want one of those hipster javascript frontend developers to point out a
+lack of logic or, worse, an inconsistency in our data to us, wouldn't we?
 
-Yeah, I thought so. So, my idea is that we can safely discard the first entry
-of a duplicate timestamp as it refers to a calculation with stale data. Why?
-Well, consider the values for the first duplicate timestamp:
-`2021-01-20T08:02:00Z`. The first time we computed the `AQi`, we picked data
-from id `2` and `3` and id `2` refers to a previous timestamp, specifically
-`2021-01-20T08:01:00Z`. The second time we computed the `AQi`, we were using
-data from id `3` and `4`, which both refer to timestamp `2021-01-20T08:02:00Z`,
-so this computation's result is more relevant than the previous one which we
-stamped with the same `2021-01-20T08:02:00Z` timestamp.
+Yeah, I thought so. So, my idea is that we can safely discard the first entry of
+a duplicate timestamp as it refers to a calculation with stale data. Why? Well,
+consider the values for the first duplicate timestamp: `2021-01-20T08:02:00Z`.
+The first time we computed the `AQi`, we picked data from id `2` and `3` and id
+`2` refers to a previous timestamp, specifically `2021-01-20T08:01:00Z`. The
+second time we computed the `AQi`, we were using data from id `3` and `4`, which
+both refer to timestamp `2021-01-20T08:02:00Z`, so this computation's result is
+more relevant than the previous one which we stamped with the same
+`2021-01-20T08:02:00Z` timestamp.
 
 The same thing applies to the `AQi` entry with timestamp `2021-01-20T08:06:00Z`
 as the first computation was using ids `4` and `6` while the second was
@@ -345,8 +341,8 @@ considering ids `6` and `7` which are fresher than the timestamp in id `4`.
 
 So we erase a couple entries, and our clean result set now looks like this:
 
-|        timestamp       |  value   |
-|------------------------|----------|
+| timestamp              | value    |
+| ---------------------- | -------- |
 | `2021-01-20T08:01:00Z` | `13.625` |
 | `2021-01-20T08:02:00Z` | `14.025` |
 | `2021-01-20T08:05:00Z` | `14.525` |
@@ -357,17 +353,17 @@ So we erase a couple entries, and our clean result set now looks like this:
 | `2021-01-20T08:08:00Z` | `15.525` |
 | `2021-01-20T08:09:00Z` | `15.775` |
 
-Just as an equation is an excuse to brush up on some 
-[LaTeX](https://www.latex-project.org/), a good time
-series is an excellent candidate for [gnuplot](http://www.gnuplot.info/).
+Just as an equation is an excuse to brush up on some
+[LaTeX](https://www.latex-project.org/), a good time series is an excellent
+candidate for [gnuplot](http://www.gnuplot.info/).
 
 ![plot of the data so far](/images/posts/plot-output.png)
 
 Real data is of course much more chaotic than this, and you might want to
 normalize the result by an arbitrary time interval, say one minute:
 
-|        timestamp       |  value   |
-|------------------------|----------|
+| timestamp              | value    |
+| ---------------------- | -------- |
 | `2021-01-20T08:01:00Z` | `13.625` |
 | `2021-01-20T08:02:00Z` | `14.025` |
 | `2021-01-20T08:03:00Z` | `14.025` |
@@ -383,7 +379,6 @@ normalize the result by an arbitrary time interval, say one minute:
 Makes sense? I certainly hope so.
 
 ![yes](/images/posts/yes.gif)
-
 
 ## Let's get coding
 
@@ -401,8 +396,8 @@ static double airQualityIndex(double temperature, double carbonMonoxidePercentag
 }
 ```
 
-This method takes a temperature, a carbon monoxide percentage, a max
-temperature and returns the `AQi`. Nice.
+This method takes a temperature, a carbon monoxide percentage, a max temperature
+and returns the `AQi`. Nice.
 
 The interesting bit however is this method:
 
@@ -410,18 +405,17 @@ The interesting bit however is this method:
 List<TimeValue> calculate(List<TimeValue> temperatures, List<TimeValue> carbonMonoxidePercentages);
 ```
 
-This says that the `calculate` method takes two lists of `TimeValue`s: the
-first is a list of temperatures and the other is a list of carbon monoxide
+This says that the `calculate` method takes two lists of `TimeValue`s: the first
+is a list of temperatures and the other is a list of carbon monoxide
 percentages. It then returns a list of `TimeValue`s, only this time the list is
 representing air quality indices.
 
 What is a `TimeValue`? You can see its definition
 [here](https://github.com/mcaserta/time-series-concurrency-example/blob/c5b4574a40be0a818aba1513aaef7cc9d2a41d2b/src/main/java/com/mirkocaserta/example/TimeValue.java#L7).
 Although this seems horribly complicated due to the verbosity of the Java
-language and a few implementation details, you can think of a time value as
-just a convenient way to represent an `Instant` in time and its associated
-`value`. Nothing fancy, really.
-
+language and a few implementation details, you can think of a time value as just
+a convenient way to represent an `Instant` in time and its associated `value`.
+Nothing fancy, really.
 
 ## Coding like it's 1984
 
@@ -430,14 +424,14 @@ implementation using the old school style. The complete code for this is
 [here](https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java).
 Let's take a look.
 
-Our calculator takes the max temperature in its constructor and stores its
-value in the `maxTemperature` instance constant as we'll need its value later
-when invoking the `AQi` function.
+Our calculator takes the max temperature in its constructor and stores its value
+in the `maxTemperature` instance constant as we'll need its value later when
+invoking the `AQi` function.
 
 Our `calculate` method should start with these two steps:
 
-1. concatenate the temperature and carbon monoxide percentage
-   data in a single data structure
+1. concatenate the temperature and carbon monoxide percentage data in a single
+   data structure
 2. sort the resulting data by timestamp
 
 Step 1 is implemented by this code:
@@ -477,12 +471,12 @@ for (String key : keysSortedByTimestamp) {
 This is just overcomplicated Java lingo for having our map sorted by the
 timestamp we have in the Java map values. We declare a
 `timeValuesByTypeSortedByTimestamp` map, implemented by a `LinkedHashMap`
-because we want to preserve the iteration order of the map entries. Then we
-wrap all the keys in our original `timeValuesByType` map in an ArrayList as we
-need a `List` in order to then invoke `sort` on it. The comparator function we
-are passing to sort is picking the timestamp of the relative entry in the
-original `timeValuesByType` map. We then iterate `keysSortedByTimestamp`,
-adding entries to our `timeValuesByTypeSortedByTimestamp` map.
+because we want to preserve the iteration order of the map entries. Then we wrap
+all the keys in our original `timeValuesByType` map in an ArrayList as we need a
+`List` in order to then invoke `sort` on it. The comparator function we are
+passing to sort is picking the timestamp of the relative entry in the original
+`timeValuesByType` map. We then iterate `keysSortedByTimestamp`, adding entries
+to our `timeValuesByTypeSortedByTimestamp` map.
 
 Now we are declaring a map for the results of our `AQi` calculations and a
 couple variables we'll need later:
@@ -502,7 +496,7 @@ for (Map.Entry<String, TimeValue> entry : timeValuesByTypeSortedByTimestamp.entr
 ```
 
 We know that if the key begins with a `T`, we have a temperature value and, in
-such case we store it in the `lastTemperature` variable.  Otherwise, the value
+such case we store it in the `lastTemperature` variable. Otherwise, the value
 must be of type `C` for carbon, so we do the same for the
 `lastCarbonMonoxidePercentage` variable.
 
@@ -545,7 +539,6 @@ for (Instant key : keys) {
     results.add(TimeValue.of(key, airQualityIndexMap.get(key)));
 }
 ```
-
 
 ## Functional elegance
 
@@ -636,10 +629,9 @@ public BinaryOperator<Queue<TypedTimeValue>> combiner() {
 ```
 
 The combiner method must return a function that combines two accumulators. The
-implementation should pick all elements from the second accumulator and add
-them to the first one, which doesn't sound very functional in terms of
-immutability but in this case mutation is an expected behavior, and it's
-totally fine.
+implementation should pick all elements from the second accumulator and add them
+to the first one, which doesn't sound very functional in terms of immutability
+but in this case mutation is an expected behavior, and it's totally fine.
 
 ```java
 @Override
@@ -655,7 +647,7 @@ air quality indices.
 final Map<Instant, TimeValue> aqiAccumulator = new HashMap<>();
 ```
 
-This is a map that is going to collect all the air quality indices.  As you can
+This is a map that is going to collect all the air quality indices. As you can
 see, it's indexed by a timestamp, so we won't get duplicate entries as more
 recent calculations for the same timestamps are put into the map replacing the
 stale ones.
@@ -681,11 +673,11 @@ return accumulator -> {
 };
 ```
 
-This is quite a mouthful but let's go through it bit by bit.  We are streaming
+This is quite a mouthful but let's go through it bit by bit. We are streaming
 the accumulated data, extracting the timestamp, sorting by it and, for each
 timestamp we look for the temperature and carbon monoxide percentage data with
-the closest timestamp.  *Closest* means that the timestamp we're evaluating
-must be before of or equal to the timestamp in question.
+the closest timestamp. _Closest_ means that the timestamp we're evaluating must
+be before of or equal to the timestamp in question.
 
 If we have both data (`T` and `C`), we can proceed to calculate the `AQi` and
 put its value into the `aqiAccumulator` map.
@@ -697,22 +689,21 @@ Sorting like this is possible since we made our `TimeValue` class implement
 `Comparable<TimeValue>`.
 
 There are several points in the `finisher` method where I look into the
-datastructures I'm iterating on, which, again, doesn't look very kosher in
-terms of functional programming, but it's okay as I know that the data I'm
-examining isn't being changed by a concurrent thread under the hood.
+datastructures I'm iterating on, which, again, doesn't look very kosher in terms
+of functional programming, but it's okay as I know that the data I'm examining
+isn't being changed by a concurrent thread under the hood.
 
-Is this better than our old school calculator? I'm not sure.  This is still
-quite verbose, but to me it seems easier to read as most of the code is
-expressed in a declarative style rather than an imperative one.
-
+Is this better than our old school calculator? I'm not sure. This is still quite
+verbose, but to me it seems easier to read as most of the code is expressed in a
+declarative style rather than an imperative one.
 
 ## Concurrency considerations
 
 As we need to retrieve two different sets of data from two different providers
-(one for temperature data and one for carbon monoxide percentage data), we
-might want to run the clients in parallel. This has an advantage over
-traditional single threaded execution where you would have to serialize the
-calls to the providers.
+(one for temperature data and one for carbon monoxide percentage data), we might
+want to run the clients in parallel. This has an advantage over traditional
+single threaded execution where you would have to serialize the calls to the
+providers.
 
 In a single threaded environment, you might write code like this:
 
@@ -728,9 +719,9 @@ This translates to the following serial execution model:
 ![sequence diagram for serial execution](/images/posts/sequence-diagram-serial.jpg)
 
 As we said, we can do better than this. In a multithreaded environment, we can
-spawn the two clients concurrently and start processing their data as soon as
-we receive a response from both. This saves us some time and potentially speeds
-up our overall response time.
+spawn the two clients concurrently and start processing their data as soon as we
+receive a response from both. This saves us some time and potentially speeds up
+our overall response time.
 
 ![sequence diagram for parallel execution](/images/posts/sequence-diagram-parallel.jpg)
 
@@ -741,7 +732,7 @@ but the most popular and the one I personally like the most is to use
 A `CompletableFuture` is a container for a computation. You provide it the code
 you want to execute and the Java runtime takes care of running it concurrently
 in a threaded scheduler. The scheduler is of course customizable but the
-defaults are okay for our simple case here.  You can see the complete example
+defaults are okay for our simple case here. You can see the complete example
 [here](https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java).
 
 In my example I have declared my `CompletableFuture`s like this:
@@ -766,17 +757,17 @@ This is still verbose but definitely better than before. As the computation in
 our `CompletableFuture` returns a `List<TimeValue>`, the `supplyAsync` method
 returns a `CompletableFuture<List<TimeValue>>`, which is Java's way of saying
 that the `timedValuesFuture1` variable is a `CompletableFuture` holding a
-`List<TimeValue>`. Please note that the code we are passing to the
-`supplyAsync` method is inside a lambda. What this means is that our code
-doesn't get executed in the `supplyAsync` method but the Java runtime is free
-to choose when it's the best time to run it. The default scheduler will
-generally start running your `CompletableFuture`s as soon as they are defined
-but you need to understand that this is not necessarily so and that defining a
-lambda doesn't mean it gets executed at the point of declaration.
+`List<TimeValue>`. Please note that the code we are passing to the `supplyAsync`
+method is inside a lambda. What this means is that our code doesn't get executed
+in the `supplyAsync` method but the Java runtime is free to choose when it's the
+best time to run it. The default scheduler will generally start running your
+`CompletableFuture`s as soon as they are defined but you need to understand that
+this is not necessarily so and that defining a lambda doesn't mean it gets
+executed at the point of declaration.
 
 We now need a way to make sure our `CompletableFuture`s have completed their
-execution before going on. This is done by composing our futures and calling
-the `join` method on the resulting future:
+execution before going on. This is done by composing our futures and calling the
+`join` method on the resulting future:
 
 ```java
 CompletableFuture.allOf(timedValuesFuture1, timedValuesFuture2).join();
@@ -793,7 +784,6 @@ we need from our original futures with the `join` method:
 List<TimeValue> timeValues1 = timedValuesFuture1.join();
 List<TimeValue> timeValues2 = timedValuesFuture2.join();
 ```
-
 
 ## Example output
 
@@ -825,14 +815,12 @@ Your output will definitely be different as:
 1. the threads' execution order is non-deterministic
 2. the providers' values are generated randomly
 
-
 ## Conclusion
 
-You've made it! This was quite the run. I hope it's been entertaining.  I spent
+You've made it! This was quite the run. I hope it's been entertaining. I spent
 quite a bit of time on this as I was trying to dig deeper into some issues I've
-had at work. I suggest you do the same when you run into problems that need
-some clarification on your side. I also hope you found this useful. 
-
+had at work. I suggest you do the same when you run into problems that need some
+clarification on your side. I also hope you found this useful.
 
 ## Bonus
 
@@ -840,21 +828,18 @@ some clarification on your side. I also hope you found this useful.
 
 [Credits](https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/)
 
-
-[^school]: this is my revenge for all the bad math grades at 
-school.
-
+[^school]: this is my revenge for all the bad math grades at school.
 [^this-is-fine]: ![this is fine meme](/images/posts/this-is-fine.webp)
+[^it-is-acceptable]:
+    ![it is acceptable meme](/images/posts/it-is-acceptable.jpg)
 
-[^it-is-acceptable]: ![it is acceptable meme](/images/posts/it-is-acceptable.jpg)
+[^time-series-data]:
+    Time series data, also referred to as time-stamped data, is a sequence of
+    data points indexed in time order. Time-stamped is data collected at
+    different points in time. These data points typically consist of successive
+    measurements made from the same source over a time interval and are used to
+    track change over time.
 
-[^time-series-data]: Time series data, also referred to as
-time-stamped data, is a sequence of data points indexed in time order.
-Time-stamped is data collected at different points in time. These data points
-typically consist of successive measurements made from the same source over a
-time interval and are used to track change over time.
-
-[^creep]: I like to think of this movement as a kind of dance,
-and I find it sexy. I think [I'm a creep, I'm a weirdo](https://youtu.be/XFkzRNyygfk).
-
-
+[^creep]:
+    I like to think of this movement as a kind of dance, and I find it sexy. I
+    think [I'm a creep, I'm a weirdo](https://youtu.be/XFkzRNyygfk).

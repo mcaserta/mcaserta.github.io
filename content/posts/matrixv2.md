@@ -3,18 +3,21 @@ title: "🇺🇸 The Matrix Screensaver for Commodore 64, version 2"
 date: 2021-05-20T12:19:00Z
 toc: false
 tags:
- - c64
- - programming
- - software development
+  - c64
+  - programming
+  - software development
 categories:
- - software development
+  - software development
 draft: false
 type: post
 ---
 
 {{< rawhtml >}}
+
 <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
+
 <canvas  id="canvas" style="border: 0px none;"></canvas>
+
 <script type="text/javascript" >
 
     function loadFiles() {
@@ -32,32 +35,34 @@ type: post
 
 </script>
 <script type="text/javascript" src="/js/x64.js"></script>
+
 {{< /rawhtml >}}
 
-After trying to implement the [digital
-rain](https://en.wikipedia.org/wiki/Matrix_digital_rain) algorithm in 6502
-assembly and [failing miserably]({{< ref "matrix.md" >}} "failing miserably"),
-I decided to try the [cc65](https://cc65.github.io/) toolkit and write some C code.
+After trying to implement the
+[digital rain](https://en.wikipedia.org/wiki/Matrix_digital_rain) algorithm in
+6502 assembly and [failing miserably]({{< ref "matrix.md" >}} "failing
+miserably"), I decided to try the [cc65](https://cc65.github.io/) toolkit and
+write some C code.
 
 It takes a while to load but what you are seeing above is a live emulation of
 the screensaver software.
 
 Once it's loaded, the following commands are available through the keyboard:
 
-| key | use |
-|-----|-----|
-| `A` | amber mode |
-| `B` | binary mode |
-| `D` | dna mode |
+| key | use                         |
+| --- | --------------------------- |
+| `A` | amber mode                  |
+| `B` | binary mode                 |
+| `D` | dna mode                    |
 | `F` | full charset mode (default) |
-| `G` | green mode (default) |
-| `H` | hex mode |
-| `L` | lgbtq mode |
-| `Q` | quit |
+| `G` | green mode (default)        |
+| `H` | hex mode                    |
+| `L` | lgbtq mode                  |
+| `Q` | quit                        |
 
-You can take a look at the source code in my [C64
-Playground](https://github.com/mcaserta/c64-playground) repository on github
-and download the [prg image](/c64/matrix.prg) for your retro emulation
+You can take a look at the source code in my
+[C64 Playground](https://github.com/mcaserta/c64-playground) repository on
+github and download the [prg image](/c64/matrix.prg) for your retro emulation
 enjoyment.
 
 If you run the screensaver on the real thing and send me a video of it, you are
@@ -75,7 +80,7 @@ Here's a video of the software running on a real C64, courtesy Jordan McGee.
 
 ## Update 20211029
 
-Here's another video of the software running on a real C64, courtesy my friend Marco.
+Here's another video of the software running on a real C64, courtesy my friend
+Marco.
 
 {{< youtube id="O93npyzDnUU" title="Screensaver running on a real C64" >}}
-

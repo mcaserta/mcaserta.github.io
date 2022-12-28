@@ -283,7 +283,7 @@ cui la sia la bellezza a guidare la quotidianità e non più il profitto. Ma
 lasciamo per ora da parte lo spirito rivoluzionario e torniamo all'educazione
 musicale.
 
-## Come Si Sviluppa
+## Come Svilupparlo
 
 In musica, la base da cui si parte per lo studio dell'ear training è
 l'intervallo, ovvero la distanza fra due note. L'intervallo può essere
@@ -361,12 +361,7 @@ Ecco perché diciamo che DO-SOL è un intervallo di quinta: perché si trova sul
 quinto grado della scala maggiore nella tonalità di DO. Cosa vuol dire tonalità
 di DO? Vuol dire che abbiamo preso la nota DO come riferimento ed abbiamo
 costruito il nostro sistema di suoni, nel nostro caso la scala maggiore, a
-partire da quella nota.
-
-> Il mio amico Johnny, batterista, raccontava sempre un aneddoto riguardo una
-> festa di paese in cui un signore chiese di far cantare la propria figlia sul
-> palco e, alla domanda su quale tonalità volesse per la canzone, il signore
-> rispose orgoglioso: «la migliore!».
+partire da quella nota[^johnny].
 
 Se andassimo ad analizzare gli intervalli che separano fra di loro le note della
 scala maggiore di DO, vedremmo che fra DO e RE c'è un tono, fra RE e MI un tono,
@@ -420,13 +415,8 @@ Protezione Animali, della Dogana e dell'Agenzia delle Entrate dove ho trovato
 tanti elefanti, ma non avrei il problema di dover usare 6 diesis nella scala
 maggiore di FA#. Darei a ognuno dei 12 semitoni dell'ottava un nome unico, ad
 esempio: AW, KA, WA, WE, OH, PASQUALE, ecc. E così sarei felice, almeno fin
-quando non sarei costretto a scendere dalla mia torre d'avorio per convincere
-qualcuno a suonare il mio quartetto d'archi in OH fenicio.
-
-> A proposito di elefanti e tasti bianchi, sai che una volta i tasti bianchi del
-> pianoforte erano fatti d'avorio? Fortunatamente per i nostri amici mammiferi
-> proboscidati, oggi i tasti bianchi vengono prodotti con un misto di legno e
-> materie plastiche sempre più eco-sostenibili.
+quando non sarei costretto a scendere dalla mia torre d'avorio[^avorio] per
+convincere qualcuno a suonare il mio quartetto d'archi in OH fenicio.
 
 L'esercizio che ti propongo ora serve per interiorizzare meglio gli intervalli
 della scala maggiore. Se prima abbiamo giocato più o meno a caso con i tasti
@@ -786,5 +776,15 @@ come affrontarlo, puoi usarlo a tuo vantaggio.
 Infine vorrei rassicurare il mio psichiatra: non ho mai scritto un quartetto
 d’archi in OH fenicio.
 
-[^jarrett]:
-    "Sun Bear Concerts", ECM, 1978, note di copertina
+[^jarrett]: "Sun Bear Concerts", ECM, 1978, note di copertina
+[^johnny]:
+    Il mio amico Johnny, batterista, raccontava sempre un aneddoto riguardante
+    una festa di paese: un signore chiese di far cantare la propria figlia sul
+    palco e, alla domanda su quale tonalità volesse per la canzone, il padre
+    rispose orgoglioso: «la migliore!».
+
+[^avorio]:
+    A proposito di elefanti e tasti bianchi, sai che una volta i tasti bianchi
+    del pianoforte erano fatti d'avorio? Fortunatamente per i nostri amici
+    mammiferi proboscidati, oggi i tasti bianchi vengono prodotti con un misto
+    di legno e materie plastiche sempre più eco-sostenibili.

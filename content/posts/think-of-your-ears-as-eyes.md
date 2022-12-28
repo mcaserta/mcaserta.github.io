@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🇮🇹 Pensa alle tue orecchie come fossero occhi"
+title: "🇮🇹 L'Orecchio Musicale: Come Funziona e Come Svilupparlo"
 date: 2018-10-28T18:22:00Z
 type: post
 toc: true
@@ -11,7 +11,9 @@ tags:
   - musica
 ---
 
-## Metafisica dei Suoni
+> «Think of your ears as eyes.» — Keith Jarrett[^jarrett]
+
+## Come Funziona
 
 Se la musica è l’arte dei suoni, l’ear training è l'allenamento dell'orecchio
 musicale. Cosa si intende con orecchio musicale? L'udito ha un aspetto passivo
@@ -281,7 +283,7 @@ cui la sia la bellezza a guidare la quotidianità e non più il profitto. Ma
 lasciamo per ora da parte lo spirito rivoluzionario e torniamo all'educazione
 musicale.
 
-## Gli elementi dell'ear training
+## Come Si Sviluppa
 
 In musica, la base da cui si parte per lo studio dell'ear training è
 l'intervallo, ovvero la distanza fra due note. L'intervallo può essere
@@ -661,7 +663,7 @@ di Vincenzo Maurogiovanni che è possibile acquistare direttamente per pochi eur
 contattandolo sulla sua
 [pagina Facebook](https://www.facebook.com/vizmaurogiovanni).
 
-## Come ho sviluppato l'orecchio
+## Note Personali
 
 Qui si entra più che altro nel campo della curiosità e dell'aneddotica perché
 vorrei raccontare come e perché ho sviluppato l'orecchio. In altre parole, se il
@@ -783,3 +785,6 @@ come affrontarlo, puoi usarlo a tuo vantaggio.
 
 Infine vorrei rassicurare il mio psichiatra: non ho mai scritto un quartetto
 d’archi in OH fenicio.
+
+[^jarrett]:
+    "Sun Bear Concerts", ECM, 1978, note di copertina

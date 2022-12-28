@@ -6,8 +6,8 @@ theme = "hello-friend-ng"
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 10
-rssLimit  = 10  # Maximum number of items in the RSS feed.
+paginate  = 50
+rssLimit  = 50  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
 # googleAnalytics = ""
@@ -53,7 +53,7 @@ disableHugoGeneratorInject = false
   dateformNumTime = "2006-01-02T15:04:00Z"
 
   # Metadata mostly used in document's head
-  # 
+  #
   description = "Senior Developer"
   keywords = ""
   images = [""]
@@ -89,8 +89,8 @@ disableHugoGeneratorInject = false
   #
   justifyContent = false  # Set "text-align: justify" to .post-content.
 
-  # Custom footer 
-  # If you want, you can easily override the default footer with your own content. 
+  # Custom footer
+  # If you want, you can easily override the default footer with your own content.
   #
   footerLeft = "<a href=\"http://gohugo.io\">Hugo</a>"
   footerRight = "<a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">Theme</a>"
@@ -113,11 +113,11 @@ disableHugoGeneratorInject = false
     # Set to a valid CSS time value to change the animation duration, "0s" to disable.
     # logoCursorAnimate  = "2s"
 
-  # Commento is more than just a comments widget you can embed — 
-  # it’s a return to the roots of the internet. 
-  # An internet without the tracking and invasions of privacy. 
-  # An internet that is simple and lightweight. 
-  # An internet that is focused on interesting discussions, not ads. 
+  # Commento is more than just a comments widget you can embed —
+  # it’s a return to the roots of the internet.
+  # An internet without the tracking and invasions of privacy.
+  # An internet that is simple and lightweight.
+  # An internet that is focused on interesting discussions, not ads.
   # A better internet.
   # Uncomment this to enable Commento.
   #

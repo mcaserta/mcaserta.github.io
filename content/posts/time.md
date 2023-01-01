@@ -297,3 +297,5 @@ today".](/images/posts/timezones-meme.png)
 ![Days since last timezone issue: 0](/images/posts/time-days-since.webp)
 
 ![Clocks back](/images/posts/clocks-back-meme.jpg)
+
+![January 1st meme](/images/posts/time-format-meme.png)

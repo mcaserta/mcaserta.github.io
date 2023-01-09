@@ -54,4 +54,5 @@ masterpiece through Kevin Costner, can you believe that?
 
 Anyway, I hope you like my very contrieved shoestring playing.
 
-{{< spotify type="album" id="71mnsBvWrEEk9XiBNfERRT">}}
+You can listen to Ballads for free by clicking
+[this link](https://album.link/ballads).

@@ -57,9 +57,6 @@ at uses for music that aren't just about contemplating the beauty of sounds, I
 have nothing against people using music in ways that positively affect them. If
 you find this music soothing and relaxing... be my guest.
 
-So, without further ado,
-[here is the music](https://distrokid.com/hyperfollow/mirkocaserta/until-further-notice).
-
 Finally, here is a copy of the
 [album cover](/images/posts/until-further-notice-album-cover.png) in its full
 glory for those of you who still enjoy the small pleasures in life.
@@ -87,4 +84,5 @@ Well, that's about it. See you soon with more music I guess.
 
 Until further notice...
 
-{{< spotify type="album" id="2BiufCH5y9vgDXFr1DXTq5">}}
+You can listen to Until Further Notice for free by clicking
+[this link](https://album.link/untilfurthernotice).

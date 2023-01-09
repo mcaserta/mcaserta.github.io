@@ -54,4 +54,5 @@ a sense, this is me trying to share some of my fun, knowing that not everyone
 has fun the same way and most won't like my music, but some will, and it is for
 those that I do this.
 
-{{< spotify type="album" id="1FAPWs1rEGJ4FZpwHAzgM5">}}
+You can listen to The Last Time I Had Fun for free by clicking
+[this link](https://album.link/thelasttimeihadfun).

@@ -27,4 +27,5 @@ to be hurtful to each other.
 I don't really have much to say about this album other than I hope you find it
 tolerable.
 
-{{< spotify type="album" id="1Pd40aaVitfyp84xKDSQzN">}}
+You can listen to Ear Candy for free by clicking
+[this link](https://album.link/ear-candy).

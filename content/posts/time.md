@@ -70,17 +70,18 @@ can see, our chat is never going to happen.
 These are only a few examples of the kind of issues that might arise when
 representing date and time information. Luckily enough, there is a solution to
 the representation conundrums, namely the
-[ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) standard.
+[ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) standard or, better yet
+[RFC 3339](https://www.rfc-editor.org/rfc/rfc3339).
 
-Just to give you an example, in ISO 8601, `1994-11-05T08:15:30-05:00`
+Just to give you an example, in RFC 3339, `1994-11-05T08:15:30-05:00`
 corresponds to November 5, 1994, 8:15:30 am, US Eastern Standard Time.
 `1994-11-05T13:15:30Z` corresponds to the same instant (the `Z` stands for UTC).
 Same instant, different representations.
 
-The ISO 8601 standard also has the nice side effect of providing natural sorting
-in systems that use lexicographical order (such as filesystems) because
-information is organized from most to least significant, i.e. year, month, day,
-hour, minute, second, fraction of a second.
+RFC 3339 also has the nice side effect of providing natural sorting in systems
+that use lexicographical order (such as filesystems) because information is
+organized from most to least significant, i.e. year, month, day, hour, minute,
+second, fraction of a second[^tz].
 
 Even if you're only dealing with local times in your software, you should know
 that, unless you also display the time zone, you can never be sure of the time.
@@ -101,7 +102,8 @@ Let me summarize a few key points to bring home so far:
 - get to know [time zones](http://en.wikipedia.org/wiki/Time_zone) and
   [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 - do not confuse UTC and GMT
-- [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) is your friend
+- [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) and
+  [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) are your friends
 - always print the time zone while debugging
 
 ![Back to the future clock](/images/posts/bttf-clock.png)
@@ -299,3 +301,5 @@ today".](/images/posts/timezones-meme.png)
 ![Clocks back](/images/posts/clocks-back-meme.jpg)
 
 ![January 1st meme](/images/posts/time-format-meme.png)
+
+[^tz]: assuming the same timezone is used everywhere

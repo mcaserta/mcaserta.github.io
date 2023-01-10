@@ -3289,15 +3289,16 @@ can see, our chat is never going to happen.</p>
 <p>These are only a few examples of the kind of issues that might arise when
 representing date and time information. Luckily enough, there is a solution to
 the representation conundrums, namely the
-<a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> standard.</p>
-<p>Just to give you an example, in ISO 8601, <code>1994-11-05T08:15:30-05:00</code>
+<a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> standard or, better yet
+<a href="https://www.rfc-editor.org/rfc/rfc3339">RFC 3339</a>.</p>
+<p>Just to give you an example, in RFC 3339, <code>1994-11-05T08:15:30-05:00</code>
 corresponds to November 5, 1994, 8:15:30 am, US Eastern Standard Time.
 <code>1994-11-05T13:15:30Z</code> corresponds to the same instant (the <code>Z</code> stands for UTC).
 Same instant, different representations.</p>
-<p>The ISO 8601 standard also has the nice side effect of providing natural sorting
-in systems that use lexicographical order (such as filesystems) because
-information is organized from most to least significant, i.e. year, month, day,
-hour, minute, second, fraction of a second.</p>
+<p>RFC 3339 also has the nice side effect of providing natural sorting in systems
+that use lexicographical order (such as filesystems) because information is
+organized from most to least significant, i.e. year, month, day, hour, minute,
+second, fraction of a second<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <p>Even if you&rsquo;re only dealing with local times in your software, you should know
 that, unless you also display the time zone, you can never be sure of the time.
 I cannot remember how many times a developer has asked me to <em>fix the time</em> on
@@ -3314,7 +3315,8 @@ calendars or stuff like expressing durations!</p>
 <li>get to know <a href="http://en.wikipedia.org/wiki/Time_zone">time zones</a> and
 <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a></li>
 <li>do not confuse UTC and GMT</li>
-<li><a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> is your friend</li>
+<li><a href="https://www.rfc-editor.org/rfc/rfc3339">RFC 3339</a> and
+<a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> are your friends</li>
 <li>always print the time zone while debugging</li>
 </ul>
 <p><img src="/images/posts/bttf-clock.png" alt="Back to the future clock"></p>
@@ -3465,6 +3467,14 @@ functionality.</p>
 <p><img src="/images/posts/time-days-since.webp" alt="Days since last timezone issue: 0"></p>
 <p><img src="/images/posts/clocks-back-meme.jpg" alt="Clocks back"></p>
 <p><img src="/images/posts/time-format-meme.png" alt="January 1st meme"></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>assuming the same timezone is used everywhere&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 ]]></content></item><item><title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title><link>https://mirkocaserta.com/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link><pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate><guid>https://mirkocaserta.com/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid><description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.
 Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description><content type="html"><![CDATA[<p>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello
 scrivere messaggi di log. Dico <em>apparentemente oscura</em> perché si tratta di un

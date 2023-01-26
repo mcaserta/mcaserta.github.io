@@ -154,6 +154,10 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "youtube"
+    url  = "https://youtube.com/@mirkolovesmusic"
+
+  [[params.social]]
+    name = "youtube"
     url  = "https://youtube.com/@musicmaestrobackingtracks"
 
   [[params.social]]

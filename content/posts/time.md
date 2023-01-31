@@ -303,4 +303,6 @@ today".](/images/posts/timezones-meme.png)
 
 ![January 1st meme](/images/posts/time-format-meme.png)
 
+![A comprehensive map of all countries that use the MMDDYYYY date format](/images/posts/terrible-maps.png)
+
 [^tz]: assuming the same timezone is used everywhere

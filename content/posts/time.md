@@ -305,6 +305,6 @@ today".](/images/posts/timezones-meme.png)
 
 ![A comprehensive map of all countries that use the MMDDYYYY date format](/images/posts/terrible-maps.png)
 
-![Shen Comic on the USA format](/images/postes/shen-usa-format.png)
+![Shen Comic on the USA format](/images/posts/shen-usa-format.png)
 
 [^tz]: assuming the same timezone is used everywhere

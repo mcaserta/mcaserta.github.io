@@ -1,8 +1,5 @@
-baseURL = "https://mirkocaserta.com"
-title   = "Mirko Caserta"
 languageCode = "en-us"
 theme = "hello-friend-ng"
-
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
@@ -143,10 +140,6 @@ disableHugoGeneratorInject = false
   [[params.social]]
     name = "telegram"
     url  = "https://t.me/mirkocaserta"
-
-  [[params.social]]
-    name = "telegram"
-    url  = "https://t.me/mirkolovesmusic"
 
   [[params.social]]
     name = "youtube"

@@ -10,7 +10,7 @@ draft: false
 type: post
 ---
 
-Here is a list of software I use everyday that is essential in everything I do.
+Here is a list of software I use every day that is essential in everything I do.
 
 |                                             |                   |
 | ------------------------------------------- | ----------------- |
@@ -26,7 +26,7 @@ Firefox is a great browser and probably the single piece of software I spend the
 most time with. It's free, open source, it descends from the ashes of Netscape
 and Mozilla and isn't as evil as Chrome. I've also given a try to
 [Vivaldi](https://vivaldi.com/) recently and it's pretty good: the things I
-liked the most are the Chromium engine, extentions compatibility and the
+liked the most are the Chromium engine, extensions compatibility and the
 integrated email client.
 
 Thunderbird is also a descendant of Netscape and Mozilla and, despite not having
@@ -42,7 +42,7 @@ passwords, credit card info, etc.
 Alacritty is my terminal of choice. It keeps things simple, it's blazing fast,
 the defaults are just perfect. What's not to like?
 
-Joplin is an amazing note taking app which is available for every platform and
+Joplin is an amazing note-taking app which is available for every platform and
 its sync features make it perfect for switching between computers and phones. I
 have so much stuff in Joplin.
 

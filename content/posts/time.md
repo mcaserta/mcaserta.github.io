@@ -274,6 +274,7 @@ Here are a few useful links I've accumulated over time:
 - [The Falling Dates](https://thedailywtf.com/articles/the-falling-dates)
 - [Scientists Don’t Want to Count Leap Seconds, so They’re Going Away](https://www.howtogeek.com/850114/scientists-don%E2%80%99t-want-to-count-leap-seconds-so-they%E2%80%99re-going-away/)
 - [What time is it on the Moon?](https://www.nature.com/articles/d41586-023-00185-z)
+- [What time is it? A simple question with a complex answer. How computers synchronize time](https://andrea.corbellini.name/2023/01/23/what-time-is-it/)
 
 ## Memes
 

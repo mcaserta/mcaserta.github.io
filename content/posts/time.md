@@ -304,6 +304,8 @@ today".](/images/posts/timezones-meme.png)
 
 ![Clocks back](/images/posts/clocks-back-meme.jpg)
 
+![Picard DST](/images/posts/picard-dst.png)
+
 ![January 1st meme](/images/posts/time-format-meme.png)
 
 ![A comprehensive map of all countries that use the MMDDYYYY date format](/images/posts/terrible-maps.png)

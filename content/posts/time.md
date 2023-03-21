@@ -277,6 +277,8 @@ Here are a few useful links I've accumulated over time:
 - [What time is it on the moon? Europe pushing for lunar time zone](https://www.cbc.ca/news/science/moon-time-zone-1.6763962)
 - [What time is it? A simple question with a complex answer. How computers synchronize time](https://andrea.corbellini.name/2023/01/23/what-time-is-it/)
 - [The Daylight Saving Time Mess Just Won't Go Away](https://www.wired.com/story/2023-daylight-saving-time/)
+- [The best way to handle time zones in a Java web application](https://vladmihalcea.com/time-zones-java-web-application/)
+- [Your Calendrical Fallacy Is...](https://yourcalendricalfallacyis.com/)
 
 ## Memes
 

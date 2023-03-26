@@ -279,6 +279,7 @@ Here are a few useful links I've accumulated over time:
 - [The Daylight Saving Time Mess Just Won't Go Away](https://www.wired.com/story/2023-daylight-saving-time/)
 - [The best way to handle time zones in a Java web application](https://vladmihalcea.com/time-zones-java-web-application/)
 - [Your Calendrical Fallacy Is...](https://yourcalendricalfallacyis.com/)
+- [Greenland Solves the Daylight Saving Time Debate](https://www.bnnbloomberg.ca/greenland-solves-the-daylight-saving-time-debate-1.1900228)
 
 ## Memes
 

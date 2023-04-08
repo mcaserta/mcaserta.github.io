@@ -280,6 +280,7 @@ Here are a few useful links I've accumulated over time:
 - [The best way to handle time zones in a Java web application](https://vladmihalcea.com/time-zones-java-web-application/)
 - [Your Calendrical Fallacy Is...](https://yourcalendricalfallacyis.com/)
 - [Greenland Solves the Daylight Saving Time Debate](https://www.bnnbloomberg.ca/greenland-solves-the-daylight-saving-time-debate-1.1900228)
+- [Time Zone and Currency Database in JDK](https://foojay.io/today/time-zone-and-currency-database-in-jdk/)
 
 ## Memes
 

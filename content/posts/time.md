@@ -316,4 +316,6 @@ today".](/images/posts/timezones-meme.png)
 
 ![Shen Comic on the USA format](/images/posts/shen-usa-format.png)
 
+![Perfect date](/images/posts/perfect-date.jpg)
+
 [^tz]: assuming the same timezone is used everywhere

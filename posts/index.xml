@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/posts/</link><description>Recent content in Posts on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Firefox extensions I can't live without</title><link>/posts/2023/01/firefox-extensions-i-cant-live-without/</link><pubDate>Mon, 30 Jan 2023 08:00:00 +0000</pubDate><guid>/posts/2023/01/firefox-extensions-i-cant-live-without/</guid><description>These are a bunch of essential Firefox extensions I use:
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/posts/</link><description>Recent content in Posts on</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Firefox extensions I can't live without</title><link>/posts/2023/01/firefox-extensions-i-cant-live-without/</link><pubDate>Mon, 30 Jan 2023 08:00:00 +0000</pubDate><guid>/posts/2023/01/firefox-extensions-i-cant-live-without/</guid><description>These are a bunch of essential Firefox extensions I use:
 I don&amp;rsquo;t care about cookies: get rid of cookie warnings from almost all websites Don&amp;rsquo;t track me Google: removes the annoying link-conversion at Google Search, Maps, etc uBlock Origin: an efficient wide-spectrum content blocker Enhancer for YouTube: take control of YouTube and boost your user experience Bitwarden: a secure and free password manager for all of your devices</description><content type="html"><![CDATA[<p>These are a bunch of essential Firefox extensions I use:</p>
 <ul>
 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don&rsquo;t care about cookies</a>:
@@ -534,7 +534,7 @@ valori:</p>
 </table>
 <p>Possiamo calcolare l&rsquo;<code>AQi</code> con questa specie di formula:</p>
 <!-- raw HTML omitted -->
-<p><img src="/images/posts/air-quality-formula.png" alt="formula della qualità dell&amp;rsquo;aria"></p>
+<p><img src="/images/posts/air-quality-formula.png" alt="formula della qualità dell&rsquo;aria"></p>
 <p><strong>DISCLAIMER:</strong> questa formula non è in alcun modo scientifica ed è da
 intendersi esclusivamente a scopo educativo. Non voglio che ambientalisti e veri
 scienziati mi vengano a cercare a casa con formule matematiche e accuse di
@@ -1158,13 +1158,13 @@ implementazioni.</p>
 <p>Il codice di questa interfaccia può essere visto
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java">qui</a>.</p>
 <p>L&rsquo;interfaccia è un posto conveniente dove implementare la formula dell&rsquo;<code>AQi</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> temperature<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> carbonMonoxidePercentage<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(((</span>temperature <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> carbonMonoxidePercentage<span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span>(<span style="color:#66d9ef">double</span> temperature, <span style="color:#66d9ef">double</span> carbonMonoxidePercentage, <span style="color:#66d9ef">double</span> maxTemperature) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (((temperature <span style="color:#f92672">*</span> 100) <span style="color:#f92672">/</span> maxTemperature) <span style="color:#f92672">+</span> carbonMonoxidePercentage) <span style="color:#f92672">/</span> 2;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Questo metodo prende una temperatura, una percentuale di monossido di carbonio,
 una temperatura massima e torna l&rsquo;<code>AQi</code>. Bene.</p>
 <p>La parte interessante però è in questo metodo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span>(List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages);
 </span></span></code></pre></div><p>Questo ci dice che il metodo <code>calculate</code> prende due liste di <code>TimeValue</code>: la
 prima è una lista di temperature e l&rsquo;altra è una lista di percentuali di
 monossido di carbonio. Quindi ritorna una lista di <code>TimeValue</code>, solo che questa
@@ -1190,30 +1190,30 @@ una singola struttura dati</li>
 <li>ordinare il risultato per timestamp</li>
 </ol>
 <p>Il primo passo è implementato in questo blocco di codice:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// key = time value type (C = carbonMonoxidePercentage, T = temperature)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// concatenated with the timestamp as a string
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> timeValuesByType <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// key = time value type (C = carbonMonoxidePercentage, T = temperature)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// concatenated with the timestamp as a string</span>
+</span></span><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> timeValuesByType <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>TimeValue temperature <span style="color:#f92672">:</span> temperatures<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;T&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>temperature<span style="color:#f92672">.</span><span style="color:#a6e22e">ts</span><span style="color:#f92672">()),</span> temperature<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (TimeValue temperature : temperatures) {
+</span></span><span style="display:flex;"><span>    timeValuesByType.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;T&#34;</span>.<span style="color:#a6e22e">concat</span>(temperature.<span style="color:#a6e22e">ts</span>()), temperature);
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>TimeValue carbonMonoxidePercentage <span style="color:#f92672">:</span> carbonMonoxidePercentages<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>carbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">ts</span><span style="color:#f92672">()),</span> carbonMonoxidePercentage<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (TimeValue carbonMonoxidePercentage : carbonMonoxidePercentages) {
+</span></span><span style="display:flex;"><span>    timeValuesByType.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;C&#34;</span>.<span style="color:#a6e22e">concat</span>(carbonMonoxidePercentage.<span style="color:#a6e22e">ts</span>()), carbonMonoxidePercentage);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>La chiave nella nostra variabile <code>timeValuesByType</code> è una concatenazione in
 stringa della lettera <code>T</code> per temperatura o <code>C</code> per percentuale di monossido di
 carbonio, seguita dal timestamp. Dobbiamo fare ciò per poter poi distinguere tra
 i due tipi di dato più avanti. Le stringhe nella chiave avranno questo aspetto:
 <code>T2021-02-03T08:00:00.000Z</code>.</p>
 <p>L&rsquo;ordinamento è realizzato in questo blocco:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> timeValuesByTypeSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedHashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> keysSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">keySet</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>keysSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>comparing<span style="color:#f92672">(</span>s <span style="color:#f92672">-&gt;</span> timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>s<span style="color:#f92672">).</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">()));</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> timeValuesByTypeSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedHashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> keysSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>(timeValuesByType.<span style="color:#a6e22e">keySet</span>());
+</span></span><span style="display:flex;"><span>keysSortedByTimestamp.<span style="color:#a6e22e">sort</span>(comparing(s <span style="color:#f92672">-&gt;</span> timeValuesByType.<span style="color:#a6e22e">get</span>(s).<span style="color:#a6e22e">timestamp</span>()));
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>String key <span style="color:#f92672">:</span> keysSortedByTimestamp<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">));</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (String key : keysSortedByTimestamp) {
+</span></span><span style="display:flex;"><span>    timeValuesByTypeSortedByTimestamp.<span style="color:#a6e22e">put</span>(key, timeValuesByType.<span style="color:#a6e22e">get</span>(key));
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Questo è solo il modo supercomplicato di Java per ordinare la nostra mappa in
 base al timestamp che abbiamo nei valori della mappa stessa. Dichiariamo una
 mappa <code>timeValuesByTypeSortedByTimestamp</code>, implementata da una <code>LinkedHashMap</code>
@@ -1226,31 +1226,31 @@ iteriamo <code>keysSortedByTimestamp</code>, aggiungendo entry alla nostra mappa
 <code>timeValuesByTypeSortedByTimestamp</code>.</p>
 <p>Ora dichiariamo una mappa per i risultati dei nostri calcoli dell&rsquo;<code>AQi</code> e un
 paio di variabili che ci serviranno dopo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span><span style="display:flex;"><span>TimeValue lastTemperature <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant, Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>TimeValue lastTemperature <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
 </span></span></code></pre></div><p>Qui inizia la parte divertente. Cicliamo attraverso le entry della mappa nella
 nostra variabile <code>timeValuesByTypeSortedByTimestamp</code> precedentemente definita.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Map<span style="color:#f92672">.</span><span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> entry <span style="color:#f92672">:</span> timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">entrySet</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (Map.<span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> entry : timeValuesByTypeSortedByTimestamp.<span style="color:#a6e22e">entrySet</span>()) {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Sappiamo che se la chiave inizia con una <code>T</code>, abbiamo un valore di temperatura
 e, in tal caso lo immagazziniamo nella variabile <code>lastTemperature</code>. Altrimenti,
 il valore deve essere di tipo <code>C</code> per carbonio, e quindi facciamo la stessa cosa
 per la variabile <code>lastCarbonMonoxidePercentage</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;T&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    lastTemperature <span style="color:#f92672">=</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (entry.<span style="color:#a6e22e">getKey</span>().<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;T&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    lastTemperature <span style="color:#f92672">=</span> entry.<span style="color:#a6e22e">getValue</span>();
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (entry.<span style="color:#a6e22e">getKey</span>().<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;C&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> entry.<span style="color:#a6e22e">getValue</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>A questo punto, se abbiamo un valore sia per <code>T</code> che per <code>C</code>, possiamo procedere
 a calcolare il nostro <code>AQi</code> e memorizzare il suo valore nella variabile
 <code>airQualityIndexMap</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>        mostRecent<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">()),</span>
-</span></span><span style="display:flex;"><span>        airQualityIndex<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> maxTemperature<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>    airQualityIndexMap.<span style="color:#a6e22e">put</span>(
+</span></span><span style="display:flex;"><span>        mostRecent(lastTemperature.<span style="color:#a6e22e">timestamp</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">timestamp</span>()),
+</span></span><span style="display:flex;"><span>        airQualityIndex(lastTemperature.<span style="color:#a6e22e">value</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">value</span>(), maxTemperature)
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Stiamo prendendo il timestamp più recente tra i due <code>TimeValue</code> usando una
 funzioncina di aiuto che abbiamo definito precedentemente nell&rsquo;interfaccia del
 calcolatore.</p>
@@ -1261,13 +1261,13 @@ timestamp duplicati.</p>
 <p>Alla fine del ciclo, i nostri risultati sono quasi pronti. Dobbiamo solo
 ordinarli di nuovo per timestamp e ritornare i valori come una <code>List</code> di
 <code>TimeValue</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">&gt;</span> keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">keySet</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>keys<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>Instant<span style="color:#f92672">::</span>compareTo<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> results <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">&gt;</span> keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>(airQualityIndexMap.<span style="color:#a6e22e">keySet</span>());
+</span></span><span style="display:flex;"><span>keys.<span style="color:#a6e22e">sort</span>(Instant::compareTo);
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> results <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Instant key <span style="color:#f92672">:</span> keys<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    results<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>TimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">)));</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (Instant key : keys) {
+</span></span><span style="display:flex;"><span>    results.<span style="color:#a6e22e">add</span>(TimeValue.<span style="color:#a6e22e">of</span>(key, airQualityIndexMap.<span style="color:#a6e22e">get</span>(key)));
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="eleganza-funzionale">Eleganza funzionale</h2>
 <p>Possiamo fare meglio di così? Certo. Usiamo un&rsquo;arma elegante per tempi più
 civilizzati: la programmazione funzionale. Il nostro
@@ -1277,10 +1277,10 @@ ora si trova
 nell&rsquo;<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java">AirQualityIndexCollector</a>.</p>
 <p>Il nostro calcolatore è molto più semplice ora. La prima parte è un po'
 convoluta quindi guardiamola per prima:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span> timeSeries <span style="color:#f92672">=</span> Stream<span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>   temperatures<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue<span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">T</span><span style="color:#f92672">,</span> e<span style="color:#f92672">)),</span>
-</span></span><span style="display:flex;"><span>   carbonMonoxidePercentages<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue<span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">C</span><span style="color:#f92672">,</span> e<span style="color:#f92672">))</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">).</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">());</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span> timeSeries <span style="color:#f92672">=</span> Stream.<span style="color:#a6e22e">concat</span>(
+</span></span><span style="display:flex;"><span>   temperatures.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">map</span>(e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue(TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">T</span>, e)),
+</span></span><span style="display:flex;"><span>   carbonMonoxidePercentages.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">map</span>(e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue(TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">C</span>, e))
+</span></span><span style="display:flex;"><span>).<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toUnmodifiableList</span>());
 </span></span></code></pre></div><p>Ci sono diversi pattern funzionali al lavoro qui:</p>
 <ul>
 <li>
@@ -1296,15 +1296,15 @@ guardando è di tipo <code>T</code> o <code>C</code></p>
 non modificabile</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> timeSeries<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">parallel</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>AirQualityIndexCollector<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">(</span>maxTemperature<span style="color:#f92672">));</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> timeSeries.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">parallel</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">collect</span>(AirQualityIndexCollector.<span style="color:#a6e22e">toUnmodifiableList</span>(maxTemperature));
 </span></span></code></pre></div><p>La variabile <code>timeSeries</code> è quindi trasmessa in parallelo in un collettore che
 fa il lavoro sporco e ritorna una <code>List&lt;TimeValue&gt;</code> non modificabile con gli
 indici di qualità dell&rsquo;aria.</p>
 <p>Diamo un&rsquo;occhiata al collettore.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AirQualityIndexCollector</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">implements</span> Collector<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">,</span> Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">implements</span> Collector<span style="color:#f92672">&lt;</span>TypedTimeValue, Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Stiamo implementando l&rsquo;interfaccia <code>Collector</code>. I parametri di tipo che stiamo
 fornendo esprimono tre cose:</p>
 <ul>
@@ -1315,58 +1315,58 @@ fornendo esprimono tre cose:</p>
 <p>Una <code>Queue</code> è solo una <code>List</code> thread safe. Ne forniamo l&rsquo;implementazione usando
 il metodo <code>supplier</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Supplier<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">supplier</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ConcurrentLinkedQueue<span style="color:#f92672">::</span><span style="color:#66d9ef">new</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Supplier<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">supplier</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ConcurrentLinkedQueue::<span style="color:#66d9ef">new</span>;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In questo caso, l&rsquo;implementazione è una <code>ConcurrentLinkedQueue</code> che, di nuovo, è
 solo una specie di <code>ArrayList</code> thread safe.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BiConsumer<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> TypedTimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">accumulator</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Queue<span style="color:#f92672">::</span>add<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BiConsumer<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, TypedTimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">accumulator</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Queue::add;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>L&rsquo;accumulatore deve tornare una funzione che il collettore usa per accumulare i
 dati in input. Come puoi vedere, torniamo semplicemente un riferimento al metodo
 <code>add</code> di <code>Queue</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BinaryOperator<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">combiner</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>typedTimeValues<span style="color:#f92672">,</span> typedTimeValues2<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        typedTimeValues<span style="color:#f92672">.</span><span style="color:#a6e22e">addAll</span><span style="color:#f92672">(</span>typedTimeValues2<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> typedTimeValues<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">};</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BinaryOperator<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">combiner</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (typedTimeValues, typedTimeValues2) <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>        typedTimeValues.<span style="color:#a6e22e">addAll</span>(typedTimeValues2);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> typedTimeValues;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Il metodo <code>combiner</code> deve tornare una funzione che combina due accumulatori.
 L&rsquo;implementazione deve prendere tutti gli elementi del secondo accumulatore ed
 aggiungerli al primo, che non suona molto funzionale in termini di immutabilità
 ma in questo caso è un comportamento atteso, ed è totalmente ok.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span>() {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Infine, il <code>finisher</code> deve tornare una funzione che prende tutti i valori
 accumulati nella nostra <code>Queue&lt;TypedTimeValue&gt;</code> e torna una <code>List&lt;TimeValue&gt;</code>
 con i nostri indici di qualità dell&rsquo;aria.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant, TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
 </span></span></code></pre></div><p>Questa è una mappa che serve a collezionare gli indici di qualità dell&rsquo;aria.
 Come puoi vedere è indicizzata per timestamp, così che non avremo entry
 duplicate quando calcoli più recenti per uno stesso timestamp saranno messe
 nella mappa rimpiazzando quelle vecchie.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> accumulator <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>   accumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">::</span>timestamp<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>entryTS <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastTemperature <span style="color:#f92672">=</span> getClosest<span style="color:#f92672">(</span>accumulator<span style="color:#f92672">,</span> TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">T</span><span style="color:#f92672">,</span> entryTS<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> getClosest<span style="color:#f92672">(</span>accumulator<span style="color:#f92672">,</span> TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">C</span><span style="color:#f92672">,</span> entryTS<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> accumulator <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>   accumulator.<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">map</span>(TypedTimeValue::timestamp)
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">sorted</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">forEach</span>(entryTS <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastTemperature <span style="color:#f92672">=</span> getClosest(accumulator, TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">T</span>, entryTS);
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> getClosest(accumulator, TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">C</span>, entryTS);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>                   Instant timestamp <span style="color:#f92672">=</span> mostRecent<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>                   aqiAccumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>timestamp<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span>timestamp<span style="color:#f92672">,</span> airQualityIndex<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> maxTemperature<span style="color:#f92672">)));</span>
-</span></span><span style="display:flex;"><span>               <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">});</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> (lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>                   Instant timestamp <span style="color:#f92672">=</span> mostRecent(lastTemperature.<span style="color:#a6e22e">timestamp</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">timestamp</span>());
+</span></span><span style="display:flex;"><span>                   aqiAccumulator.<span style="color:#a6e22e">put</span>(timestamp, TimeValue.<span style="color:#a6e22e">of</span>(timestamp, airQualityIndex(lastTemperature.<span style="color:#a6e22e">value</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">value</span>(), maxTemperature)));
+</span></span><span style="display:flex;"><span>               }
+</span></span><span style="display:flex;"><span>           });
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> aqiAccumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">values</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">};</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> aqiAccumulator.<span style="color:#a6e22e">values</span>().<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">sorted</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toUnmodifiableList</span>());
+</span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><p>Questo è un bel mappazzone di codice ma guardiamolo un po&rsquo; alla volta. Stiamo
 trasmettendo i dati accumulati, estraendo il timestamp, ordinando per questo e,
 per ogni timestamp, guardiamo ai dati di temperatura e percentuale di monossido
@@ -1395,17 +1395,17 @@ carbonio), potremmo voler far girare i client in parallelo. Questo ha un
 vantaggio rispetto all&rsquo;esecuzione a singolo thread in cui dovresti serializzare
 le chiamate ai provider.</p>
 <p>In un ambiente a singolo threaded, potresti scrivere:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider<span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider<span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider();
+</span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
 </span></span></code></pre></div><p>Questo si traduce nel seguente modello di esecuzione seriale:</p>
-<p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram per l&amp;rsquo;esecuzione seriale"></p>
+<p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram per l&rsquo;esecuzione seriale"></p>
 <p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente multithread,
 possiamo lanciare due client concorrenti e far partire il processamento dei dati
 appena abbiamo ricevuto risposta da entrambi. Questo ci risparmia un po&rsquo; di
 tempo e potenzialmente velocizza i nostri tempi di risposta.</p>
-<p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram per l&amp;rsquo;esecuzione parallela"></p>
+<p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram per l&rsquo;esecuzione parallela"></p>
 <p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci sono
 diverse opzioni, ma la più popolare, e quella che personalmente preferisco, è
 usare i <code>CompletableFuture</code>, che sono stati introdotti in Java 8, se non ricordo
@@ -1417,15 +1417,15 @@ configurabile ma i default vanno bene per il nostro caso. Puoi vedere l&rsquo;es
 completo
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java">qui</a>.</p>
 <p>Nel mio esempio ho dichiarato il mio <code>CompletableFuture</code> così:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(()</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>   log<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Calling provider1...&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>   List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues <span style="color:#f92672">=</span> provider1<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>   log<span style="color:#f92672">(</span>String<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;provider 1 returned: %s\n&#34;</span><span style="color:#f92672">,</span> timeValues<span style="color:#f92672">));</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> timeValues<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">});</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture.<span style="color:#a6e22e">supplyAsync</span>(() <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>   log(<span style="color:#e6db74">&#34;Calling provider1...&#34;</span>);
+</span></span><span style="display:flex;"><span>   List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues <span style="color:#f92672">=</span> provider1.<span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>   log(String.<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;provider 1 returned: %s\n&#34;</span>, timeValues));
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> timeValues;
+</span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>Questo è un po&rsquo; verboso poiché volevo includere dei log per mostrare come il
 codice gira in parallelo. Potrei benissimo aver scritto invece:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(</span>provider1<span style="color:#f92672">::</span>get<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture.<span style="color:#a6e22e">supplyAsync</span>(provider1::get);
 </span></span></code></pre></div><p>Questo è sempre verboso ma decisamente meglio di prima. Poiché la computazione
 nel nostro <code>CompletableFuture</code> ritorna una <code>List&lt;TimeValue&gt;</code>, il metodo
 <code>supplyAsync</code> ritorna un <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, che è il modo di
@@ -1441,15 +1441,15 @@ questa sia eseguita nel punto in cui è dichiarata.</p>
 <code>CompletableFuture</code> abbiano finito la loro esecuzione prima di poter procedere.
 Questo lo si fa componendo i future e chiamando il metodo <code>join</code> sul future
 risultante:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">allOf</span><span style="color:#f92672">(</span>timedValuesFuture1<span style="color:#f92672">,</span> timedValuesFuture2<span style="color:#f92672">).</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture.<span style="color:#a6e22e">allOf</span>(timedValuesFuture1, timedValuesFuture2).<span style="color:#a6e22e">join</span>();
 </span></span></code></pre></div><p>Il metodo <code>allOf</code> ritorna un nuovo <code>CompletableFuture</code> che inscatola i future
 che gli stiamo passando. Su questo nuovo future poi chiamiamo <code>join</code> che blocca
 l&rsquo;esecuzione fin quando tutti i future interni hanno finito il lavoro.</p>
 <p>Dopo questa linea siamo sicuri che i nostri thread sono stati eseguiti, quindi
 possiamo prendere i dati di cui abbiamo bisogno dai nostri future originali
 usando il metodo <code>join</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues1 <span style="color:#f92672">=</span> timedValuesFuture1<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues2 <span style="color:#f92672">=</span> timedValuesFuture2<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues1 <span style="color:#f92672">=</span> timedValuesFuture1.<span style="color:#a6e22e">join</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues2 <span style="color:#f92672">=</span> timedValuesFuture2.<span style="color:#a6e22e">join</span>();
 </span></span></code></pre></div><h2 id="esempio-di-output">Esempio di output</h2>
 <p>Quando lanci l&rsquo;applicazione, dovresti vedere un output simile a questo:</p>
 <pre tabindex="0"><code>2021-02-03T17:50:26.772545406 --- [main] Hello concurrent world!
@@ -2164,13 +2164,13 @@ calculator, so we can provide different implementations later on.</p>
 <p>The code for this interface can be seen
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java">here</a>.</p>
 <p>This interface makes for a convenient place to implement the <code>AQi</code> formula:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span><span style="color:#f92672">(</span><span style="color:#66d9ef">double</span> temperature<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> carbonMonoxidePercentage<span style="color:#f92672">,</span> <span style="color:#66d9ef">double</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(((</span>temperature <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">)</span> <span style="color:#f92672">/</span> maxTemperature<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> carbonMonoxidePercentage<span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span>(<span style="color:#66d9ef">double</span> temperature, <span style="color:#66d9ef">double</span> carbonMonoxidePercentage, <span style="color:#66d9ef">double</span> maxTemperature) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (((temperature <span style="color:#f92672">*</span> 100) <span style="color:#f92672">/</span> maxTemperature) <span style="color:#f92672">+</span> carbonMonoxidePercentage) <span style="color:#f92672">/</span> 2;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>This method takes a temperature, a carbon monoxide percentage, a max temperature
 and returns the <code>AQi</code>. Nice.</p>
 <p>The interesting bit however is this method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span>(List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages);
 </span></span></code></pre></div><p>This says that the <code>calculate</code> method takes two lists of <code>TimeValue</code>s: the first
 is a list of temperatures and the other is a list of carbon monoxide
 percentages. It then returns a list of <code>TimeValue</code>s, only this time the list is
@@ -2196,30 +2196,30 @@ data structure</li>
 <li>sort the resulting data by timestamp</li>
 </ol>
 <p>Step 1 is implemented by this code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// key = time value type (C = carbonMonoxidePercentage, T = temperature)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// concatenated with the timestamp as a string
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> timeValuesByType <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// key = time value type (C = carbonMonoxidePercentage, T = temperature)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// concatenated with the timestamp as a string</span>
+</span></span><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> timeValuesByType <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>TimeValue temperature <span style="color:#f92672">:</span> temperatures<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;T&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>temperature<span style="color:#f92672">.</span><span style="color:#a6e22e">ts</span><span style="color:#f92672">()),</span> temperature<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (TimeValue temperature : temperatures) {
+</span></span><span style="display:flex;"><span>    timeValuesByType.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;T&#34;</span>.<span style="color:#a6e22e">concat</span>(temperature.<span style="color:#a6e22e">ts</span>()), temperature);
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>TimeValue carbonMonoxidePercentage <span style="color:#f92672">:</span> carbonMonoxidePercentages<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>carbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">ts</span><span style="color:#f92672">()),</span> carbonMonoxidePercentage<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (TimeValue carbonMonoxidePercentage : carbonMonoxidePercentages) {
+</span></span><span style="display:flex;"><span>    timeValuesByType.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;C&#34;</span>.<span style="color:#a6e22e">concat</span>(carbonMonoxidePercentage.<span style="color:#a6e22e">ts</span>()), carbonMonoxidePercentage);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The key in our <code>timeValuesByType</code> variable is a string concatenation of the
 letter <code>T</code> for temperature or <code>C</code> for carbon monoxide percentage, followed by
 the timestamp. We need to do this in order to later distinguish between the two
 types of values. The key string will look like this:
 <code>T2021-02-03T08:00:00.000Z</code>.</p>
 <p>The sorting is done by this bit:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> timeValuesByTypeSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedHashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> keysSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">keySet</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>keysSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>comparing<span style="color:#f92672">(</span>s <span style="color:#f92672">-&gt;</span> timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>s<span style="color:#f92672">).</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">()));</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> timeValuesByTypeSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedHashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> keysSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>(timeValuesByType.<span style="color:#a6e22e">keySet</span>());
+</span></span><span style="display:flex;"><span>keysSortedByTimestamp.<span style="color:#a6e22e">sort</span>(comparing(s <span style="color:#f92672">-&gt;</span> timeValuesByType.<span style="color:#a6e22e">get</span>(s).<span style="color:#a6e22e">timestamp</span>()));
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>String key <span style="color:#f92672">:</span> keysSortedByTimestamp<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> timeValuesByType<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">));</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (String key : keysSortedByTimestamp) {
+</span></span><span style="display:flex;"><span>    timeValuesByTypeSortedByTimestamp.<span style="color:#a6e22e">put</span>(key, timeValuesByType.<span style="color:#a6e22e">get</span>(key));
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>This is just overcomplicated Java lingo for having our map sorted by the
 timestamp we have in the Java map values. We declare a
 <code>timeValuesByTypeSortedByTimestamp</code> map, implemented by a <code>LinkedHashMap</code>
@@ -2231,30 +2231,30 @@ passing to sort is picking the timestamp of the relative entry in the original
 to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p>
 <p>Now we are declaring a map for the results of our <code>AQi</code> calculations and a
 couple variables we&rsquo;ll need later:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span><span style="display:flex;"><span>TimeValue lastTemperature <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant, Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>TimeValue lastTemperature <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
 </span></span></code></pre></div><p>Here begins the fun part. We cycle through the map entries in our previously
 defined <code>timeValuesByTypeSortedByTimestamp</code> variable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Map<span style="color:#f92672">.</span><span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> entry <span style="color:#f92672">:</span> timeValuesByTypeSortedByTimestamp<span style="color:#f92672">.</span><span style="color:#a6e22e">entrySet</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (Map.<span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> entry : timeValuesByTypeSortedByTimestamp.<span style="color:#a6e22e">entrySet</span>()) {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>We know that if the key begins with a <code>T</code>, we have a temperature value and, in
 such case we store it in the <code>lastTemperature</code> variable. Otherwise, the value
 must be of type <code>C</code> for carbon, so we do the same for the
 <code>lastCarbonMonoxidePercentage</code> variable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;T&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    lastTemperature <span style="color:#f92672">=</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getKey</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startsWith</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;C&#34;</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> entry<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (entry.<span style="color:#a6e22e">getKey</span>().<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;T&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    lastTemperature <span style="color:#f92672">=</span> entry.<span style="color:#a6e22e">getValue</span>();
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (entry.<span style="color:#a6e22e">getKey</span>().<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;C&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> entry.<span style="color:#a6e22e">getValue</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>At this point, if we have a value both for <code>T</code> and <code>C</code>, we can proceed to
 calculate our <code>AQi</code> and store its value in the <code>airQualityIndexMap</code> variable.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>        mostRecent<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">()),</span>
-</span></span><span style="display:flex;"><span>        airQualityIndex<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> maxTemperature<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>    airQualityIndexMap.<span style="color:#a6e22e">put</span>(
+</span></span><span style="display:flex;"><span>        mostRecent(lastTemperature.<span style="color:#a6e22e">timestamp</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">timestamp</span>()),
+</span></span><span style="display:flex;"><span>        airQualityIndex(lastTemperature.<span style="color:#a6e22e">value</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">value</span>(), maxTemperature)
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>We are picking the most recent timestamp between the two <code>TimeValue</code>s using a
 handy helper function that we defined earlier in our calculator interface.</p>
 <p>An intended side effect of using a map for this data structure is that, when we
@@ -2262,13 +2262,13 @@ handy helper function that we defined earlier in our calculator interface.</p>
 most recent one. This solves our problem with duplicate timestamps.</p>
 <p>At the end of the cycle, our results are almost ready. We just need to sort by
 timestamp again and return the values as a <code>List</code> of <code>TimeValue</code>s.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">&gt;</span> keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;(</span>airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">keySet</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>keys<span style="color:#f92672">.</span><span style="color:#a6e22e">sort</span><span style="color:#f92672">(</span>Instant<span style="color:#f92672">::</span>compareTo<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> results <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">&gt;</span> keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>(airQualityIndexMap.<span style="color:#a6e22e">keySet</span>());
+</span></span><span style="display:flex;"><span>keys.<span style="color:#a6e22e">sort</span>(Instant::compareTo);
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> results <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>();
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span>Instant key <span style="color:#f92672">:</span> keys<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    results<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>TimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span>key<span style="color:#f92672">,</span> airQualityIndexMap<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>key<span style="color:#f92672">)));</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (Instant key : keys) {
+</span></span><span style="display:flex;"><span>    results.<span style="color:#a6e22e">add</span>(TimeValue.<span style="color:#a6e22e">of</span>(key, airQualityIndexMap.<span style="color:#a6e22e">get</span>(key)));
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="functional-elegance">Functional elegance</h2>
 <p>Can we do better than this? Absolutely. Let&rsquo;s use an elegant weapon for a more
 civilized age: functional programming. Our
@@ -2278,10 +2278,10 @@ calculations is now in the
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java">AirQualityIndexCollector</a>.</p>
 <p>Our new calculator is much simpler now. The first part is quite involved so
 let&rsquo;s take a look at it first:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span> timeSeries <span style="color:#f92672">=</span> Stream<span style="color:#f92672">.</span><span style="color:#a6e22e">concat</span><span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>   temperatures<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue<span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">T</span><span style="color:#f92672">,</span> e<span style="color:#f92672">)),</span>
-</span></span><span style="display:flex;"><span>   carbonMonoxidePercentages<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue<span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">C</span><span style="color:#f92672">,</span> e<span style="color:#f92672">))</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">).</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">());</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span> timeSeries <span style="color:#f92672">=</span> Stream.<span style="color:#a6e22e">concat</span>(
+</span></span><span style="display:flex;"><span>   temperatures.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">map</span>(e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue(TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">T</span>, e)),
+</span></span><span style="display:flex;"><span>   carbonMonoxidePercentages.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">map</span>(e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue(TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">C</span>, e))
+</span></span><span style="display:flex;"><span>).<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toUnmodifiableList</span>());
 </span></span></code></pre></div><p>There are several functional patterns at work here:</p>
 <ul>
 <li>
@@ -2297,15 +2297,15 @@ is of type <code>T</code> or <code>C</code></p>
 <code>List&lt;TypedTimeValue&gt;</code></p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> timeSeries<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">().</span><span style="color:#a6e22e">parallel</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>AirQualityIndexCollector<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">(</span>maxTemperature<span style="color:#f92672">));</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> timeSeries.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">parallel</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">collect</span>(AirQualityIndexCollector.<span style="color:#a6e22e">toUnmodifiableList</span>(maxTemperature));
 </span></span></code></pre></div><p>The <code>timeSeries</code> is then streamed in parallel into a collector that does the
 real work and returns an unmodifiable <code>List&lt;TimeValue&gt;</code> with the air quality
 indices.</p>
 <p>Let&rsquo;s take a look at the collector.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AirQualityIndexCollector</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">implements</span> Collector<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">,</span> Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">implements</span> Collector<span style="color:#f92672">&lt;</span>TypedTimeValue, Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>We&rsquo;re implementing the <code>Collector</code> interface. The type parameters we are
 providing here express three things:</p>
 <ul>
@@ -2316,58 +2316,58 @@ providing here express three things:</p>
 <p>A <code>Queue</code> is just a thread safe <code>List</code>. We provide the implementation using the
 supplier method:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Supplier<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">supplier</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ConcurrentLinkedQueue<span style="color:#f92672">::</span><span style="color:#66d9ef">new</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Supplier<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">supplier</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ConcurrentLinkedQueue::<span style="color:#66d9ef">new</span>;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In this case, the implementation is a <code>ConcurrentLinkedQueue</code> which, again, is
 just sort of a thread safe <code>ArrayList</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BiConsumer<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> TypedTimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">accumulator</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Queue<span style="color:#f92672">::</span>add<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BiConsumer<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, TypedTimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">accumulator</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Queue::add;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The accumulator method must return a function which the collector uses to
 accumulate the input data. As you can see, we simply return a reference to the
 <code>add</code> method in <code>Queue</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BinaryOperator<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">combiner</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span>typedTimeValues<span style="color:#f92672">,</span> typedTimeValues2<span style="color:#f92672">)</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        typedTimeValues<span style="color:#f92672">.</span><span style="color:#a6e22e">addAll</span><span style="color:#f92672">(</span>typedTimeValues2<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> typedTimeValues<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">};</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BinaryOperator<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">combiner</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (typedTimeValues, typedTimeValues2) <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>        typedTimeValues.<span style="color:#a6e22e">addAll</span>(typedTimeValues2);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> typedTimeValues;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The combiner method must return a function that combines two accumulators. The
 implementation should pick all elements from the second accumulator and add them
 to the first one, which doesn&rsquo;t sound very functional in terms of immutability
 but in this case mutation is an expected behavior, and it&rsquo;s totally fine.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;,</span> List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span>() {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Finally, the finisher must return a function which takes all the accumulated
 values in our <code>Queue&lt;TypedTimeValue&gt;</code> and return a <code>List&lt;TimeValue&gt;</code> with our
 air quality indices.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant, TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
 </span></span></code></pre></div><p>This is a map that is going to collect all the air quality indices. As you can
 see, it&rsquo;s indexed by a timestamp, so we won&rsquo;t get duplicate entries as more
 recent calculations for the same timestamps are put into the map replacing the
 stale ones.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> accumulator <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>   accumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>TypedTimeValue<span style="color:#f92672">::</span>timestamp<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">forEach</span><span style="color:#f92672">(</span>entryTS <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastTemperature <span style="color:#f92672">=</span> getClosest<span style="color:#f92672">(</span>accumulator<span style="color:#f92672">,</span> TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">T</span><span style="color:#f92672">,</span> entryTS<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> getClosest<span style="color:#f92672">(</span>accumulator<span style="color:#f92672">,</span> TypedTimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">Type</span><span style="color:#f92672">.</span><span style="color:#a6e22e">C</span><span style="color:#f92672">,</span> entryTS<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> accumulator <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>   accumulator.<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">map</span>(TypedTimeValue::timestamp)
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">sorted</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">forEach</span>(entryTS <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastTemperature <span style="color:#f92672">=</span> getClosest(accumulator, TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">T</span>, entryTS);
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> getClosest(accumulator, TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">C</span>, entryTS);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>                   Instant timestamp <span style="color:#f92672">=</span> mostRecent<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">timestamp</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>                   aqiAccumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>timestamp<span style="color:#f92672">,</span> TimeValue<span style="color:#f92672">.</span><span style="color:#a6e22e">of</span><span style="color:#f92672">(</span>timestamp<span style="color:#f92672">,</span> airQualityIndex<span style="color:#f92672">(</span>lastTemperature<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> lastCarbonMonoxidePercentage<span style="color:#f92672">.</span><span style="color:#a6e22e">value</span><span style="color:#f92672">(),</span> maxTemperature<span style="color:#f92672">)));</span>
-</span></span><span style="display:flex;"><span>               <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">});</span>
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> (lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>                   Instant timestamp <span style="color:#f92672">=</span> mostRecent(lastTemperature.<span style="color:#a6e22e">timestamp</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">timestamp</span>());
+</span></span><span style="display:flex;"><span>                   aqiAccumulator.<span style="color:#a6e22e">put</span>(timestamp, TimeValue.<span style="color:#a6e22e">of</span>(timestamp, airQualityIndex(lastTemperature.<span style="color:#a6e22e">value</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">value</span>(), maxTemperature)));
+</span></span><span style="display:flex;"><span>               }
+</span></span><span style="display:flex;"><span>           });
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> aqiAccumulator<span style="color:#f92672">.</span><span style="color:#a6e22e">values</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stream</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">sorted</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>           <span style="color:#f92672">.</span><span style="color:#a6e22e">collect</span><span style="color:#f92672">(</span>Collectors<span style="color:#f92672">.</span><span style="color:#a6e22e">toUnmodifiableList</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">};</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> aqiAccumulator.<span style="color:#a6e22e">values</span>().<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">sorted</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toUnmodifiableList</span>());
+</span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><p>This is quite a mouthful but let&rsquo;s go through it bit by bit. We are streaming
 the accumulated data, extracting the timestamp, sorting by it and, for each
 timestamp we look for the temperature and carbon monoxide percentage data with
@@ -2393,10 +2393,10 @@ want to run the clients in parallel. This has an advantage over traditional
 single threaded execution where you would have to serialize the calls to the
 providers.</p>
 <p>In a single threaded environment, you might write code like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider<span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider<span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider();
+</span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
 </span></span></code></pre></div><p>This translates to the following serial execution model:</p>
 <p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram for serial execution"></p>
 <p>As we said, we can do better than this. In a multithreaded environment, we can
@@ -2413,15 +2413,15 @@ in a threaded scheduler. The scheduler is of course customizable but the
 defaults are okay for our simple case here. You can see the complete example
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java">here</a>.</p>
 <p>In my example I have declared my <code>CompletableFuture</code>s like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(()</span> <span style="color:#f92672">-&gt;</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>   log<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Calling provider1...&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>   List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues <span style="color:#f92672">=</span> provider1<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>   log<span style="color:#f92672">(</span>String<span style="color:#f92672">.</span><span style="color:#a6e22e">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;provider 1 returned: %s\n&#34;</span><span style="color:#f92672">,</span> timeValues<span style="color:#f92672">));</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> timeValues<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">});</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture.<span style="color:#a6e22e">supplyAsync</span>(() <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>   log(<span style="color:#e6db74">&#34;Calling provider1...&#34;</span>);
+</span></span><span style="display:flex;"><span>   List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues <span style="color:#f92672">=</span> provider1.<span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>   log(String.<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;provider 1 returned: %s\n&#34;</span>, timeValues));
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> timeValues;
+</span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>This is a bit verbose as I wanted to include some logging to show you how this
 code runs in parallel. I might as well have written:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">supplyAsync</span><span style="color:#f92672">(</span>provider1<span style="color:#f92672">::</span>get<span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture.<span style="color:#a6e22e">supplyAsync</span>(provider1::get);
 </span></span></code></pre></div><p>This is still verbose but definitely better than before. As the computation in
 our <code>CompletableFuture</code> returns a <code>List&lt;TimeValue&gt;</code>, the <code>supplyAsync</code> method
 returns a <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, which is Java&rsquo;s way of saying
@@ -2436,14 +2436,14 @@ executed at the point of declaration.</p>
 <p>We now need a way to make sure our <code>CompletableFuture</code>s have completed their
 execution before going on. This is done by composing our futures and calling the
 <code>join</code> method on the resulting future:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">.</span><span style="color:#a6e22e">allOf</span><span style="color:#f92672">(</span>timedValuesFuture1<span style="color:#f92672">,</span> timedValuesFuture2<span style="color:#f92672">).</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture.<span style="color:#a6e22e">allOf</span>(timedValuesFuture1, timedValuesFuture2).<span style="color:#a6e22e">join</span>();
 </span></span></code></pre></div><p>The <code>allOf</code> method returns a new <code>CompletableFuture</code> which wraps the futures
 we&rsquo;re passing to it. On this new future we then call <code>join</code> which blocks until
 all the wrapped futures have finished executing.</p>
 <p>After this line, we are sure that our threads have run, so we can get the data
 we need from our original futures with the <code>join</code> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues1 <span style="color:#f92672">=</span> timedValuesFuture1<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues2 <span style="color:#f92672">=</span> timedValuesFuture2<span style="color:#f92672">.</span><span style="color:#a6e22e">join</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues1 <span style="color:#f92672">=</span> timedValuesFuture1.<span style="color:#a6e22e">join</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues2 <span style="color:#f92672">=</span> timedValuesFuture2.<span style="color:#a6e22e">join</span>();
 </span></span></code></pre></div><h2 id="example-output">Example output</h2>
 <p>When you run the application, you should see output similar to this:</p>
 <pre tabindex="0"><code>2021-02-03T17:50:26.772545406 --- [main] Hello concurrent world!
@@ -3328,7 +3328,7 @@ problems both to the neophyte and to the experienced programmer.</p>
 <p>In this post, we&rsquo;ll see that there&rsquo;s no need to be a
 <a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the very simple few
 concepts needed not to incur into time management hell.</p>
-<p><img src="/images/posts/time.jpg" alt="Time doesn&amp;rsquo;t exist. Clocks exist."></p>
+<p><img src="/images/posts/time.jpg" alt="Time doesn&rsquo;t exist. Clocks exist."></p>
 <h2 id="representation">Representation</h2>
 <p>A question as simple as <em>&ldquo;What time is it?&rdquo;</em> assumes a number of contextual
 subleties that are obvious to the human brain, but become absolute nonsense for
@@ -3541,17 +3541,18 @@ functionality.</p>
 <li><a href="https://yourcalendricalfallacyis.com/">Your Calendrical Fallacy Is&hellip;</a></li>
 <li><a href="https://www.bnnbloomberg.ca/greenland-solves-the-daylight-saving-time-debate-1.1900228">Greenland Solves the Daylight Saving Time Debate</a></li>
 <li><a href="https://foojay.io/today/time-zone-and-currency-database-in-jdk/">Time Zone and Currency Database in JDK</a></li>
+<li><a href="https://youtu.be/Zpiou9Rn8UE">(There Ought To Be A) Moonlight Saving Time</a></li>
 </ul>
 <h2 id="memes">Memes</h2>
-<p><img src="/images/posts/mars-timezone.png" alt="Elon Musk: &amp;ldquo;I&amp;rsquo;m putting people on Mars!&amp;rdquo;, Developers: &amp;ldquo;Fantastic, moretimezones to support&amp;rdquo;."></p>
+<p><img src="/images/posts/mars-timezone.png" alt="Elon Musk: &ldquo;I&rsquo;m putting people on Mars!&rdquo;, Developers: &ldquo;Fantastic, moretimezones to support&rdquo;."></p>
 <p><img src="/images/posts/daylight-dog.jpg" alt="Daylight savings dog"></p>
 <p><img src="/images/posts/daylight-investing.jpg" alt="Daylight savings? How about daylight investing?"></p>
-<p><img src="/images/posts/timezones-meme.png" alt="Friend: &amp;ldquo;What happened?&amp;rdquo;, Me: &amp;ldquo;I had to work with timezonestoday&amp;rdquo;."></p>
+<p><img src="/images/posts/timezones-meme.png" alt="Friend: &ldquo;What happened?&rdquo;, Me: &ldquo;I had to work with timezonestoday&rdquo;."></p>
 <p><img src="/images/posts/time-universe-meme.webp" alt="January 1st 1970 meme"></p>
 <p><img src="/images/posts/time-boeing-787.jpg" alt="Boeing 787 meme"></p>
 <p><img src="/images/posts/time-consensus.jpg" alt="xkcd: Consensus Time"></p>
 <p><img src="/images/posts/time-devs.png" alt="Developers having to implement yet another timezone change"></p>
-<p><img src="/images/posts/time-devs-again.webp" alt="Developers having to explain&amp;hellip;"></p>
+<p><img src="/images/posts/time-devs-again.webp" alt="Developers having to explain&hellip;"></p>
 <p><img src="/images/posts/time-days-since.webp" alt="Days since last timezone issue: 0"></p>
 <p><img src="/images/posts/clocks-back-meme.jpg" alt="Clocks back"></p>
 <p><img src="/images/posts/picard-dst.png" alt="Picard DST"></p>
@@ -3612,19 +3613,19 @@ coinvolte, dovresti riuscire a capire cosa non quadra.</p>
 <p>Non è necessario tracciare nel log ogni cambiamento di stato di ogni variabile,
 specie se la funzione o il metodo sono sufficientemente complessi.</p>
 <p>Esempio di log inutile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BuyResponse <span style="color:#a6e22e">buyItem</span><span style="color:#f92672">(</span>BuyRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; ----- buyItem ------ start -----&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34; ----- buyItem ------ stop -----&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BuyResponse <span style="color:#a6e22e">buyItem</span>(BuyRequest request) {
+</span></span><span style="display:flex;"><span>    log.<span style="color:#a6e22e">debug</span>(<span style="color:#e6db74">&#34; ----- buyItem ------ start -----&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    log.<span style="color:#a6e22e">debug</span>(<span style="color:#e6db74">&#34; ----- buyItem ------ stop -----&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Esempio di log più utile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BuyResponse <span style="color:#a6e22e">buyItem</span><span style="color:#f92672">(</span>BuyRequest request<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;buyItem(): request={}&#34;</span><span style="color:#f92672">,</span> request<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">debug</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;buyItem(): request={}, response={}&#34;</span><span style="color:#f92672">,</span> request<span style="color:#f92672">,</span> response<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BuyResponse <span style="color:#a6e22e">buyItem</span>(BuyRequest request) {
+</span></span><span style="display:flex;"><span>    log.<span style="color:#a6e22e">debug</span>(<span style="color:#e6db74">&#34;buyItem(): request={}&#34;</span>, request);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>    log.<span style="color:#a6e22e">debug</span>(<span style="color:#e6db74">&#34;buyItem(): request={}, response={}&#34;</span>, request, response);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In questo modo posso controllare l’input e l’output del metodo. Ripetendo
 l’input anche all’uscita del metodo, sarà più facile correlare i messaggi in
 fase di analisi. Tuttavia non sempre è utile questo tipo di verbosità.</p>
@@ -3669,13 +3670,13 @@ cocktail attorniato da compiacenti signorine.</p>
 <p>Il log di un errore dovrebbe portarsi dietro l’istanza di eccezione catturata e,
 se possibile ed utile, un minimo di contesto. Spesso mi capita di vedere codice
 del tipo:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ConnectionException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Error: &#34;</span> <span style="color:#f92672">+</span> e<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">catch</span> (ConnectionException e) {
+</span></span><span style="display:flex;"><span>    log.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;Error: &#34;</span> <span style="color:#f92672">+</span> e);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Sarebbe meglio una cosa del genere:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">catch</span> <span style="color:#f92672">(</span>ConnectionException e<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    log<span style="color:#f92672">.</span><span style="color:#a6e22e">error</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;connection error: user={}&#34;</span><span style="color:#f92672">,</span> user<span style="color:#f92672">,</span> e<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">catch</span> (ConnectionException e) {
+</span></span><span style="display:flex;"><span>    log.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;connection error: user={}&#34;</span>, user, e);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In questo modo non perdo lo stack trace dell’eccezione catturata e posso
 ricondurla ad una specifica istanza di utente.</p>
 <h1 id="conosci-gli-strumenti">Conosci gli strumenti</h1>

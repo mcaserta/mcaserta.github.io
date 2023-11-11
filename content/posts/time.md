@@ -319,4 +319,8 @@ today".](/images/posts/timezones-meme.png)
 
 ![Perfect date](/images/posts/perfect-date.jpg)
 
+![DST](/images/posts/time-dst-meme.jpg)
+
+![Overnight workers](/images/posts/time-overnight-meme.jpg)
+
 [^tz]: assuming the same timezone is used everywhere

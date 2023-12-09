@@ -283,6 +283,7 @@ Here are a few useful links I've accumulated over time:
 - [Time Zone and Currency Database in JDK](https://foojay.io/today/time-zone-and-currency-database-in-jdk/)
 - [(There Ought To Be A) Moonlight Saving Time](https://youtu.be/Zpiou9Rn8UE)
 - [We don’t do DST at this company](https://blog.backslasher.net/no-dst.html)
+- [Daylight Savings Time be like](https://www.instagram.com/p/CzPDoZcuV-b/)
 
 ## Memes
 

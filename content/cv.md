@@ -9,10 +9,11 @@ toc: true
 
 ### Senior Developer, Alten Spa; Rome, IT — 2022-current
 
-| Client | Pediod | Description                                                                             | Technologies                                                         |
-| ------ | ------ | --------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Aruba  | 2023   | Development of the new billing infrastructure based on an event streaming architecture. | kafka streams, java, spring boot, microservices, prometheus, grafana |
-| Paydo  | 2022   | Development of the backend infrastructure on AWS for Plick, a payment service.          | aws, lambda, s3, sqs, typescript, nodejs                             |
+| Client   | Pediod | Description                                                                                   | Technologies                                                         |
+| -------- | ------ | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Maggioli | 2023   | Development of the new global search infrastructure based on an event streaming architecture. | kafka streams, java, spring boot, microservices, mongodb             |
+| Aruba    | 2023   | Development of the new billing infrastructure based on an event streaming architecture.       | kafka streams, java, spring boot, microservices, prometheus, grafana |
+| Paydo    | 2022   | Development of the backend infrastructure on AWS for Plick, a payment service.                | aws, lambda, s3, sqs, typescript, nodejs                             |
 
 ### Senior Developer, Dedagroup Spa; Rome, IT — 2020-2021
 

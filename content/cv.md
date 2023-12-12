@@ -9,17 +9,17 @@ toc: true
 
 ### Senior Developer, Alten Spa; Rome, IT — 2022-current
 
-| Client   | Pediod | Description                                                                                   | Technologies                                                         |
-| -------- | ------ | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| Maggioli | 2023   | Development of the new global search infrastructure based on an event streaming architecture. | kafka streams, java, spring boot, microservices, mongodb             |
-| Aruba    | 2023   | Development of the new billing infrastructure based on an event streaming architecture.       | kafka streams, java, spring boot, microservices, prometheus, grafana |
-| Paydo    | 2022   | Development of the backend infrastructure on AWS for Plick, a payment service.                | aws, lambda, s3, sqs, typescript, nodejs                             |
+| Client   | Pediod | Description                                                                                   | Technologies                                                              |
+| -------- | ------ | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Maggioli | 2023   | Development of the new global search infrastructure based on an event streaming architecture. | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
+| Aruba    | 2023   | Development of the new billing infrastructure based on an event streaming architecture.       | k8s, kafka streams, java, spring boot, microservices, prometheus, grafana |
+| Paydo    | 2022   | Development of the backend infrastructure on AWS for Plick, a payment service.                | aws, lambda, s3, sqs, typescript, nodejs                                  |
 
 ### Senior Developer, Dedagroup Spa; Rome, IT — 2020-2021
 
-| Client | Pediod    | Description                                                                                                                                                                                                                                                                   | Technologies                                  |
-| ------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| Terna  | 2020-2021 | Development of the electrical power infrastructure web monitoring console. Near real time sensor data from the electrical infrastructure from Italy and nearby countries is ingested into the system for visualization on an admin console presenting different widget types. | iot, java, oracle, spring boot, microservices |
+| Client | Pediod    | Description                                                                                                                                                                                                                                                                   | Technologies                                       |
+| ------ | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Terna  | 2020-2021 | Development of the electrical power infrastructure web monitoring console. Near real time sensor data from the electrical infrastructure from Italy and nearby countries is ingested into the system for visualization on an admin console presenting different widget types. | k8s, iot, java, oracle, spring boot, microservices |
 
 ### Software Architect, Nexse Srl; Rome, IT — 2003-2019
 
@@ -82,13 +82,14 @@ and the quality of my work.
 - Cloud
   - AWS: CDK, CloudFormation, Lambda, EC2, S3, EBS, VPC, RDS, Route 53, ELB,
     CloudWatch, SNS, SQS, Systems Manager, ...
+  - Google Cloud
 - Persistence
   - RDBMS Design (E-R), Oracle, PL/SQL, MySQL, PostgreSQL, SQL, Hibernate, JPA,
     Spring Data, JDBC, Voldemort, Perl/DBI, BerkeleyDB
 - NoSQL
   - MongoDB, Redis, Elasticsearch, Neo4j, OrientDB
 - Virtualization
-  - Docker, Openshift, Kubernetes
+  - Docker, Kubernetes, Openshift, Podman
 - Server Software
   - Bind, Postfix, Dhcpd, Apache Httpd, Tomcat, Nginx, Kafka, JBoss AS,
     Weblogic, Artemis/ActiveMQ, ServiceMix/Karaf/Fabric, Sun Cluster, OpenLDAP

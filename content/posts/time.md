@@ -325,4 +325,6 @@ today".](/images/posts/timezones-meme.png)
 
 ![Overnight workers](/images/posts/time-overnight-meme.jpg)
 
+![XKCD: DateTime](https://imgs.xkcd.com/comics/datetime.png)
+
 [^tz]: assuming the same timezone is used everywhere

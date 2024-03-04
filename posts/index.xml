@@ -110,7 +110,7 @@ I have been playing the piano since I was a little kid. Actually, I played the o
 Anyway, I&amp;rsquo;ve been playing keyboards since forever and I&amp;rsquo;ve also picked up different instruments over the years, probably too many of them as I never really mastered one.</description><content type="html"><![CDATA[<blockquote>
 <p>«You can play a shoestring if you&rsquo;re sincere.» — John Coltrane</p>
 </blockquote>
-<p><img src="/images/posts/ballads-album-cover.png" alt="album cover"></p>
+<p><img alt="album cover" src="/images/posts/ballads-album-cover.png"></p>
 <p>I have been playing the piano since I was a little kid. Actually, I played the
 organ first, as my dad had a transistor one that was pretty state of the art for
 the time (I was born in 1974 so you get the idea).</p>
@@ -149,7 +149,7 @@ The nice thing with instrumental music is that giving titles to songs is maybe t
 I had this album&amp;rsquo;s title written down in a list of possible song names that I keep in my notebook. I wasn&amp;rsquo;t really thinking about it until I started seeing the album cover showing up online after I pushed the publish button.</description><content type="html"><![CDATA[<blockquote>
 <p>«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace</p>
 </blockquote>
-<p><img src="/images/posts/the-last-time-i-had-fun-album-cover.png" alt="album cover"></p>
+<p><img alt="album cover" src="/images/posts/the-last-time-i-had-fun-album-cover.png"></p>
 <p>The nice thing with instrumental music is that giving titles to songs is maybe
 trivial and can sometimes be lots of fun.</p>
 <p>I had this album&rsquo;s title written down in a list of possible song names that I
@@ -166,7 +166,7 @@ people see it as a weakness. It isn&rsquo;t. Of course it is not.</p>
 shitless. I had no idea what was happening to me. I was living in a relatively
 small town and I had maybe heard the word <em>depression</em> a few times, always
 referring to someone no one would dare go near to.</p>
-<p><img src="/images/posts/societal-myth-sarah-andersen.png" alt="Societal Myth">
+<p><img alt="Societal Myth" src="/images/posts/societal-myth-sarah-andersen.png">
 <a href="https://www.instagram.com/p/CjiZuPOsOr4/">credits</a></p>
 <p>These days things are a bit better. Mental illness still carries around a stigma
 but more and more people are aware of what it means to be depressed, to
@@ -187,7 +187,7 @@ Bach wrote music for the glory of his god and for the refreshment of the spirit.
 <p>«There&rsquo;s nothing remarkable about it. All one has to do is hit the right keys
 at the right time and the instrument plays itself.» — J. S. Bach</p>
 </blockquote>
-<p><img src="/images/posts/ear-candy-album-cover.png" alt="album cover"></p>
+<p><img alt="album cover" src="/images/posts/ear-candy-album-cover.png"></p>
 <p>What I find amusing about quotes is that it&rsquo;s very hard to find out if they are
 trustworthy. I like to think that the Kapellmeister might actually have said
 that. It&rsquo;s quite plausible I think.</p>
@@ -205,7 +205,7 @@ When I was a kid, music came on vinyl. I loved it for the beautiful covers but m
 who have no faith in the future.» — &ldquo;The Great Beauty&rdquo; (2013, Paolo
 Sorrentino)</p>
 </blockquote>
-<p><img src="/images/posts/until-further-notice-album-cover.png" alt="album cover"></p>
+<p><img alt="album cover" src="/images/posts/until-further-notice-album-cover.png"></p>
 <p>When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
 would report lots of interesting stuff such as the performers&rsquo; names and the
@@ -269,7 +269,7 @@ hand. Most keyboardists can do that and they don&rsquo;t go bragging about it, I
 Here are the relevant links:
 github docs download There still is much room for improvement.
 If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.
-I hope you find this useful. I certainly have in my daily work.</description><content type="html"><![CDATA[<p><img src="/images/posts/bruce-logo.png" alt="Bruce logo"></p>
+I hope you find this useful. I certainly have in my daily work.</description><content type="html"><![CDATA[<p><img alt="Bruce logo" src="/images/posts/bruce-logo.png"></p>
 <p>I just released Bruce, a Java library for performing cryptography.</p>
 <p>Here are the relevant links:</p>
 <ul>
@@ -339,8 +339,7 @@ key use A amber mode B binary mode D dna mode F full charset mode (default) G gr
 
 <p>After trying to implement the
 <a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">digital rain</a> algorithm in
-6502 assembly and <a href="/posts/2021/05/the-matrix-screensaver-for-commodore-64/" title="failing
-miserably">failing miserably</a>, I decided to try the <a href="https://cc65.github.io/">cc65</a> toolkit and
+6502 assembly and <a href="/posts/2021/05/the-matrix-screensaver-for-commodore-64/" title="failing\nmiserably">failing miserably</a>, I decided to try the <a href="https://cc65.github.io/">cc65</a> toolkit and
 write some C code.</p>
 <p>It takes a while to load but what you are seeing above is a live emulation of
 the screensaver software.</p>
@@ -534,7 +533,7 @@ valori:</p>
 </table>
 <p>Possiamo calcolare l&rsquo;<code>AQi</code> con questa specie di formula:</p>
 <!-- raw HTML omitted -->
-<p><img src="/images/posts/air-quality-formula.png" alt="formula della qualità dell&rsquo;aria"></p>
+<p><img alt="formula della qualità dell&rsquo;aria" src="/images/posts/air-quality-formula.png"></p>
 <p><strong>DISCLAIMER:</strong> questa formula non è in alcun modo scientifica ed è da
 intendersi esclusivamente a scopo educativo. Non voglio che ambientalisti e veri
 scienziati mi vengano a cercare a casa con formule matematiche e accuse di
@@ -1030,7 +1029,7 @@ recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad og
 timestamp duplicati nei risultati, nello specifico <code>2021-01-20T08:02:00Z</code> e
 <code>2021-01-20T08:06:00Z</code>. Questi rappresentano un paradosso temporale poiché
 sembra che il nostro <code>AQi</code> abbia due diversi valori allo stesso istante.</p>
-<p><img src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing"></p>
+<p><img alt="I find your lack of logic disturbing" src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg"></p>
 <p>Entrambi sappiamo che questi dati finiranno su una pagina web. Non vorrai certo
 che uno di quegli sviluppatori hipster del frontend ci faccia notare una
 mancanza di logica o, peggio, una inconsistenza nei nostri dati, vero?</p>
@@ -1098,7 +1097,7 @@ questo:</p>
 <p>Proprio come un&rsquo;equazione è un&rsquo;ottima scusa per rispolverare un po&rsquo; di
 <a href="https://www.latex-project.org/">LaTeX</a>, una buona serie di dati temporali è un
 eccellente candidato per <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
-<p><img src="/images/posts/plot-output.png" alt="plot dei dati fin qui"></p>
+<p><img alt="plot dei dati fin qui" src="/images/posts/plot-output.png"></p>
 <p>I dati nel mondo reale sono naturalmente molto più caotici di così e potresti
 voler normalizzare il risultato usando un intervallo temporale arbitrario, ad
 esempio un minuto:</p>
@@ -1148,9 +1147,9 @@ esempio un minuto:</p>
 </tr>
 </tbody>
 </table>
-<p><img src="/images/posts/plot-output-normalized.png" alt="plot dei dati normalizzati"></p>
+<p><img alt="plot dei dati normalizzati" src="/images/posts/plot-output-normalized.png"></p>
 <p>Ha senso? Spero proprio di sì.</p>
-<p><img src="/images/posts/yes.gif" alt="sì"></p>
+<p><img alt="sì" src="/images/posts/yes.gif"></p>
 <h2 id="scriviamo-il-codice">Scriviamo il codice</h2>
 <p>Scriviamo un po&rsquo; di codice. Prima di tutto, definiamo un&rsquo;interfaccia per il
 nostro calcolatore di <code>AQi</code>, così che poi possiamo fornirne diverse
@@ -1400,12 +1399,12 @@ le chiamate ai provider.</p>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
 </span></span></code></pre></div><p>Questo si traduce nel seguente modello di esecuzione seriale:</p>
-<p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram per l&rsquo;esecuzione seriale"></p>
+<p><img alt="sequence diagram per l&rsquo;esecuzione seriale" src="/images/posts/sequence-diagram-serial.jpg"></p>
 <p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente multithread,
 possiamo lanciare due client concorrenti e far partire il processamento dei dati
 appena abbiamo ricevuto risposta da entrambi. Questo ci risparmia un po&rsquo; di
 tempo e potenzialmente velocizza i nostri tempi di risposta.</p>
-<p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram per l&rsquo;esecuzione parallela"></p>
+<p><img alt="sequence diagram per l&rsquo;esecuzione parallela" src="/images/posts/sequence-diagram-parallel.jpg"></p>
 <p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci sono
 diverse opzioni, ma la più popolare, e quella che personalmente preferisco, è
 usare i <code>CompletableFuture</code>, che sono stati introdotti in Java 8, se non ricordo
@@ -1481,7 +1480,7 @@ fondo in alcuni aspetti che ho incontrato a lavoro. Ti suggerisco di fare lo
 stesso quando ti capitano problemi che hanno bisogno di approfondimenti. Spero
 tu abbia trovato tutto ciò utile.</p>
 <h2 id="bonus">Bonus</h2>
-<p><img src="/images/posts/reading-memes-on-github.webp" alt="reading memes on github"></p>
+<p><img alt="reading memes on github" src="/images/posts/reading-memes-on-github.webp"></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -1490,10 +1489,10 @@ tu abbia trovato tutto ciò utile.</p>
 <p>questa è la mia vendetta per tutti i brutti voti a scuola.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><img src="/images/posts/it-is-acceptable.jpg" alt="it is acceptable meme">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img alt="it is acceptable meme" src="/images/posts/it-is-acceptable.jpg">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><img src="/images/posts/this-is-fine.webp" alt="this is fine meme">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img alt="this is fine meme" src="/images/posts/this-is-fine.webp">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
 <p>I time series data, anche conosciuti come time-stamped data, sono una
@@ -1551,7 +1550,7 @@ symbol meaning AQi air quality index T air temperature in Celsius degrees Tm max
 </table>
 <p>We may calculate the <code>AQi</code> with the following sorry excuse of a formula:</p>
 <!-- raw HTML omitted -->
-<p><img src="/images/posts/air-quality-formula.png" alt="air quality formula"></p>
+<p><img alt="air quality formula" src="/images/posts/air-quality-formula.png"></p>
 <p><strong>DISCLAIMER:</strong> please note that this formula is in no way scientific, and it&rsquo;s
 intended for educational purposes only. I don&rsquo;t want environmentalists and real
 scientists chasing me around with math formulas and accusations of quackery.
@@ -2040,7 +2039,7 @@ for our specific <code>T</code> and <code>C</code> measures at each step<sup id=
 timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
 <code>2021-01-20T08:06:00Z</code>. These represent a time paradox as it appears that our
 <code>AQi</code> has two different values at the same time.</p>
-<p><img src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing"></p>
+<p><img alt="I find your lack of logic disturbing" src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg"></p>
 <p>We both know this data is eventually going to show up on a web page. Also, we
 wouldn&rsquo;t want one of those hipster javascript frontend developers to point out a
 lack of logic or, worse, an inconsistency in our data to us, wouldn&rsquo;t we?</p>
@@ -2106,7 +2105,7 @@ considering ids <code>6</code> and <code>7</code> which are fresher than the tim
 <p>Just as an equation is an excuse to brush up on some
 <a href="https://www.latex-project.org/">LaTeX</a>, a good time series is an excellent
 candidate for <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
-<p><img src="/images/posts/plot-output.png" alt="plot of the data so far"></p>
+<p><img alt="plot of the data so far" src="/images/posts/plot-output.png"></p>
 <p>Real data is of course much more chaotic than this, and you might want to
 normalize the result by an arbitrary time interval, say one minute:</p>
 <table>
@@ -2155,9 +2154,9 @@ normalize the result by an arbitrary time interval, say one minute:</p>
 </tr>
 </tbody>
 </table>
-<p><img src="/images/posts/plot-output-normalized.png" alt="plot of the normalized data"></p>
+<p><img alt="plot of the normalized data" src="/images/posts/plot-output-normalized.png"></p>
 <p>Makes sense? I certainly hope so.</p>
-<p><img src="/images/posts/yes.gif" alt="yes"></p>
+<p><img alt="yes" src="/images/posts/yes.gif"></p>
 <h2 id="lets-get-coding">Let&rsquo;s get coding</h2>
 <p>Time to write some code. First of all, let&rsquo;s define an interface for our <code>AQi</code>
 calculator, so we can provide different implementations later on.</p>
@@ -2398,12 +2397,12 @@ providers.</p>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
 </span></span></code></pre></div><p>This translates to the following serial execution model:</p>
-<p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram for serial execution"></p>
+<p><img alt="sequence diagram for serial execution" src="/images/posts/sequence-diagram-serial.jpg"></p>
 <p>As we said, we can do better than this. In a multithreaded environment, we can
 spawn the two clients concurrently and start processing their data as soon as we
 receive a response from both. This saves us some time and potentially speeds up
 our overall response time.</p>
-<p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram for parallel execution"></p>
+<p><img alt="sequence diagram for parallel execution" src="/images/posts/sequence-diagram-parallel.jpg"></p>
 <p>How do we implement this execution model in our code? There are several options
 but the most popular and the one I personally like the most is to use
 <code>CompletableFuture</code>s, which were introduced in Java 8 if I recall correctly.</p>
@@ -2474,7 +2473,7 @@ quite a bit of time on this as I was trying to dig deeper into some issues I&rsq
 had at work. I suggest you do the same when you run into problems that need some
 clarification on your side. I also hope you found this useful.</p>
 <h2 id="bonus">Bonus</h2>
-<p><img src="/images/posts/reading-memes-on-github.webp" alt="reading memes on github"></p>
+<p><img alt="reading memes on github" src="/images/posts/reading-memes-on-github.webp"></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -2483,10 +2482,10 @@ clarification on your side. I also hope you found this useful.</p>
 <p>this is my revenge for all the bad math grades at school.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><img src="/images/posts/it-is-acceptable.jpg" alt="it is acceptable meme">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img alt="it is acceptable meme" src="/images/posts/it-is-acceptable.jpg">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><img src="/images/posts/this-is-fine.webp" alt="this is fine meme">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img alt="this is fine meme" src="/images/posts/this-is-fine.webp">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
 <p>Time series data, also referred to as time-stamped data, is a sequence of
@@ -2849,7 +2848,7 @@ la quasi totalità della musica cui siamo esposti quotidianamente si basa sui
 suoni della scala maggiore.</p>
 <p>Nella tonalità di DO, la scala maggiore è composta dalle note: DO, RE, MI, FA,
 SOL, LA, SI, DO. Osserviamo la tastiera del pianoforte:</p>
-<p><img src="/images/posts/tastiera.jpg" alt="La tastiera del pianoforte"></p>
+<p><img alt="La tastiera del pianoforte" src="/images/posts/tastiera.jpg"></p>
 <p>La scala maggiore di DO, sul pianoforte, è composta interamente da tasti
 bianchi. Facile, no? Suonala un po&rsquo; di volte, prima a salire e poi a scendere.
 Cantala mentre la stai suonando. Magari non sei Bobby McFerrin ma, se ti impegni
@@ -2986,7 +2985,7 @@ scelta a caso.</p>
 hai interiorizzato la scala maggiore ad un livello istintivo. Genera un po&rsquo; di
 gruppi di numeri da 1 a 8. Per comodità te ne riporto qui sotto alcuni set di
 esempio ma puoi
-<a href="https://www.random.org/integer-sets/?sets=10&amp;num=5&amp;min=1&amp;max=8&amp;seqnos=on&amp;commas=on&amp;order=index&amp;format=html&amp;rnd=new">generarne quanti ne vuoi</a>.
+<a href="https://www.random.org/integer-sets/?sets=10&num=5&min=1&max=8&seqnos=on&commas=on&order=index&format=html&rnd=new">generarne quanti ne vuoi</a>.
 Ogni set rappresenta una melodia ed ogni numero del set rappresenta il grado
 della scala. Ad esempio: 2, 8, 1, 5, 6 sarebbero RE, DO, DO, SOL, LA, dove 8
 sarebbe il DO più alto e 1 il DO più basso.</p>
@@ -3328,7 +3327,7 @@ problems both to the neophyte and to the experienced programmer.</p>
 <p>In this post, we&rsquo;ll see that there&rsquo;s no need to be a
 <a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the very simple few
 concepts needed not to incur into time management hell.</p>
-<p><img src="/images/posts/time.jpg" alt="Time doesn&rsquo;t exist. Clocks exist."></p>
+<p><img alt="Time doesn&rsquo;t exist. Clocks exist." src="/images/posts/time.jpg"></p>
 <h2 id="representation">Representation</h2>
 <p>A question as simple as <em>&ldquo;What time is it?&rdquo;</em> assumes a number of contextual
 subleties that are obvious to the human brain, but become absolute nonsense for
@@ -3399,7 +3398,7 @@ calendars or stuff like expressing durations!</p>
 <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> are your friends</li>
 <li>always print the time zone while debugging</li>
 </ul>
-<p><img src="/images/posts/bttf-clock.png" alt="Back to the future clock"></p>
+<p><img alt="Back to the future clock" src="/images/posts/bttf-clock.png"></p>
 <h2 id="serialization">Serialization</h2>
 <p>Speaking of software, serialization is a process where you take an object&rsquo;s
 status and spell it out in such a way that it can be later entirely rebuilt,
@@ -3544,29 +3543,28 @@ functionality.</p>
 <li><a href="https://youtu.be/Zpiou9Rn8UE">(There Ought To Be A) Moonlight Saving Time</a></li>
 <li><a href="https://blog.backslasher.net/no-dst.html">We don’t do DST at this company</a></li>
 <li><a href="https://www.instagram.com/p/CzPDoZcuV-b/">Daylight Savings Time be like</a></li>
+<li><a href="https://codeofmatt.com/list-of-2024-leap-day-bugs/">List of 2024 leap day bugs</a></li>
 </ul>
 <h2 id="memes">Memes</h2>
-<p><img src="/images/posts/mars-timezone.png" alt="Elon Musk: &ldquo;I&rsquo;m putting people on Mars!&rdquo;, Developers: &ldquo;Fantastic, more
-timezones to support&rdquo;."></p>
-<p><img src="/images/posts/daylight-dog.jpg" alt="Daylight savings dog"></p>
-<p><img src="/images/posts/daylight-investing.jpg" alt="Daylight savings? How about daylight investing?"></p>
-<p><img src="/images/posts/timezones-meme.png" alt="Friend: &ldquo;What happened?&rdquo;, Me: &ldquo;I had to work with timezones
-today&rdquo;."></p>
-<p><img src="/images/posts/time-universe-meme.webp" alt="January 1st 1970 meme"></p>
-<p><img src="/images/posts/time-boeing-787.jpg" alt="Boeing 787 meme"></p>
-<p><img src="/images/posts/time-consensus.jpg" alt="xkcd: Consensus Time"></p>
-<p><img src="/images/posts/time-devs.png" alt="Developers having to implement yet another timezone change"></p>
-<p><img src="/images/posts/time-devs-again.webp" alt="Developers having to explain&hellip;"></p>
-<p><img src="/images/posts/time-days-since.webp" alt="Days since last timezone issue: 0"></p>
-<p><img src="/images/posts/clocks-back-meme.jpg" alt="Clocks back"></p>
-<p><img src="/images/posts/picard-dst.png" alt="Picard DST"></p>
-<p><img src="/images/posts/time-format-meme.png" alt="January 1st meme"></p>
-<p><img src="/images/posts/terrible-maps.png" alt="A comprehensive map of all countries that use the MMDDYYYY date format"></p>
-<p><img src="/images/posts/shen-usa-format.png" alt="Shen Comic on the USA format"></p>
-<p><img src="/images/posts/perfect-date.jpg" alt="Perfect date"></p>
-<p><img src="/images/posts/time-dst-meme.jpg" alt="DST"></p>
-<p><img src="/images/posts/time-overnight-meme.jpg" alt="Overnight workers"></p>
-<p><img src="https://imgs.xkcd.com/comics/datetime.png" alt="XKCD: DateTime"></p>
+<p><img alt="Elon Musk: &ldquo;I&rsquo;m putting people on Mars!&rdquo;, Developers: &ldquo;Fantastic, more\ntimezones to support&rdquo;." src="/images/posts/mars-timezone.png"></p>
+<p><img alt="Daylight savings dog" src="/images/posts/daylight-dog.jpg"></p>
+<p><img alt="Daylight savings? How about daylight investing?" src="/images/posts/daylight-investing.jpg"></p>
+<p><img alt="Friend: &ldquo;What happened?&rdquo;, Me: &ldquo;I had to work with timezones\ntoday&rdquo;." src="/images/posts/timezones-meme.png"></p>
+<p><img alt="January 1st 1970 meme" src="/images/posts/time-universe-meme.webp"></p>
+<p><img alt="Boeing 787 meme" src="/images/posts/time-boeing-787.jpg"></p>
+<p><img alt="xkcd: Consensus Time" src="/images/posts/time-consensus.jpg"></p>
+<p><img alt="Developers having to implement yet another timezone change" src="/images/posts/time-devs.png"></p>
+<p><img alt="Developers having to explain&hellip;" src="/images/posts/time-devs-again.webp"></p>
+<p><img alt="Days since last timezone issue: 0" src="/images/posts/time-days-since.webp"></p>
+<p><img alt="Clocks back" src="/images/posts/clocks-back-meme.jpg"></p>
+<p><img alt="Picard DST" src="/images/posts/picard-dst.png"></p>
+<p><img alt="January 1st meme" src="/images/posts/time-format-meme.png"></p>
+<p><img alt="A comprehensive map of all countries that use the MMDDYYYY date format" src="/images/posts/terrible-maps.png"></p>
+<p><img alt="Shen Comic on the USA format" src="/images/posts/shen-usa-format.png"></p>
+<p><img alt="Perfect date" src="/images/posts/perfect-date.jpg"></p>
+<p><img alt="DST" src="/images/posts/time-dst-meme.jpg"></p>
+<p><img alt="Overnight workers" src="/images/posts/time-overnight-meme.jpg"></p>
+<p><img alt="XKCD: DateTime" src="https://imgs.xkcd.com/comics/datetime.png"></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -3661,7 +3659,7 @@ ad una singola riga di output corrisponda un messaggio coerente.</p>
 <p>All’inizio, andare a capo sembra dare un aspetto migliore all’output ma col
 tempo ti renderai conto che avresti fatto meglio a non farlo.</p>
 <h1 id="occhio-al-copia-e-incolla">Occhio al copia e incolla</h1>
-<p><img src="/images/posts/blinking-alarm.gif" alt="Allarme rosso"></p>
+<p><img alt="Allarme rosso" src="/images/posts/blinking-alarm.gif"></p>
 <p>Come già accennato, può capitare di fare copia e incolla di statement di log.</p>
 <p>Ogni volta che faccio copia e incolla, mi si accende una speciale lampadina
 nella testa che serve a ricordarmi:</p>

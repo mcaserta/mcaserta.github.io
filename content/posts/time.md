@@ -285,6 +285,7 @@ Here are a few useful links I've accumulated over time:
 - [We don’t do DST at this company](https://blog.backslasher.net/no-dst.html)
 - [Daylight Savings Time be like](https://www.instagram.com/p/CzPDoZcuV-b/)
 - [List of 2024 leap day bugs](https://codeofmatt.com/list-of-2024-leap-day-bugs/)
+- [California State Legislator Proposes Ending DST](https://yro.slashdot.org/story/24/03/09/2311200/california-state-legislator-proposes-ending-daylight-saving-time)
 
 ## Memes
 

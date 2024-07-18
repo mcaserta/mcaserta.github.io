@@ -330,4 +330,6 @@ today".](/images/posts/timezones-meme.png)
 
 ![XKCD: DateTime](https://imgs.xkcd.com/comics/datetime.png)
 
+![Netherlands](/images/posts/time-netherlands.png)
+
 [^tz]: assuming the same timezone is used everywhere

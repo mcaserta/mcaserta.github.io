@@ -398,17 +398,23 @@ my hero.</p>
 <h2 id="update-20210524">Update 20210524</h2>
 <p>Here&rsquo;s a video of the software running on a real C64, courtesy Jordan McGee.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/P01GWeBhYPc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Screensaver running on a real C64"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/P01GWeBhYPc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Screensaver running on a real C64"
+      ></iframe>
+    </div>
 
 <h2 id="update-20211029">Update 20211029</h2>
 <p>Here&rsquo;s another video of the software running on a real C64, courtesy my friend
 Marco.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/O93npyzDnUU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Screensaver running on a real C64"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/O93npyzDnUU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Screensaver running on a real C64"
+      ></iframe>
+    </div>
 
 ]]></content></item><item><title>🇺🇸 The Matrix Screensaver for Commodore 64</title><link>/posts/2021/05/the-matrix-screensaver-for-commodore-64/</link><pubDate>Tue, 11 May 2021 12:19:00 +0000</pubDate><guid>/posts/2021/05/the-matrix-screensaver-for-commodore-64/</guid><description>I am trying to learn some 6502 assembly and this is the result of one of my first experiments.
 It takes a while to load but what you are seeing above is a live emulation of my screensaver software.
@@ -3567,6 +3573,7 @@ functionality.</p>
 <p><img alt="DST" src="/images/posts/time-dst-meme.jpg"></p>
 <p><img alt="Overnight workers" src="/images/posts/time-overnight-meme.jpg"></p>
 <p><img alt="XKCD: DateTime" src="https://imgs.xkcd.com/comics/datetime.png"></p>
+<p><img alt="Netherlands" src="/images/posts/time-netherlands.png"></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

@@ -27,7 +27,9 @@ jobs:
           restore-keys: ${{ runner.os }}-hugomod-
 
       - name: Build
-        run: hugo --minify
+        # reenable --minify when this gets merged: https://github.com/rhazdon/hugo-theme-hello-friend-ng/pull/478
+        #  run: hugo --minify
+        run: hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

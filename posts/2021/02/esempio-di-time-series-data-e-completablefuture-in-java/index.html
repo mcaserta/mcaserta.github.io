@@ -1,57 +1,464 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=author content="Mirko Caserta "><meta name=description content="Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
-Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell&amp;rsquo;aria basato su due valori:
-temperatura dell&amp;rsquo;aria percentuale di monossido di carbonio nell&amp;rsquo;aria Dati i seguenti simboli:
-simbolo significato AQi indice di qualità dell&amp;rsquo;aria T temperatura dell&amp;rsquo;aria in gradi Celsius Tm temperatura massima dell&amp;rsquo;aria in C° C percentuale di monossido di carbonio nell&amp;rsquo;aria Possiamo calcolare l&amp;rsquo;AQi con questa specie di formula:"><meta name=keywords content=",time-series-data,time-series,completablefuture,java,concurrency,software development"><meta name=robots content="noodp"><meta name=theme-color content><link rel=canonical href=/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/><title>🇮🇹 Esempio di Time Series Data e CompletableFuture in Java :: — Senior Developer
-</title><link href=https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css rel=stylesheet type=text/css><link rel=stylesheet href=/main.4e5c639214707eff609bb55fe49e183dee42258a73bc90e4cc7b0a84f900798a.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color><link rel="shortcut icon" href=/favicon.ico><meta name=msapplication-TileColor content><meta itemprop=name content="🇮🇹 Esempio di Time Series Data e CompletableFuture in Java"><meta itemprop=description content="Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Mirko Caserta ">
+<meta name="description" content="Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
+Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell&rsquo;aria basato su due valori:
+temperatura dell&rsquo;aria percentuale di monossido di carbonio nell&rsquo;aria Dati i seguenti simboli:
+simbolo significato AQi indice di qualità dell&rsquo;aria T temperatura dell&rsquo;aria in gradi Celsius Tm temperatura massima dell&rsquo;aria in C° C percentuale di monossido di carbonio nell&rsquo;aria Possiamo calcolare l&rsquo;AQi con questa specie di formula:" />
+<meta name="keywords" content=", time-series-data, time-series, completablefuture, java, concurrency, software development" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/" />
+
+
+    <title>
+        
+            🇮🇹 Esempio di Time Series Data e CompletableFuture in Java ::   — Senior Developer
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.949191c1dcc9c4a887997048b240354e47152016d821198f89448496ba42e491.css" integrity="sha256-lJGRwdzJxKiHmXBIskA1TkcVIBbYIRmPiUSElrpC5JE=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="🇮🇹 Esempio di Time Series Data e CompletableFuture in Java">
+  <meta itemprop="description" content="Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
 Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell’aria basato su due valori:
 temperatura dell’aria percentuale di monossido di carbonio nell’aria Dati i seguenti simboli:
-simbolo significato AQi indice di qualità dell’aria T temperatura dell’aria in gradi Celsius Tm temperatura massima dell’aria in C° C percentuale di monossido di carbonio nell’aria Possiamo calcolare l’AQi con questa specie di formula:"><meta itemprop=datePublished content="2021-02-05T08:19:00+00:00"><meta itemprop=dateModified content="2021-02-05T08:19:00+00:00"><meta itemprop=wordCount content="4523"><meta itemprop=image content="/"><meta itemprop=keywords content="Time-Series-Data,Time-Series,Completablefuture,Java,Concurrency,Software Development"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="/"><meta name=twitter:title content="🇮🇹 Esempio di Time Series Data e CompletableFuture in Java"><meta name=twitter:description content="Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
+simbolo significato AQi indice di qualità dell’aria T temperatura dell’aria in gradi Celsius Tm temperatura massima dell’aria in C° C percentuale di monossido di carbonio nell’aria Possiamo calcolare l’AQi con questa specie di formula:">
+  <meta itemprop="datePublished" content="2021-02-05T08:19:00+00:00">
+  <meta itemprop="dateModified" content="2021-02-05T08:19:00+00:00">
+  <meta itemprop="wordCount" content="4523">
+  <meta itemprop="image" content="/">
+  <meta itemprop="keywords" content="Time-Series-Data,Time-Series,Completablefuture,Java,Concurrency,Software Development">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="/">
+  <meta name="twitter:title" content="🇮🇹 Esempio di Time Series Data e CompletableFuture in Java">
+  <meta name="twitter:description" content="Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
 Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell’aria basato su due valori:
 temperatura dell’aria percentuale di monossido di carbonio nell’aria Dati i seguenti simboli:
-simbolo significato AQi indice di qualità dell’aria T temperatura dell’aria in gradi Celsius Tm temperatura massima dell’aria in C° C percentuale di monossido di carbonio nell’aria Possiamo calcolare l’AQi con questa specie di formula:"><meta property="article:section" content="software development"><meta property="article:published_time" content="2021-02-05 08:19:00 +0000 UTC"></head><body><div class=container><header class=header><span class=header__inner><a href=/ style=text-decoration:none><div class=logo><span class=logo__mark>$</span>
-<span class=logo__text>cd ~mcaserta</span>
-<span class=logo__cursor style=background-color:#38af40></span></div></a><span class=header__right><nav class=menu><ul class=menu__inner><li><a href=/about/>About</a></li><li><a href=/cv/>CV</a></li><li><a href=/posts/>Posts</a></li></ul></nav><span class=menu-trigger><svg viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></span></span></span></header><div class=content><main class=post><div class=post-info></p></div><article><h2 class=post-title><a href=/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/>🇮🇹 Esempio di Time Series Data e CompletableFuture in Java</a></h2><hr><aside id=toc><div class=toc-title>Table of Contents</div><nav id=TableOfContents><ul><li><a href=#come-lanciare-il-programma>Come lanciare il programma</a></li><li><a href=#prefazione>Prefazione</a></li><li><a href=#service-provider>Service provider</a></li></ul><ul><li><a href=#rolling-time-window>Rolling Time Window</a></li><li><a href=#scriviamo-il-codice>Scriviamo il codice</a></li><li><a href=#scrivere-codice-come-fosse-il-1984>Scrivere codice come fosse il 1984</a></li><li><a href=#eleganza-funzionale>Eleganza funzionale</a></li><li><a href=#considerazioni-sulla-concorrenza>Considerazioni sulla concorrenza</a></li><li><a href=#esempio-di-output>Esempio di output</a></li><li><a href=#conclusione>Conclusione</a></li><li><a href=#bonus>Bonus</a></li></ul></nav></aside><hr><div class=post-content><h1 id=esempio-di-time-series-data-e-completablefuture-in-java>Esempio di Time Series Data e CompletableFuture in Java</h1><p>Il codice completo di tutti gli esempi si trova
-<a href=https://github.com/mcaserta/time-series-concurrency-example>qui</a>.</p><h2 id=come-lanciare-il-programma>Come lanciare il programma</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>mvn clean compile verify exec:java
-</span></span></code></pre></div><h2 id=prefazione>Prefazione</h2><p>Supponiamo di voler calcolare un <em>indice di qualità dell&rsquo;aria</em> basato su due
-valori:</p><ul><li>temperatura dell&rsquo;aria</li><li>percentuale di monossido di carbonio nell&rsquo;aria</li></ul><p>Dati i seguenti simboli:</p><table><thead><tr><th>simbolo</th><th>significato</th></tr></thead><tbody><tr><td><code>AQi</code></td><td>indice di qualità dell&rsquo;aria</td></tr><tr><td><code>T</code></td><td>temperatura dell&rsquo;aria in gradi Celsius</td></tr><tr><td><code>Tm</code></td><td>temperatura massima dell&rsquo;aria in C°</td></tr><tr><td><code>C</code></td><td>percentuale di monossido di carbonio nell&rsquo;aria</td></tr></tbody></table><p>Possiamo calcolare l&rsquo;<code>AQi</code> con questa specie di formula:</p><p><img alt="formula della qualità dell&rsquo;aria" src=/images/posts/air-quality-formula.png></p><p><strong>DISCLAIMER:</strong> questa formula non è in alcun modo scientifica ed è da
+simbolo significato AQi indice di qualità dell’aria T temperatura dell’aria in gradi Celsius Tm temperatura massima dell’aria in C° C percentuale di monossido di carbonio nell’aria Possiamo calcolare l’AQi con questa specie di formula:">
+
+
+
+
+
+    <meta property="article:section" content="software development" />
+
+
+
+    <meta property="article:published_time" content="2021-02-05 08:19:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">$</span>
+            <span class="logo__text ">
+                cd ~mcaserta</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#38af40;
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/cv/">CV</a></li><li><a href="/posts/">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/">🇮🇹 Esempio di Time Series Data e CompletableFuture in Java</a></h2>
+
+            
+            
+            
+                <hr />
+                <aside id="toc">
+                <div class="toc-title">Table of Contents</div>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#come-lanciare-il-programma">Come lanciare il programma</a></li>
+    <li><a href="#prefazione">Prefazione</a></li>
+    <li><a href="#service-provider">Service provider</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#rolling-time-window">Rolling Time Window</a></li>
+    <li><a href="#scriviamo-il-codice">Scriviamo il codice</a></li>
+    <li><a href="#scrivere-codice-come-fosse-il-1984">Scrivere codice come fosse il 1984</a></li>
+    <li><a href="#eleganza-funzionale">Eleganza funzionale</a></li>
+    <li><a href="#considerazioni-sulla-concorrenza">Considerazioni sulla concorrenza</a></li>
+    <li><a href="#esempio-di-output">Esempio di output</a></li>
+    <li><a href="#conclusione">Conclusione</a></li>
+    <li><a href="#bonus">Bonus</a></li>
+  </ul>
+</nav>
+                </aside>
+                <hr />
+            
+
+            <div class="post-content">
+                <h1 id="esempio-di-time-series-data-e-completablefuture-in-java">Esempio di Time Series Data e CompletableFuture in Java</h1>
+<p>Il codice completo di tutti gli esempi si trova
+<a href="https://github.com/mcaserta/time-series-concurrency-example">qui</a>.</p>
+<h2 id="come-lanciare-il-programma">Come lanciare il programma</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mvn clean compile verify exec:java
+</span></span></code></pre></div><h2 id="prefazione">Prefazione</h2>
+<p>Supponiamo di voler calcolare un <em>indice di qualità dell&rsquo;aria</em> basato su due
+valori:</p>
+<ul>
+<li>temperatura dell&rsquo;aria</li>
+<li>percentuale di monossido di carbonio nell&rsquo;aria</li>
+</ul>
+<p>Dati i seguenti simboli:</p>
+<table>
+<thead>
+<tr>
+<th>simbolo</th>
+<th>significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AQi</code></td>
+<td>indice di qualità dell&rsquo;aria</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td>temperatura dell&rsquo;aria in gradi Celsius</td>
+</tr>
+<tr>
+<td><code>Tm</code></td>
+<td>temperatura massima dell&rsquo;aria in C°</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>percentuale di monossido di carbonio nell&rsquo;aria</td>
+</tr>
+</tbody>
+</table>
+<p>Possiamo calcolare l&rsquo;<code>AQi</code> con questa specie di formula:</p>
+<!-- raw HTML omitted -->
+<p><img alt="formula della qualità dell&rsquo;aria" src="/images/posts/air-quality-formula.png"></p>
+<p><strong>DISCLAIMER:</strong> questa formula non è in alcun modo scientifica ed è da
 intendersi esclusivamente a scopo educativo. Non voglio che ambientalisti e veri
 scienziati mi vengano a cercare a casa con formule matematiche e accuse di
 stregoneria. E poi ho visto una scusa per una fantastica equazione in LaTeX e ne
 ho approfittato, per motivi estetici e perché mi fa sembrare intelligente, cosa
-che certamente non sono<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>.</p><p>Ciò che la formula prova a esprimere è che al salire di temperatura e
+che certamente non sono<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Ciò che la formula prova a esprimere è che al salire di temperatura e
 percentuale di monossido di carbonio, la qualità dell&rsquo;aria decresce. Sì, tutto
 ciò è totalmente anti-scientifico ma vedrete che ha senso ai fini della mia
-argomentazione.</p><p>Assumiamo una temperatura massima di 40C°. Quindi, ad esempio:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ bc -l
-</span></span><span style=display:flex><span>bc 1.06
-</span></span><span style=display:flex><span>Copyright 1991-1994, 1997, 1998, <span style=color:#ae81ff>2000</span> Free Software Foundation, Inc.
-</span></span><span style=display:flex><span>This is free software with ABSOLUTELY NO WARRANTY.
-</span></span><span style=display:flex><span>For details type <span style=color:#e6db74>&#39;warranty&#39;</span>.
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>60; c<span style=color:#f92672>=</span>100; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>125.00000000000000000000
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>60; c<span style=color:#f92672>=</span>50; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>100.00000000000000000000
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>40; c<span style=color:#f92672>=</span>50; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>75.00000000000000000000
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>40; c<span style=color:#f92672>=</span>10; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>55.00000000000000000000
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>20; c<span style=color:#f92672>=</span>10; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>30.00000000000000000000
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>10; c<span style=color:#f92672>=</span>5; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>15.00000000000000000000
-</span></span><span style=display:flex><span>t<span style=color:#f92672>=</span>10; c<span style=color:#f92672>=</span>0.5; tm<span style=color:#f92672>=</span>40; <span style=color:#f92672>(((</span>t * 100<span style=color:#f92672>)</span> / tm<span style=color:#f92672>)</span> + c<span style=color:#f92672>)</span> / <span style=color:#ae81ff>2</span>
-</span></span><span style=display:flex><span>12.75000000000000000000
-</span></span></code></pre></div><p>Da questo possiamo derivare la seguente tabella totalmente anti-scientifica:</p><table><thead><tr><th>AQi</th><th>significato</th></tr></thead><tbody><tr><td>da 125 a ∞</td><td>morte orribile</td></tr><tr><td>da 100 a 125</td><td>morte dolorosa</td></tr><tr><td>da 75 a 100</td><td>morte</td></tr><tr><td>da 55 a 75</td><td>è accettabile<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></td></tr><tr><td>da 30 a 55</td><td>va bene così<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup></td></tr><tr><td>da 15 a 30</td><td>si sta bene</td></tr><tr><td>da 12.75 a 15</td><td>freschetto</td></tr><tr><td>da -∞ a 12.75</td><td>benvenuto a Yakutsk, probabilmente</td></tr></tbody></table><h2 id=service-provider>Service provider</h2><p>Supponiamo di avere dei servizi internet che espongano dati di monitoring
+argomentazione.</p>
+<p>Assumiamo una temperatura massima di 40C°. Quindi, ad esempio:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ bc -l
+</span></span><span style="display:flex;"><span>bc 1.06
+</span></span><span style="display:flex;"><span>Copyright 1991-1994, 1997, 1998, <span style="color:#ae81ff">2000</span> Free Software Foundation, Inc.
+</span></span><span style="display:flex;"><span>This is free software with ABSOLUTELY NO WARRANTY.
+</span></span><span style="display:flex;"><span>For details type <span style="color:#e6db74">&#39;warranty&#39;</span>.
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>60; c<span style="color:#f92672">=</span>100; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>125.00000000000000000000
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>60; c<span style="color:#f92672">=</span>50; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>100.00000000000000000000
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>40; c<span style="color:#f92672">=</span>50; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>75.00000000000000000000
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>40; c<span style="color:#f92672">=</span>10; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>55.00000000000000000000
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>20; c<span style="color:#f92672">=</span>10; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>30.00000000000000000000
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>10; c<span style="color:#f92672">=</span>5; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>15.00000000000000000000
+</span></span><span style="display:flex;"><span>t<span style="color:#f92672">=</span>10; c<span style="color:#f92672">=</span>0.5; tm<span style="color:#f92672">=</span>40; <span style="color:#f92672">(((</span>t * 100<span style="color:#f92672">)</span> / tm<span style="color:#f92672">)</span> + c<span style="color:#f92672">)</span> / <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>12.75000000000000000000
+</span></span></code></pre></div><p>Da questo possiamo derivare la seguente tabella totalmente anti-scientifica:</p>
+<table>
+<thead>
+<tr>
+<th>AQi</th>
+<th>significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>da 125 a ∞</td>
+<td>morte orribile</td>
+</tr>
+<tr>
+<td>da 100 a 125</td>
+<td>morte dolorosa</td>
+</tr>
+<tr>
+<td>da 75 a 100</td>
+<td>morte</td>
+</tr>
+<tr>
+<td>da 55 a 75</td>
+<td>è accettabile<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+</tr>
+<tr>
+<td>da 30 a 55</td>
+<td>va bene così<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+</tr>
+<tr>
+<td>da 15 a 30</td>
+<td>si sta bene</td>
+</tr>
+<tr>
+<td>da 12.75 a 15</td>
+<td>freschetto</td>
+</tr>
+<tr>
+<td>da -∞ a 12.75</td>
+<td>benvenuto a Yakutsk, probabilmente</td>
+</tr>
+</tbody>
+</table>
+<h2 id="service-provider">Service provider</h2>
+<p>Supponiamo di avere dei servizi internet che espongano dati di monitoring
 riguardo temperatura e livelli di monossido di carbonio. Questi servizi
 potrebbero esporre un&rsquo;api che ci dà una serie di dati di tipo time
-series<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup>.</p><p>Quindi, ad esempio, potremmo chiamare un servizio di monitoring della
+series<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>Quindi, ad esempio, potremmo chiamare un servizio di monitoring della
 temperatura, e il servizio ci risponderebbe con una serie di dati time series
-come questi:</p><table><thead><tr><th>timestamp</th><th>valore</th></tr></thead><tbody><tr><td><code>2021-01-20T08:00:00Z</code></td><td><code>10.1</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>10.3</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>10.7</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>10.9</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>11.0</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>11.1</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>11.3</code></td></tr></tbody></table><p>Un servizio di monitoring della percentuale di monossido di carbonio potrebbe
-invece rispondere con dati simili:</p><table><thead><tr><th>timestamp</th><th>valore</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>2.0</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>2.3</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>2.8</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>2.9</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td></tr></tbody></table><p>Ti prego di notare che ho ordinato i dati per timestamp in modo da renderli un
+come questi:</p>
+<table>
+<thead>
+<tr>
+<th>timestamp</th>
+<th>valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2021-01-20T08:00:00Z</code></td>
+<td><code>10.1</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>10.3</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:05:00Z</code></td>
+<td><code>10.7</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>10.9</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:19Z</code></td>
+<td><code>11.0</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:42Z</code></td>
+<td><code>11.1</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:09:00Z</code></td>
+<td><code>11.3</code></td>
+</tr>
+</tbody>
+</table>
+<p>Un servizio di monitoring della percentuale di monossido di carbonio potrebbe
+invece rispondere con dati simili:</p>
+<table>
+<thead>
+<tr>
+<th>timestamp</th>
+<th>valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2021-01-20T08:01:00Z</code></td>
+<td><code>2.0</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>2.3</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>2.8</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:07:00Z</code></td>
+<td><code>2.9</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:08:00Z</code></td>
+<td><code>3.3</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ti prego di notare che ho ordinato i dati per timestamp in modo da renderli un
 po&rsquo; più leggibili, ma non dovresti fare assunzioni sul tipo di ordinamento dei
 dati tornati da un provider esterno. Non che ciò sia di alcuna importanza
-perché&mldr;</p><h1 id=lalgoritmo>L&rsquo;algoritmo</h1><p>&mldr;il nostro algoritmo ora richiede di:</p><ol><li>concatenare i dati di temperatura e percentuale di monossido di carbonio</li><li>ordinare per timestamp</li></ol><table><thead><tr><th>id</th><th>timestamp</th><th>valore</th><th>tipo</th></tr></thead><tbody><tr><td><code>1</code></td><td><code>2021-01-20T08:00:00Z</code></td><td><code>10.1</code></td><td><code>T</code></td></tr><tr><td><code>2</code></td><td><code>2021-01-20T08:01:00Z</code></td><td><code>2.0</code></td><td><code>C</code></td></tr><tr><td><code>3</code></td><td><code>2021-01-20T08:02:00Z</code></td><td><code>10.3</code></td><td><code>T</code></td></tr><tr><td><code>4</code></td><td><code>2021-01-20T08:02:00Z</code></td><td><code>2.3</code></td><td><code>C</code></td></tr><tr><td><code>5</code></td><td><code>2021-01-20T08:05:00Z</code></td><td><code>10.7</code></td><td><code>T</code></td></tr><tr><td><code>6</code></td><td><code>2021-01-20T08:06:00Z</code></td><td><code>10.9</code></td><td><code>T</code></td></tr><tr><td><code>7</code></td><td><code>2021-01-20T08:06:00Z</code></td><td><code>2.8</code></td><td><code>C</code></td></tr><tr><td><code>8</code></td><td><code>2021-01-20T08:06:19Z</code></td><td><code>11.0</code></td><td><code>T</code></td></tr><tr><td><code>9</code></td><td><code>2021-01-20T08:06:42Z</code></td><td><code>11.1</code></td><td><code>T</code></td></tr><tr><td><code>10</code></td><td><code>2021-01-20T08:07:00Z</code></td><td><code>2.9</code></td><td><code>C</code></td></tr><tr><td><code>11</code></td><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td><td><code>C</code></td></tr><tr><td><code>12</code></td><td><code>2021-01-20T08:09:00Z</code></td><td><code>11.3</code></td><td><code>T</code></td></tr></tbody></table><blockquote><p>tipo: T sta per temperatura e C per percentuale di monossido di carbonio</p></blockquote><p>Il nostro compito ora è di scandire i dati, cominciando dall&rsquo;inizio, una riga
+perché&hellip;</p>
+<h1 id="lalgoritmo">L&rsquo;algoritmo</h1>
+<p>&hellip;il nostro algoritmo ora richiede di:</p>
+<ol>
+<li>concatenare i dati di temperatura e percentuale di monossido di carbonio</li>
+<li>ordinare per timestamp</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>id</th>
+<th>timestamp</th>
+<th>valore</th>
+<th>tipo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code></td>
+<td><code>2021-01-20T08:00:00Z</code></td>
+<td><code>10.1</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><code>2021-01-20T08:01:00Z</code></td>
+<td><code> 2.0</code></td>
+<td><code>C</code></td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>10.3</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code> 2.3</code></td>
+<td><code>C</code></td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td><code>2021-01-20T08:05:00Z</code></td>
+<td><code>10.7</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>10.9</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code> 2.8</code></td>
+<td><code>C</code></td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td><code>2021-01-20T08:06:19Z</code></td>
+<td><code>11.0</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td><code>2021-01-20T08:06:42Z</code></td>
+<td><code>11.1</code></td>
+<td><code>T</code></td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td><code>2021-01-20T08:07:00Z</code></td>
+<td><code> 2.9</code></td>
+<td><code>C</code></td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td><code>2021-01-20T08:08:00Z</code></td>
+<td><code> 3.3</code></td>
+<td><code>C</code></td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td><code>2021-01-20T08:09:00Z</code></td>
+<td><code>11.3</code></td>
+<td><code>T</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>tipo: T sta per temperatura e C per percentuale di monossido di carbonio</p>
+</blockquote>
+<p>Il nostro compito ora è di scandire i dati, cominciando dall&rsquo;inizio, una riga
 alla volta, computando l&rsquo;indice di qualità dell&rsquo;aria man mano che andiamo
-avanti, un passo per volta.</p><p>La prima cosa da notare qui è che per calcolare la formula del nostro <code>AQi</code>,
+avanti, un passo per volta.</p>
+<p>La prima cosa da notare qui è che per calcolare la formula del nostro <code>AQi</code>,
 abbiamo bisogno di avere entrambi i valori per <code>T</code> e <code>C</code>. In altre parole, il
 primo punto in cui possiamo applicare la nostra formula è quello con id <code>2</code>, dal
 momento che abbiamo un valore per <code>T</code> nell&rsquo;id <code>1</code> e un valore per <code>C</code> nell&rsquo;id
@@ -59,12 +466,85 @@ momento che abbiamo un valore per <code>T</code> nell&rsquo;id <code>1</code> e 
 applichiamo la formula, ed abbiamo un primo valore per <code>AQi</code> di <code>13.625</code> che
 associamo con il timestamp nell&rsquo;id <code>2</code>, poiché quello è il momento cui si
 riferisce la nostra computazione. La nostra prima entry di <code>AQi</code> nella serie
-risultante deve essere così:</p><table><thead><tr><th>timestamp</th><th>valore</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr></tbody></table><p>D&rsquo;ora in poi, la nostra formula può essere applicata per ogni elemento rimanente
+risultante deve essere così:</p>
+<table>
+<thead>
+<tr>
+<th>timestamp</th>
+<th>valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2021-01-20T08:01:00Z</code></td>
+<td><code>13.625</code></td>
+</tr>
+</tbody>
+</table>
+<p>D&rsquo;ora in poi, la nostra formula può essere applicata per ogni elemento rimanente
 nella serie, tenendo presente che dobbiamo correlare ogni valore con il valore
-più recente dell&rsquo;altro tipo. In altre parole:</p><table><thead><tr><th>per l&rsquo;id</th><th>prendi i valori dagli id</th></tr></thead><tbody><tr><td><code>2</code></td><td><code>1, 2</code></td></tr><tr><td><code>3</code></td><td><code>2, 3</code></td></tr><tr><td><code>4</code></td><td><code>3, 4</code></td></tr><tr><td><code>5</code></td><td><code>4, 5</code></td></tr><tr><td><code>6</code></td><td><code>4, 6</code></td></tr><tr><td><code>7</code></td><td><code>6, 7</code></td></tr><tr><td><code>8</code></td><td><code>7, 8</code></td></tr><tr><td><code>9</code></td><td><code>7, 9</code></td></tr><tr><td><code>10</code></td><td><code>9, 10</code></td></tr><tr><td><code>11</code></td><td><code>9, 11</code></td></tr><tr><td><code>12</code></td><td><code>11, 12</code></td></tr></tbody></table><p>Puoi pensare a questo tipo di movimento come a una
-<a href=https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e>rolling time window</a>
+più recente dell&rsquo;altro tipo. In altre parole:</p>
+<table>
+<thead>
+<tr>
+<th>per l&rsquo;id</th>
+<th>prendi i valori dagli id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2</code></td>
+<td><code>1, 2</code></td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td><code>2, 3</code></td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td><code>3, 4</code></td>
+</tr>
+<tr>
+<td><code>5</code></td>
+<td><code>4, 5</code></td>
+</tr>
+<tr>
+<td><code>6</code></td>
+<td><code>4, 6</code></td>
+</tr>
+<tr>
+<td><code>7</code></td>
+<td><code>6, 7</code></td>
+</tr>
+<tr>
+<td><code>8</code></td>
+<td><code>7, 8</code></td>
+</tr>
+<tr>
+<td><code>9</code></td>
+<td><code>7, 9</code></td>
+</tr>
+<tr>
+<td><code>10</code></td>
+<td><code>9, 10</code></td>
+</tr>
+<tr>
+<td><code>11</code></td>
+<td><code>9, 11</code></td>
+</tr>
+<tr>
+<td><code>12</code></td>
+<td><code>11, 12</code></td>
+</tr>
+</tbody>
+</table>
+<p>Puoi pensare a questo tipo di movimento come a una
+<a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time window</a>
 poiché hai una finestra che si muove nel tempo focalizzandosi sui dati più
-recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad ogni passo<sup id=fnref:5><a href=#fn:5 class=footnote-ref role=doc-noteref>5</a></sup>.</p><h2 id=rolling-time-window>Rolling Time Window</h2><p>Vai avanti, scrolla in basso. Dovresti vederla.</p><pre tabindex=0><code>/===================================================================================\
+recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad ogni passo<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>.</p>
+<h2 id="rolling-time-window">Rolling Time Window</h2>
+<p>Vai avanti, scrolla in basso. Dovresti vederla.</p>
+<pre tabindex="0"><code>/===================================================================================\
 |                   Step 01 :: T = 10.1, C = 2.0 :: AQi = 13.625                    |
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
 | id |   1  |  2  |   3  |  4  |   5  |   6  |  7  |   8  |   9  |  10 |  11 |  12  |
@@ -163,12 +643,70 @@ recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad og
 |  T | 10.1 |     | 10.3 |     | 10.7 | 10.9 |     | 11.0 | 11.1 |     |     | 11.3 |
 |  C |      | 2.0 |      | 2.3 |      |      | 2.8 |      |      | 2.9 | 3.3 |      |
                                                                        |&lt;----------&gt;|
-</code></pre><p>Dato quanto sopra, la nostra time series completa per l&rsquo;<code>AQi</code> è:</p><table><thead><tr><th>timestamp</th><th>valore</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>13.875</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>14.775</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>15.150</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>15.275</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p>Se hai guardato attentamente, potresti aver notato che abbiamo un paio di
+</code></pre><p>Dato quanto sopra, la nostra time series completa per l&rsquo;<code>AQi</code> è:</p>
+<table>
+<thead>
+<tr>
+<th>timestamp</th>
+<th>valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2021-01-20T08:01:00Z</code></td>
+<td><code>13.625</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>13.875</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>14.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:05:00Z</code></td>
+<td><code>14.525</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>14.775</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>15.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:19Z</code></td>
+<td><code>15.150</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:42Z</code></td>
+<td><code>15.275</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:07:00Z</code></td>
+<td><code>15.325</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:08:00Z</code></td>
+<td><code>15.525</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:09:00Z</code></td>
+<td><code>15.775</code></td>
+</tr>
+</tbody>
+</table>
+<p>Se hai guardato attentamente, potresti aver notato che abbiamo un paio di
 timestamp duplicati nei risultati, nello specifico <code>2021-01-20T08:02:00Z</code> e
 <code>2021-01-20T08:06:00Z</code>. Questi rappresentano un paradosso temporale poiché
-sembra che il nostro <code>AQi</code> abbia due diversi valori allo stesso istante.</p><p><img alt="I find your lack of logic disturbing" src=/images/posts/i-find-your-lack-of-logic-disturbing.jpg></p><p>Entrambi sappiamo che questi dati finiranno su una pagina web. Non vorrai certo
+sembra che il nostro <code>AQi</code> abbia due diversi valori allo stesso istante.</p>
+<p><img alt="I find your lack of logic disturbing" src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg"></p>
+<p>Entrambi sappiamo che questi dati finiranno su una pagina web. Non vorrai certo
 che uno di quegli sviluppatori hipster del frontend ci faccia notare una
-mancanza di logica o, peggio, una inconsistenza nei nostri dati, vero?</p><p>Ne ero certo. Dunque, la mia idea è che possiamo tranquillamente scartare la
+mancanza di logica o, peggio, una inconsistenza nei nostri dati, vero?</p>
+<p>Ne ero certo. Dunque, la mia idea è che possiamo tranquillamente scartare la
 prima entry di un timestamp duplicato poiché si riferisce a un calcolo con dati
 vecchi. Perché? Be&rsquo;, considera i valori del primo timestamp duplicato:
 <code>2021-01-20T08:02:00Z</code>. La prima volta che abbiamo calcolato l&rsquo;<code>AQi</code>, abbiamo
@@ -177,57 +715,177 @@ precedente, nello specifico <code>2021-01-20T08:01:00Z</code>. La seconda volta 
 calcolato l&rsquo;<code>AQi</code>, abbiamo usato i dati dagli id <code>3</code> and <code>4</code>, che si riferiscono
 entrambi al timestamp <code>2021-01-20T08:02:00Z</code>, quindi il risultato di questa
 computazione è più rilevante del precedente per il quale abbiamo prodotto lo
-stesso timestamp di <code>2021-01-20T08:02:00Z</code>.</p><p>La stessa cosa si applica all&rsquo;<code>AQi</code> con timestamp <code>2021-01-20T08:06:00Z</code> poiché
+stesso timestamp di <code>2021-01-20T08:02:00Z</code>.</p>
+<p>La stessa cosa si applica all&rsquo;<code>AQi</code> con timestamp <code>2021-01-20T08:06:00Z</code> poiché
 la prima computazione stava usando gli id <code>4</code> e <code>6</code> mentre la seconda stava
-considerando gli id <code>6</code> e <code>7</code> che sono più freschi del timestamp nell&rsquo;id <code>4</code>.</p><p>Quindi cancelliamo un paio di righe e il risultato pulito dovrebbe essere
-questo:</p><table><thead><tr><th>timestamp</th><th>valore</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:06:19Z</code></td><td><code>15.150</code></td></tr><tr><td><code>2021-01-20T08:06:42Z</code></td><td><code>15.275</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p>Proprio come un&rsquo;equazione è un&rsquo;ottima scusa per rispolverare un po&rsquo; di
-<a href=https://www.latex-project.org/>LaTeX</a>, una buona serie di dati temporali è un
-eccellente candidato per <a href=http://www.gnuplot.info/>gnuplot</a>.</p><p><img alt="plot dei dati fin qui" src=/images/posts/plot-output.png></p><p>I dati nel mondo reale sono naturalmente molto più caotici di così e potresti
+considerando gli id <code>6</code> e <code>7</code> che sono più freschi del timestamp nell&rsquo;id <code>4</code>.</p>
+<p>Quindi cancelliamo un paio di righe e il risultato pulito dovrebbe essere
+questo:</p>
+<table>
+<thead>
+<tr>
+<th>timestamp</th>
+<th>valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2021-01-20T08:01:00Z</code></td>
+<td><code>13.625</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>14.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:05:00Z</code></td>
+<td><code>14.525</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>15.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:19Z</code></td>
+<td><code>15.150</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:42Z</code></td>
+<td><code>15.275</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:07:00Z</code></td>
+<td><code>15.325</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:08:00Z</code></td>
+<td><code>15.525</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:09:00Z</code></td>
+<td><code>15.775</code></td>
+</tr>
+</tbody>
+</table>
+<p>Proprio come un&rsquo;equazione è un&rsquo;ottima scusa per rispolverare un po&rsquo; di
+<a href="https://www.latex-project.org/">LaTeX</a>, una buona serie di dati temporali è un
+eccellente candidato per <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
+<p><img alt="plot dei dati fin qui" src="/images/posts/plot-output.png"></p>
+<p>I dati nel mondo reale sono naturalmente molto più caotici di così e potresti
 voler normalizzare il risultato usando un intervallo temporale arbitrario, ad
-esempio un minuto:</p><table><thead><tr><th>timestamp</th><th>valore</th></tr></thead><tbody><tr><td><code>2021-01-20T08:01:00Z</code></td><td><code>13.625</code></td></tr><tr><td><code>2021-01-20T08:02:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:03:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:04:00Z</code></td><td><code>14.025</code></td></tr><tr><td><code>2021-01-20T08:05:00Z</code></td><td><code>14.525</code></td></tr><tr><td><code>2021-01-20T08:06:00Z</code></td><td><code>15.025</code></td></tr><tr><td><code>2021-01-20T08:07:00Z</code></td><td><code>15.325</code></td></tr><tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr><tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr></tbody></table><p><img alt="plot dei dati normalizzati" src=/images/posts/plot-output-normalized.png></p><p>Ha senso? Spero proprio di sì.</p><p><img alt=sì src=/images/posts/yes.gif></p><h2 id=scriviamo-il-codice>Scriviamo il codice</h2><p>Scriviamo un po&rsquo; di codice. Prima di tutto, definiamo un&rsquo;interfaccia per il
+esempio un minuto:</p>
+<table>
+<thead>
+<tr>
+<th>timestamp</th>
+<th>valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>2021-01-20T08:01:00Z</code></td>
+<td><code>13.625</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:02:00Z</code></td>
+<td><code>14.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:03:00Z</code></td>
+<td><code>14.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:04:00Z</code></td>
+<td><code>14.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:05:00Z</code></td>
+<td><code>14.525</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:06:00Z</code></td>
+<td><code>15.025</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:07:00Z</code></td>
+<td><code>15.325</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:08:00Z</code></td>
+<td><code>15.525</code></td>
+</tr>
+<tr>
+<td><code>2021-01-20T08:09:00Z</code></td>
+<td><code>15.775</code></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="plot dei dati normalizzati" src="/images/posts/plot-output-normalized.png"></p>
+<p>Ha senso? Spero proprio di sì.</p>
+<p><img alt="sì" src="/images/posts/yes.gif"></p>
+<h2 id="scriviamo-il-codice">Scriviamo il codice</h2>
+<p>Scriviamo un po&rsquo; di codice. Prima di tutto, definiamo un&rsquo;interfaccia per il
 nostro calcolatore di <code>AQi</code>, così che poi possiamo fornirne diverse
-implementazioni.</p><p>Il codice di questa interfaccia può essere visto
-<a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java>qui</a>.</p><p>L&rsquo;interfaccia è un posto conveniente dove implementare la formula dell&rsquo;<code>AQi</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>static</span> <span style=color:#66d9ef>double</span> <span style=color:#a6e22e>airQualityIndex</span>(<span style=color:#66d9ef>double</span> temperature, <span style=color:#66d9ef>double</span> carbonMonoxidePercentage, <span style=color:#66d9ef>double</span> maxTemperature) {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> (((temperature <span style=color:#f92672>*</span> 100) <span style=color:#f92672>/</span> maxTemperature) <span style=color:#f92672>+</span> carbonMonoxidePercentage) <span style=color:#f92672>/</span> 2;
-</span></span><span style=display:flex><span>}
+implementazioni.</p>
+<p>Il codice di questa interfaccia può essere visto
+<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java">qui</a>.</p>
+<p>L&rsquo;interfaccia è un posto conveniente dove implementare la formula dell&rsquo;<code>AQi</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">double</span> <span style="color:#a6e22e">airQualityIndex</span>(<span style="color:#66d9ef">double</span> temperature, <span style="color:#66d9ef">double</span> carbonMonoxidePercentage, <span style="color:#66d9ef">double</span> maxTemperature) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (((temperature <span style="color:#f92672">*</span> 100) <span style="color:#f92672">/</span> maxTemperature) <span style="color:#f92672">+</span> carbonMonoxidePercentage) <span style="color:#f92672">/</span> 2;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Questo metodo prende una temperatura, una percentuale di monossido di carbonio,
-una temperatura massima e torna l&rsquo;<code>AQi</code>. Bene.</p><p>La parte interessante però è in questo metodo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>calculate</span>(List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> temperatures, List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> carbonMonoxidePercentages);
+una temperatura massima e torna l&rsquo;<code>AQi</code>. Bene.</p>
+<p>La parte interessante però è in questo metodo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">calculate</span>(List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> temperatures, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> carbonMonoxidePercentages);
 </span></span></code></pre></div><p>Questo ci dice che il metodo <code>calculate</code> prende due liste di <code>TimeValue</code>: la
 prima è una lista di temperature e l&rsquo;altra è una lista di percentuali di
 monossido di carbonio. Quindi ritorna una lista di <code>TimeValue</code>, solo che questa
-volta la lista rappresenta gli indici di qualità dell&rsquo;aria.</p><p>Cos&rsquo;è un <code>TimeValue</code>? Possiamo vedere la sua definizione
-<a href=https://github.com/mcaserta/time-series-concurrency-example/blob/c5b4574a40be0a818aba1513aaef7cc9d2a41d2b/src/main/java/com/mirkocaserta/example/TimeValue.java#L7>qui</a>.
+volta la lista rappresenta gli indici di qualità dell&rsquo;aria.</p>
+<p>Cos&rsquo;è un <code>TimeValue</code>? Possiamo vedere la sua definizione
+<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/c5b4574a40be0a818aba1513aaef7cc9d2a41d2b/src/main/java/com/mirkocaserta/example/TimeValue.java#L7">qui</a>.
 Nonostante tutto ciò sembri orribilmente complicato per via della verbosità del
 linguaggio Java e alcuni dettagli di implementazione, puoi pensare a un
 <code>TimeValue</code> come un modo comodo di rappresentare un <code>Instant</code> nel tempo ed il
-suo valore associato. Niente di ché, davvero.</p><h2 id=scrivere-codice-come-fosse-il-1984>Scrivere codice come fosse il 1984</h2><p>Ora che abbiamo un semplice framework per i nostri calcoli, scriviamo una prima
+suo valore associato. Niente di ché, davvero.</p>
+<h2 id="scrivere-codice-come-fosse-il-1984">Scrivere codice come fosse il 1984</h2>
+<p>Ora che abbiamo un semplice framework per i nostri calcoli, scriviamo una prima
 implementazione usando uno stile <em>vecchia scuola</em>. Il codice completo è
-<a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java>qui</a>.
-Diamogli un&rsquo;occhiata.</p><p>Il nostro calcolatore prende la temperatura massima nel costruttore e ne
+<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java">qui</a>.
+Diamogli un&rsquo;occhiata.</p>
+<p>Il nostro calcolatore prende la temperatura massima nel costruttore e ne
 immagazina il valore nella costante d&rsquo;istanza <code>maxTemperature</code> poiché ci servirà
-dopo quando invocheremo la funzione per l&rsquo;<code>AQi</code>.</p><p>Il nostro metodo <code>calculate</code> deve iniziare con questi due step:</p><ol><li>concatenare i dati di temperatura e percentuale di monossido di carbonio in
-una singola struttura dati</li><li>ordinare il risultato per timestamp</li></ol><p>Il primo passo è implementato in questo blocco di codice:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#75715e>// key = time value type (C = carbonMonoxidePercentage, T = temperature)</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>// concatenated with the timestamp as a string</span>
-</span></span><span style=display:flex><span>Map<span style=color:#f92672>&lt;</span>String, TimeValue<span style=color:#f92672>&gt;</span> timeValuesByType <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> HashMap<span style=color:#f92672>&lt;&gt;</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> (TimeValue temperature : temperatures) {
-</span></span><span style=display:flex><span>    timeValuesByType.<span style=color:#a6e22e>put</span>(<span style=color:#e6db74>&#34;T&#34;</span>.<span style=color:#a6e22e>concat</span>(temperature.<span style=color:#a6e22e>ts</span>()), temperature);
-</span></span><span style=display:flex><span>}
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> (TimeValue carbonMonoxidePercentage : carbonMonoxidePercentages) {
-</span></span><span style=display:flex><span>    timeValuesByType.<span style=color:#a6e22e>put</span>(<span style=color:#e6db74>&#34;C&#34;</span>.<span style=color:#a6e22e>concat</span>(carbonMonoxidePercentage.<span style=color:#a6e22e>ts</span>()), carbonMonoxidePercentage);
-</span></span><span style=display:flex><span>}
+dopo quando invocheremo la funzione per l&rsquo;<code>AQi</code>.</p>
+<p>Il nostro metodo <code>calculate</code> deve iniziare con questi due step:</p>
+<ol>
+<li>concatenare i dati di temperatura e percentuale di monossido di carbonio in
+una singola struttura dati</li>
+<li>ordinare il risultato per timestamp</li>
+</ol>
+<p>Il primo passo è implementato in questo blocco di codice:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// key = time value type (C = carbonMonoxidePercentage, T = temperature)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// concatenated with the timestamp as a string</span>
+</span></span><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> timeValuesByType <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (TimeValue temperature : temperatures) {
+</span></span><span style="display:flex;"><span>    timeValuesByType.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;T&#34;</span>.<span style="color:#a6e22e">concat</span>(temperature.<span style="color:#a6e22e">ts</span>()), temperature);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (TimeValue carbonMonoxidePercentage : carbonMonoxidePercentages) {
+</span></span><span style="display:flex;"><span>    timeValuesByType.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#34;C&#34;</span>.<span style="color:#a6e22e">concat</span>(carbonMonoxidePercentage.<span style="color:#a6e22e">ts</span>()), carbonMonoxidePercentage);
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>La chiave nella nostra variabile <code>timeValuesByType</code> è una concatenazione in
 stringa della lettera <code>T</code> per temperatura o <code>C</code> per percentuale di monossido di
 carbonio, seguita dal timestamp. Dobbiamo fare ciò per poter poi distinguere tra
 i due tipi di dato più avanti. Le stringhe nella chiave avranno questo aspetto:
-<code>T2021-02-03T08:00:00.000Z</code>.</p><p>L&rsquo;ordinamento è realizzato in questo blocco:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>Map<span style=color:#f92672>&lt;</span>String, TimeValue<span style=color:#f92672>&gt;</span> timeValuesByTypeSortedByTimestamp <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> LinkedHashMap<span style=color:#f92672>&lt;&gt;</span>();
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>String<span style=color:#f92672>&gt;</span> keysSortedByTimestamp <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> ArrayList<span style=color:#f92672>&lt;&gt;</span>(timeValuesByType.<span style=color:#a6e22e>keySet</span>());
-</span></span><span style=display:flex><span>keysSortedByTimestamp.<span style=color:#a6e22e>sort</span>(comparing(s <span style=color:#f92672>-&gt;</span> timeValuesByType.<span style=color:#a6e22e>get</span>(s).<span style=color:#a6e22e>timestamp</span>()));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> (String key : keysSortedByTimestamp) {
-</span></span><span style=display:flex><span>    timeValuesByTypeSortedByTimestamp.<span style=color:#a6e22e>put</span>(key, timeValuesByType.<span style=color:#a6e22e>get</span>(key));
-</span></span><span style=display:flex><span>}
+<code>T2021-02-03T08:00:00.000Z</code>.</p>
+<p>L&rsquo;ordinamento è realizzato in questo blocco:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> timeValuesByTypeSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LinkedHashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> keysSortedByTimestamp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>(timeValuesByType.<span style="color:#a6e22e">keySet</span>());
+</span></span><span style="display:flex;"><span>keysSortedByTimestamp.<span style="color:#a6e22e">sort</span>(comparing(s <span style="color:#f92672">-&gt;</span> timeValuesByType.<span style="color:#a6e22e">get</span>(s).<span style="color:#a6e22e">timestamp</span>()));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (String key : keysSortedByTimestamp) {
+</span></span><span style="display:flex;"><span>    timeValuesByTypeSortedByTimestamp.<span style="color:#a6e22e">put</span>(key, timeValuesByType.<span style="color:#a6e22e">get</span>(key));
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Questo è solo il modo supercomplicato di Java per ordinare la nostra mappa in
 base al timestamp che abbiamo nei valori della mappa stessa. Dichiariamo una
 mappa <code>timeValuesByTypeSortedByTimestamp</code>, implementata da una <code>LinkedHashMap</code>
@@ -237,176 +895,236 @@ un ArrayList dato che abbiamo bisogno di una <code>List</code> per poterci invoc
 La funzione di comparazione che passiamo a <code>sort</code> pesca il timestamp dell&rsquo;entry
 relativa nella mappa originale che abbiamo chiamato <code>timeValuesByType</code>. Quindi
 iteriamo <code>keysSortedByTimestamp</code>, aggiungendo entry alla nostra mappa
-<code>timeValuesByTypeSortedByTimestamp</code>.</p><p>Ora dichiariamo una mappa per i risultati dei nostri calcoli dell&rsquo;<code>AQi</code> e un
-paio di variabili che ci serviranno dopo:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>Map<span style=color:#f92672>&lt;</span>Instant, Double<span style=color:#f92672>&gt;</span> airQualityIndexMap <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> HashMap<span style=color:#f92672>&lt;&gt;</span>();
-</span></span><span style=display:flex><span>TimeValue lastTemperature <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span>;
-</span></span><span style=display:flex><span>TimeValue lastCarbonMonoxidePercentage <span style=color:#f92672>=</span> <span style=color:#66d9ef>null</span>;
+<code>timeValuesByTypeSortedByTimestamp</code>.</p>
+<p>Ora dichiariamo una mappa per i risultati dei nostri calcoli dell&rsquo;<code>AQi</code> e un
+paio di variabili che ci serviranno dopo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>Instant, Double<span style="color:#f92672">&gt;</span> airQualityIndexMap <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>TimeValue lastTemperature <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+</span></span><span style="display:flex;"><span>TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
 </span></span></code></pre></div><p>Qui inizia la parte divertente. Cicliamo attraverso le entry della mappa nella
-nostra variabile <code>timeValuesByTypeSortedByTimestamp</code> precedentemente definita.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>for</span> (Map.<span style=color:#a6e22e>Entry</span><span style=color:#f92672>&lt;</span>String, TimeValue<span style=color:#f92672>&gt;</span> entry : timeValuesByTypeSortedByTimestamp.<span style=color:#a6e22e>entrySet</span>()) {
-</span></span><span style=display:flex><span>    ...
+nostra variabile <code>timeValuesByTypeSortedByTimestamp</code> precedentemente definita.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (Map.<span style="color:#a6e22e">Entry</span><span style="color:#f92672">&lt;</span>String, TimeValue<span style="color:#f92672">&gt;</span> entry : timeValuesByTypeSortedByTimestamp.<span style="color:#a6e22e">entrySet</span>()) {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Sappiamo che se la chiave inizia con una <code>T</code>, abbiamo un valore di temperatura
 e, in tal caso lo immagazziniamo nella variabile <code>lastTemperature</code>. Altrimenti,
 il valore deve essere di tipo <code>C</code> per carbonio, e quindi facciamo la stessa cosa
-per la variabile <code>lastCarbonMonoxidePercentage</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>if</span> (entry.<span style=color:#a6e22e>getKey</span>().<span style=color:#a6e22e>startsWith</span>(<span style=color:#e6db74>&#34;T&#34;</span>)) {
-</span></span><span style=display:flex><span>    lastTemperature <span style=color:#f92672>=</span> entry.<span style=color:#a6e22e>getValue</span>();
-</span></span><span style=display:flex><span>} <span style=color:#66d9ef>else</span> <span style=color:#66d9ef>if</span> (entry.<span style=color:#a6e22e>getKey</span>().<span style=color:#a6e22e>startsWith</span>(<span style=color:#e6db74>&#34;C&#34;</span>)) {
-</span></span><span style=display:flex><span>    lastCarbonMonoxidePercentage <span style=color:#f92672>=</span> entry.<span style=color:#a6e22e>getValue</span>();
-</span></span><span style=display:flex><span>}
+per la variabile <code>lastCarbonMonoxidePercentage</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (entry.<span style="color:#a6e22e">getKey</span>().<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;T&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    lastTemperature <span style="color:#f92672">=</span> entry.<span style="color:#a6e22e">getValue</span>();
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (entry.<span style="color:#a6e22e">getKey</span>().<span style="color:#a6e22e">startsWith</span>(<span style="color:#e6db74">&#34;C&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> entry.<span style="color:#a6e22e">getValue</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>A questo punto, se abbiamo un valore sia per <code>T</code> che per <code>C</code>, possiamo procedere
 a calcolare il nostro <code>AQi</code> e memorizzare il suo valore nella variabile
-<code>airQualityIndexMap</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>if</span> (lastTemperature <span style=color:#f92672>!=</span> <span style=color:#66d9ef>null</span> <span style=color:#f92672>&amp;&amp;</span> lastCarbonMonoxidePercentage <span style=color:#f92672>!=</span> <span style=color:#66d9ef>null</span>) {
-</span></span><span style=display:flex><span>    airQualityIndexMap.<span style=color:#a6e22e>put</span>(
-</span></span><span style=display:flex><span>        mostRecent(lastTemperature.<span style=color:#a6e22e>timestamp</span>(), lastCarbonMonoxidePercentage.<span style=color:#a6e22e>timestamp</span>()),
-</span></span><span style=display:flex><span>        airQualityIndex(lastTemperature.<span style=color:#a6e22e>value</span>(), lastCarbonMonoxidePercentage.<span style=color:#a6e22e>value</span>(), maxTemperature)
-</span></span><span style=display:flex><span>    );
-</span></span><span style=display:flex><span>}
+<code>airQualityIndexMap</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>    airQualityIndexMap.<span style="color:#a6e22e">put</span>(
+</span></span><span style="display:flex;"><span>        mostRecent(lastTemperature.<span style="color:#a6e22e">timestamp</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">timestamp</span>()),
+</span></span><span style="display:flex;"><span>        airQualityIndex(lastTemperature.<span style="color:#a6e22e">value</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">value</span>(), maxTemperature)
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Stiamo prendendo il timestamp più recente tra i due <code>TimeValue</code> usando una
 funzioncina di aiuto che abbiamo definito precedentemente nell&rsquo;interfaccia del
-calcolatore.</p><p>Un effetto collaterale desiderato dell&rsquo;usare una mappa per questa struttura dati
+calcolatore.</p>
+<p>Un effetto collaterale desiderato dell&rsquo;usare una mappa per questa struttura dati
 è che, quando inseriamo un nuovo valore per un timestamp esistente, la entry
 viene sovrascritta dal più recente. Questo risolve il nostro problema dei
-timestamp duplicati.</p><p>Alla fine del ciclo, i nostri risultati sono quasi pronti. Dobbiamo solo
+timestamp duplicati.</p>
+<p>Alla fine del ciclo, i nostri risultati sono quasi pronti. Dobbiamo solo
 ordinarli di nuovo per timestamp e ritornare i valori come una <code>List</code> di
-<code>TimeValue</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>Instant<span style=color:#f92672>&gt;</span> keys <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> ArrayList<span style=color:#f92672>&lt;&gt;</span>(airQualityIndexMap.<span style=color:#a6e22e>keySet</span>());
-</span></span><span style=display:flex><span>keys.<span style=color:#a6e22e>sort</span>(Instant::compareTo);
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> results <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> ArrayList<span style=color:#f92672>&lt;&gt;</span>();
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>for</span> (Instant key : keys) {
-</span></span><span style=display:flex><span>    results.<span style=color:#a6e22e>add</span>(TimeValue.<span style=color:#a6e22e>of</span>(key, airQualityIndexMap.<span style=color:#a6e22e>get</span>(key)));
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><h2 id=eleganza-funzionale>Eleganza funzionale</h2><p>Possiamo fare meglio di così? Certo. Usiamo un&rsquo;arma elegante per tempi più
+<code>TimeValue</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Instant<span style="color:#f92672">&gt;</span> keys <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>(airQualityIndexMap.<span style="color:#a6e22e">keySet</span>());
+</span></span><span style="display:flex;"><span>keys.<span style="color:#a6e22e">sort</span>(Instant::compareTo);
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> results <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> (Instant key : keys) {
+</span></span><span style="display:flex;"><span>    results.<span style="color:#a6e22e">add</span>(TimeValue.<span style="color:#a6e22e">of</span>(key, airQualityIndexMap.<span style="color:#a6e22e">get</span>(key)));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="eleganza-funzionale">Eleganza funzionale</h2>
+<p>Possiamo fare meglio di così? Certo. Usiamo un&rsquo;arma elegante per tempi più
 civilizzati: la programmazione funzionale. Il nostro
-<a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/FunctionalAirQualityIndexCalculator.java>FunctionalAirQualityIndexCalculator</a>
+<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/FunctionalAirQualityIndexCalculator.java">FunctionalAirQualityIndexCalculator</a>
 è ridotto quasi all&rsquo;osso, ma solo perché la logica principale dietro i calcoli
 ora si trova
-nell&rsquo;<a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java>AirQualityIndexCollector</a>.</p><p>Il nostro calcolatore è molto più semplice ora. La prima parte è un po'
-convoluta quindi guardiamola per prima:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;</span> timeSeries <span style=color:#f92672>=</span> Stream.<span style=color:#a6e22e>concat</span>(
-</span></span><span style=display:flex><span>   temperatures.<span style=color:#a6e22e>stream</span>().<span style=color:#a6e22e>map</span>(e <span style=color:#f92672>-&gt;</span> <span style=color:#66d9ef>new</span> TypedTimeValue(TypedTimeValue.<span style=color:#a6e22e>Type</span>.<span style=color:#a6e22e>T</span>, e)),
-</span></span><span style=display:flex><span>   carbonMonoxidePercentages.<span style=color:#a6e22e>stream</span>().<span style=color:#a6e22e>map</span>(e <span style=color:#f92672>-&gt;</span> <span style=color:#66d9ef>new</span> TypedTimeValue(TypedTimeValue.<span style=color:#a6e22e>Type</span>.<span style=color:#a6e22e>C</span>, e))
-</span></span><span style=display:flex><span>).<span style=color:#a6e22e>collect</span>(Collectors.<span style=color:#a6e22e>toUnmodifiableList</span>());
-</span></span></code></pre></div><p>Ci sono diversi pattern funzionali al lavoro qui:</p><ul><li><p>i dati di temperatura e percentuale di monossido di carbonio sono trasmessi e
+nell&rsquo;<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java">AirQualityIndexCollector</a>.</p>
+<p>Il nostro calcolatore è molto più semplice ora. La prima parte è un po'
+convoluta quindi guardiamola per prima:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span> timeSeries <span style="color:#f92672">=</span> Stream.<span style="color:#a6e22e">concat</span>(
+</span></span><span style="display:flex;"><span>   temperatures.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">map</span>(e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue(TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">T</span>, e)),
+</span></span><span style="display:flex;"><span>   carbonMonoxidePercentages.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">map</span>(e <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">new</span> TypedTimeValue(TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">C</span>, e))
+</span></span><span style="display:flex;"><span>).<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toUnmodifiableList</span>());
+</span></span></code></pre></div><p>Ci sono diversi pattern funzionali al lavoro qui:</p>
+<ul>
+<li>
+<p>i dati di temperatura e percentuale di monossido di carbonio sono trasmessi e
 mappati in un contenitore in modo da poter poi capire se il dato che stiamo
-guardando è di tipo <code>T</code> o <code>C</code></p></li><li><p>i due stream risultanti sono concatenati usando <code>Stream.concat</code></p></li><li><p>alla fine collezioniamo lo stream concatenato in una <code>List&lt;TypedTimeValue></code>
-non modificabile</p></li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>return</span> timeSeries.<span style=color:#a6e22e>stream</span>().<span style=color:#a6e22e>parallel</span>()
-</span></span><span style=display:flex><span>    .<span style=color:#a6e22e>collect</span>(AirQualityIndexCollector.<span style=color:#a6e22e>toUnmodifiableList</span>(maxTemperature));
+guardando è di tipo <code>T</code> o <code>C</code></p>
+</li>
+<li>
+<p>i due stream risultanti sono concatenati usando <code>Stream.concat</code></p>
+</li>
+<li>
+<p>alla fine collezioniamo lo stream concatenato in una <code>List&lt;TypedTimeValue&gt;</code>
+non modificabile</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> timeSeries.<span style="color:#a6e22e">stream</span>().<span style="color:#a6e22e">parallel</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">collect</span>(AirQualityIndexCollector.<span style="color:#a6e22e">toUnmodifiableList</span>(maxTemperature));
 </span></span></code></pre></div><p>La variabile <code>timeSeries</code> è quindi trasmessa in parallelo in un collettore che
-fa il lavoro sporco e ritorna una <code>List&lt;TimeValue></code> non modificabile con gli
-indici di qualità dell&rsquo;aria.</p><p>Diamo un&rsquo;occhiata al collettore.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>AirQualityIndexCollector</span>
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>implements</span> Collector<span style=color:#f92672>&lt;</span>TypedTimeValue, Queue<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;</span>, List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;&gt;</span> {
-</span></span><span style=display:flex><span>    ...
+fa il lavoro sporco e ritorna una <code>List&lt;TimeValue&gt;</code> non modificabile con gli
+indici di qualità dell&rsquo;aria.</p>
+<p>Diamo un&rsquo;occhiata al collettore.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">AirQualityIndexCollector</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">implements</span> Collector<span style="color:#f92672">&lt;</span>TypedTimeValue, Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Stiamo implementando l&rsquo;interfaccia <code>Collector</code>. I parametri di tipo che stiamo
-fornendo esprimono tre cose:</p><ul><li>stiamo collezionando valori di tipo <code>TypedTimeValue</code></li><li>il nostro accumulatore interno usa una <code>Queue&lt;TypedTimeValue></code></li><li>alla fine del lavoro, ritorniamo una <code>List&lt;TimeValue></code></li></ul><p>Una <code>Queue</code> è solo una <code>List</code> thread safe. Ne forniamo l&rsquo;implementazione usando
-il metodo <code>supplier</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Override</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> Supplier<span style=color:#f92672>&lt;</span>Queue<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;&gt;</span> <span style=color:#a6e22e>supplier</span>() {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> ConcurrentLinkedQueue::<span style=color:#66d9ef>new</span>;
-</span></span><span style=display:flex><span>}
+fornendo esprimono tre cose:</p>
+<ul>
+<li>stiamo collezionando valori di tipo <code>TypedTimeValue</code></li>
+<li>il nostro accumulatore interno usa una <code>Queue&lt;TypedTimeValue&gt;</code></li>
+<li>alla fine del lavoro, ritorniamo una <code>List&lt;TimeValue&gt;</code></li>
+</ul>
+<p>Una <code>Queue</code> è solo una <code>List</code> thread safe. Ne forniamo l&rsquo;implementazione usando
+il metodo <code>supplier</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Supplier<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">supplier</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> ConcurrentLinkedQueue::<span style="color:#66d9ef">new</span>;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>In questo caso, l&rsquo;implementazione è una <code>ConcurrentLinkedQueue</code> che, di nuovo, è
-solo una specie di <code>ArrayList</code> thread safe.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Override</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> BiConsumer<span style=color:#f92672>&lt;</span>Queue<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;</span>, TypedTimeValue<span style=color:#f92672>&gt;</span> <span style=color:#a6e22e>accumulator</span>() {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> Queue::add;
-</span></span><span style=display:flex><span>}
+solo una specie di <code>ArrayList</code> thread safe.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BiConsumer<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, TypedTimeValue<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">accumulator</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> Queue::add;
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>L&rsquo;accumulatore deve tornare una funzione che il collettore usa per accumulare i
 dati in input. Come puoi vedere, torniamo semplicemente un riferimento al metodo
-<code>add</code> di <code>Queue</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Override</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> BinaryOperator<span style=color:#f92672>&lt;</span>Queue<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;&gt;</span> <span style=color:#a6e22e>combiner</span>() {
-</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> (typedTimeValues, typedTimeValues2) <span style=color:#f92672>-&gt;</span> {
-</span></span><span style=display:flex><span>        typedTimeValues.<span style=color:#a6e22e>addAll</span>(typedTimeValues2);
-</span></span><span style=display:flex><span>        <span style=color:#66d9ef>return</span> typedTimeValues;
-</span></span><span style=display:flex><span>    };
-</span></span><span style=display:flex><span>}
+<code>add</code> di <code>Queue</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> BinaryOperator<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">combiner</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (typedTimeValues, typedTimeValues2) <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>        typedTimeValues.<span style="color:#a6e22e">addAll</span>(typedTimeValues2);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> typedTimeValues;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>Il metodo <code>combiner</code> deve tornare una funzione che combina due accumulatori.
 L&rsquo;implementazione deve prendere tutti gli elementi del secondo accumulatore ed
 aggiungerli al primo, che non suona molto funzionale in termini di immutabilità
-ma in questo caso è un comportamento atteso, ed è totalmente ok.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#a6e22e>@Override</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>public</span> Function<span style=color:#f92672>&lt;</span>Queue<span style=color:#f92672>&lt;</span>TypedTimeValue<span style=color:#f92672>&gt;</span>, List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;&gt;</span> <span style=color:#a6e22e>finisher</span>() {
-</span></span><span style=display:flex><span>    ...
+ma in questo caso è un comportamento atteso, ed è totalmente ok.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> Function<span style="color:#f92672">&lt;</span>Queue<span style="color:#f92672">&lt;</span>TypedTimeValue<span style="color:#f92672">&gt;</span>, List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> <span style="color:#a6e22e">finisher</span>() {
+</span></span><span style="display:flex;"><span>    ...
 </span></span></code></pre></div><p>Infine, il <code>finisher</code> deve tornare una funzione che prende tutti i valori
-accumulati nella nostra <code>Queue&lt;TypedTimeValue></code> e torna una <code>List&lt;TimeValue></code>
-con i nostri indici di qualità dell&rsquo;aria.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>final</span> Map<span style=color:#f92672>&lt;</span>Instant, TimeValue<span style=color:#f92672>&gt;</span> aqiAccumulator <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> HashMap<span style=color:#f92672>&lt;&gt;</span>();
+accumulati nella nostra <code>Queue&lt;TypedTimeValue&gt;</code> e torna una <code>List&lt;TimeValue&gt;</code>
+con i nostri indici di qualità dell&rsquo;aria.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Map<span style="color:#f92672">&lt;</span>Instant, TimeValue<span style="color:#f92672">&gt;</span> aqiAccumulator <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;</span>();
 </span></span></code></pre></div><p>Questa è una mappa che serve a collezionare gli indici di qualità dell&rsquo;aria.
 Come puoi vedere è indicizzata per timestamp, così che non avremo entry
 duplicate quando calcoli più recenti per uno stesso timestamp saranno messe
-nella mappa rimpiazzando quelle vecchie.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#66d9ef>return</span> accumulator <span style=color:#f92672>-&gt;</span> {
-</span></span><span style=display:flex><span>   accumulator.<span style=color:#a6e22e>stream</span>()
-</span></span><span style=display:flex><span>           .<span style=color:#a6e22e>map</span>(TypedTimeValue::timestamp)
-</span></span><span style=display:flex><span>           .<span style=color:#a6e22e>sorted</span>()
-</span></span><span style=display:flex><span>           .<span style=color:#a6e22e>forEach</span>(entryTS <span style=color:#f92672>-&gt;</span> {
-</span></span><span style=display:flex><span>               <span style=color:#66d9ef>final</span> TimeValue lastTemperature <span style=color:#f92672>=</span> getClosest(accumulator, TypedTimeValue.<span style=color:#a6e22e>Type</span>.<span style=color:#a6e22e>T</span>, entryTS);
-</span></span><span style=display:flex><span>               <span style=color:#66d9ef>final</span> TimeValue lastCarbonMonoxidePercentage <span style=color:#f92672>=</span> getClosest(accumulator, TypedTimeValue.<span style=color:#a6e22e>Type</span>.<span style=color:#a6e22e>C</span>, entryTS);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>               <span style=color:#66d9ef>if</span> (lastTemperature <span style=color:#f92672>!=</span> <span style=color:#66d9ef>null</span> <span style=color:#f92672>&amp;&amp;</span> lastCarbonMonoxidePercentage <span style=color:#f92672>!=</span> <span style=color:#66d9ef>null</span>) {
-</span></span><span style=display:flex><span>                   Instant timestamp <span style=color:#f92672>=</span> mostRecent(lastTemperature.<span style=color:#a6e22e>timestamp</span>(), lastCarbonMonoxidePercentage.<span style=color:#a6e22e>timestamp</span>());
-</span></span><span style=display:flex><span>                   aqiAccumulator.<span style=color:#a6e22e>put</span>(timestamp, TimeValue.<span style=color:#a6e22e>of</span>(timestamp, airQualityIndex(lastTemperature.<span style=color:#a6e22e>value</span>(), lastCarbonMonoxidePercentage.<span style=color:#a6e22e>value</span>(), maxTemperature)));
-</span></span><span style=display:flex><span>               }
-</span></span><span style=display:flex><span>           });
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>   <span style=color:#66d9ef>return</span> aqiAccumulator.<span style=color:#a6e22e>values</span>().<span style=color:#a6e22e>stream</span>()
-</span></span><span style=display:flex><span>           .<span style=color:#a6e22e>sorted</span>()
-</span></span><span style=display:flex><span>           .<span style=color:#a6e22e>collect</span>(Collectors.<span style=color:#a6e22e>toUnmodifiableList</span>());
-</span></span><span style=display:flex><span>};
+nella mappa rimpiazzando quelle vecchie.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> accumulator <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>   accumulator.<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">map</span>(TypedTimeValue::timestamp)
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">sorted</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">forEach</span>(entryTS <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastTemperature <span style="color:#f92672">=</span> getClosest(accumulator, TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">T</span>, entryTS);
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">final</span> TimeValue lastCarbonMonoxidePercentage <span style="color:#f92672">=</span> getClosest(accumulator, TypedTimeValue.<span style="color:#a6e22e">Type</span>.<span style="color:#a6e22e">C</span>, entryTS);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>               <span style="color:#66d9ef">if</span> (lastTemperature <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> lastCarbonMonoxidePercentage <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>                   Instant timestamp <span style="color:#f92672">=</span> mostRecent(lastTemperature.<span style="color:#a6e22e">timestamp</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">timestamp</span>());
+</span></span><span style="display:flex;"><span>                   aqiAccumulator.<span style="color:#a6e22e">put</span>(timestamp, TimeValue.<span style="color:#a6e22e">of</span>(timestamp, airQualityIndex(lastTemperature.<span style="color:#a6e22e">value</span>(), lastCarbonMonoxidePercentage.<span style="color:#a6e22e">value</span>(), maxTemperature)));
+</span></span><span style="display:flex;"><span>               }
+</span></span><span style="display:flex;"><span>           });
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> aqiAccumulator.<span style="color:#a6e22e">values</span>().<span style="color:#a6e22e">stream</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">sorted</span>()
+</span></span><span style="display:flex;"><span>           .<span style="color:#a6e22e">collect</span>(Collectors.<span style="color:#a6e22e">toUnmodifiableList</span>());
+</span></span><span style="display:flex;"><span>};
 </span></span></code></pre></div><p>Questo è un bel mappazzone di codice ma guardiamolo un po&rsquo; alla volta. Stiamo
 trasmettendo i dati accumulati, estraendo il timestamp, ordinando per questo e,
 per ogni timestamp, guardiamo ai dati di temperatura e percentuale di monossido
 di carbonio con il timestamp più vicino. <em>Più vicino</em> vuol dire che il timestamp
-che stiamo valutando deve essere precedente o uguale al timestamp in questione.</p><p>Se abbiamo entrambi i dati (<code>T</code> e <code>C</code>), possiamo procedere al calcolo dell&rsquo;<code>AQi</code>
-e mettere il suo valore nella mappa <code>aqiAccumulator</code>.</p><p>Infine, tutto quello che dobbiamo fare è prendere i valori nella mappa
+che stiamo valutando deve essere precedente o uguale al timestamp in questione.</p>
+<p>Se abbiamo entrambi i dati (<code>T</code> e <code>C</code>), possiamo procedere al calcolo dell&rsquo;<code>AQi</code>
+e mettere il suo valore nella mappa <code>aqiAccumulator</code>.</p>
+<p>Infine, tutto quello che dobbiamo fare è prendere i valori nella mappa
 <code>aqiAccumulator</code>, ordinarli per timestamp e collezionarli in una
-<code>List&lt;TimeValue></code> non modificabile.</p><p>L&rsquo;ordinamento è reso possibile dal fatto che la nostra classe <code>TimeValue</code>
-implementa <code>Comparable&lt;TimeValue></code>.</p><p>Ci sono diversi punti nel metodo <code>finisher</code> in cui guardo dentro le strutture
+<code>List&lt;TimeValue&gt;</code> non modificabile.</p>
+<p>L&rsquo;ordinamento è reso possibile dal fatto che la nostra classe <code>TimeValue</code>
+implementa <code>Comparable&lt;TimeValue&gt;</code>.</p>
+<p>Ci sono diversi punti nel metodo <code>finisher</code> in cui guardo dentro le strutture
 dati su cui sto iterando, il ché, di nuovo, non sembra molto kosher in termini
 di programmazione funzionale, ma è ok perché so che i dati che sto esaminando
 non sono suscettibili a modifiche dietro le quinte da parte di thread
-concorrenti.</p><p>Questo calcolatore è migliore di quello <em>vecchia scuola</em>? Non ne sono sicuro.
+concorrenti.</p>
+<p>Questo calcolatore è migliore di quello <em>vecchia scuola</em>? Non ne sono sicuro.
 Questa roba è ancora abbastanza verbosa, ma mi sembra più facile da leggere dal
 momento che molto del codice è scritto in uno stile dichiarativo invece che
-imperativo.</p><h2 id=considerazioni-sulla-concorrenza>Considerazioni sulla concorrenza</h2><p>Siccome dobbiamo recuperare due diversi set di dati da due diversi provider (uno
+imperativo.</p>
+<h2 id="considerazioni-sulla-concorrenza">Considerazioni sulla concorrenza</h2>
+<p>Siccome dobbiamo recuperare due diversi set di dati da due diversi provider (uno
 per i dati di temperatura e un altro per i dati di percentuale di monossido di
 carbonio), potremmo voler far girare i client in parallelo. Questo ha un
 vantaggio rispetto all&rsquo;esecuzione a singolo thread in cui dovresti serializzare
-le chiamate ai provider.</p><p>In un ambiente a singolo threaded, potresti scrivere:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>TimeValueProvider providerT <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> TemperatureTimeValueProvider();
-</span></span><span style=display:flex><span>TimeValueProvider providerC <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> CarbonMonoxidePercentageProvider();
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValuesT <span style=color:#f92672>=</span> providerT.<span style=color:#a6e22e>get</span>();
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValuesC <span style=color:#f92672>=</span> providerC.<span style=color:#a6e22e>get</span>();
-</span></span></code></pre></div><p>Questo si traduce nel seguente modello di esecuzione seriale:</p><p><img alt="sequence diagram per l&rsquo;esecuzione seriale" src=/images/posts/sequence-diagram-serial.jpg></p><p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente multithread,
+le chiamate ai provider.</p>
+<p>In un ambiente a singolo threaded, potresti scrivere:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TimeValueProvider providerT <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> TemperatureTimeValueProvider();
+</span></span><span style="display:flex;"><span>TimeValueProvider providerC <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> CarbonMonoxidePercentageProvider();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
+</span></span></code></pre></div><p>Questo si traduce nel seguente modello di esecuzione seriale:</p>
+<p><img alt="sequence diagram per l&rsquo;esecuzione seriale" src="/images/posts/sequence-diagram-serial.jpg"></p>
+<p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente multithread,
 possiamo lanciare due client concorrenti e far partire il processamento dei dati
 appena abbiamo ricevuto risposta da entrambi. Questo ci risparmia un po&rsquo; di
-tempo e potenzialmente velocizza i nostri tempi di risposta.</p><p><img alt="sequence diagram per l&rsquo;esecuzione parallela" src=/images/posts/sequence-diagram-parallel.jpg></p><p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci sono
+tempo e potenzialmente velocizza i nostri tempi di risposta.</p>
+<p><img alt="sequence diagram per l&rsquo;esecuzione parallela" src="/images/posts/sequence-diagram-parallel.jpg"></p>
+<p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci sono
 diverse opzioni, ma la più popolare, e quella che personalmente preferisco, è
 usare i <code>CompletableFuture</code>, che sono stati introdotti in Java 8, se non ricordo
-male.</p><p>Un <code>CompletableFuture</code> è un contenitoree per una computazione. Gli dai il codice
+male.</p>
+<p>Un <code>CompletableFuture</code> è un contenitoree per una computazione. Gli dai il codice
 che vuoi eseguire e il runtime di Java si preoccupa di farlo girare in
 concorrenza in uno scheduler multithread. Lo scheduler è ovviamente
 configurabile ma i default vanno bene per il nostro caso. Puoi vedere l&rsquo;esempio
 completo
-<a href=https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java>qui</a>.</p><p>Nel mio esempio ho dichiarato il mio <code>CompletableFuture</code> così:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>CompletableFuture<span style=color:#f92672>&lt;</span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;&gt;</span> timedValuesFuture1 <span style=color:#f92672>=</span> CompletableFuture.<span style=color:#a6e22e>supplyAsync</span>(() <span style=color:#f92672>-&gt;</span> {
-</span></span><span style=display:flex><span>   log(<span style=color:#e6db74>&#34;Calling provider1...&#34;</span>);
-</span></span><span style=display:flex><span>   List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValues <span style=color:#f92672>=</span> provider1.<span style=color:#a6e22e>get</span>();
-</span></span><span style=display:flex><span>   log(String.<span style=color:#a6e22e>format</span>(<span style=color:#e6db74>&#34;provider 1 returned: %s\n&#34;</span>, timeValues));
-</span></span><span style=display:flex><span>   <span style=color:#66d9ef>return</span> timeValues;
-</span></span><span style=display:flex><span>});
+<a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/App.java">qui</a>.</p>
+<p>Nel mio esempio ho dichiarato il mio <code>CompletableFuture</code> così:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture.<span style="color:#a6e22e">supplyAsync</span>(() <span style="color:#f92672">-&gt;</span> {
+</span></span><span style="display:flex;"><span>   log(<span style="color:#e6db74">&#34;Calling provider1...&#34;</span>);
+</span></span><span style="display:flex;"><span>   List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues <span style="color:#f92672">=</span> provider1.<span style="color:#a6e22e">get</span>();
+</span></span><span style="display:flex;"><span>   log(String.<span style="color:#a6e22e">format</span>(<span style="color:#e6db74">&#34;provider 1 returned: %s\n&#34;</span>, timeValues));
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> timeValues;
+</span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><p>Questo è un po&rsquo; verboso poiché volevo includere dei log per mostrare come il
-codice gira in parallelo. Potrei benissimo aver scritto invece:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>CompletableFuture<span style=color:#f92672>&lt;</span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;&gt;</span> timedValuesFuture1 <span style=color:#f92672>=</span> CompletableFuture.<span style=color:#a6e22e>supplyAsync</span>(provider1::get);
+codice gira in parallelo. Potrei benissimo aver scritto invece:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;&gt;</span> timedValuesFuture1 <span style="color:#f92672">=</span> CompletableFuture.<span style="color:#a6e22e">supplyAsync</span>(provider1::get);
 </span></span></code></pre></div><p>Questo è sempre verboso ma decisamente meglio di prima. Poiché la computazione
-nel nostro <code>CompletableFuture</code> ritorna una <code>List&lt;TimeValue></code>, il metodo
-<code>supplyAsync</code> ritorna un <code>CompletableFuture&lt;List&lt;TimeValue>></code>, che è il modo di
+nel nostro <code>CompletableFuture</code> ritorna una <code>List&lt;TimeValue&gt;</code>, il metodo
+<code>supplyAsync</code> ritorna un <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, che è il modo di
 Java di dire che la variabile <code>timedValuesFuture1</code> è un <code>CompletableFuture</code> che
-contiene una <code>List&lt;TimeValue></code>. Ti prego di notare che il codice che stiamo
+contiene una <code>List&lt;TimeValue&gt;</code>. Ti prego di notare che il codice che stiamo
 passando al metodo <code>supplyAsync</code> è dentro una lambda. Questo significa che il
 nostro codice non viene eseguito nel metodo <code>supplyAsync</code> ma il runtime di Java
 è libero di scegliere il momento migliore per eseguirlo. Lo scheduler di default
 generalmente farà partire i <code>CompletableFuture</code> appena definiti ma devi sapere
 che non è necessariamente così e che definire una lambda non vuol dire che
-questa sia eseguita nel punto in cui è dichiarata.</p><p>Ora abbiamo bisogno di un modo per essere sicuro che i nostri
+questa sia eseguita nel punto in cui è dichiarata.</p>
+<p>Ora abbiamo bisogno di un modo per essere sicuro che i nostri
 <code>CompletableFuture</code> abbiano finito la loro esecuzione prima di poter procedere.
 Questo lo si fa componendo i future e chiamando il metodo <code>join</code> sul future
-risultante:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>CompletableFuture.<span style=color:#a6e22e>allOf</span>(timedValuesFuture1, timedValuesFuture2).<span style=color:#a6e22e>join</span>();
+risultante:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>CompletableFuture.<span style="color:#a6e22e">allOf</span>(timedValuesFuture1, timedValuesFuture2).<span style="color:#a6e22e">join</span>();
 </span></span></code></pre></div><p>Il metodo <code>allOf</code> ritorna un nuovo <code>CompletableFuture</code> che inscatola i future
 che gli stiamo passando. Su questo nuovo future poi chiamiamo <code>join</code> che blocca
-l&rsquo;esecuzione fin quando tutti i future interni hanno finito il lavoro.</p><p>Dopo questa linea siamo sicuri che i nostri thread sono stati eseguiti, quindi
+l&rsquo;esecuzione fin quando tutti i future interni hanno finito il lavoro.</p>
+<p>Dopo questa linea siamo sicuri che i nostri thread sono stati eseguiti, quindi
 possiamo prendere i dati di cui abbiamo bisogno dai nostri future originali
-usando il metodo <code>join</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValues1 <span style=color:#f92672>=</span> timedValuesFuture1.<span style=color:#a6e22e>join</span>();
-</span></span><span style=display:flex><span>List<span style=color:#f92672>&lt;</span>TimeValue<span style=color:#f92672>&gt;</span> timeValues2 <span style=color:#f92672>=</span> timedValuesFuture2.<span style=color:#a6e22e>join</span>();
-</span></span></code></pre></div><h2 id=esempio-di-output>Esempio di output</h2><p>Quando lanci l&rsquo;applicazione, dovresti vedere un output simile a questo:</p><pre tabindex=0><code>2021-02-03T17:50:26.772545406 --- [main] Hello concurrent world!
+usando il metodo <code>join</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues1 <span style="color:#f92672">=</span> timedValuesFuture1.<span style="color:#a6e22e">join</span>();
+</span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValues2 <span style="color:#f92672">=</span> timedValuesFuture2.<span style="color:#a6e22e">join</span>();
+</span></span></code></pre></div><h2 id="esempio-di-output">Esempio di output</h2>
+<p>Quando lanci l&rsquo;applicazione, dovresti vedere un output simile a questo:</p>
+<pre tabindex="0"><code>2021-02-03T17:50:26.772545406 --- [main] Hello concurrent world!
 2021-02-03T17:50:26.801737530 --- [ForkJoinPool.commonPool-worker-3] Calling provider1...
 2021-02-03T17:50:26.802105151 --- [main] Calling allOf(...).join()
 2021-02-03T17:50:26.802202415 --- [ForkJoinPool.commonPool-worker-5] Calling provider2...
@@ -414,22 +1132,104 @@ usando il metodo <code>join</code>:</p><div class=highlight><pre tabindex=0 styl
 2021-02-03T17:50:27.834702562 --- [ForkJoinPool.commonPool-worker-3] provider 1 returned: [TimeValue{timestamp=2021-01-18T08:00:24Z, value=30.318}, TimeValue{timestamp=2021-01-18T08:00:35Z, value=13.521}, TimeValue{timestamp=2021-01-18T08:00:35Z, value=29.518}, TimeValue{timestamp=2021-01-18T08:00:36Z, value=0.818}, TimeValue{timestamp=2021-01-18T08:00:46Z, value=8.695}, TimeValue{timestamp=2021-01-18T08:00:50Z, value=31.233}, TimeValue{timestamp=2021-01-18T08:00:51Z, value=24.675}, TimeValue{timestamp=2021-01-18T08:00:53Z, value=38.477}]
 2021-02-03T17:50:27.835040844 --- [main] After allOf(...).join()
 2021-02-03T17:50:27.852793190 --- [main] timeValues = [TimeValue{timestamp=2021-01-18T08:00:24Z, value=76.212}, TimeValue{timestamp=2021-01-18T08:00:35Z, value=75.212}, TimeValue{timestamp=2021-01-18T08:00:36Z, value=39.337}, TimeValue{timestamp=2021-01-18T08:00:45Z, value=46.143}, TimeValue{timestamp=2021-01-18T08:00:46Z, value=55.989}, TimeValue{timestamp=2021-01-18T08:00:50Z, value=84.161}, TimeValue{timestamp=2021-01-18T08:00:51Z, value=75.964}, TimeValue{timestamp=2021-01-18T08:00:53Z, value=93.217}]
-</code></pre><p>Puoi vedere che ci sono tre diversi thread al lavoro qui:</p><ol><li>main</li><li>ForkJoinPool.commonPool-worker-3</li><li>ForkJoinPool.commonPool-worker-5</li></ol><p>È interessante notare qui che, in questo specifico run, <code>allOf(...).join()</code> è
+</code></pre><p>Puoi vedere che ci sono tre diversi thread al lavoro qui:</p>
+<ol>
+<li>main</li>
+<li>ForkJoinPool.commonPool-worker-3</li>
+<li>ForkJoinPool.commonPool-worker-5</li>
+</ol>
+<p>È interessante notare qui che, in questo specifico run, <code>allOf(...).join()</code> è
 stato chiamato molto prima che fosse chiamato il provider 2 e che entrambi i
-risultati fossero tornati dai provider.</p><p>Il tuo output sarà certamente diverso poiché:</p><ol><li>l&rsquo;ordine di esecuzione dei thread è non deterministico</li><li>i valori dei provider sono generati casualmente</li></ol><h2 id=conclusione>Conclusione</h2><p>Ce l&rsquo;hai fatta! È stata una bella camminata. Spero sia stata divertente. Ho
+risultati fossero tornati dai provider.</p>
+<p>Il tuo output sarà certamente diverso poiché:</p>
+<ol>
+<li>l&rsquo;ordine di esecuzione dei thread è non deterministico</li>
+<li>i valori dei provider sono generati casualmente</li>
+</ol>
+<h2 id="conclusione">Conclusione</h2>
+<p>Ce l&rsquo;hai fatta! È stata una bella camminata. Spero sia stata divertente. Ho
 speso un bel po&rsquo; di tempo su questa cosa quando stavo cercando di entrare più a
 fondo in alcuni aspetti che ho incontrato a lavoro. Ti suggerisco di fare lo
 stesso quando ti capitano problemi che hanno bisogno di approfondimenti. Spero
-tu abbia trovato tutto ciò utile.</p><h2 id=bonus>Bonus</h2><p><img alt="reading memes on github" src=/images/posts/reading-memes-on-github.webp></p><p><a href=https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/>Credits</a></p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>questa è la mia vendetta per tutti i brutti voti a scuola.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p><img alt="it is acceptable meme" src=/images/posts/it-is-acceptable.jpg>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p><img alt="this is fine meme" src=/images/posts/this-is-fine.webp>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:4><p>I time series data, anche conosciuti come time-stamped data, sono una
+tu abbia trovato tutto ciò utile.</p>
+<h2 id="bonus">Bonus</h2>
+<p><img alt="reading memes on github" src="/images/posts/reading-memes-on-github.webp"></p>
+<p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>questa è la mia vendetta per tutti i brutti voti a scuola.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p><img alt="it is acceptable meme" src="/images/posts/it-is-acceptable.jpg">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p><img alt="this is fine meme" src="/images/posts/this-is-fine.webp">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>I time series data, anche conosciuti come time-stamped data, sono una
 sequenza di dati indicizzati in ordine di tempo. Time-stamped sono dati
 collezionati in diversi momenti. Questi dati consistono tipicamente in
 misure successive fatta dalla stessa fonte in un intervallo di tempo e sono
-usati per tracciarne il cambiamento nel tempo.&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:5><p>Mi piace pensare a questo movimento come a una specie di danza, e la trovo
-sexy. Penso che <a href=https://youtu.be/XFkzRNyygfk>I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href=#fnref:5 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div></article><hr><div class=post-info><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83.0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7" y2="7"/></svg>
-<span class=tag><a href=/tags/time-series-data/>time-series-data</a></span>
-<span class=tag><a href=/tags/time-series/>time-series</a></span>
-<span class=tag><a href=/tags/completablefuture/>completablefuture</a></span>
-<span class=tag><a href=/tags/java/>java</a></span>
-<span class=tag><a href=/tags/concurrency/>concurrency</a></span>
-<span class=tag><a href=/tags/software-development/>software development</a></span></p><p><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
-<span class=tag><a href=/categories/software-development/>software development</a></span></p></div></main></div><footer class=footer></footer></div><script type=text/javascript src=/bundle.min.63e1cd4087b02bc78961fcab2aaf77e957e2227557c73ab774f1cc4a9db0645e90d2403ca03e55eb0887e432e82aea10afe7f125052af6dd46cfea148ecbc663.js integrity="sha512-Y+HNQIewK8eJYfyrKq936VfiInVXxzq3dPHMSp2wZF6Q0kA8oD5V6wiH5DLoKuoQr+fxJQUq9t1Gz+oUjsvGYw=="></script></body></html>
+usati per tracciarne il cambiamento nel tempo.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>Mi piace pensare a questo movimento come a una specie di danza, e la trovo
+sexy. Penso che <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsquo;m a weirdo</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="/tags/time-series-data/">time-series-data</a></span>
+        <span class="tag"><a href="/tags/time-series/">time-series</a></span>
+        <span class="tag"><a href="/tags/completablefuture/">completablefuture</a></span>
+        <span class="tag"><a href="/tags/java/">java</a></span>
+        <span class="tag"><a href="/tags/concurrency/">concurrency</a></span>
+        <span class="tag"><a href="/tags/software-development/">software development</a></span>
+        
+    </p>
+
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder meta-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+
+        <span class="tag"><a href="/categories/software-development/">software development</a></span>
+        
+    </p>
+
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>

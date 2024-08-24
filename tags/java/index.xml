@@ -1,12 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Java on</title><link>/tags/java/</link><description>Recent content in Java on</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 31 May 2021 15:10:00 +0000</lastBuildDate><atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Bruce: cryptography in Java made easy</title><link>/posts/2021/05/bruce-cryptography-in-java-made-easy/</link><pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate><guid>/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid><description>I just released Bruce, a Java library for performing cryptography.
-Here are the relevant links:
-github docs download There still is much room for improvement.
-If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.
-I hope you find this useful. I certainly have in my daily work.</description></item><item><title>🇮🇹 Esempio di Time Series Data e CompletableFuture in Java</title><link>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</link><pubDate>Fri, 05 Feb 2021 08:19:00 +0000</pubDate><guid>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</guid><description>Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
-Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell&amp;rsquo;aria basato su due valori:
-temperatura dell&amp;rsquo;aria percentuale di monossido di carbonio nell&amp;rsquo;aria Dati i seguenti simboli:
-simbolo significato AQi indice di qualità dell&amp;rsquo;aria T temperatura dell&amp;rsquo;aria in gradi Celsius Tm temperatura massima dell&amp;rsquo;aria in C° C percentuale di monossido di carbonio nell&amp;rsquo;aria Possiamo calcolare l&amp;rsquo;AQi con questa specie di formula:</description></item><item><title>🇺🇸 Time Series Data and CompletableFuture example in Java</title><link>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</link><pubDate>Thu, 04 Feb 2021 18:19:00 +0000</pubDate><guid>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</guid><description>Time Series Data and CompletableFuture example in Java Full code for all the examples can be found here.
-How to run the program mvn clean compile verify exec:java Preface Suppose we want to calculate an air quality index based on two values:
-air temperature percentage of carbon monoxide in the air Given the following symbols:
-symbol meaning AQi air quality index T air temperature in Celsius degrees Tm maximum air temperature in C° C percentage of carbon monoxide in the air We may calculate the AQi with the following sorry excuse of a formula:</description></item><item><title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title><link>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link><pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate><guid>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid><description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.
-Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on </title>
+    <link>/tags/java/</link>
+    <description>Recent content in Java on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 31 May 2021 15:10:00 +0000</lastBuildDate>
+    <atom:link href="/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🇺🇸 Bruce: cryptography in Java made easy</title>
+      <link>/posts/2021/05/bruce-cryptography-in-java-made-easy/</link>
+      <pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate>
+      <guid>/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid>
+      <description>I just released Bruce, a Java library for performing cryptography.&#xA;Here are the relevant links:&#xA;github docs download There still is much room for improvement.&#xA;If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.&#xA;I hope you find this useful. I certainly have in my daily work.</description>
+    </item>
+    <item>
+      <title>🇮🇹 Esempio di Time Series Data e CompletableFuture in Java</title>
+      <link>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</link>
+      <pubDate>Fri, 05 Feb 2021 08:19:00 +0000</pubDate>
+      <guid>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</guid>
+      <description>Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.&#xA;Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell&amp;rsquo;aria basato su due valori:&#xA;temperatura dell&amp;rsquo;aria percentuale di monossido di carbonio nell&amp;rsquo;aria Dati i seguenti simboli:&#xA;simbolo significato AQi indice di qualità dell&amp;rsquo;aria T temperatura dell&amp;rsquo;aria in gradi Celsius Tm temperatura massima dell&amp;rsquo;aria in C° C percentuale di monossido di carbonio nell&amp;rsquo;aria Possiamo calcolare l&amp;rsquo;AQi con questa specie di formula:</description>
+    </item>
+    <item>
+      <title>🇺🇸 Time Series Data and CompletableFuture example in Java</title>
+      <link>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</link>
+      <pubDate>Thu, 04 Feb 2021 18:19:00 +0000</pubDate>
+      <guid>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</guid>
+      <description>Time Series Data and CompletableFuture example in Java Full code for all the examples can be found here.&#xA;How to run the program mvn clean compile verify exec:java Preface Suppose we want to calculate an air quality index based on two values:&#xA;air temperature percentage of carbon monoxide in the air Given the following symbols:&#xA;symbol meaning AQi air quality index T air temperature in Celsius degrees Tm maximum air temperature in C° C percentage of carbon monoxide in the air We may calculate the AQi with the following sorry excuse of a formula:</description>
+    </item>
+    <item>
+      <title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title>
+      <link>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link>
+      <pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate>
+      <guid>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid>
+      <description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.&#xA;Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description>
+    </item>
+  </channel>
+</rss>

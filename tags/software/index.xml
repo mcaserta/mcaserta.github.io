@@ -1,3 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Software on</title><link>/tags/software/</link><description>Recent content in Software on</description><generator>Hugo</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate><atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Firefox extensions I can't live without</title><link>/posts/2023/01/firefox-extensions-i-cant-live-without/</link><pubDate>Mon, 30 Jan 2023 08:00:00 +0000</pubDate><guid>/posts/2023/01/firefox-extensions-i-cant-live-without/</guid><description>These are a bunch of essential Firefox extensions I use:
-I don&amp;rsquo;t care about cookies: get rid of cookie warnings from almost all websites Don&amp;rsquo;t track me Google: removes the annoying link-conversion at Google Search, Maps, etc uBlock Origin: an efficient wide-spectrum content blocker Enhancer for YouTube: take control of YouTube and boost your user experience Bitwarden: a secure and free password manager for all of your devices</description></item><item><title>🇺🇸 Software I use everyday</title><link>/posts/2022/12/software-i-use-everyday/</link><pubDate>Fri, 23 Dec 2022 15:10:00 +0000</pubDate><guid>/posts/2022/12/software-i-use-everyday/</guid><description>Here is a list of software I use every day that is essential in everything I do.
-firefox web browser thunderbird email client telegram instant messaging signal secure messaging alacritty terminal emulator joplin note taking bitwarden password manager Firefox is a great browser and probably the single piece of software I spend the most time with. It&amp;rsquo;s free, open source, it descends from the ashes of Netscape and Mozilla and isn&amp;rsquo;t as evil as Chrome.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on </title>
+    <link>/tags/software/</link>
+    <description>Recent content in Software on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>🇺🇸 Firefox extensions I can&#39;t live without</title>
+      <link>/posts/2023/01/firefox-extensions-i-cant-live-without/</link>
+      <pubDate>Mon, 30 Jan 2023 08:00:00 +0000</pubDate>
+      <guid>/posts/2023/01/firefox-extensions-i-cant-live-without/</guid>
+      <description>These are a bunch of essential Firefox extensions I use:&#xA;I don&amp;rsquo;t care about cookies: get rid of cookie warnings from almost all websites Don&amp;rsquo;t track me Google: removes the annoying link-conversion at Google Search, Maps, etc uBlock Origin: an efficient wide-spectrum content blocker Enhancer for YouTube: take control of YouTube and boost your user experience Bitwarden: a secure and free password manager for all of your devices </description>
+    </item>
+    <item>
+      <title>🇺🇸 Software I use everyday</title>
+      <link>/posts/2022/12/software-i-use-everyday/</link>
+      <pubDate>Fri, 23 Dec 2022 15:10:00 +0000</pubDate>
+      <guid>/posts/2022/12/software-i-use-everyday/</guid>
+      <description>Here is a list of software I use every day that is essential in everything I do.&#xA;firefox web browser thunderbird email client telegram instant messaging signal secure messaging alacritty terminal emulator joplin note taking bitwarden password manager Firefox is a great browser and probably the single piece of software I spend the most time with. It&amp;rsquo;s free, open source, it descends from the ashes of Netscape and Mozilla and isn&amp;rsquo;t as evil as Chrome.</description>
+    </item>
+  </channel>
+</rss>

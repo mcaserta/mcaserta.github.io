@@ -1,5 +1,23 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on</title><link>/posts/</link><description>Recent content in Posts on</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>&lt;a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0&lt;/a></copyright><lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>🇺🇸 Firefox extensions I can't live without</title><link>/posts/2023/01/firefox-extensions-i-cant-live-without/</link><pubDate>Mon, 30 Jan 2023 08:00:00 +0000</pubDate><guid>/posts/2023/01/firefox-extensions-i-cant-live-without/</guid><description>These are a bunch of essential Firefox extensions I use:
-I don&amp;rsquo;t care about cookies: get rid of cookie warnings from almost all websites Don&amp;rsquo;t track me Google: removes the annoying link-conversion at Google Search, Maps, etc uBlock Origin: an efficient wide-spectrum content blocker Enhancer for YouTube: take control of YouTube and boost your user experience Bitwarden: a secure and free password manager for all of your devices</description><content type="html"><![CDATA[<p>These are a bunch of essential Firefox extensions I use:</p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on </title>
+        <link>/posts/</link>
+        <description>Recent content in Posts on </description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+        <lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate>
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>🇺🇸 Firefox extensions I can&#39;t live without</title>
+            <link>/posts/2023/01/firefox-extensions-i-cant-live-without/</link>
+            <pubDate>Mon, 30 Jan 2023 08:00:00 +0000</pubDate>
+            
+            <guid>/posts/2023/01/firefox-extensions-i-cant-live-without/</guid>
+            <description>These are a bunch of essential Firefox extensions I use:
+I don&amp;rsquo;t care about cookies: get rid of cookie warnings from almost all websites Don&amp;rsquo;t track me Google: removes the annoying link-conversion at Google Search, Maps, etc uBlock Origin: an efficient wide-spectrum content blocker Enhancer for YouTube: take control of YouTube and boost your user experience Bitwarden: a secure and free password manager for all of your devices </description>
+            <content type="html"><![CDATA[<p>These are a bunch of essential Firefox extensions I use:</p>
 <ul>
 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don&rsquo;t care about cookies</a>:
 get rid of cookie warnings from almost all websites</li>
@@ -12,8 +30,18 @@ take control of YouTube and boost your user experience</li>
 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/">Bitwarden</a>:
 a secure and free password manager for all of your devices</li>
 </ul>
-]]></content></item><item><title>🇺🇸 Posting to Mastodon</title><link>/posts/2022/12/posting-to-mastodon/</link><pubDate>Mon, 26 Dec 2022 00:00:00 +0000</pubDate><guid>/posts/2022/12/posting-to-mastodon/</guid><description>Since the latest twitter issues due to Space Karen, I got myself a Mastodon account and I must say that, so far, the experience has been extremely positive, possibly due to the fact that most of the people I follow are well behaved nerds who care about sharing good vibes. If you also feel like joining, please take a look at Join Mastodon and see for yourself.
-Anyway, I found myself pretty soon in the need to automate my posts.</description><content type="html"><![CDATA[<p>Since the latest twitter issues due to
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Posting to Mastodon</title>
+            <link>/posts/2022/12/posting-to-mastodon/</link>
+            <pubDate>Mon, 26 Dec 2022 00:00:00 +0000</pubDate>
+            
+            <guid>/posts/2022/12/posting-to-mastodon/</guid>
+            <description>Since the latest twitter issues due to Space Karen, I got myself a Mastodon account and I must say that, so far, the experience has been extremely positive, possibly due to the fact that most of the people I follow are well behaved nerds who care about sharing good vibes. If you also feel like joining, please take a look at Join Mastodon and see for yourself.
+Anyway, I found myself pretty soon in the need to automate my posts.</description>
+            <content type="html"><![CDATA[<p>Since the latest twitter issues due to
 <a href="https://knowyourmeme.com/memes/space-karen">Space Karen</a>, I got myself a
 <a href="https://mastodon.online/@mcaserta">Mastodon account</a> and I must say that, so
 far, the experience has been extremely positive, possibly due to the fact that
@@ -42,8 +70,18 @@ my app, select only <code>write:statuses</code> as the permissions I&rsquo;m gra
 created, the token will be visible in the app info under <em>Your access token</em>.</p>
 <p>You will also need to replace <code>mastodon.online</code> with your server&rsquo;s hostname.</p>
 <p>This is it. You&rsquo;re welcome.</p>
-]]></content></item><item><title>🇺🇸 Software I use everyday</title><link>/posts/2022/12/software-i-use-everyday/</link><pubDate>Fri, 23 Dec 2022 15:10:00 +0000</pubDate><guid>/posts/2022/12/software-i-use-everyday/</guid><description>Here is a list of software I use every day that is essential in everything I do.
-firefox web browser thunderbird email client telegram instant messaging signal secure messaging alacritty terminal emulator joplin note taking bitwarden password manager Firefox is a great browser and probably the single piece of software I spend the most time with. It&amp;rsquo;s free, open source, it descends from the ashes of Netscape and Mozilla and isn&amp;rsquo;t as evil as Chrome.</description><content type="html"><![CDATA[<p>Here is a list of software I use every day that is essential in everything I do.</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Software I use everyday</title>
+            <link>/posts/2022/12/software-i-use-everyday/</link>
+            <pubDate>Fri, 23 Dec 2022 15:10:00 +0000</pubDate>
+            
+            <guid>/posts/2022/12/software-i-use-everyday/</guid>
+            <description>Here is a list of software I use every day that is essential in everything I do.
+firefox web browser thunderbird email client telegram instant messaging signal secure messaging alacritty terminal emulator joplin note taking bitwarden password manager Firefox is a great browser and probably the single piece of software I spend the most time with. It&amp;rsquo;s free, open source, it descends from the ashes of Netscape and Mozilla and isn&amp;rsquo;t as evil as Chrome.</description>
+            <content type="html"><![CDATA[<p>Here is a list of software I use every day that is essential in everything I do.</p>
 <table>
 <thead>
 <tr>
@@ -105,9 +143,19 @@ switched to Bitwarden as it&rsquo;s also open source, free, available on all pla
 and the cloud sync feature is also free and essential to me.</p>
 <p>These are my choices. I&rsquo;m not saying they are good for you. I&rsquo;m just saying I
 couldn&rsquo;t live without them.</p>
-]]></content></item><item><title>🇺🇸 Ballads</title><link>/posts/2022/10/ballads/</link><pubDate>Mon, 17 Oct 2022 08:00:00 +0000</pubDate><guid>/posts/2022/10/ballads/</guid><description>«You can play a shoestring if you&amp;rsquo;re sincere.» — John Coltrane
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Ballads</title>
+            <link>/posts/2022/10/ballads/</link>
+            <pubDate>Mon, 17 Oct 2022 08:00:00 +0000</pubDate>
+            
+            <guid>/posts/2022/10/ballads/</guid>
+            <description>«You can play a shoestring if you&amp;rsquo;re sincere.» — John Coltrane
 I have been playing the piano since I was a little kid. Actually, I played the organ first, as my dad had a transistor one that was pretty state of the art for the time (I was born in 1974 so you get the idea).
-Anyway, I&amp;rsquo;ve been playing keyboards since forever and I&amp;rsquo;ve also picked up different instruments over the years, probably too many of them as I never really mastered one.</description><content type="html"><![CDATA[<blockquote>
+Anyway, I&amp;rsquo;ve been playing keyboards since forever and I&amp;rsquo;ve also picked up different instruments over the years, probably too many of them as I never really mastered one.</description>
+            <content type="html"><![CDATA[<blockquote>
 <p>«You can play a shoestring if you&rsquo;re sincere.» — John Coltrane</p>
 </blockquote>
 <p><img alt="album cover" src="/images/posts/ballads-album-cover.png"></p>
@@ -144,9 +192,19 @@ masterpiece through Kevin Costner, can you believe that?</p>
 <p>Anyway, I hope you like my very contrieved shoestring playing.</p>
 <p>You can listen to Ballads for free by clicking
 <a href="https://album.link/ballads">this link</a>.</p>
-]]></content></item><item><title>🇺🇸 The Last Time I Had Fun</title><link>/posts/2022/10/the-last-time-i-had-fun/</link><pubDate>Sat, 15 Oct 2022 08:00:00 +0000</pubDate><guid>/posts/2022/10/the-last-time-i-had-fun/</guid><description>«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 The Last Time I Had Fun</title>
+            <link>/posts/2022/10/the-last-time-i-had-fun/</link>
+            <pubDate>Sat, 15 Oct 2022 08:00:00 +0000</pubDate>
+            
+            <guid>/posts/2022/10/the-last-time-i-had-fun/</guid>
+            <description>«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace
 The nice thing with instrumental music is that giving titles to songs is maybe trivial and can sometimes be lots of fun.
-I had this album&amp;rsquo;s title written down in a list of possible song names that I keep in my notebook. I wasn&amp;rsquo;t really thinking about it until I started seeing the album cover showing up online after I pushed the publish button.</description><content type="html"><![CDATA[<blockquote>
+I had this album&amp;rsquo;s title written down in a list of possible song names that I keep in my notebook. I wasn&amp;rsquo;t really thinking about it until I started seeing the album cover showing up online after I pushed the publish button.</description>
+            <content type="html"><![CDATA[<blockquote>
 <p>«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace</p>
 </blockquote>
 <p><img alt="album cover" src="/images/posts/the-last-time-i-had-fun-album-cover.png"></p>
@@ -181,9 +239,19 @@ has fun the same way and most won&rsquo;t like my music, but some will, and it i
 those that I do this.</p>
 <p>You can listen to The Last Time I Had Fun for free by clicking
 <a href="https://album.link/thelasttimeihadfun">this link</a>.</p>
-]]></content></item><item><title>🇺🇸 Ear Candy</title><link>/posts/2022/07/ear-candy/</link><pubDate>Mon, 25 Jul 2022 08:00:00 +0000</pubDate><guid>/posts/2022/07/ear-candy/</guid><description>«There&amp;rsquo;s nothing remarkable about it. All one has to do is hit the right keys at the right time and the instrument plays itself.» — J. S. Bach
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Ear Candy</title>
+            <link>/posts/2022/07/ear-candy/</link>
+            <pubDate>Mon, 25 Jul 2022 08:00:00 +0000</pubDate>
+            
+            <guid>/posts/2022/07/ear-candy/</guid>
+            <description>«There&amp;rsquo;s nothing remarkable about it. All one has to do is hit the right keys at the right time and the instrument plays itself.» — J. S. Bach
 What I find amusing about quotes is that it&amp;rsquo;s very hard to find out if they are trustworthy. I like to think that the Kapellmeister might actually have said that. It&amp;rsquo;s quite plausible I think.
-Bach wrote music for the glory of his god and for the refreshment of the spirit.</description><content type="html"><![CDATA[<blockquote>
+Bach wrote music for the glory of his god and for the refreshment of the spirit.</description>
+            <content type="html"><![CDATA[<blockquote>
 <p>«There&rsquo;s nothing remarkable about it. All one has to do is hit the right keys
 at the right time and the instrument plays itself.» — J. S. Bach</p>
 </blockquote>
@@ -199,8 +267,18 @@ to be hurtful to each other.</p>
 tolerable.</p>
 <p>You can listen to Ear Candy for free by clicking
 <a href="https://album.link/ear-candy">this link</a>.</p>
-]]></content></item><item><title>🇺🇸 Until Further Notice</title><link>/posts/2022/03/until-further-notice/</link><pubDate>Wed, 23 Mar 2022 08:00:00 +0000</pubDate><guid>/posts/2022/03/until-further-notice/</guid><description>«What&amp;rsquo;s wrong with feeling nostalgic? It&amp;rsquo;s the only distraction left for those who have no faith in the future.» — &amp;ldquo;The Great Beauty&amp;rdquo; (2013, Paolo Sorrentino)
-When I was a kid, music came on vinyl. I loved it for the beautiful covers but most of all for the amount of details you could find on them. Most music labels would report lots of interesting stuff such as the performers&amp;rsquo; names and the instruments they played.</description><content type="html"><![CDATA[<blockquote>
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Until Further Notice</title>
+            <link>/posts/2022/03/until-further-notice/</link>
+            <pubDate>Wed, 23 Mar 2022 08:00:00 +0000</pubDate>
+            
+            <guid>/posts/2022/03/until-further-notice/</guid>
+            <description>«What&amp;rsquo;s wrong with feeling nostalgic? It&amp;rsquo;s the only distraction left for those who have no faith in the future.» — &amp;ldquo;The Great Beauty&amp;rdquo; (2013, Paolo Sorrentino)
+When I was a kid, music came on vinyl. I loved it for the beautiful covers but most of all for the amount of details you could find on them. Most music labels would report lots of interesting stuff such as the performers&amp;rsquo; names and the instruments they played.</description>
+            <content type="html"><![CDATA[<blockquote>
 <p>«What&rsquo;s wrong with feeling nostalgic? It&rsquo;s the only distraction left for those
 who have no faith in the future.» — &ldquo;The Great Beauty&rdquo; (2013, Paolo
 Sorrentino)</p>
@@ -265,11 +343,21 @@ hand. Most keyboardists can do that and they don&rsquo;t go bragging about it, I
 <p>Until further notice&hellip;</p>
 <p>You can listen to Until Further Notice for free by clicking
 <a href="https://album.link/untilfurthernotice">this link</a>.</p>
-]]></content></item><item><title>🇺🇸 Bruce: cryptography in Java made easy</title><link>/posts/2021/05/bruce-cryptography-in-java-made-easy/</link><pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate><guid>/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid><description>I just released Bruce, a Java library for performing cryptography.
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Bruce: cryptography in Java made easy</title>
+            <link>/posts/2021/05/bruce-cryptography-in-java-made-easy/</link>
+            <pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate>
+            
+            <guid>/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid>
+            <description>I just released Bruce, a Java library for performing cryptography.
 Here are the relevant links:
 github docs download There still is much room for improvement.
 If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.
-I hope you find this useful. I certainly have in my daily work.</description><content type="html"><![CDATA[<p><img alt="Bruce logo" src="/images/posts/bruce-logo.png"></p>
+I hope you find this useful. I certainly have in my daily work.</description>
+            <content type="html"><![CDATA[<p><img alt="Bruce logo" src="/images/posts/bruce-logo.png"></p>
 <p>I just released Bruce, a Java library for performing cryptography.</p>
 <p>Here are the relevant links:</p>
 <ul>
@@ -281,9 +369,19 @@ I hope you find this useful. I certainly have in my daily work.</description><co
 <p>If you are new to open source Java library development, a good place to start is
 taking a look at the open issues. Most of them are pretty easy.</p>
 <p>I hope you find this useful. I certainly have in my daily work.</p>
-]]></content></item><item><title>🇺🇸 Anxiety Driven Development</title><link>/posts/2021/05/anxiety-driven-development/</link><pubDate>Wed, 26 May 2021 10:46:00 +0000</pubDate><guid>/posts/2021/05/anxiety-driven-development/</guid><description>As a software developer, you will always find yourself in times when someone is putting an abysmal amount of pressure on you to complete something.
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Anxiety Driven Development</title>
+            <link>/posts/2021/05/anxiety-driven-development/</link>
+            <pubDate>Wed, 26 May 2021 10:46:00 +0000</pubDate>
+            
+            <guid>/posts/2021/05/anxiety-driven-development/</guid>
+            <description>As a software developer, you will always find yourself in times when someone is putting an abysmal amount of pressure on you to complete something.
 This is normal and not something under your control. Accept this is how every job works and take it for granted as the oxygen in the air you breathe.
-Can this be avoided? If you have an enlightened project manager/team leader/whatever, she won&amp;rsquo;t put any pressure on you.</description><content type="html"><![CDATA[<p>As a software developer, you will always find yourself in times when someone is
+Can this be avoided? If you have an enlightened project manager/team leader/whatever, she won&amp;rsquo;t put any pressure on you.</description>
+            <content type="html"><![CDATA[<p>As a software developer, you will always find yourself in times when someone is
 putting an abysmal amount of pressure on you to complete something.</p>
 <p>This is normal and not something under your control. Accept this is how every
 job works and take it for granted as the oxygen in the air you breathe.</p>
@@ -306,10 +404,20 @@ anxiety to positively drive my attention and focus.</p>
 <p>There will always be someone speaking of how the sun is not gonna rise tomorrow
 if you miss a deadline. Of course that&rsquo;s bullshit.</p>
 <p>Just do your best and you&rsquo;ll be fine, I promise.</p>
-]]></content></item><item><title>🇺🇸 The Matrix Screensaver for Commodore 64, version 2</title><link>/posts/2021/05/the-matrix-screensaver-for-commodore-64-version-2/</link><pubDate>Thu, 20 May 2021 12:19:00 +0000</pubDate><guid>/posts/2021/05/the-matrix-screensaver-for-commodore-64-version-2/</guid><description>After trying to implement the digital rain algorithm in 6502 assembly and failing miserably, I decided to try the cc65 toolkit and write some C code.
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 The Matrix Screensaver for Commodore 64, version 2</title>
+            <link>/posts/2021/05/the-matrix-screensaver-for-commodore-64-version-2/</link>
+            <pubDate>Thu, 20 May 2021 12:19:00 +0000</pubDate>
+            
+            <guid>/posts/2021/05/the-matrix-screensaver-for-commodore-64-version-2/</guid>
+            <description>After trying to implement the digital rain algorithm in 6502 assembly and failing miserably, I decided to try the cc65 toolkit and write some C code.
 It takes a while to load but what you are seeing above is a live emulation of the screensaver software.
 Once it&amp;rsquo;s loaded, the following commands are available through the keyboard:
-key use A amber mode B binary mode D dna mode F full charset mode (default) G green mode (default) H hex mode L lgbtq mode Q quit You can take a look at the source code in my C64 Playground repository on github and download the prg image for your retro emulation enjoyment.</description><content type="html"><![CDATA[
+key use A amber mode B binary mode D dna mode F full charset mode (default) G green mode (default) H hex mode L lgbtq mode Q quit You can take a look at the source code in my C64 Playground repository on github and download the prg image for your retro emulation enjoyment.</description>
+            <content type="html"><![CDATA[
 
 
 <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
@@ -416,10 +524,20 @@ Marco.</p>
       ></iframe>
     </div>
 
-]]></content></item><item><title>🇺🇸 The Matrix Screensaver for Commodore 64</title><link>/posts/2021/05/the-matrix-screensaver-for-commodore-64/</link><pubDate>Tue, 11 May 2021 12:19:00 +0000</pubDate><guid>/posts/2021/05/the-matrix-screensaver-for-commodore-64/</guid><description>I am trying to learn some 6502 assembly and this is the result of one of my first experiments.
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 The Matrix Screensaver for Commodore 64</title>
+            <link>/posts/2021/05/the-matrix-screensaver-for-commodore-64/</link>
+            <pubDate>Tue, 11 May 2021 12:19:00 +0000</pubDate>
+            
+            <guid>/posts/2021/05/the-matrix-screensaver-for-commodore-64/</guid>
+            <description>I am trying to learn some 6502 assembly and this is the result of one of my first experiments.
 It takes a while to load but what you are seeing above is a live emulation of my screensaver software.
 Once it&amp;rsquo;s loaded, the following commands are available through the keyboard:
-key use B binary display mode X hex display mode R random display mode (default) N increments border color M increments background color Q quit You can take a look at the source code in my C64 Playground repository on github and download the D64 image for your retro emulation enjoyment.</description><content type="html"><![CDATA[
+key use B binary display mode X hex display mode R random display mode (default) N increments border color M increments background color Q quit You can take a look at the source code in my C64 Playground repository on github and download the D64 image for your retro emulation enjoyment.</description>
+            <content type="html"><![CDATA[
 
 
 <!-- the canvas *must not* have any border or padding, or mouse coords will be wrong -->
@@ -495,10 +613,20 @@ my hero.</p>
 <p>Speaking of heroes, this was obviously heavily inspired by the
 <a href="https://www.jwz.org/xscreensaver/">xmatrix</a> screensaver by the legendary
 <a href="https://www.jwz.org/">Jamie Zawinski</a>.</p>
-]]></content></item><item><title>🇮🇹 Esempio di Time Series Data e CompletableFuture in Java</title><link>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</link><pubDate>Fri, 05 Feb 2021 08:19:00 +0000</pubDate><guid>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</guid><description>Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇮🇹 Esempio di Time Series Data e CompletableFuture in Java</title>
+            <link>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</link>
+            <pubDate>Fri, 05 Feb 2021 08:19:00 +0000</pubDate>
+            
+            <guid>/posts/2021/02/esempio-di-time-series-data-e-completablefuture-in-java/</guid>
+            <description>Esempio di Time Series Data e CompletableFuture in Java Il codice completo di tutti gli esempi si trova qui.
 Come lanciare il programma mvn clean compile verify exec:java Prefazione Supponiamo di voler calcolare un indice di qualità dell&amp;rsquo;aria basato su due valori:
 temperatura dell&amp;rsquo;aria percentuale di monossido di carbonio nell&amp;rsquo;aria Dati i seguenti simboli:
-simbolo significato AQi indice di qualità dell&amp;rsquo;aria T temperatura dell&amp;rsquo;aria in gradi Celsius Tm temperatura massima dell&amp;rsquo;aria in C° C percentuale di monossido di carbonio nell&amp;rsquo;aria Possiamo calcolare l&amp;rsquo;AQi con questa specie di formula:</description><content type="html"><![CDATA[<h1 id="esempio-di-time-series-data-e-completablefuture-in-java">Esempio di Time Series Data e CompletableFuture in Java</h1>
+simbolo significato AQi indice di qualità dell&amp;rsquo;aria T temperatura dell&amp;rsquo;aria in gradi Celsius Tm temperatura massima dell&amp;rsquo;aria in C° C percentuale di monossido di carbonio nell&amp;rsquo;aria Possiamo calcolare l&amp;rsquo;AQi con questa specie di formula:</description>
+            <content type="html"><![CDATA[<h1 id="esempio-di-time-series-data-e-completablefuture-in-java">Esempio di Time Series Data e CompletableFuture in Java</h1>
 <p>Il codice completo di tutti gli esempi si trova
 <a href="https://github.com/mcaserta/time-series-concurrency-example">qui</a>.</p>
 <h2 id="come-lanciare-il-programma">Come lanciare il programma</h2>
@@ -1513,10 +1641,20 @@ sexy. Penso che <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsqu
 </li>
 </ol>
 </div>
-]]></content></item><item><title>🇺🇸 Time Series Data and CompletableFuture example in Java</title><link>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</link><pubDate>Thu, 04 Feb 2021 18:19:00 +0000</pubDate><guid>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</guid><description>Time Series Data and CompletableFuture example in Java Full code for all the examples can be found here.
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 Time Series Data and CompletableFuture example in Java</title>
+            <link>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</link>
+            <pubDate>Thu, 04 Feb 2021 18:19:00 +0000</pubDate>
+            
+            <guid>/posts/2021/02/time-series-data-and-completablefuture-example-in-java/</guid>
+            <description>Time Series Data and CompletableFuture example in Java Full code for all the examples can be found here.
 How to run the program mvn clean compile verify exec:java Preface Suppose we want to calculate an air quality index based on two values:
 air temperature percentage of carbon monoxide in the air Given the following symbols:
-symbol meaning AQi air quality index T air temperature in Celsius degrees Tm maximum air temperature in C° C percentage of carbon monoxide in the air We may calculate the AQi with the following sorry excuse of a formula:</description><content type="html"><![CDATA[<h1 id="time-series-data-and-completablefuture-example-in-java">Time Series Data and CompletableFuture example in Java</h1>
+symbol meaning AQi air quality index T air temperature in Celsius degrees Tm maximum air temperature in C° C percentage of carbon monoxide in the air We may calculate the AQi with the following sorry excuse of a formula:</description>
+            <content type="html"><![CDATA[<h1 id="time-series-data-and-completablefuture-example-in-java">Time Series Data and CompletableFuture example in Java</h1>
 <p>Full code for all the examples can be found
 <a href="https://github.com/mcaserta/time-series-concurrency-example">here</a>.</p>
 <h2 id="how-to-run-the-program">How to run the program</h2>
@@ -2506,7 +2644,17 @@ think <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsquo;m a weir
 </li>
 </ol>
 </div>
-]]></content></item><item><title>🇮🇹 Lettera aperta sulla salute mentale</title><link>/posts/2020/02/lettera-aperta-sulla-salute-mentale/</link><pubDate>Sat, 01 Feb 2020 08:45:00 +0000</pubDate><guid>/posts/2020/02/lettera-aperta-sulla-salute-mentale/</guid><description>Mi sono detto tante volte: dovrei scriverne. Ed altrettante volte mi sono detto ma chi te lo fa fare? A chi può servire? Diranno che sei in cerca di attenzioni e vuoi elemosinare commiserazione. Non ho neanche un lieto fine, una morale, un qualche straccio di messaggio positivo. L’unica cosa che posso dire è che si sopravvive. Fra alti e bassi ma si sopravvive. Mi sono sempre chiesto se le persone che vivono una vita diciamo così “normale” si rendono conto della fortuna che hanno a poter uscire di casa, andare a cena in un posto sconosciuto, prendere un treno, un aereo, trascorrere addirittura giorni lontano dal proprio tetto.</description><content type="html"><![CDATA[<p>Mi sono detto tante volte: dovrei scriverne. Ed altrettante volte mi sono detto
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇮🇹 Lettera aperta sulla salute mentale</title>
+            <link>/posts/2020/02/lettera-aperta-sulla-salute-mentale/</link>
+            <pubDate>Sat, 01 Feb 2020 08:45:00 +0000</pubDate>
+            
+            <guid>/posts/2020/02/lettera-aperta-sulla-salute-mentale/</guid>
+            <description>Mi sono detto tante volte: dovrei scriverne. Ed altrettante volte mi sono detto ma chi te lo fa fare? A chi può servire? Diranno che sei in cerca di attenzioni e vuoi elemosinare commiserazione. Non ho neanche un lieto fine, una morale, un qualche straccio di messaggio positivo. L’unica cosa che posso dire è che si sopravvive. Fra alti e bassi ma si sopravvive. Mi sono sempre chiesto se le persone che vivono una vita diciamo così “normale” si rendono conto della fortuna che hanno a poter uscire di casa, andare a cena in un posto sconosciuto, prendere un treno, un aereo, trascorrere addirittura giorni lontano dal proprio tetto.</description>
+            <content type="html"><![CDATA[<p>Mi sono detto tante volte: dovrei scriverne. Ed altrettante volte mi sono detto
 ma chi te lo fa fare? A chi può servire? Diranno che sei in cerca di attenzioni
 e vuoi elemosinare commiserazione. Non ho neanche un lieto fine, una morale, un
 qualche straccio di messaggio positivo. L’unica cosa che posso dire è che si
@@ -2572,9 +2720,19 @@ liberi di pensarlo. Grazie. E per tutti quelli che vivono la mia stessa
 condizione: mi dispiace, in bocca al lupo e, se siete abbastanza fortunati,
 trovatevi qualcuno che vi sopporti e vi supporti perché è l’unica cosa che fa
 davvero la differenza.</p>
-]]></content></item><item><title>🇮🇹 L'Orecchio Musicale: Come Funziona e Come Svilupparlo</title><link>/posts/2018/10/lorecchio-musicale-come-funziona-e-come-svilupparlo/</link><pubDate>Sun, 28 Oct 2018 18:22:00 +0000</pubDate><guid>/posts/2018/10/lorecchio-musicale-come-funziona-e-come-svilupparlo/</guid><description>«Think of your ears as eyes.» — Keith Jarrett1
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇮🇹 L&#39;Orecchio Musicale: Come Funziona e Come Svilupparlo</title>
+            <link>/posts/2018/10/lorecchio-musicale-come-funziona-e-come-svilupparlo/</link>
+            <pubDate>Sun, 28 Oct 2018 18:22:00 +0000</pubDate>
+            
+            <guid>/posts/2018/10/lorecchio-musicale-come-funziona-e-come-svilupparlo/</guid>
+            <description>«Think of your ears as eyes.» — Keith Jarrett1
 Come Funziona Se la musica è l’arte dei suoni, l’ear training è l&amp;rsquo;allenamento dell&amp;rsquo;orecchio musicale. Cosa si intende con orecchio musicale? L&amp;rsquo;udito ha un aspetto passivo più ovvio che consiste nella capacità di riconoscere i suoni, ma ha anche un aspetto attivo in cui il musicista improvvisa una frase ed è istantaneamente in grado di produrla sul proprio strumento.
-Ma di questo parleremo più avanti.</description><content type="html"><![CDATA[<blockquote>
+Ma di questo parleremo più avanti.</description>
+            <content type="html"><![CDATA[<blockquote>
 <p>«Think of your ears as eyes.» — Keith Jarrett<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
 </blockquote>
 <h2 id="come-funziona">Come Funziona</h2>
@@ -3263,12 +3421,22 @@ di legno e materie plastiche sempre più eco-sostenibili.&#160;<a href="#fnref:3
 </li>
 </ol>
 </div>
-]]></content></item><item><title>🇮🇹 Kind of papera che non galleggia</title><link>/posts/2018/10/kind-of-papera-che-non-galleggia/</link><pubDate>Thu, 18 Oct 2018 14:01:00 +0000</pubDate><guid>/posts/2018/10/kind-of-papera-che-non-galleggia/</guid><description>«In principio era il verbo.»
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇮🇹 Kind of papera che non galleggia</title>
+            <link>/posts/2018/10/kind-of-papera-che-non-galleggia/</link>
+            <pubDate>Thu, 18 Oct 2018 14:01:00 +0000</pubDate>
+            
+            <guid>/posts/2018/10/kind-of-papera-che-non-galleggia/</guid>
+            <description>«In principio era il verbo.»
 «Ah, io credevo il soggetto. Ma infatti, se senti il Maestro Yoda&amp;hellip;»
 «Caserta, fai poco lo spiritoso che vojo vedè come ve la cavate cor riscaldamento globale.»
 «Eh vabbè, moriremo tutti, che vuoi che sia? Mica sarebbe la prima volta.»
 (a bassa voce): &amp;ldquo;Questo moo mettete nel terzo girone.»
-«Guarda che t&amp;rsquo;ho sentito, sa? Al terzo girone1 so&amp;rsquo; tutti amici miei. Come niente t&amp;rsquo;arrivo in finale e vinco ai rigori.</description><content type="html"><![CDATA[<p>«In principio era il verbo.»</p>
+«Guarda che t&amp;rsquo;ho sentito, sa? Al terzo girone1 so&amp;rsquo; tutti amici miei. Come niente t&amp;rsquo;arrivo in finale e vinco ai rigori.</description>
+            <content type="html"><![CDATA[<p>«In principio era il verbo.»</p>
 <p>«Ah, io credevo il soggetto. Ma infatti, se senti il Maestro Yoda&hellip;»</p>
 <p>«Caserta, fai poco lo spiritoso che vojo vedè come ve la cavate cor
 riscaldamento globale.»</p>
@@ -3325,8 +3493,18 @@ me piaceva il romano, vabbè?»</p>
 </li>
 </ol>
 </div>
-]]></content></item><item><title>🇺🇸 An Introduction to Time Representation, Serialization and Management in Software</title><link>/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</link><pubDate>Mon, 15 Apr 2013 14:19:00 +0000</pubDate><guid>/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</guid><description>Most issues in software development usually arise from poor, inconsistent knowledge of the domain at hand. A topic apparently as simple as time representation, serialization and management can easily cause a number of problems both to the neophyte and to the experienced programmer.
-In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a Time Lord to grasp the very simple few concepts needed not to incur into time management hell.</description><content type="html"><![CDATA[<p>Most issues in software development usually arise from poor, inconsistent
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 An Introduction to Time Representation, Serialization and Management in Software</title>
+            <link>/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</link>
+            <pubDate>Mon, 15 Apr 2013 14:19:00 +0000</pubDate>
+            
+            <guid>/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</guid>
+            <description>Most issues in software development usually arise from poor, inconsistent knowledge of the domain at hand. A topic apparently as simple as time representation, serialization and management can easily cause a number of problems both to the neophyte and to the experienced programmer.
+In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a Time Lord to grasp the very simple few concepts needed not to incur into time management hell.</description>
+            <content type="html"><![CDATA[<p>Most issues in software development usually arise from poor, inconsistent
 knowledge of the domain at hand. A topic apparently as simple as time
 representation, serialization and management can easily cause a number of
 problems both to the neophyte and to the experienced programmer.</p>
@@ -3553,6 +3731,7 @@ functionality.</p>
 <li><a href="https://yro.slashdot.org/story/24/03/09/2311200/california-state-legislator-proposes-ending-daylight-saving-time">California State Legislator Proposes Ending DST</a></li>
 <li><a href="https://arstechnica.com/features/2024/03/the-science-behind-why-people-hate-daylight-savings-time-so-much/">The science behind why people hate Daylight Saving Time so much</a></li>
 <li><a href="https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/">Storing UTC is not a silver bullet</a></li>
+<li><a href="https://science.slashdot.org/story/24/08/15/0145200/researchers-figure-out-how-to-keep-clocks-on-the-earth-moon-in-sync"> Researchers Figure Out How To Keep Clocks On the Earth, Moon In Sync 13</a></li>
 </ul>
 <h2 id="memes">Memes</h2>
 <p><img alt="Elon Musk: &ldquo;I&rsquo;m putting people on Mars!&rdquo;, Developers: &ldquo;Fantastic, more\ntimezones to support&rdquo;." src="/images/posts/mars-timezone.png"></p>
@@ -3583,8 +3762,18 @@ functionality.</p>
 </li>
 </ol>
 </div>
-]]></content></item><item><title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title><link>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link><pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate><guid>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid><description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.
-Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description><content type="html"><![CDATA[<p>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇮🇹 Scrivi messaggi di log decenti, altrimenti Gesù piange</title>
+            <link>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</link>
+            <pubDate>Fri, 02 Oct 2009 08:45:00 +0000</pubDate>
+            
+            <guid>/posts/2009/10/scrivi-messaggi-di-log-decenti-altrimenti-ges%C3%B9-piange/</guid>
+            <description>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello scrivere messaggi di log. Dico apparentemente oscura perché si tratta di un argomento apparentemente banale ma che in realtà si rivela complesso.
+Trattandosi di osservazioni generali, queste andrebbero prese con una dose di buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</description>
+            <content type="html"><![CDATA[<p>Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello
 scrivere messaggi di log. Dico <em>apparentemente oscura</em> perché si tratta di un
 argomento apparentemente banale ma che in realtà si rivela complesso.</p>
 <p>Trattandosi di osservazioni generali, queste andrebbero prese con una dose di
@@ -3703,9 +3892,19 @@ formattazione dei messaggi.</p>
 tracciare ad esempio timestamp al millisecondo, nomi di classi, metodi e nome
 del thread. Il nome del thread è essenziale in un’applicazione concorrente per
 seguire il flusso di esecuzione.</p>
-]]></content></item><item><title>🇺🇸 How to extract a filesystem from a disk image</title><link>/posts/2009/04/how-to-extract-a-filesystem-from-a-disk-image/</link><pubDate>Sat, 18 Apr 2009 17:10:00 +0000</pubDate><guid>/posts/2009/04/how-to-extract-a-filesystem-from-a-disk-image/</guid><description>You need to backup an entire hard disk to a single file. Supposing your disk is at /dev/hda and the backup file is image-file, you’d do:
+]]></content>
+        </item>
+        
+        <item>
+            <title>🇺🇸 How to extract a filesystem from a disk image</title>
+            <link>/posts/2009/04/how-to-extract-a-filesystem-from-a-disk-image/</link>
+            <pubDate>Sat, 18 Apr 2009 17:10:00 +0000</pubDate>
+            
+            <guid>/posts/2009/04/how-to-extract-a-filesystem-from-a-disk-image/</guid>
+            <description>You need to backup an entire hard disk to a single file. Supposing your disk is at /dev/hda and the backup file is image-file, you’d do:
 # cat /dev/hda &amp;gt; image-file or
-# dd if=/dev/hda of=image-file The file backup you get will hold a copy of every single bit from the hard disk. This means that you also have a copy of the MBR in the first 512 bytes of the file.</description><content type="html"><![CDATA[<p>You need to backup an entire hard disk to a single file. Supposing your disk is
+# dd if=/dev/hda of=image-file The file backup you get will hold a copy of every single bit from the hard disk. This means that you also have a copy of the MBR in the first 512 bytes of the file.</description>
+            <content type="html"><![CDATA[<p>You need to backup an entire hard disk to a single file. Supposing your disk is
 at <code>/dev/hda</code> and the backup file is <code>image-file</code>, you’d do:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># cat /dev/hda &gt; image-file</span>
 </span></span></code></pre></div><p>or</p>
@@ -3732,4 +3931,8 @@ block 4267680 and is 137985600 blocks long. This translates to:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># mount -t ext3 -o loop partition3-file /mnt/hack</span>
 </span></span></code></pre></div><p>Also, you can avoid using dd to extract the partition file by passing the
 <code>offset</code> option to mount.</p>
-]]></content></item></channel></rss>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

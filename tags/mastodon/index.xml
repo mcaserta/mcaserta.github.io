@@ -14,7 +14,7 @@
       <link>/posts/2022/12/posting-to-mastodon/</link>
       <pubDate>Mon, 26 Dec 2022 00:00:00 +0000</pubDate>
       <guid>/posts/2022/12/posting-to-mastodon/</guid>
-      <description>Since the latest twitter issues due to Space Karen, I got myself a Mastodon account and I must say that, so far, the experience has been extremely positive, possibly due to the fact that most of the people I follow are well behaved nerds who care about sharing good vibes. If you also feel like joining, please take a look at Join Mastodon and see for yourself.&#xA;Anyway, I found myself pretty soon in the need to automate my posts.</description>
+      <description>&lt;p&gt;Since the latest twitter issues due to&#xA;&lt;a href=&#34;https://knowyourmeme.com/memes/space-karen&#34;&gt;Space Karen&lt;/a&gt;, I got myself a&#xA;&lt;a href=&#34;https://mastodon.online/@mcaserta&#34;&gt;Mastodon account&lt;/a&gt; and I must say that, so&#xA;far, the experience has been extremely positive, possibly due to the fact that&#xA;most of the people I follow are well behaved nerds who care about sharing good&#xA;vibes. If you also feel like joining, please take a look at&#xA;&lt;a href=&#34;https://joinmastodon.org/&#34;&gt;Join Mastodon&lt;/a&gt; and see for yourself.&lt;/p&gt;&#xA;&lt;p&gt;Anyway, I found myself pretty soon in the need to automate my posts. I have a&#xA;&lt;a href=&#34;https://t.me/mirkolovesmusic&#34;&gt;telegram channel&lt;/a&gt; where I post music I like and I&#xA;wanted to automate cross posting from there to my Mastodon account and I did it&#xA;with &lt;a href=&#34;https://ifttt.com&#34;&gt;IFTTT&lt;/a&gt; using a WebHook component for Mastodon.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

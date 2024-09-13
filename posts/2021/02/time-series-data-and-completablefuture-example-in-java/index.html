@@ -9,7 +9,8 @@
 <meta name="description" content="Time Series Data and CompletableFuture example in Java Full code for all the examples can be found here.
 How to run the program mvn clean compile verify exec:java Preface Suppose we want to calculate an air quality index based on two values:
 air temperature percentage of carbon monoxide in the air Given the following symbols:
-symbol meaning AQi air quality index T air temperature in Celsius degrees Tm maximum air temperature in C° C percentage of carbon monoxide in the air We may calculate the AQi with the following sorry excuse of a formula:" />
+symbol meaning AQi air quality index T air temperature in Celsius degrees Tm maximum air temperature in C° C percentage of carbon monoxide in the air We may calculate the AQi with the following sorry excuse of a formula:
+" />
 <meta name="keywords" content=", time-series-data, time-series, completablefuture, java, concurrency, software development" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -178,30 +179,30 @@ symbol meaning AQi air quality index T air temperature in Celsius degrees Tm max
 </ul>
 <p>Given the following symbols:</p>
 <table>
-<thead>
-<tr>
-<th>symbol</th>
-<th>meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>AQi</code></td>
-<td>air quality index</td>
-</tr>
-<tr>
-<td><code>T</code></td>
-<td>air temperature in Celsius degrees</td>
-</tr>
-<tr>
-<td><code>Tm</code></td>
-<td>maximum air temperature in C°</td>
-</tr>
-<tr>
-<td><code>C</code></td>
-<td>percentage of carbon monoxide in the air</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">symbol</th>
+          <th style="text-align: left">meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>AQi</code></td>
+          <td style="text-align: left">air quality index</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>T</code></td>
+          <td style="text-align: left">air temperature in Celsius degrees</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>Tm</code></td>
+          <td style="text-align: left">maximum air temperature in C°</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>C</code></td>
+          <td style="text-align: left">percentage of carbon monoxide in the air</td>
+      </tr>
+  </tbody>
 </table>
 <p>We may calculate the <code>AQi</code> with the following sorry excuse of a formula:</p>
 <!-- raw HTML omitted -->
@@ -236,46 +237,46 @@ unscientific but bear with me for the sake of argumentation, please.</p>
 </span></span><span style="display:flex;"><span>12.75000000000000000000
 </span></span></code></pre></div><p>From this we can derive the following totally unscientific table:</p>
 <table>
-<thead>
-<tr>
-<th>AQi</th>
-<th>meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>125 to ∞</td>
-<td>horrible death</td>
-</tr>
-<tr>
-<td>100 to 125</td>
-<td>painful death</td>
-</tr>
-<tr>
-<td>75 to 100</td>
-<td>death</td>
-</tr>
-<tr>
-<td>55 to 75</td>
-<td>it is acceptable<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
-</tr>
-<tr>
-<td>30 to 55</td>
-<td>this is fine<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
-</tr>
-<tr>
-<td>15 to 30</td>
-<td>fine and dandy</td>
-</tr>
-<tr>
-<td>12.75 to 15</td>
-<td>pretty cool</td>
-</tr>
-<tr>
-<td>-∞ to 12.75</td>
-<td>welcome to Yakutsk, probably</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">AQi</th>
+          <th style="text-align: left">meaning</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">125 to ∞</td>
+          <td style="text-align: left">horrible death</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">100 to 125</td>
+          <td style="text-align: left">painful death</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">75 to 100</td>
+          <td style="text-align: left">death</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">55 to 75</td>
+          <td style="text-align: left">it is acceptable<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">30 to 55</td>
+          <td style="text-align: left">this is fine<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+      </tr>
+      <tr>
+          <td style="text-align: left">15 to 30</td>
+          <td style="text-align: left">fine and dandy</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">12.75 to 15</td>
+          <td style="text-align: left">pretty cool</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">-∞ to 12.75</td>
+          <td style="text-align: left">welcome to Yakutsk, probably</td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="service-providers">Service providers</h2>
 <p>Suppose we have internet services that expose temperature and carbon monoxide
@@ -284,74 +285,74 @@ series data<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-note
 <p>So, for instance, we might call a temperature monitoring service, and it would
 respond with time series data like this:</p>
 <table>
-<thead>
-<tr>
-<th>timestamp</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2021-01-20T08:00:00Z</code></td>
-<td><code>10.1</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>10.3</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:05:00Z</code></td>
-<td><code>10.7</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>10.9</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:19Z</code></td>
-<td><code>11.0</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:42Z</code></td>
-<td><code>11.1</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:09:00Z</code></td>
-<td><code>11.3</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:00:00Z</code></td>
+          <td style="text-align: left"><code>10.1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>10.3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
+          <td style="text-align: left"><code>10.7</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>10.9</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
+          <td style="text-align: left"><code>11.0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
+          <td style="text-align: left"><code>11.1</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
+          <td style="text-align: left"><code>11.3</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>A carbon monoxide percentage monitoring service might instead respond with data
 that looks like this:</p>
 <table>
-<thead>
-<tr>
-<th>timestamp</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2021-01-20T08:01:00Z</code></td>
-<td><code>2.0</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>2.3</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>2.8</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:07:00Z</code></td>
-<td><code>2.9</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:08:00Z</code></td>
-<td><code>3.3</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
+          <td style="text-align: left"><code>2.0</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>2.3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>2.8</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
+          <td style="text-align: left"><code>2.9</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
+          <td style="text-align: left"><code>3.3</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>Please note that I have sorted the data by timestamp to make it a bit more
 readable, but you shouldn&rsquo;t make assumptions on the sort order of the data
@@ -363,88 +364,88 @@ returned by an external provider. Not that this is of any importance here as&hel
 <li>sorting by timestamp</li>
 </ol>
 <table>
-<thead>
-<tr>
-<th>id</th>
-<th>timestamp</th>
-<th>value</th>
-<th>type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>1</code></td>
-<td><code>2021-01-20T08:00:00Z</code></td>
-<td><code>10.1</code></td>
-<td><code>T</code></td>
-</tr>
-<tr>
-<td><code>2</code></td>
-<td><code>2021-01-20T08:01:00Z</code></td>
-<td><code> 2.0</code></td>
-<td><code>C</code></td>
-</tr>
-<tr>
-<td><code>3</code></td>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>10.3</code></td>
-<td><code>T</code></td>
-</tr>
-<tr>
-<td><code>4</code></td>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code> 2.3</code></td>
-<td><code>C</code></td>
-</tr>
-<tr>
-<td><code>5</code></td>
-<td><code>2021-01-20T08:05:00Z</code></td>
-<td><code>10.7</code></td>
-<td><code>T</code></td>
-</tr>
-<tr>
-<td><code>6</code></td>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>10.9</code></td>
-<td><code>T</code></td>
-</tr>
-<tr>
-<td><code>7</code></td>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code> 2.8</code></td>
-<td><code>C</code></td>
-</tr>
-<tr>
-<td><code>8</code></td>
-<td><code>2021-01-20T08:06:19Z</code></td>
-<td><code>11.0</code></td>
-<td><code>T</code></td>
-</tr>
-<tr>
-<td><code>9</code></td>
-<td><code>2021-01-20T08:06:42Z</code></td>
-<td><code>11.1</code></td>
-<td><code>T</code></td>
-</tr>
-<tr>
-<td><code>10</code></td>
-<td><code>2021-01-20T08:07:00Z</code></td>
-<td><code> 2.9</code></td>
-<td><code>C</code></td>
-</tr>
-<tr>
-<td><code>11</code></td>
-<td><code>2021-01-20T08:08:00Z</code></td>
-<td><code> 3.3</code></td>
-<td><code>C</code></td>
-</tr>
-<tr>
-<td><code>12</code></td>
-<td><code>2021-01-20T08:09:00Z</code></td>
-<td><code>11.3</code></td>
-<td><code>T</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">id</th>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+          <th style="text-align: left">type</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>1</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:00:00Z</code></td>
+          <td style="text-align: left"><code>10.1</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
+          <td style="text-align: left"><code> 2.0</code></td>
+          <td style="text-align: left"><code>C</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>3</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>10.3</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>4</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code> 2.3</code></td>
+          <td style="text-align: left"><code>C</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>5</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
+          <td style="text-align: left"><code>10.7</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>6</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>10.9</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>7</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code> 2.8</code></td>
+          <td style="text-align: left"><code>C</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>8</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
+          <td style="text-align: left"><code>11.0</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>9</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
+          <td style="text-align: left"><code>11.1</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>10</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
+          <td style="text-align: left"><code> 2.9</code></td>
+          <td style="text-align: left"><code>C</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>11</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
+          <td style="text-align: left"><code> 3.3</code></td>
+          <td style="text-align: left"><code>C</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>12</code></td>
+          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
+          <td style="text-align: left"><code>11.3</code></td>
+          <td style="text-align: left"><code>T</code></td>
+      </tr>
+  </tbody>
 </table>
 <blockquote>
 <p>type: T is temperature and C is carbon monoxide percentage</p>
@@ -460,75 +461,75 @@ we associate with the timestamp in id <code>2</code>, as that is the moment our 
 refers to. Our first <code>AQi</code> entry in the resulting time series should now look
 like this:</p>
 <table>
-<thead>
-<tr>
-<th>timestamp</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2021-01-20T08:01:00Z</code></td>
-<td><code>13.625</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
+          <td style="text-align: left"><code>13.625</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>From now on, our calculation can be applied to every remaining element in the
 time series, keeping in mind that we must correlate each value with the most
 recent value of the other type. In other words:</p>
 <table>
-<thead>
-<tr>
-<th>for id</th>
-<th>pick values from id</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2</code></td>
-<td><code>1, 2</code></td>
-</tr>
-<tr>
-<td><code>3</code></td>
-<td><code>2, 3</code></td>
-</tr>
-<tr>
-<td><code>4</code></td>
-<td><code>3, 4</code></td>
-</tr>
-<tr>
-<td><code>5</code></td>
-<td><code>4, 5</code></td>
-</tr>
-<tr>
-<td><code>6</code></td>
-<td><code>4, 6</code></td>
-</tr>
-<tr>
-<td><code>7</code></td>
-<td><code>6, 7</code></td>
-</tr>
-<tr>
-<td><code>8</code></td>
-<td><code>7, 8</code></td>
-</tr>
-<tr>
-<td><code>9</code></td>
-<td><code>7, 9</code></td>
-</tr>
-<tr>
-<td><code>10</code></td>
-<td><code>9, 10</code></td>
-</tr>
-<tr>
-<td><code>11</code></td>
-<td><code>9, 11</code></td>
-</tr>
-<tr>
-<td><code>12</code></td>
-<td><code>11, 12</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">for id</th>
+          <th style="text-align: left">pick values from id</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2</code></td>
+          <td style="text-align: left"><code>1, 2</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>3</code></td>
+          <td style="text-align: left"><code>2, 3</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>4</code></td>
+          <td style="text-align: left"><code>3, 4</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>5</code></td>
+          <td style="text-align: left"><code>4, 5</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>6</code></td>
+          <td style="text-align: left"><code>4, 6</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>7</code></td>
+          <td style="text-align: left"><code>6, 7</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>8</code></td>
+          <td style="text-align: left"><code>7, 8</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>9</code></td>
+          <td style="text-align: left"><code>7, 9</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>10</code></td>
+          <td style="text-align: left"><code>9, 10</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>11</code></td>
+          <td style="text-align: left"><code>9, 11</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>12</code></td>
+          <td style="text-align: left"><code>11, 12</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>You can think of this kind of motion as a
 <a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time window</a>
@@ -637,58 +638,58 @@ for our specific <code>T</code> and <code>C</code> measures at each step<sup id=
                                                                        |&lt;----------&gt;|
 </code></pre><p>Given the above, our complete resulting time series for the <code>AQi</code> is:</p>
 <table>
-<thead>
-<tr>
-<th>timestamp</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2021-01-20T08:01:00Z</code></td>
-<td><code>13.625</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>13.875</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>14.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:05:00Z</code></td>
-<td><code>14.525</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>14.775</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>15.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:19Z</code></td>
-<td><code>15.150</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:42Z</code></td>
-<td><code>15.275</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:07:00Z</code></td>
-<td><code>15.325</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:08:00Z</code></td>
-<td><code>15.525</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:09:00Z</code></td>
-<td><code>15.775</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
+          <td style="text-align: left"><code>13.625</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>13.875</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>14.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
+          <td style="text-align: left"><code>14.525</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>14.775</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>15.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
+          <td style="text-align: left"><code>15.150</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
+          <td style="text-align: left"><code>15.275</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
+          <td style="text-align: left"><code>15.325</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
+          <td style="text-align: left"><code>15.525</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
+          <td style="text-align: left"><code>15.775</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>If you&rsquo;ve looked closely, you might have noticed that we have a couple duplicate
 timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
@@ -712,50 +713,50 @@ as the first computation was using ids <code>4</code> and <code>6</code> while t
 considering ids <code>6</code> and <code>7</code> which are fresher than the timestamp in id <code>4</code>.</p>
 <p>So we erase a couple entries, and our clean result set now looks like this:</p>
 <table>
-<thead>
-<tr>
-<th>timestamp</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2021-01-20T08:01:00Z</code></td>
-<td><code>13.625</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>14.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:05:00Z</code></td>
-<td><code>14.525</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>15.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:19Z</code></td>
-<td><code>15.150</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:42Z</code></td>
-<td><code>15.275</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:07:00Z</code></td>
-<td><code>15.325</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:08:00Z</code></td>
-<td><code>15.525</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:09:00Z</code></td>
-<td><code>15.775</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
+          <td style="text-align: left"><code>13.625</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>14.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
+          <td style="text-align: left"><code>14.525</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>15.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
+          <td style="text-align: left"><code>15.150</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
+          <td style="text-align: left"><code>15.275</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
+          <td style="text-align: left"><code>15.325</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
+          <td style="text-align: left"><code>15.525</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
+          <td style="text-align: left"><code>15.775</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>Just as an equation is an excuse to brush up on some
 <a href="https://www.latex-project.org/">LaTeX</a>, a good time series is an excellent
@@ -764,50 +765,50 @@ candidate for <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
 <p>Real data is of course much more chaotic than this, and you might want to
 normalize the result by an arbitrary time interval, say one minute:</p>
 <table>
-<thead>
-<tr>
-<th>timestamp</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>2021-01-20T08:01:00Z</code></td>
-<td><code>13.625</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:02:00Z</code></td>
-<td><code>14.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:03:00Z</code></td>
-<td><code>14.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:04:00Z</code></td>
-<td><code>14.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:05:00Z</code></td>
-<td><code>14.525</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:06:00Z</code></td>
-<td><code>15.025</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:07:00Z</code></td>
-<td><code>15.325</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:08:00Z</code></td>
-<td><code>15.525</code></td>
-</tr>
-<tr>
-<td><code>2021-01-20T08:09:00Z</code></td>
-<td><code>15.775</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">timestamp</th>
+          <th style="text-align: left">value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
+          <td style="text-align: left"><code>13.625</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
+          <td style="text-align: left"><code>14.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:03:00Z</code></td>
+          <td style="text-align: left"><code>14.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:04:00Z</code></td>
+          <td style="text-align: left"><code>14.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
+          <td style="text-align: left"><code>14.525</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
+          <td style="text-align: left"><code>15.025</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
+          <td style="text-align: left"><code>15.325</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
+          <td style="text-align: left"><code>15.525</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
+          <td style="text-align: left"><code>15.775</code></td>
+      </tr>
+  </tbody>
 </table>
 <p><img alt="plot of the normalized data" src="/images/posts/plot-output-normalized.png"></p>
 <p>Makes sense? I certainly hope so.</p>

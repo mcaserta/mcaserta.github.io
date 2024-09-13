@@ -14,7 +14,7 @@
       <link>/posts/2021/05/bruce-cryptography-in-java-made-easy/</link>
       <pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate>
       <guid>/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid>
-      <description>I just released Bruce, a Java library for performing cryptography.&#xA;Here are the relevant links:&#xA;github docs download There still is much room for improvement.&#xA;If you are new to open source Java library development, a good place to start is taking a look at the open issues. Most of them are pretty easy.&#xA;I hope you find this useful. I certainly have in my daily work.</description>
+      <description>&lt;p&gt;&lt;img alt=&#34;Bruce logo&#34; src=&#34;/images/posts/bruce-logo.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I just released Bruce, a Java library for performing cryptography.&lt;/p&gt;&#xA;&lt;p&gt;Here are the relevant links:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/mcaserta/bruce&#34;&gt;github&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://bruce.mirkocaserta.com&#34;&gt;docs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://jitpack.io/#mcaserta/bruce&#34;&gt;download&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There still is much room for improvement.&lt;/p&gt;&#xA;&lt;p&gt;If you are new to open source Java library development, a good place to start is&#xA;taking a look at the open issues. Most of them are pretty easy.&lt;/p&gt;&#xA;&lt;p&gt;I hope you find this useful. I certainly have in my daily work.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

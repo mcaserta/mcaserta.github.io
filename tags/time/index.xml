@@ -14,7 +14,7 @@
       <link>/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</link>
       <pubDate>Mon, 15 Apr 2013 14:19:00 +0000</pubDate>
       <guid>/posts/2013/04/an-introduction-to-time-representation-serialization-and-management-in-software/</guid>
-      <description>Most issues in software development usually arise from poor, inconsistent knowledge of the domain at hand. A topic apparently as simple as time representation, serialization and management can easily cause a number of problems both to the neophyte and to the experienced programmer.&#xA;In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a Time Lord to grasp the very simple few concepts needed not to incur into time management hell.</description>
+      <description>&lt;p&gt;Most issues in software development usually arise from poor, inconsistent&#xA;knowledge of the domain at hand. A topic apparently as simple as time&#xA;representation, serialization and management can easily cause a number of&#xA;problems both to the neophyte and to the experienced programmer.&lt;/p&gt;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll see that there&amp;rsquo;s no need to be a&#xA;&lt;a href=&#34;http://en.wikipedia.org/wiki/Time_Lord&#34;&gt;Time Lord&lt;/a&gt; to grasp the very simple few&#xA;concepts needed not to incur into time management hell.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

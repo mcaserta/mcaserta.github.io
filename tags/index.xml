@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 30 Jan 2023 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Sep 2024 08:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Music</title>
+      <link>/tags/music/</link>
+      <pubDate>Sun, 15 Sep 2024 08:00:00 +0000</pubDate>
+      <guid>/tags/music/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Software</title>
       <link>/tags/software/</link>
@@ -28,13 +35,6 @@
       <link>/tags/software-development/</link>
       <pubDate>Mon, 26 Dec 2022 00:00:00 +0000</pubDate>
       <guid>/tags/software-development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Music</title>
-      <link>/tags/music/</link>
-      <pubDate>Mon, 17 Oct 2022 08:00:00 +0000</pubDate>
-      <guid>/tags/music/</guid>
       <description></description>
     </item>
     <item>

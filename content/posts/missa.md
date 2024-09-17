@@ -6,29 +6,29 @@ tags:
   - music
 categories:
   - music
-draft: true
+draft: false
 type: post
 ---
 
 ![album cover](/images/posts/missa-album-cover.png)
 
-## Versione Breve
+## Long Story Short
 
-Questo è un album di musica totalmente improvvisata. Il suono è quello
-dell'organo di Hans Zimmer in Interstellar. L'ispirazione è chiaramente
-ecclesiastica. Ho provato a immaginare delle melodie sui titoli dei brani e a
-svilupparle scimmiottando (male) lo stile del contrappunto.
+Questo è un album di musica improvvisata. Il suono è quello dell'organo di Hans
+Zimmer in Interstellar. L'ispirazione è chiaramente ecclesiastica. Ho provato a
+immaginare delle melodie sui titoli dei brani e a svilupparle scimmiottando
+(male) lo stile contrappuntistico.
 
-## Versione Lunga
+## Short Story Long
 
 Il mio primo incarico da musicista è arrivato piuttosto presto. Credo fossi in
 prima media quando il mio insegnante di pianoforte mi propose di prendere il suo
-posto come organista nella chiesa del paese in cui sono cresciuto.
+posto come organista nella chiesa del paese.
 
 Non avevo mai studiato bene il solfeggio, la mia capacità di lettura era davvero
-rudimentale e questo mi rendeva nervoso ma la musica che si suona in chiesa non
-richiede grandi capacità esecutive: basta avere un po' d'orecchio per gli
-accordi e ci si può facilmente districare nei canti della messa.
+rudimentale e questo mi rendeva nervoso ma la musica di chiesa non richiede
+grandi capacità esecutive: basta un po' d'orecchio per gli accordi e ci si può
+facilmente districare nella maggiorparte dei canti.
 
 Il mio compito era quello di accompagnare il coro durante la funzione della
 domenica mattina. A volte facevo delle prove pomeridiane con il coro durante la
@@ -48,24 +48,29 @@ l'ardire di commentare in modo inappropriato gli LP che quel giorno portavo con
 me: Invitation di Jaco Pastorius, 8:30 dei Weather Report e qualcosa di Larry
 Carlton se non ricordo male. Poi gli chiesi scusa e mi feci prestare i suoi CD
 di [Fronte del Palco](https://it.wikipedia.org/wiki/Fronte_del_palco) per
-tentare una riappacificazione musicale totalmente finta da parte mia (per quanto
-qualche canzone fosse tollerabile).
+tentare una riappacificazione musicale totalmente finta da parte mia.
 
 Ad ogni modo, per almeno due o tre anni ho partecipato attivamente all'attività
 musicale della comunità della parrocchia. Conoscevo i brani più popolari e
 sapevo quando inserirli nelle varie sezioni delle funzioni religiose. Sono stato
-un discreto _ragazzo di chiesa_ ma ho sempre visto con distacco i tanti aspetti
+un discreto ragazzo di chiesa ma ho sempre visto con distacco i tanti aspetti
 della pratica cristiana che fanno visibilmente a cazzotti con la realtà e il mio
 approccio scettico e razionale alle cose della vita.
 
-Credo che già quando suonavo l'organo in chiesa in me si fosse fatta decisamente
-strada l'idea che non esiste un dio e che le tante cose insensate della
-religione sono insensate non perché io non sia in grado di comprenderle o per
-mancanza di fede ma semplicemente perché sono e restano puramente insensate se
-non decisamente stupide e contrarie alla logica e alla ragione a disposizione di
-qualunque persona minimamente istruita.
+Già a quei tempi si era fatta strada in me l'idea che non esiste un dio e che le
+tante cose insensate delle religioni sono tali non perché io non sia in grado di
+comprenderle o per mancanza di fede ma semplicemente perché sono e restano
+insensate e contrarie alla logica e alla ragione a disposizione di qualunque
+persona minimamente istruita.
 
-[I Wish I Had A God](https://youtu.be/nJdursyoy4A) di Hohnen Ford.
+Tutto questo per dire che in qualche modo questa musica per me è un ritorno alle
+origini. Mi sono divertito a tornare sulla panca dell'organo, seppure
+virtuale[^hz].
 
-Tutto questo per dire che in qualche modo questo album è un ritorno alle origini
-per me.
+L'album esce su tutte le piattaforme digitali venerdì 20 settembre 2024 alle
+cinque del pomeriggio.
+
+[^hz]:
+    lo strumento è
+    [The Legend HZ](https://www.synapse-audio.com/thelegendhz.html) e il preset
+    si chiama _Interstellar_

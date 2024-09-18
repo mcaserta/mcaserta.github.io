@@ -36,12 +36,12 @@ settimana ma questa abitudine ebbe vita breve per via della predisposizione
 degli adolescenti a dedicarsi ad attività come zuffe e goffi tentativi di
 riproduzione sessuale.
 
-La mia attività da organista ebbe vita breve. Una volta, durante le cresime,
-ebbi la brillante idea di usare il sintetizzatore per suonare alcune melodie e
-questa cosa non piacque per nulla al vescovo. Il parroco mi spiegò che in chiesa
-erano ammessi solo strumenti acustici e l'organo. Potevo mai tollerare che si
-mettesse bocca sulle mie scelte artistiche? Fu così che la mia collaborazione
-con la parrocchia ebbe bruscamente fine.
+La mia attività da organista non durò molto. Una volta, durante le cresime, ebbi
+la brillante idea di usare il sintetizzatore per suonare alcune melodie e questa
+cosa non piacque per nulla al vescovo. Il parroco mi spiegò che in chiesa erano
+ammessi solo strumenti acustici e l'organo. Potevo mai tollerare che si mettesse
+bocca sulle mie scelte artistiche? Fu così che la mia collaborazione con la
+parrocchia ebbe bruscamente fine.
 
 Ricordo anche che una volta spaccai il muso ad un ragazzo del coro perché ebbe
 l'ardire di commentare in modo inappropriato gli LP che quel giorno portavo con

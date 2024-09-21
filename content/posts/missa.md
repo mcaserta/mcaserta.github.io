@@ -73,6 +73,7 @@ cinque del pomeriggio:
 - [spotify](https://open.spotify.com/album/7KICYco2gWoVWM0a4VNfGL)
 - [apple music](https://music.apple.com/it/album/missa/1769017135)
 - [youtube](https://www.youtube.com/playlist?list=OLAK5uy_lBHhMleVJdxWUTJsFS5boYUHfBVrBeIzo)
+- [deezer](https://www.deezer.com/it/album/643728081)
 
 [^hz]:
     lo strumento è

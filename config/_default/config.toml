@@ -145,9 +145,9 @@ url = "https://t.me/mirkocaserta"
 name = "youtube"
 url = "https://youtube.com/@mirkocaserta"
 
-[[params.social]]
-name = "youtube"
-url = "https://youtube.com/@musicmaestrobackingtracks"
+#[[params.social]]
+#name = "youtube"
+#url = "https://youtube.com/@musicmaestrobackingtracks"
 
 [[params.social]]
 name = "instagram"
@@ -158,12 +158,12 @@ name = "spotify"
 url = "https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO"
 
 [[params.social]]
-name = "mastodon"
-url = "https://mastodon.online/@mcaserta"
+name = "bandcamp"
+url = "https://mirkocaserta.bandcamp.com/"
 
-[[params.social]]
-name = "keybase"
-url = "https://keybase.io/mcaserta"
+#[[params.social]]
+#name = "mastodon"
+#url = "https://mastodon.online/@mcaserta"
 
 [languages.en.params]
 subtitle = "Senior Developer"

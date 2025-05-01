@@ -11,10 +11,10 @@
     <loc>/categories/</loc>
     <lastmod>2024-09-15T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/music/</loc>
+    <loc>/categories/music/</loc>
     <lastmod>2024-09-15T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/music/</loc>
+    <loc>/tags/music/</loc>
     <lastmod>2024-09-15T08:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
@@ -26,10 +26,10 @@
     <loc>/posts/2023/01/firefox-extensions-i-cant-live-without/</loc>
     <lastmod>2023-01-30T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/software/</loc>
+    <loc>/categories/software/</loc>
     <lastmod>2023-01-30T08:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/software/</loc>
+    <loc>/tags/software/</loc>
     <lastmod>2023-01-30T08:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2022/12/posting-to-mastodon/</loc>
@@ -38,10 +38,10 @@
     <loc>/tags/mastodon/</loc>
     <lastmod>2022-12-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/software-development/</loc>
+    <loc>/categories/software-development/</loc>
     <lastmod>2022-12-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/software-development/</loc>
+    <loc>/tags/software-development/</loc>
     <lastmod>2022-12-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2022/12/software-i-use-everyday/</loc>
@@ -107,10 +107,10 @@
     <loc>/posts/2020/02/lettera-aperta-sulla-salute-mentale/</loc>
     <lastmod>2020-02-01T08:45:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/salute-mentale/</loc>
+    <loc>/categories/salute-mentale/</loc>
     <lastmod>2020-02-01T08:45:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/salute-mentale/</loc>
+    <loc>/tags/salute-mentale/</loc>
     <lastmod>2020-02-01T08:45:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2018/10/lorecchio-musicale-come-funziona-e-come-svilupparlo/</loc>
@@ -119,10 +119,10 @@
     <loc>/tags/ear-training/</loc>
     <lastmod>2018-10-28T18:22:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/musica/</loc>
+    <loc>/categories/musica/</loc>
     <lastmod>2018-10-28T18:22:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/musica/</loc>
+    <loc>/tags/musica/</loc>
     <lastmod>2018-10-28T18:22:00+00:00</lastmod>
   </url><url>
     <loc>/posts/2018/10/kind-of-papera-che-non-galleggia/</loc>

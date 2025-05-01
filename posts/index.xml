@@ -15,7 +15,7 @@
             <pubDate>Sun, 15 Sep 2024 08:00:00 +0000</pubDate>
             
             <guid>/posts/2024/09/missa/</guid>
-            <description>&lt;p&gt;&lt;img alt=&#34;album cover&#34; src=&#34;/images/posts/missa-album-cover.png&#34;&gt;&lt;/p&gt;
+            <description>&lt;p&gt;&lt;img src=&#34;/images/posts/missa-album-cover.png&#34; alt=&#34;album cover&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;long-story-short&#34;&gt;Long Story Short&lt;/h2&gt;
 &lt;p&gt;Questo è un album di musica improvvisata. Il suono è quello dell&amp;rsquo;organo di Hans
 Zimmer in Interstellar. L&amp;rsquo;ispirazione è chiaramente ecclesiastica. Ho provato a
@@ -25,7 +25,7 @@ immaginare delle melodie sui titoli dei brani e a svilupparle scimmiottando
 &lt;p&gt;Il mio primo incarico da musicista è arrivato piuttosto presto. Credo fossi in
 prima media quando il mio insegnante di pianoforte mi propose di prendere il suo
 posto come organista nella chiesa del paese.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<p><img alt="album cover" src="/images/posts/missa-album-cover.png"></p>
+            <content type="html"><![CDATA[<p><img src="/images/posts/missa-album-cover.png" alt="album cover"></p>
 <h2 id="long-story-short">Long Story Short</h2>
 <p>Questo è un album di musica improvvisata. Il suono è quello dell&rsquo;organo di Hans
 Zimmer in Interstellar. L&rsquo;ispirazione è chiaramente ecclesiastica. Ho provato a
@@ -185,38 +185,38 @@ created, the token will be visible in the app info under <em>Your access token</
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://www.mozilla.org/firefox/&#34;&gt;firefox&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;web browser&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.mozilla.org/firefox/&#34;&gt;firefox&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;web browser&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://www.thunderbird.net/&#34;&gt;thunderbird&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;email client&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://www.thunderbird.net/&#34;&gt;thunderbird&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;email client&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://telegram.org/&#34;&gt;telegram&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;instant messaging&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://telegram.org/&#34;&gt;telegram&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;instant messaging&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://signal.org/&#34;&gt;signal&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;secure messaging&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://signal.org/&#34;&gt;signal&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;secure messaging&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://alacritty.org/&#34;&gt;alacritty&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;terminal emulator&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://alacritty.org/&#34;&gt;alacritty&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;terminal emulator&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://joplinapp.org/&#34;&gt;joplin&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;note taking&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://joplinapp.org/&#34;&gt;joplin&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;note taking&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://bitwarden.com/&#34;&gt;bitwarden&lt;/a&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;password manager&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&#34;https://bitwarden.com/&#34;&gt;bitwarden&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;password manager&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -230,38 +230,38 @@ integrated email client.&lt;/p&gt;</description>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left"></th>
-          <th style="text-align: left"></th>
+          <th></th>
+          <th></th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><a href="https://www.mozilla.org/firefox/">firefox</a></td>
-          <td style="text-align: left">web browser</td>
+          <td><a href="https://www.mozilla.org/firefox/">firefox</a></td>
+          <td>web browser</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://www.thunderbird.net/">thunderbird</a></td>
-          <td style="text-align: left">email client</td>
+          <td><a href="https://www.thunderbird.net/">thunderbird</a></td>
+          <td>email client</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://telegram.org/">telegram</a></td>
-          <td style="text-align: left">instant messaging</td>
+          <td><a href="https://telegram.org/">telegram</a></td>
+          <td>instant messaging</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://signal.org/">signal</a></td>
-          <td style="text-align: left">secure messaging</td>
+          <td><a href="https://signal.org/">signal</a></td>
+          <td>secure messaging</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://alacritty.org/">alacritty</a></td>
-          <td style="text-align: left">terminal emulator</td>
+          <td><a href="https://alacritty.org/">alacritty</a></td>
+          <td>terminal emulator</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://joplinapp.org/">joplin</a></td>
-          <td style="text-align: left">note taking</td>
+          <td><a href="https://joplinapp.org/">joplin</a></td>
+          <td>note taking</td>
       </tr>
       <tr>
-          <td style="text-align: left"><a href="https://bitwarden.com/">bitwarden</a></td>
-          <td style="text-align: left">password manager</td>
+          <td><a href="https://bitwarden.com/">bitwarden</a></td>
+          <td>password manager</td>
       </tr>
   </tbody>
 </table>
@@ -298,9 +298,8 @@ couldn&rsquo;t live without them.</p>
             
             <guid>/posts/2022/10/ballads/</guid>
             <description>&lt;blockquote&gt;
-&lt;p&gt;«You can play a shoestring if you&amp;rsquo;re sincere.» — John Coltrane&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;album cover&#34; src=&#34;/images/posts/ballads-album-cover.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;«You can play a shoestring if you&amp;rsquo;re sincere.» — John Coltrane&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/images/posts/ballads-album-cover.png&#34; alt=&#34;album cover&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I have been playing the piano since I was a little kid. Actually, I played the
 organ first, as my dad had a transistor one that was pretty state of the art for
 the time (I was born in 1974 so you get the idea).&lt;/p&gt;
@@ -308,9 +307,8 @@ the time (I was born in 1974 so you get the idea).&lt;/p&gt;
 different instruments over the years, probably too many of them as I never
 really mastered one.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<blockquote>
-<p>«You can play a shoestring if you&rsquo;re sincere.» — John Coltrane</p>
-</blockquote>
-<p><img alt="album cover" src="/images/posts/ballads-album-cover.png"></p>
+<p>«You can play a shoestring if you&rsquo;re sincere.» — John Coltrane</p></blockquote>
+<p><img src="/images/posts/ballads-album-cover.png" alt="album cover"></p>
 <p>I have been playing the piano since I was a little kid. Actually, I played the
 organ first, as my dad had a transistor one that was pretty state of the art for
 the time (I was born in 1974 so you get the idea).</p>
@@ -354,18 +352,16 @@ masterpiece through Kevin Costner, can you believe that?</p>
             
             <guid>/posts/2022/10/the-last-time-i-had-fun/</guid>
             <description>&lt;blockquote&gt;
-&lt;p&gt;«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;album cover&#34; src=&#34;/images/posts/the-last-time-i-had-fun-album-cover.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/images/posts/the-last-time-i-had-fun-album-cover.png&#34; alt=&#34;album cover&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The nice thing with instrumental music is that giving titles to songs is maybe
 trivial and can sometimes be lots of fun.&lt;/p&gt;
 &lt;p&gt;I had this album&amp;rsquo;s title written down in a list of possible song names that I
 keep in my notebook. I wasn&amp;rsquo;t really thinking about it until I started seeing
 the album cover showing up online after I pushed the &lt;em&gt;publish&lt;/em&gt; button.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<blockquote>
-<p>«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace</p>
-</blockquote>
-<p><img alt="album cover" src="/images/posts/the-last-time-i-had-fun-album-cover.png"></p>
+<p>«Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace</p></blockquote>
+<p><img src="/images/posts/the-last-time-i-had-fun-album-cover.png" alt="album cover"></p>
 <p>The nice thing with instrumental music is that giving titles to songs is maybe
 trivial and can sometimes be lots of fun.</p>
 <p>I had this album&rsquo;s title written down in a list of possible song names that I
@@ -382,7 +378,7 @@ people see it as a weakness. It isn&rsquo;t. Of course it is not.</p>
 shitless. I had no idea what was happening to me. I was living in a relatively
 small town and I had maybe heard the word <em>depression</em> a few times, always
 referring to someone no one would dare go near to.</p>
-<p><img alt="Societal Myth" src="/images/posts/societal-myth-sarah-andersen.png">
+<p><img src="/images/posts/societal-myth-sarah-andersen.png" alt="Societal Myth">
 <a href="https://www.instagram.com/p/CjiZuPOsOr4/">credits</a></p>
 <p>These days things are a bit better. Mental illness still carries around a stigma
 but more and more people are aware of what it means to be depressed, to
@@ -408,9 +404,8 @@ those that I do this.</p>
             <guid>/posts/2022/07/ear-candy/</guid>
             <description>&lt;blockquote&gt;
 &lt;p&gt;«There&amp;rsquo;s nothing remarkable about it. All one has to do is hit the right keys
-at the right time and the instrument plays itself.» — J. S. Bach&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;album cover&#34; src=&#34;/images/posts/ear-candy-album-cover.png&#34;&gt;&lt;/p&gt;
+at the right time and the instrument plays itself.» — J. S. Bach&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/images/posts/ear-candy-album-cover.png&#34; alt=&#34;album cover&#34;&gt;&lt;/p&gt;
 &lt;p&gt;What I find amusing about quotes is that it&amp;rsquo;s very hard to find out if they are
 trustworthy. I like to think that the Kapellmeister might actually have said
 that. It&amp;rsquo;s quite plausible I think.&lt;/p&gt;
@@ -420,9 +415,8 @@ no special message to send to the world other than enjoy yourselves and try not
 to be hurtful to each other.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<blockquote>
 <p>«There&rsquo;s nothing remarkable about it. All one has to do is hit the right keys
-at the right time and the instrument plays itself.» — J. S. Bach</p>
-</blockquote>
-<p><img alt="album cover" src="/images/posts/ear-candy-album-cover.png"></p>
+at the right time and the instrument plays itself.» — J. S. Bach</p></blockquote>
+<p><img src="/images/posts/ear-candy-album-cover.png" alt="album cover"></p>
 <p>What I find amusing about quotes is that it&rsquo;s very hard to find out if they are
 trustworthy. I like to think that the Kapellmeister might actually have said
 that. It&rsquo;s quite plausible I think.</p>
@@ -446,9 +440,8 @@ tolerable.</p>
             <description>&lt;blockquote&gt;
 &lt;p&gt;«What&amp;rsquo;s wrong with feeling nostalgic? It&amp;rsquo;s the only distraction left for those
 who have no faith in the future.» — &amp;ldquo;The Great Beauty&amp;rdquo; (2013, Paolo
-Sorrentino)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;album cover&#34; src=&#34;/images/posts/until-further-notice-album-cover.png&#34;&gt;&lt;/p&gt;
+Sorrentino)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/images/posts/until-further-notice-album-cover.png&#34; alt=&#34;album cover&#34;&gt;&lt;/p&gt;
 &lt;p&gt;When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
 would report lots of interesting stuff such as the performers&amp;rsquo; names and the
@@ -459,9 +452,8 @@ pretty.&lt;/p&gt;</description>
             <content type="html"><![CDATA[<blockquote>
 <p>«What&rsquo;s wrong with feeling nostalgic? It&rsquo;s the only distraction left for those
 who have no faith in the future.» — &ldquo;The Great Beauty&rdquo; (2013, Paolo
-Sorrentino)</p>
-</blockquote>
-<p><img alt="album cover" src="/images/posts/until-further-notice-album-cover.png"></p>
+Sorrentino)</p></blockquote>
+<p><img src="/images/posts/until-further-notice-album-cover.png" alt="album cover"></p>
 <p>When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
 would report lots of interesting stuff such as the performers&rsquo; names and the
@@ -530,7 +522,7 @@ hand. Most keyboardists can do that and they don&rsquo;t go bragging about it, I
             <pubDate>Mon, 31 May 2021 15:10:00 +0000</pubDate>
             
             <guid>/posts/2021/05/bruce-cryptography-in-java-made-easy/</guid>
-            <description>&lt;p&gt;&lt;img alt=&#34;Bruce logo&#34; src=&#34;/images/posts/bruce-logo.png&#34;&gt;&lt;/p&gt;
+            <description>&lt;p&gt;&lt;img src=&#34;/images/posts/bruce-logo.png&#34; alt=&#34;Bruce logo&#34;&gt;&lt;/p&gt;
 &lt;p&gt;I just released Bruce, a Java library for performing cryptography.&lt;/p&gt;
 &lt;p&gt;Here are the relevant links:&lt;/p&gt;
 &lt;ul&gt;
@@ -542,7 +534,7 @@ hand. Most keyboardists can do that and they don&rsquo;t go bragging about it, I
 &lt;p&gt;If you are new to open source Java library development, a good place to start is
 taking a look at the open issues. Most of them are pretty easy.&lt;/p&gt;
 &lt;p&gt;I hope you find this useful. I certainly have in my daily work.&lt;/p&gt;</description>
-            <content type="html"><![CDATA[<p><img alt="Bruce logo" src="/images/posts/bruce-logo.png"></p>
+            <content type="html"><![CDATA[<p><img src="/images/posts/bruce-logo.png" alt="Bruce logo"></p>
 <p>I just released Bruce, a Java library for performing cryptography.</p>
 <p>Here are the relevant links:</p>
 <ul>
@@ -629,7 +621,8 @@ if you miss a deadline. Of course that&rsquo;s bullshit.</p>
 
 &lt;p&gt;After trying to implement the
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_digital_rain&#34;&gt;digital rain&lt;/a&gt; algorithm in
-6502 assembly and &lt;a href=&#34;/posts/2021/05/the-matrix-screensaver-for-commodore-64/&#34; title=&#34;failing\nmiserably&#34;&gt;failing miserably&lt;/a&gt;, I decided to try the &lt;a href=&#34;https://cc65.github.io/&#34;&gt;cc65&lt;/a&gt; toolkit and
+6502 assembly and &lt;a href=&#34;/posts/2021/05/the-matrix-screensaver-for-commodore-64/&#34; title=&#34;failing
+miserably&#34;&gt;failing miserably&lt;/a&gt;, I decided to try the &lt;a href=&#34;https://cc65.github.io/&#34;&gt;cc65&lt;/a&gt; toolkit and
 write some C code.&lt;/p&gt;</description>
             <content type="html"><![CDATA[
 
@@ -661,7 +654,8 @@ write some C code.&lt;/p&gt;</description>
 
 <p>After trying to implement the
 <a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">digital rain</a> algorithm in
-6502 assembly and <a href="/posts/2021/05/the-matrix-screensaver-for-commodore-64/" title="failing\nmiserably">failing miserably</a>, I decided to try the <a href="https://cc65.github.io/">cc65</a> toolkit and
+6502 assembly and <a href="/posts/2021/05/the-matrix-screensaver-for-commodore-64/" title="failing
+miserably">failing miserably</a>, I decided to try the <a href="https://cc65.github.io/">cc65</a> toolkit and
 write some C code.</p>
 <p>It takes a while to load but what you are seeing above is a live emulation of
 the screensaver software.</p>
@@ -669,42 +663,42 @@ the screensaver software.</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">key</th>
-          <th style="text-align: left">use</th>
+          <th>key</th>
+          <th>use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>A</code></td>
-          <td style="text-align: left">amber mode</td>
+          <td><code>A</code></td>
+          <td>amber mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>B</code></td>
-          <td style="text-align: left">binary mode</td>
+          <td><code>B</code></td>
+          <td>binary mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>D</code></td>
-          <td style="text-align: left">dna mode</td>
+          <td><code>D</code></td>
+          <td>dna mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>F</code></td>
-          <td style="text-align: left">full charset mode (default)</td>
+          <td><code>F</code></td>
+          <td>full charset mode (default)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>G</code></td>
-          <td style="text-align: left">green mode (default)</td>
+          <td><code>G</code></td>
+          <td>green mode (default)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>H</code></td>
-          <td style="text-align: left">hex mode</td>
+          <td><code>H</code></td>
+          <td>hex mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>L</code></td>
-          <td style="text-align: left">lgbtq mode</td>
+          <td><code>L</code></td>
+          <td>lgbtq mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>Q</code></td>
-          <td style="text-align: left">quit</td>
+          <td><code>Q</code></td>
+          <td>quit</td>
       </tr>
   </tbody>
 </table>
@@ -719,23 +713,15 @@ my hero.</p>
 <a href="https://www.jwz.org/">Jamie Zawinski</a>.</p>
 <h2 id="update-20210524">Update 20210524</h2>
 <p>Here&rsquo;s a video of the software running on a real C64, courtesy Jordan McGee.</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/P01GWeBhYPc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Screensaver running on a real C64"
-      ></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/P01GWeBhYPc?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Screensaver running on a real C64"></iframe>
     </div>
 
 <h2 id="update-20211029">Update 20211029</h2>
 <p>Here&rsquo;s another video of the software running on a real C64, courtesy my friend
 Marco.</p>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/O93npyzDnUU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Screensaver running on a real C64"
-      ></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/O93npyzDnUU?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="Screensaver running on a real C64"></iframe>
     </div>
 
 ]]></content>
@@ -812,34 +798,34 @@ screensaver software.</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">key</th>
-          <th style="text-align: left">use</th>
+          <th>key</th>
+          <th>use</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>B</code></td>
-          <td style="text-align: left">binary display mode</td>
+          <td><code>B</code></td>
+          <td>binary display mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>X</code></td>
-          <td style="text-align: left">hex display mode</td>
+          <td><code>X</code></td>
+          <td>hex display mode</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>R</code></td>
-          <td style="text-align: left">random display mode (default)</td>
+          <td><code>R</code></td>
+          <td>random display mode (default)</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>N</code></td>
-          <td style="text-align: left">increments border color</td>
+          <td><code>N</code></td>
+          <td>increments border color</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>M</code></td>
-          <td style="text-align: left">increments background color</td>
+          <td><code>M</code></td>
+          <td>increments background color</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>Q</code></td>
-          <td style="text-align: left">quit</td>
+          <td><code>Q</code></td>
+          <td>quit</td>
       </tr>
   </tbody>
 </table>
@@ -877,26 +863,26 @@ valori:&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;simbolo&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;significato&lt;/th&gt;
+          &lt;th&gt;simbolo&lt;/th&gt;
+          &lt;th&gt;significato&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;AQi&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;indice di qualità dell&amp;rsquo;aria&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;AQi&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;indice di qualità dell&amp;rsquo;aria&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;temperatura dell&amp;rsquo;aria in gradi Celsius&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;temperatura dell&amp;rsquo;aria in gradi Celsius&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Tm&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;temperatura massima dell&amp;rsquo;aria in C°&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Tm&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;temperatura massima dell&amp;rsquo;aria in C°&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;percentuale di monossido di carbonio nell&amp;rsquo;aria&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;percentuale di monossido di carbonio nell&amp;rsquo;aria&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -917,32 +903,31 @@ valori:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">simbolo</th>
-          <th style="text-align: left">significato</th>
+          <th>simbolo</th>
+          <th>significato</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>AQi</code></td>
-          <td style="text-align: left">indice di qualità dell&rsquo;aria</td>
+          <td><code>AQi</code></td>
+          <td>indice di qualità dell&rsquo;aria</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>T</code></td>
-          <td style="text-align: left">temperatura dell&rsquo;aria in gradi Celsius</td>
+          <td><code>T</code></td>
+          <td>temperatura dell&rsquo;aria in gradi Celsius</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>Tm</code></td>
-          <td style="text-align: left">temperatura massima dell&rsquo;aria in C°</td>
+          <td><code>Tm</code></td>
+          <td>temperatura massima dell&rsquo;aria in C°</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>C</code></td>
-          <td style="text-align: left">percentuale di monossido di carbonio nell&rsquo;aria</td>
+          <td><code>C</code></td>
+          <td>percentuale di monossido di carbonio nell&rsquo;aria</td>
       </tr>
   </tbody>
 </table>
 <p>Possiamo calcolare l&rsquo;<code>AQi</code> con questa specie di formula:</p>
-<!-- raw HTML omitted -->
-<p><img alt="formula della qualità dell&rsquo;aria" src="/images/posts/air-quality-formula.png"></p>
+<p><img src="/images/posts/air-quality-formula.png" alt="formula della qualità dell’aria"></p>
 <p><strong>DISCLAIMER:</strong> questa formula non è in alcun modo scientifica ed è da
 intendersi esclusivamente a scopo educativo. Non voglio che ambientalisti e veri
 scienziati mi vengano a cercare a casa con formule matematiche e accuse di
@@ -977,42 +962,42 @@ argomentazione.</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">AQi</th>
-          <th style="text-align: left">significato</th>
+          <th>AQi</th>
+          <th>significato</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">da 125 a ∞</td>
-          <td style="text-align: left">morte orribile</td>
+          <td>da 125 a ∞</td>
+          <td>morte orribile</td>
       </tr>
       <tr>
-          <td style="text-align: left">da 100 a 125</td>
-          <td style="text-align: left">morte dolorosa</td>
+          <td>da 100 a 125</td>
+          <td>morte dolorosa</td>
       </tr>
       <tr>
-          <td style="text-align: left">da 75 a 100</td>
-          <td style="text-align: left">morte</td>
+          <td>da 75 a 100</td>
+          <td>morte</td>
       </tr>
       <tr>
-          <td style="text-align: left">da 55 a 75</td>
-          <td style="text-align: left">è accettabile<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+          <td>da 55 a 75</td>
+          <td>è accettabile<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
       </tr>
       <tr>
-          <td style="text-align: left">da 30 a 55</td>
-          <td style="text-align: left">va bene così<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+          <td>da 30 a 55</td>
+          <td>va bene così<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
       </tr>
       <tr>
-          <td style="text-align: left">da 15 a 30</td>
-          <td style="text-align: left">si sta bene</td>
+          <td>da 15 a 30</td>
+          <td>si sta bene</td>
       </tr>
       <tr>
-          <td style="text-align: left">da 12.75 a 15</td>
-          <td style="text-align: left">freschetto</td>
+          <td>da 12.75 a 15</td>
+          <td>freschetto</td>
       </tr>
       <tr>
-          <td style="text-align: left">da -∞ a 12.75</td>
-          <td style="text-align: left">benvenuto a Yakutsk, probabilmente</td>
+          <td>da -∞ a 12.75</td>
+          <td>benvenuto a Yakutsk, probabilmente</td>
       </tr>
   </tbody>
 </table>
@@ -1027,38 +1012,38 @@ come questi:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
+          <th>timestamp</th>
+          <th>valore</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:00:00Z</code></td>
-          <td style="text-align: left"><code>10.1</code></td>
+          <td><code>2021-01-20T08:00:00Z</code></td>
+          <td><code>10.1</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>10.3</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>10.3</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>10.7</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>10.7</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>10.9</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>10.9</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>11.0</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>11.0</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>11.1</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>11.1</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>11.3</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>11.3</code></td>
       </tr>
   </tbody>
 </table>
@@ -1067,30 +1052,30 @@ invece rispondere con dati simili:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
+          <th>timestamp</th>
+          <th>valore</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>2.0</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>2.0</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>2.3</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>2.3</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>2.8</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>2.8</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>2.9</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>2.9</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>3.3</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>3.3</code></td>
       </tr>
   </tbody>
 </table>
@@ -1107,90 +1092,89 @@ perché&hellip;</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">id</th>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
-          <th style="text-align: left">tipo</th>
+          <th>id</th>
+          <th>timestamp</th>
+          <th>valore</th>
+          <th>tipo</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>1</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:00:00Z</code></td>
-          <td style="text-align: left"><code>10.1</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>1</code></td>
+          <td><code>2021-01-20T08:00:00Z</code></td>
+          <td><code>10.1</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code> 2.0</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>2</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code> 2.0</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>3</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>10.3</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>3</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>10.3</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>4</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code> 2.3</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>4</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code> 2.3</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>5</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>10.7</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>5</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>10.7</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>6</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>10.9</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>6</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>10.9</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>7</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code> 2.8</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>7</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code> 2.8</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>8</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>11.0</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>8</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>11.0</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>9</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>11.1</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>9</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>11.1</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>10</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code> 2.9</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>10</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code> 2.9</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>11</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code> 3.3</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>11</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code> 3.3</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>12</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>11.3</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>12</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>11.3</code></td>
+          <td><code>T</code></td>
       </tr>
   </tbody>
 </table>
 <blockquote>
-<p>tipo: T sta per temperatura e C per percentuale di monossido di carbonio</p>
-</blockquote>
+<p>tipo: T sta per temperatura e C per percentuale di monossido di carbonio</p></blockquote>
 <p>Il nostro compito ora è di scandire i dati, cominciando dall&rsquo;inizio, una riga
 alla volta, computando l&rsquo;indice di qualità dell&rsquo;aria man mano che andiamo
 avanti, un passo per volta.</p>
@@ -1206,14 +1190,14 @@ risultante deve essere così:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
+          <th>timestamp</th>
+          <th>valore</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
   </tbody>
 </table>
@@ -1223,54 +1207,54 @@ più recente dell&rsquo;altro tipo. In altre parole:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">per l&rsquo;id</th>
-          <th style="text-align: left">prendi i valori dagli id</th>
+          <th>per l&rsquo;id</th>
+          <th>prendi i valori dagli id</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2</code></td>
-          <td style="text-align: left"><code>1, 2</code></td>
+          <td><code>2</code></td>
+          <td><code>1, 2</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>3</code></td>
-          <td style="text-align: left"><code>2, 3</code></td>
+          <td><code>3</code></td>
+          <td><code>2, 3</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>4</code></td>
-          <td style="text-align: left"><code>3, 4</code></td>
+          <td><code>4</code></td>
+          <td><code>3, 4</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>5</code></td>
-          <td style="text-align: left"><code>4, 5</code></td>
+          <td><code>5</code></td>
+          <td><code>4, 5</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>6</code></td>
-          <td style="text-align: left"><code>4, 6</code></td>
+          <td><code>6</code></td>
+          <td><code>4, 6</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>7</code></td>
-          <td style="text-align: left"><code>6, 7</code></td>
+          <td><code>7</code></td>
+          <td><code>6, 7</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>8</code></td>
-          <td style="text-align: left"><code>7, 8</code></td>
+          <td><code>8</code></td>
+          <td><code>7, 8</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>9</code></td>
-          <td style="text-align: left"><code>7, 9</code></td>
+          <td><code>9</code></td>
+          <td><code>7, 9</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>10</code></td>
-          <td style="text-align: left"><code>9, 10</code></td>
+          <td><code>10</code></td>
+          <td><code>9, 10</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>11</code></td>
-          <td style="text-align: left"><code>9, 11</code></td>
+          <td><code>11</code></td>
+          <td><code>9, 11</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>12</code></td>
-          <td style="text-align: left"><code>11, 12</code></td>
+          <td><code>12</code></td>
+          <td><code>11, 12</code></td>
       </tr>
   </tbody>
 </table>
@@ -1383,54 +1367,54 @@ recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad og
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
+          <th>timestamp</th>
+          <th>valore</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>13.875</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>13.875</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>14.525</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>14.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>14.775</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>14.775</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>15.025</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>15.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>15.150</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>15.150</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>15.275</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>15.275</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>15.325</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>15.325</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>15.525</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>15.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>15.775</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>15.775</code></td>
       </tr>
   </tbody>
 </table>
@@ -1438,7 +1422,7 @@ recenti per le nostre specifiche misure di <code>T</code> e <code>C</code> ad og
 timestamp duplicati nei risultati, nello specifico <code>2021-01-20T08:02:00Z</code> e
 <code>2021-01-20T08:06:00Z</code>. Questi rappresentano un paradosso temporale poiché
 sembra che il nostro <code>AQi</code> abbia due diversi valori allo stesso istante.</p>
-<p><img alt="I find your lack of logic disturbing" src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg"></p>
+<p><img src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing"></p>
 <p>Entrambi sappiamo che questi dati finiranno su una pagina web. Non vorrai certo
 che uno di quegli sviluppatori hipster del frontend ci faccia notare una
 mancanza di logica o, peggio, una inconsistenza nei nostri dati, vero?</p>
@@ -1460,105 +1444,105 @@ questo:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
+          <th>timestamp</th>
+          <th>valore</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>14.525</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>14.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>15.025</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>15.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>15.150</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>15.150</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>15.275</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>15.275</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>15.325</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>15.325</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>15.525</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>15.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>15.775</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>15.775</code></td>
       </tr>
   </tbody>
 </table>
 <p>Proprio come un&rsquo;equazione è un&rsquo;ottima scusa per rispolverare un po&rsquo; di
 <a href="https://www.latex-project.org/">LaTeX</a>, una buona serie di dati temporali è un
 eccellente candidato per <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
-<p><img alt="plot dei dati fin qui" src="/images/posts/plot-output.png"></p>
+<p><img src="/images/posts/plot-output.png" alt="plot dei dati fin qui"></p>
 <p>I dati nel mondo reale sono naturalmente molto più caotici di così e potresti
 voler normalizzare il risultato usando un intervallo temporale arbitrario, ad
 esempio un minuto:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">valore</th>
+          <th>timestamp</th>
+          <th>valore</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:03:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:03:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:04:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:04:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>14.525</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>14.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>15.025</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>15.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>15.325</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>15.325</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>15.525</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>15.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>15.775</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>15.775</code></td>
       </tr>
   </tbody>
 </table>
-<p><img alt="plot dei dati normalizzati" src="/images/posts/plot-output-normalized.png"></p>
+<p><img src="/images/posts/plot-output-normalized.png" alt="plot dei dati normalizzati"></p>
 <p>Ha senso? Spero proprio di sì.</p>
-<p><img alt="sì" src="/images/posts/yes.gif"></p>
+<p><img src="/images/posts/yes.gif" alt="sì"></p>
 <h2 id="scriviamo-il-codice">Scriviamo il codice</h2>
 <p>Scriviamo un po&rsquo; di codice. Prima di tutto, definiamo un&rsquo;interfaccia per il
 nostro calcolatore di <code>AQi</code>, così che poi possiamo fornirne diverse
@@ -1808,12 +1792,12 @@ le chiamate ai provider.</p>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
 </span></span></code></pre></div><p>Questo si traduce nel seguente modello di esecuzione seriale:</p>
-<p><img alt="sequence diagram per l&rsquo;esecuzione seriale" src="/images/posts/sequence-diagram-serial.jpg"></p>
+<p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram per l’esecuzione seriale"></p>
 <p>Come abbiamo detto, possiamo fare meglio di così. In un ambiente multithread,
 possiamo lanciare due client concorrenti e far partire il processamento dei dati
 appena abbiamo ricevuto risposta da entrambi. Questo ci risparmia un po&rsquo; di
 tempo e potenzialmente velocizza i nostri tempi di risposta.</p>
-<p><img alt="sequence diagram per l&rsquo;esecuzione parallela" src="/images/posts/sequence-diagram-parallel.jpg"></p>
+<p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram per l’esecuzione parallela"></p>
 <p>Come implementiamo questo modello di esecuzione nel nostro codice? Ci sono
 diverse opzioni, ma la più popolare, e quella che personalmente preferisco, è
 usare i <code>CompletableFuture</code>, che sono stati introdotti in Java 8, se non ricordo
@@ -1889,7 +1873,7 @@ fondo in alcuni aspetti che ho incontrato a lavoro. Ti suggerisco di fare lo
 stesso quando ti capitano problemi che hanno bisogno di approfondimenti. Spero
 tu abbia trovato tutto ciò utile.</p>
 <h2 id="bonus">Bonus</h2>
-<p><img alt="reading memes on github" src="/images/posts/reading-memes-on-github.webp"></p>
+<p><img src="/images/posts/reading-memes-on-github.webp" alt="reading memes on github"></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -1898,10 +1882,10 @@ tu abbia trovato tutto ciò utile.</p>
 <p>questa è la mia vendetta per tutti i brutti voti a scuola.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><img alt="it is acceptable meme" src="/images/posts/it-is-acceptable.jpg">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img src="/images/posts/it-is-acceptable.jpg" alt="it is acceptable meme">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><img alt="this is fine meme" src="/images/posts/this-is-fine.webp">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img src="/images/posts/this-is-fine.webp" alt="this is fine meme">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
 <p>I time series data, anche conosciuti come time-stamped data, sono una
@@ -1940,26 +1924,26 @@ sexy. Penso che <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsqu
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;symbol&lt;/th&gt;
-          &lt;th style=&#34;text-align: left&#34;&gt;meaning&lt;/th&gt;
+          &lt;th&gt;symbol&lt;/th&gt;
+          &lt;th&gt;meaning&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;AQi&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;air quality index&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;AQi&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;air quality index&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;air temperature in Celsius degrees&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;T&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;air temperature in Celsius degrees&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Tm&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;maximum air temperature in C°&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;Tm&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;maximum air temperature in C°&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: left&#34;&gt;percentage of carbon monoxide in the air&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;C&lt;/code&gt;&lt;/td&gt;
+          &lt;td&gt;percentage of carbon monoxide in the air&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1979,32 +1963,31 @@ sexy. Penso che <a href="https://youtu.be/XFkzRNyygfk">I&rsquo;m a creep, I&rsqu
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">symbol</th>
-          <th style="text-align: left">meaning</th>
+          <th>symbol</th>
+          <th>meaning</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>AQi</code></td>
-          <td style="text-align: left">air quality index</td>
+          <td><code>AQi</code></td>
+          <td>air quality index</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>T</code></td>
-          <td style="text-align: left">air temperature in Celsius degrees</td>
+          <td><code>T</code></td>
+          <td>air temperature in Celsius degrees</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>Tm</code></td>
-          <td style="text-align: left">maximum air temperature in C°</td>
+          <td><code>Tm</code></td>
+          <td>maximum air temperature in C°</td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>C</code></td>
-          <td style="text-align: left">percentage of carbon monoxide in the air</td>
+          <td><code>C</code></td>
+          <td>percentage of carbon monoxide in the air</td>
       </tr>
   </tbody>
 </table>
 <p>We may calculate the <code>AQi</code> with the following sorry excuse of a formula:</p>
-<!-- raw HTML omitted -->
-<p><img alt="air quality formula" src="/images/posts/air-quality-formula.png"></p>
+<p><img src="/images/posts/air-quality-formula.png" alt="air quality formula"></p>
 <p><strong>DISCLAIMER:</strong> please note that this formula is in no way scientific, and it&rsquo;s
 intended for educational purposes only. I don&rsquo;t want environmentalists and real
 scientists chasing me around with math formulas and accusations of quackery.
@@ -2037,42 +2020,42 @@ unscientific but bear with me for the sake of argumentation, please.</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">AQi</th>
-          <th style="text-align: left">meaning</th>
+          <th>AQi</th>
+          <th>meaning</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left">125 to ∞</td>
-          <td style="text-align: left">horrible death</td>
+          <td>125 to ∞</td>
+          <td>horrible death</td>
       </tr>
       <tr>
-          <td style="text-align: left">100 to 125</td>
-          <td style="text-align: left">painful death</td>
+          <td>100 to 125</td>
+          <td>painful death</td>
       </tr>
       <tr>
-          <td style="text-align: left">75 to 100</td>
-          <td style="text-align: left">death</td>
+          <td>75 to 100</td>
+          <td>death</td>
       </tr>
       <tr>
-          <td style="text-align: left">55 to 75</td>
-          <td style="text-align: left">it is acceptable<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
+          <td>55 to 75</td>
+          <td>it is acceptable<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></td>
       </tr>
       <tr>
-          <td style="text-align: left">30 to 55</td>
-          <td style="text-align: left">this is fine<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
+          <td>30 to 55</td>
+          <td>this is fine<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></td>
       </tr>
       <tr>
-          <td style="text-align: left">15 to 30</td>
-          <td style="text-align: left">fine and dandy</td>
+          <td>15 to 30</td>
+          <td>fine and dandy</td>
       </tr>
       <tr>
-          <td style="text-align: left">12.75 to 15</td>
-          <td style="text-align: left">pretty cool</td>
+          <td>12.75 to 15</td>
+          <td>pretty cool</td>
       </tr>
       <tr>
-          <td style="text-align: left">-∞ to 12.75</td>
-          <td style="text-align: left">welcome to Yakutsk, probably</td>
+          <td>-∞ to 12.75</td>
+          <td>welcome to Yakutsk, probably</td>
       </tr>
   </tbody>
 </table>
@@ -2085,38 +2068,38 @@ respond with time series data like this:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
+          <th>timestamp</th>
+          <th>value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:00:00Z</code></td>
-          <td style="text-align: left"><code>10.1</code></td>
+          <td><code>2021-01-20T08:00:00Z</code></td>
+          <td><code>10.1</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>10.3</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>10.3</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>10.7</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>10.7</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>10.9</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>10.9</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>11.0</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>11.0</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>11.1</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>11.1</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>11.3</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>11.3</code></td>
       </tr>
   </tbody>
 </table>
@@ -2125,30 +2108,30 @@ that looks like this:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
+          <th>timestamp</th>
+          <th>value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>2.0</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>2.0</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>2.3</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>2.3</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>2.8</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>2.8</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>2.9</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>2.9</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>3.3</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>3.3</code></td>
       </tr>
   </tbody>
 </table>
@@ -2164,90 +2147,89 @@ returned by an external provider. Not that this is of any importance here as&hel
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">id</th>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
-          <th style="text-align: left">type</th>
+          <th>id</th>
+          <th>timestamp</th>
+          <th>value</th>
+          <th>type</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>1</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:00:00Z</code></td>
-          <td style="text-align: left"><code>10.1</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>1</code></td>
+          <td><code>2021-01-20T08:00:00Z</code></td>
+          <td><code>10.1</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code> 2.0</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>2</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code> 2.0</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>3</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>10.3</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>3</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>10.3</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>4</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code> 2.3</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>4</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code> 2.3</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>5</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>10.7</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>5</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>10.7</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>6</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>10.9</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>6</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>10.9</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>7</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code> 2.8</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>7</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code> 2.8</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>8</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>11.0</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>8</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>11.0</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>9</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>11.1</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>9</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>11.1</code></td>
+          <td><code>T</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>10</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code> 2.9</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>10</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code> 2.9</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>11</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code> 3.3</code></td>
-          <td style="text-align: left"><code>C</code></td>
+          <td><code>11</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code> 3.3</code></td>
+          <td><code>C</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>12</code></td>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>11.3</code></td>
-          <td style="text-align: left"><code>T</code></td>
+          <td><code>12</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>11.3</code></td>
+          <td><code>T</code></td>
       </tr>
   </tbody>
 </table>
 <blockquote>
-<p>type: T is temperature and C is carbon monoxide percentage</p>
-</blockquote>
+<p>type: T is temperature and C is carbon monoxide percentage</p></blockquote>
 <p>Our task now is to scan the data, starting from the beginning, one row at a
 time, computing the air quality index as we go forward, step by step.</p>
 <p>The first thing to note here is that to compute our <code>AQi</code> formula we need to
@@ -2261,14 +2243,14 @@ like this:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
+          <th>timestamp</th>
+          <th>value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
   </tbody>
 </table>
@@ -2278,54 +2260,54 @@ recent value of the other type. In other words:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">for id</th>
-          <th style="text-align: left">pick values from id</th>
+          <th>for id</th>
+          <th>pick values from id</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2</code></td>
-          <td style="text-align: left"><code>1, 2</code></td>
+          <td><code>2</code></td>
+          <td><code>1, 2</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>3</code></td>
-          <td style="text-align: left"><code>2, 3</code></td>
+          <td><code>3</code></td>
+          <td><code>2, 3</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>4</code></td>
-          <td style="text-align: left"><code>3, 4</code></td>
+          <td><code>4</code></td>
+          <td><code>3, 4</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>5</code></td>
-          <td style="text-align: left"><code>4, 5</code></td>
+          <td><code>5</code></td>
+          <td><code>4, 5</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>6</code></td>
-          <td style="text-align: left"><code>4, 6</code></td>
+          <td><code>6</code></td>
+          <td><code>4, 6</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>7</code></td>
-          <td style="text-align: left"><code>6, 7</code></td>
+          <td><code>7</code></td>
+          <td><code>6, 7</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>8</code></td>
-          <td style="text-align: left"><code>7, 8</code></td>
+          <td><code>8</code></td>
+          <td><code>7, 8</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>9</code></td>
-          <td style="text-align: left"><code>7, 9</code></td>
+          <td><code>9</code></td>
+          <td><code>7, 9</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>10</code></td>
-          <td style="text-align: left"><code>9, 10</code></td>
+          <td><code>10</code></td>
+          <td><code>9, 10</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>11</code></td>
-          <td style="text-align: left"><code>9, 11</code></td>
+          <td><code>11</code></td>
+          <td><code>9, 11</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>12</code></td>
-          <td style="text-align: left"><code>11, 12</code></td>
+          <td><code>12</code></td>
+          <td><code>11, 12</code></td>
       </tr>
   </tbody>
 </table>
@@ -2438,54 +2420,54 @@ for our specific <code>T</code> and <code>C</code> measures at each step<sup id=
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
+          <th>timestamp</th>
+          <th>value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>13.875</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>13.875</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>14.525</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>14.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>14.775</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>14.775</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>15.025</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>15.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>15.150</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>15.150</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>15.275</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>15.275</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>15.325</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>15.325</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>15.525</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>15.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>15.775</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>15.775</code></td>
       </tr>
   </tbody>
 </table>
@@ -2493,7 +2475,7 @@ for our specific <code>T</code> and <code>C</code> measures at each step<sup id=
 timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
 <code>2021-01-20T08:06:00Z</code>. These represent a time paradox as it appears that our
 <code>AQi</code> has two different values at the same time.</p>
-<p><img alt="I find your lack of logic disturbing" src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg"></p>
+<p><img src="/images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing"></p>
 <p>We both know this data is eventually going to show up on a web page. Also, we
 wouldn&rsquo;t want one of those hipster javascript frontend developers to point out a
 lack of logic or, worse, an inconsistency in our data to us, wouldn&rsquo;t we?</p>
@@ -2513,104 +2495,104 @@ considering ids <code>6</code> and <code>7</code> which are fresher than the tim
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
+          <th>timestamp</th>
+          <th>value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>14.525</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>14.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>15.025</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>15.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:19Z</code></td>
-          <td style="text-align: left"><code>15.150</code></td>
+          <td><code>2021-01-20T08:06:19Z</code></td>
+          <td><code>15.150</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:42Z</code></td>
-          <td style="text-align: left"><code>15.275</code></td>
+          <td><code>2021-01-20T08:06:42Z</code></td>
+          <td><code>15.275</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>15.325</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>15.325</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>15.525</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>15.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>15.775</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>15.775</code></td>
       </tr>
   </tbody>
 </table>
 <p>Just as an equation is an excuse to brush up on some
 <a href="https://www.latex-project.org/">LaTeX</a>, a good time series is an excellent
 candidate for <a href="http://www.gnuplot.info/">gnuplot</a>.</p>
-<p><img alt="plot of the data so far" src="/images/posts/plot-output.png"></p>
+<p><img src="/images/posts/plot-output.png" alt="plot of the data so far"></p>
 <p>Real data is of course much more chaotic than this, and you might want to
 normalize the result by an arbitrary time interval, say one minute:</p>
 <table>
   <thead>
       <tr>
-          <th style="text-align: left">timestamp</th>
-          <th style="text-align: left">value</th>
+          <th>timestamp</th>
+          <th>value</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:01:00Z</code></td>
-          <td style="text-align: left"><code>13.625</code></td>
+          <td><code>2021-01-20T08:01:00Z</code></td>
+          <td><code>13.625</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:02:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:02:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:03:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:03:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:04:00Z</code></td>
-          <td style="text-align: left"><code>14.025</code></td>
+          <td><code>2021-01-20T08:04:00Z</code></td>
+          <td><code>14.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:05:00Z</code></td>
-          <td style="text-align: left"><code>14.525</code></td>
+          <td><code>2021-01-20T08:05:00Z</code></td>
+          <td><code>14.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:06:00Z</code></td>
-          <td style="text-align: left"><code>15.025</code></td>
+          <td><code>2021-01-20T08:06:00Z</code></td>
+          <td><code>15.025</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:07:00Z</code></td>
-          <td style="text-align: left"><code>15.325</code></td>
+          <td><code>2021-01-20T08:07:00Z</code></td>
+          <td><code>15.325</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:08:00Z</code></td>
-          <td style="text-align: left"><code>15.525</code></td>
+          <td><code>2021-01-20T08:08:00Z</code></td>
+          <td><code>15.525</code></td>
       </tr>
       <tr>
-          <td style="text-align: left"><code>2021-01-20T08:09:00Z</code></td>
-          <td style="text-align: left"><code>15.775</code></td>
+          <td><code>2021-01-20T08:09:00Z</code></td>
+          <td><code>15.775</code></td>
       </tr>
   </tbody>
 </table>
-<p><img alt="plot of the normalized data" src="/images/posts/plot-output-normalized.png"></p>
+<p><img src="/images/posts/plot-output-normalized.png" alt="plot of the normalized data"></p>
 <p>Makes sense? I certainly hope so.</p>
-<p><img alt="yes" src="/images/posts/yes.gif"></p>
+<p><img src="/images/posts/yes.gif" alt="yes"></p>
 <h2 id="lets-get-coding">Let&rsquo;s get coding</h2>
 <p>Time to write some code. First of all, let&rsquo;s define an interface for our <code>AQi</code>
 calculator, so we can provide different implementations later on.</p>
@@ -2851,12 +2833,12 @@ providers.</p>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesT <span style="color:#f92672">=</span> providerT.<span style="color:#a6e22e">get</span>();
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>TimeValue<span style="color:#f92672">&gt;</span> timeValuesC <span style="color:#f92672">=</span> providerC.<span style="color:#a6e22e">get</span>();
 </span></span></code></pre></div><p>This translates to the following serial execution model:</p>
-<p><img alt="sequence diagram for serial execution" src="/images/posts/sequence-diagram-serial.jpg"></p>
+<p><img src="/images/posts/sequence-diagram-serial.jpg" alt="sequence diagram for serial execution"></p>
 <p>As we said, we can do better than this. In a multithreaded environment, we can
 spawn the two clients concurrently and start processing their data as soon as we
 receive a response from both. This saves us some time and potentially speeds up
 our overall response time.</p>
-<p><img alt="sequence diagram for parallel execution" src="/images/posts/sequence-diagram-parallel.jpg"></p>
+<p><img src="/images/posts/sequence-diagram-parallel.jpg" alt="sequence diagram for parallel execution"></p>
 <p>How do we implement this execution model in our code? There are several options
 but the most popular and the one I personally like the most is to use
 <code>CompletableFuture</code>s, which were introduced in Java 8 if I recall correctly.</p>
@@ -2927,7 +2909,7 @@ quite a bit of time on this as I was trying to dig deeper into some issues I&rsq
 had at work. I suggest you do the same when you run into problems that need some
 clarification on your side. I also hope you found this useful.</p>
 <h2 id="bonus">Bonus</h2>
-<p><img alt="reading memes on github" src="/images/posts/reading-memes-on-github.webp"></p>
+<p><img src="/images/posts/reading-memes-on-github.webp" alt="reading memes on github"></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
@@ -2936,10 +2918,10 @@ clarification on your side. I also hope you found this useful.</p>
 <p>this is my revenge for all the bad math grades at school.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
-<p><img alt="it is acceptable meme" src="/images/posts/it-is-acceptable.jpg">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img src="/images/posts/it-is-acceptable.jpg" alt="it is acceptable meme">&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3">
-<p><img alt="this is fine meme" src="/images/posts/this-is-fine.webp">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><img src="/images/posts/this-is-fine.webp" alt="this is fine meme">&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4">
 <p>Time series data, also referred to as time-stamped data, is a sequence of
@@ -3052,8 +3034,7 @@ davvero la differenza.</p>
             
             <guid>/posts/2018/10/lorecchio-musicale-come-funziona-e-come-svilupparlo/</guid>
             <description>&lt;blockquote&gt;
-&lt;p&gt;«Think of your ears as eyes.» — Keith Jarrett&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;«Think of your ears as eyes.» — Keith Jarrett&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;come-funziona&#34;&gt;Come Funziona&lt;/h2&gt;
 &lt;p&gt;Se la musica è l’arte dei suoni, l’ear training è l&amp;rsquo;allenamento dell&amp;rsquo;orecchio
 musicale. Cosa si intende con orecchio musicale? L&amp;rsquo;udito ha un aspetto passivo
@@ -3063,8 +3044,7 @@ grado di produrla sul proprio strumento.&lt;/p&gt;
 &lt;p&gt;Ma di questo parleremo più avanti. Per ora torniamo al suono. Le sue
 caratteristiche sono:&lt;/p&gt;</description>
             <content type="html"><![CDATA[<blockquote>
-<p>«Think of your ears as eyes.» — Keith Jarrett<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-</blockquote>
+<p>«Think of your ears as eyes.» — Keith Jarrett<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p></blockquote>
 <h2 id="come-funziona">Come Funziona</h2>
 <p>Se la musica è l’arte dei suoni, l’ear training è l&rsquo;allenamento dell&rsquo;orecchio
 musicale. Cosa si intende con orecchio musicale? L&rsquo;udito ha un aspetto passivo
@@ -3148,8 +3128,7 @@ frasi, paragrafi, capitoli e così via.</p>
 <p>Non imorpta in che oridne apapaino le letetre in una paolra, l’uinca csoa
 imnorptate è che la pimra e la ulimta letetra sinao nel ptoso gituso. Il
 riustlato può serbmare mloto cnofuso e noonstatne ttuto si può legerge sezna
-mloti prleobmi.</p>
-</blockquote>
+mloti prleobmi.</p></blockquote>
 <p>Riesci a leggere il testo appena citato perché la mente specializzata nella
 lettura può elevarsi a un livello istintivo dal quale è possibile osservare
 parole, frasi e infine il pensiero espresso senza preoccuparsi troppo dei
@@ -3314,7 +3293,7 @@ Bisogna imparare entrambi i tipi di intervallo, perché uno serve per la
 comprensione delle melodie e l&rsquo;altro per la comprensione degli accordi.</p>
 <p>Gli intervalli seguono delle vetuste regole di nomenclatura. I più giovani
 direbbero che i loro nomi sono parecchio incasinati e, in effetti, guardando la
-<a href="https://it.wikipedia.org/wiki/Intervallo_(musica)#Tavola_degli_intervalli">tavola su wikipedia</a>,
+<a href="https://it.wikipedia.org/wiki/Intervallo_%28musica%29#Tavola_degli_intervalli">tavola su wikipedia</a>,
 non gli si può proprio dare torto, specie quando si apprende dell&rsquo;esistenza di
 intervalli ultra deficienti. Per semplificarci la vita, riporto un elenco
 minimale degli intervalli che troviamo all&rsquo;interno di un&rsquo;ottava:</p>
@@ -3342,7 +3321,7 @@ la quasi totalità della musica cui siamo esposti quotidianamente si basa sui
 suoni della scala maggiore.</p>
 <p>Nella tonalità di DO, la scala maggiore è composta dalle note: DO, RE, MI, FA,
 SOL, LA, SI, DO. Osserviamo la tastiera del pianoforte:</p>
-<p><img alt="La tastiera del pianoforte" src="/images/posts/tastiera.jpg"></p>
+<p><img src="/images/posts/tastiera.jpg" alt="La tastiera del pianoforte"></p>
 <p>La scala maggiore di DO, sul pianoforte, è composta interamente da tasti
 bianchi. Facile, no? Suonala un po&rsquo; di volte, prima a salire e poi a scendere.
 Cantala mentre la stai suonando. Magari non sei Bobby McFerrin ma, se ti impegni
@@ -3439,7 +3418,7 @@ seconda maggiore. Suona prima il riferimento (DO) e poi la nota dell&rsquo;inter
 (RE). Queste due note sono molto vicine e il loro suono diventa strano solo
 quando le suoniamo contemporaneamente. Prova a suonare DO e RE insieme: buffo,
 eh? È come se dovesse succedere qualcosa. Ascolta bene i
-<a href="https://it.wikipedia.org/wiki/Battimenti_(musica)">battimenti</a>. Senti come
+<a href="https://it.wikipedia.org/wiki/Battimenti_%28musica%29">battimenti</a>. Senti come
 quelle che fino a un secondo fa consideravamo solo due banali note suonate
 insieme, ora che stai prestando particolare attenzione, presentano una ricchezza
 armonica per nulla banale?</p>
@@ -3479,7 +3458,7 @@ scelta a caso.</p>
 hai interiorizzato la scala maggiore ad un livello istintivo. Genera un po&rsquo; di
 gruppi di numeri da 1 a 8. Per comodità te ne riporto qui sotto alcuni set di
 esempio ma puoi
-<a href="https://www.random.org/integer-sets/?sets=10&num=5&min=1&max=8&seqnos=on&commas=on&order=index&format=html&rnd=new">generarne quanti ne vuoi</a>.
+<a href="https://www.random.org/integer-sets/?sets=10&amp;num=5&amp;min=1&amp;max=8&amp;seqnos=on&amp;commas=on&amp;order=index&amp;format=html&amp;rnd=new">generarne quanti ne vuoi</a>.
 Ogni set rappresenta una melodia ed ogni numero del set rappresenta il grado
 della scala. Ad esempio: 2, 8, 1, 5, 6 sarebbero RE, DO, DO, SOL, LA, dove 8
 sarebbe il DO più alto e 1 il DO più basso.</p>
@@ -3849,7 +3828,7 @@ problems both to the neophyte and to the experienced programmer.</p>
 <p>In this post, we&rsquo;ll see that there&rsquo;s no need to be a
 <a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the very simple few
 concepts needed not to incur into time management hell.</p>
-<p><img alt="Time doesn&rsquo;t exist. Clocks exist." src="/images/posts/time.jpg"></p>
+<p><img src="/images/posts/time.jpg" alt="Time doesn’t exist. Clocks exist."></p>
 <h2 id="representation">Representation</h2>
 <p>A question as simple as <em>&ldquo;What time is it?&rdquo;</em> assumes a number of contextual
 subleties that are obvious to the human brain, but become absolute nonsense for
@@ -3920,7 +3899,7 @@ calendars or stuff like expressing durations!</p>
 <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> are your friends</li>
 <li>always print the time zone while debugging</li>
 </ul>
-<p><img alt="Back to the future clock" src="/images/posts/bttf-clock.png"></p>
+<p><img src="/images/posts/bttf-clock.png" alt="Back to the future clock"></p>
 <h2 id="serialization">Serialization</h2>
 <p>Speaking of software, serialization is a process where you take an object&rsquo;s
 status and spell it out in such a way that it can be later entirely rebuilt,
@@ -4072,28 +4051,32 @@ functionality.</p>
 <li><a href="https://docs.timetime.in/blog/js-dates-finally-fixed/">JS Dates Are About to Be Fixed</a></li>
 <li><a href="https://science.slashdot.org/story/24/08/15/0145200/researchers-figure-out-how-to-keep-clocks-on-the-earth-moon-in-sync">Researchers Figure Out How To Keep Clocks On the Earth, Moon In Sync 13</a></li>
 <li><a href="https://www.engadget.com/science/space/nasa-confirms-its-developing-the-moons-new-time-zone-165345568.html">NASA confirms it’s developing the Moon’s new time zone</a></li>
+<li><a href="https://simonwillison.net/2024/Nov/27/storing-times-for-human-events/">Storing times for human events</a></li>
+<li><a href="https://thorben-janssen.com/hibernate-jpa-date-and-time/">Date and Time Mappings with Hibernate and JPA</a></li>
 </ul>
 <h2 id="memes">Memes</h2>
-<p><img alt="Elon Musk: &ldquo;I&rsquo;m putting people on Mars!&rdquo;, Developers: &ldquo;Fantastic, more\ntimezones to support&rdquo;." src="/images/posts/mars-timezone.png"></p>
-<p><img alt="Daylight savings dog" src="/images/posts/daylight-dog.jpg"></p>
-<p><img alt="Daylight savings? How about daylight investing?" src="/images/posts/daylight-investing.jpg"></p>
-<p><img alt="Friend: &ldquo;What happened?&rdquo;, Me: &ldquo;I had to work with timezones\ntoday&rdquo;." src="/images/posts/timezones-meme.png"></p>
-<p><img alt="January 1st 1970 meme" src="/images/posts/time-universe-meme.webp"></p>
-<p><img alt="Boeing 787 meme" src="/images/posts/time-boeing-787.jpg"></p>
-<p><img alt="xkcd: Consensus Time" src="/images/posts/time-consensus.jpg"></p>
-<p><img alt="Developers having to implement yet another timezone change" src="/images/posts/time-devs.png"></p>
-<p><img alt="Developers having to explain&hellip;" src="/images/posts/time-devs-again.webp"></p>
-<p><img alt="Days since last timezone issue: 0" src="/images/posts/time-days-since.webp"></p>
-<p><img alt="Clocks back" src="/images/posts/clocks-back-meme.jpg"></p>
-<p><img alt="Picard DST" src="/images/posts/picard-dst.png"></p>
-<p><img alt="January 1st meme" src="/images/posts/time-format-meme.png"></p>
-<p><img alt="A comprehensive map of all countries that use the MMDDYYYY date format" src="/images/posts/terrible-maps.png"></p>
-<p><img alt="Shen Comic on the USA format" src="/images/posts/shen-usa-format.png"></p>
-<p><img alt="Perfect date" src="/images/posts/perfect-date.jpg"></p>
-<p><img alt="DST" src="/images/posts/time-dst-meme.jpg"></p>
-<p><img alt="Overnight workers" src="/images/posts/time-overnight-meme.jpg"></p>
-<p><img alt="XKCD: DateTime" src="https://imgs.xkcd.com/comics/datetime.png"></p>
-<p><img alt="Netherlands" src="/images/posts/time-netherlands.png"></p>
+<p><img src="/images/posts/mars-timezone.png" alt="Elon Musk: “I’m putting people on Mars!”, Developers: “Fantastic, more
+timezones to support”."></p>
+<p><img src="/images/posts/daylight-dog.jpg" alt="Daylight savings dog"></p>
+<p><img src="/images/posts/daylight-investing.jpg" alt="Daylight savings? How about daylight investing?"></p>
+<p><img src="/images/posts/timezones-meme.png" alt="Friend: “What happened?”, Me: “I had to work with timezones
+today”."></p>
+<p><img src="/images/posts/time-universe-meme.webp" alt="January 1st 1970 meme"></p>
+<p><img src="/images/posts/time-boeing-787.jpg" alt="Boeing 787 meme"></p>
+<p><img src="/images/posts/time-consensus.jpg" alt="xkcd: Consensus Time"></p>
+<p><img src="/images/posts/time-devs.png" alt="Developers having to implement yet another timezone change"></p>
+<p><img src="/images/posts/time-devs-again.webp" alt="Developers having to explain…"></p>
+<p><img src="/images/posts/time-days-since.webp" alt="Days since last timezone issue: 0"></p>
+<p><img src="/images/posts/clocks-back-meme.jpg" alt="Clocks back"></p>
+<p><img src="/images/posts/picard-dst.png" alt="Picard DST"></p>
+<p><img src="/images/posts/time-format-meme.png" alt="January 1st meme"></p>
+<p><img src="/images/posts/terrible-maps.png" alt="A comprehensive map of all countries that use the MMDDYYYY date format"></p>
+<p><img src="/images/posts/shen-usa-format.png" alt="Shen Comic on the USA format"></p>
+<p><img src="/images/posts/perfect-date.jpg" alt="Perfect date"></p>
+<p><img src="/images/posts/time-dst-meme.jpg" alt="DST"></p>
+<p><img src="/images/posts/time-overnight-meme.jpg" alt="Overnight workers"></p>
+<p><img src="https://imgs.xkcd.com/comics/datetime.png" alt="XKCD: DateTime"></p>
+<p><img src="/images/posts/time-netherlands.png" alt="Netherlands"></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
@@ -4203,14 +4186,13 @@ ad una singola riga di output corrisponda un messaggio coerente.</p>
 <p>All’inizio, andare a capo sembra dare un aspetto migliore all’output ma col
 tempo ti renderai conto che avresti fatto meglio a non farlo.</p>
 <h1 id="occhio-al-copia-e-incolla">Occhio al copia e incolla</h1>
-<p><img alt="Allarme rosso" src="/images/posts/blinking-alarm.gif"></p>
+<p><img src="/images/posts/blinking-alarm.gif" alt="Allarme rosso"></p>
 <p>Come già accennato, può capitare di fare copia e incolla di statement di log.</p>
 <p>Ogni volta che faccio copia e incolla, mi si accende una speciale lampadina
 nella testa che serve a ricordarmi:</p>
 <blockquote>
 <p>controlla ciò che hai copiato almeno due volte perché sicuramente hai
-dimenticato di modificare qualcosa</p>
-</blockquote>
+dimenticato di modificare qualcosa</p></blockquote>
 <p>Questo vale più in generale e non solo per i messaggi di log. Se avessi un euro
 per ogni frammento di codice sbagliato per via di un copia e incolla frettoloso,
 in questo momento sarei sulla spiaggia di un’isola tropicale a sorseggiare

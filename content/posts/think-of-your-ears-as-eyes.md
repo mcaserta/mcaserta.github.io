@@ -777,6 +777,7 @@ Infine vorrei rassicurare il mio psichiatra: non ho mai scritto un quartetto
 d’archi in OH fenicio.
 
 [^jarrett]: "Sun Bear Concerts", ECM, 1978, note di copertina
+
 [^johnny]:
     Il mio amico Johnny, batterista, raccontava sempre un aneddoto riguardante
     una festa di paese: un signore chiese di far cantare la propria figlia sul

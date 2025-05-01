@@ -854,7 +854,9 @@ tu abbia trovato tutto ciò utile.
 [Credits](https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/)
 
 [^school]: questa è la mia vendetta per tutti i brutti voti a scuola.
+
 [^this-is-fine]: ![this is fine meme](/images/posts/this-is-fine.webp)
+
 [^it-is-acceptable]:
     ![it is acceptable meme](/images/posts/it-is-acceptable.jpg)
 

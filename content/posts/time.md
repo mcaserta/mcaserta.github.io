@@ -293,6 +293,7 @@ Here are a few useful links I've accumulated over time:
 - [NASA confirms it’s developing the Moon’s new time zone](https://www.engadget.com/science/space/nasa-confirms-its-developing-the-moons-new-time-zone-165345568.html)
 - [Storing times for human events](https://simonwillison.net/2024/Nov/27/storing-times-for-human-events/)
 - [Date and Time Mappings with Hibernate and JPA](https://thorben-janssen.com/hibernate-jpa-date-and-time/)
+- [I Found the Dumbest Time Zone](https://youtu.be/Lz3jAEdzbbA)
 
 ## Memes
 

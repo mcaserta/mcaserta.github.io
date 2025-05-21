@@ -294,6 +294,7 @@ Here are a few useful links I've accumulated over time:
 - [Storing times for human events](https://simonwillison.net/2024/Nov/27/storing-times-for-human-events/)
 - [Date and Time Mappings with Hibernate and JPA](https://thorben-janssen.com/hibernate-jpa-date-and-time/)
 - [I Found the Dumbest Time Zone](https://youtu.be/Lz3jAEdzbbA)
+- [A Server for Matching Long/Lat to Timezone](https://github.com/LittleGreenViper/LGV_TZ_Lookup)
 
 ## Memes
 

@@ -235,7 +235,7 @@ Here are a few useful links I've accumulated over time:
 
 - [UTC is enough for everyone... right?](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
 - [The Problem with Time & Timezones - Computerphile](https://youtu.be/-5wpm-gesOY)
-- [Falsehoods programmers believe about time](http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time)
+- [Falsehoods programmers believe about time](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca)
 - [Storing UTC is not a silver bullet](https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/)
 - [The 5 laws of API dates and times](http://apiux.com/2013/03/20/5-laws-api-dates-and-times/)
 - [Storing Date/Times in Databases](http://derickrethans.nl/storing-date-time-in-database.html)

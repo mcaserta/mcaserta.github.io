@@ -233,6 +233,7 @@ https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html
 
 Here are a few useful links I've accumulated over time:
 
+- [How to Think About Time in Programming](https://shanrauf.com/archive/how-to-think-about-time-in-programming)
 - [UTC is enough for everyone... right?](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
 - [The Problem with Time & Timezones - Computerphile](https://youtu.be/-5wpm-gesOY)
 - [Falsehoods programmers believe about time](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca)

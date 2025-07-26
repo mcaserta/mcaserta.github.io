@@ -1,3 +1,6 @@
+# krik output artifacts
+**/_site/
+
 ## OS Files
 # Windows
 Thumbs.db
@@ -8,4 +11,5 @@ $RECYCLE.BIN/
 # OSX
 .DS_Store
 
+# IDEs
 /.idea/

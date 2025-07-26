@@ -1,5 +1,6 @@
 ---
-title: "An Introduction to Time Representation, Serialization and Management in
+title:
+  "An Introduction to Time Representation, Serialization and Management in
   Software"
 date: 2013-04-15T14:19:00Z
 toc: true
@@ -60,8 +61,8 @@ going to match, as we are both adhering to the same standard: UTC.
 Now, suppose I have to schedule a Skype chat with a fellow software developer in
 the US. I could write him an email and say something along the lines of _"see
 you on 2/3"_. In Italy, that would be the second day in the month of march, but
-to a US person, that would be the third day in the month of february. As you
-can see, our chat is never going to happen.
+to a US person, that would be the third day in the month of february. As you can
+see, our chat is never going to happen.
 
 These are only a few examples of the kind of issues that might arise when
 representing date and time information. Luckily enough, there is a solution to

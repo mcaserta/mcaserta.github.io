@@ -829,7 +829,8 @@ clarification on your side. I also hope you found this useful.
 
 [^this-is-fine]: ![this is fine meme](../images/posts/this-is-fine.webp)
 
-[^it-is-acceptable]: ![it is acceptable meme](../images/posts/it-is-acceptable.jpg)
+[^it-is-acceptable]:
+    ![it is acceptable meme](../images/posts/it-is-acceptable.jpg)
 
 [^time-series-data]:
     Time series data, also referred to as time-stamped data, is a sequence of

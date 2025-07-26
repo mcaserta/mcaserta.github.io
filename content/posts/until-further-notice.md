@@ -41,9 +41,9 @@ The rest of the songs have been played and improvised live on keyboards.
 This is without a doubt no groundbreaking stuff. But it is for me. I come from a
 jazz background where holding a triad for longer than a bar is considered an
 outrageous act of rebellion. I didn't expect what came out, like... at all. But
-my friends are not saying terrible words about it, so I think maybe this is worth
-sharing. Even if one person likes part of a song, that would be more than I
-could ever hope for.
+my friends are not saying terrible words about it, so I think maybe this is
+worth sharing. Even if one person likes part of a song, that would be more than
+I could ever hope for.
 
 The album's theme is the passive-aggressive office jargon. The music is supposed
 to be a sort of meditative remedy to the frustrations induced by the tensions
@@ -74,7 +74,8 @@ as some heavy processing through [Arturia](https://www.arturia.com/) EFX
 Fragments and [Chow](https://chowdsp.com/) Tape Model. I played the keyboards
 via midi on a Sequential Take 5 and a Nord Stage 3 Compact. Sometimes I played
 the left hand bass part on the Take 5 and the rest on the Nord with the right
-hand. Most keyboardists can do that, and they don't go bragging about it, I know.
+hand. Most keyboardists can do that, and they don't go bragging about it, I
+know.
 
 Well, that's about it. See you soon with more music I guess.
 

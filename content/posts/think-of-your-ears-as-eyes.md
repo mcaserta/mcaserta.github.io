@@ -185,8 +185,8 @@ Passando da uno sax all'altro, il musicista ha bisogno di abituarsi alle piccole
 differenze di posizione dei tasti e alla loro corsa dissimile. Nulla che un po'
 di esercizio non possa risolvere, ma lo smarrimento iniziale è dovuto alla
 sensazione tattile poco familiare. Tutt'altro discorso è il cambio di
-imboccatura. Togliete a un sassofonista la sua imboccatura abituale e avrete
-una persona in preda all'angoscia cosmica.
+imboccatura. Togliete a un sassofonista la sua imboccatura abituale e avrete una
+persona in preda all'angoscia cosmica.
 
 Dal punto di vista dell'educazione musicale il pianoforte è senz'altro lo
 strumento ideale perché la tastiera rende disponibile visivamente tutte le
@@ -680,19 +680,19 @@ trovata, procedeva a suonarne l'accordo: una bella triade in posizione base. Pi�
 tardi avrei capito che era davvero difficile sbagliare l'accordo dato che nel
 98% delle canzoni le possibilità sono limitate ad accordi maggiori e minori.
 
-Insomma, papà imparava a suonare un discreto numero di canzoni e io avevo
-capito quale era il suo procedimento. All'epoca mi piaceva particolarmente la
-melodia di una canzone di Memo Remigi di cui ho purtroppo dimenticato sia il
-titolo che la melodia e papà, vedendomi smanettare all'organo, pensò di
-appiccicavi dei numeri ai tasti e scrivermi la melodia su un pezzo di carta
-sottoforma di sequenza di numeri. Probabilmente doveva aver visto una tastiera
-Bontempi di quelle che un tempo si regalavano ai bambini e aveva pensato di
-replicare il sistema Bontempi sul suo ben più serio organo Ekosonic.
+Insomma, papà imparava a suonare un discreto numero di canzoni e io avevo capito
+quale era il suo procedimento. All'epoca mi piaceva particolarmente la melodia
+di una canzone di Memo Remigi di cui ho purtroppo dimenticato sia il titolo che
+la melodia e papà, vedendomi smanettare all'organo, pensò di appiccicavi dei
+numeri ai tasti e scrivermi la melodia su un pezzo di carta sottoforma di
+sequenza di numeri. Probabilmente doveva aver visto una tastiera Bontempi di
+quelle che un tempo si regalavano ai bambini e aveva pensato di replicare il
+sistema Bontempi sul suo ben più serio organo Ekosonic.
 
 Una volta imparata la melodia di Memo Remigi, volevo imparare sempre più canzoni
 e papà naturalmente non aveva la pazienza e il tempo di scrivere tutta quella
-roba per me. Non ci volle molto quindi che, seguendo il suo esempio, cominciai
-a imparare la musica a orecchio sul suo organo.
+roba per me. Non ci volle molto quindi che, seguendo il suo esempio, cominciai a
+imparare la musica a orecchio sul suo organo.
 
 Quando imparai a leggere e scrivere, i miei pensarono di mandarmi a studiare il
 pianoforte privatamente. Il maestro andò con mio padre in un negozio a Sora e
@@ -705,8 +705,8 @@ libri. Insomma, dire che ero un pessimo studente sarebbe un eufemismo. Ero
 praticamente una capra. Ma ero contento perché avevo il mio pianoforte e potevo
 suonare a orecchio le canzoni che piacevano a me.
 
-Tutto questo è andato bene fin quando non ho cominciato a incontrare canzoni
-che mi davano più filo da torcere. Avevo iniziato ad ascoltare soprattutto Pino
+Tutto questo è andato bene fin quando non ho cominciato a incontrare canzoni che
+mi davano più filo da torcere. Avevo iniziato ad ascoltare soprattutto Pino
 Daniele e Lucio Dalla. C'era sempre qualcosa in queste canzoni che non riuscivo
 a capire fino in fondo. Questa condizione di incapacità mi dava un fastidio
 fisico. Era proprio una sensazione di rabbia quella che avevo e quando andavo a

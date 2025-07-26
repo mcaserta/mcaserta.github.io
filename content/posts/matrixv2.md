@@ -10,8 +10,8 @@ type: post
 
 After trying to implement the
 [digital rain](https://en.wikipedia.org/wiki/Matrix_digital_rain) algorithm in
-6502 assembly and [failing miserably](matrix.html), I decided to try the [cc65](https://cc65.github.io/) toolkit and
-write some C code.
+6502 assembly and [failing miserably](matrix.html), I decided to try the
+[cc65](https://cc65.github.io/) toolkit and write some C code.
 
 Once it's loaded, the following commands are available through the keyboard:
 

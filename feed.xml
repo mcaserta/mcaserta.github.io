@@ -3,7 +3,7 @@
   <title>Mirko Caserta</title>
   <link href="feed.xml" rel="self"/>
   <link href="index.html"/>
-  <updated>2025-07-26T02:30:11.808166+00:00</updated>
+  <updated>2025-07-26T03:33:11.806399+00:00</updated>
   <id>feed.xml</id>
   <entry>
     <title>Missa</title>
@@ -312,9 +312,9 @@ The rest of the songs have been played and improvised live on keyboards.&lt;/p&g
 &lt;p&gt;This is without a doubt no groundbreaking stuff. But it is for me. I come from a
 jazz background where holding a triad for longer than a bar is considered an
 outrageous act of rebellion. I didn&#39;t expect what came out, like... at all. But
-my friends are not saying terrible words about it, so I think maybe this is worth
-sharing. Even if one person likes part of a song, that would be more than I
-could ever hope for.&lt;/p&gt;
+my friends are not saying terrible words about it, so I think maybe this is
+worth sharing. Even if one person likes part of a song, that would be more than
+I could ever hope for.&lt;/p&gt;
 &lt;p&gt;The album&#39;s theme is the passive-aggressive office jargon. The music is supposed
 to be a sort of meditative remedy to the frustrations induced by the tensions
 that arise in that context. An old friend of mine, a professional musician, once
@@ -341,7 +341,8 @@ as some heavy processing through &lt;a href=&quot;https://www.arturia.com/&quot;
 Fragments and &lt;a href=&quot;https://chowdsp.com/&quot;&gt;Chow&lt;/a&gt; Tape Model. I played the keyboards
 via midi on a Sequential Take 5 and a Nord Stage 3 Compact. Sometimes I played
 the left hand bass part on the Take 5 and the rest on the Nord with the right
-hand. Most keyboardists can do that, and they don&#39;t go bragging about it, I know.&lt;/p&gt;
+hand. Most keyboardists can do that, and they don&#39;t go bragging about it, I
+know.&lt;/p&gt;
 &lt;p&gt;Well, that&#39;s about it. See you soon with more music I guess.&lt;/p&gt;
 &lt;p&gt;Until further notice...&lt;/p&gt;
 &lt;p&gt;You can listen to Until Further Notice for free by clicking
@@ -404,8 +405,8 @@ if you miss a deadline. Of course that&#39;s bullshit.&lt;/p&gt;
     <updated>2021-05-20T12:19:00+00:00</updated>
     <content type="html">&lt;p&gt;After trying to implement the
 &lt;a href=&quot;https://en.wikipedia.org/wiki/Matrix_digital_rain&quot;&gt;digital rain&lt;/a&gt; algorithm in
-6502 assembly and &lt;a href=&quot;matrix.html&quot;&gt;failing miserably&lt;/a&gt;, I decided to try the &lt;a href=&quot;https://cc65.github.io/&quot;&gt;cc65&lt;/a&gt; toolkit and
-write some C code.&lt;/p&gt;
+6502 assembly and &lt;a href=&quot;matrix.html&quot;&gt;failing miserably&lt;/a&gt;, I decided to try the
+&lt;a href=&quot;https://cc65.github.io/&quot;&gt;cc65&lt;/a&gt; toolkit and write some C code.&lt;/p&gt;
 &lt;p&gt;Once it&#39;s loaded, the following commands are available through the keyboard:&lt;/p&gt;
 &lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;key&lt;/th&gt;&lt;th&gt;use&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;
 &lt;tr&gt;&lt;td&gt;&lt;code&gt;A&lt;/code&gt;&lt;/td&gt;&lt;td&gt;amber mode&lt;/td&gt;&lt;/tr&gt;
@@ -1306,8 +1307,8 @@ Passando da uno sax all&#39;altro, il musicista ha bisogno di abituarsi alle pic
 differenze di posizione dei tasti e alla loro corsa dissimile. Nulla che un po&#39;
 di esercizio non possa risolvere, ma lo smarrimento iniziale è dovuto alla
 sensazione tattile poco familiare. Tutt&#39;altro discorso è il cambio di
-imboccatura. Togliete a un sassofonista la sua imboccatura abituale e avrete
-una persona in preda all&#39;angoscia cosmica.&lt;/p&gt;
+imboccatura. Togliete a un sassofonista la sua imboccatura abituale e avrete una
+persona in preda all&#39;angoscia cosmica.&lt;/p&gt;
 &lt;p&gt;Dal punto di vista dell&#39;educazione musicale il pianoforte è senz&#39;altro lo
 strumento ideale perché la tastiera rende disponibile visivamente tutte le
 possibilità sonore. Se pensiamo ai cantanti, l&#39;emissione della voce si basa su
@@ -1741,18 +1742,18 @@ canzone lo sentivo che andava in cerca dalla nota più bassa e, quando l&#39;ave
 trovata, procedeva a suonarne l&#39;accordo: una bella triade in posizione base. Più
 tardi avrei capito che era davvero difficile sbagliare l&#39;accordo dato che nel
 98% delle canzoni le possibilità sono limitate ad accordi maggiori e minori.&lt;/p&gt;
-&lt;p&gt;Insomma, papà imparava a suonare un discreto numero di canzoni e io avevo
-capito quale era il suo procedimento. All&#39;epoca mi piaceva particolarmente la
-melodia di una canzone di Memo Remigi di cui ho purtroppo dimenticato sia il
-titolo che la melodia e papà, vedendomi smanettare all&#39;organo, pensò di
-appiccicavi dei numeri ai tasti e scrivermi la melodia su un pezzo di carta
-sottoforma di sequenza di numeri. Probabilmente doveva aver visto una tastiera
-Bontempi di quelle che un tempo si regalavano ai bambini e aveva pensato di
-replicare il sistema Bontempi sul suo ben più serio organo Ekosonic.&lt;/p&gt;
+&lt;p&gt;Insomma, papà imparava a suonare un discreto numero di canzoni e io avevo capito
+quale era il suo procedimento. All&#39;epoca mi piaceva particolarmente la melodia
+di una canzone di Memo Remigi di cui ho purtroppo dimenticato sia il titolo che
+la melodia e papà, vedendomi smanettare all&#39;organo, pensò di appiccicavi dei
+numeri ai tasti e scrivermi la melodia su un pezzo di carta sottoforma di
+sequenza di numeri. Probabilmente doveva aver visto una tastiera Bontempi di
+quelle che un tempo si regalavano ai bambini e aveva pensato di replicare il
+sistema Bontempi sul suo ben più serio organo Ekosonic.&lt;/p&gt;
 &lt;p&gt;Una volta imparata la melodia di Memo Remigi, volevo imparare sempre più canzoni
 e papà naturalmente non aveva la pazienza e il tempo di scrivere tutta quella
-roba per me. Non ci volle molto quindi che, seguendo il suo esempio, cominciai
-a imparare la musica a orecchio sul suo organo.&lt;/p&gt;
+roba per me. Non ci volle molto quindi che, seguendo il suo esempio, cominciai a
+imparare la musica a orecchio sul suo organo.&lt;/p&gt;
 &lt;p&gt;Quando imparai a leggere e scrivere, i miei pensarono di mandarmi a studiare il
 pianoforte privatamente. Il maestro andò con mio padre in un negozio a Sora e
 una settimana dopo a casa mia comparì un fantastico pianoforte verticale Schulze
@@ -1763,8 +1764,8 @@ pianoforte le avevo imparate più imitando il mio maestro che leggendole sui
 libri. Insomma, dire che ero un pessimo studente sarebbe un eufemismo. Ero
 praticamente una capra. Ma ero contento perché avevo il mio pianoforte e potevo
 suonare a orecchio le canzoni che piacevano a me.&lt;/p&gt;
-&lt;p&gt;Tutto questo è andato bene fin quando non ho cominciato a incontrare canzoni
-che mi davano più filo da torcere. Avevo iniziato ad ascoltare soprattutto Pino
+&lt;p&gt;Tutto questo è andato bene fin quando non ho cominciato a incontrare canzoni che
+mi davano più filo da torcere. Avevo iniziato ad ascoltare soprattutto Pino
 Daniele e Lucio Dalla. C&#39;era sempre qualcosa in queste canzoni che non riuscivo
 a capire fino in fondo. Questa condizione di incapacità mi dava un fastidio
 fisico. Era proprio una sensazione di rabbia quella che avevo e quando andavo a
@@ -1945,8 +1946,8 @@ going to match, as we are both adhering to the same standard: UTC.&lt;/p&gt;
 &lt;p&gt;Now, suppose I have to schedule a Skype chat with a fellow software developer in
 the US. I could write him an email and say something along the lines of &lt;em&gt;&quot;see
 you on 2/3&quot;&lt;/em&gt;. In Italy, that would be the second day in the month of march, but
-to a US person, that would be the third day in the month of february. As you
-can see, our chat is never going to happen.&lt;/p&gt;
+to a US person, that would be the third day in the month of february. As you can
+see, our chat is never going to happen.&lt;/p&gt;
 &lt;p&gt;These are only a few examples of the kind of issues that might arise when
 representing date and time information. Luckily enough, there is a solution to
 the representation conundrums, namely the

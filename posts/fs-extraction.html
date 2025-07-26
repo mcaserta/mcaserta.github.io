@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to extract a filesystem from a disk image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..&#x2F;assets/css/main.css">
+    <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="..&#x2F;feed.xml">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="top-nav">
+            <a href="..&#x2F;index.html" class="site-title">Mirko Caserta</a>
+            <div class="nav-controls">
+                
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <span class="theme-icon">🌓</span>
+                </button>
+            </div>
+        </nav>
+
+        <aside class="sidebar">
+            <ul class="page-links">
+                
+                <li><a href="..&#x2F;pages&#x2F;about.html">About</a></li>
+                
+                <li><a href="..&#x2F;pages&#x2F;contacts.html">Contacts</a></li>
+                
+                <li><a href="..&#x2F;pages&#x2F;cv.html">Curriculum Vitae</a></li>
+                
+            </ul>
+        </aside>
+
+        
+
+        <main class="main-content">
+            <div class="back-link">
+                <a href="..&#x2F;index.html">← Back to Home</a>
+            </div>
+            <header>
+                <h1>How to extract a filesystem from a disk image</h1>
+                <div class="meta">April 18, 2009</div>
+            </header>
+            <article><p>You need to backup an entire hard disk to a single file. Supposing your disk is
+at <code>/dev/hda</code> and the backup file is <code>image-file</code>, you’d do:</p>
+<pre><code class="language-bash"># cat /dev/hda &gt; image-file
+</code></pre>
+<p>or</p>
+<pre><code class="language-bash"># dd if=/dev/hda of=image-file
+</code></pre>
+<p>The file backup you get will hold a copy of every single bit from the hard disk.
+This means that you also have a copy of the MBR in the first 512 bytes of the
+file.</p>
+<p>Because of this, you can see the partition table on the backup file:</p>
+<pre><code class="language-bash"># sfdisk -l -uS image-file
+Disk image-file: 0 cylinders, 0 heads, 0 sectors/track
+Warning: The partition table looks like it was made
+for C/H/S=*/255/32 (instead of 0/0/0).
+For this listing I'll assume that geometry.
+Units = sectors of 512 bytes, counting from 0
+Device Boot Start End #sectors Id System
+image-filep1 32 261119 261088 83 Linux
+image-filep2 261120 4267679 4006560 82 Linux swap / Solaris
+image-filep3 4267680 142253279 137985600 83 Linux
+image-filep4 0 - 0 0 Empty
+</code></pre>
+<p>Suppose you want to extract partition number 3. You can see that it starts at
+block 4267680 and is 137985600 blocks long. This translates to:</p>
+<pre><code class="language-bash"># dd if=image-file of=partition3-file skip=4267680 count=137985600
+</code></pre>
+<p>Peeking into the contents of the partition is as easy as:</p>
+<pre><code class="language-bash"># mount -t ext3 -o loop partition3-file /mnt/hack
+</code></pre>
+<p>Also, you can avoid using dd to extract the partition file by passing the
+<code>offset</code> option to mount.</p>
+</article>
+            
+            <div class="tags">
+                <span class="tag">linux</span><span class="tag">unix</span><span class="tag">sysadm</span>
+            </div>
+            
+        </main>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <span>↑</span>
+    </button>
+
+    <script>
+        window.krikBaseName = 'fs-extraction';
+    </script>
+    <script src="..&#x2F;assets/js/main.js"></script>
+</body>
+</html>

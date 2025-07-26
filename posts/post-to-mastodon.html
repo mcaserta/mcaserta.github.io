@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posting to Mastodon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..&#x2F;assets/css/main.css">
+    <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="..&#x2F;feed.xml">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="top-nav">
+            <a href="..&#x2F;index.html" class="site-title">Mirko Caserta</a>
+            <div class="nav-controls">
+                
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                    <span class="theme-icon">🌓</span>
+                </button>
+            </div>
+        </nav>
+
+        <aside class="sidebar">
+            <ul class="page-links">
+                
+                <li><a href="..&#x2F;pages&#x2F;about.html">About</a></li>
+                
+                <li><a href="..&#x2F;pages&#x2F;contacts.html">Contacts</a></li>
+                
+                <li><a href="..&#x2F;pages&#x2F;cv.html">Curriculum Vitae</a></li>
+                
+            </ul>
+        </aside>
+
+        
+
+        <main class="main-content">
+            <div class="back-link">
+                <a href="..&#x2F;index.html">← Back to Home</a>
+            </div>
+            <header>
+                <h1>Posting to Mastodon</h1>
+                <div class="meta">December 26, 2022</div>
+            </header>
+            <article><p>Since the latest twitter issues due to
+<a href="https://knowyourmeme.com/memes/space-karen">Space Karen</a>, I got myself a
+<a href="https://mastodon.online/@mcaserta">Mastodon account</a> and I must say that, so
+far, the experience has been extremely positive, possibly due to the fact that
+most of the people I follow are well behaved nerds who care about sharing good
+vibes. If you also feel like joining, please take a look at
+<a href="https://joinmastodon.org/">Join Mastodon</a> and see for yourself.</p>
+<p>Anyway, I found myself pretty soon in the need to automate my posts. I have a
+<a href="https://t.me/mirkolovesmusic">telegram channel</a> where I post music I like and I
+wanted to automate cross posting from there to my Mastodon account and I did it
+with <a href="https://ifttt.com">IFTTT</a> using a WebHook component for Mastodon.</p>
+<p>For now, I just want to document how easy it is to post to Mastodon. All you
+need is an http client. I'll be using <a href="https://curl.se/">curl</a> in my examples
+but you can of course use anything you see fit.</p>
+<pre><code class="language-bash">curl --request POST  \
+  --header 'Authorization: Bearer your-auth-token-here' \
+  --form 'status="The Crusaders: \"And Then There Was The Blues\" https://youtu.be/F-EAazr0j78 #music"' \
+  https://mastodon.online/api/v1/statuses
+</code></pre>
+<p>This is the general form of the request. In other words, we're making an http
+POST request where the body is the equivalent of submitting an html form with a
+<code>status</code> field whose value is the actual text we want posted on our timeline.
+Just be careful with the quoting going on inside the <code>status</code> field.</p>
+<p>As for the authorization header, you need to get an authentication token from
+your Mastodon server instance. In my server, it's under Preferences -&gt;
+Development. I just have to select <em>New Application</em>, fill a little info about
+my app, select only <code>write:statuses</code> as the permissions I'm granting and, once
+created, the token will be visible in the app info under <em>Your access token</em>.</p>
+<p>You will also need to replace <code>mastodon.online</code> with your server's hostname.</p>
+<p>This is it. You're welcome.</p>
+</article>
+            
+            <div class="tags">
+                <span class="tag">mastodon</span><span class="tag">software development</span>
+            </div>
+            
+        </main>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <span>↑</span>
+    </button>
+
+    <script>
+        window.krikBaseName = 'post-to-mastodon';
+    </script>
+    <script src="..&#x2F;assets/js/main.js"></script>
+</body>
+</html>

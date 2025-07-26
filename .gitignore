@@ -1,9 +1,3 @@
-# files generate by hugo
-/public/
-/resources/_gen/
-hugo_stats.json
-.hugo_build.lock
-
 ## OS Files
 # Windows
 Thumbs.db

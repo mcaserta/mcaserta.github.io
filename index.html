@@ -16,11 +16,27 @@
         <nav class="top-nav">
             <span class="site-title">Mirko Caserta</span>
             <div class="nav-controls">
+                <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span class="hamburger-icon">☰</span>
+                </button>
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span class="theme-icon">🌓</span>
                 </button>
             </div>
         </nav>
+
+        <!-- Mobile dropdown menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-page-links">
+                
+                <li><a href="pages/about.html">About</a></li>
+                
+                <li><a href="pages/contacts.html">Contacts</a></li>
+                
+                <li><a href="pages/cv.html">Curriculum Vitae</a></li>
+                
+            </ul>
+        </div>
 
         <aside class="sidebar">
             <ul class="page-links">

@@ -16,6 +16,9 @@
         <nav class="top-nav">
             <a href="../index.html" class="site-title">Mirko Caserta</a>
             <div class="nav-controls">
+                <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span class="hamburger-icon">☰</span>
+                </button>
                 
                 <div class="language-selector">
                     <select onchange="switchLanguage(this.value)">
@@ -36,6 +39,19 @@
                 </button>
             </div>
         </nav>
+
+        <!-- Mobile dropdown menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-page-links">
+                
+                <li><a href="../pages/about.html">About</a></li>
+                
+                <li><a href="../pages/contacts.html">Contacts</a></li>
+                
+                <li><a href="../pages/cv.html">Curriculum Vitae</a></li>
+                
+            </ul>
+        </div>
 
         <aside class="sidebar">
             <ul class="page-links">
@@ -66,7 +82,7 @@
                 <h1>Time Series Data and CompletableFuture example in Java</h1>
                 <div class="meta">February 04, 2021</div>
             </header>
-            <article><h1 id="time-series-data-and-completablefuture-example-in-java">Time Series Data and CompletableFuture example in Java</h1>
+            <article>
 <p>Full code for all the examples can be found
 <a href="https://github.com/mcaserta/time-series-concurrency-example">here</a>.</p>
 <h2 id="how-to-run-the-program">How to run the program</h2>

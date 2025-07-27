@@ -3,8 +3,30 @@
   <title>Mirko Caserta</title>
   <link href="feed.xml" rel="self"/>
   <link href="index.html"/>
-  <updated>2024-09-15T08:00:00+00:00</updated>
+  <updated>2025-07-27T00:42:26+00:00</updated>
   <id>feed.xml</id>
+  <entry>
+    <title>Krik</title>
+    <link href="posts/krik.html"/>
+    <id>posts/krik.html</id>
+    <updated>2025-07-27T00:42:26+00:00</updated>
+    <content type="html">&lt;h1&gt;Krik&lt;/h1&gt;
+&lt;p&gt;I spent the last 2-3 days developing a static site generator in Rust using
+exclusively &lt;a href=&quot;https://claude.ai/&quot;&gt;Claude Code&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;My knowledge of Rust is quite basic: I understand code when it&#39;s well written
+but I don&#39;t yet have the practice necessary to develop a sophisticated tool.&lt;/p&gt;
+&lt;p&gt;However, for this project I didn&#39;t have to touch a single line of code, since I
+gave all the instructions to Claude. The AI even took care of the releases.&lt;/p&gt;
+&lt;p&gt;The impression I had using this tool is the same one I had in the &#39;90s when I
+saw the Internet for the first time.&lt;/p&gt;
+&lt;p&gt;I don&#39;t think there&#39;s anything else to add.&lt;/p&gt;
+&lt;p&gt;Oh, yes... the project can be found on
+&lt;a href=&quot;https://github.com/mcaserta/krik&quot;&gt;github&lt;/a&gt; and a demo of the generated site is
+this page you&#39;re reading right now.&lt;/p&gt;
+&lt;p&gt;A more complete demo of all the features can be found
+&lt;a href=&quot;https://mirkocaserta.com/krik/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Missa</title>
     <link href="posts/missa.html"/>

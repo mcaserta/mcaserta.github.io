@@ -21,8 +21,9 @@ saw the Internet for the first time.
 
 I don't think there's anything else to add.
 
-Oh, yes... the project can be found on [github](https://github.com/mcaserta/krik)
-and a demo of the generated site is this page you're reading right now.
+Oh, yes... the project can be found on
+[github](https://github.com/mcaserta/krik) and a demo of the generated site is
+this page you're reading right now.
 
 A more complete demo of all the features can be found
 [here](https://mirkocaserta.com/krik/).

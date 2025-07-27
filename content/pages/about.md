@@ -1,5 +1,6 @@
 ---
 layout: page
+date: 2025-07-26T20:20:00Z
 title: About
 ---
 

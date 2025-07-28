@@ -9,39 +9,39 @@ toc: true
 
 ### Senior Developer, Alten Spa; Roma, IT — 2022-presente
 
-| Cliente  | Periodo   | Prodotto                      | Tecnologie                                                                |
-| -------- | --------- | ----------------------------- | ------------------------------------------------------------------------- |
-| Giuffré  | 2025      | Analisi riferimenti normativi | aws, k8s, java, spring boot, microservices, postgres, rabbitmq, helm, ai  |
-| Datamars | 2025      | Datasphere                    | kafka, java, spring boot, postgres                                        |
-| Maggioli | 2023-2025 | Gestione ticket               | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
+| Cliente  | Periodo   | Prodotto                          | Tecnologie                                                                |
+| -------- | --------- | --------------------------------- | ------------------------------------------------------------------------- |
+| Giuffré  | 2025      | Analisi riferimenti normativi     | aws, k8s, java, spring boot, microservices, postgres, rabbitmq, helm, ai  |
+| Datamars | 2025      | Datasphere                        | kafka, java, spring boot, postgres                                        |
+| Maggioli | 2023-2025 | Gestione ticket                   | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
 | Aruba    | 2023      | Sistema di fatturazione rinnovato | k8s, kafka streams, java, spring boot, microservices, prometheus, grafana |
-| Paydo    | 2022      | Plick, servizio di pagamento  | aws, lambda, s3, sqs, typescript, nodejs                                  |
+| Paydo    | 2022      | Plick, servizio di pagamento      | aws, lambda, s3, sqs, typescript, nodejs                                  |
 
 ### Senior Developer, Dedagroup Spa; Roma, IT — 2020-2021
 
-| Cliente | Periodo   | Prodotto                                                            | Tecnologie                                         |
-| ------- | --------- | ------------------------------------------------------------------- | -------------------------------------------------- |
-| Terna   | 2020-2021 | Console web di monitoraggio dell'infrastruttura elettrica          | k8s, iot, java, oracle, spring boot, microservices |
+| Cliente | Periodo   | Prodotto                                                  | Tecnologie                                         |
+| ------- | --------- | --------------------------------------------------------- | -------------------------------------------------- |
+| Terna   | 2020-2021 | Console web di monitoraggio dell'infrastruttura elettrica | k8s, iot, java, oracle, spring boot, microservices |
 
 ### Software Architect, Nexse Srl; Roma, IT — 2003-2019
 
-Fondata nel 2000 da 5 soci, Nexse impiegava più di cento professionisti IT
-fino a quando non è stata acquisita nel 2018. In questa azienda ho ricoperto
-diversi ruoli: amministratore di sistema, insegnante, senior developer e
-infine software architect.
+Fondata nel 2000 da 5 soci, Nexse impiegava più di cento professionisti IT fino
+a quando non è stata acquisita nel 2018. In questa azienda ho ricoperto diversi
+ruoli: amministratore di sistema, insegnante, senior developer e infine software
+architect.
 
-| Cliente                      | Periodo   | Prodotto                                                                                                                                                                                                    | Tecnologie                                                   |
-| ---------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Eden Viaggi                  | 2015-2018 | Catalogo Prodotti, Cache Voli, Nuovo Portale Agenti di Viaggio, Connettori Hotel                                                                                                                           | java, osgi, fuse, orientdb                                   |
-| Vodafone Automotive          | 2014-2015 | Portale Flotte                                                                                                                                                                                              | java, osgi, fuse, oracle                                     |
-| Postecom                     | 2013      | Portale dell'Automobilista                                                                                                                                                                                 | liferay, java, oracle, portlet                               |
-| Betbull                      | 2011-2012 | Piattaforma di scommesse                                                                                                                                                                                   | scala, java, neo4j                                           |
-| Nexse                        | 2011      | Istituita una Task Force chiamata SWAT (Software Architecture and Technology) con l'obiettivo di produrre consulenza tecnica interna e diffondere l'innovazione attraverso insegnamento e tutoraggio    |                                                              |
-| Gioco Digitale (Bwin Italia) | 2009-2011 | Piattaforme di gioco, integrazione AAMS (monopolio statale del gioco) e rivenditori                                                                                                                        | jboss, j2ee, osgi, karaf, spring boot, microservices, oracle |
-| Matrix (LA7)                 | 2007-2009 | LA7 Carta Più                                                                                                                                                                                              | j2ee, oracle                                                 |
-| Tin.it                       | 2005-2007 | Moduli apache AAA, Alice, piattaforma per provisioning, delivery e accounting di contenuti digitali                                                                                                        | java, c, apache                                              |
-| Sun Microsystems             | 2004-2005 | Autenticazione Smart Card Putty, valutazione e test di carico di una piattaforma CRM J2EE                                                                                                                  | c, putty, openssh, pkcs11                                    |
-| Wind                         | 2003-2004 | Server gateway MMS Empower Interactive UK                                                                                                                                                                  | solaris, sun cluster                                         |
+| Cliente                      | Periodo   | Prodotto                                                                                                                                                                                             | Tecnologie                                                   |
+| ---------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| Eden Viaggi                  | 2015-2018 | Catalogo Prodotti, Cache Voli, Nuovo Portale Agenti di Viaggio, Connettori Hotel                                                                                                                     | java, osgi, fuse, orientdb                                   |
+| Vodafone Automotive          | 2014-2015 | Portale Flotte                                                                                                                                                                                       | java, osgi, fuse, oracle                                     |
+| Postecom                     | 2013      | Portale dell'Automobilista                                                                                                                                                                           | liferay, java, oracle, portlet                               |
+| Betbull                      | 2011-2012 | Piattaforma di scommesse                                                                                                                                                                             | scala, java, neo4j                                           |
+| Nexse                        | 2011      | Istituita una Task Force chiamata SWAT (Software Architecture and Technology) con l'obiettivo di produrre consulenza tecnica interna e diffondere l'innovazione attraverso insegnamento e tutoraggio |                                                              |
+| Gioco Digitale (Bwin Italia) | 2009-2011 | Piattaforme di gioco, integrazione AAMS (monopolio statale del gioco) e rivenditori                                                                                                                  | jboss, j2ee, osgi, karaf, spring boot, microservices, oracle |
+| Matrix (LA7)                 | 2007-2009 | LA7 Carta Più                                                                                                                                                                                        | j2ee, oracle                                                 |
+| Tin.it                       | 2005-2007 | Moduli apache AAA, Alice, piattaforma per provisioning, delivery e accounting di contenuti digitali                                                                                                  | java, c, apache                                              |
+| Sun Microsystems             | 2004-2005 | Autenticazione Smart Card Putty, valutazione e test di carico di una piattaforma CRM J2EE                                                                                                            | c, putty, openssh, pkcs11                                    |
+| Wind                         | 2003-2004 | Server gateway MMS Empower Interactive UK                                                                                                                                                            | solaris, sun cluster                                         |
 
 ### Amministratore di Sistema, TPS Srl; Roma, IT — 2000-2003
 
@@ -57,17 +57,17 @@ Contenuti Multimediali, Networking e Internet.
 ### Amministratore di Sistema, Flashnet Srl; Frosinone, IT — 1996-2000
 
 Uno dei primi Internet Service Provider operanti in Italia, Flashnet aveva un
-nodo di accesso dial-up con centinaia di utenti a Frosinone. Ho gestito i
-server Unix e controllato il funzionamento dei servizi di rete. Ho anche
-partecipato a un gruppo di sviluppo di applicazioni web a tre livelli.
+nodo di accesso dial-up con centinaia di utenti a Frosinone. Ho gestito i server
+Unix e controllato il funzionamento dei servizi di rete. Ho anche partecipato a
+un gruppo di sviluppo di applicazioni web a tre livelli.
 
 ## Competenze
 
 Fin dall'inizio della mia carriera professionale ho lavorato principalmente con
 software open source, il che mi ha dato una migliore comprensione della sua
 comunità, processi e punti di forza. Sono appassionato di tecnologia,
-innovazione e usabilità e sono sempre alla ricerca di nuovi modi per
-migliorare la mia produttività e la qualità del mio lavoro.
+innovazione e usabilità e sono sempre alla ricerca di nuovi modi per migliorare
+la mia produttività e la qualità del mio lavoro.
 
 ## Know-How
 

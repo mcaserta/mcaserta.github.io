@@ -13,8 +13,8 @@ type: post
 La maggior parte dei problemi nello sviluppo software solitamente nascono da una
 conoscenza scarsa e inconsistente del dominio in questione. Un argomento
 apparentemente semplice come la rappresentazione, serializzazione e gestione del
-tempo può facilmente causare una serie di problemi sia al programmatore
-neofita che a quello esperto.
+tempo può facilmente causare una serie di problemi sia al programmatore neofita
+che a quello esperto.
 
 In questo post, vedremo che non c'è bisogno di essere un
 [Signore del Tempo](http://en.wikipedia.org/wiki/Time_Lord) per afferrare i
@@ -41,9 +41,9 @@ come
 - siamo passati all'ora legale alcune settimane fa, quindi il fuso orario
   corrente deve essere l'Ora Estiva dell'Europa Centrale
 
-_15:39_ è una rappresentazione conveniente del tempo finché siamo
-in possesso dei bit contestuali. Per rappresentare il tempo in modo universale,
-dovreste avere un'idea di cosa siano
+_15:39_ è una rappresentazione conveniente del tempo finché siamo in possesso
+dei bit contestuali. Per rappresentare il tempo in modo universale, dovreste
+avere un'idea di cosa siano
 [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time) e i
 [fusi orari](http://en.wikipedia.org/wiki/Time_zone).
 
@@ -62,10 +62,10 @@ consultare il contatto nel mio registro e le informazioni di data e ora
 corrisponderanno, dato che stiamo entrambi aderendo allo stesso standard: UTC.
 
 Ora, supponiamo di dover programmare una chat Skype con un collega sviluppatore
-negli Stati Uniti. Potrei scrivergli una email e dire qualcosa come _"ci
-vediamo il 2/3"_. In Italia, questo sarebbe il secondo giorno del mese di marzo,
-ma per una persona statunitense, questo sarebbe il terzo giorno del mese di
-febbraio. Come potete vedere, la nostra chat non avverrà mai.
+negli Stati Uniti. Potrei scrivergli una email e dire qualcosa come _"ci vediamo
+il 2/3"_. In Italia, questo sarebbe il secondo giorno del mese di marzo, ma per
+una persona statunitense, questo sarebbe il terzo giorno del mese di febbraio.
+Come potete vedere, la nostra chat non avverrà mai.
 
 Questi sono solo alcuni esempi del tipo di problemi che potrebbero sorgere
 quando si rappresentano informazioni di data e ora. Fortunatamente, c'è una
@@ -73,10 +73,10 @@ soluzione agli enigmi della rappresentazione, ovvero lo standard
 [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) o, meglio ancora,
 [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339).
 
-Solo per darvi un esempio, in RFC 3339, `1994-11-05T08:15:30-05:00`
-corrisponde al 5 novembre 1994, 8:15:30 am, Ora Standard dell'Est degli Stati
-Uniti. `1994-11-05T13:15:30Z` corrisponde allo stesso istante (la `Z` sta per
-UTC). Stesso istante, rappresentazioni diverse.
+Solo per darvi un esempio, in RFC 3339, `1994-11-05T08:15:30-05:00` corrisponde
+al 5 novembre 1994, 8:15:30 am, Ora Standard dell'Est degli Stati Uniti.
+`1994-11-05T13:15:30Z` corrisponde allo stesso istante (la `Z` sta per UTC).
+Stesso istante, rappresentazioni diverse.
 
 RFC 3339 ha anche il bel effetto collaterale di fornire ordinamento naturale in
 sistemi che utilizzano l'ordine lessicografico (come i filesystem) perché
@@ -101,8 +101,7 @@ indiano o di cose come esprimere le durate!
 
 Lasciatemi riassumere alcuni punti chiave da portare a casa finora:
 
-- imparate a conoscere i
-  [fusi orari](http://en.wikipedia.org/wiki/Time_zone) e
+- imparate a conoscere i [fusi orari](http://en.wikipedia.org/wiki/Time_zone) e
   [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time)
 - non confondete UTC e GMT
 - [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) e
@@ -113,8 +112,8 @@ Lasciatemi riassumere alcuni punti chiave da portare a casa finora:
 
 ## Serializzazione
 
-Parlando di software, la serializzazione è un processo dove prendete lo stato
-di un oggetto e lo specifica in modo tale che possa essere successivamente
+Parlando di software, la serializzazione è un processo dove prendete lo stato di
+un oggetto e lo specifica in modo tale che possa essere successivamente
 interamente ricostruito, esattamente come l'originale, utilizzando le
 informazioni esplicitate (serializzate). Pensate a un file xml o json:
 
@@ -139,8 +138,8 @@ passati dal 1° gennaio 1970 alle 00:00 UTC. Non è questo un modo piuttosto
 intelligente, consistente e compatto di rappresentare una pletora di
 informazioni, come `17 aprile 2013 @ 11:42:07am CEST`?
 
-Il tempo Unix è solo un'altra rappresentazione arbitraria di un dato momento
-nel tempo, anche se non molto leggibile per gli umani. Ma potete prendere quel
+Il tempo Unix è solo un'altra rappresentazione arbitraria di un dato momento nel
+tempo, anche se non molto leggibile per gli umani. Ma potete prendere quel
 numero, scriverlo su un pezzo di carta, attaccarlo a un piccione viaggiatore, e
 il vostro destinatario sarebbe in grado di decifrare il vostro messaggio vitale
 semplicemente rivolgendosi a Internet e visitando un sito come
@@ -155,8 +154,8 @@ $ date -d @1366191727
 Wed Apr 17 11:42:07 CEST 2013
 ```
 
-Tuttavia, sui sistemi derivati da BSD come Mac OS X, date -d non funziona
-quindi dovete usare invece:
+Tuttavia, sui sistemi derivati da BSD come Mac OS X, date -d non funziona quindi
+dovete usare invece:
 
 ```bash
 $ date -r 1366191727
@@ -165,20 +164,20 @@ Wed Apr 17 11:42:07 CEST 2013
 
 Proprio come potete scrivere quel numero su un pezzo di carta e successivamente
 riportare in vita l'istante completo, potete memorizzarlo in un file o in una
-riga del vostro RDBMS preferito. Anche se potreste voler parlare al vostro
-RDBMS usando un driver appropriato e passargli una semplice istanza di data; il
-vostro driver si occuperà poi della conversione al formato di serializzazione
-del database sottostante per le istanze di tempo native.
+riga del vostro RDBMS preferito. Anche se potreste voler parlare al vostro RDBMS
+usando un driver appropriato e passargli una semplice istanza di data; il vostro
+driver si occuperà poi della conversione al formato di serializzazione del
+database sottostante per le istanze di tempo native.
 
 Memorizzando il tempo usando un formato nativo, ottenete gratuitamente le ottime
 funzionalità di formattazione, ordinamento, interrogazione, ecc. del vostro
 RDBMS per il tempo, quindi potreste voler pensarci due volte prima di
 memorizzare semplici timestamp Unix in, diciamo, Oracle.
 
-Assicuratevi solo di sapere a quale fuso orario si riferisce il vostro
-timestamp Unix, o potreste confondervi successivamente al momento della
-deserializzazione. Per default, un timestamp Unix è in UTC. Se usate le
-librerie del vostro sistema, dovreste essere a posto.
+Assicuratevi solo di sapere a quale fuso orario si riferisce il vostro timestamp
+Unix, o potreste confondervi successivamente al momento della deserializzazione.
+Per default, un timestamp Unix è in UTC. Se usate le librerie del vostro
+sistema, dovreste essere a posto.
 
 Quando lavorate con database, usate i tipi di dati più appropriati. Per esempio
 in Oracle, ci sono
@@ -187,15 +186,15 @@ in Oracle, ci sono
 `TIMESTAMP WITH LOCAL TIME ZONE`. Inoltre, i database solitamente hanno un
 concetto di fuso orario del database e fuso orario della sessione, quindi
 assicuratevi di capire come il vostro database specifico li sta usando. Un
-utente che apre una sessione con fuso orario `A` vedrà valori diversi rispetto
-a un utente che si connette con fuso orario `B`.
+utente che apre una sessione con fuso orario `A` vedrà valori diversi rispetto a
+un utente che si connette con fuso orario `B`.
 
 ISO 8601 è anche un favorito per la serializzazione. Infatti, è usato nello
 standard [XML Schema](http://www.w3.org/TR/xmlschema-2/#isoformats). La maggior
 parte dei framework xml è nativamente in grado di serializzare e deserializzare
 avanti e indietro da `xs:date`, `xs:time` e `xs:dateTime` al formato nativo del
-vostro linguaggio di programmazione (e viceversa). Lo stesso vale per json.
-Fate solo attenzione quando gestite rappresentazioni parziali: per esempio, se
+vostro linguaggio di programmazione (e viceversa). Lo stesso vale per json. Fate
+solo attenzione quando gestite rappresentazioni parziali: per esempio, se
 omettete il fuso orario, assicuratevi di concordare preventivamente su uno
 predefinito con la vostra controparte comunicante (solitamente UTC o il vostro
 fuso orario locale se siete entrambi nello stesso).
@@ -219,14 +218,14 @@ diventata così popolare che ha dato vita a
 [parte](http://www.infoq.com/news/2013/02/java-time-api-jdk-8) del JDK 8.
 
 L'uso di framework per il tempo popolari, ben progettati e implementati vi
-salverà la vita. Seriamente. Prendetevi il tempo per familiarizzare con l'API
-di vostra scelta.
+salverà la vita. Seriamente. Prendetevi il tempo per familiarizzare con l'API di
+vostra scelta.
 
 ## Compiti Comuni per il Tempo in Java
 
 Vediamo come tutto questo si traduce in codice java. Qualsiasi linguaggio sarà
-ovviamente diverso ma tutto quello che sto facendo qui dovrebbe essere
-possibile nel linguaggio che preferite.
+ovviamente diverso ma tutto quello che sto facendo qui dovrebbe essere possibile
+nel linguaggio che preferite.
 
 Vi prego di non usare `java.util.Date` o `java.util.Calendar`. Non usiamo più
 quelle classi. La nuova API per il tempo è nel package `java.time`.

@@ -10,6 +10,8 @@ name: Build and Deploy
 # - GIT_USERNAME: Your Git username for commit metadata
 # - GIT_EMAIL: Your Git email for commit metadata
 
+on: push
+
 stages:
   - build-and-deploy
 
@@ -78,7 +80,3 @@ build-and-deploy-site:
 
   only:
     - main
-
-  on: push
-
-  when: manual

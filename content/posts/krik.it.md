@@ -7,6 +7,8 @@ tags: ["software", "ai", "claude code", "anthropic", "rust"]
 
 # Krik
 
+![Krik logo](../images/posts/krik.png)
+
 Ho passato gli ultimi 2/3 giorni a sviluppare un generatore statico di siti in
 rust usando esclusivamente [Claude Code](https://claude.ai/).
 

@@ -386,6 +386,7 @@ Ecco alcuni link utili che ho accumulato nel tempo:
 - [Date and Time Mappings with Hibernate and JPA](https://thorben-janssen.com/hibernate-jpa-date-and-time/)
 - [I Found the Dumbest Time Zone](https://youtu.be/Lz3jAEdzbbA)
 - [A Server for Matching Long/Lat to Timezone](https://github.com/LittleGreenViper/LGV_TZ_Lookup)
+- [Ianto Cannon's clock graphics](https://ianto-cannon.github.io/clock.html)
 
 ## Meme
 

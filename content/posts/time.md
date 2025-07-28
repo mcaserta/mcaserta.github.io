@@ -370,6 +370,7 @@ Here are a few useful links I've accumulated over time:
 - [Date and Time Mappings with Hibernate and JPA](https://thorben-janssen.com/hibernate-jpa-date-and-time/)
 - [I Found the Dumbest Time Zone](https://youtu.be/Lz3jAEdzbbA)
 - [A Server for Matching Long/Lat to Timezone](https://github.com/LittleGreenViper/LGV_TZ_Lookup)
+- [Ianto Cannon's clock graphics](https://ianto-cannon.github.io/clock.html)
 
 ## Memes
 

@@ -55,7 +55,15 @@
         <aside class="toc-sidebar">
             <div class="toc">
                 <h2>Table of Contents</h2>
-                <ul><li class="toc-h2"><a href="#representation">Representation</a></li><li class="toc-h2"><a href="#serialization">Serialization</a></li><li class="toc-h2"><a href="#management">Management</a></li><li class="toc-h2"><a href="#common-time-tasks-in-java">Common Time Tasks in Java</a></li><li class="toc-h2"><a href="#testing">Testing</a></li><li class="toc-h2"><a href="#further-resources">Further Resources</a></li><li class="toc-h2"><a href="#memes">Memes</a></li></ul>
+                <ul class="toc">
+  <li><a href="#heading-0">Representation</a></li>
+  <li><a href="#heading-1">Serialization</a></li>
+  <li><a href="#heading-2">Management</a></li>
+  <li><a href="#heading-3">Common Time Tasks in Java</a></li>
+  <li><a href="#heading-4">Testing</a></li>
+  <li><a href="#heading-5">Further Resources</a></li>
+  <li><a href="#heading-6">Memes</a></li>
+</ul>
             </div>
         </aside>
         
@@ -72,45 +80,45 @@
 knowledge of the domain at hand. A topic apparently as simple as time
 representation, serialization and management can easily cause a number of
 problems both to the neophyte and to the experienced programmer.</p>
-<p>In this post, we'll see that there's no need to be a
+<p>In this post, we’ll see that there’s no need to be a
 <a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the very simple few
 concepts needed not to incur into time management hell.</p>
-<p><img src="../images/posts/time.jpg" alt="Time doesn&#39;t exist. Clocks exist." /></p>
-<h2 id="representation">Representation</h2>
-<p>A question as simple as <em>"What time is it?"</em> assumes a number of contextual
+<p><img src="../images/posts/time.jpg" alt="Time doesn’t exist. Clocks exist." /></p>
+<h2 id="heading-0">Representation</h2>
+<p>A question as simple as <em>“What time is it?”</em> assumes a number of contextual
 subleties that are obvious to the human brain, but become absolute nonsense for
 a computer.</p>
 <p>For instance, if you were asking me what time is it right now, I might say:
-<em>"It's 3:39"</em> and, if you were a colleague in my office, that'd be enough
-information to infer that it's 3:39pm CEST. That's because you would already be
+<em>“It’s 3:39”</em> and, if you were a colleague in my office, that’d be enough
+information to infer that it’s 3:39pm CEST. That’s because you would already be
 in possession of some bits of important contextual information such as</p>
 <ul>
-<li>it's an afternoon because we've already had lunch</li>
-<li>we're in Rome, therefore our timezone is Central European Time (CET) or
+<li>it’s an afternoon because we’ve already had lunch</li>
+<li>we’re in Rome, therefore our timezone is Central European Time (CET) or
 Central European Summer Time (CEST)</li>
-<li>we've switched to daylight savings time a few weeks earlier, so the current
+<li>we’ve switched to daylight savings time a few weeks earlier, so the current
 timezone must be Central European Summer Time</li>
 </ul>
-<p><em>3:39</em> only happens to be a convenient representation of time as long as we're
+<p><em>3:39</em> only happens to be a convenient representation of time as long as we’re
 in possession of the contextual bits. In order to represent time in a universal
 way, you should have an idea what
 <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a> and
 <a href="http://en.wikipedia.org/wiki/Time_zone">timezones</a> are.</p>
 <p>Please do not confuse UTC with GMT: although their time matches, they are <em>two
 different things</em>: one is an universal standard while the other is a timezone.
-When someone says they're using GMT, unless that person has a funny scottish
+When someone says they’re using GMT, unless that person has a funny scottish
 accent, what they really mean is UTC.</p>
 <p>As an amateur radio operator, I have contacts with people from all over the
 world. Every operator is required to keep a log of his contacts, and we usually
 exchange so called QSL cards, which are a written confirmation of the contact.
 Of course a QSL card must report the exact time of the radio contact and by
-convention it's in UTC. I know that when I receive a QSL card from any fellow
+convention it’s in UTC. I know that when I receive a QSL card from any fellow
 amateur radio operator, no matter where he is located across the whole wide
 world, I can look up the contact in my logbook and the date and time info is
 going to match, as we are both adhering to the same standard: UTC.</p>
 <p>Now, suppose I have to schedule a Skype chat with a fellow software developer in
-the US. I could write him an email and say something along the lines of <em>"see
-you on 2/3"</em>. In Italy, that would be the second day in the month of march, but
+the US. I could write him an email and say something along the lines of <em>“see
+you on 2/3”</em>. In Italy, that would be the second day in the month of march, but
 to a US person, that would be the third day in the month of february. As you can
 see, our chat is never going to happen.</p>
 <p>These are only a few examples of the kind of issues that might arise when
@@ -126,16 +134,16 @@ Same instant, different representations.</p>
 that use lexicographical order (such as filesystems) because information is
 organized from most to least significant, i.e. year, month, day, hour, minute,
 second, fraction of a second<sup class="footnote-reference"><a href="#tz">1</a></sup>.</p>
-<p>Even if you're only dealing with local times in your software, you should know
+<p>Even if you’re only dealing with local times in your software, you should know
 that, unless you also display the time zone, you can never be sure of the time.
 I cannot remember how many times a developer has asked me to <em>fix the time</em> on
 the server, only to discover that his software was printing time in UTC.</p>
 <p>At display time, it is okay to deal with partial representation of time because
 the user experience requires so. Just make sure, when debugging, to print out
 the whole set of information, including the time zone, otherwise you can never
-be sure what you're looking at is what you actually think it is.</p>
+be sure what you’re looking at is what you actually think it is.</p>
 <p>Although a given moment in time is immutable, there is an arbitrary number of
-ways to express it. And we've not even talked about the Julian or Indian
+ways to express it. And we’ve not even talked about the Julian or Indian
 calendars or stuff like expressing durations!</p>
 <p>Let me summarize a few key points to bring home so far:</p>
 <ul>
@@ -147,8 +155,8 @@ calendars or stuff like expressing durations!</p>
 <li>always print the time zone while debugging</li>
 </ul>
 <p><img src="../images/posts/bttf-clock.png" alt="Back to the future clock" /></p>
-<h2 id="serialization">Serialization</h2>
-<p>Speaking of software, serialization is a process where you take an object's
+<h2 id="heading-1">Serialization</h2>
+<p>Speaking of software, serialization is a process where you take an object’s
 status and spell it out in such a way that it can be later entirely rebuilt,
 exactly like the original, by using the spelt out (serialized) information.
 Think of a xml or json file:</p>
@@ -162,9 +170,9 @@ Think of a xml or json file:</p>
 </code></pre>
 <p>This is the serialized form of a peculiar imaginary person class instance.</p>
 <p>In the binary world of computers, time is usually serialized and stored by using
-the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a> convention. As I'm
+the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a> convention. As I’m
 writing this, my Unix time is <code>1366191727</code>. That is: <code>1366191727</code> seconds have
-passed since January 1st, 1970 at 00:00 UTC. Isn't that a pretty clever,
+passed since January 1st, 1970 at 00:00 UTC. Isn’t that a pretty clever,
 consistent and compact way of representing a plethora of information, such as
 <code>April 17 2013 @ 11:42:07am CEST</code>?</p>
 <p>Unix time is only another arbitrary representation of a given moment in time,
@@ -173,7 +181,7 @@ on a piece of paper, stick it onto a carrier pigeon, and your recipient would be
 able to decipher your vital message by simply turning to the Internet and
 visiting a site such as <a href="http://www.unixtimestamp.com/">unixtimestamp.com</a> or
 <a href="https://currentmillis.com/">currentmillis.com</a>.</p>
-<p>If you're a command line junkie like me, on Linux systems you can use:</p>
+<p>If you’re a command line junkie like me, on Linux systems you can use:</p>
 <pre><code class="language-bash">$ date -d @1366191727
 Wed Apr 17 11:42:07 CEST 2013
 </code></pre>
@@ -193,9 +201,9 @@ sorting, querying, etc features of your RDBMS for free, so you might want to
 think twice before storing plain Unix timestamps in, say, Oracle.</p>
 <p>Just make sure you know what timezone your Unix timestamp refers to, or you
 might get confused later at deserialization time. By default, a Unix timestamp
-is in UTC. If you use your system's libraries, you should be okay.</p>
+is in UTC. If you use your system’s libraries, you should be okay.</p>
 <p>When working with databases, use the most appropriate data types. For instance
-in Oracle, there's
+in Oracle, there’s
 <a href="https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm">four different data types</a>:
 <code>DATE</code>, <code>TIMESTAMP</code>, <code>TIMESTAMP WITH TIME ZONE</code> and
 <code>TIMESTAMP WITH LOCAL TIME ZONE</code>. Also, databases usually have a concept of
@@ -205,12 +213,12 @@ is going to see different values than a user connecting with timezone <code>B</c
 <p>ISO 8601 is also a serialization favorite. In fact, it is used in the
 <a href="http://www.w3.org/TR/xmlschema-2/#isoformats">XML Schema</a> standard. Most xml
 frameworks are natively able to serialize and deserialize back and forth from
-<code>xs:date</code>, <code>xs:time</code> and <code>xs:dateTime</code> to your programming language's native
+<code>xs:date</code>, <code>xs:time</code> and <code>xs:dateTime</code> to your programming language’s native
 format (and viceversa). The same is true for json. Just be careful when dealing
 with partial representations: for instance, if you omit the time zone, make sure
 you agree beforehand on a default one with your communicating party (usually UTC
-or your local time zone if you're both in the same one).</p>
-<h2 id="management">Management</h2>
+or your local time zone if you’re both in the same one).</p>
+<h2 id="heading-2">Management</h2>
 <p>First of all, if you think you can write your own time management software
 library, or even write a little routine that adds or subtracts arbitrary values
 from the time of the day, please allow me to show you the source code for the
@@ -218,7 +226,7 @@ from the time of the day, please allow me to show you the source code for the
 <a href="http://www.docjar.com/html/api/java/util/GregorianCalendar.java.html">java.util.GregorianCalendar</a>
 classes from JDK 7, respectively weighting 1331 and 3179 lines of code.</p>
 <p>Okay, these are probably not the best examples of software routines that deal
-with time, I agree. That's why Java libraries like
+with time, I agree. That’s why Java libraries like
 <a href="http://joda-time.sourceforge.net/">Joda Time</a> were written. In fact, Joda Time
 has become so popular that it gave birth to
 <a href="http://jcp.org/en/jsr/detail?id=310">JSR-310</a> and is
@@ -226,24 +234,24 @@ has become so popular that it gave birth to
 <a href="http://www.infoq.com/news/2013/02/java-time-api-jdk-8">part</a> of JDK 8.</p>
 <p>Use of popular, well-designed and implemented time frameworks will save your
 life. Seriously. Take your time to get familiar with the API of your choosing.</p>
-<h2 id="common-time-tasks-in-java">Common Time Tasks in Java</h2>
-<p>Let's see how all this translates into java code. Any language will of course be
-different but everything I'm doing here should be possible in your language of
+<h2 id="heading-3">Common Time Tasks in Java</h2>
+<p>Let’s see how all this translates into java code. Any language will of course be
+different but everything I’m doing here should be possible in your language of
 choice.</p>
-<p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don't use that
+<p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don’t use that
 classes anymore. The new time api is in the <code>java.time</code> package.</p>
 <p>{{<replit src="https://replit.com/@mcaserta/DateTimeApiExample">}}</p>
-<h2 id="testing">Testing</h2>
-<p>In Java there's a <code>Clock</code> class that allows plugging in an arbitrarily
+<h2 id="heading-4">Testing</h2>
+<p>In Java there’s a <code>Clock</code> class that allows plugging in an arbitrarily
 configurable clock implementation for use in the time api. This is especially
 useful in unit testing and debugging. Other languages should have an equivalent
 functionality.</p>
 <p>https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html</p>
-<h2 id="further-resources">Further Resources</h2>
-<p>Here are a few useful links I've accumulated over time:</p>
+<h2 id="heading-5">Further Resources</h2>
+<p>Here are a few useful links I’ve accumulated over time:</p>
 <ul>
 <li><a href="https://shanrauf.com/archive/how-to-think-about-time-in-programming">How to Think About Time in Programming</a></li>
-<li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone... right?</a></li>
+<li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone… right?</a></li>
 <li><a href="https://youtu.be/-5wpm-gesOY">The Problem with Time &amp; Timezones - Computerphile</a></li>
 <li><a href="https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca">Falsehoods programmers believe about time</a></li>
 <li><a href="https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/">Storing UTC is not a silver bullet</a></li>
@@ -254,7 +262,7 @@ functionality.</p>
 <li><a href="https://kirby.kevinson.org/blog/iso-8601-the-better-date-format/">ISO 8601: the better date format</a></li>
 <li><a href="https://www.cl.cam.ac.uk/~mgk25/iso-time.html">A summary of the international standard date and time notation</a></li>
 <li><a href="http://youtu.be/kzprsR2SvrQ">A Short History of the Modern Calendar</a></li>
-<li><a href="https://yro.slashdot.org/story/21/03/14/014233/should-we-heed-the-science-and-abolish-daylight-saving-time">Should We 'Heed the Science and Abolish Daylight Saving Time'?</a></li>
+<li><a href="https://yro.slashdot.org/story/21/03/14/014233/should-we-heed-the-science-and-abolish-daylight-saving-time">Should We ‘Heed the Science and Abolish Daylight Saving Time’?</a></li>
 <li><a href="http://opensourcehacker.com/2013/03/28/converting-world-timezones-with-duckduckgo-and-wolfram-alpha/">Converting world timezones with DuckDuckGo and Wolfram Alpha from the browser address bar</a></li>
 <li><a href="https://www.si.com/extra-mustard/2013/12/30/the-extra-mustard-trivia-hour-when-a-calendar-defeated-russia-in-the-1908-olympics">When a Calendar Defeated Russia in the 1908 Olympics</a></li>
 <li><a href="https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm">Why does China Have Only One Time Zone?</a></li>
@@ -264,9 +272,9 @@ functionality.</p>
 <li><a href="https://timeenna.com/">TIME:ENNA Timezone Converter</a></li>
 <li><a href="https://www.amusingplanet.com/2021/05/how-ancient-romans-kept-time.html">How Ancient Romans Kept Time</a></li>
 <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f076ef44a44d02ed91543f820c14c2c7dff53716">rtc: rk808: Compensate for Rockchip calendar deviation on November 31st</a></li>
-<li><a href="https://eu.usatoday.com/story/news/health/2021/11/01/fall-back-daylight-saving-time-health-experts-want-you-know/6174156001/">Daylight saving time is 'not helpful' and has 'no upsides' experts say</a></li>
+<li><a href="https://eu.usatoday.com/story/news/health/2021/11/01/fall-back-daylight-saving-time-health-experts-want-you-know/6174156001/">Daylight saving time is ‘not helpful’ and has ‘no upsides’ experts say</a></li>
 <li><a href="https://youtu.be/j8VcpmpN0NM">Neil deGrasse Tyson Reminds Us Daylight Saving Time is Ridiculous</a></li>
-<li><a href="https://youtu.be/DHIQxVhruak">A "Day" Isn't What It Used To Be</a></li>
+<li><a href="https://youtu.be/DHIQxVhruak">A “Day” Isn’t What It Used To Be</a></li>
 <li><a href="https://youtu.be/qjUT7FbmNZ8">Why Time Zones Exist</a></li>
 <li><a href="https://xkcd.com/2542/">xkcd: Dailight Calendar</a></li>
 <li><a href="https://xkcd.com/2549/">xkcd: Edge Cake</a></li>
@@ -279,16 +287,16 @@ functionality.</p>
 <li><a href="https://www.engadget.com/meta-death-of-the-leap-second-103545749.html">Meta calls for the death of the leap second</a></li>
 <li><a href="https://www.wired.com/story/satellite-time-distribution/">Satellites Keep the World’s Clocks on Time. What if They Fail?</a></li>
 <li><a href="https://blog.ganssle.io/articles/2019/11/utcnow.html">Stop using utcnow and utcfromtimestamp</a></li>
-<li><a href="https://youtu.be/Fu6AT5WLgJg">Dall'ora legale all'ora solare: i pro e contro del cambio orario e perché si parla di abolizione</a></li>
+<li><a href="https://youtu.be/Fu6AT5WLgJg">Dall’ora legale all’ora solare: i pro e contro del cambio orario e perché si parla di abolizione</a></li>
 <li><a href="https://www.sciencenews.org/article/deer-vehicle-collisions-daylight-saving-time">Deer-vehicle collisions spike when daylight saving time ends</a></li>
 <li><a href="https://thedailywtf.com/articles/the-falling-dates">The Falling Dates</a></li>
 <li><a href="https://www.howtogeek.com/850114/scientists-don%E2%80%99t-want-to-count-leap-seconds-so-they%E2%80%99re-going-away/">Scientists Don’t Want to Count Leap Seconds, so They’re Going Away</a></li>
 <li><a href="https://www.nature.com/articles/d41586-023-00185-z">What time is it on the Moon?</a></li>
 <li><a href="https://www.cbc.ca/news/science/moon-time-zone-1.6763962">What time is it on the moon? Europe pushing for lunar time zone</a></li>
 <li><a href="https://andrea.corbellini.name/2023/01/23/what-time-is-it/">What time is it? A simple question with a complex answer. How computers synchronize time</a></li>
-<li><a href="https://www.wired.com/story/2023-daylight-saving-time/">The Daylight Saving Time Mess Just Won't Go Away</a></li>
+<li><a href="https://www.wired.com/story/2023-daylight-saving-time/">The Daylight Saving Time Mess Just Won’t Go Away</a></li>
 <li><a href="https://vladmihalcea.com/time-zones-java-web-application/">The best way to handle time zones in a Java web application</a></li>
-<li><a href="https://yourcalendricalfallacyis.com/">Your Calendrical Fallacy Is...</a></li>
+<li><a href="https://yourcalendricalfallacyis.com/">Your Calendrical Fallacy Is…</a></li>
 <li><a href="https://www.bnnbloomberg.ca/greenland-solves-the-daylight-saving-time-debate-1.1900228">Greenland Solves the Daylight Saving Time Debate</a></li>
 <li><a href="https://foojay.io/today/time-zone-and-currency-database-in-jdk/">Time Zone and Currency Database in JDK</a></li>
 <li><a href="https://youtu.be/Zpiou9Rn8UE">(There Ought To Be A) Moonlight Saving Time</a></li>
@@ -306,16 +314,16 @@ functionality.</p>
 <li><a href="https://youtu.be/Lz3jAEdzbbA">I Found the Dumbest Time Zone</a></li>
 <li><a href="https://github.com/LittleGreenViper/LGV_TZ_Lookup">A Server for Matching Long/Lat to Timezone</a></li>
 </ul>
-<h2 id="memes">Memes</h2>
-<p><img src="../images/posts/mars-timezone.png" alt="Elon Musk: &quot;I&#39;m putting people on Mars!&quot;, Developers: &quot;Fantastic, more timezones to support&quot;." /></p>
+<h2 id="heading-6">Memes</h2>
+<p><img src="../images/posts/mars-timezone.png" alt="Elon Musk: “I’m putting people on Mars!”, Developers: “Fantastic, more timezones to support”." /></p>
 <p><img src="../images/posts/daylight-dog.jpg" alt="Daylight savings dog" /></p>
 <p><img src="../images/posts/daylight-investing.jpg" alt="Daylight savings? How about daylight investing?" /></p>
-<p><img src="../images/posts/timezones-meme.png" alt="Friend: &quot;What happened?&quot;, Me: &quot;I had to work with timezones today&quot;." /></p>
+<p><img src="../images/posts/timezones-meme.png" alt="Friend: “What happened?”, Me: “I had to work with timezones today”." /></p>
 <p><img src="../images/posts/time-universe-meme.webp" alt="January 1st 1970 meme" /></p>
 <p><img src="../images/posts/time-boeing-787.jpg" alt="Boeing 787 meme" /></p>
 <p><img src="../images/posts/time-consensus.jpg" alt="xkcd: Consensus Time" /></p>
 <p><img src="../images/posts/time-devs.png" alt="Developers having to implement yet another timezone change" /></p>
-<p><img src="../images/posts/time-devs-again.webp" alt="Developers having to explain..." /></p>
+<p><img src="../images/posts/time-devs-again.webp" alt="Developers having to explain…" /></p>
 <p><img src="../images/posts/time-days-since.webp" alt="Days since last timezone issue: 0" /></p>
 <p><img src="../images/posts/clocks-back-meme.jpg" alt="Clocks back" /></p>
 <p><img src="../images/posts/picard-dst.png" alt="Picard DST" /></p>

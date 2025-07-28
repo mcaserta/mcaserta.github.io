@@ -69,7 +69,20 @@
         <aside class="toc-sidebar">
             <div class="toc">
                 <h2>Table of Contents</h2>
-                <ul><li class="toc-h1"><a href="#time-series-data-and-completablefuture-example-in-java">Time Series Data and CompletableFuture example in Java</a></li><li class="toc-h2"><a href="#how-to-run-the-program">How to run the program</a></li><li class="toc-h2"><a href="#preface">Preface</a></li><li class="toc-h2"><a href="#service-providers">Service providers</a></li><li class="toc-h1"><a href="#the-algorithm">The algorithm</a></li><li class="toc-h2"><a href="#rolling-time-window">Rolling Time Window</a></li><li class="toc-h2"><a href="#let-s-get-coding">Let's get coding</a></li><li class="toc-h2"><a href="#coding-like-it-s-1984">Coding like it's 1984</a></li><li class="toc-h2"><a href="#functional-elegance">Functional elegance</a></li><li class="toc-h2"><a href="#concurrency-considerations">Concurrency considerations</a></li><li class="toc-h2"><a href="#example-output">Example output</a></li><li class="toc-h2"><a href="#conclusion">Conclusion</a></li><li class="toc-h2"><a href="#bonus">Bonus</a></li></ul>
+                <ul class="toc">
+  <li><a href="#heading-0">How to run the program</a></li>
+  <li><a href="#heading-1">Preface</a></li>
+  <li><a href="#heading-2">Service providers</a></li>
+<li><a href="#heading-3">The algorithm</a></li>
+  <li><a href="#heading-4">Rolling Time Window</a></li>
+  <li><a href="#heading-5">Let’s get coding</a></li>
+  <li><a href="#heading-6">Coding like it’s 1984</a></li>
+  <li><a href="#heading-7">Functional elegance</a></li>
+  <li><a href="#heading-8">Concurrency considerations</a></li>
+  <li><a href="#heading-9">Example output</a></li>
+  <li><a href="#heading-10">Conclusion</a></li>
+  <li><a href="#heading-11">Bonus</a></li>
+</ul>
             </div>
         </aside>
         
@@ -85,10 +98,10 @@
             <article>
 <p>Full code for all the examples can be found
 <a href="https://github.com/mcaserta/time-series-concurrency-example">here</a>.</p>
-<h2 id="how-to-run-the-program">How to run the program</h2>
+<h2 id="heading-0">How to run the program</h2>
 <pre><code class="language-shell">mvn clean compile verify exec:java
 </code></pre>
-<h2 id="preface">Preface</h2>
+<h2 id="heading-1">Preface</h2>
 <p>Suppose we want to calculate an <em>air quality index</em> based on two values:</p>
 <ul>
 <li>air temperature</li>
@@ -104,11 +117,11 @@
 <p>We may calculate the <code>AQi</code> with the following sorry excuse of a formula:</p>
 <!-- AQi = (((T * 100) / Tm) + C) / 2 -->
 <p><img src="../images/posts/air-quality-formula.png" alt="air quality formula" /></p>
-<p><strong>DISCLAIMER:</strong> please note that this formula is in no way scientific, and it's
-intended for educational purposes only. I don't want environmentalists and real
+<p><strong>DISCLAIMER:</strong> please note that this formula is in no way scientific, and it’s
+intended for educational purposes only. I don’t want environmentalists and real
 scientists chasing me around with math formulas and accusations of quackery.
 Also, I saw a chance for a pretty LaTeX equation and I took it, because
-aesthetics... and it makes me look smart, which I certainly am not<sup class="footnote-reference"><a href="#school">1</a></sup>.</p>
+aesthetics… and it makes me look smart, which I certainly am not<sup class="footnote-reference"><a href="#school">1</a></sup>.</p>
 <p>What the formula attempts to say is that as the temperature and the carbon
 monoxide percentage rise, the air quality decreases. Yeah, this is totally
 unscientific but bear with me for the sake of argumentation, please.</p>
@@ -144,7 +157,7 @@ t=10; c=0.5; tm=40; (((t * 100) / tm) + c) / 2
 <tr><td>12.75 to 15</td><td>pretty cool</td></tr>
 <tr><td>-∞ to 12.75</td><td>welcome to Yakutsk, probably</td></tr>
 </tbody></table>
-<h2 id="service-providers">Service providers</h2>
+<h2 id="heading-2">Service providers</h2>
 <p>Suppose we have internet services that expose temperature and carbon monoxide
 level monitoring values. These services might expose an api that gives us time
 series data<sup class="footnote-reference"><a href="#time-series-data">4</a></sup>.</p>
@@ -169,10 +182,10 @@ that looks like this:</p>
 <tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td></tr>
 </tbody></table>
 <p>Please note that I have sorted the data by timestamp to make it a bit more
-readable, but you shouldn't make assumptions on the sort order of the data
-returned by an external provider. Not that this is of any importance here as...</p>
-<h1 id="the-algorithm">The algorithm</h1>
-<p>...our algorithm now requires:</p>
+readable, but you shouldn’t make assumptions on the sort order of the data
+returned by an external provider. Not that this is of any importance here as…</p>
+<h1 id="heading-3">The algorithm</h1>
+<p>…our algorithm now requires:</p>
 <ol>
 <li>concatenating the temperature and carbon monoxide percentage data</li>
 <li>sorting by timestamp</li>
@@ -227,8 +240,8 @@ recent value of the other type. In other words:</p>
 <a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time window</a>
 as you have a window that moves forward in time focusing on the most recent data
 for our specific <code>T</code> and <code>C</code> measures at each step<sup class="footnote-reference"><a href="#creep">5</a></sup>.</p>
-<h2 id="rolling-time-window">Rolling Time Window</h2>
-<p>Go ahead, scroll down. You're going to see it.</p>
+<h2 id="heading-4">Rolling Time Window</h2>
+<p>Go ahead, scroll down. You’re going to see it.</p>
 <pre><code>/===================================================================================\
 |                   Step 01 :: T = 10.1, C = 2.0 :: AQi = 13.625                    |
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
@@ -343,21 +356,21 @@ for our specific <code>T</code> and <code>C</code> measures at each step<sup cla
 <tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr>
 <tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr>
 </tbody></table>
-<p>If you've looked closely, you might have noticed that we have a couple duplicate
+<p>If you’ve looked closely, you might have noticed that we have a couple duplicate
 timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
 <code>2021-01-20T08:06:00Z</code>. These represent a time paradox as it appears that our
 <code>AQi</code> has two different values at the same time.</p>
 <p><img src="../images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing" /></p>
 <p>We both know this data is eventually going to show up on a web page. Also, we
-wouldn't want one of those hipster javascript frontend developers to point out a
-lack of logic or, worse, an inconsistency in our data to us, wouldn't we?</p>
+wouldn’t want one of those hipster javascript frontend developers to point out a
+lack of logic or, worse, an inconsistency in our data to us, wouldn’t we?</p>
 <p>Yeah, I thought so. So, my idea is that we can safely discard the first entry of
 a duplicate timestamp as it refers to a calculation with stale data. Why? Well,
 consider the values for the first duplicate timestamp: <code>2021-01-20T08:02:00Z</code>.
 The first time we computed the <code>AQi</code>, we picked data from id <code>2</code> and <code>3</code> and id
 <code>2</code> refers to a previous timestamp, specifically <code>2021-01-20T08:01:00Z</code>. The
 second time we computed the <code>AQi</code>, we were using data from id <code>3</code> and <code>4</code>, which
-both refer to timestamp <code>2021-01-20T08:02:00Z</code>, so this computation's result is
+both refer to timestamp <code>2021-01-20T08:02:00Z</code>, so this computation’s result is
 more relevant than the previous one which we stamped with the same
 <code>2021-01-20T08:02:00Z</code> timestamp.</p>
 <p>The same thing applies to the <code>AQi</code> entry with timestamp <code>2021-01-20T08:06:00Z</code>
@@ -395,8 +408,8 @@ normalize the result by an arbitrary time interval, say one minute:</p>
 <p><img src="../images/posts/plot-output-normalized.png" alt="plot of the normalized data" /></p>
 <p>Makes sense? I certainly hope so.</p>
 <p><img src="../images/posts/yes.gif" alt="yes" /></p>
-<h2 id="let-s-get-coding">Let's get coding</h2>
-<p>Time to write some code. First of all, let's define an interface for our <code>AQi</code>
+<h2 id="heading-5">Let’s get coding</h2>
+<p>Time to write some code. First of all, let’s define an interface for our <code>AQi</code>
 calculator, so we can provide different implementations later on.</p>
 <p>The code for this interface can be seen
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java">here</a>.</p>
@@ -420,13 +433,13 @@ Although this seems horribly complicated due to the verbosity of the Java
 language and a few implementation details, you can think of a time value as just
 a convenient way to represent an <code>Instant</code> in time and its associated <code>value</code>.
 Nothing fancy, really.</p>
-<h2 id="coding-like-it-s-1984">Coding like it's 1984</h2>
-<p>Now that we have a basic framework for our calculations, let's write a first
+<h2 id="heading-6">Coding like it’s 1984</h2>
+<p>Now that we have a basic framework for our calculations, let’s write a first
 implementation using the old school style. The complete code for this is
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java">here</a>.
-Let's take a look.</p>
+Let’s take a look.</p>
 <p>Our calculator takes the max temperature in its constructor and stores its value
-in the <code>maxTemperature</code> instance constant as we'll need its value later when
+in the <code>maxTemperature</code> instance constant as we’ll need its value later when
 invoking the <code>AQi</code> function.</p>
 <p>Our <code>calculate</code> method should start with these two steps:</p>
 <ol>
@@ -471,7 +484,7 @@ passing to sort is picking the timestamp of the relative entry in the original
 <code>timeValuesByType</code> map. We then iterate <code>keysSortedByTimestamp</code>, adding entries
 to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p>
 <p>Now we are declaring a map for the results of our <code>AQi</code> calculations and a
-couple variables we'll need later:</p>
+couple variables we’ll need later:</p>
 <pre><code class="language-java">Map&lt;Instant, Double&gt; airQualityIndexMap = new HashMap&lt;&gt;();
 TimeValue lastTemperature = null;
 TimeValue lastCarbonMonoxidePercentage = null;
@@ -515,15 +528,15 @@ for (Instant key : keys) {
     results.add(TimeValue.of(key, airQualityIndexMap.get(key)));
 }
 </code></pre>
-<h2 id="functional-elegance">Functional elegance</h2>
-<p>Can we do better than this? Absolutely. Let's use an elegant weapon for a more
+<h2 id="heading-7">Functional elegance</h2>
+<p>Can we do better than this? Absolutely. Let’s use an elegant weapon for a more
 civilized age: functional programming. Our
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/FunctionalAirQualityIndexCalculator.java">FunctionalAirQualityIndexCalculator</a>
-is quite slimmed down, but that's just because the main logic behind the
+is quite slimmed down, but that’s just because the main logic behind the
 calculations is now in the
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java">AirQualityIndexCollector</a>.</p>
 <p>Our new calculator is much simpler now. The first part is quite involved so
-let's take a look at it first:</p>
+let’s take a look at it first:</p>
 <pre><code class="language-java">List&lt;TypedTimeValue&gt; timeSeries = Stream.concat(
    temperatures.stream().map(e -&gt; new TypedTimeValue(TypedTimeValue.Type.T, e)),
    carbonMonoxidePercentages.stream().map(e -&gt; new TypedTimeValue(TypedTimeValue.Type.C, e))
@@ -533,7 +546,7 @@ let's take a look at it first:</p>
 <ul>
 <li>
 <p>the temperatures and carbon monoxide percentage data are streamed and mapped
-into a type wrapper in order to later understand if the data we're looking at
+into a type wrapper in order to later understand if the data we’re looking at
 is of type <code>T</code> or <code>C</code></p>
 </li>
 <li>
@@ -550,12 +563,12 @@ is of type <code>T</code> or <code>C</code></p>
 <p>The <code>timeSeries</code> is then streamed in parallel into a collector that does the
 real work and returns an unmodifiable <code>List&lt;TimeValue&gt;</code> with the air quality
 indices.</p>
-<p>Let's take a look at the collector.</p>
+<p>Let’s take a look at the collector.</p>
 <pre><code class="language-java">public class AirQualityIndexCollector
         implements Collector&lt;TypedTimeValue, Queue&lt;TypedTimeValue&gt;, List&lt;TimeValue&gt;&gt; {
     ...
 </code></pre>
-<p>We're implementing the <code>Collector</code> interface. The type parameters we are
+<p>We’re implementing the <code>Collector</code> interface. The type parameters we are
 providing here express three things:</p>
 <ul>
 <li>we are collecting values of type <code>TypedTimeValue</code></li>
@@ -589,8 +602,8 @@ public BinaryOperator&lt;Queue&lt;TypedTimeValue&gt;&gt; combiner() {
 </code></pre>
 <p>The combiner method must return a function that combines two accumulators. The
 implementation should pick all elements from the second accumulator and add them
-to the first one, which doesn't sound very functional in terms of immutability
-but in this case mutation is an expected behavior, and it's totally fine.</p>
+to the first one, which doesn’t sound very functional in terms of immutability
+but in this case mutation is an expected behavior, and it’s totally fine.</p>
 <pre><code class="language-java">@Override
 public Function&lt;Queue&lt;TypedTimeValue&gt;, List&lt;TimeValue&gt;&gt; finisher() {
     ...
@@ -601,7 +614,7 @@ air quality indices.</p>
 <pre><code class="language-java">final Map&lt;Instant, TimeValue&gt; aqiAccumulator = new HashMap&lt;&gt;();
 </code></pre>
 <p>This is a map that is going to collect all the air quality indices. As you can
-see, it's indexed by a timestamp, so we won't get duplicate entries as more
+see, it’s indexed by a timestamp, so we won’t get duplicate entries as more
 recent calculations for the same timestamps are put into the map replacing the
 stale ones.</p>
 <pre><code class="language-java">return accumulator -&gt; {
@@ -623,10 +636,10 @@ stale ones.</p>
            .collect(Collectors.toUnmodifiableList());
 };
 </code></pre>
-<p>This is quite a mouthful but let's go through it bit by bit. We are streaming
+<p>This is quite a mouthful but let’s go through it bit by bit. We are streaming
 the accumulated data, extracting the timestamp, sorting by it and, for each
 timestamp we look for the temperature and carbon monoxide percentage data with
-the closest timestamp. <em>Closest</em> means that the timestamp we're evaluating must
+the closest timestamp. <em>Closest</em> means that the timestamp we’re evaluating must
 be before of or equal to the timestamp in question.</p>
 <p>If we have both data (<code>T</code> and <code>C</code>), we can proceed to calculate the <code>AQi</code> and
 put its value into the <code>aqiAccumulator</code> map.</p>
@@ -635,13 +648,13 @@ map, sort by timestamp and collect them in an unmodifiable <code>List&lt;TimeVal
 <p>Sorting like this is possible since we made our <code>TimeValue</code> class implement
 <code>Comparable&lt;TimeValue&gt;</code>.</p>
 <p>There are several points in the <code>finisher</code> method where I look into the
-datastructures I'm iterating on, which, again, doesn't look very kosher in terms
-of functional programming, but it's okay as I know that the data I'm examining
-isn't being changed by a concurrent thread under the hood.</p>
-<p>Is this better than our old school calculator? I'm not sure. This is still quite
+datastructures I’m iterating on, which, again, doesn’t look very kosher in terms
+of functional programming, but it’s okay as I know that the data I’m examining
+isn’t being changed by a concurrent thread under the hood.</p>
+<p>Is this better than our old school calculator? I’m not sure. This is still quite
 verbose, but to me it seems easier to read as most of the code is expressed in a
 declarative style rather than an imperative one.</p>
-<h2 id="concurrency-considerations">Concurrency considerations</h2>
+<h2 id="heading-8">Concurrency considerations</h2>
 <p>As we need to retrieve two different sets of data from two different providers
 (one for temperature data and one for carbon monoxide percentage data), we might
 want to run the clients in parallel. This has an advantage over traditional
@@ -682,14 +695,14 @@ code runs in parallel. I might as well have written:</p>
 </code></pre>
 <p>This is still verbose but definitely better than before. As the computation in
 our <code>CompletableFuture</code> returns a <code>List&lt;TimeValue&gt;</code>, the <code>supplyAsync</code> method
-returns a <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, which is Java's way of saying
+returns a <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, which is Java’s way of saying
 that the <code>timedValuesFuture1</code> variable is a <code>CompletableFuture</code> holding a
 <code>List&lt;TimeValue&gt;</code>. Please note that the code we are passing to the <code>supplyAsync</code>
-method is inside a lambda. What this means is that our code doesn't get executed
-in the <code>supplyAsync</code> method but the Java runtime is free to choose when it's the
+method is inside a lambda. What this means is that our code doesn’t get executed
+in the <code>supplyAsync</code> method but the Java runtime is free to choose when it’s the
 best time to run it. The default scheduler will generally start running your
 <code>CompletableFuture</code>s as soon as they are defined but you need to understand that
-this is not necessarily so and that defining a lambda doesn't mean it gets
+this is not necessarily so and that defining a lambda doesn’t mean it gets
 executed at the point of declaration.</p>
 <p>We now need a way to make sure our <code>CompletableFuture</code>s have completed their
 execution before going on. This is done by composing our futures and calling the
@@ -697,14 +710,14 @@ execution before going on. This is done by composing our futures and calling the
 <pre><code class="language-java">CompletableFuture.allOf(timedValuesFuture1, timedValuesFuture2).join();
 </code></pre>
 <p>The <code>allOf</code> method returns a new <code>CompletableFuture</code> which wraps the futures
-we're passing to it. On this new future we then call <code>join</code> which blocks until
+we’re passing to it. On this new future we then call <code>join</code> which blocks until
 all the wrapped futures have finished executing.</p>
 <p>After this line, we are sure that our threads have run, so we can get the data
 we need from our original futures with the <code>join</code> method:</p>
 <pre><code class="language-java">List&lt;TimeValue&gt; timeValues1 = timedValuesFuture1.join();
 List&lt;TimeValue&gt; timeValues2 = timedValuesFuture2.join();
 </code></pre>
-<h2 id="example-output">Example output</h2>
+<h2 id="heading-9">Example output</h2>
 <p>When you run the application, you should see output similar to this:</p>
 <pre><code>2021-02-03T17:50:26.772545406 --- [main] Hello concurrent world!
 2021-02-03T17:50:26.801737530 --- [ForkJoinPool.commonPool-worker-3] Calling provider1...
@@ -721,20 +734,20 @@ List&lt;TimeValue&gt; timeValues2 = timedValuesFuture2.join();
 <li>ForkJoinPool.commonPool-worker-3</li>
 <li>ForkJoinPool.commonPool-worker-5</li>
 </ol>
-<p>It's interesting to note here that in this specific run <code>allOf(...).join()</code> was
+<p>It’s interesting to note here that in this specific run <code>allOf(...).join()</code> was
 called much before calling provider 2 and both results were returned from
 providers.</p>
 <p>Your output will definitely be different as:</p>
 <ol>
-<li>the threads' execution order is non-deterministic</li>
-<li>the providers' values are generated randomly</li>
+<li>the threads’ execution order is non-deterministic</li>
+<li>the providers’ values are generated randomly</li>
 </ol>
-<h2 id="conclusion">Conclusion</h2>
-<p>You've made it! This was quite the run. I hope it's been entertaining. I spent
-quite a bit of time on this as I was trying to dig deeper into some issues I've
+<h2 id="heading-10">Conclusion</h2>
+<p>You’ve made it! This was quite the run. I hope it’s been entertaining. I spent
+quite a bit of time on this as I was trying to dig deeper into some issues I’ve
 had at work. I suggest you do the same when you run into problems that need some
 clarification on your side. I also hope you found this useful.</p>
-<h2 id="bonus">Bonus</h2>
+<h2 id="heading-11">Bonus</h2>
 <p><img src="../images/posts/reading-memes-on-github.webp" alt="reading memes on github" /></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
 <div class="footnote-definition" id="school"><sup class="footnote-definition-label">1</sup>
@@ -755,7 +768,7 @@ track change over time.</p>
 </div>
 <div class="footnote-definition" id="creep"><sup class="footnote-definition-label">5</sup>
 <p>I like to think of this movement as a kind of dance, and I find it sexy. I
-think <a href="https://youtu.be/XFkzRNyygfk">I'm a creep, I'm a weirdo</a>.</p>
+think <a href="https://youtu.be/XFkzRNyygfk">I’m a creep, I’m a weirdo</a>.</p>
 </div>
 </article>
             

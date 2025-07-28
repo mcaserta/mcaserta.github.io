@@ -55,7 +55,16 @@
         <aside class="toc-sidebar">
             <div class="toc">
                 <h2>Table of Contents</h2>
-                <ul><li class="toc-h1"><a href="#niente-guerre-di-religione--altrimenti-feuerbach-piange">Niente guerre di religione, altrimenti Feuerbach piange</a></li><li class="toc-h1"><a href="#garbage-in--garbage-out">Garbage in, garbage out</a></li><li class="toc-h1"><a href="#loggare-a-un-certo-livello">Loggare a un certo livello</a></li><li class="toc-h1"><a href="#formattazione-coerente-e-senza-fronzoli">Formattazione coerente e senza fronzoli</a></li><li class="toc-h1"><a href="#metti-i-messaggi-in-riga">Metti i messaggi in riga</a></li><li class="toc-h1"><a href="#occhio-al-copia-e-incolla">Occhio al copia e incolla</a></li><li class="toc-h1"><a href="#eccezioni">Eccezioni</a></li><li class="toc-h1"><a href="#conosci-gli-strumenti">Conosci gli strumenti</a></li></ul>
+                <ul class="toc">
+<li><a href="#heading-0">Niente guerre di religione, altrimenti Feuerbach piange</a></li>
+<li><a href="#heading-1">Garbage in, garbage out</a></li>
+<li><a href="#heading-2">Loggare a un certo livello</a></li>
+<li><a href="#heading-3">Formattazione coerente e senza fronzoli</a></li>
+<li><a href="#heading-4">Metti i messaggi in riga</a></li>
+<li><a href="#heading-5">Occhio al copia e incolla</a></li>
+<li><a href="#heading-6">Eccezioni</a></li>
+<li><a href="#heading-7">Conosci gli strumenti</a></li>
+</ul>
             </div>
         </aside>
         
@@ -75,7 +84,7 @@ argomento apparentemente banale ma che in realtà si rivela complesso.</p>
 buon senso e sotto stretta osservazione del proctologo di fiducia; ciò non
 toglie che con ogni probabilità troverai le seguenti note ragionevolmente utili
 poiché basate sull’esperienza personale (a.k.a. sangue versato sul campo).</p>
-<h1 id="niente-guerre-di-religione--altrimenti-feuerbach-piange">Niente guerre di religione, altrimenti Feuerbach piange</h1>
+<h1 id="heading-0">Niente guerre di religione, altrimenti Feuerbach piange</h1>
 <p>Nel mondo java, log4j è considerato lo standard de facto quando si parla di
 framework di logging. Tuttavia, il mio consiglio è di usare un framework più
 moderno, come slf4j o logback. Logback è basato sull’api di slf4j ed è
@@ -102,7 +111,7 @@ essere negata agli utenti del suddetto sito, vorrai essere sicuro di avere la
 possibilità di capire velocemente cosa sta succedendo dietro le quinte. In casi
 simili, dire che a scrivere male nel log Gesù piange è al massimo un eufemismo
 neanche troppo colorito.</p>
-<h1 id="garbage-in--garbage-out">Garbage in, garbage out</h1>
+<h1 id="heading-1">Garbage in, garbage out</h1>
 <p>Uno dei concetti elementari del software è quello di input/output. Conoscendo
 l’input e lo stato di tutte le variabili coinvolte nel processo di elaborazione,
 sai che puoi aspettarti un certo output.</p>
@@ -136,25 +145,25 @@ tracciati almeno a livello di debug.</p>
 <p>Assicurati che le classi che includi nei log abbiano un override sensato del
 metodo <code>toString()</code>, altrimenti nei log leggerai solo un mucchio di inutili
 indirizzi a puntatori e non lo stato corrente delle variabili degli oggetti.</p>
-<h1 id="loggare-a-un-certo-livello">Loggare a un certo livello</h1>
+<h1 id="heading-2">Loggare a un certo livello</h1>
 <p>Tutti i framework di logging hanno un meccanismo di livelli per cui è possibile
 filtrare l’output in modo da ottenere solo i messaggi che davvero ci
 interessano.</p>
 <p>Spesso capita di fare copia e incolla di statement di log per cui un messaggio
 che dovrebbe essere a livello di errore invece finisce a livello di debug.
 Occhio al copia e incolla!</p>
-<h1 id="formattazione-coerente-e-senza-fronzoli">Formattazione coerente e senza fronzoli</h1>
+<h1 id="heading-3">Formattazione coerente e senza fronzoli</h1>
 <p>Cerca di mantenere uno stile coerente e senza troppi fronzoli nei messaggi di
 log. Disattiva il <em>blocco maiuscole</em>, abbi pietà. Questo ti aiuterà nella fase
 di analisi ed eviterà che le tue applicazioni abbiano l’aspetto di una roba
 scritta da uno sbarbatello in visual basic.</p>
-<h1 id="metti-i-messaggi-in-riga">Metti i messaggi in riga</h1>
+<h1 id="heading-4">Metti i messaggi in riga</h1>
 <p>Per quanto possibile, evita di introdurre caratteri di a capo nei messaggi di
 log. Quando userai <code>grep</code> per andare alla ricerca dei messaggi, è importante che
 ad una singola riga di output corrisponda un messaggio coerente.</p>
 <p>All’inizio, andare a capo sembra dare un aspetto migliore all’output ma col
 tempo ti renderai conto che avresti fatto meglio a non farlo.</p>
-<h1 id="occhio-al-copia-e-incolla">Occhio al copia e incolla</h1>
+<h1 id="heading-5">Occhio al copia e incolla</h1>
 <p><img src="../images/posts/blinking-alarm.gif" alt="Allarme rosso" /></p>
 <p>Come già accennato, può capitare di fare copia e incolla di statement di log.</p>
 <p>Ogni volta che faccio copia e incolla, mi si accende una speciale lampadina
@@ -167,7 +176,7 @@ dimenticato di modificare qualcosa</p>
 per ogni frammento di codice sbagliato per via di un copia e incolla frettoloso,
 in questo momento sarei sulla spiaggia di un’isola tropicale a sorseggiare
 cocktail attorniato da compiacenti signorine.</p>
-<h1 id="eccezioni">Eccezioni</h1>
+<h1 id="heading-6">Eccezioni</h1>
 <p>Il log di un errore dovrebbe portarsi dietro l’istanza di eccezione catturata e,
 se possibile ed utile, un minimo di contesto. Spesso mi capita di vedere codice
 del tipo:</p>
@@ -182,7 +191,7 @@ del tipo:</p>
 </code></pre>
 <p>In questo modo non perdo lo stack trace dell’eccezione catturata e posso
 ricondurla ad una specifica istanza di utente.</p>
-<h1 id="conosci-gli-strumenti">Conosci gli strumenti</h1>
+<h1 id="heading-7">Conosci gli strumenti</h1>
 <p>Altrettanto importante è conoscere i meccanismi di deployment e configurazione
 del framework che stai usando. Potrebbe tornarti utile ad esempio impostare un
 filtro specifico su un certo logger. Impara inoltre a conoscere i meccanismi di

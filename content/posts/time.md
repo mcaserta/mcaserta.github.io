@@ -215,7 +215,84 @@ choice.
 Please do not use `java.util.Date` or `java.util.Calendar`. We don't use that
 classes anymore. The new time api is in the `java.time` package.
 
-{{<replit src="https://replit.com/@mcaserta/DateTimeApiExample">}}
+```java
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+
+class Main {
+  public static void main(String[] args) {
+    ZoneId systemDefault = ZoneId.systemDefault();
+    System.out.println("systemDefault = " + systemDefault);
+
+    long now = System.currentTimeMillis();
+    System.out.println("now = " + now);
+
+    LocalDate localDate = LocalDate.now();
+    System.out.println("localDate = " + localDate);
+
+    LocalDateTime localDateTime = LocalDateTime.now();
+    System.out.println("localDateTime = " + localDateTime);
+
+    LocalDateTime utc = LocalDateTime.now(ZoneId.of("UTC"));
+    System.out.println("utc = " + utc);
+
+    ZonedDateTime zonedDateTime1 = ZonedDateTime.now();
+    System.out.println("zonedDateTime1 = " + zonedDateTime1);
+
+    ZonedDateTime zonedDateTime2 = ZonedDateTime.now(ZoneId.of("UTC"));
+    System.out.println("zonedDateTime2 = " + zonedDateTime2);
+
+    String iso8601 = zonedDateTime2.format(DateTimeFormatter.ISO_INSTANT);
+    System.out.println("iso8601 = " + iso8601);
+
+    ZonedDateTime zonedDateTime3 = zonedDateTime2.plus(Duration.ofDays(7));
+    System.out.println("zonedDateTime3 = " + zonedDateTime3);
+
+    Instant nowAsInstant = Instant.ofEpochMilli(now);
+    System.out.println("nowAsInstant = " + nowAsInstant);
+
+    ZonedDateTime nowAsInstantInRome = nowAsInstant.atZone(ZoneId.of("Europe/Rome"));
+    System.out.println("nowAsInstantInRome = " + nowAsInstantInRome);
+
+    LocalDateTime romeLocalTime = nowAsInstantInRome.toLocalDateTime();
+    System.out.println("romeLocalTime = " + romeLocalTime);
+
+    LocalDate localDateInRome = nowAsInstantInRome.toLocalDate();
+    System.out.println("localDateInRome = " + localDateInRome);
+
+    LocalTime localTimeInRome = nowAsInstantInRome.toLocalTime();
+    System.out.println("localTimeInRome = " + localTimeInRome);
+
+    String shortTimeInRome = nowAsInstantInRome.format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT));
+    System.out.println("shortTimeInRome = " + shortTimeInRome);
+
+    String evenShorterTimeInRome = nowAsInstantInRome.format(DateTimeFormatter.ofPattern("HH:mm"));
+    System.out.println("evenShorterTimeInRome = " + evenShorterTimeInRome);
+  }
+}
+```
+
+If you run this code with `java Main.java`, you should see something like this:
+
+```
+systemDefault = Europe/Rome
+now = 1753718631998
+localDate = 2025-07-28
+localDateTime = 2025-07-28T10:03:51.999991
+utc = 2025-07-28T16:03:52.000089
+zonedDateTime1 = 2025-07-28T10:03:52.000532-06:00[Europe/Rome]
+zonedDateTime2 = 2025-07-28T16:03:52.000620Z[UTC]
+iso8601 = 2025-07-28T16:03:52.000620Z
+zonedDateTime3 = 2025-08-04T16:03:52.000620Z[UTC]
+nowAsInstant = 2025-07-28T16:03:51.998Z
+nowAsInstantInRome = 2025-07-28T18:03:51.998+02:00[Europe/Rome]
+romeLocalTime = 2025-07-28T18:03:51.998
+localDateInRome = 2025-07-28
+localTimeInRome = 18:03:51.998
+shortTimeInRome = 6:03PM
+evenShorterTimeInRome = 18:03
+```
 
 ## Testing
 

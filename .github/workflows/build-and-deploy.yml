@@ -79,4 +79,6 @@ build-and-deploy-site:
   only:
     - main
 
+  on: push
+
   when: manual

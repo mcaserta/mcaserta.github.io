@@ -1,0 +1,82 @@
+name: Build and Deploy
+
+# GitLab CI/CD workflow for building and deploying with Krik.
+# This workflow builds a static site using Krik and deploys it to the
+# gh-pages branch of a GitHub repository.
+#
+# It requires the following environment variables to be set:
+# - GH_USERNAME: Your GitHub username
+# - GH_REPO_NAME: The name of the repository to deploy to
+# - GIT_USERNAME: Your Git username for commit metadata
+# - GIT_EMAIL: Your Git email for commit metadata
+
+stages:
+  - build-and-deploy
+
+variables:
+  # Set Git configuration
+  GIT_STRATEGY: clone
+  GIT_DEPTH: 0  # Full clone needed for branch operations
+
+build-and-deploy-site:
+  stage: build-and-deploy
+  image: rust:latest
+
+  before_script:
+    - apt-get update && apt-get install -y git
+    - cargo install krik
+    - git config --global user.name "${{ vars.GIT_USERNAME }}"
+    - git config --global user.email "${{ vars.GIT_EMAIL }}"
+
+  script:
+    # Clone using HTTPS with token authentication
+    - git clone https://$GH_USERNAME:${{ secrets.GITHUB_TOKEN }}@github.com/$GH_USERNAME/$GH_REPO_NAME.git site-repo
+    - cd site-repo
+
+    - git checkout main
+    - git pull origin main
+
+    # Run Krik
+    - kk
+
+    # Handle gh-pages branch
+    - |
+      if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+        git checkout gh-pages
+      else
+        git checkout --orphan gh-pages
+        git rm -rf .
+      fi
+
+    # Deploy generated site
+    - |
+      git checkout main
+      mkdir -p /tmp/generated-site
+      
+      if [ -d "_site" ]; then
+        cp -r _site/* /tmp/generated-site/
+      else
+        echo "Could not find generated site directory"
+        ls -la
+        exit 1
+      fi
+      
+      git checkout gh-pages
+      find . -maxdepth 1 ! -name '.git' ! -name '.' -exec rm -rf {} \;
+      cp -r /tmp/generated-site/* .
+      # touch .nojekyll
+
+    - |
+      git add .
+      if git diff --staged --quiet; then
+        echo "No changes to commit"
+      else
+        git commit -m "Deploy site generated on $(date)"
+        git push https://$GH_USERNAME:${{ secrets.GITHUB_TOKEN }}@github.com/$GH_USERNAME/$GH_REPO_NAME.git gh-pages
+        echo "Site deployed successfully"
+      fi
+
+  only:
+    - main
+
+  when: manual

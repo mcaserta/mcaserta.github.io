@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Chi Sono</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
                 <div class="language-selector">
                     <select onchange="switchLanguage(this.value)">
                         
-                        <option value="en" selected>
+                        <option value="en" >
                             English
                         </option>
                         
@@ -31,7 +31,7 @@
                             Español
                         </option>
                         
-                        <option value="it" >
+                        <option value="it" selected>
                             Italiano
                         </option>
                         
@@ -73,17 +73,17 @@
 
         <main class="main-content">
             <header>
-                <h1>Contacts</h1>
+                <h1>Chi Sono</h1>
                 <div class="meta">July 26, 2025</div>
             </header>
-            <article><ul>
-<li><a href="mailto:mirko.caserta@gmail.com">Email</a></li>
-<li><a href="https://github.com/mcaserta">GitHub</a></li>
-<li><a href="https://t.me/mirkocaserta">Telegram</a></li>
-<li><a href="https://youtube.com/@mirkocaserta">YouTube</a></li>
-<li><a href="https://www.instagram.com/mcaserta/">Instagram</a></li>
-<li><a href="https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO">Spotify</a></li>
-</ul>
+            <article><p><img src="../images/mirko.jpg" alt="Una foto di Mirko" /></p>
+<p>Sono un <a href="./cv.html">Senior Developer</a> a Roma, Italia. Mi occupo principalmente
+di backend aziendali. Non sono dogmatico riguardo linguaggi di programmazione,
+framework, piattaforme e architetture perché mi piace vivere all’avanguardia ed
+essere fondamentalmente un nerd curioso su praticamente troppi campi della
+conoscenza umana.</p>
+<p>Faccio anche <a href="https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO">musica</a> e
+a volte sono conosciuto come <a href="https://www.qrz.com/db/ik0zsn">IK0ZSN</a>.</p>
 </article>
         </main>
     </div>
@@ -94,7 +94,7 @@
     </button>
 
     <script>
-        window.krikBaseName = 'contacts';
+        window.krikBaseName = 'about';
     </script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/prism-init.js"></script>

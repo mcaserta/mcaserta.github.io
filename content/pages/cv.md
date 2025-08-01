@@ -5,17 +5,35 @@ date: 2025-07-26T20:23:00Z
 toc: true
 ---
 
+## Summary
+
+I am an experienced Senior Developer and Software Architect with over 25 years
+in the IT industry, currently working at Alten Spa in Rome. I have developed
+expertise across diverse technology stacks including cloud platforms (AWS,
+Google Cloud), microservices architectures, and modern development frameworks.
+Throughout my career, I have successfully delivered solutions for major clients
+across various sectors including telecommunications (Vodafone), travel (Eden
+Viaggi), gaming (Betbull), and infrastructure (Terna).
+
+My career has progressed from System Administrator to Software Architect, with
+notable experience establishing technical innovation teams and providing
+technology leadership. I am a strong advocate for open source technologies and
+have developed a deep understanding of community-driven development processes. I
+am passionate about technology innovation, usability, and continuously advancing
+my productivity and work quality through emerging technologies.
+
 ## Experience
 
 ### Senior Developer, Alten Spa; Rome, IT — 2022-current
 
-| Client   | Pediod    | Product                       | Technologies                                                              |
-| -------- | --------- | ----------------------------- | ------------------------------------------------------------------------- |
-| Giuffré  | 2025      | Analisi riferimenti normativi | aws, k8s, java, spring boot, microservices, postgres, rabbitmq, helm, ai  |
-| Datamars | 2025      | Datasphere                    | kafka, java, spring boot, postgres                                        |
-| Maggioli | 2023-2025 | Ticket management             | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
-| Aruba    | 2023      | Overhauled billing system     | k8s, kafka streams, java, spring boot, microservices, prometheus, grafana |
-| Paydo    | 2022      | Plick, payment service        | aws, lambda, s3, sqs, typescript, nodejs                                  |
+| Client    | Pediod    | Product                       | Technologies                                                              |
+| --------- | --------- | ----------------------------- | ------------------------------------------------------------------------- |
+| Zucchetti | 2025      | Application Asset Management  | k8s, java, spring boot, microservices, mssql                              |
+| Giuffré   | 2025      | Analisi riferimenti normativi | aws, k8s, java, spring boot, microservices, postgres, rabbitmq, helm, ai  |
+| Datamars  | 2025      | Datasphere                    | kafka, java, spring boot, postgres                                        |
+| Maggioli  | 2023-2025 | Ticket management             | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
+| Aruba     | 2023      | Overhauled billing system     | k8s, kafka streams, java, spring boot, microservices, prometheus, grafana |
+| Paydo     | 2022      | Plick, payment service        | aws, lambda, s3, sqs, typescript, nodejs                                  |
 
 ### Senior Developer, Dedagroup Spa; Rome, IT — 2020-2021
 
@@ -45,7 +63,7 @@ software architect.
 
 ### System Administrator, TPS Srl; Rome, IT — 2000-2003
 
-A medium sized company with two offices in Rome, TPS gave me the opportunity to
+A medium-sized company with two offices in Rome, TPS gave me the opportunity to
 advance my knowledge of networks as well as advanced web development.
 
 ### Teacher, IAL; Frosinone, IT — 1999-2000
@@ -57,7 +75,7 @@ Editing, Networking and the Internet.
 
 One of the first Internet Service Providers operating in Italy, Flashnet had a
 dial-up access node with hundreds of users in Frosinone. I operated the Unix
-servers and checked the operation of network services. I also partecipated in a
+servers and checked the operation of network services. I also participated in a
 development group of three tier web applications.
 
 ## Skills
@@ -65,21 +83,23 @@ development group of three tier web applications.
 Since the very beginning of my professional career I mainly worked with open
 source software, which has given me a better understanding of its community,
 processes and strengths. I am passionate about technology, innovation and
-usability and I’m always on the lookout for new ways to advance my productivity
+usability, and I’m always on the lookout for new ways to advance my productivity
 and the quality of my work.
 
 ## Know-How
 
+- AI
+  - CoPilot, Claude Code, ChatGPT
 - Protocols and Network Analysis Tools
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel
 - Programming
   - Languages
-    - Typescript, C, Java, Scala, Groovy, Objective C, Perl, Python, PHP,
+    - Typescript, C, Java, Rust, Scala, Groovy, Objective-C, Perl, Python, PHP,
       sh/bash scripting, Javascript
   - Framework, Libraries
-    - NodeJS, Spring, Spring Boot, Spring Cloud, RabbitMQ, Camel, ActiveMQ, CXF,
-      OSGi, SOAP/Jaxws, REST/Jaxrs, JMS, XML, DTD, XML Schema, JSON,
+    - Node.js, Spring, Spring Boot, Spring Cloud, RabbitMQ, Camel, ActiveMQ,
+      CXF, OSGi, SOAP/Jaxws, REST/Jaxrs, JMS, XML, DTD, XML Schema, JSON,
       JSP/Servlet, EJB, Cocoa
 - Cloud
   - AWS: CDK, CloudFormation, Lambda, EC2, S3, EBS, VPC, RDS, Route 53, ELB,

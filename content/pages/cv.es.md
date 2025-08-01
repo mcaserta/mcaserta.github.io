@@ -5,6 +5,25 @@ date: 2025-07-26T20:23:00Z
 toc: true
 ---
 
+## Resumen
+
+Soy un desarrollador senior y arquitecto de software experimentado con más de 25
+años en la industria TI, actualmente trabajando en Alten Spa en Roma. He
+desarrollado experiencia en diversos stacks tecnológicos incluyendo plataformas
+cloud (AWS, Google Cloud), arquitecturas de microservicios y frameworks de
+desarrollo modernos. A lo largo de mi carrera, he entregado exitosamente
+soluciones para importantes clientes en varios sectores incluyendo
+telecomunicaciones (Vodafone), viajes (Eden Viaggi), gaming (Betbull) e
+infraestructura (Terna).
+
+Mi carrera ha progresado de administrador de sistemas a arquitecto de software,
+con notable experiencia estableciendo equipos de innovación tecnológica y
+proporcionando liderazgo tecnológico. Soy un firme defensor de las tecnologías
+de código abierto y he desarrollado una comprensión profunda de los procesos de
+desarrollo impulsados por la comunidad. Soy apasionado por la innovación
+tecnológica, la usabilidad y el avance continuo de mi productividad y calidad de
+trabajo a través de tecnologías emergentes.
+
 ## Experiencia
 
 ### Senior Developer, Alten Spa; Roma, IT — 2022-presente
@@ -71,16 +90,18 @@ mi productividad y la calidad de mi trabajo.
 
 ## Know-How
 
+- AI
+  - CoPilot, Claude Code, ChatGPT
 - Protocolos y Herramientas de Análisis de Red
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel
 - Programación
   - Lenguajes
-    - Typescript, C, Java, Scala, Groovy, Objective C, Perl, Python, PHP,
+    - Typescript, C, Java, Rust, Scala, Groovy, Objective-C, Perl, Python, PHP,
       scripting sh/bash, Javascript
   - Frameworks, Librerías
-    - NodeJS, Spring, Spring Boot, Spring Cloud, RabbitMQ, Camel, ActiveMQ, CXF,
-      OSGi, SOAP/Jaxws, REST/Jaxrs, JMS, XML, DTD, XML Schema, JSON,
+    - Node.js, Spring, Spring Boot, Spring Cloud, RabbitMQ, Camel, ActiveMQ,
+      CXF, OSGi, SOAP/Jaxws, REST/Jaxrs, JMS, XML, DTD, XML Schema, JSON,
       JSP/Servlet, EJB, Cocoa
 - Nube
   - AWS: CDK, CloudFormation, Lambda, EC2, S3, EBS, VPC, RDS, Route 53, ELB,

@@ -279,6 +279,7 @@ body {
     margin-right: 0;
     padding: calc(60px + 1rem) 2rem 2rem;
     min-height: 100vh;
+    max-width: 800px;
 }
 
 .layout-container:has(.toc-sidebar) .main-content {

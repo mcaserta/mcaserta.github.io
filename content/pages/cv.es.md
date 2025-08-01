@@ -28,13 +28,14 @@ trabajo a través de tecnologías emergentes.
 
 ### Senior Developer, Alten Spa; Roma, IT — 2022-presente
 
-| Cliente  | Período   | Producto                        | Tecnologías                                                               |
-| -------- | --------- | ------------------------------- | ------------------------------------------------------------------------- |
-| Giuffré  | 2025      | Análisis referencias normativas | aws, k8s, java, spring boot, microservices, postgres, rabbitmq, helm, ai  |
-| Datamars | 2025      | Datasphere                      | kafka, java, spring boot, postgres                                        |
-| Maggioli | 2023-2025 | Gestión de tickets              | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
-| Aruba    | 2023      | Sistema de facturación renovado | k8s, kafka streams, java, spring boot, microservices, prometheus, grafana |
-| Paydo    | 2022      | Plick, servicio de pago         | aws, lambda, s3, sqs, typescript, nodejs                                  |
+| Cliente   | Período   | Producto                        | Tecnologías                                                               |
+| --------- | --------- | ------------------------------- | ------------------------------------------------------------------------- |
+| Zucchetti | 2025      | Gestión de recursos             | k8s, java, spring boot, microservices, mssql                              |
+| Giuffré   | 2025      | Análisis referencias normativas | aws, k8s, java, spring boot, microservices, postgres, rabbitmq, helm, ai  |
+| Datamars  | 2025      | Datasphere                      | kafka, java, spring boot, postgres                                        |
+| Maggioli  | 2023-2025 | Gestión de tickets              | gcloud, kafka streams, java, spring boot, microservices, mongodb          |
+| Aruba     | 2023      | Sistema de facturación renovado | k8s, kafka streams, java, spring boot, microservices, prometheus, grafana |
+| Paydo     | 2022      | Plick, servicio de pago         | aws, lambda, s3, sqs, typescript, nodejs                                  |
 
 ### Senior Developer, Dedagroup Spa; Roma, IT — 2020-2021
 

@@ -89,7 +89,7 @@ and the quality of my work.
 ## Know-How
 
 - AI
-  - CoPilot, Claude Code, ChatGPT
+  - CoPilot, Claude Code, ChatGPT, MCP
 - Protocols and Network Analysis Tools
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel

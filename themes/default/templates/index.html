@@ -3,10 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Basic SEO Meta Tags -->
     <title>{{ site_title | default(value="Blog") }}</title>
+    <meta name="description" content="{{ site_description }}">
+    <meta name="author" content="{{ site_title | default(value="Blog") }}">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{% if base_url %}{{ base_url }}{% else %}/{% endif %}">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site_title | default(value="Blog") }}">
+    <meta property="og:description" content="{{ site_description }}">
+    <meta property="og:url" content="{% if base_url %}{{ base_url }}{% else %}/{% endif %}">
+    <meta property="og:site_name" content="{{ site_title | default(value="Blog") }}">
+    <meta property="og:locale" content="{{ lang | default(value="en") | replace(from="-", to="_") }}">
+
+    <!-- Additional Meta Tags -->
+    <meta name="generator" content="Krik Static Site Generator">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ assets_path }}/css/main.css">
     <!-- Prism.js theme placeholder - will be loaded dynamically based on theme -->
     <link rel="alternate" type="application/atom+xml" title="{{ site_title | default(value="Blog") }} - Feed" href="{{ feed_path }}">

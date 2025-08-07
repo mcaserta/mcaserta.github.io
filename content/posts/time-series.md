@@ -9,7 +9,7 @@ tags:
   - java
   - concurrency
   - software development
-type: post
+pdf: true
 ---
 
 # Time Series Data and CompletableFuture example in Java

@@ -6,7 +6,7 @@ tags:
   - logging
   - java
   - software development
-type: post
+pdf: true
 ---
 
 Vorrei proporre alcune considerazioni sulla apparentemente oscura arte dello

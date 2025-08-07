@@ -7,7 +7,7 @@ toc: true
 tags:
   - time
   - software development
-type: post
+pdf: true
 ---
 
 La maggior parte dei problemi nello sviluppo software solitamente nascono da una

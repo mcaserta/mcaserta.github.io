@@ -2,7 +2,7 @@
 layout: post
 title: "L'Orecchio Musicale: Come Funziona e Come Svilupparlo"
 date: 2018-10-28T18:22:00Z
-type: post
+pdf: true
 toc: true
 tags:
   - ear training

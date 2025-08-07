@@ -7,7 +7,7 @@ toc: true
 tags:
   - time
   - software development
-type: post
+pdf: true
 ---
 
 Most issues in software development usually arise from poor, inconsistent

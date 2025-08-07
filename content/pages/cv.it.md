@@ -3,6 +3,7 @@ layout: page
 title: Curriculum Vitae
 date: 2025-07-26T20:23:00Z
 toc: true
+pdf: true
 ---
 
 ## Riepilogo

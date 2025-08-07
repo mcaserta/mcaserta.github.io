@@ -5,7 +5,6 @@ tags:
   - linux
   - unix
   - sysadm
-type: post
 ---
 
 You need to backup an entire hard disk to a single file. Supposing your disk is

@@ -3,7 +3,6 @@ title: "Firefox extensions I can't live without"
 date: 2023-01-30T08:00:00Z
 tags:
   - software
-type: post
 ---
 
 These are a bunch of essential Firefox extensions I use:

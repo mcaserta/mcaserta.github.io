@@ -5,7 +5,6 @@ tags:
   - c64
   - programming
   - software development
-type: post
 ---
 
 After trying to implement the

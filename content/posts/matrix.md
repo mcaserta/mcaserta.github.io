@@ -5,7 +5,6 @@ tags:
   - c64
   - programming
   - software development
-type: post
 ---
 
 I am trying to learn some 6502 assembly and this is the result of one of my

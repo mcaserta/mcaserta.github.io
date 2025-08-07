@@ -3,7 +3,6 @@ title: "The Last Time I Had Fun"
 date: 2022-10-15T08:00:00Z
 tags:
   - music
-type: post
 ---
 
 > «Everything I’ve ever let go of has claw marks on it.» — David Foster Wallace

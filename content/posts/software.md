@@ -3,7 +3,6 @@ title: "Software I use everyday"
 date: 2022-12-23T15:10:00Z
 tags:
   - software
-type: post
 ---
 
 Here is a list of software I use every day that is essential in everything I do.

@@ -3,7 +3,6 @@ title: "Ballads"
 date: 2022-10-17T08:00:00Z
 tags:
   - music
-type: post
 ---
 
 > «You can play a shoestring if you're sincere.» — John Coltrane

@@ -3,7 +3,6 @@ title: "Lettera aperta sulla salute mentale"
 date: 2020-02-01T08:45:00Z
 tags:
   - salute mentale
-type: post
 ---
 
 Mi sono detto tante volte: dovrei scriverne. E altrettante volte mi sono detto

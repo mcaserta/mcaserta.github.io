@@ -7,7 +7,6 @@ tags:
   - programming
   - software development
 draft: true
-type: post
 ---
 
 # Il Commodore 64

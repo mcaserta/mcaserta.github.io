@@ -4,7 +4,6 @@ date: 2021-05-26T10:46:00Z
 tags:
   - software development
   - anxiety
-type: post
 ---
 
 As a software developer, you will always find yourself in times when someone is

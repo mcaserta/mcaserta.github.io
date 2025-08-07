@@ -5,7 +5,6 @@ tags:
   - java
   - cryptography
   - software development
-type: post
 ---
 
 ![Bruce logo](../images/posts/bruce-logo.png)

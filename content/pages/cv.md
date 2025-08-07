@@ -45,15 +45,15 @@ my productivity and work quality through emerging technologies.
 ### Software Architect, Nexse Srl; Rome, IT — 2003-2019
 
 Established in 2000 by 5 shareholders, Nexse was employing more than a hundred
-IT professionals until it was acquired in 2018. In this company I’ve covered
+IT professionals until it was acquired in 2018. In this company I've covered
 different roles: system administrator, teacher, senior developer and eventually
 software architect.
 
-| Client                       | Period    | Product                                                                                                                                                                                      | Technologies                                                 |
+| Client                       | Period    | Product                                                                                                                                                                      | Technologies                                                 |
 | ---------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
-| Eden Viaggi                  | 2015-2018 | Product Catalog, Flight Cache, New Travel Agents’ Portal, Hotel Connectors                                                                                                                   | java, osgi, fuse, orientdb                                   |
+| Eden Viaggi                  | 2015-2018 | Product Catalog, Flight Cache, New Travel Agents' Portal, Hotel Connectors                                                                                                                   | java, osgi, fuse, orientdb                                   |
 | Vodafone Automotive          | 2014-2015 | Fleet Portal                                                                                                                                                                                 | java, osgi, fuse, oracle                                     |
-| Postecom                     | 2013      | Portale dell’Automobilista                                                                                                                                                                   | liferay, java, oracle, portlet                               |
+| Postecom                     | 2013      | Portale dell'Automobilista                                                                                                                                                                   | liferay, java, oracle, portlet                               |
 | Betbull                      | 2011-2012 | Betting platform                                                                                                                                                                             | scala, java, neo4j                                           |
 | Nexse                        | 2011      | Established a Task Force called SWAT (Software Architecture and Technology) with the objective of producing internal tech counseling and to diffuse innovation through teaching and tutoring |                                                              |
 | Gioco Digitale (Bwin Italia) | 2009-2011 | Gaming platforms, AAMS (the state gaming monopoly) and resellers integration                                                                                                                 | jboss, j2ee, osgi, karaf, spring boot, microservices, oracle |
@@ -84,7 +84,7 @@ development group of three tier web applications.
 Since the very beginning of my professional career I mainly worked with open
 source software, which has given me a better understanding of its community,
 processes and strengths. I am passionate about technology, innovation and
-usability, and I’m always on the lookout for new ways to advance my productivity
+usability, and I'm always on the lookout for new ways to advance my productivity
 and the quality of my work.
 
 ## Know-How

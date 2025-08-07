@@ -3,7 +3,6 @@ title: "Ear Candy"
 date: 2022-07-25T08:00:00Z
 tags:
   - music
-type: post
 ---
 
 > «There's nothing remarkable about it. All one has to do is hit the right keys

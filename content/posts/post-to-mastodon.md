@@ -4,7 +4,6 @@ date: 2022-12-26T00:00:00Z
 tags:
   - mastodon
   - software development
-type: post
 ---
 
 Since the latest twitter issues due to

@@ -3,7 +3,6 @@ title: "Missa"
 date: 2024-09-15T08:00:00Z
 tags:
   - music
-type: post
 ---
 
 ![album cover](../images/posts/missa-album-cover.png)

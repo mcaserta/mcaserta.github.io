@@ -3,7 +3,6 @@ title: "Until Further Notice"
 date: 2022-03-23T08:00:00Z
 tags:
   - music
-type: post
 ---
 
 > «What's wrong with feeling nostalgic? It's the only distraction left for those

@@ -384,7 +384,7 @@ timezones to support".](../images/posts/mars-timezone.png)
 ![Friend: "What happened?", Me: "I had to work with timezones
 today".](../images/posts/timezones-meme.png)
 
-![January 1st 1970 meme](../images/posts/time-universe-meme.webp)
+![January 1st 1970 meme](../images/posts/time-universe-meme.png)
 
 ![Boeing 787 meme](../images/posts/time-boeing-787.jpg)
 
@@ -392,9 +392,9 @@ today".](../images/posts/timezones-meme.png)
 
 ![Developers having to implement yet another timezone change](../images/posts/time-devs.png)
 
-![Developers having to explain...](../images/posts/time-devs-again.webp)
+![Developers having to explain...](../images/posts/time-devs-again.png)
 
-![Days since last timezone issue: 0](../images/posts/time-days-since.webp)
+![Days since last timezone issue: 0](../images/posts/time-days-since.png)
 
 ![Clocks back](../images/posts/clocks-back-meme.jpg)
 
@@ -412,8 +412,8 @@ today".](../images/posts/timezones-meme.png)
 
 ![Overnight workers](../images/posts/time-overnight-meme.jpg)
 
-![XKCD: DateTime](https://imgs.xkcd.com/comics/datetime.png)
+![XKCD: DateTime](../images/posts/time-xkcd-datetime.png)
 
-![Netherlands](../images/posts/time-netherlands.png)
+![Netherlands](../images/posts/time-netherlands.jpg)
 
 [^tz]: assuming the same timezone is used everywhere

@@ -821,13 +821,13 @@ clarification on your side. I also hope you found this useful.
 
 ## Bonus
 
-![reading memes on github](../images/posts/reading-memes-on-github.webp)
+![reading memes on github](../images/posts/reading-memes-on-github.png)
 
 [Credits](https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/)
 
 [^school]: this is my revenge for all the bad math grades at school.
 
-[^this-is-fine]: ![this is fine meme](../images/posts/this-is-fine.webp)
+[^this-is-fine]: ![this is fine meme](../images/posts/this-is-fine.png)
 
 [^it-is-acceptable]:
     ![it is acceptable meme](../images/posts/it-is-acceptable.jpg)

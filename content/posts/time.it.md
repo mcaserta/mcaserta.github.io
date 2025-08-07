@@ -400,7 +400,7 @@ fusi orari da supportare".](../images/posts/mars-timezone.png)
 ![Amico: "Cos'è successo?", Io: "Ho dovuto lavorare con i fusi orari
 oggi".](../images/posts/timezones-meme.png)
 
-![Meme del 1° gennaio 1970](../images/posts/time-universe-meme.webp)
+![Meme del 1° gennaio 1970](../images/posts/time-universe-meme.png)
 
 ![Meme Boeing 787](../images/posts/time-boeing-787.jpg)
 
@@ -408,9 +408,9 @@ oggi".](../images/posts/timezones-meme.png)
 
 ![Sviluppatori che devono implementare l'ennesimo cambio di fuso orario](../images/posts/time-devs.png)
 
-![Sviluppatori che devono spiegare...](../images/posts/time-devs-again.webp)
+![Sviluppatori che devono spiegare...](../images/posts/time-devs-again.png)
 
-![Giorni dall'ultimo problema di fuso orario: 0](../images/posts/time-days-since.webp)
+![Giorni dall'ultimo problema di fuso orario: 0](../images/posts/time-days-since.png)
 
 ![Orologi indietro](../images/posts/clocks-back-meme.jpg)
 
@@ -428,8 +428,8 @@ oggi".](../images/posts/timezones-meme.png)
 
 ![Lavoratori notturni](../images/posts/time-overnight-meme.jpg)
 
-![XKCD: DateTime](https://imgs.xkcd.com/comics/datetime.png)
+![XKCD: DateTime](../images/posts/time-xkcd-datetime.png)
 
-![Paesi Bassi](../images/posts/time-netherlands.png)
+![Paesi Bassi](../images/posts/time-netherlands.jpg)
 
 [^tz]: assumendo che lo stesso fuso orario sia usato ovunque

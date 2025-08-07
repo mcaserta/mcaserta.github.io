@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Basic SEO Meta Tags -->
     <title>{{ title | default(value="Untitled") }}{% if site_title %} - {{ site_title }}{% endif %}</title>
     <meta name="description" content="{{ description }}">
@@ -13,7 +13,7 @@
     {% if date %}<meta name="article:modified_time" content="{{ date | date(format="%Y-%m-%d") }}">{% endif %}
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{% if base_url %}{{ base_url }}/{{ file_path | replace(from=".md", to=".html") }}{% else %}/{{ file_path | replace(from=".md", to=".html") }}{% endif %}">
-
+    
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ title | default(value="Untitled") }}">
@@ -24,7 +24,7 @@
     {% if date %}<meta property="article:modified_time" content="{{ date | date(format="%Y-%m-%dT%H:%M:%S+00:00") }}">{% endif %}
     {% if tags %}{% for tag in tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}{% endif %}
     <meta property="og:locale" content="{{ lang | default(value="en") | replace(from="-", to="_") }}">
-
+    
     <!-- Additional Meta Tags -->
     <meta name="generator" content="Krik Static Site Generator">
 
@@ -52,6 +52,11 @@
                         {% endfor %}
                     </select>
                 </div>
+                {% endif %}
+                {% if pdf %}
+                <a href="{{ file_path | replace(from=".md", to=".pdf") | split(pat="/") | last }}" class="pdf-download" aria-label="Download PDF" title="Download as PDF">
+                    <span class="pdf-icon">📄</span>
+                </a>
                 {% endif %}
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span class="theme-icon">🌓</span>

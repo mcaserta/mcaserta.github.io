@@ -17,16 +17,16 @@
 <p><img src="../images/posts/krik.png" alt="Krik logo" /></p>
 <p>I spent the last 2-3 days developing a static site generator in Rust using
 exclusively <a href="https://claude.ai/">Claude Code</a>.</p>
-<p>My knowledge of Rust is quite basic: I understand code when it’s well written
-but I don’t yet have the practice necessary to develop a sophisticated tool.</p>
-<p>However, for this project I didn’t have to touch a single line of code, since I
+<p>My knowledge of Rust is quite basic: I understand code when it's well written
+but I don't yet have the practice necessary to develop a sophisticated tool.</p>
+<p>However, for this project I didn't have to touch a single line of code, since I
 gave all the instructions to Claude. The AI even took care of the releases.</p>
-<p>The impression I had using this tool is the same one I had in the ’90s when I
+<p>The impression I had using this tool is the same one I had in the '90s when I
 saw the Internet for the first time.</p>
-<p>I don’t think there’s anything else to add.</p>
-<p>Oh, yes… the project can be found on
+<p>I don't think there's anything else to add.</p>
+<p>Oh, yes... the project can be found on
 <a href="https://github.com/mcaserta/krik">github</a> and a demo of the generated site is
-this page you’re reading right now.</p>
+this page you're reading right now.</p>
 <p>A more complete demo of all the features can be found
 <a href="https://mirkocaserta.com/krik/">here</a>.</p>
 
@@ -46,8 +46,8 @@ this page you’re reading right now.</p>
     <content type="html"><![CDATA[
 <p><img src="../images/posts/missa-album-cover.png" alt="album cover" /></p>
 <h2>Long Story Short</h2>
-<p>Questo è un album di musica improvvisata. Il suono è quello dell’organo di Hans
-Zimmer in Interstellar. L’ispirazione è chiaramente ecclesiastica. Ho provato a
+<p>Questo è un album di musica improvvisata. Il suono è quello dell'organo di Hans
+Zimmer in Interstellar. L'ispirazione è chiaramente ecclesiastica. Ho provato a
 immaginare delle melodie sui titoli dei brani e a svilupparle scimmiottando
 (male) lo stile contrappuntistico.</p>
 <h2>Short Story Long</h2>
@@ -56,7 +56,7 @@ prima media quando il mio insegnante di pianoforte mi propose di prendere il suo
 posto come organista nella chiesa del paese.</p>
 <p>Non avevo mai studiato bene il solfeggio, la mia capacità di lettura era davvero
 rudimentale e questo mi rendeva nervoso ma la musica di chiesa non richiede
-grandi capacità esecutive: basta un po’ d’orecchio per gli accordi e ci si può
+grandi capacità esecutive: basta un po' d'orecchio per gli accordi e ci si può
 facilmente districare nella maggiorparte dei canti.</p>
 <p>Il mio compito era quello di accompagnare il coro durante la funzione della
 domenica mattina. A volte facevo delle prove pomeridiane con il coro durante la
@@ -66,30 +66,30 @@ riproduzione sessuale.</p>
 <p>La mia attività da organista non durò molto. Una volta, durante le cresime, ebbi
 la brillante idea di usare il sintetizzatore per suonare alcune melodie e questa
 cosa non piacque per nulla al vescovo. Il parroco mi spiegò che in chiesa erano
-ammessi solo strumenti acustici e l’organo. Potevo mai tollerare che si mettesse
+ammessi solo strumenti acustici e l'organo. Potevo mai tollerare che si mettesse
 bocca sulle mie scelte artistiche? Fu così che la mia collaborazione con la
 parrocchia ebbe bruscamente fine.</p>
 <p>Ricordo anche che una volta spaccai il muso ad un ragazzo del coro perché ebbe
-l’ardire di commentare in modo inappropriato gli LP che quel giorno portavo con
+l'ardire di commentare in modo inappropriato gli LP che quel giorno portavo con
 me: Invitation di Jaco Pastorius, 8:30 dei Weather Report e qualcosa di Larry
 Carlton se non ricordo male. Poi gli chiesi scusa e mi feci prestare i suoi CD
 di <a href="https://it.wikipedia.org/wiki/Fronte_del_palco">Fronte del Palco</a> per
 tentare una riappacificazione musicale totalmente finta da parte mia.</p>
-<p>Ad ogni modo, per almeno due o tre anni ho partecipato attivamente all’attività
+<p>Ad ogni modo, per almeno due o tre anni ho partecipato attivamente all'attività
 musicale della comunità della parrocchia. Conoscevo i brani più popolari e
 sapevo quando inserirli nelle varie sezioni delle funzioni religiose. Sono stato
 un discreto ragazzo di chiesa ma ho sempre visto con distacco i tanti aspetti
 della pratica cristiana che fanno visibilmente a cazzotti con la realtà e il mio
 approccio scettico e razionale alle cose della vita.</p>
-<p>Già a quei tempi si era fatta strada in me l’idea che non esiste un dio e che le
+<p>Già a quei tempi si era fatta strada in me l'idea che non esiste un dio e che le
 tante cose insensate delle religioni sono tali non perché io non sia in grado di
 comprenderle o per mancanza di fede ma semplicemente perché sono e restano
 insensate e contrarie alla logica e alla ragione a disposizione di qualunque
 persona minimamente istruita.</p>
 <p>Tutto questo per dire che in qualche modo questa musica per me è un ritorno alle
-origini. Mi sono divertito a tornare sulla panca dell’organo, seppure
+origini. Mi sono divertito a tornare sulla panca dell'organo, seppure
 virtuale<sup class="footnote-reference"><a href="#hz">1</a></sup>.</p>
-<p>L’album esce su tutte le piattaforme digitali venerdì 20 settembre 2024 alle
+<p>L'album esce su tutte le piattaforme digitali venerdì 20 settembre 2024 alle
 cinque del pomeriggio:</p>
 <ul>
 <li><a href="https://open.spotify.com/album/7KICYco2gWoVWM0a4VNfGL">spotify</a></li>
@@ -115,9 +115,9 @@ si chiama <em>Interstellar</em></p>
     <content type="html"><![CDATA[
 <p>These are a bunch of essential Firefox extensions I use:</p>
 <ul>
-<li><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don’t care about cookies</a>:
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don't care about cookies</a>:
 get rid of cookie warnings from almost all websites</li>
-<li><a href="https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/">Don’t track me Google</a>:
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/">Don't track me Google</a>:
 removes the annoying link-conversion at Google Search, Maps, etc</li>
 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a>:
 an efficient wide-spectrum content blocker</li>
@@ -149,24 +149,24 @@ vibes. If you also feel like joining, please take a look at
 wanted to automate cross posting from there to my Mastodon account and I did it
 with <a href="https://ifttt.com">IFTTT</a> using a WebHook component for Mastodon.</p>
 <p>For now, I just want to document how easy it is to post to Mastodon. All you
-need is an http client. I’ll be using <a href="https://curl.se/">curl</a> in my examples
+need is an http client. I'll be using <a href="https://curl.se/">curl</a> in my examples
 but you can of course use anything you see fit.</p>
 <pre><code class="language-bash">curl --request POST  \
   --header 'Authorization: Bearer your-auth-token-here' \
   --form 'status="The Crusaders: \"And Then There Was The Blues\" https://youtu.be/F-EAazr0j78 #music"' \
   https://mastodon.online/api/v1/statuses
 </code></pre>
-<p>This is the general form of the request. In other words, we’re making an http
+<p>This is the general form of the request. In other words, we're making an http
 POST request where the body is the equivalent of submitting an html form with a
 <code>status</code> field whose value is the actual text we want posted on our timeline.
 Just be careful with the quoting going on inside the <code>status</code> field.</p>
 <p>As for the authorization header, you need to get an authentication token from
-your Mastodon server instance. In my server, it’s under Preferences -&gt;
+your Mastodon server instance. In my server, it's under Preferences -&gt;
 Development. I just have to select <em>New Application</em>, fill a little info about
-my app, select only <code>write:statuses</code> as the permissions I’m granting and, once
+my app, select only <code>write:statuses</code> as the permissions I'm granting and, once
 created, the token will be visible in the app info under <em>Your access token</em>.</p>
-<p>You will also need to replace <code>mastodon.online</code> with your server’s hostname.</p>
-<p>This is it. You’re welcome.</p>
+<p>You will also need to replace <code>mastodon.online</code> with your server's hostname.</p>
+<p>This is it. You're welcome.</p>
 
     ]]></content>
     <category term="mastodon" />
@@ -190,28 +190,28 @@ created, the token will be visible in the app info under <em>Your access token</
 <tr><td><a href="https://bitwarden.com/">bitwarden</a></td><td>password manager</td></tr>
 </tbody></table>
 <p>Firefox is a great browser and probably the single piece of software I spend the
-most time with. It’s free, open source, it descends from the ashes of Netscape
-and Mozilla and isn’t as evil as Chrome. I’ve also given a try to
-<a href="https://vivaldi.com/">Vivaldi</a> recently, and it’s pretty good: the things I
+most time with. It's free, open source, it descends from the ashes of Netscape
+and Mozilla and isn't as evil as Chrome. I've also given a try to
+<a href="https://vivaldi.com/">Vivaldi</a> recently, and it's pretty good: the things I
 liked the most are the Chromium engine, extensions compatibility and the
 integrated email client.</p>
 <p>Thunderbird is also a descendant of Netscape and Mozilla and, despite not having
 yet a unified inbox, it works great and has all the features I need. I have
-quite a few mail accounts configured in it, and it’s as smooth as olive oil.</p>
+quite a few mail accounts configured in it, and it's as smooth as olive oil.</p>
 <p>Telegram I find much better than Whatsapp. I just wish most people would throw
 away Whatsapp and join the much better alternative.</p>
 <p>Signal is what I use whenever I have to exchange sensitive information like
 passwords, credit card info, etc.</p>
-<p>Alacritty is my terminal of choice. It keeps things simple, it’s blazing fast,
-the defaults are just perfect. What’s not to like?</p>
+<p>Alacritty is my terminal of choice. It keeps things simple, it's blazing fast,
+the defaults are just perfect. What's not to like?</p>
 <p>Joplin is an amazing note-taking app which is available for every platform and
 its sync features make it perfect for switching between computers and phones. I
 have so much stuff in Joplin.</p>
 <p>I have used <a href="https://keepassxc.org/">KeepassXC</a> since forever but recently
-switched to Bitwarden as it’s also open source, free, available on all platforms
+switched to Bitwarden as it's also open source, free, available on all platforms
 and the cloud sync feature is also free and essential to me.</p>
-<p>These are my choices. I’m not saying they are good for you. I’m just saying I
-couldn’t live without them.</p>
+<p>These are my choices. I'm not saying they are good for you. I'm just saying I
+couldn't live without them.</p>
 
     ]]></content>
     <category term="software" />
@@ -224,32 +224,32 @@ couldn’t live without them.</p>
     <published>2022-10-17T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <blockquote>
-<p>«You can play a shoestring if you’re sincere.» — John Coltrane</p>
+<p>«You can play a shoestring if you're sincere.» — John Coltrane</p>
 </blockquote>
 <p><img src="../images/posts/ballads-album-cover.png" alt="album cover" /></p>
 <p>I have been playing the piano since I was a little kid. Actually, I played the
 organ first, as my dad had a transistor one that was pretty state of the art for
 the time (I was born in 1974 so you get the idea).</p>
-<p>Anyway, I’ve been playing keyboards since forever and I’ve also picked up
+<p>Anyway, I've been playing keyboards since forever and I've also picked up
 different instruments over the years, probably too many of them as I never
 really mastered one.</p>
 <p>But black and white keys is what my brain sees when I hear music. I tend to
 think in piano terms first.</p>
-<p>Some people tell me they wish to hear me play the piano more as they don’t
-really enjoy me playing bass or guitar or synths or whatever it is that I’m
+<p>Some people tell me they wish to hear me play the piano more as they don't
+really enjoy me playing bass or guitar or synths or whatever it is that I'm
 obsessed with at the moment.</p>
-<p>I’m not a good piano player. I’m not even an average piano player. My technique
-is lacking in so many ways I can’t even begin to count them. However, I can
+<p>I'm not a good piano player. I'm not even an average piano player. My technique
+is lacking in so many ways I can't even begin to count them. However, I can
 maybe hold my own with ballads as they allow me the freedom and the time to
 think and move things around.</p>
 <p>I believe there are many places in this album where you can clearly hear me
-thinking “well, where do I go now?”. That’s fine with me. I’m not a professional
-musician and I don’t need everything to be perfect. In fact, there are several
+thinking "well, where do I go now?". That's fine with me. I'm not a professional
+musician and I don't need everything to be perfect. In fact, there are several
 places where you can hear me making errors, failing to reach a note or playing
-something that’s not really <em>kosher</em>.</p>
-<p>You know what? I don’t care. You get to hear what I played with no edits. I want
-this to be sincere. It might be flawed… well, it definitely is flawed in many
-ways, but at least it’s me you are hearing.</p>
+something that's not really <em>kosher</em>.</p>
+<p>You know what? I don't care. You get to hear what I played with no edits. I want
+this to be sincere. It might be flawed... well, it definitely is flawed in many
+ways, but at least it's me you are hearing.</p>
 <p>The songs in this album are tunes that have kept me company for years. Except
 maybe for <em>Lotus Blossom</em>, which I discovered quite recently while watching
 <a href="https://en.wikipedia.org/wiki/Field_of_Dreams">Field</a>
@@ -277,8 +277,8 @@ masterpiece through Kevin Costner, can you believe that?</p>
 <p><img src="../images/posts/the-last-time-i-had-fun-album-cover.png" alt="album cover" /></p>
 <p>The nice thing with instrumental music is that giving titles to songs is maybe
 trivial and can sometimes be lots of fun.</p>
-<p>I had this album’s title written down in a list of possible song names that I
-keep in my notebook. I wasn’t really thinking about it until I started seeing
+<p>I had this album's title written down in a list of possible song names that I
+keep in my notebook. I wasn't really thinking about it until I started seeing
 the album cover showing up online after I pushed the <em>publish</em> button.</p>
 <p>And then it hit me:</p>
 <p>«The Last Time I Had Fun (It Was A Long Time Ago)»</p>
@@ -286,7 +286,7 @@ the album cover showing up online after I pushed the <em>publish</em> button.</p
 is fun?</p>
 <p>I make no secret of my life long struggle with depression, anxiety, panic
 attacks and agoraphobia. I used to be shy about it and keep it to myself as
-people see it as a weakness. It isn’t. Of course it is not.</p>
+people see it as a weakness. It isn't. Of course it is not.</p>
 <p>When I had my first panic attack I was just in my twenties and it scared me
 shitless. I had no idea what was happening to me. I was living in a relatively
 small town and I had maybe heard the word <em>depression</em> a few times, always
@@ -296,13 +296,13 @@ referring to someone no one would dare go near to.</p>
 <p>These days things are a bit better. Mental illness still carries around a stigma
 but more and more people are aware of what it means to be depressed, to
 experience debilitating anxiety and so on.</p>
-<p>I am still scared shitless of my condition but I’ve somewhat learned to live
-with it. I spend most of my days working at home so I don’t get easily
-triggered, except for family or job matters. It’s manageable though.</p>
-<p>But yeah, I can’t remember when it was the last time I’ve had fun. I’ve had
+<p>I am still scared shitless of my condition but I've somewhat learned to live
+with it. I spend most of my days working at home so I don't get easily
+triggered, except for family or job matters. It's manageable though.</p>
+<p>But yeah, I can't remember when it was the last time I've had fun. I've had
 some. The most fun I have these days is playing music for myself at home. So, in
 a sense, this is me trying to share some of my fun, knowing that not everyone
-has fun the same way and most won’t like my music, but some will, and it is for
+has fun the same way and most won't like my music, but some will, and it is for
 those that I do this.</p>
 <p>You can listen to The Last Time I Had Fun for free by clicking
 <a href="https://album.link/thelasttimeihadfun">this link</a>.</p>
@@ -318,18 +318,18 @@ those that I do this.</p>
     <published>2022-07-25T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <blockquote>
-<p>«There’s nothing remarkable about it. All one has to do is hit the right keys
+<p>«There's nothing remarkable about it. All one has to do is hit the right keys
 at the right time and the instrument plays itself.» — J. S. Bach</p>
 </blockquote>
 <p><img src="../images/posts/ear-candy-album-cover.png" alt="album cover" /></p>
-<p>What I find amusing about quotes is that it’s very hard to find out if they are
+<p>What I find amusing about quotes is that it's very hard to find out if they are
 trustworthy. I like to think that the Kapellmeister might actually have said
-that. It’s quite plausible I think.</p>
+that. It's quite plausible I think.</p>
 <p>Bach wrote music for the glory of his god and for the refreshment of the spirit.
-I don’t have any gods to glorify other than Charlie Parker and John Coltrane and
+I don't have any gods to glorify other than Charlie Parker and John Coltrane and
 no special message to send to the world other than enjoy yourselves and try not
 to be hurtful to each other.</p>
-<p>I don’t really have much to say about this album other than I hope you find it
+<p>I don't really have much to say about this album other than I hope you find it
 tolerable.</p>
 <p>You can listen to Ear Candy for free by clicking
 <a href="https://album.link/ear-candy">this link</a>.</p>
@@ -345,21 +345,21 @@ tolerable.</p>
     <published>2022-03-23T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <blockquote>
-<p>«What’s wrong with feeling nostalgic? It’s the only distraction left for those
-who have no faith in the future.» — “The Great Beauty” (2013, Paolo
+<p>«What's wrong with feeling nostalgic? It's the only distraction left for those
+who have no faith in the future.» — "The Great Beauty" (2013, Paolo
 Sorrentino)</p>
 </blockquote>
 <p><img src="../images/posts/until-further-notice-album-cover.png" alt="album cover" /></p>
 <p>When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
-would report lots of interesting stuff such as the performers’ names and the
+would report lots of interesting stuff such as the performers' names and the
 instruments they played. Sometimes, especially for jazz albums, there would be
 liner notes, hopefully written by someone who knew what he was talking about.
 And pictures, oh yeah, there would often be pictures, and they were big and
 pretty.</p>
 <p>Today, when you listen to or buy music on Spotify or Apple Music or whatever
 your favorite music distribution/streaming platform is, you barely get a
-picture, the name of the artist, an album title and the songs’ names. This is
+picture, the name of the artist, an album title and the songs' names. This is
 very unfortunate. Compared to when I started consuming music, this represents a
 horrible loss.</p>
 <p>Yes, I know I sound like
@@ -374,29 +374,29 @@ the randomizer do its thing. The last song is from a
 The rest of the songs have been played and improvised live on keyboards.</p>
 <p>This is without a doubt no groundbreaking stuff. But it is for me. I come from a
 jazz background where holding a triad for longer than a bar is considered an
-outrageous act of rebellion. I didn’t expect what came out, like… at all. But
+outrageous act of rebellion. I didn't expect what came out, like... at all. But
 my friends are not saying terrible words about it, so I think maybe this is
 worth sharing. Even if one person likes part of a song, that would be more than
 I could ever hope for.</p>
-<p>The album’s theme is the passive-aggressive office jargon. The music is supposed
+<p>The album's theme is the passive-aggressive office jargon. The music is supposed
 to be a sort of meditative remedy to the frustrations induced by the tensions
 that arise in that context. An old friend of mine, a professional musician, once
-told me musicians are healers. Although I can’t help but look very suspiciously
-at uses for music that aren’t just about contemplating the beauty of sounds, I
+told me musicians are healers. Although I can't help but look very suspiciously
+at uses for music that aren't just about contemplating the beauty of sounds, I
 have nothing against people using music in ways that positively affect them. If
-you find this music soothing and relaxing… be my guest.</p>
+you find this music soothing and relaxing... be my guest.</p>
 <p>Finally, here is a copy of the
 <a href="../images/posts/until-further-notice-album-cover.png">album cover</a> in its full
 glory for those of you who still enjoy the small pleasures in life.</p>
 <p>Special thanks to my son Andrea for inspiring me to pick up the piano again
 (figuratively speaking of course as a real piano can be pretty heavy). Also, a
 very big thank you goes to Camilla, Marco, Gianluca and Patrizia who first
-listened to the tracks and didn’t threaten me with blocking my number on every
+listened to the tracks and didn't threaten me with blocking my number on every
 messaging app. Huge thanks should also go to my mum for tolerating my music gear
 addiction, especially that for vintage synthesizers. And to her cooking. Yeah,
 definitely worth mentioning. Love is probably stored in the belly, and mine is a
 pretty big one.</p>
-<p>Oh, I almost forgot… the gear. This was all done in Logic Pro X using software
+<p>Oh, I almost forgot... the gear. This was all done in Logic Pro X using software
 stuff. The synths are either Logic presets or <a href="https://u-he.com/">u-he</a> Zebra2
 or <a href="https://www.gforcesoftware.com/">GForce</a> OB-E. There is also a large amount
 of <a href="https://valhalladsp.com/">Valhalla</a> Shimmer and Supermassive reverb, as well
@@ -404,10 +404,10 @@ as some heavy processing through <a href="https://www.arturia.com/">Arturia</a> 
 Fragments and <a href="https://chowdsp.com/">Chow</a> Tape Model. I played the keyboards
 via midi on a Sequential Take 5 and a Nord Stage 3 Compact. Sometimes I played
 the left hand bass part on the Take 5 and the rest on the Nord with the right
-hand. Most keyboardists can do that, and they don’t go bragging about it, I
+hand. Most keyboardists can do that, and they don't go bragging about it, I
 know.</p>
-<p>Well, that’s about it. See you soon with more music I guess.</p>
-<p>Until further notice…</p>
+<p>Well, that's about it. See you soon with more music I guess.</p>
+<p>Until further notice...</p>
 <p>You can listen to Until Further Notice for free by clicking
 <a href="https://album.link/untilfurthernotice">this link</a>.</p>
 
@@ -451,24 +451,24 @@ putting an abysmal amount of pressure on you to complete something.</p>
 <p>This is normal and not something under your control. Accept this is how every
 job works and take it for granted as the oxygen in the air you breathe.</p>
 <p>Can this be avoided? If you have an enlightened project manager/team
-leader/whatever, she won’t put any pressure on you. If you don’t, maybe try
+leader/whatever, she won't put any pressure on you. If you don't, maybe try
 looking for new employment opportunities.</p>
-<p>A good software engineer knows software can’t be rushed. We are not in a hacker
-movie where someone types some bullshit code into a keyboard and <em>“We’re in!”</em>.</p>
-<p>Software requires focus. The simplest “Hello world” requires an amount of
+<p>A good software engineer knows software can't be rushed. We are not in a hacker
+movie where someone types some bullshit code into a keyboard and <em>"We're in!"</em>.</p>
+<p>Software requires focus. The simplest "Hello world" requires an amount of
 complexity coordination that simply cannot be avoided.</p>
-<p>The way I see it, software either works or it doesn’t. If you want me to produce
+<p>The way I see it, software either works or it doesn't. If you want me to produce
 software that does work, then development takes the time that it takes.</p>
 <p>Of course things can be much more complex than this. But, as a general rule, if
 someone tries to rush me into something, I try to understand their requirements,
 try to explain what is needed in order to achieve the objective, then try my
 best to ignore the anxiety they are imposing on me and negotiate more realistic
 deadlines.</p>
-<p>I’m only human and it doesn’t work so well every time. But I try to use the
+<p>I'm only human and it doesn't work so well every time. But I try to use the
 anxiety to positively drive my attention and focus.</p>
 <p>There will always be someone speaking of how the sun is not gonna rise tomorrow
-if you miss a deadline. Of course that’s bullshit.</p>
-<p>Just do your best and you’ll be fine, I promise.</p>
+if you miss a deadline. Of course that's bullshit.</p>
+<p>Just do your best and you'll be fine, I promise.</p>
 
     ]]></content>
     <category term="software development" />
@@ -485,7 +485,7 @@ if you miss a deadline. Of course that’s bullshit.</p>
 <a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">digital rain</a> algorithm in
 6502 assembly and <a href="matrix.html">failing miserably</a>, I decided to try the
 <a href="https://cc65.github.io/">cc65</a> toolkit and write some C code.</p>
-<p>Once it’s loaded, the following commands are available through the keyboard:</p>
+<p>Once it's loaded, the following commands are available through the keyboard:</p>
 <table><thead><tr><th>key</th><th>use</th></tr></thead><tbody>
 <tr><td><code>A</code></td><td>amber mode</td></tr>
 <tr><td><code>B</code></td><td>binary mode</td></tr>
@@ -506,10 +506,10 @@ my hero.</p>
 <a href="https://www.jwz.org/xscreensaver/">xmatrix</a> screensaver by the legendary
 <a href="https://www.jwz.org/">Jamie Zawinski</a>.</p>
 <h2>Update 20210524</h2>
-<p>Here’s a video of the software running on a real C64, courtesy Jordan McGee.</p>
+<p>Here's a video of the software running on a real C64, courtesy Jordan McGee.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P01GWeBhYPc" title="Screensaver running on a real C64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <h2>Update 20211029</h2>
-<p>Here’s another video of the software running on a real C64, courtesy my friend
+<p>Here's another video of the software running on a real C64, courtesy my friend
 Marco.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O93npyzDnUU" title="Screensaver running on a real C64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -527,7 +527,7 @@ Marco.</p>
     <content type="html"><![CDATA[
 <p>I am trying to learn some 6502 assembly and this is the result of one of my
 first experiments.</p>
-<p>Once it’s loaded, the following commands are available through the keyboard:</p>
+<p>Once it's loaded, the following commands are available through the keyboard:</p>
 <table><thead><tr><th>key</th><th>use</th></tr></thead><tbody>
 <tr><td><code>B</code></td><td>binary display mode</td></tr>
 <tr><td><code>X</code></td><td>hex display mode</td></tr>
@@ -558,13 +558,13 @@ my hero.</p>
     <updated>2021-02-04T18:19:00+00:00</updated>
     <published>2021-02-04T18:19:00+00:00</published>
     <content type="html"><![CDATA[
-<h1>Time Series Data and CompletableFuture example in Java</h1>
+<h1 id="time-series-data-and-completablefuture-example-in-java">Time Series Data and CompletableFuture example in Java</h1>
 <p>Full code for all the examples can be found
 <a href="https://github.com/mcaserta/time-series-concurrency-example">here</a>.</p>
-<h2>How to run the program</h2>
+<h2 id="how-to-run-the-program">How to run the program</h2>
 <pre><code class="language-shell">mvn clean compile verify exec:java
 </code></pre>
-<h2>Preface</h2>
+<h2 id="preface">Preface</h2>
 <p>Suppose we want to calculate an <em>air quality index</em> based on two values:</p>
 <ul>
 <li>air temperature</li>
@@ -580,11 +580,11 @@ my hero.</p>
 <p>We may calculate the <code>AQi</code> with the following sorry excuse of a formula:</p>
 <!-- AQi = (((T * 100) / Tm) + C) / 2 -->
 <p><img src="../images/posts/air-quality-formula.png" alt="air quality formula" /></p>
-<p><strong>DISCLAIMER:</strong> please note that this formula is in no way scientific, and it’s
-intended for educational purposes only. I don’t want environmentalists and real
+<p><strong>DISCLAIMER:</strong> please note that this formula is in no way scientific, and it's
+intended for educational purposes only. I don't want environmentalists and real
 scientists chasing me around with math formulas and accusations of quackery.
 Also, I saw a chance for a pretty LaTeX equation and I took it, because
-aesthetics… and it makes me look smart, which I certainly am not<sup class="footnote-reference"><a href="#school">1</a></sup>.</p>
+aesthetics... and it makes me look smart, which I certainly am not<sup class="footnote-reference"><a href="#school">1</a></sup>.</p>
 <p>What the formula attempts to say is that as the temperature and the carbon
 monoxide percentage rise, the air quality decreases. Yeah, this is totally
 unscientific but bear with me for the sake of argumentation, please.</p>
@@ -620,7 +620,7 @@ t=10; c=0.5; tm=40; (((t * 100) / tm) + c) / 2
 <tr><td>12.75 to 15</td><td>pretty cool</td></tr>
 <tr><td>-∞ to 12.75</td><td>welcome to Yakutsk, probably</td></tr>
 </tbody></table>
-<h2>Service providers</h2>
+<h2 id="service-providers">Service providers</h2>
 <p>Suppose we have internet services that expose temperature and carbon monoxide
 level monitoring values. These services might expose an api that gives us time
 series data<sup class="footnote-reference"><a href="#time-series-data">4</a></sup>.</p>
@@ -645,10 +645,10 @@ that looks like this:</p>
 <tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>3.3</code></td></tr>
 </tbody></table>
 <p>Please note that I have sorted the data by timestamp to make it a bit more
-readable, but you shouldn’t make assumptions on the sort order of the data
-returned by an external provider. Not that this is of any importance here as…</p>
-<h1>The algorithm</h1>
-<p>…our algorithm now requires:</p>
+readable, but you shouldn't make assumptions on the sort order of the data
+returned by an external provider. Not that this is of any importance here as...</p>
+<h1 id="the-algorithm">The algorithm</h1>
+<p>...our algorithm now requires:</p>
 <ol>
 <li>concatenating the temperature and carbon monoxide percentage data</li>
 <li>sorting by timestamp</li>
@@ -703,8 +703,8 @@ recent value of the other type. In other words:</p>
 <a href="https://towardsdatascience.com/time-series-analysis-resampling-shifting-and-rolling-f5664ddef77e">rolling time window</a>
 as you have a window that moves forward in time focusing on the most recent data
 for our specific <code>T</code> and <code>C</code> measures at each step<sup class="footnote-reference"><a href="#creep">5</a></sup>.</p>
-<h2>Rolling Time Window</h2>
-<p>Go ahead, scroll down. You’re going to see it.</p>
+<h2 id="rolling-time-window">Rolling Time Window</h2>
+<p>Go ahead, scroll down. You're going to see it.</p>
 <pre><code>/===================================================================================\
 |                   Step 01 :: T = 10.1, C = 2.0 :: AQi = 13.625                    |
 |----+------+-----+------+-----+------+------+-----+------+------+-----+-----+------|
@@ -819,21 +819,21 @@ for our specific <code>T</code> and <code>C</code> measures at each step<sup cla
 <tr><td><code>2021-01-20T08:08:00Z</code></td><td><code>15.525</code></td></tr>
 <tr><td><code>2021-01-20T08:09:00Z</code></td><td><code>15.775</code></td></tr>
 </tbody></table>
-<p>If you’ve looked closely, you might have noticed that we have a couple duplicate
+<p>If you've looked closely, you might have noticed that we have a couple duplicate
 timestamps in our results, specifically <code>2021-01-20T08:02:00Z</code> and
 <code>2021-01-20T08:06:00Z</code>. These represent a time paradox as it appears that our
 <code>AQi</code> has two different values at the same time.</p>
 <p><img src="../images/posts/i-find-your-lack-of-logic-disturbing.jpg" alt="I find your lack of logic disturbing" /></p>
 <p>We both know this data is eventually going to show up on a web page. Also, we
-wouldn’t want one of those hipster javascript frontend developers to point out a
-lack of logic or, worse, an inconsistency in our data to us, wouldn’t we?</p>
+wouldn't want one of those hipster javascript frontend developers to point out a
+lack of logic or, worse, an inconsistency in our data to us, wouldn't we?</p>
 <p>Yeah, I thought so. So, my idea is that we can safely discard the first entry of
 a duplicate timestamp as it refers to a calculation with stale data. Why? Well,
 consider the values for the first duplicate timestamp: <code>2021-01-20T08:02:00Z</code>.
 The first time we computed the <code>AQi</code>, we picked data from id <code>2</code> and <code>3</code> and id
 <code>2</code> refers to a previous timestamp, specifically <code>2021-01-20T08:01:00Z</code>. The
 second time we computed the <code>AQi</code>, we were using data from id <code>3</code> and <code>4</code>, which
-both refer to timestamp <code>2021-01-20T08:02:00Z</code>, so this computation’s result is
+both refer to timestamp <code>2021-01-20T08:02:00Z</code>, so this computation's result is
 more relevant than the previous one which we stamped with the same
 <code>2021-01-20T08:02:00Z</code> timestamp.</p>
 <p>The same thing applies to the <code>AQi</code> entry with timestamp <code>2021-01-20T08:06:00Z</code>
@@ -871,8 +871,8 @@ normalize the result by an arbitrary time interval, say one minute:</p>
 <p><img src="../images/posts/plot-output-normalized.png" alt="plot of the normalized data" /></p>
 <p>Makes sense? I certainly hope so.</p>
 <p><img src="../images/posts/yes.gif" alt="yes" /></p>
-<h2>Let’s get coding</h2>
-<p>Time to write some code. First of all, let’s define an interface for our <code>AQi</code>
+<h2 id="lets-get-coding">Let's get coding</h2>
+<p>Time to write some code. First of all, let's define an interface for our <code>AQi</code>
 calculator, so we can provide different implementations later on.</p>
 <p>The code for this interface can be seen
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCalculator.java">here</a>.</p>
@@ -896,13 +896,13 @@ Although this seems horribly complicated due to the verbosity of the Java
 language and a few implementation details, you can think of a time value as just
 a convenient way to represent an <code>Instant</code> in time and its associated <code>value</code>.
 Nothing fancy, really.</p>
-<h2>Coding like it’s 1984</h2>
-<p>Now that we have a basic framework for our calculations, let’s write a first
+<h2 id="coding-like-its-1984">Coding like it's 1984</h2>
+<p>Now that we have a basic framework for our calculations, let's write a first
 implementation using the old school style. The complete code for this is
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/OldSchoolAirQualityIndexCalculator.java">here</a>.
-Let’s take a look.</p>
+Let's take a look.</p>
 <p>Our calculator takes the max temperature in its constructor and stores its value
-in the <code>maxTemperature</code> instance constant as we’ll need its value later when
+in the <code>maxTemperature</code> instance constant as we'll need its value later when
 invoking the <code>AQi</code> function.</p>
 <p>Our <code>calculate</code> method should start with these two steps:</p>
 <ol>
@@ -947,7 +947,7 @@ passing to sort is picking the timestamp of the relative entry in the original
 <code>timeValuesByType</code> map. We then iterate <code>keysSortedByTimestamp</code>, adding entries
 to our <code>timeValuesByTypeSortedByTimestamp</code> map.</p>
 <p>Now we are declaring a map for the results of our <code>AQi</code> calculations and a
-couple variables we’ll need later:</p>
+couple variables we'll need later:</p>
 <pre><code class="language-java">Map&lt;Instant, Double&gt; airQualityIndexMap = new HashMap&lt;&gt;();
 TimeValue lastTemperature = null;
 TimeValue lastCarbonMonoxidePercentage = null;
@@ -991,15 +991,15 @@ for (Instant key : keys) {
     results.add(TimeValue.of(key, airQualityIndexMap.get(key)));
 }
 </code></pre>
-<h2>Functional elegance</h2>
-<p>Can we do better than this? Absolutely. Let’s use an elegant weapon for a more
+<h2 id="functional-elegance">Functional elegance</h2>
+<p>Can we do better than this? Absolutely. Let's use an elegant weapon for a more
 civilized age: functional programming. Our
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/FunctionalAirQualityIndexCalculator.java">FunctionalAirQualityIndexCalculator</a>
-is quite slimmed down, but that’s just because the main logic behind the
+is quite slimmed down, but that's just because the main logic behind the
 calculations is now in the
 <a href="https://github.com/mcaserta/time-series-concurrency-example/blob/master/src/main/java/com/mirkocaserta/example/AirQualityIndexCollector.java">AirQualityIndexCollector</a>.</p>
 <p>Our new calculator is much simpler now. The first part is quite involved so
-let’s take a look at it first:</p>
+let's take a look at it first:</p>
 <pre><code class="language-java">List&lt;TypedTimeValue&gt; timeSeries = Stream.concat(
    temperatures.stream().map(e -&gt; new TypedTimeValue(TypedTimeValue.Type.T, e)),
    carbonMonoxidePercentages.stream().map(e -&gt; new TypedTimeValue(TypedTimeValue.Type.C, e))
@@ -1009,7 +1009,7 @@ let’s take a look at it first:</p>
 <ul>
 <li>
 <p>the temperatures and carbon monoxide percentage data are streamed and mapped
-into a type wrapper in order to later understand if the data we’re looking at
+into a type wrapper in order to later understand if the data we're looking at
 is of type <code>T</code> or <code>C</code></p>
 </li>
 <li>
@@ -1026,12 +1026,12 @@ is of type <code>T</code> or <code>C</code></p>
 <p>The <code>timeSeries</code> is then streamed in parallel into a collector that does the
 real work and returns an unmodifiable <code>List&lt;TimeValue&gt;</code> with the air quality
 indices.</p>
-<p>Let’s take a look at the collector.</p>
+<p>Let's take a look at the collector.</p>
 <pre><code class="language-java">public class AirQualityIndexCollector
         implements Collector&lt;TypedTimeValue, Queue&lt;TypedTimeValue&gt;, List&lt;TimeValue&gt;&gt; {
     ...
 </code></pre>
-<p>We’re implementing the <code>Collector</code> interface. The type parameters we are
+<p>We're implementing the <code>Collector</code> interface. The type parameters we are
 providing here express three things:</p>
 <ul>
 <li>we are collecting values of type <code>TypedTimeValue</code></li>
@@ -1065,8 +1065,8 @@ public BinaryOperator&lt;Queue&lt;TypedTimeValue&gt;&gt; combiner() {
 </code></pre>
 <p>The combiner method must return a function that combines two accumulators. The
 implementation should pick all elements from the second accumulator and add them
-to the first one, which doesn’t sound very functional in terms of immutability
-but in this case mutation is an expected behavior, and it’s totally fine.</p>
+to the first one, which doesn't sound very functional in terms of immutability
+but in this case mutation is an expected behavior, and it's totally fine.</p>
 <pre><code class="language-java">@Override
 public Function&lt;Queue&lt;TypedTimeValue&gt;, List&lt;TimeValue&gt;&gt; finisher() {
     ...
@@ -1077,7 +1077,7 @@ air quality indices.</p>
 <pre><code class="language-java">final Map&lt;Instant, TimeValue&gt; aqiAccumulator = new HashMap&lt;&gt;();
 </code></pre>
 <p>This is a map that is going to collect all the air quality indices. As you can
-see, it’s indexed by a timestamp, so we won’t get duplicate entries as more
+see, it's indexed by a timestamp, so we won't get duplicate entries as more
 recent calculations for the same timestamps are put into the map replacing the
 stale ones.</p>
 <pre><code class="language-java">return accumulator -&gt; {
@@ -1099,10 +1099,10 @@ stale ones.</p>
            .collect(Collectors.toUnmodifiableList());
 };
 </code></pre>
-<p>This is quite a mouthful but let’s go through it bit by bit. We are streaming
+<p>This is quite a mouthful but let's go through it bit by bit. We are streaming
 the accumulated data, extracting the timestamp, sorting by it and, for each
 timestamp we look for the temperature and carbon monoxide percentage data with
-the closest timestamp. <em>Closest</em> means that the timestamp we’re evaluating must
+the closest timestamp. <em>Closest</em> means that the timestamp we're evaluating must
 be before of or equal to the timestamp in question.</p>
 <p>If we have both data (<code>T</code> and <code>C</code>), we can proceed to calculate the <code>AQi</code> and
 put its value into the <code>aqiAccumulator</code> map.</p>
@@ -1111,13 +1111,13 @@ map, sort by timestamp and collect them in an unmodifiable <code>List&lt;TimeVal
 <p>Sorting like this is possible since we made our <code>TimeValue</code> class implement
 <code>Comparable&lt;TimeValue&gt;</code>.</p>
 <p>There are several points in the <code>finisher</code> method where I look into the
-datastructures I’m iterating on, which, again, doesn’t look very kosher in terms
-of functional programming, but it’s okay as I know that the data I’m examining
-isn’t being changed by a concurrent thread under the hood.</p>
-<p>Is this better than our old school calculator? I’m not sure. This is still quite
+datastructures I'm iterating on, which, again, doesn't look very kosher in terms
+of functional programming, but it's okay as I know that the data I'm examining
+isn't being changed by a concurrent thread under the hood.</p>
+<p>Is this better than our old school calculator? I'm not sure. This is still quite
 verbose, but to me it seems easier to read as most of the code is expressed in a
 declarative style rather than an imperative one.</p>
-<h2>Concurrency considerations</h2>
+<h2 id="concurrency-considerations">Concurrency considerations</h2>
 <p>As we need to retrieve two different sets of data from two different providers
 (one for temperature data and one for carbon monoxide percentage data), we might
 want to run the clients in parallel. This has an advantage over traditional
@@ -1158,14 +1158,14 @@ code runs in parallel. I might as well have written:</p>
 </code></pre>
 <p>This is still verbose but definitely better than before. As the computation in
 our <code>CompletableFuture</code> returns a <code>List&lt;TimeValue&gt;</code>, the <code>supplyAsync</code> method
-returns a <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, which is Java’s way of saying
+returns a <code>CompletableFuture&lt;List&lt;TimeValue&gt;&gt;</code>, which is Java's way of saying
 that the <code>timedValuesFuture1</code> variable is a <code>CompletableFuture</code> holding a
 <code>List&lt;TimeValue&gt;</code>. Please note that the code we are passing to the <code>supplyAsync</code>
-method is inside a lambda. What this means is that our code doesn’t get executed
-in the <code>supplyAsync</code> method but the Java runtime is free to choose when it’s the
+method is inside a lambda. What this means is that our code doesn't get executed
+in the <code>supplyAsync</code> method but the Java runtime is free to choose when it's the
 best time to run it. The default scheduler will generally start running your
 <code>CompletableFuture</code>s as soon as they are defined but you need to understand that
-this is not necessarily so and that defining a lambda doesn’t mean it gets
+this is not necessarily so and that defining a lambda doesn't mean it gets
 executed at the point of declaration.</p>
 <p>We now need a way to make sure our <code>CompletableFuture</code>s have completed their
 execution before going on. This is done by composing our futures and calling the
@@ -1173,14 +1173,14 @@ execution before going on. This is done by composing our futures and calling the
 <pre><code class="language-java">CompletableFuture.allOf(timedValuesFuture1, timedValuesFuture2).join();
 </code></pre>
 <p>The <code>allOf</code> method returns a new <code>CompletableFuture</code> which wraps the futures
-we’re passing to it. On this new future we then call <code>join</code> which blocks until
+we're passing to it. On this new future we then call <code>join</code> which blocks until
 all the wrapped futures have finished executing.</p>
 <p>After this line, we are sure that our threads have run, so we can get the data
 we need from our original futures with the <code>join</code> method:</p>
 <pre><code class="language-java">List&lt;TimeValue&gt; timeValues1 = timedValuesFuture1.join();
 List&lt;TimeValue&gt; timeValues2 = timedValuesFuture2.join();
 </code></pre>
-<h2>Example output</h2>
+<h2 id="example-output">Example output</h2>
 <p>When you run the application, you should see output similar to this:</p>
 <pre><code>2021-02-03T17:50:26.772545406 --- [main] Hello concurrent world!
 2021-02-03T17:50:26.801737530 --- [ForkJoinPool.commonPool-worker-3] Calling provider1...
@@ -1197,20 +1197,20 @@ List&lt;TimeValue&gt; timeValues2 = timedValuesFuture2.join();
 <li>ForkJoinPool.commonPool-worker-3</li>
 <li>ForkJoinPool.commonPool-worker-5</li>
 </ol>
-<p>It’s interesting to note here that in this specific run <code>allOf(...).join()</code> was
+<p>It's interesting to note here that in this specific run <code>allOf(...).join()</code> was
 called much before calling provider 2 and both results were returned from
 providers.</p>
 <p>Your output will definitely be different as:</p>
 <ol>
-<li>the threads’ execution order is non-deterministic</li>
-<li>the providers’ values are generated randomly</li>
+<li>the threads' execution order is non-deterministic</li>
+<li>the providers' values are generated randomly</li>
 </ol>
-<h2>Conclusion</h2>
-<p>You’ve made it! This was quite the run. I hope it’s been entertaining. I spent
-quite a bit of time on this as I was trying to dig deeper into some issues I’ve
+<h2 id="conclusion">Conclusion</h2>
+<p>You've made it! This was quite the run. I hope it's been entertaining. I spent
+quite a bit of time on this as I was trying to dig deeper into some issues I've
 had at work. I suggest you do the same when you run into problems that need some
 clarification on your side. I also hope you found this useful.</p>
-<h2>Bonus</h2>
+<h2 id="bonus">Bonus</h2>
 <p><img src="../images/posts/reading-memes-on-github.png" alt="reading memes on github" /></p>
 <p><a href="https://www.reddit.com/r/ProgrammerHumor/comments/l1h14v/the_industry_is_really_shifting/">Credits</a></p>
 <div class="footnote-definition" id="school"><sup class="footnote-definition-label">1</sup>
@@ -1231,7 +1231,7 @@ track change over time.</p>
 </div>
 <div class="footnote-definition" id="creep"><sup class="footnote-definition-label">5</sup>
 <p>I like to think of this movement as a kind of dance, and I find it sexy. I
-think <a href="https://youtu.be/XFkzRNyygfk">I’m a creep, I’m a weirdo</a>.</p>
+think <a href="https://youtu.be/XFkzRNyygfk">I'm a creep, I'm a weirdo</a>.</p>
 </div>
 
     ]]></content>
@@ -1252,9 +1252,9 @@ think <a href="https://youtu.be/XFkzRNyygfk">I’m a creep, I’m a weirdo</a>.<
 <blockquote>
 <p>«Think of your ears as eyes.» — Keith Jarrett<sup class="footnote-reference"><a href="#jarrett">1</a></sup></p>
 </blockquote>
-<h2>Come Funziona</h2>
-<p>Se la musica è l’arte dei suoni, l’ear training è l’allenamento dell’orecchio
-musicale. Cosa si intende con orecchio musicale? L’udito ha un aspetto passivo
+<h2 id="come-funziona">Come Funziona</h2>
+<p>Se la musica è l’arte dei suoni, l’ear training è l'allenamento dell'orecchio
+musicale. Cosa si intende con orecchio musicale? L'udito ha un aspetto passivo
 più ovvio che consiste nella capacità di riconoscere i suoni, ma ha anche un
 aspetto attivo in cui il musicista improvvisa una frase ed è istantaneamente in
 grado di produrla sul proprio strumento.</p>
@@ -1267,9 +1267,9 @@ caratteristiche sono:</p>
 <li>timbro</li>
 </ul>
 <p>Un corpo, una volta percosso, produce una vibrazione che, mettendo in moto
-l’aria circostante, arriva fino a noi. L’orecchio esterno convoglia le
+l’aria circostante, arriva fino a noi. L'orecchio esterno convoglia le
 vibrazioni nel canale uditivo dove il timpano inoltra questi movimenti
-all’orecchio interno. Qui, la coclea, un complesso sistema meccanico/idraulico,
+all'orecchio interno. Qui, la coclea, un complesso sistema meccanico/idraulico,
 attraverso le cellule ciliate, traduce le vibrazioni in impulsi nervosi che
 vengono infine interpretati dal cervello per generare la familiare sensazione di
 udito.</p>
@@ -1278,31 +1278,31 @@ complessità e nei limiti conoscitivi dell’analisi scientifica. L’aspetto pi
 affascinante e misterioso dell’udito rimane tuttavia il luogo del suo
 manifestarsi: la coscienza.</p>
 <p>Per noi esseri umani la coscienza è una cosa scontata. Ci svegliamo al mattino e
-ci ritroviamo immersi in un’esperienza soggettiva in prima persona, come fossimo
-in un cinema 3D multimediale con audio surround. Ma dov’è lo schermo su cui
-viene proiettata l’immagine che abbiamo davanti ai nostri occhi? Dove si trova
-la voce interiore che in questo momento sta leggendo queste parole? Be’, non lo
+ci ritroviamo immersi in un'esperienza soggettiva in prima persona, come fossimo
+in un cinema 3D multimediale con audio surround. Ma dov'è lo schermo su cui
+viene proiettata l'immagine che abbiamo davanti ai nostri occhi? Dove si trova
+la voce interiore che in questo momento sta leggendo queste parole? Be', non lo
 sappiamo ancora.</p>
 <p>David Chalmers illustra molto bene il problema della coscienza in
 <a href="https://www.ted.com/talks/david_chalmers_how_do_you_explain_consciousness/transcript">questo video</a>.
-Naturalmente c’è anche chi, come Massimo Pigliucci, considera quello della
+Naturalmente c'è anche chi, come Massimo Pigliucci, considera quello della
 coscienza <a href="https://philpapers.org/archive/PIGWHP.pdf">un falso problema</a>. Per
-quanto si possa essere d’accordo con Pigliucci, il problema non diventa meno
+quanto si possa essere d'accordo con Pigliucci, il problema non diventa meno
 affascinante.</p>
-<p>Abbiamo un’idea di quali sono le aree del cervello che si occupano
-dell’acquisizione dei vari tipi di segnali sensoriali (non abbiamo solo vista e
+<p>Abbiamo un'idea di quali sono le aree del cervello che si occupano
+dell'acquisizione dei vari tipi di segnali sensoriali (non abbiamo solo vista e
 udito: bisogna considerare anche tatto, gusto e olfatto). Sappiamo anche in
 quali zone avvengono i processi più avanzati di sintesi: ad esempio, nel caso
-dell’orecchio, possiamo distinguere tre tipi di corteccia uditiva:</p>
+dell'orecchio, possiamo distinguere tre tipi di corteccia uditiva:</p>
 <ul>
-<li><em>primaria:</em> quest’area è principalmente responsabile della capacità di
+<li><em>primaria:</em> quest'area è principalmente responsabile della capacità di
 ascoltare. Il suo scopo è di processare aspetti del suono come volume e
 altezza;</li>
-<li><em>secondaria:</em> quest’area processa i pattern armonici, melodici e ritmici;</li>
-<li><em>terziaria:</em> i ricercatori sostengono che qui avviene l’integrazione, la
-sintesi dell’esperienza che chiamiamo musica.</li>
+<li><em>secondaria:</em> quest'area processa i pattern armonici, melodici e ritmici;</li>
+<li><em>terziaria:</em> i ricercatori sostengono che qui avviene l'integrazione, la
+sintesi dell'esperienza che chiamiamo musica.</li>
 </ul>
-<p>Un altro degli aspetti affascinanti dell’udito trovo sia il suo effetto
+<p>Un altro degli aspetti affascinanti dell'udito trovo sia il suo effetto
 apparentemente immediato, nonostante la notevole complessità dei meccanismi
 costitutivi.</p>
 <p>Quando udiamo inaspettatamente un fortissimo rumore, un riflesso istantaneo
@@ -1324,7 +1324,7 @@ diversi pedali, il cambio e il volante, ma dopo qualche mese di pratica possiamo
 tranquillamente cambiare le marce mentre stiamo parlando con il passeggero.
 Com’è possibile che un gesto che richiede intensi sforzi sensoriali e di
 coordinazione motoria diventi poi naturale e automatico?</p>
-<p>La scienza s’è fatta una mezza idea al riguardo ma una cosa la sappiamo con
+<p>La scienza s'è fatta una mezza idea al riguardo ma una cosa la sappiamo con
 assoluta certezza: tramite esercizi di difficoltà progressiva che insistono
 sulla parte cosciente, è possibile allenare la mente ad acquisire capacità
 istintive che richiedono la coordinazione fluida di più sensi e muscoli.</p>
@@ -1386,48 +1386,48 @@ ben prima dei mega concerti di Vasco. Purtroppo non ci è dato sapere cosa
 suonassero gli australopitechi nelle notti stellate africane ma la scienza è
 abbastanza concorde sul fatto che gli accendini non fossero ancora stati
 inventati a quel tempo, privando così le ballate del loro irresistibile fascino
-romantico. Le droghe invece c’erano già, anche se, in mancanza di accendini, per
+romantico. Le droghe invece c'erano già, anche se, in mancanza di accendini, per
 fumare una canna dovremo attendere tempi più illuminati ed una legislazione
 antiproibizionista.</p>
 <p>Un altro aspetto interessante dei nostri sensi è la loro interdipendenza. In
 <a href="https://www.psychologytoday.com/us/blog/talking-apes/201511/hearing-our-eyes-seeing-our-ears">questo articolo</a>
 possiamo vedere un video in cui un cieco guida la bicicletta su strada usando
-l’ecolocazione, dimostrando come l’udito possa supplire alle funzionalità di
+l'ecolocazione, dimostrando come l'udito possa supplire alle funzionalità di
 orientamento cui noi più fortunati abbiamo accesso tramite la vista. Più sotto
 viene illustrato il bizzarro effetto McGurk: a parità di suono emesso, il
 cervello percepisce due suoni distinti a seconda del labiale osservato: in
-questo caso la vista scavalca a piè pari l’udito.</p>
+questo caso la vista scavalca a piè pari l'udito.</p>
 <p>Questa interdipendenza dei sensi nella musica è importante perché suonare uno
 strumento coinvolge anche il tatto e la vista. Un sassofonista non può vedere lo
 strumento durante la performance ma avrà una visualizzazione mentale della
-diteggiatura, dell’emissione di aria e della sensazione tattile sia delle dita
-sui tasti che della pressione esercitata dal labbro inferiore sull’ancia.
-Passando da uno sax all’altro, il musicista ha bisogno di abituarsi alle piccole
-differenze di posizione dei tasti e alla loro corsa dissimile. Nulla che un po’
+diteggiatura, dell'emissione di aria e della sensazione tattile sia delle dita
+sui tasti che della pressione esercitata dal labbro inferiore sull'ancia.
+Passando da uno sax all'altro, il musicista ha bisogno di abituarsi alle piccole
+differenze di posizione dei tasti e alla loro corsa dissimile. Nulla che un po'
 di esercizio non possa risolvere, ma lo smarrimento iniziale è dovuto alla
-sensazione tattile poco familiare. Tutt’altro discorso è il cambio di
+sensazione tattile poco familiare. Tutt'altro discorso è il cambio di
 imboccatura. Togliete a un sassofonista la sua imboccatura abituale e avrete una
-persona in preda all’angoscia cosmica.</p>
-<p>Dal punto di vista dell’educazione musicale il pianoforte è senz’altro lo
+persona in preda all'angoscia cosmica.</p>
+<p>Dal punto di vista dell'educazione musicale il pianoforte è senz'altro lo
 strumento ideale perché la tastiera rende disponibile visivamente tutte le
-possibilità sonore. Se pensiamo ai cantanti, l’emissione della voce si basa su
+possibilità sonore. Se pensiamo ai cantanti, l'emissione della voce si basa su
 dei muscoli che modificano la tensione delle corde vocali e, di conseguenza,
-l’altezza dei suoni, ma non è possibile osservare direttamente né i muscoli né
+l'altezza dei suoni, ma non è possibile osservare direttamente né i muscoli né
 le corde vocali in azione (ci sarebbe la laringostroboscopia ma non mi sembra un
-metodo molto pratico per un uso didattico musicale). I cantanti hanno senz’altro
+metodo molto pratico per un uso didattico musicale). I cantanti hanno senz'altro
 una memoria muscolare ma hanno anche bisogno di un riferimento mentale per
 riprodurre un intervallo. Ecco perché viene consigliato lo studio almeno
 elementare del pianoforte: per sviluppare quella capacità di concettualizzazione
-che serve a supplire all’apparente mancanza di concretezza del mondo dei suoni.</p>
+che serve a supplire all'apparente mancanza di concretezza del mondo dei suoni.</p>
 <p>Non è possibile vedere un suono ma visualizzare mentalmente la pressione di un
 tasto del piano è possibile ed è anche possibile immaginarne il suono prodotto
 usando la nostra voce interiore, la stessa che in questo momento sta leggendo
 queste parole. Se possiamo visualizzare la pressione di un secondo tasto ed
 immaginarne il suono, abbiamo appena posato il primo mattone per costruire
-l’edificio mentale sonoro, abbiamo cioè concettualizzato un intervallo a livello
+l'edificio mentale sonoro, abbiamo cioè concettualizzato un intervallo a livello
 cognitivo.</p>
 <p>Ci sono pianisti classici che, dopo essersi allenati a lungo per un concerto,
-possono sedere, chiudere gli occhi e immaginare l’intera performance senza
+possono sedere, chiudere gli occhi e immaginare l'intera performance senza
 neanche toccare lo strumento. Li vedreste muovere le dita, perché la
 concettualizzazione riguarda anche la corteccia motoria. La stessa cosa sarebbe
 naturalmente possibile ad esempio per un sassofonista. È chiaro che la
@@ -1440,11 +1440,11 @@ con la nipote e, se il suo desiderio è quello di cantare Anema e Core o
 qualsiasi altro pezzo della tradizione napoletana, il tipo di
 concettualizzazione della bambina va benissimo, anche non rifacendosi al
 pianoforte. Per uno studio formale tuttavia, il pianoforte è utilissimo sia per
-riprodurre e verificare gli intervalli, sia per l’accompagnamento. La bambina di
-Ercolano potrà anche imitare lo scat di Ella Fitzgerald senza sapere cos’è un
+riprodurre e verificare gli intervalli, sia per l'accompagnamento. La bambina di
+Ercolano potrà anche imitare lo scat di Ella Fitzgerald senza sapere cos'è un
 tritono ma se un giorno volesse imparare a improvvisare, avrebbe bisogno di
 lavorare su concetti del linguaggio musicale per i quali il pianoforte sarebbe
-senz’altro indispensabile.</p>
+senz'altro indispensabile.</p>
 <p>In realtà, molti musicisti fanno ear training con la pratica quotidiana dello
 strumento senza neanche rendersene conto. E va benissimo anche questa modalità
 di apprendimento. Ma, per improvvisare una frase musicale riproducendola
@@ -1457,54 +1457,54 @@ in un periodo in cui era ormai diventato completamente sordo. Oppure pensa a
 Bach che, davanti a Federico il Grande, Re di Prussia, improvvisò una
 <a href="https://it.wikipedia.org/wiki/Offerta_musicale">fuga a quattro voci</a> su un tema
 che lo stesso re gli aveva appena proposto.</p>
-<p>L’improvvisazione ha avuto grandissima importanza nella musica che oggi
+<p>L'improvvisazione ha avuto grandissima importanza nella musica che oggi
 chiamiamo classica (non credo che Bach, Beethoven o Mozart pensassero di
 scrivere musica classica, per loro era musica e basta). Sappiamo con certezza
 che ognuno dei grandi della musica era prima di tutto un grande improvvisatore.
-L’improvvisazione è rimasta un’arte a lungo praticata in ambito europeo e ne
+L'improvvisazione è rimasta un'arte a lungo praticata in ambito europeo e ne
 rimane traccia nelle numerose opere con accompagnamento di
 <a href="https://it.wikipedia.org/wiki/Basso_continuo">basso continuo</a>. Questo nome un
-po’ bizzarro indica in realtà una pratica assimilabile a quella moderna di
-indicare soltanto gli accordi, lasciando all’esecutore la libertà di scegliere
+po' bizzarro indica in realtà una pratica assimilabile a quella moderna di
+indicare soltanto gli accordi, lasciando all'esecutore la libertà di scegliere
 rivolti, voicing, ecc.</p>
 <p>A un certo punto, per motivi di praticità, la didattica ha imposto un modello di
 educazione musicale in grado di produrre interpreti preparatissimi dal punto di
-vista dell’esecuzione ma purtroppo incapaci di produrre musica autonomamente
+vista dell'esecuzione ma purtroppo incapaci di produrre musica autonomamente
 usando un proprio linguaggio. La padronanza del linguaggio musicale è stata
-allora relegata alla élite dei compositori. Quando l’Europa ha smesso di
-praticare l’improvvisazione, per qualche motivo, dall’altra parte dell’Oceano
+allora relegata alla élite dei compositori. Quando l'Europa ha smesso di
+praticare l'improvvisazione, per qualche motivo, dall'altra parte dell'Oceano
 Atlantico, alcuni musicisti ne hanno ripreso la tradizione, producendo
-probabilmente l’unica vera forma d’arte genuinamente americana: la musica Jazz.</p>
-<p>La storia dell’improvvisazione ha conosciuto nel BeBop un’epoca d’oro. Andando
+probabilmente l'unica vera forma d'arte genuinamente americana: la musica Jazz.</p>
+<p>La storia dell'improvvisazione ha conosciuto nel BeBop un'epoca d'oro. Andando
 ad analizzare formalmente una qualsiasi registrazione di Charlie Parker, ci
 troviamo di fronte ad una tale padronanza di linguaggio che non ha nulla da
 invidiare alla tradizione classica europea. Parker e i suoi colleghi conoscevano
 infatti molto bene le opere di Ravel, Bartok, Debussy, Stravinsky, ecc. La
 musica improvvisata ha vissuto poi una nuova stagione con i quintetti di Miles
-Davis, le fasi dell’ultimo John Coltrane e il free jazz di Ornette Coleman, solo
+Davis, le fasi dell'ultimo John Coltrane e il free jazz di Ornette Coleman, solo
 per fare i nomi più conosciuti.</p>
-<p>La musica improvvisata oggi è più viva che mai. La sperimentazione è tutt’altro
+<p>La musica improvvisata oggi è più viva che mai. La sperimentazione è tutt'altro
 che finita ed i risultati sono molto spesso apprezzabili anche ai non addetti ai
 lavori. È in campo un grande fermento ed il fatto che la musica più in generale
 goda di così scarsa considerazione nelle istituzioni contemporanee è una amara
 considerazione che spero venga presto soppiantata da una mentalità collettiva in
 cui la sia la bellezza a guidare la quotidianità e non più il profitto. Ma
-lasciamo per ora da parte lo spirito rivoluzionario e torniamo all’educazione
+lasciamo per ora da parte lo spirito rivoluzionario e torniamo all'educazione
 musicale.</p>
-<h2>Come Svilupparlo</h2>
-<p>In musica, la base da cui si parte per lo studio dell’ear training è
-l’intervallo, ovvero la distanza fra due note. L’intervallo può essere
+<h2 id="come-svilupparlo">Come Svilupparlo</h2>
+<p>In musica, la base da cui si parte per lo studio dell'ear training è
+l'intervallo, ovvero la distanza fra due note. L'intervallo può essere
 orizzontale (o melodico) quando i due suoni sono eseguiti in sequenza, oppure
 verticale (o armonico) quando i suoni sono eseguiti contemporaneamente.
 Orizzontale e verticale si riferiscono al modo in cui si scrive la musica.
 Bisogna imparare entrambi i tipi di intervallo, perché uno serve per la
-comprensione delle melodie e l’altro per la comprensione degli accordi.</p>
+comprensione delle melodie e l'altro per la comprensione degli accordi.</p>
 <p>Gli intervalli seguono delle vetuste regole di nomenclatura. I più giovani
 direbbero che i loro nomi sono parecchio incasinati e, in effetti, guardando la
 <a href="https://it.wikipedia.org/wiki/Intervallo_(musica)#Tavola_degli_intervalli">tavola su wikipedia</a>,
-non gli si può proprio dare torto, specie quando si apprende dell’esistenza di
+non gli si può proprio dare torto, specie quando si apprende dell'esistenza di
 intervalli ultra deficienti. Per semplificarci la vita, riporto un elenco
-minimale degli intervalli che troviamo all’interno di un’ottava:</p>
+minimale degli intervalli che troviamo all'interno di un'ottava:</p>
 <ul>
 <li>unisono (stesso suono, nessun intervallo)</li>
 <li>seconda minore (mezzo tono)</li>
@@ -1520,7 +1520,7 @@ minimale degli intervalli che troviamo all’interno di un’ottava:</p>
 <li>settima maggiore (cinque toni e mezzo)</li>
 <li>ottava giusta (sei toni)</li>
 </ul>
-<p>Come vedi, il nostro elenco mostra 13 diversi intervalli. Ora, l’unisono non è
+<p>Come vedi, il nostro elenco mostra 13 diversi intervalli. Ora, l'unisono non è
 un vero e proprio intervallo ma una convenzione per indicare che due suoni hanno
 la stessa altezza ed equivale a dire intervallo zero. Restano quindi 12
 intervalli. Di questi 12 intervalli, almeno 7 li conosci già bene perché, a meno
@@ -1531,19 +1531,19 @@ suoni della scala maggiore.</p>
 SOL, LA, SI, DO. Osserviamo la tastiera del pianoforte:</p>
 <p><img src="../images/posts/tastiera.jpg" alt="La tastiera del pianoforte" /></p>
 <p>La scala maggiore di DO, sul pianoforte, è composta interamente da tasti
-bianchi. Facile, no? Suonala un po’ di volte, prima a salire e poi a scendere.
+bianchi. Facile, no? Suonala un po' di volte, prima a salire e poi a scendere.
 Cantala mentre la stai suonando. Magari non sei Bobby McFerrin ma, se ti impegni
 abbastanza, vedrai che puoi intonare tutte le note senza grosse difficoltà.
 Prova anche a immaginare di cantare le note con la tua voce interiore, senza
 effettivamente cantare ma usando solo la testa. Ti renderai conto che è molto
 più facile rispetto a cantare perché nel cervello non devi controllare anche i
-muscoli delle corde vocali. Continua così ancora per un po’: canta, poi immagina
+muscoli delle corde vocali. Continua così ancora per un po': canta, poi immagina
 di cantare, fino a quando la tua voce interiore può intonare perfettamente tutte
 le note.</p>
-<p>Ora mischia le note un po’ a caso, sempre usando solo i tasti bianchi. Fai caso
+<p>Ora mischia le note un po' a caso, sempre usando solo i tasti bianchi. Fai caso
 a come alcune combinazioni di suoni sono più dissonanti, ovvero creano una
 tensione che ti aspetti venga in qualche modo risolta.</p>
-<p>Ti faccio un esempio: suona le note DO, SOL, prima una, poi l’altra. Ora suonale
+<p>Ti faccio un esempio: suona le note DO, SOL, prima una, poi l'altra. Ora suonale
 insieme. La qualità di questo intervallo è consonante, cioè le due note stanno
 bene insieme e non sembrano creare una tensione che va in qualche modo risolta.
 Questo è un intervallo di quinta giusta. Se numerassimo le note in sequenza a
@@ -1564,7 +1564,7 @@ di DO? Vuol dire che abbiamo preso la nota DO come riferimento ed abbiamo
 costruito il nostro sistema di suoni, nel nostro caso la scala maggiore, a
 partire da quella nota<sup class="footnote-reference"><a href="#johnny">2</a></sup>.</p>
 <p>Se andassimo ad analizzare gli intervalli che separano fra di loro le note della
-scala maggiore di DO, vedremmo che fra DO e RE c’è un tono, fra RE e MI un tono,
+scala maggiore di DO, vedremmo che fra DO e RE c'è un tono, fra RE e MI un tono,
 fra MI e FA un semitono, fra FA e SOL un tono, fra SOL e LA un tono, fra LA e SI
 un tono e fra SI e DO un semitono. Lo schema costruttivo della scala maggiore
 può quindi essere riassunto nella sequenza:</p>
@@ -1585,44 +1585,44 @@ non facciamoci ingannare dalla apparente complessità dei nomi delle note che
 stiamo usando: la scala maggiore è pur sempre una scala maggiore ed il rapporto
 e la semplicità interna dei suoi suoni sono identici ai suoni che sui tasti
 bianchi del pianoforte abbiamo riconosciuto come semplici e familiari. Abbiamo
-solo cambiato il punto di vista e introdotto un bel po’ di tasti neri ma i
+solo cambiato il punto di vista e introdotto un bel po' di tasti neri ma i
 rapporti interni alle note che costituiscono la nostra scala si basano sempre ed
 esclusivamente su due intervalli: quello di tono e quello di semitono.</p>
 <p>Quello che sto cercando così faticosamente di dire è che, se sei in grado di
 cantare una scala maggiore, sei anche già in possesso di tutto ciò che ti serve
-per riconoscere e riprodurre l’intervallo di semitono e quello di tono. Magari
+per riconoscere e riprodurre l'intervallo di semitono e quello di tono. Magari
 non sapevi cosa fosse una scala maggiore o un semitono ma sapevi già cantare il
 materiale.</p>
-<p>Per ogni nota della scala maggiore, possiamo sia considerare l’intervallo di
+<p>Per ogni nota della scala maggiore, possiamo sia considerare l'intervallo di
 ogni nota rispetto alla precedente, come abbiamo appena fatto, ma possiamo anche
 considerare gli intervalli tra la nota che abbiamo preso come riferimento per la
 tonalità (DO) e le note che si trovano su ogni grado della scala.</p>
-<p>Vedremo che tra DO e RE c’è un intervallo di un tono (seconda maggiore), tra DO
+<p>Vedremo che tra DO e RE c'è un intervallo di un tono (seconda maggiore), tra DO
 e MI due toni (terza maggiore), tra DO e FA due toni e mezzo (quarta giusta),
 tra DO e SOL tre toni e mezzo (quinta giusta), tra DO e LA quattro toni e mezzo
 (sesta maggiore), tra DO e SI cinque toni e mezzo (settima maggiore) e tra DO e
-DO sei toni (un’ottava).</p>
+DO sei toni (un'ottava).</p>
 <p>Non farti spaventare dai nomi delle cose: finora stiamo sempre e solo parlando
 dei suoni dei tasti bianchi del pianoforte. Tutta la complessità legata ai nomi
 dei concetti musicali è dovuta esclusivamente alla necessità di comunicare in
-maniera inequivocabile un’idea. Se vivessi in una torre d’avorio, è vero che mi
+maniera inequivocabile un'idea. Se vivessi in una torre d'avorio, è vero che mi
 troverei nella spiacevole condizione di dover spiegare agli agenti della
-Protezione Animali, della Dogana e dell’Agenzia delle Entrate dove ho trovato
+Protezione Animali, della Dogana e dell'Agenzia delle Entrate dove ho trovato
 tanti elefanti, ma non avrei il problema di dover usare 6 diesis nella scala
-maggiore di FA#. Darei a ognuno dei 12 semitoni dell’ottava un nome unico, ad
+maggiore di FA#. Darei a ognuno dei 12 semitoni dell'ottava un nome unico, ad
 esempio: AW, KA, WA, WE, OH, PASQUALE, ecc. E così sarei felice, almeno fin
-quando non sarei costretto a scendere dalla mia torre d’avorio<sup class="footnote-reference"><a href="#avorio">3</a></sup> per
-convincere qualcuno a suonare il mio quartetto d’archi in OH fenicio.</p>
-<p>L’esercizio che ti propongo ora serve per interiorizzare meglio gli intervalli
+quando non sarei costretto a scendere dalla mia torre d'avorio<sup class="footnote-reference"><a href="#avorio">3</a></sup> per
+convincere qualcuno a suonare il mio quartetto d'archi in OH fenicio.</p>
+<p>L'esercizio che ti propongo ora serve per interiorizzare meglio gli intervalli
 della scala maggiore. Se prima abbiamo giocato più o meno a caso con i tasti
 bianchi, ora andremo ad esaminare gli intervalli più semplici rispetto al
 riferimento che ci siamo dati, ovvero la nota DO.</p>
-<p>Partendo da DO, il primo intervallo che incontriamo è l’unisono, ovvero la nota
+<p>Partendo da DO, il primo intervallo che incontriamo è l'unisono, ovvero la nota
 DO seguita dalla stessa nota. Questo non dovrebbe essere un intervallo difficile
-da riconoscere perché l’altezza del suono non sta cambiando, stiamo solo
+da riconoscere perché l'altezza del suono non sta cambiando, stiamo solo
 inserendo una pausa tra il primo ed il secondo suono.</p>
-<p>L’intervallo successivo è DO-RE. Si tratta di un intervallo di un tono o di
-seconda maggiore. Suona prima il riferimento (DO) e poi la nota dell’intervallo
+<p>L'intervallo successivo è DO-RE. Si tratta di un intervallo di un tono o di
+seconda maggiore. Suona prima il riferimento (DO) e poi la nota dell'intervallo
 (RE). Queste due note sono molto vicine e il loro suono diventa strano solo
 quando le suoniamo contemporaneamente. Prova a suonare DO e RE insieme: buffo,
 eh? È come se dovesse succedere qualcosa. Ascolta bene i
@@ -1633,13 +1633,13 @@ armonica per nulla banale?</p>
 <p>Se segui lo stesso procedimento con gli altri gradi della scala, vedrai che
 DO-MI (terza maggiore) e DO-SOL (quinta giusta) sono intervalli particolarmente
 consonanti, cioè suonano bene mentre gli altri sono più dissonanti nel contesto
-del nostro riferimento che è la tonalità di DO maggiore. L’intervallo di quarta
+del nostro riferimento che è la tonalità di DO maggiore. L'intervallo di quarta
 giusta ad esempio (la nota FA) ha una naturale tendenza a voler risolvere sulla
-terza maggiore (MI), come si trovasse in un’area poco familiare e volesse
+terza maggiore (MI), come si trovasse in un'area poco familiare e volesse
 tornare a casa per essere rassicurata. Stessa cosa dicasi per la nota SI
 (settima maggiore), la quale vuole muoversi verso il più vicino DO.</p>
 <p>Soffermati a lavorare su questi intervalli della scala maggiore, suonandoli
-prima in maniera melodica (prima una nota, poi l’altra) e poi in maniera
+prima in maniera melodica (prima una nota, poi l'altra) e poi in maniera
 armonica (due note insieme). Canta sempre e usa la tua voce interiore quando fai
 questi esercizi. Ovviamente non puoi cantare un intervallo armonico (due note
 insieme) ma cantarlo in maniera melodica ti aiuterà a distinguere le singole
@@ -1652,18 +1652,18 @@ preoccuparti se non riesci subito. Fai leva sulla tua pazienza, insisti con
 calma e decisione e vedrai che ti sarà possibile riuscire.</p>
 <p>Quando ti sarai esercitato abbastanza (dove abbastanza è variabile da persona a
 persona: a volte bastano minuti, altre volte sono necessari mesi) puoi provare
-l’esercizio successivo che consiste nel darti un riferimento (ad esempio puoi
+l'esercizio successivo che consiste nel darti un riferimento (ad esempio puoi
 suonare la nota DO) e provare a immaginare quale suono uscirà premendo un altro
 tasto bianco. Ad esempio, per prima cosa suono la nota DO e la canto, poi penso
 al tasto FA e cerco di immaginare quale suono sarà prodotto dalla pressione del
 tasto, poi canto la nota che penso sia il FA e infine la suono per verificare
 che sia corretta. Poiché ti sei precedentemente esercitato con la scala maggiore
-a un’ottava, dovresti essere in grado di immaginare i suoni di tutti i tasti
-bianchi compresi da DO al DO dell’ottava successiva. Prova anche a cambiare il
-riferimento, ovvero non suonare sempre DO come prima nota: usane un’altra sempre
+a un'ottava, dovresti essere in grado di immaginare i suoni di tutti i tasti
+bianchi compresi da DO al DO dell'ottava successiva. Prova anche a cambiare il
+riferimento, ovvero non suonare sempre DO come prima nota: usane un'altra sempre
 scelta a caso.</p>
-<p>L’esercizio che ti propongo ora serve a verificare in modo inequivocabile che
-hai interiorizzato la scala maggiore ad un livello istintivo. Genera un po’ di
+<p>L'esercizio che ti propongo ora serve a verificare in modo inequivocabile che
+hai interiorizzato la scala maggiore ad un livello istintivo. Genera un po' di
 gruppi di numeri da 1 a 8. Per comodità te ne riporto qui sotto alcuni set di
 esempio ma puoi
 <a href="https://www.random.org/integer-sets/?sets=10&amp;num=5&amp;min=1&amp;max=8&amp;seqnos=on&amp;commas=on&amp;order=index&amp;format=html&amp;rnd=new">generarne quanti ne vuoi</a>.
@@ -1681,14 +1681,14 @@ Set 8: 5, 6, 8, 7, 4
 Set 9: 8, 5, 4, 3, 2
 Set 10: 6, 2, 7, 1, 8
 </code></pre>
-<p>L’esercizio consiste nel darti un riferimento suonando il DO e nel cantare le
+<p>L'esercizio consiste nel darti un riferimento suonando il DO e nel cantare le
 melodie (i set) rappresentate dai numeri.</p>
 <p>Anche in questo caso ti renderai presto conto che è molto più facile immaginare
-i suoni che cantarli. L’intonazione è un problema concreto solo se vuoi cantare,
-credimi. Ai fini dell’ear training ti posso assicurare che una intonazione
+i suoni che cantarli. L'intonazione è un problema concreto solo se vuoi cantare,
+credimi. Ai fini dell'ear training ti posso assicurare che una intonazione
 vocale incerta non è necessariamente sintomo di cattiva comprensione di un
 concetto musicale o una melodia. Per quanto mi sia facile improvvisare una frase
-bebop al piano, cantarla sarebbe tutta un’altra storia perché non mi sono mai
+bebop al piano, cantarla sarebbe tutta un'altra storia perché non mi sono mai
 esercitato con la voce. Sono sicuro che alcuni miei amici preferirebbero essere
 crocifissi piuttosto che dovermi sentire cantare.</p>
 <p>Una volta acquisita una padronanza istintiva della scala maggiore, non ci resta
@@ -1698,17 +1698,17 @@ intervalli godono di pari diritti e consonanza e dissonanza sono solo vecchi
 concetti da relegare ai matusa della tonalità.</p>
 <p>Ho una buona notizia per te: gli intervalli che nella scala maggiore di DO sono
 rappresentati dai tasti neri del piano, sono già presenti sotto altra forma
-all’interno della stessa scala maggiore. Andiamo a esaminarli:</p>
+all'interno della stessa scala maggiore. Andiamo a esaminarli:</p>
 <ul>
-<li>l’intervallo di semitono (DO-DO#), la seconda minore, è presente nella scala
+<li>l'intervallo di semitono (DO-DO#), la seconda minore, è presente nella scala
 maggiore di DO come MI-FA e SI-DO;</li>
-<li>l’intervallo di un tono e mezzo (DO-RE#), la terza minore, è presente nella
+<li>l'intervallo di un tono e mezzo (DO-RE#), la terza minore, è presente nella
 scala maggiore di DO come RE-FA, MI-SOL, LA-DO e SI-RE;</li>
-<li>l’intervallo di tre toni (DO-FA#), la quarta aumentata, è presente nella scala
+<li>l'intervallo di tre toni (DO-FA#), la quarta aumentata, è presente nella scala
 maggiore di DO come FA-SI e SI-FA;</li>
-<li>l’intervallo di quattro toni (DO-SOL#), la quinta aumentata, è presente nella
+<li>l'intervallo di quattro toni (DO-SOL#), la quinta aumentata, è presente nella
 scala maggiore di DO come MI-DO, LA-FA e SI-SOL;</li>
-<li>l’intervallo di cinque toni (DO-SIb), la settima minore, è presente nella
+<li>l'intervallo di cinque toni (DO-SIb), la settima minore, è presente nella
 scala maggiore di DO come RE-DO, MI-RE, SOL-FA, LA-SOL e SI-LA.</li>
 </ul>
 <p>Il tuo compito quindi resta quello di visualizzare ogni intervallo in ogni
@@ -1725,14 +1725,14 @@ gli informatici e poi in italiano per gli esseri umani:</p>
   }
 }
 </code></pre>
-<p>Per ogni intervallo compreso nell’elenco, per ogni nota compresa nell’estensione
-dello strumento, suona l’intervallo a partire dalla nota.</p>
-<p>Una persona sana di mente avrà già capito che l’esecuzione completa
-dell’esercizio richiede almeno una mezz’oretta e una pazienza inversamente
-proporzionale al tempo speso nell’esercizio stesso (in altre parole: più ti
+<p>Per ogni intervallo compreso nell'elenco, per ogni nota compresa nell'estensione
+dello strumento, suona l'intervallo a partire dalla nota.</p>
+<p>Una persona sana di mente avrà già capito che l'esecuzione completa
+dell'esercizio richiede almeno una mezz'oretta e una pazienza inversamente
+proporzionale al tempo speso nell'esercizio stesso (in altre parole: più ti
 eserciti, più diventa facile).</p>
 <p>Se immettessimo questo pseudo-codice in un ipotetico computer musicale,
-specificando l’estensione naturale del sassofono, la cui nota più bassa è SI
+specificando l'estensione naturale del sassofono, la cui nota più bassa è SI
 bemolle e la più acuta il FA#, la sua esecuzione produrrebbe il seguente output:</p>
 <pre><code>play 2m from Bb (Bb-B)
 play 2m from B  (B-C)
@@ -1745,64 +1745,64 @@ play 2M from B  (B-C#)
 play 2M from C  (C-D)
 ...
 </code></pre>
-<p>Una variante interessante consiste nell’iterare sul circolo delle quinte
+<p>Una variante interessante consiste nell'iterare sul circolo delle quinte
 piuttosto che sulla scala cromatica. Se te lo stai chiedendo, nei simboli degli
 intervalli, <code>m</code> sta per minore, <code>M</code> per maggiore e <code>#</code> sta per aumentato. Ho
-scritto tra parentesi le due note dell’intervallo. I nomi delle note seguono la
+scritto tra parentesi le due note dell'intervallo. I nomi delle note seguono la
 convenzione anglosassone per comodità mia. Se non conosci la convenzione
 anglosassone, questo è un buon momento per impararla perché nessuno scrive
 spartiti usando la convenzione italiana, nemmeno noi italiani.</p>
-<p>Una variante ancora più interessante consiste nel fare l’intero esercizio a
+<p>Una variante ancora più interessante consiste nel fare l'intero esercizio a
 mente, immaginando di suonare il tuo strumento. Sappi però che non mi riterrò
-responsabile nel caso l’esercizio ti rendesse necessarie delle cure
+responsabile nel caso l'esercizio ti rendesse necessarie delle cure
 psichiatriche.</p>
-<p>Una alternativa un po’ più compatibile con la sanità mentale consisterebbe nel
-limitarsi alla scala maggiore, sempre nell’estensione di un’ottava, lavorando
+<p>Una alternativa un po' più compatibile con la sanità mentale consisterebbe nel
+limitarsi alla scala maggiore, sempre nell'estensione di un'ottava, lavorando
 però su tutte le 12 tonalità.</p>
-<p>Naturalmente, nel mondo reale, gli intervalli non si limitano a un’ottava ma
+<p>Naturalmente, nel mondo reale, gli intervalli non si limitano a un'ottava ma
 confido che, se sei arrivato fin qui, non avrai problemi a esercitarti sugli
-intervalli più remoti, tenendo presente che l’ottava è un ottimo riferimento per
-i salti di, appunto, ottava. Il mondo reale inoltre non si limita all’uso della
-scala maggiore (per fortuna, altrimenti sai che noia…), ma oltre ai vari modi
+intervalli più remoti, tenendo presente che l'ottava è un ottimo riferimento per
+i salti di, appunto, ottava. Il mondo reale inoltre non si limita all'uso della
+scala maggiore (per fortuna, altrimenti sai che noia...), ma oltre ai vari modi
 (fra i quali compare anche la scala minore naturale), dovresti prendere
 familiarità anche con la scala minore melodica e armonica, con la scala
 diminuita (8 suoni, semitono-tono) e quella aumentata (6 suoni, tutti toni
 interi). Tieni presente che di scale diminuite ne esistono 3: tutte le altre
 sono riconducibili a una precedente scala diminuita ma partendo da una nota
 diversa. Stesso discorso per la scala esatonale di cui esistono solo 2 versioni.</p>
-<p>Per il riconoscimento degli accordi il discorso si complica un bel po’ e non
+<p>Per il riconoscimento degli accordi il discorso si complica un bel po' e non
 saprei come meglio aiutarti se non dicendoti di scomporre mentalmente gli
 accordi negli intervalli delle singole note costitutive. Allenati a riconoscere
 prima le triadi delle famiglie maggiori, minori, aumentate e diminuite, poi
 passa alle quadriadi (gli accordi che arrivano alla settima per capirci) e così
 via.</p>
 <p>Avrai notato che in tutti gli esercizi faccio sempre usare un riferimento
-iniziale. L’orecchio relativo ha bisogno di un riferimento da cui partire
-nell’analisi degli intervalli e si differenzia dall’orecchio assoluto che invece
+iniziale. L'orecchio relativo ha bisogno di un riferimento da cui partire
+nell'analisi degli intervalli e si differenzia dall'orecchio assoluto che invece
 di tale riferimento può fare a meno. Molte persone che mi conoscono mi dicono:
-«ah, tu hai l’orecchio assoluto». No, il mio è un orecchio relativo, perché ho
+«ah, tu hai l'orecchio assoluto». No, il mio è un orecchio relativo, perché ho
 bisogno di un riferimento per orientarmi nel mondo dei suoni. Sembra sia
-possibile esercitare l’orecchio assoluto fino a una certa età e infatti molte
+possibile esercitare l'orecchio assoluto fino a una certa età e infatti molte
 persone dotate di orecchio assoluto di mia conoscenza sono musicisti che hanno
 iniziato molto presto da bambini. Tuttavia, alcuni studi recenti sembrano
 dimostrare che è possibile sviluppare
-l’<a href="https://www.biorxiv.org/content/early/2018/07/03/355933">orecchio assoluto</a>
-anche in età adulta. Questo non toglie che la capacità di analisi dell’orecchio
-relativo non è meno importante di quella dell’orecchio assoluto.</p>
-<p>Un’altra cosa importante da tenere presente è che il cervello apprende meglio
+l'<a href="https://www.biorxiv.org/content/early/2018/07/03/355933">orecchio assoluto</a>
+anche in età adulta. Questo non toglie che la capacità di analisi dell'orecchio
+relativo non è meno importante di quella dell'orecchio assoluto.</p>
+<p>Un'altra cosa importante da tenere presente è che il cervello apprende meglio
 quando si trova nella cosiddetta learning zone (zona di apprendimento). In altre
-parole, l’esercizio non dev’essere tanto facile da far annoiare il cervello ma
+parole, l'esercizio non dev'essere tanto facile da far annoiare il cervello ma
 neanche troppo difficile da scoraggiarlo. Se in questa zona di equilibrio tra
 facilissimo e impossibile immettiamo ogni tanto un elemento di difficoltà
 leggermente superiore alla media, il cervello apprende e interiorizza più
 facilmente. Molti metodi di apprendimento hanno fatto loro questa filosofia
-introducendo anche meccanismi di gamification, cioè ad esempio l’esercizio
+introducendo anche meccanismi di gamification, cioè ad esempio l'esercizio
 prevede un punteggio da raggiungere e livelli di difficoltà progressiva da
 superare.</p>
 <p>Oggi esistono tantissimi software che possono aiutarci a fare ear training.
 Vorrei consigliarne uno che è anche quello che uso quotidianamente e si chiama
-<a href="https://www.myeartraining.net/">My Ear Training</a>. C’è una funzionalità di
-dettato ritmico che trovo molto utile perché spesso si sottovaluta l’aspetto
+<a href="https://www.myeartraining.net/">My Ear Training</a>. C'è una funzionalità di
+dettato ritmico che trovo molto utile perché spesso si sottovaluta l'aspetto
 della durata del suono quando invece è fondamentale nella costruzione di un
 groove. Poi ci sono esercizi sia di tipo melodico che armonico e per ogni
 esercizio si può scegliere la difficoltà. Ad esempio si può iniziare con gli
@@ -1812,39 +1812,39 @@ mano aggiungere quelli più difficili.</p>
 <a href="http://amzn.eu/d/h3KGMxz">i libri del Venerabile Maestro Andrea Avena</a>, i
 quali, oltre ad essere degli insostituibili riferimenti in materia di teoria e
 armonia, contengono esercizi di dettati ritmici e melodici su cd allegato.</p>
-<p>Una menzione merita senz’altro anche il libro Metodo Intensivo di Ear Training
+<p>Una menzione merita senz'altro anche il libro Metodo Intensivo di Ear Training
 di Vincenzo Maurogiovanni che è possibile acquistare direttamente per pochi euro
 contattandolo sulla sua
 <a href="https://www.facebook.com/vizmaurogiovanni">pagina Facebook</a>.</p>
-<h2>Note Personali</h2>
-<p>Qui si entra più che altro nel campo della curiosità e dell’aneddotica perché
-vorrei raccontare come e perché ho sviluppato l’orecchio. In altre parole, se il
+<h2 id="note-personali">Note Personali</h2>
+<p>Qui si entra più che altro nel campo della curiosità e dell'aneddotica perché
+vorrei raccontare come e perché ho sviluppato l'orecchio. In altre parole, se il
 tuo scopo era informarti su come migliorare il tuo orecchio, potresti fermarti
 tranquillamente qui e non perderesti nulla di particolarmente importante. Se
-invece hai resistito eroicamente a questa valanga di testo in un’epoca in cui la
-soglia dell’attenzione difficilmente supera la lunghezza di un tweet, be’…
+invece hai resistito eroicamente a questa valanga di testo in un'epoca in cui la
+soglia dell'attenzione difficilmente supera la lunghezza di un tweet, be'...
 continua pure a leggere.</p>
-<p>Quando ero molto piccolo (stiamo parlando degli anni ’70), mio padre teneva
+<p>Quando ero molto piccolo (stiamo parlando degli anni '70), mio padre teneva
 nella mia stanza il suo laboratorio di cianfrusaglie elettroniche e, fra queste,
 non mancava un favoloso organo elettrico Ekosonic che lui aveva ovviamente
 modificato per applicargli un sintetizzatore e, più tardi, anche una batteria
-elettronica, entrambi rigorosamente auto-costruiti (anche perché all’epoca un
+elettronica, entrambi rigorosamente auto-costruiti (anche perché all'epoca un
 Moog credo costasse quanto una casa).</p>
 <p>Mentre giocavo nella mia stanzetta, specie nei fine settimana, ascoltavo papà
-suonare l’organo e mi capitava spesso di sentirlo mentre cercava di imparare una
-nuova canzone che poteva essere una vecchia melodia napoletana ma anche l’ultimo
-successo di uno dei cantanti dell’epoca. Papà iniziava suonando una nota e, se
+suonare l'organo e mi capitava spesso di sentirlo mentre cercava di imparare una
+nuova canzone che poteva essere una vecchia melodia napoletana ma anche l'ultimo
+successo di uno dei cantanti dell'epoca. Papà iniziava suonando una nota e, se
 la successiva non era quella giusta, la cercava per tentativi. Il procedimento,
-nei casi più complicati, poteva durare anche una mezz’oretta ma alla fine papà
+nei casi più complicati, poteva durare anche una mezz'oretta ma alla fine papà
 riusciva a trovare a orecchio tutte le note giuste. Per gli accordi della
-canzone lo sentivo che andava in cerca dalla nota più bassa e, quando l’aveva
-trovata, procedeva a suonarne l’accordo: una bella triade in posizione base. Più
-tardi avrei capito che era davvero difficile sbagliare l’accordo dato che nel
+canzone lo sentivo che andava in cerca dalla nota più bassa e, quando l'aveva
+trovata, procedeva a suonarne l'accordo: una bella triade in posizione base. Più
+tardi avrei capito che era davvero difficile sbagliare l'accordo dato che nel
 98% delle canzoni le possibilità sono limitate ad accordi maggiori e minori.</p>
 <p>Insomma, papà imparava a suonare un discreto numero di canzoni e io avevo capito
-quale era il suo procedimento. All’epoca mi piaceva particolarmente la melodia
+quale era il suo procedimento. All'epoca mi piaceva particolarmente la melodia
 di una canzone di Memo Remigi di cui ho purtroppo dimenticato sia il titolo che
-la melodia e papà, vedendomi smanettare all’organo, pensò di appiccicavi dei
+la melodia e papà, vedendomi smanettare all'organo, pensò di appiccicavi dei
 numeri ai tasti e scrivermi la melodia su un pezzo di carta sottoforma di
 sequenza di numeri. Probabilmente doveva aver visto una tastiera Bontempi di
 quelle che un tempo si regalavano ai bambini e aveva pensato di replicare il
@@ -1857,7 +1857,7 @@ imparare la musica a orecchio sul suo organo.</p>
 pianoforte privatamente. Il maestro andò con mio padre in un negozio a Sora e
 una settimana dopo a casa mia comparì un fantastico pianoforte verticale Schulze
 Pollmann nero laccato. Iniziarono così le mie lezioni di pianoforte e solfeggio.
-Ero ancora troppo piccolo per capire l’importanza della disciplina, infatti il
+Ero ancora troppo piccolo per capire l'importanza della disciplina, infatti il
 solfeggio era una palla mortale e le poche cose che avevo imparato a suonare al
 pianoforte le avevo imparate più imitando il mio maestro che leggendole sui
 libri. Insomma, dire che ero un pessimo studente sarebbe un eufemismo. Ero
@@ -1865,13 +1865,13 @@ praticamente una capra. Ma ero contento perché avevo il mio pianoforte e potevo
 suonare a orecchio le canzoni che piacevano a me.</p>
 <p>Tutto questo è andato bene fin quando non ho cominciato a incontrare canzoni che
 mi davano più filo da torcere. Avevo iniziato ad ascoltare soprattutto Pino
-Daniele e Lucio Dalla. C’era sempre qualcosa in queste canzoni che non riuscivo
+Daniele e Lucio Dalla. C'era sempre qualcosa in queste canzoni che non riuscivo
 a capire fino in fondo. Questa condizione di incapacità mi dava un fastidio
 fisico. Era proprio una sensazione di rabbia quella che avevo e quando andavo a
 letto la sera, passavo un sacco di tempo nel letto al buio a immaginare la
-tastiera del pianoforte e come sarebbe stato suonare quelle canzoni. C’erano
+tastiera del pianoforte e come sarebbe stato suonare quelle canzoni. C'erano
 parti che, se immaginavo di suonare, mi tornavano, cioè mi aspettavo che
-schiacciando certi tasti avrei prodotto esattamente quei suoni. C’erano altre
+schiacciando certi tasti avrei prodotto esattamente quei suoni. C'erano altre
 parti dove non riuscivo ad arrivare e dovevo fermarmi. Allora provavo a
 ragionare al contrario partendo dalla fine della canzone e andando a ritroso. Il
 giorno dopo mi svegliavo e correvo al pianoforte per vedere se la soluzione
@@ -1881,48 +1881,48 @@ mentale nel letto al buio la sera che alla fine non avevo neanche bisogno del
 piano per verificare se la soluzione era giusta o meno: semplicemente la suonavo
 nella mia testa e, se funzionava lì, voleva dire che avrebbe funzionato anche su
 un pianoforte vero.</p>
-<p>Il mio orecchio si è sviluppato perché non avrei potuto vivere senza. Se c’era
-una pubblicità in televisione con un intervallo strano, potevo passare un’intera
+<p>Il mio orecchio si è sviluppato perché non avrei potuto vivere senza. Se c'era
+una pubblicità in televisione con un intervallo strano, potevo passare un'intera
 giornata a cercare di decifrarlo sul mio pianoforte mentale. In fondo gli
 intervalli fondamentali si contano sulle dita di una mano e la musica che ci
 circonda è composta seguendo poche e ben consolidate consuetudini armoniche.</p>
 <p>Quando poi alle scuole medie ho scoperto il jazz e ho capito che esisteva un
-mondo in cui puoi scrivere la tua musica improvvisandola sul momento, be’… lì
-c’è stato l’innamoramento fatale che continua tuttora.</p>
-<p>Un aspetto curioso dell’orecchio è che non posso controllarlo. Se ad esempio
+mondo in cui puoi scrivere la tua musica improvvisandola sul momento, be'... lì
+c'è stato l'innamoramento fatale che continua tuttora.</p>
+<p>Un aspetto curioso dell'orecchio è che non posso controllarlo. Se ad esempio
 entro in un supermercato e gli altoparlanti stanno trasmettendo una musica, il
 mio cervello si sintonizza automaticamente e la decifra più o meno in tempo
 reale e non è un processo che posso spegnere, non più di come si può smettere di
 guardare il titolo di un libro in uno scaffale se non chiudendo gli occhi. Credo
 cioè che il tipo di riconoscimento che avviene nel mio cervello con i suoni sia
 lo stesso che avviene ad esempio quando con la vista osserviamo un oggetto: se
-sto guardando una macchina, so che quell’oggetto è una macchina, non c’è un modo
-per non vedere l’oggetto macchina se non chiudendo gli occhi.</p>
+sto guardando una macchina, so che quell'oggetto è una macchina, non c'è un modo
+per non vedere l'oggetto macchina se non chiudendo gli occhi.</p>
 <p>Se ascolto un accordo maggiore, so istintivamente che quello è un accordo
 maggiore. Magari non so in che tonalità è perché non ho un riferimento, ma sono
-certo della qualità dell’accordo perché per il mio udito il livello di
+certo della qualità dell'accordo perché per il mio udito il livello di
 riconoscimento è lo stesso di quello della vista nei confronti di un oggetto
 concreto.</p>
 <p>Il fatto di non avere un riferimento non è affatto uno svantaggio, anzi. Ad
-esempio, se mi trovo nella sala d’aspetto di un dottore, posso decidere di
+esempio, se mi trovo nella sala d'aspetto di un dottore, posso decidere di
 suonarmi in testa All The Things You Are in DO# minore solo per tenermi
 occupato. A meno che non ci sia già una musica trasmessa da una radiolina. In
 tal caso ad esempio provo a immaginare ogni chorus della canzone in una tonalità
 diversa.</p>
-<p>Questo non vuol dire che il mio orecchio sia magico. Tutt’altro. So bene che non
-c’è nulla di magico in tutte le ore che ho trascorso nella mia mente con il mio
-piano. So anche che per trascrivere l’assolo di un jazzista ho bisogno
-dell’ausilio di quei software che rallentano e ripetono l’audio a comando.</p>
+<p>Questo non vuol dire che il mio orecchio sia magico. Tutt'altro. So bene che non
+c'è nulla di magico in tutte le ore che ho trascorso nella mia mente con il mio
+piano. So anche che per trascrivere l'assolo di un jazzista ho bisogno
+dell'ausilio di quei software che rallentano e ripetono l'audio a comando.</p>
 <p>Oggi mi esercito più che altro nel riconoscere le diverse qualità degli accordi,
-gli intervalli al di fuori dell’ottava e cerco (senza grossi risultati, devo
+gli intervalli al di fuori dell'ottava e cerco (senza grossi risultati, devo
 ammettere) di identificare e memorizzare melodie casuali con più di 6 note.</p>
 <p>Se mi hai letto fin qui, ti ringrazio per avermi ascoltato e sopportato. Spero
-di averti convinto che l’ear training non è una materia esoterica e che, se sai
+di averti convinto che l'ear training non è una materia esoterica e che, se sai
 come affrontarlo, puoi usarlo a tuo vantaggio.</p>
 <p>Infine vorrei rassicurare il mio psichiatra: non ho mai scritto un quartetto
 d’archi in OH fenicio.</p>
 <div class="footnote-definition" id="jarrett"><sup class="footnote-definition-label">1</sup>
-<p>“Sun Bear Concerts”, ECM, 1978, note di copertina</p>
+<p>"Sun Bear Concerts", ECM, 1978, note di copertina</p>
 </div>
 <div class="footnote-definition" id="johnny"><sup class="footnote-definition-label">2</sup>
 <p>Il mio amico Johnny, batterista, raccontava sempre un aneddoto riguardante
@@ -1932,7 +1932,7 @@ rispose orgoglioso: «la migliore!».</p>
 </div>
 <div class="footnote-definition" id="avorio"><sup class="footnote-definition-label">3</sup>
 <p>A proposito di elefanti e tasti bianchi, sai che una volta i tasti bianchi
-del pianoforte erano fatti d’avorio? Fortunatamente per i nostri amici
+del pianoforte erano fatti d'avorio? Fortunatamente per i nostri amici
 mammiferi proboscidati, oggi i tasti bianchi vengono prodotti con un misto
 di legno e materie plastiche sempre più eco-sostenibili.</p>
 </div>
@@ -1949,51 +1949,51 @@ di legno e materie plastiche sempre più eco-sostenibili.</p>
     <published>2018-10-18T14:01:00+00:00</published>
     <content type="html"><![CDATA[
 <p>«In principio era il verbo.»</p>
-<p>«Ah, io credevo il soggetto. Ma infatti, se senti il Maestro Yoda…»</p>
+<p>«Ah, io credevo il soggetto. Ma infatti, se senti il Maestro Yoda...»</p>
 <p>«Caserta, fai poco lo spiritoso che vojo vedè come ve la cavate cor
 riscaldamento globale.»</p>
 <p>«Eh vabbè, moriremo tutti, che vuoi che sia? Mica sarebbe la prima volta.»</p>
-<p>(a bassa voce): “Questo moo mettete nel terzo girone.»</p>
-<p>«Guarda che t’ho sentito, sa? Al terzo girone<sup class="footnote-reference"><a href="#1">1</a></sup> so’ tutti amici miei. Come
-niente t’arrivo in finale e vinco ai rigori. Lo sai come siamo fatti noi
-italiani…»</p>
-<p>(a bassissima voce): «Chiamame ‘n po’ er canaro che c’ho un lavoretto per lui.»</p>
-<p>«Mi scusi Eminenza…»</p>
-<p>«Non me chiamà Eminenza che quello è n’artro che te lo raccomando proprio.»</p>
+<p>(a bassa voce): "Questo moo mettete nel terzo girone.»</p>
+<p>«Guarda che t'ho sentito, sa? Al terzo girone<sup class="footnote-reference"><a href="#1">1</a></sup> so' tutti amici miei. Come
+niente t'arrivo in finale e vinco ai rigori. Lo sai come siamo fatti noi
+italiani...»</p>
+<p>(a bassissima voce): «Chiamame 'n po' er canaro che c'ho un lavoretto per lui.»</p>
+<p>«Mi scusi Eminenza...»</p>
+<p>«Non me chiamà Eminenza che quello è n'artro che te lo raccomando proprio.»</p>
 <p>«Come la devo chiamare?»</p>
 <p>«Miles va bene. È informale ma incute ancora un certo timore.»</p>
 <p>«Senta, signor Miles, qua i musicisti stanno tutti a morì de fame.»</p>
-<p>«Figliolo, io tutto quello che potevo fà l’ho fatto.»</p>
-<p>«Eh, lo so, ma infatti pe’ carità, chi te dice niente? Anche se tutta quella
-roba pop…»</p>
-<p>«Lo vedi che ’n c’hai capito niente?»</p>
-<p>«Lo so, lo so, ma infatti sto a studià un po’ di tutto, eh.»</p>
-<p>«Bravo, vai a studià un po’ di tutto, va.»</p>
-<p>«Signor Miles, ma tutto tutto? Pure Nino D’Angelo?»</p>
-<p>«A parte che a me Nino D’Angelo me piace, lo sanno tutti. Ma perché, se te paga,
+<p>«Figliolo, io tutto quello che potevo fà l'ho fatto.»</p>
+<p>«Eh, lo so, ma infatti pe' carità, chi te dice niente? Anche se tutta quella
+roba pop...»</p>
+<p>«Lo vedi che 'n c'hai capito niente?»</p>
+<p>«Lo so, lo so, ma infatti sto a studià un po' di tutto, eh.»</p>
+<p>«Bravo, vai a studià un po' di tutto, va.»</p>
+<p>«Signor Miles, ma tutto tutto? Pure Nino D'Angelo?»</p>
+<p>«A parte che a me Nino D'Angelo me piace, lo sanno tutti. Ma perché, se te paga,
 che fai, non ce vai?»</p>
 <p>«A voja! Ma magari.»</p>
 <p>«Bravo! Allora vai, va! E continua a studià che su Giant Steps in 13/8 te sento
-ancora un po’ indeciso.»</p>
-<p>«Ma a me ’sti tempi dispari non è che me convincono troppo.»</p>
-<p>«Ma stai a scherzà? L’hai sentito quel ragazzetto? Bread…»</p>
-<p>«…Mehldau, sì. Che poi ’nsomma, non è più tanto un ragazzetto manco lui.»</p>
-<p>«Ma quello te fa All The Things in 7/4 che t’esplode l’auditorium.»</p>
+ancora un po' indeciso.»</p>
+<p>«Ma a me 'sti tempi dispari non è che me convincono troppo.»</p>
+<p>«Ma stai a scherzà? L'hai sentito quel ragazzetto? Bread...»</p>
+<p>«...Mehldau, sì. Che poi 'nsomma, non è più tanto un ragazzetto manco lui.»</p>
+<p>«Ma quello te fa All The Things in 7/4 che t'esplode l'auditorium.»</p>
 <p>«Se è per questo ce stanno certi ragazzetti su youtube che aiutame a dì levate
 proprio.»</p>
 <p>«Bravo. Lo vedi che hai capito?»</p>
-<p>«Ho capito, sì. Me tocca imparà pure ’sti tempi dispari, eh?»</p>
-<p>«E vedi un po’ te!»</p>
+<p>«Ho capito, sì. Me tocca imparà pure 'sti tempi dispari, eh?»</p>
+<p>«E vedi un po' te!»</p>
 <p>«Signor Miles, me sa che era meglio che non la disturbavo.»</p>
-<p>«Eh, ormai (…) Sai che c’è? Già che stai qua, vai un po’ a trovà quel bassista
-un po’ matto. Te fai dà ’na lezione.»</p>
+<p>«Eh, ormai (...) Sai che c'è? Già che stai qua, vai un po' a trovà quel bassista
+un po' matto. Te fai dà 'na lezione.»</p>
 <p>«Signor Miles, ma è vero che qua state sempre a fà jam session? A me dopo cena
-me viè l’abbiocco. Questi suonano fino all’alba, li mortacci loro.»</p>
+me viè l'abbiocco. Questi suonano fino all'alba, li mortacci loro.»</p>
 <p>«Devi mangià leggero, fjo mio.»</p>
 <p>«Signor Miles, ma perché parla romano?»</p>
-<p>«Qua se possono studià le lingue e siccome io sò sempre stato un po’ coatto…
+<p>«Qua se possono studià le lingue e siccome io sò sempre stato un po' coatto...
 me piaceva il romano, vabbè?»</p>
-<p>«Vabbè, vabbè, non te ’ncazzà. Grazie Signor Miles.»</p>
+<p>«Vabbè, vabbè, non te 'ncazzà. Grazie Signor Miles.»</p>
 <p>«E non me chiamà Signor Miles.»</p>
 <p>«Va bene, Signor Miles. Mò devo proprio scappà, ciao.»</p>
 <p>«Ciao secco.»</p>
@@ -2016,45 +2016,45 @@ me piaceva il romano, vabbè?»</p>
 knowledge of the domain at hand. A topic apparently as simple as time
 representation, serialization and management can easily cause a number of
 problems both to the neophyte and to the experienced programmer.</p>
-<p>In this post, we’ll see that there’s no need to be a
+<p>In this post, we'll see that there's no need to be a
 <a href="http://en.wikipedia.org/wiki/Time_Lord">Time Lord</a> to grasp the very simple few
 concepts needed not to incur into time management hell.</p>
-<p><img src="../images/posts/time.jpg" alt="Time doesn’t exist. Clocks exist." /></p>
-<h2>Representation</h2>
-<p>A question as simple as <em>“What time is it?”</em> assumes a number of contextual
+<p><img src="../images/posts/time.jpg" alt="Time doesn&#39;t exist. Clocks exist." /></p>
+<h2 id="representation">Representation</h2>
+<p>A question as simple as <em>"What time is it?"</em> assumes a number of contextual
 subleties that are obvious to the human brain, but become absolute nonsense for
 a computer.</p>
 <p>For instance, if you were asking me what time is it right now, I might say:
-<em>“It’s 3:39”</em> and, if you were a colleague in my office, that’d be enough
-information to infer that it’s 3:39pm CEST. That’s because you would already be
+<em>"It's 3:39"</em> and, if you were a colleague in my office, that'd be enough
+information to infer that it's 3:39pm CEST. That's because you would already be
 in possession of some bits of important contextual information such as</p>
 <ul>
-<li>it’s an afternoon because we’ve already had lunch</li>
-<li>we’re in Rome, therefore our timezone is Central European Time (CET) or
+<li>it's an afternoon because we've already had lunch</li>
+<li>we're in Rome, therefore our timezone is Central European Time (CET) or
 Central European Summer Time (CEST)</li>
-<li>we’ve switched to daylight savings time a few weeks earlier, so the current
+<li>we've switched to daylight savings time a few weeks earlier, so the current
 timezone must be Central European Summer Time</li>
 </ul>
-<p><em>3:39</em> only happens to be a convenient representation of time as long as we’re
+<p><em>3:39</em> only happens to be a convenient representation of time as long as we're
 in possession of the contextual bits. In order to represent time in a universal
 way, you should have an idea what
 <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a> and
 <a href="http://en.wikipedia.org/wiki/Time_zone">timezones</a> are.</p>
 <p>Please do not confuse UTC with GMT: although their time matches, they are <em>two
 different things</em>: one is an universal standard while the other is a timezone.
-When someone says they’re using GMT, unless that person has a funny scottish
+When someone says they're using GMT, unless that person has a funny scottish
 accent, what they really mean is UTC.</p>
 <p>As an amateur radio operator, I have contacts with people from all over the
 world. Every operator is required to keep a log of his contacts, and we usually
 exchange so called QSL cards, which are a written confirmation of the contact.
 Of course a QSL card must report the exact time of the radio contact and by
-convention it’s in UTC. I know that when I receive a QSL card from any fellow
+convention it's in UTC. I know that when I receive a QSL card from any fellow
 amateur radio operator, no matter where he is located across the whole wide
 world, I can look up the contact in my logbook and the date and time info is
 going to match, as we are both adhering to the same standard: UTC.</p>
 <p>Now, suppose I have to schedule a Skype chat with a fellow software developer in
-the US. I could write him an email and say something along the lines of <em>“see
-you on 2/3”</em>. In Italy, that would be the second day in the month of march, but
+the US. I could write him an email and say something along the lines of <em>"see
+you on 2/3"</em>. In Italy, that would be the second day in the month of march, but
 to a US person, that would be the third day in the month of february. As you can
 see, our chat is never going to happen.</p>
 <p>These are only a few examples of the kind of issues that might arise when
@@ -2070,16 +2070,16 @@ Same instant, different representations.</p>
 that use lexicographical order (such as filesystems) because information is
 organized from most to least significant, i.e. year, month, day, hour, minute,
 second, fraction of a second<sup class="footnote-reference"><a href="#tz">1</a></sup>.</p>
-<p>Even if you’re only dealing with local times in your software, you should know
+<p>Even if you're only dealing with local times in your software, you should know
 that, unless you also display the time zone, you can never be sure of the time.
 I cannot remember how many times a developer has asked me to <em>fix the time</em> on
 the server, only to discover that his software was printing time in UTC.</p>
 <p>At display time, it is okay to deal with partial representation of time because
 the user experience requires so. Just make sure, when debugging, to print out
 the whole set of information, including the time zone, otherwise you can never
-be sure what you’re looking at is what you actually think it is.</p>
+be sure what you're looking at is what you actually think it is.</p>
 <p>Although a given moment in time is immutable, there is an arbitrary number of
-ways to express it. And we’ve not even talked about the Julian or Indian
+ways to express it. And we've not even talked about the Julian or Indian
 calendars or stuff like expressing durations!</p>
 <p>Let me summarize a few key points to bring home so far:</p>
 <ul>
@@ -2091,8 +2091,8 @@ calendars or stuff like expressing durations!</p>
 <li>always print the time zone while debugging</li>
 </ul>
 <p><img src="../images/posts/bttf-clock.png" alt="Back to the future clock" /></p>
-<h2>Serialization</h2>
-<p>Speaking of software, serialization is a process where you take an object’s
+<h2 id="serialization">Serialization</h2>
+<p>Speaking of software, serialization is a process where you take an object's
 status and spell it out in such a way that it can be later entirely rebuilt,
 exactly like the original, by using the spelt out (serialized) information.
 Think of a xml or json file:</p>
@@ -2106,9 +2106,9 @@ Think of a xml or json file:</p>
 </code></pre>
 <p>This is the serialized form of a peculiar imaginary person class instance.</p>
 <p>In the binary world of computers, time is usually serialized and stored by using
-the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a> convention. As I’m
+the <a href="http://en.wikipedia.org/wiki/Unix_time">Unix time</a> convention. As I'm
 writing this, my Unix time is <code>1366191727</code>. That is: <code>1366191727</code> seconds have
-passed since January 1st, 1970 at 00:00 UTC. Isn’t that a pretty clever,
+passed since January 1st, 1970 at 00:00 UTC. Isn't that a pretty clever,
 consistent and compact way of representing a plethora of information, such as
 <code>April 17 2013 @ 11:42:07am CEST</code>?</p>
 <p>Unix time is only another arbitrary representation of a given moment in time,
@@ -2117,7 +2117,7 @@ on a piece of paper, stick it onto a carrier pigeon, and your recipient would be
 able to decipher your vital message by simply turning to the Internet and
 visiting a site such as <a href="http://www.unixtimestamp.com/">unixtimestamp.com</a> or
 <a href="https://currentmillis.com/">currentmillis.com</a>.</p>
-<p>If you’re a command line junkie like me, on Linux systems you can use:</p>
+<p>If you're a command line junkie like me, on Linux systems you can use:</p>
 <pre><code class="language-bash">$ date -d @1366191727
 Wed Apr 17 11:42:07 CEST 2013
 </code></pre>
@@ -2137,9 +2137,9 @@ sorting, querying, etc features of your RDBMS for free, so you might want to
 think twice before storing plain Unix timestamps in, say, Oracle.</p>
 <p>Just make sure you know what timezone your Unix timestamp refers to, or you
 might get confused later at deserialization time. By default, a Unix timestamp
-is in UTC. If you use your system’s libraries, you should be okay.</p>
+is in UTC. If you use your system's libraries, you should be okay.</p>
 <p>When working with databases, use the most appropriate data types. For instance
-in Oracle, there’s
+in Oracle, there's
 <a href="https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm">four different data types</a>:
 <code>DATE</code>, <code>TIMESTAMP</code>, <code>TIMESTAMP WITH TIME ZONE</code> and
 <code>TIMESTAMP WITH LOCAL TIME ZONE</code>. Also, databases usually have a concept of
@@ -2149,12 +2149,12 @@ is going to see different values than a user connecting with timezone <code>B</c
 <p>ISO 8601 is also a serialization favorite. In fact, it is used in the
 <a href="http://www.w3.org/TR/xmlschema-2/#isoformats">XML Schema</a> standard. Most xml
 frameworks are natively able to serialize and deserialize back and forth from
-<code>xs:date</code>, <code>xs:time</code> and <code>xs:dateTime</code> to your programming language’s native
+<code>xs:date</code>, <code>xs:time</code> and <code>xs:dateTime</code> to your programming language's native
 format (and viceversa). The same is true for json. Just be careful when dealing
 with partial representations: for instance, if you omit the time zone, make sure
 you agree beforehand on a default one with your communicating party (usually UTC
-or your local time zone if you’re both in the same one).</p>
-<h2>Management</h2>
+or your local time zone if you're both in the same one).</p>
+<h2 id="management">Management</h2>
 <p>First of all, if you think you can write your own time management software
 library, or even write a little routine that adds or subtracts arbitrary values
 from the time of the day, please allow me to show you the source code for the
@@ -2162,7 +2162,7 @@ from the time of the day, please allow me to show you the source code for the
 <a href="http://www.docjar.com/html/api/java/util/GregorianCalendar.java.html">java.util.GregorianCalendar</a>
 classes from JDK 7, respectively weighting 1331 and 3179 lines of code.</p>
 <p>Okay, these are probably not the best examples of software routines that deal
-with time, I agree. That’s why Java libraries like
+with time, I agree. That's why Java libraries like
 <a href="http://joda-time.sourceforge.net/">Joda Time</a> were written. In fact, Joda Time
 has become so popular that it gave birth to
 <a href="http://jcp.org/en/jsr/detail?id=310">JSR-310</a> and is
@@ -2170,11 +2170,11 @@ has become so popular that it gave birth to
 <a href="http://www.infoq.com/news/2013/02/java-time-api-jdk-8">part</a> of JDK 8.</p>
 <p>Use of popular, well-designed and implemented time frameworks will save your
 life. Seriously. Take your time to get familiar with the API of your choosing.</p>
-<h2>Common Time Tasks in Java</h2>
-<p>Let’s see how all this translates into java code. Any language will of course be
-different but everything I’m doing here should be possible in your language of
+<h2 id="common-time-tasks-in-java">Common Time Tasks in Java</h2>
+<p>Let's see how all this translates into java code. Any language will of course be
+different but everything I'm doing here should be possible in your language of
 choice.</p>
-<p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don’t use that
+<p>Please do not use <code>java.util.Date</code> or <code>java.util.Calendar</code>. We don't use that
 classes anymore. The new time api is in the <code>java.time</code> package.</p>
 <pre><code class="language-java">import java.time.*;
 import java.time.format.DateTimeFormatter;
@@ -2250,17 +2250,17 @@ localTimeInRome = 18:03:51.998
 shortTimeInRome = 6:03PM
 evenShorterTimeInRome = 18:03
 </code></pre>
-<h2>Testing</h2>
-<p>In Java there’s a <code>Clock</code> class that allows plugging in an arbitrarily
+<h2 id="testing">Testing</h2>
+<p>In Java there's a <code>Clock</code> class that allows plugging in an arbitrarily
 configurable clock implementation for use in the time api. This is especially
 useful in unit testing and debugging. Other languages should have an equivalent
 functionality.</p>
 <p>https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html</p>
-<h2>Further Resources</h2>
-<p>Here are a few useful links I’ve accumulated over time:</p>
+<h2 id="further-resources">Further Resources</h2>
+<p>Here are a few useful links I've accumulated over time:</p>
 <ul>
 <li><a href="https://shanrauf.com/archive/how-to-think-about-time-in-programming">How to Think About Time in Programming</a></li>
-<li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone… right?</a></li>
+<li><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is enough for everyone... right?</a></li>
 <li><a href="https://youtu.be/-5wpm-gesOY">The Problem with Time &amp; Timezones - Computerphile</a></li>
 <li><a href="https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca">Falsehoods programmers believe about time</a></li>
 <li><a href="https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/">Storing UTC is not a silver bullet</a></li>
@@ -2271,7 +2271,7 @@ functionality.</p>
 <li><a href="https://kirby.kevinson.org/blog/iso-8601-the-better-date-format/">ISO 8601: the better date format</a></li>
 <li><a href="https://www.cl.cam.ac.uk/~mgk25/iso-time.html">A summary of the international standard date and time notation</a></li>
 <li><a href="http://youtu.be/kzprsR2SvrQ">A Short History of the Modern Calendar</a></li>
-<li><a href="https://yro.slashdot.org/story/21/03/14/014233/should-we-heed-the-science-and-abolish-daylight-saving-time">Should We ‘Heed the Science and Abolish Daylight Saving Time’?</a></li>
+<li><a href="https://yro.slashdot.org/story/21/03/14/014233/should-we-heed-the-science-and-abolish-daylight-saving-time">Should We 'Heed the Science and Abolish Daylight Saving Time'?</a></li>
 <li><a href="http://opensourcehacker.com/2013/03/28/converting-world-timezones-with-duckduckgo-and-wolfram-alpha/">Converting world timezones with DuckDuckGo and Wolfram Alpha from the browser address bar</a></li>
 <li><a href="https://www.si.com/extra-mustard/2013/12/30/the-extra-mustard-trivia-hour-when-a-calendar-defeated-russia-in-the-1908-olympics">When a Calendar Defeated Russia in the 1908 Olympics</a></li>
 <li><a href="https://www.infobloom.com/why-does-china-have-only-one-time-zone.htm">Why does China Have Only One Time Zone?</a></li>
@@ -2281,9 +2281,9 @@ functionality.</p>
 <li><a href="https://timeenna.com/">TIME:ENNA Timezone Converter</a></li>
 <li><a href="https://www.amusingplanet.com/2021/05/how-ancient-romans-kept-time.html">How Ancient Romans Kept Time</a></li>
 <li><a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=f076ef44a44d02ed91543f820c14c2c7dff53716">rtc: rk808: Compensate for Rockchip calendar deviation on November 31st</a></li>
-<li><a href="https://eu.usatoday.com/story/news/health/2021/11/01/fall-back-daylight-saving-time-health-experts-want-you-know/6174156001/">Daylight saving time is ‘not helpful’ and has ‘no upsides’ experts say</a></li>
+<li><a href="https://eu.usatoday.com/story/news/health/2021/11/01/fall-back-daylight-saving-time-health-experts-want-you-know/6174156001/">Daylight saving time is 'not helpful' and has 'no upsides' experts say</a></li>
 <li><a href="https://youtu.be/j8VcpmpN0NM">Neil deGrasse Tyson Reminds Us Daylight Saving Time is Ridiculous</a></li>
-<li><a href="https://youtu.be/DHIQxVhruak">A “Day” Isn’t What It Used To Be</a></li>
+<li><a href="https://youtu.be/DHIQxVhruak">A "Day" Isn't What It Used To Be</a></li>
 <li><a href="https://youtu.be/qjUT7FbmNZ8">Why Time Zones Exist</a></li>
 <li><a href="https://xkcd.com/2542/">xkcd: Dailight Calendar</a></li>
 <li><a href="https://xkcd.com/2549/">xkcd: Edge Cake</a></li>
@@ -2296,16 +2296,16 @@ functionality.</p>
 <li><a href="https://www.engadget.com/meta-death-of-the-leap-second-103545749.html">Meta calls for the death of the leap second</a></li>
 <li><a href="https://www.wired.com/story/satellite-time-distribution/">Satellites Keep the World’s Clocks on Time. What if They Fail?</a></li>
 <li><a href="https://blog.ganssle.io/articles/2019/11/utcnow.html">Stop using utcnow and utcfromtimestamp</a></li>
-<li><a href="https://youtu.be/Fu6AT5WLgJg">Dall’ora legale all’ora solare: i pro e contro del cambio orario e perché si parla di abolizione</a></li>
+<li><a href="https://youtu.be/Fu6AT5WLgJg">Dall'ora legale all'ora solare: i pro e contro del cambio orario e perché si parla di abolizione</a></li>
 <li><a href="https://www.sciencenews.org/article/deer-vehicle-collisions-daylight-saving-time">Deer-vehicle collisions spike when daylight saving time ends</a></li>
 <li><a href="https://thedailywtf.com/articles/the-falling-dates">The Falling Dates</a></li>
 <li><a href="https://www.howtogeek.com/850114/scientists-don%E2%80%99t-want-to-count-leap-seconds-so-they%E2%80%99re-going-away/">Scientists Don’t Want to Count Leap Seconds, so They’re Going Away</a></li>
 <li><a href="https://www.nature.com/articles/d41586-023-00185-z">What time is it on the Moon?</a></li>
 <li><a href="https://www.cbc.ca/news/science/moon-time-zone-1.6763962">What time is it on the moon? Europe pushing for lunar time zone</a></li>
 <li><a href="https://andrea.corbellini.name/2023/01/23/what-time-is-it/">What time is it? A simple question with a complex answer. How computers synchronize time</a></li>
-<li><a href="https://www.wired.com/story/2023-daylight-saving-time/">The Daylight Saving Time Mess Just Won’t Go Away</a></li>
+<li><a href="https://www.wired.com/story/2023-daylight-saving-time/">The Daylight Saving Time Mess Just Won't Go Away</a></li>
 <li><a href="https://vladmihalcea.com/time-zones-java-web-application/">The best way to handle time zones in a Java web application</a></li>
-<li><a href="https://yourcalendricalfallacyis.com/">Your Calendrical Fallacy Is…</a></li>
+<li><a href="https://yourcalendricalfallacyis.com/">Your Calendrical Fallacy Is...</a></li>
 <li><a href="https://www.bnnbloomberg.ca/greenland-solves-the-daylight-saving-time-debate-1.1900228">Greenland Solves the Daylight Saving Time Debate</a></li>
 <li><a href="https://foojay.io/today/time-zone-and-currency-database-in-jdk/">Time Zone and Currency Database in JDK</a></li>
 <li><a href="https://youtu.be/Zpiou9Rn8UE">(There Ought To Be A) Moonlight Saving Time</a></li>
@@ -2322,18 +2322,18 @@ functionality.</p>
 <li><a href="https://thorben-janssen.com/hibernate-jpa-date-and-time/">Date and Time Mappings with Hibernate and JPA</a></li>
 <li><a href="https://youtu.be/Lz3jAEdzbbA">I Found the Dumbest Time Zone</a></li>
 <li><a href="https://github.com/LittleGreenViper/LGV_TZ_Lookup">A Server for Matching Long/Lat to Timezone</a></li>
-<li><a href="https://ianto-cannon.github.io/clock.html">Ianto Cannon’s clock graphics</a></li>
+<li><a href="https://ianto-cannon.github.io/clock.html">Ianto Cannon's clock graphics</a></li>
 </ul>
-<h2>Memes</h2>
-<p><img src="../images/posts/mars-timezone.png" alt="Elon Musk: “I’m putting people on Mars!”, Developers: “Fantastic, more timezones to support”." /></p>
+<h2 id="memes">Memes</h2>
+<p><img src="../images/posts/mars-timezone.png" alt="Elon Musk: &quot;I&#39;m putting people on Mars!&quot;, Developers: &quot;Fantastic, more timezones to support&quot;." /></p>
 <p><img src="../images/posts/daylight-dog.jpg" alt="Daylight savings dog" /></p>
 <p><img src="../images/posts/daylight-investing.jpg" alt="Daylight savings? How about daylight investing?" /></p>
-<p><img src="../images/posts/timezones-meme.png" alt="Friend: “What happened?”, Me: “I had to work with timezones today”." /></p>
+<p><img src="../images/posts/timezones-meme.png" alt="Friend: &quot;What happened?&quot;, Me: &quot;I had to work with timezones today&quot;." /></p>
 <p><img src="../images/posts/time-universe-meme.png" alt="January 1st 1970 meme" /></p>
 <p><img src="../images/posts/time-boeing-787.jpg" alt="Boeing 787 meme" /></p>
 <p><img src="../images/posts/time-consensus.jpg" alt="xkcd: Consensus Time" /></p>
 <p><img src="../images/posts/time-devs.png" alt="Developers having to implement yet another timezone change" /></p>
-<p><img src="../images/posts/time-devs-again.png" alt="Developers having to explain…" /></p>
+<p><img src="../images/posts/time-devs-again.png" alt="Developers having to explain..." /></p>
 <p><img src="../images/posts/time-days-since.png" alt="Days since last timezone issue: 0" /></p>
 <p><img src="../images/posts/clocks-back-meme.jpg" alt="Clocks back" /></p>
 <p><img src="../images/posts/picard-dst.png" alt="Picard DST" /></p>

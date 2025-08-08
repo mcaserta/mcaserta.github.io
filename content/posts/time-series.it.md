@@ -201,7 +201,7 @@ recenti per le nostre specifiche misure di `T` e `C` ad ogni passo[^creep].
 
 Vai avanti, scrolla in basso. Dovresti vederla.
 
-### Step 01: T = 10.1, C = 2.0, AQi = 13.625
+> Step 01: T = 10.1, C = 2.0, AQi = 13.625
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -210,7 +210,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 1-2
 
-### Step 02: T = 10.3, C = 2.0, AQi = 13.875
+> Step 02: T = 10.3, C = 2.0, AQi = 13.875
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -219,7 +219,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 2-3
 
-### Step 03: T = 10.3, C = 2.3, AQi = 14.025
+> Step 03: T = 10.3, C = 2.3, AQi = 14.025
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -228,7 +228,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 3-4
 
-### Step 04: T = 10.7, C = 2.3, AQi = 14.525
+> Step 04: T = 10.7, C = 2.3, AQi = 14.525
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -237,7 +237,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 4-5
 
-### Step 05: T = 10.9, C = 2.3, AQi = 14.775
+> Step 05: T = 10.9, C = 2.3, AQi = 14.775
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -246,7 +246,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 4-6
 
-### Step 06: T = 10.9, C = 2.8, AQi = 15.025
+> Step 06: T = 10.9, C = 2.8, AQi = 15.025
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -255,7 +255,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 6-7
 
-### Step 07: T = 11.0, C = 2.8, AQi = 15.150
+> Step 07: T = 11.0, C = 2.8, AQi = 15.150
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -264,7 +264,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 7-8
 
-### Step 08: T = 11.1, C = 2.8, AQi = 15.275
+> Step 08: T = 11.1, C = 2.8, AQi = 15.275
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -273,7 +273,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 7-9
 
-### Step 09: T = 11.1, C = 2.9, AQi = 15.325
+> Step 09: T = 11.1, C = 2.9, AQi = 15.325
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -282,7 +282,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 9-10
 
-### Step 10: T = 11.1, C = 3.3, AQi = 15.525
+> Step 10: T = 11.1, C = 3.3, AQi = 15.525
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |
@@ -291,7 +291,7 @@ Vai avanti, scrolla in basso. Dovresti vederla.
 
 **Finestra:** id 9-11
 
-### Step 11: T = 11.3, C = 3.3, AQi = 15.775
+> Step 11: T = 11.3, C = 3.3, AQi = 15.775
 
 | id  | 1    | 2   | 3    | 4   | 5    | 6    | 7   | 8    | 9    | 10  | 11  | 12   |
 | --- | ---- | --- | ---- | --- | ---- | ---- | --- | ---- | ---- | --- | --- | ---- |

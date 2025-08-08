@@ -1,0 +1,40 @@
+---
+description: Markdown Formatting Standards
+---
+
+# Markdown Formatting Standards
+
+## Table Formatting
+- Use proper markdown tables instead of ASCII art diagrams
+- Tables should be clean and readable with consistent column alignment
+- Include clear headers and descriptions for complex tables
+
+## Code Blocks
+- Use proper markdown code blocks with language specification
+- For shell commands: ```shell
+- For Java code: ```java
+- For configuration files: ```toml
+
+## Images
+- Reference images using relative paths: `../images/posts/filename.png`
+- Include alt text for accessibility
+- Use descriptive filenames
+
+## Frontmatter
+All markdown posts should include proper frontmatter:
+```yaml
+---
+title: "Post Title"
+date: YYYY-MM-DDTHH:MM:SSZ
+toc: true
+tags:
+  - tag1
+  - tag2
+pdf: true
+---
+```
+
+## Multilingual Content
+- Maintain identical structure between English and Italian versions
+- Keep the same images, code examples, and formatting
+- Only translate the text content, not the technical elements

@@ -1,0 +1,32 @@
+---
+description: Project Structure
+---
+
+# Krik Static Site Generator Project Structure
+
+This is a Krik-based static site (Rust static site generator available at https://github.com/mcaserta/krik) with multilingual support (English and Italian). The main content is organized as follows:
+
+## Content Structure
+- `content/` - Main content directory
+  - `posts/` - Blog posts in markdown format
+    - `*.md` - English posts
+    - `*.it.md` - Italian posts (same content, different language)
+  - `pages/` - Static pages
+    - `*.md` - English pages
+    - `*.it.md` - Italian pages
+  - `images/` - Image assets
+    - `posts/` - Images referenced in blog posts
+  - `site.toml` - Site configuration
+
+## Key Files
+- [content/site.toml](mdc:content/site.toml) - Main site configuration
+- [themes/default/theme.toml](mdc:themes/default/theme.toml) - Theme configuration
+- [themes/default/templates/](mdc:themes/default/templates/) - HTML templates
+- [themes/default/assets/](mdc:themes/default/assets/) - CSS, JS, and font assets
+
+## Multilingual Pattern
+When working with content, remember that Italian versions follow the pattern:
+- English: `filename.md`
+- Italian: `filename.it.md`
+
+Both versions should maintain the same structure and content, just translated.

@@ -1,0 +1,30 @@
+---
+description: Code Quality Standards
+---
+
+# Code Quality Standards
+
+## Java Code
+- Use meaningful variable names and method names
+- Include proper comments for complex algorithms
+- Follow Java naming conventions (camelCase for variables/methods, PascalCase for classes)
+- Use CompletableFuture for concurrent operations
+- Implement proper error handling
+
+## JavaScript/CSS
+- Use modern ES6+ syntax where appropriate
+- Follow consistent indentation (2 spaces)
+- Use semantic HTML elements
+- Implement responsive design principles
+
+## Code Examples in Posts
+- Include complete, runnable code examples
+- Provide clear explanations of complex algorithms
+- Use step-by-step breakdowns for educational content
+- Include output examples where relevant
+
+## Documentation
+- Document complex algorithms with clear explanations
+- Include sequence diagrams or flowcharts for concurrent operations
+- Provide real-world examples and use cases
+- Explain both the "what" and "why" of code decisions

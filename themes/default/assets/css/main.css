@@ -274,6 +274,30 @@ body {
     text-decoration: underline;
 }
 
+/* Enhanced hover with rounded borders for left sidebar page list */
+.sidebar .page-links a {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 0.5rem 0.6rem;
+    transition: background-color 120ms ease,
+                border-color 120ms ease,
+                box-shadow 120ms ease,
+                transform 120ms ease;
+}
+
+.sidebar .page-links a:hover {
+    background: var(--surface-hover-color);
+    border-color: var(--border-color);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.sidebar .page-links a:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+}
+
 .main-content {
     margin-left: 200px;
     margin-right: 0;

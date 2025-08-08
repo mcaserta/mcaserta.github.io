@@ -103,17 +103,6 @@
   <li><a href="#service-providers">Service providers</a></li>
 <li><a href="#the-algorithm">The algorithm</a></li>
   <li><a href="#rolling-time-window">Rolling Time Window</a></li>
-    <li><a href="#step-01-t--101-c--20-aqi--13625">Step 01: T = 10.1, C = 2.0, AQi = 13.625</a></li>
-    <li><a href="#step-02-t--103-c--20-aqi--13875">Step 02: T = 10.3, C = 2.0, AQi = 13.875</a></li>
-    <li><a href="#step-03-t--103-c--23-aqi--14025">Step 03: T = 10.3, C = 2.3, AQi = 14.025</a></li>
-    <li><a href="#step-04-t--107-c--23-aqi--14525">Step 04: T = 10.7, C = 2.3, AQi = 14.525</a></li>
-    <li><a href="#step-05-t--109-c--23-aqi--14775">Step 05: T = 10.9, C = 2.3, AQi = 14.775</a></li>
-    <li><a href="#step-06-t--109-c--28-aqi--15025">Step 06: T = 10.9, C = 2.8, AQi = 15.025</a></li>
-    <li><a href="#step-07-t--110-c--28-aqi--15150">Step 07: T = 11.0, C = 2.8, AQi = 15.150</a></li>
-    <li><a href="#step-08-t--111-c--28-aqi--15275">Step 08: T = 11.1, C = 2.8, AQi = 15.275</a></li>
-    <li><a href="#step-09-t--111-c--29-aqi--15325">Step 09: T = 11.1, C = 2.9, AQi = 15.325</a></li>
-    <li><a href="#step-10-t--111-c--33-aqi--15525">Step 10: T = 11.1, C = 3.3, AQi = 15.525</a></li>
-    <li><a href="#step-11-t--113-c--33-aqi--15775">Step 11: T = 11.3, C = 3.3, AQi = 15.775</a></li>
   <li><a href="#lets-get-coding">Let's get coding</a></li>
   <li><a href="#coding-like-its-1984">Coding like it's 1984</a></li>
   <li><a href="#functional-elegance">Functional elegance</a></li>
@@ -281,67 +270,89 @@ as you have a window that moves forward in time focusing on the most recent data
 for our specific <code>T</code> and <code>C</code> measures at each step<sup class="footnote-reference"><a href="#creep">5</a></sup>.</p>
 <h2 id="rolling-time-window">Rolling Time Window</h2>
 <p>Go ahead, scroll down. You're going to see it.</p>
-<h3 id="step-01-t--101-c--20-aqi--13625">Step 01: T = 10.1, C = 2.0, AQi = 13.625</h3>
+<blockquote>
+<p>Step 01: T = 10.1, C = 2.0, AQi = 13.625</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 1-2</p>
-<h3 id="step-02-t--103-c--20-aqi--13875">Step 02: T = 10.3, C = 2.0, AQi = 13.875</h3>
+<blockquote>
+<p>Step 02: T = 10.3, C = 2.0, AQi = 13.875</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 2-3</p>
-<h3 id="step-03-t--103-c--23-aqi--14025">Step 03: T = 10.3, C = 2.3, AQi = 14.025</h3>
+<blockquote>
+<p>Step 03: T = 10.3, C = 2.3, AQi = 14.025</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 3-4</p>
-<h3 id="step-04-t--107-c--23-aqi--14525">Step 04: T = 10.7, C = 2.3, AQi = 14.525</h3>
+<blockquote>
+<p>Step 04: T = 10.7, C = 2.3, AQi = 14.525</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 4-5</p>
-<h3 id="step-05-t--109-c--23-aqi--14775">Step 05: T = 10.9, C = 2.3, AQi = 14.775</h3>
+<blockquote>
+<p>Step 05: T = 10.9, C = 2.3, AQi = 14.775</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 4-6</p>
-<h3 id="step-06-t--109-c--28-aqi--15025">Step 06: T = 10.9, C = 2.8, AQi = 15.025</h3>
+<blockquote>
+<p>Step 06: T = 10.9, C = 2.8, AQi = 15.025</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 6-7</p>
-<h3 id="step-07-t--110-c--28-aqi--15150">Step 07: T = 11.0, C = 2.8, AQi = 15.150</h3>
+<blockquote>
+<p>Step 07: T = 11.0, C = 2.8, AQi = 15.150</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 7-8</p>
-<h3 id="step-08-t--111-c--28-aqi--15275">Step 08: T = 11.1, C = 2.8, AQi = 15.275</h3>
+<blockquote>
+<p>Step 08: T = 11.1, C = 2.8, AQi = 15.275</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 7-9</p>
-<h3 id="step-09-t--111-c--29-aqi--15325">Step 09: T = 11.1, C = 2.9, AQi = 15.325</h3>
+<blockquote>
+<p>Step 09: T = 11.1, C = 2.9, AQi = 15.325</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 9-10</p>
-<h3 id="step-10-t--111-c--33-aqi--15525">Step 10: T = 11.1, C = 3.3, AQi = 15.525</h3>
+<blockquote>
+<p>Step 10: T = 11.1, C = 3.3, AQi = 15.525</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>
 </tbody></table>
 <p><strong>Window:</strong> ids 9-11</p>
-<h3 id="step-11-t--113-c--33-aqi--15775">Step 11: T = 11.3, C = 3.3, AQi = 15.775</h3>
+<blockquote>
+<p>Step 11: T = 11.3, C = 3.3, AQi = 15.775</p>
+</blockquote>
 <table><thead><tr><th>id</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th></tr></thead><tbody>
 <tr><td>T</td><td>10.1</td><td></td><td>10.3</td><td></td><td>10.7</td><td>10.9</td><td></td><td>11.0</td><td>11.1</td><td></td><td></td><td>11.3</td></tr>
 <tr><td>C</td><td></td><td>2.0</td><td></td><td>2.3</td><td></td><td></td><td>2.8</td><td></td><td></td><td>2.9</td><td>3.3</td><td></td></tr>

@@ -30,6 +30,20 @@
     {% endif %}
   </header>
   <div class="page-content">{{ content | safe }}</div>
+</article>
 {% endblock main %}
+
+{% block scripts %}
+<script>
+  // Used by switchLanguage in theme JS
+  window.krikBaseName = "{{ file_path
+    | split(pat="/")
+    | last
+    | replace(from=".md", to="")
+    | replace(from=".it", to="")
+    | replace(from=".es", to="")
+  }}";
+</script>
+{% endblock scripts %}
 
 

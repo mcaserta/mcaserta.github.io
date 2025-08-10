@@ -76,20 +76,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Footnote return links
 document.addEventListener('DOMContentLoaded', function() {
+  // First, add IDs to footnote references for easier navigation
+  const footnoteRefs = document.querySelectorAll('.footnote-reference a');
+  footnoteRefs.forEach(ref => {
+    const href = ref.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const footnoteNum = href.substring(1);
+      ref.id = 'fnref' + footnoteNum;
+    }
+  });
+  
+  // Then add return links to footnote definitions
   const defs = document.querySelectorAll('.footnote-definition');
   defs.forEach(def => {
     if (!def.id) return;
-    const refId = 'fnref' + def.id;
+    const footnoteId = def.id;
+    const refId = 'fnref' + footnoteId;
+    
     const a = document.createElement('a');
     a.href = '#' + refId;
     a.className = 'footnote-return';
     a.textContent = ' ↩';
     a.title = 'Return to text';
+    
+    // Smooth scroll back to the footnote reference
     a.addEventListener('click', (e) => {
       e.preventDefault();
       const target = document.getElementById(refId);
-      if (target) (target.closest('.footnote-reference') || target).scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (target) {
+        // Find the parent sup element to scroll to the entire footnote reference
+        const supElement = target.closest('.footnote-reference');
+        if (supElement) {
+          supElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
     });
+    
     def.appendChild(a);
   });
 });

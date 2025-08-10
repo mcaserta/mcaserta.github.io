@@ -50,7 +50,7 @@ function toggleMobileMenu() {
 // Close mobile menu on link click or outside click
 document.addEventListener('DOMContentLoaded', function() {
   const menu = document.getElementById('mobile-menu');
-  const button = document.querySelector('.icon-btn');
+  const button = document.querySelector('.hamburger-menu');
   if (menu) {
     menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('show')));
     document.addEventListener('click', (e) => {

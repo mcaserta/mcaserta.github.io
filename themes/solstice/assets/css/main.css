@@ -80,6 +80,10 @@ body {
 }
 .icon-btn:hover { transform: translateY(-1px); background: var(--bg-soft); }
 .theme-icon { display: inline-block; }
+/* Hide hamburger on desktop */
+@media (min-width: 1100px) {
+  .hamburger-menu { display: none !important; }
+}
 
 /* Sidebar and ToC */
 .sidebar {

@@ -6,12 +6,6 @@
   <title>{% block title %}{{ site_title | default(value="Blog") }}{% endblock title %}</title>
   <meta name="description" content="{% block description %}{{ site_description | default(value="") }}{% endblock description %}">
 
-  <!-- Social cards -->
-  <meta property="og:type" content="{% block og_type %}website{% endblock og_type %}">
-  <meta property="og:title" content="{% block og_title %}{{ site_title | default(value="Blog") }}{% endblock og_title %}">
-  <meta property="og:description" content="{% block og_description %}{{ site_description | default(value="") }}{% endblock og_description %}">
-  <meta name="twitter:card" content="summary_large_image">
-
   {% block head_extra %}{% endblock head_extra %}
 
   <meta name="color-scheme" content="light dark">
@@ -43,7 +37,7 @@
       <a href="{{ home_path }}" class="brand">{{ site_title | default(value="Blog") }}</a>
       <div class="controls">
         {% block header_controls %}{% endblock header_controls %}
-        <button class="icon-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        <button class="icon-btn hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
@@ -90,6 +84,11 @@
     </svg>
   </button>
 
+    {% if available_translations %}
+    <script>
+        window.krikTranslations = {{ available_translations | json_encode() | safe }};
+    </script>
+    {% endif %}
   <script src="{{ assets_path }}/js/main.js"></script>
   <script src="{{ assets_path }}/js/prism-init.js"></script>
   {% block scripts %}{% endblock scripts %}

@@ -3,59 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Basic SEO Meta Tags -->
     <title>Chi Sono - Mirko Caserta</title>
     <meta name="description" content="Sono un Senior Developer a Roma, Italia. Mi occupo principalmente di backend aziendali. Non sono dogmatico riguardo linguaggi di programmazione, framework, p...">
-    <meta name="author" content="Mirko Caserta">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://mirkocaserta.com/pages/about.it.html">
+
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Chi Sono">
-    <meta property="og:description" content="Sono un Senior Developer a Roma, Italia. Mi occupo principalmente di backend aziendali. Non sono dogmatico riguardo linguaggi di programmazione, framework, p...">
-    <meta property="og:url" content="https://mirkocaserta.com/pages/about.it.html">
-    <meta property="og:site_name" content="Mirko Caserta">
-    <meta property="og:locale" content="it">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="generator" content="Krik Static Site Generator">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../assets/css/main.css">
-    <!-- Prism.js theme placeholder - will be loaded dynamically based on theme -->
     <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
 </head>
-<body>
+<body class="">
     <div class="layout-container">
         <nav class="top-nav">
             <a href="../index.html" class="site-title">Mirko Caserta</a>
             <div class="nav-controls">
+                
+
+<div class="language-selector">
+    <select onchange="switchLanguage(this.value)">
+        
+        <option value="en" >
+            English
+        </option>
+        
+        <option value="es" >
+            Español
+        </option>
+        
+        <option value="it" selected>
+            Italiano
+        </option>
+        
+    </select>
+    </div>
+
+
+
                 <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
                     <span class="hamburger-icon">☰</span>
                 </button>
-                
-                <div class="language-selector">
-                    <select onchange="switchLanguage(this.value)">
-                        
-                        <option value="en" >
-                            English
-                        </option>
-                        
-                        <option value="es" >
-                            Español
-                        </option>
-                        
-                        <option value="it" selected>
-                            Italiano
-                        </option>
-                        
-                    </select>
-                </div>
-                
-                
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span class="theme-icon">🌓</span>
                 </button>
@@ -89,12 +76,13 @@
 
         
 
-        <main class="main-content">
-            <header>
-                <h1>Chi Sono</h1>
-                <div class="meta">July 26, 2025</div>
-            </header>
-            <article><p><img src="../images/mirko.jpg" alt="Una foto di Mirko" /></p>
+        <main class="main-content ">
+            
+<header>
+    <h1>Chi Sono</h1>
+    <div class="meta">July 26, 2025</div>
+</header>
+<article><p><img src="../images/mirko.jpg" alt="Una foto di Mirko" /></p>
 <p>Sono un <a href="./cv.html">Senior Developer</a> a Roma, Italia. Mi occupo principalmente
 di backend aziendali. Non sono dogmatico riguardo linguaggi di programmazione,
 framework, piattaforme e architetture perché mi piace vivere all'avanguardia ed
@@ -103,18 +91,18 @@ conoscenza umana.</p>
 <p>Faccio anche <a href="https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO">musica</a> e
 a volte sono conosciuto come <a href="https://www.qrz.com/db/ik0zsn">IK0ZSN</a>.</p>
 </article>
+
         </main>
     </div>
 
-    <!-- Scroll to top button -->
     <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
         <span>↑</span>
     </button>
 
-    <script>
-        window.krikBaseName = 'about';
-    </script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/prism-init.js"></script>
+    
 </body>
 </html>
+
+

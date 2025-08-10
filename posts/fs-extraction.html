@@ -3,47 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Basic SEO Meta Tags -->
     <title>How to extract a filesystem from a disk image - Mirko Caserta</title>
     <meta name="description" content="You need to backup an entire hard disk to a single file. Supposing your disk is at /dev/hda and the backup file is image-file , you’d do: # cat /dev/hda &g...">
-    <meta name="author" content="Mirko Caserta">
-    <meta name="keywords" content="linux, unix, sysadm">
-    <meta name="article:published_time" content="2009-04-18">
-    <meta name="article:modified_time" content="2009-04-18">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://mirkocaserta.com/posts/fs-extraction.html">
+
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="How to extract a filesystem from a disk image">
-    <meta property="og:description" content="You need to backup an entire hard disk to a single file. Supposing your disk is at /dev/hda and the backup file is image-file , you’d do: # cat /dev/hda &g...">
-    <meta property="og:url" content="https://mirkocaserta.com/posts/fs-extraction.html">
-    <meta property="og:site_name" content="Mirko Caserta">
-    <meta property="article:published_time" content="2009-04-18T17:10:00+00:00">
-    <meta property="article:modified_time" content="2009-04-18T17:10:00+00:00">
-    <meta property="article:tag" content="linux"><meta property="article:tag" content="unix"><meta property="article:tag" content="sysadm">
-    <meta property="og:locale" content="en">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="generator" content="Krik Static Site Generator">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../assets/css/main.css">
-    <!-- Prism.js theme placeholder - will be loaded dynamically based on theme -->
     <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
 </head>
-<body>
+<body class="">
     <div class="layout-container">
         <nav class="top-nav">
             <a href="../index.html" class="site-title">Mirko Caserta</a>
             <div class="nav-controls">
+                
+
+
+
                 <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
                     <span class="hamburger-icon">☰</span>
                 </button>
-                
-                
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span class="theme-icon">🌓</span>
                 </button>
@@ -77,15 +58,16 @@
 
         
 
-        <main class="main-content">
-            <div class="back-link">
-                <a href="../index.html">← Back to Home</a>
-            </div>
-            <header>
-                <h1>How to extract a filesystem from a disk image</h1>
-                <div class="meta">April 18, 2009</div>
-            </header>
-            <article><p>You need to backup an entire hard disk to a single file. Supposing your disk is
+        <main class="main-content ">
+            
+<div class="back-link">
+    <a href="../index.html">← Back to Home</a>
+</div>
+<header>
+    <h1>How to extract a filesystem from a disk image</h1>
+    <div class="meta">April 18, 2009</div>
+</header>
+<article><p>You need to backup an entire hard disk to a single file. Supposing your disk is
 at <code>/dev/hda</code> and the backup file is <code>image-file</code>, you’d do:</p>
 <pre><code class="language-bash"># cat /dev/hda &gt; image-file
 </code></pre>
@@ -118,23 +100,23 @@ block 4267680 and is 137985600 blocks long. This translates to:</p>
 <p>Also, you can avoid using dd to extract the partition file by passing the
 <code>offset</code> option to mount.</p>
 </article>
-            
-            <div class="tags">
-                <span class="tag">linux</span><span class="tag">unix</span><span class="tag">sysadm</span>
-            </div>
-            
+
+<div class="tags">
+    <span class="tag">linux</span><span class="tag">unix</span><span class="tag">sysadm</span>
+</div>
+
+
         </main>
     </div>
 
-    <!-- Scroll to top button -->
     <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
         <span>↑</span>
     </button>
 
-    <script>
-        window.krikBaseName = 'fs-extraction';
-    </script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/prism-init.js"></script>
+    
 </body>
 </html>
+
+

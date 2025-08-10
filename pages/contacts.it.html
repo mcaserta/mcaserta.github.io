@@ -3,59 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Basic SEO Meta Tags -->
     <title>Contatti - Mirko Caserta</title>
     <meta name="description" content="Email GitHub Telegram YouTube Instagram Spotify">
-    <meta name="author" content="Mirko Caserta">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://mirkocaserta.com/pages/contacts.it.html">
+
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Contatti">
-    <meta property="og:description" content="Email GitHub Telegram YouTube Instagram Spotify">
-    <meta property="og:url" content="https://mirkocaserta.com/pages/contacts.it.html">
-    <meta property="og:site_name" content="Mirko Caserta">
-    <meta property="og:locale" content="it">
-    
-    <!-- Additional Meta Tags -->
-    <meta name="generator" content="Krik Static Site Generator">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../assets/css/main.css">
-    <!-- Prism.js theme placeholder - will be loaded dynamically based on theme -->
     <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
 </head>
-<body>
+<body class="">
     <div class="layout-container">
         <nav class="top-nav">
             <a href="../index.html" class="site-title">Mirko Caserta</a>
             <div class="nav-controls">
+                
+
+<div class="language-selector">
+    <select onchange="switchLanguage(this.value)">
+        
+        <option value="en" >
+            English
+        </option>
+        
+        <option value="es" >
+            Español
+        </option>
+        
+        <option value="it" selected>
+            Italiano
+        </option>
+        
+    </select>
+    </div>
+
+
+
                 <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
                     <span class="hamburger-icon">☰</span>
                 </button>
-                
-                <div class="language-selector">
-                    <select onchange="switchLanguage(this.value)">
-                        
-                        <option value="en" >
-                            English
-                        </option>
-                        
-                        <option value="es" >
-                            Español
-                        </option>
-                        
-                        <option value="it" selected>
-                            Italiano
-                        </option>
-                        
-                    </select>
-                </div>
-                
-                
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span class="theme-icon">🌓</span>
                 </button>
@@ -89,12 +76,13 @@
 
         
 
-        <main class="main-content">
-            <header>
-                <h1>Contatti</h1>
-                <div class="meta">July 26, 2025</div>
-            </header>
-            <article><ul>
+        <main class="main-content ">
+            
+<header>
+    <h1>Contatti</h1>
+    <div class="meta">July 26, 2025</div>
+</header>
+<article><ul>
 <li><a href="mailto:mirko.caserta@gmail.com">Email</a></li>
 <li><a href="https://github.com/mcaserta">GitHub</a></li>
 <li><a href="https://t.me/mirkocaserta">Telegram</a></li>
@@ -103,18 +91,18 @@
 <li><a href="https://open.spotify.com/artist/0jv0oWHiTvLG9PetrnX5PO">Spotify</a></li>
 </ul>
 </article>
+
         </main>
     </div>
 
-    <!-- Scroll to top button -->
     <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
         <span>↑</span>
     </button>
 
-    <script>
-        window.krikBaseName = 'contacts';
-    </script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/prism-init.js"></script>
+    
 </body>
 </html>
+
+

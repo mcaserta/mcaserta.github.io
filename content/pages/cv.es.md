@@ -14,7 +14,7 @@ desarrollado experiencia en diversos stacks tecnológicos incluyendo plataformas
 cloud (AWS, Google Cloud), arquitecturas de microservicios y frameworks de
 desarrollo modernos. A lo largo de mi carrera, he entregado exitosamente
 soluciones para importantes clientes en varios sectores incluyendo
-telecomunicaciones (Vodafone), viajes (Eden Viaggi), gaming (Betbull) e
+telecomunicaciones (Vodafone), viajes (Eden Viaggi), gaming (BetBull) e
 infraestructura (Terna).
 
 Mi carrera ha progresado de administrador de sistemas a arquitecto de software,
@@ -75,10 +75,10 @@ avanzado.
 IAL es un Instituto de Formación Regional donde impartí cursos sobre Edición de
 Contenido Multimedia, Redes e Internet.
 
-### Administrador de Sistemas, Flashnet Srl; Frosinone, IT — 1996-2000
+### Administrador de Sistemas, FlashNet Srl; Frosinone, IT — 1996-2000
 
 Uno de los primeros Proveedores de Servicios de Internet que operaba en Italia,
-Flashnet tenía un nodo de acceso dial-up con cientos de usuarios en Frosinone.
+FlashNet tenía un nodo de acceso dial-up con cientos de usuarios en Frosinone.
 Operé los servidores Unix y verifiqué el funcionamiento de los servicios de red.
 También participé en un grupo de desarrollo de aplicaciones web de tres capas.
 
@@ -93,7 +93,7 @@ mi productividad y la calidad de mi trabajo.
 ## Know-How
 
 - AI
-  - CoPilot, Claude Code, ChatGPT, MCP
+  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, MCP
 - Protocolos y Herramientas de Análisis de Red
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel
@@ -110,7 +110,7 @@ mi productividad y la calidad de mi trabajo.
     CloudWatch, SNS, SQS, Systems Manager, ...
   - Google Cloud
 - Persistencia
-  - Diseño RDBMS (E-R), Oracle, PL/SQL, MySQL, PostgreSQL, SQL, Hibernate, JPA,
+  - Diseño RDBMS (E-R), Oracle, PL/SQL, MySQL, Postgres, SQL, Hibernate, JPA,
     Spring Data, JDBC, Voldemort, Perl/DBI, BerkeleyDB
 - NoSQL
   - MongoDB, Redis, Elasticsearch, Neo4j, OrientDB

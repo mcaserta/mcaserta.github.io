@@ -9,12 +9,12 @@ pdf: true
 ## Riepilogo
 
 Sono uno sviluppatore senior e architetto del software esperto con oltre 25 anni
-nell'industria IT. Attualmente lavoro presso Alten Spa a Roma. Ho sviluppato
+nell'industria IT. Attualmente lavoro presso Alten S.p.A. a Roma. Ho sviluppato
 competenze in diversi stack tecnologici incluse piattaforme cloud (AWS, Google
 Cloud), architetture di microservizi e framework di sviluppo moderni. Nel corso
 della mia carriera, ho prodotto con successo soluzioni per importanti clienti in
 vari settori tra cui telecomunicazioni (Vodafone), viaggi (Eden Viaggi), gaming
-(Betbull) e infrastrutture (Terna).
+(BetBull) e infrastrutture (Terna).
 
 La mia carriera è progredita da amministratore di sistema ad architetto del
 software, con notevole esperienza nell'istituzione di team di innovazione
@@ -74,9 +74,9 @@ sviluppo web avanzato.
 IAL è un Istituto di Formazione Regionale dove ho tenuto corsi su Editing di
 Contenuti Multimediali, Networking e Internet.
 
-### Amministratore di Sistema, Flashnet Srl; Frosinone, IT — 1996-2000
+### Amministratore di Sistema, FlashNet Srl; Frosinone, IT — 1996-2000
 
-Uno dei primi Internet Service Provider operanti in Italia, Flashnet aveva un
+Uno dei primi Internet Service Provider operanti in Italia, FlashNet aveva un
 nodo di accesso dial-up con centinaia di utenti a Frosinone. Ho gestito i server
 Unix e controllato il funzionamento dei servizi di rete. Ho anche partecipato a
 un gruppo di sviluppo di applicazioni web a tre livelli.
@@ -92,14 +92,14 @@ la mia produttività e la qualità del mio lavoro.
 ## Know-How
 
 - AI
-  - CoPilot, Claude Code, ChatGPT, MCP
+  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, MCP
 - Protocolli e Strumenti di Analisi di Rete
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel
 - Programmazione
   - Linguaggi
-    - Typescript, C, Java, Rust, Scala, Groovy, Objective-C, Perl, Python, PHP,
-      scripting sh/bash, Javascript
+    - TypeScript, C, Java, Rust, Scala, Groovy, Objective-C, Perl, Python, PHP,
+      scripting sh/bash, JavaScript
   - Framework, Librerie
     - Node.js, Spring, Spring Boot, Spring Cloud, RabbitMQ, Camel, ActiveMQ,
       CXF, OSGi, SOAP/Jaxws, REST/Jaxrs, JMS, XML, DTD, XML Schema, JSON,
@@ -109,7 +109,7 @@ la mia produttività e la qualità del mio lavoro.
     CloudWatch, SNS, SQS, Systems Manager, ...
   - Google Cloud
 - Persistenza
-  - Design RDBMS (E-R), Oracle, PL/SQL, MySQL, PostgreSQL, SQL, Hibernate, JPA,
+  - Design RDBMS (E-R), Oracle, PL/SQL, MySQL, Postgres, SQL, Hibernate, JPA,
     Spring Data, JDBC, Voldemort, Perl/DBI, BerkeleyDB
 - NoSQL
   - MongoDB, Redis, Elasticsearch, Neo4j, OrientDB

@@ -13,8 +13,8 @@ in the IT industry, currently working at Alten Spa in Rome. I have developed
 expertise across diverse technology stacks including cloud platforms (AWS,
 Google Cloud), microservices architectures, and modern development frameworks.
 Throughout my career, I have successfully delivered solutions for major clients
-across various sectors including telecommunications (Vodafone), travel (Eden
-Viaggi), gaming (Betbull), and infrastructure (Terna).
+across various sectors, including telecommunications (Vodafone), travel (Eden
+Viaggi), gaming (BetBull), and infrastructure (Terna).
 
 My career has progressed from System Administrator to Software Architect, with
 notable experience establishing technical innovation teams and providing
@@ -44,12 +44,12 @@ my productivity and work quality through emerging technologies.
 
 ### Software Architect, Nexse Srl; Rome, IT — 2003-2019
 
-Established in 2000 by 5 shareholders, Nexse was employing more than a hundred
-IT professionals until it was acquired in 2018. In this company I've covered
-different roles: system administrator, teacher, senior developer and eventually
-software architect.
+Established in 2000 by five shareholders, Nexse was employing more than a
+hundred IT professionals until it was acquired in 2018. In this company I've
+covered different roles: system administrator, teacher, senior developer and
+eventually software architect.
 
-| Client                       | Period    | Product                                                                                                                                                                      | Technologies                                                 |
+| Client                       | Period    | Product                                                                                                                                                                                      | Technologies                                                 |
 | ---------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | Eden Viaggi                  | 2015-2018 | Product Catalog, Flight Cache, New Travel Agents' Portal, Hotel Connectors                                                                                                                   | java, osgi, fuse, orientdb                                   |
 | Vodafone Automotive          | 2014-2015 | Fleet Portal                                                                                                                                                                                 | java, osgi, fuse, oracle                                     |
@@ -72,16 +72,16 @@ advance my knowledge of networks as well as advanced web development.
 IAL is a Regional Training Institute where I held courses on Multimedia Content
 Editing, Networking and the Internet.
 
-### System Administrator, Flashnet Srl; Frosinone, IT — 1996-2000
+### System Administrator, FlashNet Srl; Frosinone, IT — 1996-2000
 
-One of the first Internet Service Providers operating in Italy, Flashnet had a
+One of the first Internet Service Providers operating in Italy, FlashNet had a
 dial-up access node with hundreds of users in Frosinone. I operated the Unix
 servers and checked the operation of network services. I also participated in a
-development group of three tier web applications.
+development group of three-tier web applications.
 
 ## Skills
 
-Since the very beginning of my professional career I mainly worked with open
+Since the very beginning of my professional career, I've mainly worked with open
 source software, which has given me a better understanding of its community,
 processes and strengths. I am passionate about technology, innovation and
 usability, and I'm always on the lookout for new ways to advance my productivity
@@ -90,14 +90,14 @@ and the quality of my work.
 ## Know-How
 
 - AI
-  - CoPilot, Claude Code, ChatGPT, MCP
+  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, MCP
 - Protocols and Network Analysis Tools
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel
 - Programming
   - Languages
-    - Typescript, C, Java, Rust, Scala, Groovy, Objective-C, Perl, Python, PHP,
-      sh/bash scripting, Javascript
+    - TypeScript, C, Java, Rust, Scala, Groovy, Objective-C, Perl, Python, PHP,
+      sh/bash scripting, JavaScript
   - Framework, Libraries
     - Node.js, Spring, Spring Boot, Spring Cloud, RabbitMQ, Camel, ActiveMQ,
       CXF, OSGi, SOAP/Jaxws, REST/Jaxrs, JMS, XML, DTD, XML Schema, JSON,
@@ -107,7 +107,7 @@ and the quality of my work.
     CloudWatch, SNS, SQS, Systems Manager, ...
   - Google Cloud
 - Persistence
-  - RDBMS Design (E-R), Oracle, PL/SQL, MySQL, PostgreSQL, SQL, Hibernate, JPA,
+  - RDBMS Design (E-R), Oracle, PL/SQL, MySQL, Postgres, SQL, Hibernate, JPA,
     Spring Data, JDBC, Voldemort, Perl/DBI, BerkeleyDB
 - NoSQL
   - MongoDB, Redis, Elasticsearch, Neo4j, OrientDB

@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae - Mirko Caserta</title>
-    <meta name="description" content="Resumen Soy un desarrollador senior y arquitecto de software experimentado con más de 25 años en la industria TI, actualmente trabajando en Alten Spa en Ro...">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Vitae - Mirko Caserta</title>
+  <meta name="description" content="Resumen Soy un desarrollador senior y arquitecto de software experimentado con más de 25 años en la industria TI, actualmente trabajando en Alten Spa en Ro...">
 
-    
+  
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1f2937">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
+
+  <script>
+    // Initialize theme ASAP to avoid FOUC
+    (function() {
+      try {
+        var saved = localStorage.getItem('solstice-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body class="">
-    <div class="layout-container has-toc">
-        <nav class="top-nav">
-            <a href="../index.html" class="site-title">Mirko Caserta</a>
-            <div class="nav-controls">
-                
+  <!-- Subtle gradient background -->
+  <div class="solstice-bg" aria-hidden="true"></div>
 
-<div class="language-selector">
-    <select onchange="switchLanguage(this.value)">
+  <div class="layout-container has-toc">
+    <header class="topbar">
+      <a href="../index.html" class="brand">Mirko Caserta</a>
+      <div class="controls">
         
-        <option value="en" >
-            English
-        </option>
-        
-        <option value="es" selected>
-            Español
-        </option>
-        
-        <option value="it" >
-            Italiano
-        </option>
-        
+
+  <div class="language-selector">
+    <select onchange="switchLanguage(this.value)" aria-label="Change language">
+      
+      <option value="en" >English</option>
+      
+      <option value="es" selected>Español</option>
+      
+      <option value="it" >Italiano</option>
+      
     </select>
-    </div>
+  </div>
 
 
-<a href="cv.es.pdf" class="pdf-download" aria-label="Download PDF" title="Download as PDF">
-    <span class="pdf-icon">📄</span>
-</a>
+  <a href="cv.es.pdf" class="pdf-download" aria-label="Download PDF" title="Download as PDF">📄</a>
 
 
-                <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                    <span class="hamburger-icon">☰</span>
-                </button>
-                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                    <span class="theme-icon">🌓</span>
-                </button>
-            </div>
-        </nav>
+        <button class="icon-btn hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">●</span>
+        </button>
+      </div>
+    </header>
 
-        <!-- Mobile dropdown menu -->
-        <div class="mobile-menu" id="mobile-menu">
-            <ul class="mobile-page-links">
-                
-                <li><a href="about.html">About</a></li>
-                
-                <li><a href="contacts.html">Contacts</a></li>
-                
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                
-            </ul>
-        </div>
-
-        <aside class="sidebar">
-            <ul class="page-links">
-                
-                <li><a href="about.html">About</a></li>
-                
-                <li><a href="contacts.html">Contacts</a></li>
-                
-                <li><a href="cv.html">Curriculum Vitae</a></li>
-                
-            </ul>
-        </aside>
-
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <ul class="mobile-page-links">
         
-        <aside class="toc-sidebar">
-            <div class="toc">
-                <h2>Table of Contents</h2>
-                <ul class="toc">
+        <li><a href="about.html">About</a></li>
+        
+        <li><a href="contacts.html">Contacts</a></li>
+        
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        
+      </ul>
+    </nav>
+
+    <aside class="sidebar" aria-label="Pages">
+      <ul class="page-links">
+        
+        <li><a href="about.html">About</a></li>
+        
+        <li><a href="contacts.html">Contacts</a></li>
+        
+        <li><a href="cv.html">Curriculum Vitae</a></li>
+        
+      </ul>
+    </aside>
+
+    
+    <aside class="toc-sidebar" aria-label="Table of contents">
+      <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul class="toc">
   <li><a href="#resumen">Resumen</a></li>
   <li><a href="#experiencia">Experiencia</a></li>
     <li><a href="#senior-developer-alten-spa-roma-it-2022presente">Senior Developer, Alten Spa; Roma, IT — 2022-presente</a></li>
@@ -94,17 +105,23 @@
   <li><a href="#habilidades">Habilidades</a></li>
   <li><a href="#knowhow">Know-How</a></li>
 </ul>
-            </div>
-        </aside>
-        
+      </div>
+    </aside>
+    
 
-        <main class="main-content ">
-            
-<header>
+    <main class="main-content  with-toc" role="main">
+      
+<article class="page">
+  <header class="page-header">
     <h1>Curriculum Vitae</h1>
-    <div class="meta">July 26, 2025</div>
-</header>
-<article><h2 id="resumen">Resumen</h2>
+    
+    <div class="meta">
+      <span class="meta-item">July 26, 2025</span>
+      
+    </div>
+    
+  </header>
+  <div class="page-content"><h2 id="resumen">Resumen</h2>
 <p>Soy un desarrollador senior y arquitecto de software experimentado con más de 25
 años en la industria TI, actualmente trabajando en Alten Spa en Roma. He
 desarrollado experiencia en diversos stacks tecnológicos incluyendo plataformas
@@ -250,18 +267,31 @@ GNU make</li>
 </ul>
 </li>
 </ul>
+</div>
 </article>
 
-        </main>
-    </div>
+    </main>
+  </div>
 
-    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
-        <span>↑</span>
-    </button>
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/prism-init.js"></script>
     
+    <script>
+        window.krikTranslations = [{"is_current":"false","lang":"en","lang_name":"English","path":"cv.html"},{"is_current":"true","lang":"es","lang_name":"Español","path":"cv.es.html"},{"is_current":"false","lang":"it","lang_name":"Italiano","path":"cv.it.html"}];
+    </script>
+    
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/prism-init.js"></script>
+  
+<script>
+  // Used by switchLanguage in theme JS
+  window.krikBaseName = "cv";
+</script>
+
 </body>
 </html>
 

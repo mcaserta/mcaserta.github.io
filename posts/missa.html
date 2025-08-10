@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Missa - Mirko Caserta</title>
-    <meta name="description" content="Long Story Short Questo è un album di musica improvvisata. Il suono è quello dell'organo di Hans Zimmer in Interstellar. L'ispirazione è chiaramente eccle...">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missa - Mirko Caserta</title>
+  <meta name="description" content="Long Story Short Questo è un album di musica improvvisata. Il suono è quello dell'organo di Hans Zimmer in Interstellar. L'ispirazione è chiaramente eccle...">
+
+  
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1f2937">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
+
+  <script>
+    // Initialize theme ASAP to avoid FOUC
+    (function() {
+      try {
+        var saved = localStorage.getItem('solstice-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <!-- Subtle gradient background -->
+  <div class="solstice-bg" aria-hidden="true"></div>
+
+  <div class="layout-container">
+    <header class="topbar">
+      <a href="../index.html" class="brand">Mirko Caserta</a>
+      <div class="controls">
+        
+
+
+
+        <button class="icon-btn hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">●</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <ul class="mobile-page-links">
+        
+        <li><a href="../pages/about.html">About</a></li>
+        
+        <li><a href="../pages/contacts.html">Contacts</a></li>
+        
+        <li><a href="../pages/cv.html">Curriculum Vitae</a></li>
+        
+      </ul>
+    </nav>
+
+    <aside class="sidebar" aria-label="Pages">
+      <ul class="page-links">
+        
+        <li><a href="../pages/about.html">About</a></li>
+        
+        <li><a href="../pages/contacts.html">Contacts</a></li>
+        
+        <li><a href="../pages/cv.html">Curriculum Vitae</a></li>
+        
+      </ul>
+    </aside>
 
     
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="../feed.xml">
-</head>
-<body class="">
-    <div class="layout-container">
-        <nav class="top-nav">
-            <a href="../index.html" class="site-title">Mirko Caserta</a>
-            <div class="nav-controls">
-                
+    <main class="main-content " role="main">
+      
+<div class="back-link"><a href="../index.html">← Back to Home</a></div>
 
-
-
-                <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                    <span class="hamburger-icon">☰</span>
-                </button>
-                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                    <span class="theme-icon">🌓</span>
-                </button>
-            </div>
-        </nav>
-
-        <!-- Mobile dropdown menu -->
-        <div class="mobile-menu" id="mobile-menu">
-            <ul class="mobile-page-links">
-                
-                <li><a href="../pages/about.html">About</a></li>
-                
-                <li><a href="../pages/contacts.html">Contacts</a></li>
-                
-                <li><a href="../pages/cv.html">Curriculum Vitae</a></li>
-                
-            </ul>
-        </div>
-
-        <aside class="sidebar">
-            <ul class="page-links">
-                
-                <li><a href="../pages/about.html">About</a></li>
-                
-                <li><a href="../pages/contacts.html">Contacts</a></li>
-                
-                <li><a href="../pages/cv.html">Curriculum Vitae</a></li>
-                
-            </ul>
-        </aside>
-
-        
-
-        <main class="main-content ">
-            
-<div class="back-link">
-    <a href="../index.html">← Back to Home</a>
-</div>
-<header>
+<article class="post">
+  <header class="post-header">
     <h1>Missa</h1>
-    <div class="meta">September 15, 2024</div>
-</header>
-<article><p><img src="../images/posts/missa-album-cover.png" alt="album cover" /></p>
+    <div class="post-meta">
+      <time datetime="2024-09-15">September 15, 2024</time>
+      
+      
+    </div>
+  </header>
+
+  <div class="post-content"><p><img src="../images/posts/missa-album-cover.png" alt="album cover" /></p>
 <h2>Long Story Short</h2>
 <p>Questo è un album di musica improvvisata. Il suono è quello dell'organo di Hans
 Zimmer in Interstellar. L'ispirazione è chiaramente ecclesiastica. Ho provato a
@@ -125,23 +149,35 @@ cinque del pomeriggio:</p>
 <a href="https://www.synapse-audio.com/thelegendhz.html">The Legend HZ</a> e il preset
 si chiama <em>Interstellar</em></p>
 </div>
-</article>
-
-<div class="tags">
-    <span class="tag">music</span>
 </div>
 
-
-        </main>
+  
+  <footer class="post-footer">
+    <div class="post-tags">
+      <span class="tag"># music</span>
     </div>
+  </footer>
+  
+</article>
 
-    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
-        <span>↑</span>
-    </button>
+    </main>
+  </div>
 
-    <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/prism-init.js"></script>
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
     
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/prism-init.js"></script>
+  
+<script>
+  // Used by switchLanguage in theme JS
+  window.krikBaseName = "missa";
+</script>
+
 </body>
 </html>
 

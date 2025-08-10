@@ -1,487 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirko Caserta</title>
-    <meta name="description" content="Mirko Caserta - Latest posts and articles">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirko Caserta</title>
+  <meta name="description" content="Mirko Caserta - Latest posts and articles">
+
+  
+
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#1f2937">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="feed.xml">
+
+  <script>
+    // Initialize theme ASAP to avoid FOUC
+    (function() {
+      try {
+        var saved = localStorage.getItem('solstice-theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body class="">
+  <!-- Subtle gradient background -->
+  <div class="solstice-bg" aria-hidden="true"></div>
+
+  <div class="layout-container">
+    <header class="topbar">
+      <a href="index.html" class="brand">Mirko Caserta</a>
+      <div class="controls">
+        
+        <button class="icon-btn hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">●</span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <ul class="mobile-page-links">
+        
+        <li><a href="pages/about.html">About</a></li>
+        
+        <li><a href="pages/contacts.html">Contacts</a></li>
+        
+        <li><a href="pages/cv.html">Curriculum Vitae</a></li>
+        
+      </ul>
+    </nav>
+
+    <aside class="sidebar" aria-label="Pages">
+      <ul class="page-links">
+        
+        <li><a href="pages/about.html">About</a></li>
+        
+        <li><a href="pages/contacts.html">Contacts</a></li>
+        
+        <li><a href="pages/cv.html">Curriculum Vitae</a></li>
+        
+      </ul>
+    </aside>
 
     
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="Mirko Caserta - Feed" href="feed.xml">
-</head>
-<body class="">
-    <div class="layout-container">
-        <nav class="top-nav">
-            <a href="index.html" class="site-title">Mirko Caserta</a>
-            <div class="nav-controls">
-                
-                <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
-                    <span class="hamburger-icon">☰</span>
-                </button>
-                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
-                    <span class="theme-icon">🌓</span>
-                </button>
-            </div>
-        </nav>
-
-        <!-- Mobile dropdown menu -->
-        <div class="mobile-menu" id="mobile-menu">
-            <ul class="mobile-page-links">
-                
-                <li><a href="pages/about.html">About</a></li>
-                
-                <li><a href="pages/contacts.html">Contacts</a></li>
-                
-                <li><a href="pages/cv.html">Curriculum Vitae</a></li>
-                
-            </ul>
-        </div>
-
-        <aside class="sidebar">
-            <ul class="page-links">
-                
-                <li><a href="pages/about.html">About</a></li>
-                
-                <li><a href="pages/contacts.html">Contacts</a></li>
-                
-                <li><a href="pages/cv.html">Curriculum Vitae</a></li>
-                
-            </ul>
-        </aside>
-
-        
-
-        <main class="main-content index">
-            
-<header>
-    <h1>Mirko Caserta</h1>
+    <main class="main-content index" role="main">
+      
+<header class="hero">
+  <h1>Mirko Caserta</h1>
+  
+  <p class="subtitle">Mirko Caserta - Latest posts and articles</p>
+  
 </header>
-<ul class="post-list">
 
-    <li class="post-item">
-        <a class="post-card" href="posts/krik.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Krik</h2>
-                
-                <time class="post-date" datetime="2025-07-27">Jul 27, 2025</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">software</span>
-                
-                <span class="tag">ai</span>
-                
-                <span class="tag">claude code</span>
-                
-                <span class="tag">anthropic</span>
-                
-                <span class="tag">rust</span>
-                
-            </div>
-            
-        </a>
-    </li>
 
-    <li class="post-item">
-        <a class="post-card" href="posts/missa.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Missa</h2>
-                
-                <time class="post-date" datetime="2024-09-15">Sep 15, 2024</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">music</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/firefox-extensions.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Firefox extensions I can't live without</h2>
-                
-                <time class="post-date" datetime="2023-01-30">Jan 30, 2023</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">software</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/post-to-mastodon.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Posting to Mastodon</h2>
-                
-                <time class="post-date" datetime="2022-12-26">Dec 26, 2022</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">mastodon</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/software.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Software I use everyday</h2>
-                
-                <time class="post-date" datetime="2022-12-23">Dec 23, 2022</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">software</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/ballads.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Ballads</h2>
-                
-                <time class="post-date" datetime="2022-10-17">Oct 17, 2022</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">music</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/the-last-time-i-had-fun.html">
-            <div class="post-card-header">
-                <h2 class="post-title">The Last Time I Had Fun</h2>
-                
-                <time class="post-date" datetime="2022-10-15">Oct 15, 2022</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">music</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/ear-candy.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Ear Candy</h2>
-                
-                <time class="post-date" datetime="2022-07-25">Jul 25, 2022</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">music</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/until-further-notice.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Until Further Notice</h2>
-                
-                <time class="post-date" datetime="2022-03-23">Mar 23, 2022</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">music</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/bruce.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Bruce: cryptography in Java made easy</h2>
-                
-                <time class="post-date" datetime="2021-05-31">May 31, 2021</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">java</span>
-                
-                <span class="tag">cryptography</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/add.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Anxiety Driven Development</h2>
-                
-                <time class="post-date" datetime="2021-05-26">May 26, 2021</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">software development</span>
-                
-                <span class="tag">anxiety</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/matrixv2.html">
-            <div class="post-card-header">
-                <h2 class="post-title">The Matrix Screensaver for Commodore 64, version 2</h2>
-                
-                <time class="post-date" datetime="2021-05-20">May 20, 2021</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">c64</span>
-                
-                <span class="tag">programming</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/matrix.html">
-            <div class="post-card-header">
-                <h2 class="post-title">The Matrix Screensaver for Commodore 64</h2>
-                
-                <time class="post-date" datetime="2021-05-11">May 11, 2021</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">c64</span>
-                
-                <span class="tag">programming</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/time-series.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Time Series Data and CompletableFuture example in Java</h2>
-                
-                <time class="post-date" datetime="2021-02-04">Feb 04, 2021</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">time-series-data</span>
-                
-                <span class="tag">time-series</span>
-                
-                <span class="tag">completablefuture</span>
-                
-                <span class="tag">java</span>
-                
-                <span class="tag">concurrency</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/salute-mentale.it.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Lettera aperta sulla salute mentale</h2>
-                
-                <time class="post-date" datetime="2020-02-01">Feb 01, 2020</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">salute mentale</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/think-of-your-ears-as-eyes.html">
-            <div class="post-card-header">
-                <h2 class="post-title">L'Orecchio Musicale: Come Funziona e Come Svilupparlo</h2>
-                
-                <time class="post-date" datetime="2018-10-28">Oct 28, 2018</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">ear training</span>
-                
-                <span class="tag">musica</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/kind-of-non-floating-duck.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Kind of papera che non galleggia</h2>
-                
-                <time class="post-date" datetime="2018-10-18">Oct 18, 2018</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">musica</span>
-                
-                <span class="tag">jazz</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/time.html">
-            <div class="post-card-header">
-                <h2 class="post-title">An Introduction to Time Representation, Serialization and Management in Software</h2>
-                
-                <time class="post-date" datetime="2013-04-15">Apr 15, 2013</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">time</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/java-logging.it.html">
-            <div class="post-card-header">
-                <h2 class="post-title">Scrivi messaggi di log decenti, altrimenti Gesù piange</h2>
-                
-                <time class="post-date" datetime="2009-10-02">Oct 02, 2009</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">logging</span>
-                
-                <span class="tag">java</span>
-                
-                <span class="tag">software development</span>
-                
-            </div>
-            
-        </a>
-    </li>
-
-    <li class="post-item">
-        <a class="post-card" href="posts/fs-extraction.html">
-            <div class="post-card-header">
-                <h2 class="post-title">How to extract a filesystem from a disk image</h2>
-                
-                <time class="post-date" datetime="2009-04-18">Apr 18, 2009</time>
-                
-            </div>
-            
-            <div class="post-tags">
-                
-                <span class="tag">linux</span>
-                
-                <span class="tag">unix</span>
-                
-                <span class="tag">sysadm</span>
-                
-            </div>
-            
-        </a>
-    </li>
+<ul class="post-grid">
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/krik.html">
+      <h2 class="post-title">Krik</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2025-07-27">Jul 27, 2025</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># software</span>
+        
+        <span class="tag"># ai</span>
+        
+        <span class="tag"># claude code</span>
+        
+        <span class="tag"># anthropic</span>
+        
+        <span class="tag"># rust</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/missa.html">
+      <h2 class="post-title">Missa</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2024-09-15">Sep 15, 2024</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># music</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/firefox-extensions.html">
+      <h2 class="post-title">Firefox extensions I can't live without</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2023-01-30">Jan 30, 2023</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># software</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/post-to-mastodon.html">
+      <h2 class="post-title">Posting to Mastodon</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2022-12-26">Dec 26, 2022</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># mastodon</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/software.html">
+      <h2 class="post-title">Software I use everyday</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2022-12-23">Dec 23, 2022</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># software</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/ballads.html">
+      <h2 class="post-title">Ballads</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2022-10-17">Oct 17, 2022</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># music</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/the-last-time-i-had-fun.html">
+      <h2 class="post-title">The Last Time I Had Fun</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2022-10-15">Oct 15, 2022</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># music</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/ear-candy.html">
+      <h2 class="post-title">Ear Candy</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2022-07-25">Jul 25, 2022</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># music</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/until-further-notice.html">
+      <h2 class="post-title">Until Further Notice</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2022-03-23">Mar 23, 2022</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># music</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/bruce.html">
+      <h2 class="post-title">Bruce: cryptography in Java made easy</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2021-05-31">May 31, 2021</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># java</span>
+        
+        <span class="tag"># cryptography</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/add.html">
+      <h2 class="post-title">Anxiety Driven Development</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2021-05-26">May 26, 2021</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># software development</span>
+        
+        <span class="tag"># anxiety</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/matrixv2.html">
+      <h2 class="post-title">The Matrix Screensaver for Commodore 64, version 2</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2021-05-20">May 20, 2021</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># c64</span>
+        
+        <span class="tag"># programming</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/matrix.html">
+      <h2 class="post-title">The Matrix Screensaver for Commodore 64</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2021-05-11">May 11, 2021</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># c64</span>
+        
+        <span class="tag"># programming</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/time-series.html">
+      <h2 class="post-title">Time Series Data and CompletableFuture example in Java</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2021-02-04">Feb 04, 2021</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># time-series-data</span>
+        
+        <span class="tag"># time-series</span>
+        
+        <span class="tag"># completablefuture</span>
+        
+        <span class="tag"># java</span>
+        
+        <span class="tag"># concurrency</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/salute-mentale.it.html">
+      <h2 class="post-title">Lettera aperta sulla salute mentale</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2020-02-01">Feb 01, 2020</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># salute mentale</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/think-of-your-ears-as-eyes.html">
+      <h2 class="post-title">L'Orecchio Musicale: Come Funziona e Come Svilupparlo</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2018-10-28">Oct 28, 2018</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># ear training</span>
+        
+        <span class="tag"># musica</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/kind-of-non-floating-duck.html">
+      <h2 class="post-title">Kind of papera che non galleggia</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2018-10-18">Oct 18, 2018</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># musica</span>
+        
+        <span class="tag"># jazz</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/time.html">
+      <h2 class="post-title">An Introduction to Time Representation, Serialization and Management in Software</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2013-04-15">Apr 15, 2013</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># time</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/java-logging.it.html">
+      <h2 class="post-title">Scrivi messaggi di log decenti, altrimenti Gesù piange</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2009-10-02">Oct 02, 2009</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># logging</span>
+        
+        <span class="tag"># java</span>
+        
+        <span class="tag"># software development</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
+  <li class="post-item">
+    <a class="post-card" href="posts/fs-extraction.html">
+      <h2 class="post-title">How to extract a filesystem from a disk image</h2>
+      
+      <div class="post-meta">
+        
+        <time class="post-date" datetime="2009-04-18">Apr 18, 2009</time>
+        
+        
+      </div>
+      
+      <div class="post-tags">
+        
+        <span class="tag"># linux</span>
+        
+        <span class="tag"># unix</span>
+        
+        <span class="tag"># sysadm</span>
+        
+      </div>
+      
+    </a>
+  </li>
+  
 
 </ul>
 
-        </main>
-    </div>
+    </main>
+  </div>
 
-    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
-        <span>↑</span>
-    </button>
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/prism-init.js"></script>
     
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/prism-init.js"></script>
+  
 </body>
 </html>
 

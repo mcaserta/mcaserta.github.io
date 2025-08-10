@@ -42,15 +42,15 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
     
     /* Typography Scale */
-    --font-size-xs: 0.75rem;     /* 12px */
-    --font-size-sm: 0.875rem;    /* 14px */
-    --font-size-base: 1rem;      /* 16px */
-    --font-size-md: 1.125rem;    /* 18px */
-    --font-size-lg: 1.25rem;     /* 20px */
-    --font-size-xl: 1.5rem;      /* 24px */
-    --font-size-2xl: 1.875rem;   /* 30px */
-    --font-size-3xl: 2.25rem;    /* 36px */
-    --font-size-4xl: 3rem;       /* 48px */
+    --font-size-xs: 0.9rem;      /* 14px */
+    --font-size-sm: 1rem;        /* 16px */
+    --font-size-base: 1.2rem;    /* 19px */
+    --font-size-md: 1.3rem;      /* 21px */
+    --font-size-lg: 1.45rem;     /* 23px */
+    --font-size-xl: 1.75rem;     /* 28px */
+    --font-size-2xl: 2.2rem;     /* 35px */
+    --font-size-3xl: 2.6rem;     /* 42px */
+    --font-size-4xl: 3.5rem;     /* 56px */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -736,15 +736,15 @@ pre code {
 @media (max-width: 768px) {
     :root {
         /* Reduce font sizes on mobile */
-        --font-size-xs: 0.7rem;      /* 11px */
-        --font-size-sm: 0.8rem;      /* 13px */
-        --font-size-base: 0.9rem;    /* 14px */
-        --font-size-md: 1rem;        /* 16px */
-        --font-size-lg: 1.125rem;    /* 18px */
-        --font-size-xl: 1.25rem;     /* 20px */
-        --font-size-2xl: 1.5rem;     /* 24px */
-        --font-size-3xl: 1.875rem;   /* 30px */
-        --font-size-4xl: 2.25rem;    /* 36px */
+        --font-size-xs: 0.8rem;      /* 13px */
+        --font-size-sm: 0.9rem;      /* 14px */
+        --font-size-base: 1rem;      /* 16px */
+        --font-size-md: 1.15rem;     /* 18px */
+        --font-size-lg: 1.3rem;      /* 21px */
+        --font-size-xl: 1.45rem;     /* 23px */
+        --font-size-2xl: 1.75rem;    /* 28px */
+        --font-size-3xl: 2.2rem;     /* 35px */
+        --font-size-4xl: 2.6rem;     /* 42px */
     }
     
     .top-nav {

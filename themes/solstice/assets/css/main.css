@@ -68,8 +68,8 @@ body {
 }
 .brand {
   font-weight: 700; letter-spacing: -0.015em; text-decoration: none;
-  background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
-  -webkit-background-clip: text; background-clip: text; color: transparent;
+  /* Do not override background-image set by generic anchor rules */
+  color: inherit;
   font-size: var(--fs-xl);
 }
 .controls { display: flex; align-items: center; gap: 10px; }
@@ -96,14 +96,14 @@ body {
 .page-links { list-style: none; margin: 0; padding: 0; }
 .page-links a { display: block; padding: 10px 12px; text-decoration: none; color: var(--text-dim);
   border-radius: 12px; transition: color .15s ease, background .15s ease, transform .15s ease; }
-.page-links a:hover { color: var(--text); background: var(--bg-soft); transform: translateX(2px); }
+.page-links a:hover { color: var(--text); background-color: var(--bg-soft); transform: translateX(2px); }
 
 .toc-sidebar { position: fixed; top: 72px; right: 0; width: 260px; height: calc(100vh - 72px);
   padding: 18px 18px 28px; border-left: 1px solid var(--border);
   background: color-mix(in oklab, var(--bg-elev) 86%, transparent); overflow-y: auto; }
 .toc h2 { margin: 0 0 12px; font-size: var(--fs-lg); color: var(--text); }
 .toc a { color: var(--text-dim); text-decoration: none; display: block; padding: 6px 8px; border-left: 2px solid transparent; border-radius: 8px; }
-.toc a:hover { color: var(--text); background: var(--bg-soft); border-left-color: var(--brand-2); }
+.toc a:hover { color: var(--text); background-color: var(--bg-soft); border-left-color: var(--brand-2); }
 .toc .toc-h2 { padding-left: 8px; }
 .toc .toc-h3 { padding-left: 20px; }
 .toc .toc-h4 { padding-left: 32px; }
@@ -114,7 +114,7 @@ body {
 .mobile-menu.show { transform: translateY(0); }
 .mobile-page-links { list-style: none; margin: 0; padding: 14px; }
 .mobile-page-links a { display: block; padding: 12px; border-radius: 10px; color: var(--text); text-decoration: none; }
-.mobile-page-links a:hover { background: var(--bg-soft); }
+.mobile-page-links a:hover { background-color: var(--bg-soft); }
 
 /* Main */
 .main-content { max-width: 860px; margin: 0 auto; padding: 120px 24px 48px; }

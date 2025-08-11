@@ -92,7 +92,7 @@ la mia produttività e la qualità del mio lavoro.
 ## Know-How
 
 - AI
-  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, MCP
+  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, Gemini, MCP
 - Protocolli e Strumenti di Analisi di Rete
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel

@@ -90,7 +90,7 @@ and the quality of my work.
 ## Know-How
 
 - AI
-  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, MCP
+  - CoPilot, Claude Code, Cursor, ChatGPT, Perplexity, Gemini, MCP
 - Protocols and Network Analysis Tools
   - TCP, IP, UDP, ICMP, ARP, DHCP, DNS, POP3, SMTP, HTTP, SSL, TLS, SSH, N-Map,
     Wireshark, NetCat, HPing, STunnel

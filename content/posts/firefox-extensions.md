@@ -13,7 +13,5 @@ These are a bunch of essential Firefox extensions I use:
   removes the annoying link-conversion at Google Search, Maps, etc
 - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/):
   an efficient wide-spectrum content blocker
-- [Enhancer for YouTube](https://addons.mozilla.org/en-US/firefox/addon/enhancer-for-youtube/):
-  take control of YouTube and boost your user experience
 - [Bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/):
   a secure and free password manager for all of your devices

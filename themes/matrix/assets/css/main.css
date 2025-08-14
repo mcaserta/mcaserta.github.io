@@ -128,6 +128,22 @@ body.matrix {
 }
 .toc-sidebar .toc h2 { margin-top: 0; font-size: 14px; color: var(--text-dim); }
 
+/* Make TOC links look like page list sidebar links */
+.toc-sidebar .toc ul { list-style: none; padding: 0; margin: 0; }
+.toc-sidebar .toc li { margin: 0; }
+.toc-sidebar .toc a {
+  display: block;
+  padding: 8px 10px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: 8px;
+}
+.toc-sidebar .toc a:hover {
+  background: rgba(0, 255, 65, 0.08);
+  color: var(--accent);
+}
+.toc-sidebar .toc ul ul { padding-left: 12px; }
+
 /* Main content */
 .main-content { min-width: 0; grid-column: 2; grid-row: 2; }
 .post-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }

@@ -63,12 +63,19 @@ initTheme();
     let columns = Math.floor(canvas.width / fontSize);
     let drops = [];
     let seeds = [];
+    let trailLengths = [];
+    const minTrailRows = 8;
+    const maxTrailRows = 28;
     let lastTime = null;
 
     function resetDrops() {
         columns = Math.floor(canvas.width / fontSize);
         drops = Array.from({ length: columns }, () => Math.random() * canvas.height / fontSize);
-        seeds = Array.from({ length: columns }, (_, i) => (Math.random() * 4294967296) >>> 0);
+        seeds = Array.from({ length: columns }, () => (Math.random() * 4294967296) >>> 0);
+        trailLengths = Array.from(
+            { length: columns },
+            () => Math.floor(minTrailRows + Math.random() * (maxTrailRows - minTrailRows + 1))
+        );
     }
 
     function nextRand(index) {
@@ -92,14 +99,29 @@ initTheme();
         ctx.fillStyle = 'rgba(0, 0, 0, ' + alpha.toFixed(4) + ')';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        ctx.fillStyle = '#00ff41';
         ctx.font = fontSize + 'px "JetBrains Mono", monospace';
 
         for (let i = 0; i < drops.length; i++) {
-            const text = characters.charAt(Math.floor(nextRand(i) * characters.length));
             const x = i * fontSize;
             const yPx = drops[i] * fontSize;
-            ctx.fillText(text, x, yPx);
+
+            // Draw head + trail with per-column randomized length
+            const length = trailLengths[i] || minTrailRows;
+            for (let k = 0; k <= length; k++) {
+                const yk = yPx - k * fontSize;
+                if (yk < -fontSize) break; // off top; remaining will be off-screen too
+                if (yk > canvas.height) continue; // off bottom; still need to advance head
+
+                const ch = characters.charAt(Math.floor(nextRand(i) * characters.length));
+                if (k === 0) {
+                    // brighter head
+                    ctx.fillStyle = 'rgba(184, 255, 206, 1)';
+                } else {
+                    const alphaTail = Math.max(0, 1 - k / (length + 1));
+                    ctx.fillStyle = 'rgba(0, 255, 65, ' + (alphaTail * 0.9).toFixed(3) + ')';
+                }
+                ctx.fillText(ch, x, yk);
+            }
 
             // Advance by rows per second scaled by dt
             drops[i] += rowsPerSecond * dt;
@@ -112,6 +134,10 @@ initTheme();
                     drops[i] = 0;
                     // Reseed this column so its sequence changes on restart
                     seeds[i] = (Math.random() * 4294967296) >>> 0;
+                    // Randomize trail length on restart
+                    trailLengths[i] = Math.floor(
+                        minTrailRows + Math.random() * (maxTrailRows - minTrailRows + 1)
+                    );
                 }
             }
         }

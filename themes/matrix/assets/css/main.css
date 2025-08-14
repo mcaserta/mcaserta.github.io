@@ -122,6 +122,14 @@ html[data-theme="light"] .mobile-page-links a:hover {
 }
 .hamburger-menu:hover, .theme-toggle:hover, .toc-toggle:hover { color: var(--accent); border-color: var(--accent); }
 
+/* Hide hamburger and TOC toggle on desktop */
+@media (min-width: 1200px) {
+  .hamburger-menu,
+  .toc-toggle {
+    display: none;
+  }
+}
+
 /* TOC Sidebar */
 .toc-sidebar {
   grid-column: 3;

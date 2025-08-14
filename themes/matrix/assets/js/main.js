@@ -104,20 +104,20 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleScrollToTopButton();
 });
 
-// Digital rain-inspired left-to-right text reveal on sidebar links
-(function initSidebarRainHover() {
+// Digital rain-inspired left-to-right text reveal on hover (sidebar + index posts)
+(function initRainHover() {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
     const GLYPHS = 'アァカサタナハマヤャラワガ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-    function runRainReveal(anchor) {
+    function runRainReveal(targetEl) {
         if (prefersReduced.matches) return;
-        if (!anchor || anchor.dataset.rainAnimating === '1') return;
-        const original = anchor.textContent || '';
+        if (!targetEl || targetEl.dataset.rainAnimating === '1') return;
+        const original = targetEl.textContent || '';
         if (!original.trim()) return;
 
-        anchor.dataset.rainAnimating = '1';
-        anchor.dataset.rainOriginal = original;
-        anchor.classList.add('link-rain-anim');
+        targetEl.dataset.rainAnimating = '1';
+        targetEl.dataset.rainOriginal = original;
+        targetEl.classList.add('link-rain-anim');
 
         const length = original.length;
         const durationMs = Math.max(280, Math.min(520, Math.round(length * 22)));
@@ -135,14 +135,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     out += GLYPHS.charAt(Math.floor(Math.random() * GLYPHS.length));
                 }
             }
-            anchor.textContent = out;
+            targetEl.textContent = out;
 
             if (t < 1) {
                 requestAnimationFrame(frame);
             } else {
-                anchor.textContent = original;
-                anchor.classList.remove('link-rain-anim');
-                anchor.dataset.rainAnimating = '0';
+                targetEl.textContent = original;
+                targetEl.classList.remove('link-rain-anim');
+                targetEl.dataset.rainAnimating = '0';
             }
         }
 
@@ -150,13 +150,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function bindLinks() {
-        const selectors = ['.page-links a', '.toc-sidebar .toc a'];
-        selectors.forEach(sel => {
+        // Sidebar links
+        ['.page-links a', '.toc-sidebar .toc a'].forEach(sel => {
             document.querySelectorAll(sel).forEach(a => {
                 if (a.dataset.rainBound === '1') return;
                 a.dataset.rainBound = '1';
                 a.addEventListener('mouseenter', () => runRainReveal(a));
             });
+        });
+        // Index page post cards: animate only the title text to preserve layout
+        document.querySelectorAll('.post-list .post-card').forEach(card => {
+            if (card.dataset.rainBound === '1') return;
+            card.dataset.rainBound = '1';
+            const titleEl = card.querySelector('.post-title');
+            if (!titleEl) return;
+            card.addEventListener('mouseenter', () => runRainReveal(titleEl));
         });
     }
 

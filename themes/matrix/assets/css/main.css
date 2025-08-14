@@ -14,11 +14,12 @@
 html[data-theme="light"] {
   --matrix-bg: #f7fff8;
   --matrix-bg-elev: #ecfff0;
-  --text-primary: #0a1f0f;
-  --text-secondary: #154a29;
-  --text-dim: #2b7a41;
+  --text-primary: #0a1a10; /* darker for higher contrast */
+  --text-secondary: #1d4f2e; /* deepen secondary for readability */
+  --text-dim: #2f6c44; /* slightly darker dim text */
   --border: #b7e7c5;
-  --shadow: rgba(0, 128, 32, 0.12);
+  --shadow: rgba(0, 100, 28, 0.10);
+  --accent: #0f8a2c; /* soften neon to accessible green in light mode */
 }
 
 * { box-sizing: border-box; }
@@ -211,6 +212,13 @@ body.matrix {
 }
 .post-content code, .page-content code {
   color: var(--accent);
+}
+
+/* Ensure sufficient contrast for dates and meta in light mode */
+html[data-theme="light"] .post-date,
+html[data-theme="light"] .page-header .meta,
+html[data-theme="light"] .post-header .meta {
+  color: #335a3e;
 }
 
 /* Language pills */

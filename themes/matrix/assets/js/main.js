@@ -57,112 +57,36 @@ initTheme();
     window.addEventListener('resize', resize);
 
     const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロゴゾドボポヴ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const fontSize = 17.6; // 10% larger than 16px
-    const rowsPerSecond = 3; // moderate, time-based speed
-    const decayRate = 3; // for trail fade; ~0.08 alpha at 60 FPS
+    const fontSize = 16;
     let columns = Math.floor(canvas.width / fontSize);
     let drops = [];
-    let seeds = [];
-    let trailLengths = [];
-    let headGlyphs = [];
-    let nextChangeAt = [];
-    const minTrailRows = 8;
-    const maxTrailRows = 28;
-    let lastTime = null;
-    let elapsed = 0; // seconds since start
 
     function resetDrops() {
         columns = Math.floor(canvas.width / fontSize);
         drops = Array.from({ length: columns }, () => Math.random() * canvas.height / fontSize);
-        seeds = Array.from({ length: columns }, () => (Math.random() * 4294967296) >>> 0);
-        trailLengths = Array.from(
-            { length: columns },
-            () => Math.floor(minTrailRows + Math.random() * (maxTrailRows - minTrailRows + 1))
-        );
-        headGlyphs = Array.from(
-            { length: columns },
-            (_, i) => characters.charAt(Math.floor(Math.random() * characters.length))
-        );
-        nextChangeAt = Array.from(
-            { length: columns },
-            () => elapsed + Math.random() // change once per second with random phase offset
-        );
-    }
-
-    function nextRand(index) {
-        // LCG parameters from Numerical Recipes
-        let s = seeds[index] >>> 0;
-        s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
-        seeds[index] = s;
-        return (s >>> 0) / 4294967296;
     }
 
     resetDrops();
     window.addEventListener('resize', resetDrops);
 
-    function draw(now) {
-        if (lastTime === null) lastTime = now;
-        const dt = Math.max(0, (now - lastTime) / 1000); // seconds
-        lastTime = now;
-        elapsed += dt;
-
-        // Time-based fade to get consistent trail length across refresh rates
-        const alpha = 1 - Math.exp(-decayRate * dt);
-        ctx.fillStyle = 'rgba(0, 0, 0, ' + alpha.toFixed(4) + ')';
+    function draw() {
+        // Fade the canvas slightly to create trailing effect
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+        ctx.fillStyle = '#00ff41';
         ctx.font = fontSize + 'px "JetBrains Mono", monospace';
 
         for (let i = 0; i < drops.length; i++) {
+            const text = characters.charAt(Math.floor(Math.random() * characters.length));
             const x = i * fontSize;
-            const yPx = drops[i] * fontSize;
+            const y = drops[i] * fontSize;
+            ctx.fillText(text, x, y);
 
-            // Update head glyph once per second with random phase per column
-            if (elapsed >= (nextChangeAt[i] || 0)) {
-                headGlyphs[i] = characters.charAt(Math.floor(nextRand(i) * characters.length));
-                nextChangeAt[i] = (nextChangeAt[i] || elapsed) + 1.0;
+            if (y > canvas.height && Math.random() > 0.975) {
+                drops[i] = 0;
             }
-
-            // Draw head + trail with per-column randomized length
-            const length = trailLengths[i] || minTrailRows;
-            for (let k = 0; k <= length; k++) {
-                const yk = yPx - k * fontSize;
-                if (yk < -fontSize) break; // off top; remaining will be off-screen too
-                if (yk > canvas.height) continue; // off bottom; still need to advance head
-
-                const ch = k === 0
-                    ? (headGlyphs[i] || characters.charAt(Math.floor(nextRand(i) * characters.length)))
-                    : characters.charAt(Math.floor(nextRand(i) * characters.length));
-                if (k === 0) {
-                    // brighter head
-                    ctx.fillStyle = 'rgba(184, 255, 206, 1)';
-                } else {
-                    const alphaTail = Math.max(0, 1 - k / (length + 1));
-                    ctx.fillStyle = 'rgba(0, 255, 65, ' + (alphaTail * 0.9).toFixed(3) + ')';
-                }
-                ctx.fillText(ch, x, yk);
-            }
-
-            // Advance by rows per second scaled by dt
-            drops[i] += rowsPerSecond * dt;
-
-            // Time-based reset probability once off-screen
-            if (yPx > canvas.height) {
-                // ~50% chance per second to restart a stream
-                const p = Math.min(1, 0.5 * dt);
-                if (Math.random() < p) {
-                    drops[i] = 0;
-                    // Reseed this column so its sequence changes on restart
-                    seeds[i] = (Math.random() * 4294967296) >>> 0;
-                    // Randomize trail length on restart
-                    trailLengths[i] = Math.floor(
-                        minTrailRows + Math.random() * (maxTrailRows - minTrailRows + 1)
-                    );
-                    // Randomize head glyph and phase on restart
-                    headGlyphs[i] = characters.charAt(Math.floor(Math.random() * characters.length));
-                    nextChangeAt[i] = elapsed + Math.random();
-                }
-            }
+            drops[i]++;
         }
 
         requestAnimationFrame(draw);
@@ -180,7 +104,7 @@ initTheme();
     });
     Object.assign(canvas.style, { display: 'block', width: '100%', height: '100%' });
 
-    requestAnimationFrame(draw);
+    draw();
 })();
 
 // Mobile menu functionality

@@ -57,9 +57,9 @@ initTheme();
     window.addEventListener('resize', resize);
 
     const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロゴゾドボポヴ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const fontSize = 16;
-    const rowsPerSecond = 10; // moderate, time-based speed
-    const decayRate = 5; // for trail fade; ~0.08 alpha at 60 FPS
+    const fontSize = 17.6; // 10% larger than 16px
+    const rowsPerSecond = 3; // moderate, time-based speed
+    const decayRate = 3; // for trail fade; ~0.08 alpha at 60 FPS
     let columns = Math.floor(canvas.width / fontSize);
     let drops = [];
     let lastTime = null;

@@ -58,8 +58,11 @@ initTheme();
 
     const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロゴゾドボポヴ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const fontSize = 16;
+    const rowsPerSecond = 10; // moderate, time-based speed
+    const decayRate = 5; // for trail fade; ~0.08 alpha at 60 FPS
     let columns = Math.floor(canvas.width / fontSize);
     let drops = [];
+    let lastTime = null;
 
     function resetDrops() {
         columns = Math.floor(canvas.width / fontSize);
@@ -69,9 +72,14 @@ initTheme();
     resetDrops();
     window.addEventListener('resize', resetDrops);
 
-    function draw() {
-        // Fade the canvas slightly to create trailing effect
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+    function draw(now) {
+        if (lastTime === null) lastTime = now;
+        const dt = Math.max(0, (now - lastTime) / 1000); // seconds
+        lastTime = now;
+
+        // Time-based fade to get consistent trail length across refresh rates
+        const alpha = 1 - Math.exp(-decayRate * dt);
+        ctx.fillStyle = 'rgba(0, 0, 0, ' + alpha.toFixed(4) + ')';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.fillStyle = '#00ff41';
@@ -80,13 +88,20 @@ initTheme();
         for (let i = 0; i < drops.length; i++) {
             const text = characters.charAt(Math.floor(Math.random() * characters.length));
             const x = i * fontSize;
-            const y = drops[i] * fontSize;
-            ctx.fillText(text, x, y);
+            const yPx = drops[i] * fontSize;
+            ctx.fillText(text, x, yPx);
 
-            if (y > canvas.height && Math.random() > 0.975) {
-                drops[i] = 0;
+            // Advance by rows per second scaled by dt
+            drops[i] += rowsPerSecond * dt;
+
+            // Time-based reset probability once off-screen
+            if (yPx > canvas.height) {
+                // ~50% chance per second to restart a stream
+                const p = Math.min(1, 0.5 * dt);
+                if (Math.random() < p) {
+                    drops[i] = 0;
+                }
             }
-            drops[i]++;
         }
 
         requestAnimationFrame(draw);
@@ -104,7 +119,7 @@ initTheme();
     });
     Object.assign(canvas.style, { display: 'block', width: '100%', height: '100%' });
 
-    draw();
+    requestAnimationFrame(draw);
 })();
 
 // Mobile menu functionality

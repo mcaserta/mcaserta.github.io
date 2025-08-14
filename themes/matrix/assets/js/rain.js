@@ -19,6 +19,11 @@
   let columns = Math.floor(canvas.width / fontSize);
   let drops = [];
 
+  // 3D-like tilt settings (subtle, slow oscillation)
+  const tiltMaxDeg = 3; // maximum tilt angle in degrees
+  const tiltPeriodSec = 24; // full oscillation period in seconds
+  const tiltMaxShear = Math.tan((tiltMaxDeg * Math.PI) / 180);
+
   function resetDrops() {
     columns = Math.floor(canvas.width / fontSize);
     drops = Array.from({ length: columns }, () => Math.random() * canvas.height / fontSize);
@@ -27,10 +32,18 @@
   resetDrops();
   window.addEventListener('resize', resetDrops);
 
-  function draw() {
+  function draw(now) {
     // Fade the canvas slightly to create trailing effect
     ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Compute current tilt shear factor based on time
+    const t = (now || performance.now()) / 1000; // seconds
+    const shear = tiltMaxShear * Math.sin((2 * Math.PI * t) / tiltPeriodSec);
+
+    // Apply shear transform for text drawing only
+    ctx.save();
+    ctx.setTransform(1, 0, shear, 1, 0, 0); // x' = x + shear * y
 
     ctx.fillStyle = '#00ff41';
     ctx.font = fontSize + 'px "JetBrains Mono", monospace';
@@ -47,6 +60,8 @@
       drops[i]++;
     }
 
+    ctx.restore();
+
     requestAnimationFrame(draw);
   }
 
@@ -62,5 +77,5 @@
   });
   Object.assign(canvas.style, { display: 'block', width: '100%', height: '100%' });
 
-  draw();
+  requestAnimationFrame(draw);
 })();

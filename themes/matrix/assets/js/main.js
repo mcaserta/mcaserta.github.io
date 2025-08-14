@@ -57,11 +57,14 @@ function toggleToc() {
     }
 }
 
-// Close mobile menu when clicking outside or on a link
+// Close mobile menu and TOC when clicking outside or on a link
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
     const hamburgerBtn = document.querySelector('.hamburger-menu');
+    const tocSidebar = document.getElementById('toc-sidebar');
+    const tocToggleBtn = document.querySelector('.toc-toggle');
     
+    // Mobile menu functionality
     if (mobileMenu && hamburgerBtn) {
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
@@ -69,17 +72,42 @@ document.addEventListener('DOMContentLoaded', function() {
                 mobileMenu.classList.remove('show');
             });
         });
-        document.addEventListener('click', function(event) {
-            if (!mobileMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
-                mobileMenu.classList.remove('show');
-            }
-        });
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                mobileMenu.classList.remove('show');
-            }
+    }
+    
+    // TOC sidebar functionality
+    if (tocSidebar && tocToggleBtn) {
+        const tocLinks = tocSidebar.querySelectorAll('a');
+        tocLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                tocSidebar.classList.remove('show');
+            });
         });
     }
+    
+    // Global click handler for both menus
+    document.addEventListener('click', function(event) {
+        // Close mobile menu if clicked outside
+        if (mobileMenu && hamburgerBtn && 
+            !mobileMenu.contains(event.target) && 
+            !hamburgerBtn.contains(event.target)) {
+            mobileMenu.classList.remove('show');
+        }
+        
+        // Close TOC if clicked outside
+        if (tocSidebar && tocToggleBtn && 
+            !tocSidebar.contains(event.target) && 
+            !tocToggleBtn.contains(event.target)) {
+            tocSidebar.classList.remove('show');
+        }
+    });
+    
+    // Global escape key handler
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            if (mobileMenu) mobileMenu.classList.remove('show');
+            if (tocSidebar) tocSidebar.classList.remove('show');
+        }
+    });
 });
 
 // Scroll to top functionality

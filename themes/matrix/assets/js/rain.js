@@ -48,17 +48,16 @@
     const t = (now || performance.now()) / 1000; // seconds
     const shear = tiltMaxShear * Math.sin((2 * Math.PI * t) / tiltPeriodSec);
 
-    // Apply shear transform for text drawing only
-    ctx.save();
-    ctx.setTransform(1, 0, shear, 1, 0, 0); // x' = x + shear * y
-
     ctx.fillStyle = 'rgba(0, 255, 65, ' + glyphAlpha + ')';
     ctx.font = fontSize + 'px "JetBrains Mono", monospace';
 
+    const centerX = canvas.width / 2;
     for (let i = 0; i < drops.length; i++) {
       const text = characters.charAt(Math.floor(Math.random() * characters.length));
-      const x = i * fontSize;
+      const xBase = i * fontSize;
       const y = drops[i] * fontSize;
+      const dist = (xBase - centerX) / centerX; // -1 (left) .. 1 (right)
+      const x = xBase + shear * y * dist; // tilt around center axis
       ctx.fillText(text, x, y);
 
       if (y > canvas.height && Math.random() > 0.975) {
@@ -66,8 +65,6 @@
       }
       drops[i]++;
     }
-
-    ctx.restore();
 
     requestAnimationFrame(draw);
   }

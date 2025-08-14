@@ -40,6 +40,9 @@
   resetDrops();
   window.addEventListener('resize', resetDrops);
 
+  let animationId = null;
+  let running = false;
+
   function draw(now) {
     // Compute time delta
     if (lastTime === null) lastTime = now || performance.now();
@@ -97,7 +100,11 @@
       drops[i] += effectiveRowsPerSecond * dt;
     }
 
-    requestAnimationFrame(draw);
+    if (running) {
+      animationId = requestAnimationFrame(draw);
+    } else {
+      animationId = null;
+    }
   }
 
   // Ensure canvas sits behind content
@@ -112,5 +119,31 @@
   });
   Object.assign(canvas.style, { display: 'block', width: '100%', height: '100%' });
 
-  requestAnimationFrame(draw);
+  function start() {
+    if (running) return;
+    running = true;
+    // reset timing to avoid jump on resume
+    lastTime = null;
+    animationId = requestAnimationFrame(draw);
+  }
+
+  function stop() {
+    running = false;
+    if (animationId) {
+      cancelAnimationFrame(animationId);
+      animationId = null;
+    }
+    // Clear background
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  // Expose controls
+  window.matrixRain = {
+    start,
+    stop,
+    isRunning: function() { return running; }
+  };
+
+  // Autostart
+  start();
 })();

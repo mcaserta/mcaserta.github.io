@@ -33,6 +33,9 @@
                 <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
                     <span class="theme-icon">🟢</span>
                 </button>
+                <button class="rain-toggle" onclick="toggleRain()" aria-label="Toggle digital rain" title="Toggle digital rain">
+                    <span id="rain-toggle-icon">⏸</span>
+                </button>
             </div>
         </nav>
 
@@ -95,6 +98,19 @@
     <script src="{{ assets_path }}/js/main.js"></script>
     <script src="{{ assets_path }}/js/rain.js"></script>
     <script src="{{ assets_path }}/js/prism-init.js"></script>
+    <script>
+      function toggleRain(){
+        if (!window.matrixRain) return;
+        var icon = document.getElementById('rain-toggle-icon');
+        if (window.matrixRain.isRunning()) {
+          window.matrixRain.stop();
+          if (icon) icon.textContent = '▶';
+        } else {
+          window.matrixRain.start();
+          if (icon) icon.textContent = '⏸';
+        }
+      }
+    </script>
     {% block scripts %}{% endblock scripts %}
 </body>
 </html>

@@ -71,10 +71,13 @@ body.matrix {
   color: var(--text-secondary);
   text-decoration: none;
   border-radius: 8px;
+  transition: color .2s ease, background-color .2s ease, box-shadow .6s ease;
 }
 .page-links a:hover, .mobile-page-links a:hover {
   background: rgba(0, 255, 65, 0.08);
   color: var(--accent);
+  box-shadow: 0 0 8px rgba(0,255,65,0.20), 0 0 16px rgba(0,255,65,0.15);
+  animation: matrixGlow 1.6s ease-in-out infinite alternate;
 }
 
 /* Top nav */
@@ -137,10 +140,31 @@ body.matrix {
   color: var(--text-secondary);
   text-decoration: none;
   border-radius: 8px;
+  transition: color .2s ease, background-color .2s ease, box-shadow .6s ease;
 }
 .toc-sidebar .toc a:hover {
   background: rgba(0, 255, 65, 0.08);
   color: var(--accent);
+  box-shadow: 0 0 8px rgba(0,255,65,0.20), 0 0 16px rgba(0,255,65,0.15);
+  animation: matrixGlow 1.6s ease-in-out infinite alternate;
+}
+.toc-sidebar .toc ul ul { padding-left: 12px; }
+
+/* Slow glow pulse for hover */
+@keyframes matrixGlow {
+  0% {
+    box-shadow: 0 0 6px rgba(0,255,65,0.12), 0 0 12px rgba(0,255,65,0.10);
+  }
+  100% {
+    box-shadow: 0 0 14px rgba(0,255,65,0.35), 0 0 28px rgba(0,255,65,0.22);
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .page-links a:hover, .mobile-page-links a:hover, .toc-sidebar .toc a:hover {
+    animation: none;
+  }
 }
 .toc-sidebar .toc ul ul { padding-left: 12px; }
 

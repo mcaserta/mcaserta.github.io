@@ -15,9 +15,11 @@
   window.addEventListener('resize', resize);
 
   const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロゴゾドボポヴ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  const fontSize = 16;
-  const rowsPerSecond = 6; // slowed-down, time-based speed
-  const decayRate = 5; // trail decay per second (for consistent fade)
+  const fontSize = 26;
+  const spacing = 1.6; // vertical spacing multiplier between glyphs
+  const baseRowsPerSecond = 2.5; // visual rows/sec at spacing=1
+  const rowsPerSecond = baseRowsPerSecond / spacing; // keep similar pixel speed with spacing
+  const decayRate = 2; // trail decay per second (for consistent fade)
   let columns = Math.floor(canvas.width / fontSize);
   let drops = [];
   let lastTime = null;
@@ -46,7 +48,7 @@
     for (let i = 0; i < drops.length; i++) {
       const text = characters.charAt(Math.floor(Math.random() * characters.length));
       const x = i * fontSize;
-      const y = drops[i] * fontSize;
+      const y = drops[i] * fontSize * spacing;
       ctx.fillText(text, x, y);
 
       // advance by time-based amount

@@ -16,9 +16,9 @@
 
   const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロゴゾドボポヴ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const fontSize = 26;
-  const spacing = 1.6; // vertical spacing multiplier between glyphs
-  const baseRowsPerSecond = 2.5; // visual rows/sec at spacing=1
-  const rowsPerSecond = baseRowsPerSecond / spacing; // keep similar pixel speed with spacing
+  const spacing = 1.8; // vertical spacing multiplier between glyphs
+  const lineHeight = Math.round(fontSize * spacing); // pixels per row
+  const rowsPerSecond = 2.6; // rows per second (time-based)
   const decayRate = 2; // trail decay per second (for consistent fade)
   let columns = Math.floor(canvas.width / fontSize);
   let drops = [];
@@ -26,7 +26,8 @@
 
   function resetDrops() {
     columns = Math.floor(canvas.width / fontSize);
-    drops = Array.from({ length: columns }, () => Math.random() * canvas.height / fontSize);
+    const maxRows = Math.ceil(canvas.height / lineHeight);
+    drops = Array.from({ length: columns }, () => Math.random() * maxRows);
   }
 
   resetDrops();
@@ -44,17 +45,19 @@
 
     ctx.fillStyle = '#00ff41';
     ctx.font = fontSize + 'px "JetBrains Mono", monospace';
+    ctx.textBaseline = 'top';
+    ctx.textAlign = 'left';
 
     for (let i = 0; i < drops.length; i++) {
       const text = characters.charAt(Math.floor(Math.random() * characters.length));
       const x = i * fontSize;
-      const y = drops[i] * fontSize * spacing;
+      const y = Math.floor(drops[i]) * lineHeight;
       ctx.fillText(text, x, y);
 
       // advance by time-based amount
       drops[i] += rowsPerSecond * dt;
 
-      if (y > canvas.height) {
+      if (y > canvas.height + lineHeight) {
         // ~50% chance per second to restart
         const p = Math.min(1, 0.5 * dt);
         if (Math.random() < p) drops[i] = 0;

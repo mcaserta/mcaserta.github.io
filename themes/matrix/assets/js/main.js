@@ -62,11 +62,21 @@ initTheme();
     const decayRate = 3; // for trail fade; ~0.08 alpha at 60 FPS
     let columns = Math.floor(canvas.width / fontSize);
     let drops = [];
+    let seeds = [];
     let lastTime = null;
 
     function resetDrops() {
         columns = Math.floor(canvas.width / fontSize);
         drops = Array.from({ length: columns }, () => Math.random() * canvas.height / fontSize);
+        seeds = Array.from({ length: columns }, (_, i) => (Math.random() * 4294967296) >>> 0);
+    }
+
+    function nextRand(index) {
+        // LCG parameters from Numerical Recipes
+        let s = seeds[index] >>> 0;
+        s = (Math.imul(s, 1664525) + 1013904223) >>> 0;
+        seeds[index] = s;
+        return (s >>> 0) / 4294967296;
     }
 
     resetDrops();
@@ -86,7 +96,7 @@ initTheme();
         ctx.font = fontSize + 'px "JetBrains Mono", monospace';
 
         for (let i = 0; i < drops.length; i++) {
-            const text = characters.charAt(Math.floor(Math.random() * characters.length));
+            const text = characters.charAt(Math.floor(nextRand(i) * characters.length));
             const x = i * fontSize;
             const yPx = drops[i] * fontSize;
             ctx.fillText(text, x, yPx);
@@ -100,6 +110,8 @@ initTheme();
                 const p = Math.min(1, 0.5 * dt);
                 if (Math.random() < p) {
                     drops[i] = 0;
+                    // Reseed this column so its sequence changes on restart
+                    seeds[i] = (Math.random() * 4294967296) >>> 0;
                 }
             }
         }

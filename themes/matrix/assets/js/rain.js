@@ -16,8 +16,11 @@
 
   const characters = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロゴゾドボポヴ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const fontSize = 16;
+  const rowsPerSecond = 6; // slowed-down, time-based speed
+  const decayRate = 5; // trail decay per second (for consistent fade)
   let columns = Math.floor(canvas.width / fontSize);
   let drops = [];
+  let lastTime = null;
 
   function resetDrops() {
     columns = Math.floor(canvas.width / fontSize);
@@ -27,9 +30,14 @@
   resetDrops();
   window.addEventListener('resize', resetDrops);
 
-  function draw() {
-    // Fade the canvas slightly to create trailing effect
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+  function draw(now) {
+    if (lastTime === null) lastTime = now;
+    const dt = Math.max(0, (now - lastTime) / 1000); // seconds since last frame
+    lastTime = now;
+
+    // Time-based fade to create consistent trails across refresh rates
+    const alpha = 1 - Math.exp(-decayRate * dt);
+    ctx.fillStyle = 'rgba(0, 0, 0, ' + alpha.toFixed(4) + ')';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = '#00ff41';
@@ -41,10 +49,14 @@
       const y = drops[i] * fontSize;
       ctx.fillText(text, x, y);
 
-      if (y > canvas.height && Math.random() > 0.975) {
-        drops[i] = 0;
+      // advance by time-based amount
+      drops[i] += rowsPerSecond * dt;
+
+      if (y > canvas.height) {
+        // ~50% chance per second to restart
+        const p = Math.min(1, 0.5 * dt);
+        if (Math.random() < p) drops[i] = 0;
       }
-      drops[i]++;
     }
 
     requestAnimationFrame(draw);
@@ -62,5 +74,5 @@
   });
   Object.assign(canvas.style, { display: 'block', width: '100%', height: '100%' });
 
-  draw();
+  requestAnimationFrame(draw);
 })();

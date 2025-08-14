@@ -24,6 +24,14 @@
   const tiltPeriodSec = 24; // full oscillation period in seconds
   const tiltMaxShear = Math.tan((tiltMaxDeg * Math.PI) / 180);
 
+  // Time-based motion calibration to preserve current visual speed
+  let lastTime = null;
+  let rowsPerSecond = null; // will be calibrated from initial frame timing
+  let calibFrames = 0;
+  let calibTimeSum = 0;
+  const CALIBRATION_FRAMES = 30; // ~0.5s at 60fps
+  const RESET_RATE_PER_SEC = 1.5; // approx 2.5% per frame at 60fps
+
   function resetDrops() {
     columns = Math.floor(canvas.width / fontSize);
     drops = Array.from({ length: columns }, () => Math.random() * canvas.height / fontSize);
@@ -33,15 +41,36 @@
   window.addEventListener('resize', resetDrops);
 
   function draw(now) {
-    // Theme-aware faintness
+    // Compute time delta
+    if (lastTime === null) lastTime = now || performance.now();
+    let dt = Math.max(0, ((now || performance.now()) - lastTime) / 1000);
+    lastTime = now || performance.now();
+    // Avoid huge jumps on tab switch
+    if (dt > 0.1) dt = 0.1;
+
+    // Calibrate rowsPerSecond to current perceived speed (1 row per frame baseline)
+    if (rowsPerSecond == null) {
+      calibTimeSum += dt;
+      calibFrames += 1;
+      if (calibFrames >= CALIBRATION_FRAMES) {
+        const avgFrameTime = calibTimeSum / calibFrames; // seconds per frame
+        const measuredFps = avgFrameTime > 0 ? (1 / avgFrameTime) : 60;
+        rowsPerSecond = measuredFps; // match old 1 row per frame visual speed
+      }
+    }
+    const effectiveRowsPerSecond = rowsPerSecond || 60; // fallback during calibration
+
+    // Theme-aware faintness using time-based decay to keep trail length constant
     const themeAttr = document.documentElement.getAttribute('data-theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     const isDark = (themeAttr ? themeAttr === 'dark' : prefersDark);
-    const fadeAlpha = isDark ? 0.10 : 0.16; // stronger fade on light to keep background subtle
+    // Choose decay rates so that at 60fps they approximate prior fadeAlpha of 0.10 (dark) / 0.16 (light)
+    const decayPerSec = isDark ? (-60 * Math.log(0.9)) : (-60 * Math.log(0.84));
+    const fadeAlpha = 1 - Math.exp(-decayPerSec * dt);
     const glyphAlpha = isDark ? 0.50 : 0.32; // dimmer in light mode
 
-    // Fade the canvas slightly to create trailing effect
-    ctx.fillStyle = 'rgba(0, 0, 0, ' + fadeAlpha + ')';
+    // Fade frame
+    ctx.fillStyle = 'rgba(0, 0, 0, ' + fadeAlpha.toFixed(4) + ')';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Compute current tilt shear factor based on time
@@ -60,10 +89,12 @@
       const x = xBase + shear * y * dist; // tilt around center axis
       ctx.fillText(text, x, y);
 
-      if (y > canvas.height && Math.random() > 0.975) {
-        drops[i] = 0;
+      if (y > canvas.height) {
+        // Time-based reset probability
+        const p = 1 - Math.exp(-RESET_RATE_PER_SEC * dt);
+        if (Math.random() < p) drops[i] = 0;
       }
-      drops[i]++;
+      drops[i] += effectiveRowsPerSecond * dt;
     }
 
     requestAnimationFrame(draw);

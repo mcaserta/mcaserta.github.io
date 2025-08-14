@@ -45,7 +45,13 @@ body.matrix {
   margin: 0 auto;
 }
 
+/* When a TOC is available, use a 3-column grid */
+.layout-container.has-toc {
+  grid-template-columns: 240px minmax(0, 1fr) 280px;
+}
+
 .sidebar {
+  grid-column: 1;
   position: sticky;
   top: 16px;
   align-self: start;
@@ -103,11 +109,10 @@ body.matrix {
 
 /* TOC Sidebar */
 .toc-sidebar {
-  position: fixed;
-  right: 24px;
-  top: 90px;
-  max-width: 280px;
-  width: 280px;
+  grid-column: 3;
+  position: sticky;
+  top: 16px;
+  align-self: start;
   max-height: calc(100vh - 140px);
   overflow: auto;
   border: 1px solid var(--border);
@@ -119,7 +124,7 @@ body.matrix {
 .toc-sidebar .toc h2 { margin-top: 0; font-size: 14px; color: var(--text-dim); }
 
 /* Main content */
-.main-content { min-width: 0; }
+.main-content { min-width: 0; grid-column: 2; }
 .post-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
 .post-card {
   display: block;

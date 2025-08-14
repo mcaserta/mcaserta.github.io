@@ -39,6 +39,7 @@ body.matrix {
   z-index: 1;
   display: grid;
   grid-template-columns: 240px 1fr;
+  grid-template-rows: auto 1fr; /* row 1: navbar, row 2: content */
   gap: 32px;
   max-width: 1200px;
   padding: 24px 24px 80px;
@@ -52,6 +53,7 @@ body.matrix {
 
 .sidebar {
   grid-column: 1;
+  grid-row: 2;
   position: sticky;
   top: 16px;
   align-self: start;
@@ -78,6 +80,7 @@ body.matrix {
 /* Top nav */
 .top-nav {
   grid-column: 1 / -1; /* span all grid columns */
+  grid-row: 1;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -85,7 +88,7 @@ body.matrix {
   justify-content: space-between;
   align-items: center;
   padding: 12px 16px;
-  margin-bottom: 16px;
+  margin-bottom: 0; /* spacing handled by grid row gap */
   border: 1px solid var(--border);
   background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0)) , var(--matrix-bg-elev);
   box-shadow: 0 8px 24px var(--shadow);
@@ -111,6 +114,7 @@ body.matrix {
 /* TOC Sidebar */
 .toc-sidebar {
   grid-column: 3;
+  grid-row: 2;
   position: sticky;
   top: 16px;
   align-self: start;
@@ -125,7 +129,7 @@ body.matrix {
 .toc-sidebar .toc h2 { margin-top: 0; font-size: 14px; color: var(--text-dim); }
 
 /* Main content */
-.main-content { min-width: 0; grid-column: 2; }
+.main-content { min-width: 0; grid-column: 2; grid-row: 2; }
 .post-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
 .post-card {
   display: block;

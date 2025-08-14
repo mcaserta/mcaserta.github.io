@@ -103,3 +103,66 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollToTopBtn.addEventListener('click', scrollToTop);
     toggleScrollToTopButton();
 });
+
+// Digital rain-inspired left-to-right text reveal on sidebar links
+(function initSidebarRainHover() {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const GLYPHS = 'アァカサタナハマヤャラワガ0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+    function runRainReveal(anchor) {
+        if (prefersReduced.matches) return;
+        if (!anchor || anchor.dataset.rainAnimating === '1') return;
+        const original = anchor.textContent || '';
+        if (!original.trim()) return;
+
+        anchor.dataset.rainAnimating = '1';
+        anchor.dataset.rainOriginal = original;
+        anchor.classList.add('link-rain-anim');
+
+        const length = original.length;
+        const durationMs = Math.max(280, Math.min(520, Math.round(length * 22)));
+        const start = performance.now();
+
+        function frame(now) {
+            const t = Math.min(1, (now - start) / durationMs);
+            const threshold = t; // 0..1
+            let out = '';
+            for (let i = 0; i < length; i++) {
+                const revealAt = i / Math.max(1, (length - 1));
+                if (threshold >= revealAt) {
+                    out += original[i];
+                } else {
+                    out += GLYPHS.charAt(Math.floor(Math.random() * GLYPHS.length));
+                }
+            }
+            anchor.textContent = out;
+
+            if (t < 1) {
+                requestAnimationFrame(frame);
+            } else {
+                anchor.textContent = original;
+                anchor.classList.remove('link-rain-anim');
+                anchor.dataset.rainAnimating = '0';
+            }
+        }
+
+        requestAnimationFrame(frame);
+    }
+
+    function bindLinks() {
+        const selectors = ['.page-links a', '.toc-sidebar .toc a'];
+        selectors.forEach(sel => {
+            document.querySelectorAll(sel).forEach(a => {
+                if (a.dataset.rainBound === '1') return;
+                a.dataset.rainBound = '1';
+                a.addEventListener('mouseenter', () => runRainReveal(a));
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bindLinks);
+    } else {
+        bindLinks();
+    }
+})();

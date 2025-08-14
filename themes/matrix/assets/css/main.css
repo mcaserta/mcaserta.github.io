@@ -72,6 +72,7 @@ body.matrix {
   text-decoration: none;
   border-radius: 8px;
   transition: color .2s ease, background-color .2s ease, box-shadow .6s ease;
+  will-change: box-shadow;
 }
 .page-links a:hover, .mobile-page-links a:hover {
   background: rgba(0, 255, 65, 0.08);
@@ -141,6 +142,7 @@ body.matrix {
   text-decoration: none;
   border-radius: 8px;
   transition: color .2s ease, background-color .2s ease, box-shadow .6s ease;
+  will-change: box-shadow;
 }
 .toc-sidebar .toc a:hover {
   background: rgba(0, 255, 65, 0.08);

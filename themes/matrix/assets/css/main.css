@@ -9,6 +9,7 @@
   --border: #13351f;
   --accent: var(--matrix-green);
   --shadow: rgba(0, 255, 65, 0.15);
+  --nav-height: 0px;
 }
 
 html[data-theme="light"] {
@@ -47,6 +48,7 @@ body.matrix {
   max-width: 1200px;
   padding: 24px 24px 80px;
   margin: 0 auto;
+  overflow: visible; /* ensure sticky sidebars can stick relative to viewport */
 }
 
 /* When a TOC is available, use a 3-column grid */
@@ -58,7 +60,7 @@ body.matrix {
   grid-column: 1;
   grid-row: 2;
   position: sticky;
-  top: 16px;
+  top: calc(var(--nav-height) + 16px);
   align-self: start;
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0)) , var(--matrix-bg-elev);
@@ -135,7 +137,7 @@ html[data-theme="light"] .mobile-page-links a:hover {
   grid-column: 3;
   grid-row: 2;
   position: sticky;
-  top: 16px;
+  top: calc(var(--nav-height) + 16px);
   align-self: start;
   max-height: calc(100vh - 140px);
   overflow: auto;

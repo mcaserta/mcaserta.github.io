@@ -18,7 +18,7 @@
     <div id="digital-rain"></div>
 
     <div class="layout-container{% if toc %} has-toc{% endif %}">
-        <nav class="top-nav">
+        <nav class="top-nav" id="top-nav">
             <a href="{{ home_path }}" class="site-title">{{ site_title | default(value="Blog") }}</a>
             <div class="nav-controls">
                 {% block header_controls %}{% endblock header_controls %}
@@ -75,6 +75,23 @@
         window.krikTranslations = {{ available_translations | json_encode() | safe }};
     </script>
     {% endif %}
+    <script>
+      // Compute nav height for sticky sidebars offset
+      (function(){
+        function setNavHeightVar(){
+          var nav = document.getElementById('top-nav');
+          if (!nav) return;
+          var h = nav.getBoundingClientRect().height;
+          document.documentElement.style.setProperty('--nav-height', h + 'px');
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', setNavHeightVar);
+        } else {
+          setNavHeightVar();
+        }
+        window.addEventListener('resize', setNavHeightVar);
+      })();
+    </script>
     <script src="{{ assets_path }}/js/main.js"></script>
     <script src="{{ assets_path }}/js/rain.js"></script>
     <script src="{{ assets_path }}/js/prism-init.js"></script>

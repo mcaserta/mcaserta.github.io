@@ -64,9 +64,12 @@ initTheme();
     let drops = [];
     let seeds = [];
     let trailLengths = [];
+    let headGlyphs = [];
+    let nextChangeAt = [];
     const minTrailRows = 8;
     const maxTrailRows = 28;
     let lastTime = null;
+    let elapsed = 0; // seconds since start
 
     function resetDrops() {
         columns = Math.floor(canvas.width / fontSize);
@@ -75,6 +78,14 @@ initTheme();
         trailLengths = Array.from(
             { length: columns },
             () => Math.floor(minTrailRows + Math.random() * (maxTrailRows - minTrailRows + 1))
+        );
+        headGlyphs = Array.from(
+            { length: columns },
+            (_, i) => characters.charAt(Math.floor(Math.random() * characters.length))
+        );
+        nextChangeAt = Array.from(
+            { length: columns },
+            () => elapsed + Math.random() // change once per second with random phase offset
         );
     }
 
@@ -93,6 +104,7 @@ initTheme();
         if (lastTime === null) lastTime = now;
         const dt = Math.max(0, (now - lastTime) / 1000); // seconds
         lastTime = now;
+        elapsed += dt;
 
         // Time-based fade to get consistent trail length across refresh rates
         const alpha = 1 - Math.exp(-decayRate * dt);
@@ -105,6 +117,12 @@ initTheme();
             const x = i * fontSize;
             const yPx = drops[i] * fontSize;
 
+            // Update head glyph once per second with random phase per column
+            if (elapsed >= (nextChangeAt[i] || 0)) {
+                headGlyphs[i] = characters.charAt(Math.floor(nextRand(i) * characters.length));
+                nextChangeAt[i] = (nextChangeAt[i] || elapsed) + 1.0;
+            }
+
             // Draw head + trail with per-column randomized length
             const length = trailLengths[i] || minTrailRows;
             for (let k = 0; k <= length; k++) {
@@ -112,7 +130,9 @@ initTheme();
                 if (yk < -fontSize) break; // off top; remaining will be off-screen too
                 if (yk > canvas.height) continue; // off bottom; still need to advance head
 
-                const ch = characters.charAt(Math.floor(nextRand(i) * characters.length));
+                const ch = k === 0
+                    ? (headGlyphs[i] || characters.charAt(Math.floor(nextRand(i) * characters.length)))
+                    : characters.charAt(Math.floor(nextRand(i) * characters.length));
                 if (k === 0) {
                     // brighter head
                     ctx.fillStyle = 'rgba(184, 255, 206, 1)';
@@ -138,6 +158,9 @@ initTheme();
                     trailLengths[i] = Math.floor(
                         minTrailRows + Math.random() * (maxTrailRows - minTrailRows + 1)
                     );
+                    // Randomize head glyph and phase on restart
+                    headGlyphs[i] = characters.charAt(Math.floor(Math.random() * characters.length));
+                    nextChangeAt[i] = elapsed + Math.random();
                 }
             }
         }

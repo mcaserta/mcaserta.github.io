@@ -33,8 +33,15 @@
   window.addEventListener('resize', resetDrops);
 
   function draw(now) {
+    // Theme-aware faintness
+    const themeAttr = document.documentElement.getAttribute('data-theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDark = (themeAttr ? themeAttr === 'dark' : prefersDark);
+    const fadeAlpha = isDark ? 0.10 : 0.16; // stronger fade on light to keep background subtle
+    const glyphAlpha = isDark ? 0.50 : 0.32; // dimmer in light mode
+
     // Fade the canvas slightly to create trailing effect
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.08)';
+    ctx.fillStyle = 'rgba(0, 0, 0, ' + fadeAlpha + ')';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Compute current tilt shear factor based on time
@@ -45,7 +52,7 @@
     ctx.save();
     ctx.setTransform(1, 0, shear, 1, 0, 0); // x' = x + shear * y
 
-    ctx.fillStyle = '#00ff41';
+    ctx.fillStyle = 'rgba(0, 255, 65, ' + glyphAlpha + ')';
     ctx.font = fontSize + 'px "JetBrains Mono", monospace';
 
     for (let i = 0; i < drops.length; i++) {

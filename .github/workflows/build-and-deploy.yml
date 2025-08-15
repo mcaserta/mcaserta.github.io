@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0  # Full clone needed for branch operations
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -25,6 +25,9 @@ jobs:
           toolchain: stable
           default: true
           override: true
+
+      - name: Cache Cargo registry and build artifacts
+        uses: Swatinem/rust-cache@v2
 
       - name: Install typst # also for pdf generation
         run: cargo install typst-cli

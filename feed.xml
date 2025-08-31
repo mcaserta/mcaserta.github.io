@@ -13,20 +13,20 @@
     <updated>2025-07-27T00:42:26+00:00</updated>
     <published>2025-07-27T00:42:26+00:00</published>
     <content type="html"><![CDATA[
-<h1>Krik</h1>
+<h1 id="krik">Krik</h1>
 <p><img src="../images/posts/krik.png" alt="Krik logo" /></p>
 <p>I spent the last 2-3 days developing a static site generator in Rust using
 exclusively <a href="https://claude.ai/">Claude Code</a>.</p>
-<p>My knowledge of Rust is quite basic: I understand code when it's well written
-but I don't yet have the practice necessary to develop a sophisticated tool.</p>
-<p>However, for this project I didn't have to touch a single line of code, since I
+<p>My knowledge of Rust is quite basic: I understand code when it’s well written
+but I don’t yet have the practice necessary to develop a sophisticated tool.</p>
+<p>However, for this project I didn’t have to touch a single line of code, since I
 gave all the instructions to Claude. The AI even took care of the releases.</p>
-<p>The impression I had using this tool is the same one I had in the '90s when I
+<p>The impression I had using this tool is the same one I had in the ’90s when I
 saw the Internet for the first time.</p>
-<p>I don't think there's anything else to add.</p>
-<p>Oh, yes... the project can be found on
+<p>I don’t think there’s anything else to add.</p>
+<p>Oh, yes… the project can be found on
 <a href="https://github.com/mcaserta/krik">github</a> and a demo of the generated site is
-this page you're reading right now.</p>
+this page you’re reading right now.</p>
 <p>A more complete demo of all the features can be found
 <a href="https://mirkocaserta.com/krik/">here</a>.</p>
 
@@ -45,18 +45,18 @@ this page you're reading right now.</p>
     <published>2024-09-15T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <p><img src="../images/posts/missa-album-cover.png" alt="album cover" /></p>
-<h2>Long Story Short</h2>
-<p>Questo è un album di musica improvvisata. Il suono è quello dell'organo di Hans
-Zimmer in Interstellar. L'ispirazione è chiaramente ecclesiastica. Ho provato a
+<h2 id="long-story-short">Long Story Short</h2>
+<p>Questo è un album di musica improvvisata. Il suono è quello dell’organo di Hans
+Zimmer in Interstellar. L’ispirazione è chiaramente ecclesiastica. Ho provato a
 immaginare delle melodie sui titoli dei brani e a svilupparle scimmiottando
 (male) lo stile contrappuntistico.</p>
-<h2>Short Story Long</h2>
+<h2 id="short-story-long">Short Story Long</h2>
 <p>Il mio primo incarico da musicista è arrivato piuttosto presto. Credo fossi in
 prima media quando il mio insegnante di pianoforte mi propose di prendere il suo
 posto come organista nella chiesa del paese.</p>
 <p>Non avevo mai studiato bene il solfeggio, la mia capacità di lettura era davvero
 rudimentale e questo mi rendeva nervoso ma la musica di chiesa non richiede
-grandi capacità esecutive: basta un po' d'orecchio per gli accordi e ci si può
+grandi capacità esecutive: basta un po’ d’orecchio per gli accordi e ci si può
 facilmente districare nella maggiorparte dei canti.</p>
 <p>Il mio compito era quello di accompagnare il coro durante la funzione della
 domenica mattina. A volte facevo delle prove pomeridiane con il coro durante la
@@ -66,30 +66,30 @@ riproduzione sessuale.</p>
 <p>La mia attività da organista non durò molto. Una volta, durante le cresime, ebbi
 la brillante idea di usare il sintetizzatore per suonare alcune melodie e questa
 cosa non piacque per nulla al vescovo. Il parroco mi spiegò che in chiesa erano
-ammessi solo strumenti acustici e l'organo. Potevo mai tollerare che si mettesse
+ammessi solo strumenti acustici e l’organo. Potevo mai tollerare che si mettesse
 bocca sulle mie scelte artistiche? Fu così che la mia collaborazione con la
 parrocchia ebbe bruscamente fine.</p>
 <p>Ricordo anche che una volta spaccai il muso ad un ragazzo del coro perché ebbe
-l'ardire di commentare in modo inappropriato gli LP che quel giorno portavo con
+l’ardire di commentare in modo inappropriato gli LP che quel giorno portavo con
 me: Invitation di Jaco Pastorius, 8:30 dei Weather Report e qualcosa di Larry
 Carlton se non ricordo male. Poi gli chiesi scusa e mi feci prestare i suoi CD
 di <a href="https://it.wikipedia.org/wiki/Fronte_del_palco">Fronte del Palco</a> per
 tentare una riappacificazione musicale totalmente finta da parte mia.</p>
-<p>Ad ogni modo, per almeno due o tre anni ho partecipato attivamente all'attività
+<p>Ad ogni modo, per almeno due o tre anni ho partecipato attivamente all’attività
 musicale della comunità della parrocchia. Conoscevo i brani più popolari e
 sapevo quando inserirli nelle varie sezioni delle funzioni religiose. Sono stato
 un discreto ragazzo di chiesa ma ho sempre visto con distacco i tanti aspetti
 della pratica cristiana che fanno visibilmente a cazzotti con la realtà e il mio
 approccio scettico e razionale alle cose della vita.</p>
-<p>Già a quei tempi si era fatta strada in me l'idea che non esiste un dio e che le
+<p>Già a quei tempi si era fatta strada in me l’idea che non esiste un dio e che le
 tante cose insensate delle religioni sono tali non perché io non sia in grado di
 comprenderle o per mancanza di fede ma semplicemente perché sono e restano
 insensate e contrarie alla logica e alla ragione a disposizione di qualunque
 persona minimamente istruita.</p>
 <p>Tutto questo per dire che in qualche modo questa musica per me è un ritorno alle
-origini. Mi sono divertito a tornare sulla panca dell'organo, seppure
+origini. Mi sono divertito a tornare sulla panca dell’organo, seppure
 virtuale<sup class="footnote-reference"><a href="#hz">1</a></sup>.</p>
-<p>L'album esce su tutte le piattaforme digitali venerdì 20 settembre 2024 alle
+<p>L’album esce su tutte le piattaforme digitali venerdì 20 settembre 2024 alle
 cinque del pomeriggio:</p>
 <ul>
 <li><a href="https://open.spotify.com/album/7KICYco2gWoVWM0a4VNfGL">spotify</a></li>
@@ -115,9 +115,9 @@ si chiama <em>Interstellar</em></p>
     <content type="html"><![CDATA[
 <p>These are a bunch of essential Firefox extensions I use:</p>
 <ul>
-<li><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don't care about cookies</a>:
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/i-dont-care-about-cookies/">I don’t care about cookies</a>:
 get rid of cookie warnings from almost all websites</li>
-<li><a href="https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/">Don't track me Google</a>:
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/dont-track-me-google1/">Don’t track me Google</a>:
 removes the annoying link-conversion at Google Search, Maps, etc</li>
 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a>:
 an efficient wide-spectrum content blocker</li>
@@ -147,24 +147,24 @@ vibes. If you also feel like joining, please take a look at
 wanted to automate cross posting from there to my Mastodon account and I did it
 with <a href="https://ifttt.com">IFTTT</a> using a WebHook component for Mastodon.</p>
 <p>For now, I just want to document how easy it is to post to Mastodon. All you
-need is an http client. I'll be using <a href="https://curl.se/">curl</a> in my examples
+need is an http client. I’ll be using <a href="https://curl.se/">curl</a> in my examples
 but you can of course use anything you see fit.</p>
 <pre><code class="language-bash">curl --request POST  \
   --header 'Authorization: Bearer your-auth-token-here' \
   --form 'status="The Crusaders: \"And Then There Was The Blues\" https://youtu.be/F-EAazr0j78 #music"' \
   https://mastodon.online/api/v1/statuses
 </code></pre>
-<p>This is the general form of the request. In other words, we're making an http
+<p>This is the general form of the request. In other words, we’re making an http
 POST request where the body is the equivalent of submitting an html form with a
 <code>status</code> field whose value is the actual text we want posted on our timeline.
 Just be careful with the quoting going on inside the <code>status</code> field.</p>
 <p>As for the authorization header, you need to get an authentication token from
-your Mastodon server instance. In my server, it's under Preferences -&gt;
+your Mastodon server instance. In my server, it’s under Preferences -&gt;
 Development. I just have to select <em>New Application</em>, fill a little info about
-my app, select only <code>write:statuses</code> as the permissions I'm granting and, once
+my app, select only <code>write:statuses</code> as the permissions I’m granting and, once
 created, the token will be visible in the app info under <em>Your access token</em>.</p>
-<p>You will also need to replace <code>mastodon.online</code> with your server's hostname.</p>
-<p>This is it. You're welcome.</p>
+<p>You will also need to replace <code>mastodon.online</code> with your server’s hostname.</p>
+<p>This is it. You’re welcome.</p>
 
     ]]></content>
     <category term="mastodon" />
@@ -188,28 +188,28 @@ created, the token will be visible in the app info under <em>Your access token</
 <tr><td><a href="https://bitwarden.com/">bitwarden</a></td><td>password manager</td></tr>
 </tbody></table>
 <p>Firefox is a great browser and probably the single piece of software I spend the
-most time with. It's free, open source, it descends from the ashes of Netscape
-and Mozilla and isn't as evil as Chrome. I've also given a try to
-<a href="https://vivaldi.com/">Vivaldi</a> recently, and it's pretty good: the things I
+most time with. It’s free, open source, it descends from the ashes of Netscape
+and Mozilla and isn’t as evil as Chrome. I’ve also given a try to
+<a href="https://vivaldi.com/">Vivaldi</a> recently, and it’s pretty good: the things I
 liked the most are the Chromium engine, extensions compatibility and the
 integrated email client.</p>
 <p>Thunderbird is also a descendant of Netscape and Mozilla and, despite not having
 yet a unified inbox, it works great and has all the features I need. I have
-quite a few mail accounts configured in it, and it's as smooth as olive oil.</p>
+quite a few mail accounts configured in it, and it’s as smooth as olive oil.</p>
 <p>Telegram I find much better than Whatsapp. I just wish most people would throw
 away Whatsapp and join the much better alternative.</p>
 <p>Signal is what I use whenever I have to exchange sensitive information like
 passwords, credit card info, etc.</p>
-<p>Alacritty is my terminal of choice. It keeps things simple, it's blazing fast,
-the defaults are just perfect. What's not to like?</p>
+<p>Alacritty is my terminal of choice. It keeps things simple, it’s blazing fast,
+the defaults are just perfect. What’s not to like?</p>
 <p>Joplin is an amazing note-taking app which is available for every platform and
 its sync features make it perfect for switching between computers and phones. I
 have so much stuff in Joplin.</p>
 <p>I have used <a href="https://keepassxc.org/">KeepassXC</a> since forever but recently
-switched to Bitwarden as it's also open source, free, available on all platforms
+switched to Bitwarden as it’s also open source, free, available on all platforms
 and the cloud sync feature is also free and essential to me.</p>
-<p>These are my choices. I'm not saying they are good for you. I'm just saying I
-couldn't live without them.</p>
+<p>These are my choices. I’m not saying they are good for you. I’m just saying I
+couldn’t live without them.</p>
 
     ]]></content>
     <category term="software" />
@@ -222,32 +222,32 @@ couldn't live without them.</p>
     <published>2022-10-17T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <blockquote>
-<p>«You can play a shoestring if you're sincere.» — John Coltrane</p>
+<p>«You can play a shoestring if you’re sincere.» — John Coltrane</p>
 </blockquote>
 <p><img src="../images/posts/ballads-album-cover.png" alt="album cover" /></p>
 <p>I have been playing the piano since I was a little kid. Actually, I played the
 organ first, as my dad had a transistor one that was pretty state of the art for
 the time (I was born in 1974 so you get the idea).</p>
-<p>Anyway, I've been playing keyboards since forever and I've also picked up
+<p>Anyway, I’ve been playing keyboards since forever and I’ve also picked up
 different instruments over the years, probably too many of them as I never
 really mastered one.</p>
 <p>But black and white keys is what my brain sees when I hear music. I tend to
 think in piano terms first.</p>
-<p>Some people tell me they wish to hear me play the piano more as they don't
-really enjoy me playing bass or guitar or synths or whatever it is that I'm
+<p>Some people tell me they wish to hear me play the piano more as they don’t
+really enjoy me playing bass or guitar or synths or whatever it is that I’m
 obsessed with at the moment.</p>
-<p>I'm not a good piano player. I'm not even an average piano player. My technique
-is lacking in so many ways I can't even begin to count them. However, I can
+<p>I’m not a good piano player. I’m not even an average piano player. My technique
+is lacking in so many ways I can’t even begin to count them. However, I can
 maybe hold my own with ballads as they allow me the freedom and the time to
 think and move things around.</p>
 <p>I believe there are many places in this album where you can clearly hear me
-thinking "well, where do I go now?". That's fine with me. I'm not a professional
-musician and I don't need everything to be perfect. In fact, there are several
+thinking “well, where do I go now?”. That’s fine with me. I’m not a professional
+musician and I don’t need everything to be perfect. In fact, there are several
 places where you can hear me making errors, failing to reach a note or playing
-something that's not really <em>kosher</em>.</p>
-<p>You know what? I don't care. You get to hear what I played with no edits. I want
-this to be sincere. It might be flawed... well, it definitely is flawed in many
-ways, but at least it's me you are hearing.</p>
+something that’s not really <em>kosher</em>.</p>
+<p>You know what? I don’t care. You get to hear what I played with no edits. I want
+this to be sincere. It might be flawed… well, it definitely is flawed in many
+ways, but at least it’s me you are hearing.</p>
 <p>The songs in this album are tunes that have kept me company for years. Except
 maybe for <em>Lotus Blossom</em>, which I discovered quite recently while watching
 <a href="https://en.wikipedia.org/wiki/Field_of_Dreams">Field</a>
@@ -275,8 +275,8 @@ masterpiece through Kevin Costner, can you believe that?</p>
 <p><img src="../images/posts/the-last-time-i-had-fun-album-cover.png" alt="album cover" /></p>
 <p>The nice thing with instrumental music is that giving titles to songs is maybe
 trivial and can sometimes be lots of fun.</p>
-<p>I had this album's title written down in a list of possible song names that I
-keep in my notebook. I wasn't really thinking about it until I started seeing
+<p>I had this album’s title written down in a list of possible song names that I
+keep in my notebook. I wasn’t really thinking about it until I started seeing
 the album cover showing up online after I pushed the <em>publish</em> button.</p>
 <p>And then it hit me:</p>
 <p>«The Last Time I Had Fun (It Was A Long Time Ago)»</p>
@@ -284,7 +284,7 @@ the album cover showing up online after I pushed the <em>publish</em> button.</p
 is fun?</p>
 <p>I make no secret of my life long struggle with depression, anxiety, panic
 attacks and agoraphobia. I used to be shy about it and keep it to myself as
-people see it as a weakness. It isn't. Of course it is not.</p>
+people see it as a weakness. It isn’t. Of course it is not.</p>
 <p>When I had my first panic attack I was just in my twenties and it scared me
 shitless. I had no idea what was happening to me. I was living in a relatively
 small town and I had maybe heard the word <em>depression</em> a few times, always
@@ -294,13 +294,13 @@ referring to someone no one would dare go near to.</p>
 <p>These days things are a bit better. Mental illness still carries around a stigma
 but more and more people are aware of what it means to be depressed, to
 experience debilitating anxiety and so on.</p>
-<p>I am still scared shitless of my condition but I've somewhat learned to live
-with it. I spend most of my days working at home so I don't get easily
-triggered, except for family or job matters. It's manageable though.</p>
-<p>But yeah, I can't remember when it was the last time I've had fun. I've had
+<p>I am still scared shitless of my condition but I’ve somewhat learned to live
+with it. I spend most of my days working at home so I don’t get easily
+triggered, except for family or job matters. It’s manageable though.</p>
+<p>But yeah, I can’t remember when it was the last time I’ve had fun. I’ve had
 some. The most fun I have these days is playing music for myself at home. So, in
 a sense, this is me trying to share some of my fun, knowing that not everyone
-has fun the same way and most won't like my music, but some will, and it is for
+has fun the same way and most won’t like my music, but some will, and it is for
 those that I do this.</p>
 <p>You can listen to The Last Time I Had Fun for free by clicking
 <a href="https://album.link/thelasttimeihadfun">this link</a>.</p>
@@ -316,18 +316,18 @@ those that I do this.</p>
     <published>2022-07-25T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <blockquote>
-<p>«There's nothing remarkable about it. All one has to do is hit the right keys
+<p>«There’s nothing remarkable about it. All one has to do is hit the right keys
 at the right time and the instrument plays itself.» — J. S. Bach</p>
 </blockquote>
 <p><img src="../images/posts/ear-candy-album-cover.png" alt="album cover" /></p>
-<p>What I find amusing about quotes is that it's very hard to find out if they are
+<p>What I find amusing about quotes is that it’s very hard to find out if they are
 trustworthy. I like to think that the Kapellmeister might actually have said
-that. It's quite plausible I think.</p>
+that. It’s quite plausible I think.</p>
 <p>Bach wrote music for the glory of his god and for the refreshment of the spirit.
-I don't have any gods to glorify other than Charlie Parker and John Coltrane and
+I don’t have any gods to glorify other than Charlie Parker and John Coltrane and
 no special message to send to the world other than enjoy yourselves and try not
 to be hurtful to each other.</p>
-<p>I don't really have much to say about this album other than I hope you find it
+<p>I don’t really have much to say about this album other than I hope you find it
 tolerable.</p>
 <p>You can listen to Ear Candy for free by clicking
 <a href="https://album.link/ear-candy">this link</a>.</p>
@@ -343,21 +343,21 @@ tolerable.</p>
     <published>2022-03-23T08:00:00+00:00</published>
     <content type="html"><![CDATA[
 <blockquote>
-<p>«What's wrong with feeling nostalgic? It's the only distraction left for those
-who have no faith in the future.» — "The Great Beauty" (2013, Paolo
+<p>«What’s wrong with feeling nostalgic? It’s the only distraction left for those
+who have no faith in the future.» — “The Great Beauty” (2013, Paolo
 Sorrentino)</p>
 </blockquote>
 <p><img src="../images/posts/until-further-notice-album-cover.png" alt="album cover" /></p>
 <p>When I was a kid, music came on vinyl. I loved it for the beautiful covers but
 most of all for the amount of details you could find on them. Most music labels
-would report lots of interesting stuff such as the performers' names and the
+would report lots of interesting stuff such as the performers’ names and the
 instruments they played. Sometimes, especially for jazz albums, there would be
 liner notes, hopefully written by someone who knew what he was talking about.
 And pictures, oh yeah, there would often be pictures, and they were big and
 pretty.</p>
 <p>Today, when you listen to or buy music on Spotify or Apple Music or whatever
 your favorite music distribution/streaming platform is, you barely get a
-picture, the name of the artist, an album title and the songs' names. This is
+picture, the name of the artist, an album title and the songs’ names. This is
 very unfortunate. Compared to when I started consuming music, this represents a
 horrible loss.</p>
 <p>Yes, I know I sound like
@@ -372,29 +372,29 @@ the randomizer do its thing. The last song is from a
 The rest of the songs have been played and improvised live on keyboards.</p>
 <p>This is without a doubt no groundbreaking stuff. But it is for me. I come from a
 jazz background where holding a triad for longer than a bar is considered an
-outrageous act of rebellion. I didn't expect what came out, like... at all. But
+outrageous act of rebellion. I didn’t expect what came out, like… at all. But
 my friends are not saying terrible words about it, so I think maybe this is
 worth sharing. Even if one person likes part of a song, that would be more than
 I could ever hope for.</p>
-<p>The album's theme is the passive-aggressive office jargon. The music is supposed
+<p>The album’s theme is the passive-aggressive office jargon. The music is supposed
 to be a sort of meditative remedy to the frustrations induced by the tensions
 that arise in that context. An old friend of mine, a professional musician, once
-told me musicians are healers. Although I can't help but look very suspiciously
-at uses for music that aren't just about contemplating the beauty of sounds, I
+told me musicians are healers. Although I can’t help but look very suspiciously
+at uses for music that aren’t just about contemplating the beauty of sounds, I
 have nothing against people using music in ways that positively affect them. If
-you find this music soothing and relaxing... be my guest.</p>
+you find this music soothing and relaxing… be my guest.</p>
 <p>Finally, here is a copy of the
 <a href="../images/posts/until-further-notice-album-cover.png">album cover</a> in its full
 glory for those of you who still enjoy the small pleasures in life.</p>
 <p>Special thanks to my son Andrea for inspiring me to pick up the piano again
 (figuratively speaking of course as a real piano can be pretty heavy). Also, a
 very big thank you goes to Camilla, Marco, Gianluca and Patrizia who first
-listened to the tracks and didn't threaten me with blocking my number on every
+listened to the tracks and didn’t threaten me with blocking my number on every
 messaging app. Huge thanks should also go to my mum for tolerating my music gear
 addiction, especially that for vintage synthesizers. And to her cooking. Yeah,
 definitely worth mentioning. Love is probably stored in the belly, and mine is a
 pretty big one.</p>
-<p>Oh, I almost forgot... the gear. This was all done in Logic Pro X using software
+<p>Oh, I almost forgot… the gear. This was all done in Logic Pro X using software
 stuff. The synths are either Logic presets or <a href="https://u-he.com/">u-he</a> Zebra2
 or <a href="https://www.gforcesoftware.com/">GForce</a> OB-E. There is also a large amount
 of <a href="https://valhalladsp.com/">Valhalla</a> Shimmer and Supermassive reverb, as well
@@ -402,10 +402,10 @@ as some heavy processing through <a href="https://www.arturia.com/">Arturia</a> 
 Fragments and <a href="https://chowdsp.com/">Chow</a> Tape Model. I played the keyboards
 via midi on a Sequential Take 5 and a Nord Stage 3 Compact. Sometimes I played
 the left hand bass part on the Take 5 and the rest on the Nord with the right
-hand. Most keyboardists can do that, and they don't go bragging about it, I
+hand. Most keyboardists can do that, and they don’t go bragging about it, I
 know.</p>
-<p>Well, that's about it. See you soon with more music I guess.</p>
-<p>Until further notice...</p>
+<p>Well, that’s about it. See you soon with more music I guess.</p>
+<p>Until further notice…</p>
 <p>You can listen to Until Further Notice for free by clicking
 <a href="https://album.link/untilfurthernotice">this link</a>.</p>
 
@@ -449,24 +449,24 @@ putting an abysmal amount of pressure on you to complete something.</p>
 <p>This is normal and not something under your control. Accept this is how every
 job works and take it for granted as the oxygen in the air you breathe.</p>
 <p>Can this be avoided? If you have an enlightened project manager/team
-leader/whatever, she won't put any pressure on you. If you don't, maybe try
+leader/whatever, she won’t put any pressure on you. If you don’t, maybe try
 looking for new employment opportunities.</p>
-<p>A good software engineer knows software can't be rushed. We are not in a hacker
-movie where someone types some bullshit code into a keyboard and <em>"We're in!"</em>.</p>
-<p>Software requires focus. The simplest "Hello world" requires an amount of
+<p>A good software engineer knows software can’t be rushed. We are not in a hacker
+movie where someone types some bullshit code into a keyboard and <em>“We’re in!”</em>.</p>
+<p>Software requires focus. The simplest “Hello world” requires an amount of
 complexity coordination that simply cannot be avoided.</p>
-<p>The way I see it, software either works or it doesn't. If you want me to produce
+<p>The way I see it, software either works or it doesn’t. If you want me to produce
 software that does work, then development takes the time that it takes.</p>
 <p>Of course things can be much more complex than this. But, as a general rule, if
 someone tries to rush me into something, I try to understand their requirements,
 try to explain what is needed in order to achieve the objective, then try my
 best to ignore the anxiety they are imposing on me and negotiate more realistic
 deadlines.</p>
-<p>I'm only human and it doesn't work so well every time. But I try to use the
+<p>I’m only human and it doesn’t work so well every time. But I try to use the
 anxiety to positively drive my attention and focus.</p>
 <p>There will always be someone speaking of how the sun is not gonna rise tomorrow
-if you miss a deadline. Of course that's bullshit.</p>
-<p>Just do your best and you'll be fine, I promise.</p>
+if you miss a deadline. Of course that’s bullshit.</p>
+<p>Just do your best and you’ll be fine, I promise.</p>
 
     ]]></content>
     <category term="software development" />
@@ -483,7 +483,7 @@ if you miss a deadline. Of course that's bullshit.</p>
 <a href="https://en.wikipedia.org/wiki/Matrix_digital_rain">digital rain</a> algorithm in
 6502 assembly and <a href="matrix.html">failing miserably</a>, I decided to try the
 <a href="https://cc65.github.io/">cc65</a> toolkit and write some C code.</p>
-<p>Once it's loaded, the following commands are available through the keyboard:</p>
+<p>Once it’s loaded, the following commands are available through the keyboard:</p>
 <table><thead><tr><th>key</th><th>use</th></tr></thead><tbody>
 <tr><td><code>A</code></td><td>amber mode</td></tr>
 <tr><td><code>B</code></td><td>binary mode</td></tr>
@@ -503,11 +503,11 @@ my hero.</p>
 <p>Speaking of heroes, this was obviously heavily inspired by the
 <a href="https://www.jwz.org/xscreensaver/">xmatrix</a> screensaver by the legendary
 <a href="https://www.jwz.org/">Jamie Zawinski</a>.</p>
-<h2>Update 20210524</h2>
-<p>Here's a video of the software running on a real C64, courtesy Jordan McGee.</p>
+<h2 id="update-20210524">Update 20210524</h2>
+<p>Here’s a video of the software running on a real C64, courtesy Jordan McGee.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P01GWeBhYPc" title="Screensaver running on a real C64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<h2>Update 20211029</h2>
-<p>Here's another video of the software running on a real C64, courtesy my friend
+<h2 id="update-20211029">Update 20211029</h2>
+<p>Here’s another video of the software running on a real C64, courtesy my friend
 Marco.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/O93npyzDnUU" title="Screensaver running on a real C64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -525,7 +525,7 @@ Marco.</p>
     <content type="html"><![CDATA[
 <p>I am trying to learn some 6502 assembly and this is the result of one of my
 first experiments.</p>
-<p>Once it's loaded, the following commands are available through the keyboard:</p>
+<p>Once it’s loaded, the following commands are available through the keyboard:</p>
 <table><thead><tr><th>key</th><th>use</th></tr></thead><tbody>
 <tr><td><code>B</code></td><td>binary display mode</td></tr>
 <tr><td><code>X</code></td><td>hex display mode</td></tr>
@@ -1935,51 +1935,51 @@ di legno e materie plastiche sempre più eco-sostenibili.</p>
     <published>2018-10-18T14:01:00+00:00</published>
     <content type="html"><![CDATA[
 <p>«In principio era il verbo.»</p>
-<p>«Ah, io credevo il soggetto. Ma infatti, se senti il Maestro Yoda...»</p>
+<p>«Ah, io credevo il soggetto. Ma infatti, se senti il Maestro Yoda…»</p>
 <p>«Caserta, fai poco lo spiritoso che vojo vedè come ve la cavate cor
 riscaldamento globale.»</p>
 <p>«Eh vabbè, moriremo tutti, che vuoi che sia? Mica sarebbe la prima volta.»</p>
-<p>(a bassa voce): "Questo moo mettete nel terzo girone.»</p>
-<p>«Guarda che t'ho sentito, sa? Al terzo girone<sup class="footnote-reference"><a href="#1">1</a></sup> so' tutti amici miei. Come
-niente t'arrivo in finale e vinco ai rigori. Lo sai come siamo fatti noi
-italiani...»</p>
-<p>(a bassissima voce): «Chiamame 'n po' er canaro che c'ho un lavoretto per lui.»</p>
-<p>«Mi scusi Eminenza...»</p>
-<p>«Non me chiamà Eminenza che quello è n'artro che te lo raccomando proprio.»</p>
+<p>(a bassa voce): “Questo moo mettete nel terzo girone.»</p>
+<p>«Guarda che t’ho sentito, sa? Al terzo girone<sup class="footnote-reference"><a href="#1">1</a></sup> so’ tutti amici miei. Come
+niente t’arrivo in finale e vinco ai rigori. Lo sai come siamo fatti noi
+italiani…»</p>
+<p>(a bassissima voce): «Chiamame ‘n po’ er canaro che c’ho un lavoretto per lui.»</p>
+<p>«Mi scusi Eminenza…»</p>
+<p>«Non me chiamà Eminenza che quello è n’artro che te lo raccomando proprio.»</p>
 <p>«Come la devo chiamare?»</p>
 <p>«Miles va bene. È informale ma incute ancora un certo timore.»</p>
 <p>«Senta, signor Miles, qua i musicisti stanno tutti a morì de fame.»</p>
-<p>«Figliolo, io tutto quello che potevo fà l'ho fatto.»</p>
-<p>«Eh, lo so, ma infatti pe' carità, chi te dice niente? Anche se tutta quella
-roba pop...»</p>
-<p>«Lo vedi che 'n c'hai capito niente?»</p>
-<p>«Lo so, lo so, ma infatti sto a studià un po' di tutto, eh.»</p>
-<p>«Bravo, vai a studià un po' di tutto, va.»</p>
-<p>«Signor Miles, ma tutto tutto? Pure Nino D'Angelo?»</p>
-<p>«A parte che a me Nino D'Angelo me piace, lo sanno tutti. Ma perché, se te paga,
+<p>«Figliolo, io tutto quello che potevo fà l’ho fatto.»</p>
+<p>«Eh, lo so, ma infatti pe’ carità, chi te dice niente? Anche se tutta quella
+roba pop…»</p>
+<p>«Lo vedi che ’n c’hai capito niente?»</p>
+<p>«Lo so, lo so, ma infatti sto a studià un po’ di tutto, eh.»</p>
+<p>«Bravo, vai a studià un po’ di tutto, va.»</p>
+<p>«Signor Miles, ma tutto tutto? Pure Nino D’Angelo?»</p>
+<p>«A parte che a me Nino D’Angelo me piace, lo sanno tutti. Ma perché, se te paga,
 che fai, non ce vai?»</p>
 <p>«A voja! Ma magari.»</p>
 <p>«Bravo! Allora vai, va! E continua a studià che su Giant Steps in 13/8 te sento
-ancora un po' indeciso.»</p>
-<p>«Ma a me 'sti tempi dispari non è che me convincono troppo.»</p>
-<p>«Ma stai a scherzà? L'hai sentito quel ragazzetto? Bread...»</p>
-<p>«...Mehldau, sì. Che poi 'nsomma, non è più tanto un ragazzetto manco lui.»</p>
-<p>«Ma quello te fa All The Things in 7/4 che t'esplode l'auditorium.»</p>
+ancora un po’ indeciso.»</p>
+<p>«Ma a me ’sti tempi dispari non è che me convincono troppo.»</p>
+<p>«Ma stai a scherzà? L’hai sentito quel ragazzetto? Bread…»</p>
+<p>«…Mehldau, sì. Che poi ’nsomma, non è più tanto un ragazzetto manco lui.»</p>
+<p>«Ma quello te fa All The Things in 7/4 che t’esplode l’auditorium.»</p>
 <p>«Se è per questo ce stanno certi ragazzetti su youtube che aiutame a dì levate
 proprio.»</p>
 <p>«Bravo. Lo vedi che hai capito?»</p>
-<p>«Ho capito, sì. Me tocca imparà pure 'sti tempi dispari, eh?»</p>
-<p>«E vedi un po' te!»</p>
+<p>«Ho capito, sì. Me tocca imparà pure ’sti tempi dispari, eh?»</p>
+<p>«E vedi un po’ te!»</p>
 <p>«Signor Miles, me sa che era meglio che non la disturbavo.»</p>
-<p>«Eh, ormai (...) Sai che c'è? Già che stai qua, vai un po' a trovà quel bassista
-un po' matto. Te fai dà 'na lezione.»</p>
+<p>«Eh, ormai (…) Sai che c’è? Già che stai qua, vai un po’ a trovà quel bassista
+un po’ matto. Te fai dà ’na lezione.»</p>
 <p>«Signor Miles, ma è vero che qua state sempre a fà jam session? A me dopo cena
-me viè l'abbiocco. Questi suonano fino all'alba, li mortacci loro.»</p>
+me viè l’abbiocco. Questi suonano fino all’alba, li mortacci loro.»</p>
 <p>«Devi mangià leggero, fjo mio.»</p>
 <p>«Signor Miles, ma perché parla romano?»</p>
-<p>«Qua se possono studià le lingue e siccome io sò sempre stato un po' coatto...
+<p>«Qua se possono studià le lingue e siccome io sò sempre stato un po’ coatto…
 me piaceva il romano, vabbè?»</p>
-<p>«Vabbè, vabbè, non te 'ncazzà. Grazie Signor Miles.»</p>
+<p>«Vabbè, vabbè, non te ’ncazzà. Grazie Signor Miles.»</p>
 <p>«E non me chiamà Signor Miles.»</p>
 <p>«Va bene, Signor Miles. Mò devo proprio scappà, ciao.»</p>
 <p>«Ciao secco.»</p>

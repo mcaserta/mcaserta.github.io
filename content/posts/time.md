@@ -302,7 +302,7 @@ configurable clock implementation for use in the time api. This is especially
 useful in unit testing and debugging. Other languages should have an equivalent
 functionality.
 
-https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html
+<https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html>
 
 ## Further Resources
 
@@ -371,6 +371,7 @@ Here are a few useful links I've accumulated over time:
 - [A Server for Matching Long/Lat to Timezone](https://github.com/LittleGreenViper/LGV_TZ_Lookup)
 - [Ianto Cannon's clock graphics](https://ianto-cannon.github.io/clock.html)
 - [AlphaDec, a timezone-agonistic time format for humans, machines, and AI](https://github.com/firasd/alphadec)
+- [RFC 3339 vs ISO 8601](https://ijmacd.github.io/rfc3339-iso8601/)
 
 ## Memes
 

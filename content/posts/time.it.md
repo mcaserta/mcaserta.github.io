@@ -318,7 +318,7 @@ orologio arbitrariamente configurabile per l'uso nell'API del tempo. Questo è
 particolarmente utile nei test unitari e nel debugging. Altri linguaggi
 dovrebbero avere una funzionalità equivalente.
 
-https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html
+<https://docs.oracle.com/javase/8/docs/api/java/time/Clock.html>
 
 ## Risorse Aggiuntive
 
@@ -387,6 +387,7 @@ Ecco alcuni link utili che ho accumulato nel tempo:
 - [A Server for Matching Long/Lat to Timezone](https://github.com/LittleGreenViper/LGV_TZ_Lookup)
 - [Ianto Cannon's clock graphics](https://ianto-cannon.github.io/clock.html)
 - [AlphaDec, a timezone-agonistic time format for humans, machines, and AI](https://github.com/firasd/alphadec)
+- [RFC 3339 vs ISO 8601](https://ijmacd.github.io/rfc3339-iso8601/)
 
 ## Meme
 

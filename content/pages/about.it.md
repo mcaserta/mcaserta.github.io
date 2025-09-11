@@ -1,6 +1,6 @@
 ---
 layout: page
-date: 2025-07-26T20:20:00Z
+date: 2025-09-10T20:20:00Z
 title: Chi Sono
 ---
 

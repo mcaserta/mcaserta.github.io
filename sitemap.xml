@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://mirkocaserta.com</loc>
-    <lastmod>2025-07-27</lastmod>
+    <lastmod>2025-09-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,12 +17,9 @@
   </url>
   <url>
     <loc>https://mirkocaserta.com/pages/contacts.html</loc>
-    <lastmod>2025-07-26</lastmod>
+    <lastmod>2025-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://mirkocaserta.com/pages/contacts.es.html" />
-    <xhtml:link rel="alternate" hreflang="it" href="https://mirkocaserta.com/pages/contacts.it.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirkocaserta.com/pages/contacts.html" />
   </url>
   <url>
     <loc>https://mirkocaserta.com/pages/cv.html</loc>

@@ -276,7 +276,7 @@ class Main {
 
 If you run this code with `java Main.java`, you should see something like this:
 
-```
+```bash
 systemDefault = Europe/Rome
 now = 1753718631998
 localDate = 2025-07-28
@@ -372,6 +372,9 @@ Here are a few useful links I've accumulated over time:
 - [Ianto Cannon's clock graphics](https://ianto-cannon.github.io/clock.html)
 - [AlphaDec, a timezone-agonistic time format for humans, machines, and AI](https://github.com/firasd/alphadec)
 - [RFC 3339 vs ISO 8601](https://ijmacd.github.io/rfc3339-iso8601/)
+- [How the tz database works](https://yatsushi.com/blog/tz-database/)
+- [A literary appreciation of the Olson/Zoneinfo/tz database](https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/)
+- [Benjamin Franklin's Essay on Daylight Saving](https://www.webexhibits.org/daylightsaving/franklin3.html)
 
 ## Memes
 

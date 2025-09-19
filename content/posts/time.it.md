@@ -392,6 +392,7 @@ Ecco alcuni link utili che ho accumulato nel tempo:
 - [A literary appreciation of the Olson/Zoneinfo/tz database](https://blog.jonudell.net/2009/10/23/a-literary-appreciation-of-the-olsonzoneinfotz-database/)
 - [Benjamin Franklin's Essay on Daylight Saving](https://www.webexhibits.org/daylightsaving/franklin3.html)
 - [How England Colonized Time](https://youtu.be/mkVxJVgO1QY)
+- [Cheatsheet & Examples: date](https://tech.mrleong.net/cheatsheet-examples-date)
 
 ## Meme
 
